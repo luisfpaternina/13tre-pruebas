@@ -9,6 +9,7 @@
                 <xpath expr="//form[1]/sheet[1]/group[1]/group[1]/field[@name='location_id']" position="after">
                     <field name="invoice_name"/>
                     <field name="invoice_state"/>
+                    <field name="is_validate"/>
                 </xpath>
             </field>
         </record>
