@@ -15,6 +15,7 @@
                     </div>
                     <div class="article o_report_layout_standard">
                         <div class="page">
+                        <br></br><br></br>
                         <h2>
                             <span t-field="o.name"></span>
                         </h2>
