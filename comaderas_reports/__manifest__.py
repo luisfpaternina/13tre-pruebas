@@ -22,6 +22,8 @@
     'data': [
         "reports/invoice_report.xml",
         "reports/product_labels_report.xml",
+        "reports/sale_order_report.xml",
+        "reports/purchase_order_report.xml",
     ],
     
     'installable': True,

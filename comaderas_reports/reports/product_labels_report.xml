@@ -22,7 +22,7 @@
         
         <report
                 id="report_print_product_labels_report"
-                string="Plantilla datos técnicos"
+                string="Etiquetas de productos"
                 model="product.template"
                 report_type="qweb-pdf"
                 name="comaderas_reports.report_print_product_labels"
