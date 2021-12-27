@@ -20,8 +20,8 @@
     ],
 
     'data': [
-        "reports/invoice_report.xml"
-        "reports/product_labels_report.xml"
+        "reports/invoice_report.xml",
+        "reports/product_labels_report.xml",
     ],
     
     'installable': True,
