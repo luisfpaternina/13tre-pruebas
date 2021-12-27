@@ -19,10 +19,6 @@
                             <strong>Invoice Date:</strong>
                             <p class="m-0" t-field="o.invoice_date"/>
                         </div>
-                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_date_due and o.move_type == 'out_invoice' and o.state == 'posted'" name="due_date">
-                            <strong>Due Date:</strong>
-                            <p class="m-0" t-field="o.invoice_date_due"/>
-                        </div>
                         <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_origin" name="origin">
                             <strong>Source:</strong>
                             <p class="m-0" t-field="o.invoice_origin"/>
