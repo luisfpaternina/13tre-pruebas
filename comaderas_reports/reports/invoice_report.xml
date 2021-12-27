@@ -196,7 +196,9 @@
                        </div>
                     </div>
                     <div class="footer">
-                        <p></p>
+                        <p style="font-size:13px">
+                            <span t-field="o.company_id.terms"></span>
+                        </p>
                     </div>
                 </t>
             </t>
