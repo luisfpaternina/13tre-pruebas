@@ -10,3 +10,5 @@ class StockPicking(models.Model):
     invoice_state = fields.Selection(
         string="Invoice state",
         related="sale_id.invoice_ids.invoice_payment_state")
+    is_validate = fields.Boolean(
+        string="Validate")
