@@ -11,7 +11,8 @@ class StockPicking(models.Model):
         string="Invoice state",
         related="sale_id.invoice_ids.invoice_payment_state")
     is_validate = fields.Boolean(
-        string="Validate")
+        string="Validate",
+        compute="_validate_invoice_state")
 
 
     @api.depends('invoice_state')
