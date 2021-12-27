@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="hr_payslip_dian_detail_view_form" model="ir.ui.view">
+            <field name="name">hr.payslip.dian.detail.view.form</field>
+            <field name="model">hr.payslip.dian.detail</field>
+            <field name="arch" type="xml">
+                <form string="Detail Dian Payslip Form">
+                    <sheet>
+                        <group>
+                            <field name="request_date"/>
+                            <field name="code"/>
+                            <field name="description"/>
+                        </group>
+                        <field name="line_ids" >
+                            <tree>
+                                <field name="number" />
+                                <field name="status" />
+                                <field name="app_response" />
+                                <field name="xml_signed" />
+                                <field name="payslip_pdf" />
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_payslip_dian_result_view_form" model="ir.ui.view">
+            <field name="name">hr.payslip.dian.result.view.form</field>
+            <field name="model">hr.payslip.dian.result</field>
+            <field name="arch" type="xml">
+                <form string="Result Dian Payslip Form">
+                    <sheet>
+                        <group>
+                            <field name="request_date"/>
+                            <field name="code"/>
+                            <field name="description"/>
+                            <field name="type" />
+                            <field name="qty" />
+                        </group>
+                        <field name="line_ids" >
+                            <tree>
+                                <field name="number" />
+                                <field name="position" />
+                                <field name="cune" />
+                                <field name="result" />
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_payslip_dian_total_view_form" model="ir.ui.view">
+            <field name="name">hr.payslip.dian.total.view.form</field>
+            <field name="model">hr.payslip.dian.total</field>
+            <field name="arch" type="xml">
+                <form string="Total Dian Payslip Form">
+                    <sheet>
+                        <group>
+                            <field name="code"/>
+                            <field name="description"/>
+                        </group>
+                        <field name="line_ids" >
+                            <tree>
+                                <field name="receipts_payslip_status" />
+                                <field name="status_payslip" />
+                                <field name="pasylip_qty" />
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

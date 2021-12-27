@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="bits_hr_contract_advance">
+      <field name="name">bits_hr_contract_advance list</field>
+      <field name="model">hr.contract</field>
+      <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+      <field name="arch" type="xml">
+
+        <xpath expr="//field[@name='date_start']" position="before">
+          <field name="type_contract" required="1"/>
+          <field name="contributor_type_id"/>
+        </xpath>
+        <xpath expr="//page[@name='information']" position="after">
+          <page name="salary_aid" string="Salary aid">
+            <group>
+              <field name="salary_aid_ids" nolabel="1">
+                <tree editable="bottom">
+                  <field name="contract_id" invisible="1"/>
+                  <field name="salary_aid_id"/>
+                  <field name="value"/>
+                </tree>
+              </field>
+            </group>
+          </page>
+        </xpath>
+
+      </field>
+    </record>
+  </data>
+</odoo>

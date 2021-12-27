@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_category_inherit_view_form" model="ir.ui.view">
+        <field name="name">product.category.inherit.view</field>
+        <field name="model">product.category</field>
+        <field name="priority" eval="10" />
+        <field name="inherit_id" ref="product.product_category_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group[@name='first']" position="after">
+                <group id="princing" string="princing">
+                    <field name="apply_discount_table" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

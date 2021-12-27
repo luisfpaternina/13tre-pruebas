@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="bits_hr_employee_center_cost">
+            <field name="name">bits_hr_employee_center_cost_setting</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="hr.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <div data-key="hr" position="inside">
+                    <h2>Employee center cost</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <div class="row">
+                                    <label for="percentage_workload" class="offset-1 col-sm-5 o_form_label"/>
+                                    <field name="percentage_workload" class="col-sm-2"/>
+                                </div>
+                                <div class="text-muted">
+                                    Ideal percentage of workload that employees will have.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

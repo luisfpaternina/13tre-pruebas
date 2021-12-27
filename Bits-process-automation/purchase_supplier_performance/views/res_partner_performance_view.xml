@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="res_partner_performance_tree">
+        <field name="name">res.partner.performance.tree</field>
+        <field name="model">res.partner.performance</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false">
+                <field name="partner_id"/>
+                <field name="performance" widget="priority"/>
+                <field name="qualification_date"/>
+                <field name="description"/>
+                <field name="user_id"/>
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="res_partner_performance_form">
+        <field name="name">res.partner.performance.form</field>
+        <field name="model">res.partner.performance</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <form create="false" edit="false">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="performance" widget="priority"/>
+                            <field name="description"/>
+                            <field name="order_id"/>
+                        </group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="qualification_date"/>
+                            <field name="user_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="supplier_performance_kanban" model="ir.ui.view">
+        <field name="name">supplier.performance.kanban</field>
+        <field name="model">res.partner.performance</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile" create="false" edit="false">
+                <field name="partner_id"/>
+                <field name="performance"/>
+                <field name="name"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="row mb4">
+                                <strong class="col-6">
+                                    <field name="partner_id"/>
+                                </strong>
+                                <strong class="col-6 text-right">
+                                    <field name="performance" widget="priority"/>
+                                </strong>
+                                <div class="col-6">
+                                    <field name="order_id"/>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <field name="qualification_date"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="supplier_performance_graph">
+        <field name="name">supplier.performance.graph</field>
+        <field name="model">res.partner.performance</field>
+        <field name="arch" type="xml">
+            <graph string="Supplier Performance">
+                <field name="partner_id"/>
+            </graph>
+        </field>
+    </record>
+    <record id="action_supplier_performance" model="ir.actions.act_window">
+        <field name="name">Supplier Performance</field>
+        <field name="res_model">res.partner.performance</field>
+        <field name="view_mode">tree,form,kanban,graph</field>
+        <field name="domain">[('type','=','supplier')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Provider Ratings
+            </p>
+        </field>
+    </record>
+    <menuitem id="menu_supplier_performence" name="Provider Ratings" parent="purchase.menu_procurement_management" action="action_supplier_performance" sequence="15"/>
+</odoo>

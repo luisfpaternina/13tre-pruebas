@@ -1,0 +1,437 @@
+id,code,name,condition_python,description,mandatory,condition_select,validate_condition_select
+l10n_co_act_fields.account_act_fields_001,COD001,NIT Emisor Factura,"a_string = company.vat or ''
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[0]",NIT Proporcionado por la DIAN del emisor de la Factura,required,none,
+l10n_co_act_fields.account_act_fields_002,COD002,NIT Adquiriente,"a_string = partner.vat or ''
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[0]",NIT Proporcionado por la DIAN del Adquiriente.,required,none,
+l10n_co_act_fields.account_act_fields_003,COD003,Tipo de Documento,"_type_document = {'out_invoice': 'F', 'out_refund': 'C', 'in_invoice': 'F', 'in_refund': 'C'}
+result = account.type
+result = _type_document.get(result, 'F')
+if (
+    (
+        result == 'C' and account.ei_type_document_id.code == '92'
+    ) or
+    (
+        result == 'F' and account.ei_type_document_id.code == '92'
+    )
+):
+    result = 'D'","Tipo de comprobante
+F - Factura
+D - Nota de Debito
+C - Nota de Credito",required,none,
+l10n_co_act_fields.account_act_fields_004,COD004,Versión UBL,result = 2,"1 - UBL 2.0
+2 - UBL 2.1  Validación Previa.",required,none,
+l10n_co_act_fields.account_act_fields_005,COD005,Ambiente destino del Documento.,"result = 2
+provider = account.dict._get_active_tech_provider()
+if provider and not provider.is_test:
+    result = 1","1 - Producción.
+2 - Pruebas.",required,none,
+l10n_co_act_fields.account_act_fields_006,COD006,Número Interno Documento,result = account.name ,Numero de factura interna de su sistema de facturacion,required,none,
+l10n_co_act_fields.account_act_fields_007,COD007,Serie,result = account.ei_serie or '' ,Serie asignado por la DIAN ( en caso de no contar con esto indicarlo para colocar la administracion desde el alta de la empresa),optional,none,
+l10n_co_act_fields.account_act_fields_008,COD008,Folio,result = account.ei_folio ,"Rango de Facturación asignado por la DIAN ( en caso de no contar con esto indicarlo 
+para colocar la administracion desde el alta de la empresa)",required,none,
+l10n_co_act_fields.account_act_fields_009,COD009,Fecha de emisión de Factura,"result = account._get_ei_invoice_datetime_time(account.ei_invoice_datetime, '%Y-%m-%d')",Fecha de la emision de la factura formato yyyy-mm-dd,required,none,
+l10n_co_act_fields.account_act_fields_010,COD010,Hora de la emision de la factura,result = account._get_ei_invoice_datetime_time(account.ei_invoice_datetime),Hora de la emision de la factura formato hh:mm:cc,required,none,
+l10n_co_act_fields.account_act_fields_011,COD011,TimeZone,result = 'America/Bogota',Zona horaria de acuerdo a los Java TimeZone Ids,required,none,
+l10n_co_act_fields.account_act_fields_012,COD012,Tipo de documento,result = str(account.ei_type_document_id.code),"01 Factura electrónica de Venta.
+02 Factura electrónica de Exportación.
+03 Documento electrónico de Transmisión-tipo 03
+04 Factura electrónica de Venta-tipo 04
+91 Nota de Crédito. 
+92 Nota de Débito.
+",required,none,
+l10n_co_act_fields.account_act_fields_013,COD013,Opción de pago,result = str(account.payment_option_id.code),"Obligatorio si la /Invoice/cac:PaymentMeans/cbc:ID corresponde a Contado. Obligatorio si la /CreditNote/cac:PaymentMeans/cbc:ID corresponde a Contado
+Ver lista de valores posibles en el numeral 6.3.4.2
+Rechazo: Si el valor de este elemento no corresponde a un valor de la columna “Código”",required,none,
+l10n_co_act_fields.account_act_fields_014,COD014,Termino de pago,result = '' ,30,optional,none,
+l10n_co_act_fields.account_act_fields_015,COD015,Descripcion Termino de pago,result = account.invoice_payment_term_id.name or '' ,Campo Plazos de pago requerido,optional,none,
+l10n_co_act_fields.account_act_fields_016,COD016,Fecha inicio pago,result = account.invoice_date,,optional,none,
+l10n_co_act_fields.account_act_fields_017,COD017,Fecha fin de pago,result = account.invoice_date_due,Obligatorio si es venta a crédito,condition,none,
+l10n_co_act_fields.account_act_fields_018,COD018,Forma de Pago,result = account.ei_payment_form_id.code,"1 Contado.
+2 Crédito.",required,none,
+l10n_co_act_fields.account_act_fields_019,COD019,Lugar de Expedición,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_020,COD020,Régimen Fiscal Emisor,result = account.company_id.partner_id.fiscal_regimen,"48 Responsable del Impuesto Sobre las Ventas - IVA.
+49 No Responsable de IVA.",required,none,
+l10n_co_act_fields.account_act_fields_021,COD021,Ejercicio Fiscal ,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_022,COD022,Estatus Documento ,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_023,COD023,Número de Cheque,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_024,COD024,Departamento ,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_025,COD025,División,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_026,COD026,Centro de Costos ,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_027,COD027,Tipo Operación,result = account.operation_type.code,"6.1.5. Tipos de operación:
+
+09 - Servicios AIU.
+10 - Estandar.
+11 - Mandatos.
+20 - Nota de Crédito que referencia a una FE.
+22 - Nota de Crédito sin  referencia a Factura.
+23 - Nota de Crédto para FE Ver.1
+30 - Nota de Débito Referenciada a FE.
+32 - Nota de Débito sin referencia a facturas.
+33 - Nota Débito Asociada a una FE V1.",required,none,
+l10n_co_act_fields.account_act_fields_028,COD028,Número de Partidas incluídas en la Factura.,result = len(account.invoice_line_ids) or 0,Número de partidas o líneas de detalle incluídas en el Documento. ,required,none,
+l10n_co_act_fields.account_act_fields_029,COD029,Fecha de inicio del periodo de facturación.,result = '' ,"Para utilizar en los servicios públicos, contratos de arrendamiento, matriculas en educación, etc.",optional,none,
+l10n_co_act_fields.account_act_fields_030,COD030,Hora de inicio del periodo de facturación.,result = '' ,"Para utilizar en los servicios públicos, contratos de arrendamiento, matriculas en educación, etc.",optional,none,
+l10n_co_act_fields.account_act_fields_031,COD031,Fecha de fin del periodo de facturación.,result = '' ,"Para utilizar en los servicios públicos, contratos de arrendamiento, matriculas en educación, etc.",optional,none,
+l10n_co_act_fields.account_act_fields_032,COD032,Hora de fin del periodo de facturación.,result = '' ,"Para utilizar en los servicios públicos, contratos de arrendamiento, matriculas en educación, etc.",optional,none,
+l10n_co_act_fields.account_act_fields_033,COD033,Identficador de Sucursal,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_034,COD034,Fecha efectiva de Salida de los bienes,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_035,COD035,Hora efectiva de Salida de los bienes,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_036,COD036,Identificador del Pago.,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_037,COD037,Divisa Consolidada,result = account.currency_id.name,Divisa de la Factura: Divisa consolidada aplicable a toda la factura,required,none,
+l10n_co_act_fields.account_act_fields_038,COD038,Tasa de Cambio,result = account.currency_id.rate,Tasa de cambio entre las divisas.,required,none,
+l10n_co_act_fields.account_act_fields_039,COD039,Subtotal,result = account.amount_untaxed,"El Valor Bruto antes de Impuestos,  tiene que ser la suma de los valores de las líneas de la factura que contienen el valor comercial",required,none,
+l10n_co_act_fields.account_act_fields_040,COD040,Descuento Total,result = '0.00',Suma de todos los descuentos aplicados a nivel de la factura,required,none,
+l10n_co_act_fields.account_act_fields_041,COD041,Motivo de Descuento,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_042,COD042,Cargos Totales,result = '0.00',El Valor del Cargo Total es igual a la Suma de todos los cargos globales aplicados al total de la factura.,required,none,
+l10n_co_act_fields.account_act_fields_043,COD043,Motivos de Cargos,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_044,COD044,Total,result = account.amount_untaxed +  abs(account._get_total_type_transferred()),,required,none,
+l10n_co_act_fields.account_act_fields_045,COD045,Total de Impuestos Retenidos,result = abs(account._get_total_type_retention()) or '0.00',,required,none,
+l10n_co_act_fields.account_act_fields_046,COD046,Total de Impuestos Trasladados,result = abs(account._get_total_type_transferred()) or '',,optional,none,
+l10n_co_act_fields.account_act_fields_047,COD047,Total pago por anticipado,result = abs(account._get_total_advance()) or '0.00',,optional,none,
+l10n_co_act_fields.account_act_fields_048,COD048,Monto a pagar,result = account.amount_untaxed +  abs(account._get_total_type_transferred()) - abs(account._get_total_advance()),Valor total de ítems (incluyendo cargos y descuentos a nivel de ítems)+valores tributos + valors cargos – valor descuentos – valor anticipos,required,none,
+l10n_co_act_fields.account_act_fields_049,COD049,Referencia de factura,result = account.ref or '',,required,none,
+l10n_co_act_fields.account_act_fields_050,COD050,Importe con letras,result = account.ei_amount_text,,required,none,
+l10n_co_act_fields.account_act_fields_051,COD051,Fecha en la que se fijó la tasa de cambio,result = account.ei_date_currency_change,,required,none,
+l10n_co_act_fields.account_act_fields_052,COD052,Total Base Impuestos,result = account.amount_untaxed,Base imponible para el cálculo de los tributos,required,none,
+l10n_co_act_fields.account_act_fields_053,COD053,Total de Valor Bruto más Impuestos,result =  account.amount_untaxed + abs(account._get_total_type_transferred()),El Valor Bruto más tributos tiene que ser igual a Valor Bruto de la factura que contienen el valor comercial más la Suma de los Tributos de todas las líneas de detalle.,required,none,
+l10n_co_act_fields.account_act_fields_054,COD054,Total Anticipos,result = abs(account._get_total_advance()) or '0.00',Suma de todos los anticipos o prepagos aplicados al total de la factura.,condition,none,
+l10n_co_act_fields.account_act_fields_055,COD055,Tipo de Moneda a la cual se hace la conversión.,result = '',"Debe ir diligenciado en COP, si el stipo de moneda consolidada es diferente a COP. Ver lista de valores posibles en 6.3.3",optional,none,
+l10n_co_act_fields.account_act_fields_056,COD056,Divisa Adicional,result = '' ,Divisa adicional base para conversión.,condition,none,
+l10n_co_act_fields.account_act_fields_057,COD057,Tasa de Cambio Secundaria.,result = '' ,"Se debe diligenciar con el valor de la tasa de cambio. Por ejemplo para USDJPY puede ser el valor de la tasa acordada entre las partes.
+Recuerde que el valor consignado aca va a ser la base para la conversión de tasa de cambio alternativa. Este valor es el que se debe usar para reportar los valores en la segunda divisa en representación gráfica, si así lo necesita el emisor.",condition,none,
+l10n_co_act_fields.account_act_fields_058,COD058,Fecha en la que se fijó la tasa de cambio secundaria.,result = '' ,Fecha en la que se Fijo el tipo de cambio de la divisa secundaria.,condition,none,
+l10n_co_act_fields.account_act_fields_059,COD059,Monto Total Impuesto IVA,result = abs(account._get_total_type_by_code('01')) or '',"Obligatorio si se informa este tipo de impuesto - Suma de todos los elementos
+../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount que corresponden a IVA",condition,none,
+l10n_co_act_fields.account_act_fields_060,COD060,Monto Total Impuesto IC,result = abs(account._get_total_type_by_code('02')) or '',"Obligatorio si se informa este tipo de impuesto - Suma de todos los elementos
+../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount  que corresponden a IC",condition,none,
+l10n_co_act_fields.account_act_fields_061,COD061,Monto Total Impuesto ICA,result = abs(account._get_total_type_by_code('03')) or '',"Obligatorio si se informa este tipo de impuesto - Suma de todos los elementos
+../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount  que corresponden a ICA",condition,none,
+l10n_co_act_fields.account_act_fields_062,COD062,Monto Total Impuesto INC,result = abs(account._get_total_type_by_code('04')) or '',"Obligatorio si se informa este tipo de impuesto - Suma de todos los elementos
+../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount  que corresponden a INC",condition,none,
+l10n_co_act_fields.account_act_fields_063,COD063,Monto Total Impuesto INC Bolsas,result = '' ,"Obligatorio si se informa este tipo de impuesto - Suma de todos los elementos
+../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount  que corresponden a INC Bolsas",condition,none,
+l10n_co_act_fields.account_act_fields_064,COD064,Monto Total Impuesto INCarbono,result = '' ,"Obligatorio si se informa este tipo de impuesto - Suma de todos los elementos
+../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount  que corresponden a INCarbono",optional,none,
+l10n_co_act_fields.account_act_fields_065,COD065,Monto Total Impuesto INCombustibles,result = '' ,"Obligatorio si se informa este tipo de impuesto - Suma de todos los elementos
+../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount  que corresponden a INCombustibles",condition,none,
+l10n_co_act_fields.account_act_fields_066,COD066,Calificador (Receptor),result = 'BY',"SE -  Seller (Emisor)
+CO - Shareholder (Consorcio)
+BY - Buyer (Receptor)
+SU - Supplier (Proveedor) 
+ST - Ship to (Direccion de entrega) 
+SF - Ship from (Direccion de origen) 
+OE - Owner (Propietario) 
+FX - Receiver (Destinatario) 
+TR - Delivery (Transportista).",required,none,
+l10n_co_act_fields.account_act_fields_067,COD067,NIT o Identificador Fiscal (Receptor),"a_string = partner.vat or ''
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[0]","Los datos que se colouen en esta seccion dependeran 
+directamente del calificador
+
+
+
+
+
+
+
+",required,none,
+l10n_co_act_fields.account_act_fields_068,COD068,Código Interno (Receptor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_069,COD069,Código Externo (Receptor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_070,COD070,Código Global (Receptor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_071,COD071,Nombre (Receptor),result = partner.name,,required,none,
+l10n_co_act_fields.account_act_fields_072,COD072,Line (Receptor),result = partner.street,,required,none,
+l10n_co_act_fields.account_act_fields_073,COD073,Departamento (Receptor),result = partner.state_id.name,,required,none,
+l10n_co_act_fields.account_act_fields_074,COD074,Subdivision (Receptor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_075,COD075,Municipio (Receptor),result = partner.town_id.name,,optional,none,
+l10n_co_act_fields.account_act_fields_076,COD076,Codigo de Pais (Receptor),result = partner.country_id.code,,required,none,
+l10n_co_act_fields.account_act_fields_077,COD077,Pais (Receptor),result = partner.country_id.name,,optional,none,
+l10n_co_act_fields.account_act_fields_078,COD078,Contacto Nombre (Receptor),result = partner.name,,optional,none,
+l10n_co_act_fields.account_act_fields_079,COD079,Contacto Teléfono (Receptor),result = partner.phone,,optional,none,
+l10n_co_act_fields.account_act_fields_080,COD080,Contacto Email (Receptor),result = partner.email,,optional,none,
+l10n_co_act_fields.account_act_fields_081,COD081,Cedula Juridica (Receptor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_082,COD082,Dígito Verificador del NIT (Receptor),"a_string = partner.vat or ''
+b_string = partner.l10n_co_verification_code
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[1] if len(a_string.split('-',1)) > 1 and a_string.split('-',1)[1] else b_string",,condition,none,
+l10n_co_act_fields.account_act_fields_083,COD083,Tipo de Organización Jurídica (Receptor),result = partner.person_type,"1 - Persona Jurídica. 
+2 - Persona Natural. ",required,none,
+l10n_co_act_fields.account_act_fields_084,COD084,Clave Identificador Tributario (Receptor),result = 'ZY' ,Identificador del Tipo de Impuesto. De acuerdo a los valores del Catálogo del numeral 6.2.2 en la columna Identificador.,required,none,
+l10n_co_act_fields.account_act_fields_085,COD085,Nombre Identificador Tributario (Receptor),result = 'No causa' ,Nombre del Tipo de Impuesto.  De acuerdo a los valores del Catálogo del numeral 6.2.2 en la columna Nombre.,required,none,
+l10n_co_act_fields.account_act_fields_086,COD086,Responsabilidades Fiscales (Receptor),result = 'R-99-PN' ,Este elemento representa el tipo de obligación Fiscal. Ver lista de valores posiblen en el numeral 6.2.7,required,none,
+l10n_co_act_fields.account_act_fields_087,COD087,Regimen Fiscal (Receptor),result = partner.fiscal_regimen,"48 Responsable del impuesto sobre de las ventas - IVA
+49 No responsable de IVA ",required,none,
+l10n_co_act_fields.account_act_fields_088,COD088,Código Departamento (Receptor),result = partner.divipola_state,Ver lista de valores posibles en el numeral Catalogo 6.4.2. Departamentos del Anexo Técnico.,required,none,
+l10n_co_act_fields.account_act_fields_089,COD089,Código de Municipio (Receptor),result = partner.divipola_town,Ver lista de valores posibles en el numeral 6.4.3. Municipios del Anexo Técnico.,required,none,
+l10n_co_act_fields.account_act_fields_090,COD090,Código Postal (Receptor),result = partner.zip,Ver lista de valores posibles en el numeral 6.4.4. Código Postal  del Anexo Técnico.,required,none,
+l10n_co_act_fields.account_act_fields_091,COD091,Código CIIU (Receptor),result = partner.ciiu.code,Identifica el código de actividad económica del emisor. Debe informar el código según lista CIIU. ,optional,none,
+l10n_co_act_fields.account_act_fields_092,COD092,Lenguaje utilizado en el nombre del País (Receptor),result = 'es',"Para español, utilizar el literal “es”. Ver lista de valores posibles en el numeral 6.3.2, columna “ISO 639-1”",required,none,
+l10n_co_act_fields.account_act_fields_093,COD093,Porcentaje de los participantes del consorcio (Receptor),result = '' ,Mandatorio si el DIR1 = CO,optional,none,
+l10n_co_act_fields.account_act_fields_094,COD094,Nota Adicional al Contacto (Receptor),"result = str(account._get_total_format(account.amount_total)).replace('$ ', '')",Sirve para colocar Información adicional del Contacto del Emisor de la Factura.,optional,none,
+l10n_co_act_fields.account_act_fields_095,COD095,Tipo de Documento de Identidad (Receptor),result = partner.document_type,,required,none,
+l10n_co_act_fields.account_act_fields_096,COD096,Número de Matrícula Mercantil (Receptor),result = '',,optional,none,
+l10n_co_act_fields.account_act_fields_097,COD097,Calificador,result = 'IN' ,"OR- Orden de Referencia (UBL)
+NC - Nota de Crédito Relacionada  (UBL).
+ND - Nota de Débito Relacionada (UBL).
+DD - Documentos de Despacho (UBL).
+DR - Documentos de Recepción (UBL).
+RA - Referencias Adiconales (UBL).
+ON- Orden de Compra
+OV- Orden de Venta
+CO- Contrato
+GC- Grupo de Contrato
+IN- Factura
+RE- Remisión
+QR-Numero entrega",required,none,
+l10n_co_act_fields.account_act_fields_098,COD098,Número ,result = account.ei_origin_id.ei_folio,Numero del documento referenciado,required,none,
+l10n_co_act_fields.account_act_fields_099,COD099,Nombre de la referencia,result = account.ei_origin_id.name,Tipo o descripcion del documento referenciado,required,none,
+l10n_co_act_fields.account_act_fields_100,COD100,Fecha de la referencia ,result = account.ei_origin_id.invoice_date,Fecha del documento referenciado,required,none,
+l10n_co_act_fields.account_act_fields_101,COD101,Identficador Fiscal del Documento Relacionado.,result = account.ei_origin_id.cufe_cude_ref,CUDE o Cufe de los documentos relacionados.,condition,none,
+l10n_co_act_fields.account_act_fields_102,COD102,Código del Documento Referenca (DIAN),result = '' ,Indica el tipo de documento adicional que se está relacionando al documento de acuerdo al catálogo 6.1.4. Referencia a documentos no tributarios.,condition,none,
+l10n_co_act_fields.account_act_fields_103,COD103,Calificador del cargo o descuento ,"_type_document = {'discount': 'D', 'surchange': 'C'}
+result = record_1.get('type', '')
+result = _type_document.get(result, 'D')","C-Cargo
+D- Descuento",required,none,
+l10n_co_act_fields.account_act_fields_104,COD104,Indicador Cargos y/o Descuentos Generales,"result = record_1.get('discount', 'true') ","true - Cargo , es un Débito aumenta el valor de la factura y se debe reportar en el LegalMonetary.
+False - Descuento, un Crédito descuenta el valor de la factura antes de tributos y debe reportarse  en el LegalMonetary",required,none,
+l10n_co_act_fields.account_act_fields_105,COD105,Tipo de cargo o descuento ,result = '01' ,"00 - Descuento por Impuesto Asumido.
+01 - Pague uno lleve otro.
+02 - Descuentos Contractuales.
+03 - Descuento por pronto pago.
+04 - Envío gratis.
+05 - Descuentos específicos por inventarios.
+06 -Descuento por monto en compras.
+07 -Descuento de Temporada.
+08 -Descuento por actualzación de productos /servcios.
+09 - Descuento general.
+10 - Descuento por volumen.
+11 - Otro descuento.",optional,none,
+l10n_co_act_fields.account_act_fields_106,COD106,Monto Base ,"result = abs(record_1.get('total', 0))",Valor Base para calcular el descuento el cargo,required,none,
+l10n_co_act_fields.account_act_fields_107,COD107,Porcentaje del cargo o descuento ,"result = abs(record_1.get('rate', 0))",Porcentaje de descuento,condition,none,
+l10n_co_act_fields.account_act_fields_108,COD108,Monto del cargo o descuento ,"result = abs(record_1.get('amount', 0))",Valor del Cargo o Descuento.,condition,none,
+l10n_co_act_fields.account_act_fields_109,COD109,Descripción del cargo o descuento ,result = '1' ,Texto libre para informar el descuento.,condition,none,
+l10n_co_act_fields.account_act_fields_110,COD110,,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_111,COD111,Calificador del tipo de texto. ,result = 'NUBL' ,"NUBL - Indica que el texto se incluirá dentro del archivo UBL. 
+ZZ - Genérico",optional,none,
+l10n_co_act_fields.account_act_fields_112,COD112,Texto Libre ,result = account.ei_ubl_note,Texto Libre de 15 a 5000 posiciones.,optional,none,
+l10n_co_act_fields.account_act_fields_113,COD113,Cantidad,result = int(record.quantity),Cantidad de producto o servicio facturadas,required,none,
+l10n_co_act_fields.account_act_fields_114,COD114,Unidad de Medida,"result = record.product_id.l10n_co_unit_measure_id.code if record.product_id.l10n_co_unit_measure_id else ""94""",Corresponde a uno de los valores de la tabla de unidades de medida 6.3.6,required,none,
+l10n_co_act_fields.account_act_fields_115,COD115,Descripción,result = record.name,Descripcion de producto o servicio,required,none,
+l10n_co_act_fields.account_act_fields_116,COD116,Valor Unitario,result = record.price_unit,Corresponde al valor del precio referencia del ítem que se da como muestra o regalo sin valor comercial,required,none,
+l10n_co_act_fields.account_act_fields_117,COD117,Valor Total de la Línea,result = record.price_subtotal,Cantidad x Precio Unidad menos descuentos más recargos que apliquen para la línea.,required,none,
+l10n_co_act_fields.account_act_fields_118,COD118,Cantidad Solicitada,result = '' ,Cantidad de productos activos,optional,none,
+l10n_co_act_fields.account_act_fields_119,COD119,Número Interno ,result = record.product_id.default_code,Codigo de producto interno,optional,none,
+l10n_co_act_fields.account_act_fields_120,COD120,Número Cliente,result = '' ,Codigo de producto del cliente,optional,none,
+l10n_co_act_fields.account_act_fields_121,COD121,Código EAN ,result = 'null' ,Codigo EAN,optional,none,
+l10n_co_act_fields.account_act_fields_122,COD122,Código UPC,result = 'null' ,Codigo UPC,optional,none,
+l10n_co_act_fields.account_act_fields_123,COD123,Número Orden de Compra,result = '' ,Numero de Orden de compra,optional,none,
+l10n_co_act_fields.account_act_fields_124,COD124,Posición Orden de Compra ,result = '' ,Posicion de orden de compra,optional,none,
+l10n_co_act_fields.account_act_fields_125,COD125,Color ,result = '' ,Color,optional,none,
+l10n_co_act_fields.account_act_fields_126,COD126,Estilo ,result = '' ,Estilo,optional,none,
+l10n_co_act_fields.account_act_fields_127,COD127,Talla ,result = '' ,Talla,optional,none,
+l10n_co_act_fields.account_act_fields_128,COD128,Modelo ,result = record.product_id.l10n_co_model or '' ,Requerido si la factura es Internacional.,optional,none,
+l10n_co_act_fields.account_act_fields_129,COD129,LOTE,result = '' ,LOTE,optional,none,
+l10n_co_act_fields.account_act_fields_130,COD130,VENCE,result = '' ,VENCE,optional,none,
+l10n_co_act_fields.account_act_fields_131,COD131,REGISTRO CUM,result = '' ,REGISTRO CUM,optional,none,
+l10n_co_act_fields.account_act_fields_132,COD132,Código del tipo de precio informado,result = '',Se vuelve mandatorio cuando se trata de un obsequio o es un artículo de muestra.Ver lista de valores posibles en 6.3.10. ,optional,none,
+l10n_co_act_fields.account_act_fields_133,COD133,Unidades Por Empaque,result = '' ,Indica el número de Piezas por Empaque,optional,none,
+l10n_co_act_fields.account_act_fields_134,COD134,Marca,result = record.product_id.l10n_co_brand or '' ,Requerido si la factura es Internacional.,condition,none,
+l10n_co_act_fields.account_act_fields_135,COD135,Clave Código de Producto Utilizado,result = '999' ,,required,none,
+l10n_co_act_fields.account_act_fields_136,COD136,Código de Producto,result = record.product_id.default_code,Referencia Interna del producto. Diligenciar campo en formulario de productos,required,none,
+l10n_co_act_fields.account_act_fields_137,COD137,Costo Muestras Comerciales,result = '' ,Corresponde al valor del precio referencia del ítem que se da como muestra o regalo sin valor comercial,optional,none,
+l10n_co_act_fields.account_act_fields_138,COD138,"Código del vendedor correspondiente al
+artículo",result = '' ,"Código del vendedor correspondiente al
+artículo",optional,none,
+l10n_co_act_fields.account_act_fields_139,COD139,Código del vendedor correspondiente a una subespecificación del artículo,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_140,COD140,Calificador del tipo de texto. ,result = '' ,"AAA - Indicador de Texto genérico, no se incluye en el UBL.                                  ZZ - Genérico. 
+AUI - Obligatorio de informar para el caso de facturas por contratos de servicio tipo AIU. ",optional,none,
+l10n_co_act_fields.account_act_fields_141,COD141,Texto Libre ,result = '' ," Si el calificador es AUI, el texto debe inciar con: “Contrato de servicios AIU por concepto de:” El contribuyente debe incluir el objeto del contrato facturado",optional,none,
+l10n_co_act_fields.account_act_fields_142,COD142,Calificador del cargo o descuento ,result = '' ,"C-Cargo
+D- Descuento",optional,none,
+l10n_co_act_fields.account_act_fields_143,COD143,Indicador Cargos y/o Descuentos,result = '' ,"true -Indica si se trata de una imposición 
+false - o de una deducción",required,none,
+l10n_co_act_fields.account_act_fields_144,COD144,Tipo de cargo o descuento ,result = '' ,,condition,none,
+l10n_co_act_fields.account_act_fields_145,COD145,Valor Base para calcular el descuento el cargo,result = '' ,Monto original a descontar o a realizarle un descuento,condition,none,
+l10n_co_act_fields.account_act_fields_146,COD146,Porcentaje del cargo o descuento ,result = '' ,Porcentaje aplicado en decimales,condition,none,
+l10n_co_act_fields.account_act_fields_147,COD147,Monto del cargo o descuento ,result = '' ,Valor numérico del Cargo el Descuento,condition,none,
+l10n_co_act_fields.account_act_fields_148,COD148,Descripción del cargo o descuento ,result = '' ,Texto libre para describir el cargo o descuento a nivel de ítem,optional,none,
+l10n_co_act_fields.account_act_fields_149,COD149,Monto Total Impuesto,"result = record_1.get('amount', 0)","Suma elementos ../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount 
+Suma elementos.. C<c:WithholdingTaxTotal/TaxSubtotal/cbc:TaxAmount",required,none,
+l10n_co_act_fields.account_act_fields_150,COD150,Base Imponible sobre la que se calcula el valor del impuesto.,"result = record_1.get('base', 0)","El valor de la Base Imponible de la línea es igual al producto de Cantidad x Precio Unidad menos Descuentos más Recargos que apliquen para la línea. Nota: En las operaciones Excluidas, como no hay tributo, NO se informa la base.",required,none,
+l10n_co_act_fields.account_act_fields_151,COD151,Valor del Impuesto,"result = record_1.get('amount', 0)", Es el producto del porcentaje aplicado sobre la base imponible,required,none,
+l10n_co_act_fields.account_act_fields_152,COD152,Unidad de Medida del Impuesto,result = '' ,Usado en el caso de que el tributo es un valor fijo por unidad tributada: informar el valor del tributo por unidad tributada. Por ejemplo el impuesto de consumo a las bolsas o los impuestos a los combustibles,optional,none,
+l10n_co_act_fields.account_act_fields_153,COD153,Identificación de la unidad de medida,result = '' ,Corresponde a uno de los valores de la tabla de unidades de medida 6.3.6.,condition,none,
+l10n_co_act_fields.account_act_fields_154,COD154,Valor del Impuesto por Unidad,result = '0.00',"Es el valor nominal del tibuto por unidad
+Rechazo si el elemento cbcBaseUnitMeasure NO es infomado.",condition,none,
+l10n_co_act_fields.account_act_fields_155,COD155,Tarifa del Impuesto,"result = record_1.get('description', '').replace('%', '').replace(' ', '') if record_1.get('name', '') == 'ReteIVA' else record_1.get('rate', 0)","En el caso de que el impuesto sea un porcentaje del valor tributable: informar la tarifa (porcentaje) a ser aplicada a la base imponible
+El valor debe corresponder a los presentados en la tabla de tarifas 6.3.8, para los tributos que figuren en dicha tabla.",condition,none,
+l10n_co_act_fields.account_act_fields_156,COD156,Clave de Impuesto,"result = record_1.get('code', '01')",Ver lista de valores posibles en 6.2.2,required,none,
+l10n_co_act_fields.account_act_fields_157,COD157,Nombre del Impuesto,"result = record_1.get('name', '')",Ver lista de valores posibles en 6.2.2,required,none,
+l10n_co_act_fields.account_act_fields_158,COD158,Monto Total Impuesto Retenidos,"result = abs(record_1.get('amount', 0))","Suma elementos ../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount 
+Suma elementos.. C<c:WithholdingTaxTotal/TaxSubtotal/cbc:TaxAmount",required,none,
+l10n_co_act_fields.account_act_fields_159,COD159,Base Imponible sobre la que se calcula el valor del impuesto.,"result = ((record_1.get('base', 0)*19)/100)  if record_1.get('name', '') == 'ReteIVA' else record_1.get('base', 0)","El valor de la Base Imponible de la línea es igual al producto de Cantidad x Precio Unidad menos Descuentos más Recargos que apliquen para la línea. Nota: En las operaciones Excluidas, como no hay tributo, NO se informa la base.",required,none,
+l10n_co_act_fields.account_act_fields_160,COD160,Valor del Impuesto,"result = abs(record_1.get('amount', 0))", Es el producto del porcentaje aplicado sobre la base imponible,required,none,
+l10n_co_act_fields.account_act_fields_161,COD161,Tarifa  del Impuesto,"result = record_1.get('description', '').replace('%', '').replace(' ', '') if record_1.get('name', '') == 'ReteIVA' else abs(record_1.get('rate', 0))",En el caso de que el tributo es una porcentaje del valor tributable: informar la tarifa (porcentaje) a ser aplicada a la base imponible,condition,none,
+l10n_co_act_fields.account_act_fields_162,COD162,Clave del Impuesto,"result = record_1.get('code', '06')",Ver lista de valores posibles en 6.2.2,required,none,
+l10n_co_act_fields.account_act_fields_163,COD163,Nombre del Impuesto,"result = record_1.get('name', '')",Ver lista de valores posibles en 6.2.2,required,none,
+l10n_co_act_fields.account_act_fields_164,COD164,Nombre de la Característica,result = '' ,"Característica que quiere informar del ítem, por ejemplo (Uso Vehículo)",required,none,
+l10n_co_act_fields.account_act_fields_165,COD165,Valor de la carcterística,result = '' ,"Valor de la característica que se quiere informar, por ejemplo (Particular)",required,none,
+l10n_co_act_fields.account_act_fields_166,COD166,NIT del Mandante,result = '' ,,required,none,
+l10n_co_act_fields.account_act_fields_167,COD167,Digto verificador del mandante.,result = '0' ,,required,none,
+l10n_co_act_fields.account_act_fields_168,COD168,ID,"result = record.get('payment_id', 0)",Identificación del Pago,required,none,
+l10n_co_act_fields.account_act_fields_169,COD169,Valor del pago,"result = record.get('amount', 0)",,required,none,
+l10n_co_act_fields.account_act_fields_170,COD170,Moneda,"result = record.get('currency_code', 0)",6.3.3. Moneda ,required,none,
+l10n_co_act_fields.account_act_fields_171,COD171,Fecha de Recepción del Pago,"result = record.get('date', 0)",,required,none,
+l10n_co_act_fields.account_act_fields_172,COD172,Fecha de Realización del Pago.,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_173,COD173,Hora de Realización del Pago.,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_174,COD174,Instrucciones del Pago,result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_175,COD175,Monto SubTotal  por tipo de Impuesto,"result = record.get('amount', 0) or '0.00'","Suma elementos ../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount 
+",required,none,
+l10n_co_act_fields.account_act_fields_176,COD176,Base Imponible sobre la que se calcula el valor del tributo,"result = ((record.get('base', 0)*19)/100)  if record.get('name', '') == 'ReteIVA' else record.get('base', 0)","Cuando el impuesto es un porcentaje del valor tributable: informar la base imponible en valor monetario
+Cuando el impuesto es un valor fijo por unidad tributada: informar el número de unidades tributadas",required,none,
+l10n_co_act_fields.account_act_fields_177,COD177,Valor del Impuesto: producto del porcentaje aplicado sobre la base imponible,"result = record.get('amount', 0)",,required,none,
+l10n_co_act_fields.account_act_fields_178,COD178,Unidad de Medida del Impuesto,result = '' ,Usado en el caso de que el tributo es un valor fijo por unidad tributada: informar el valor del tributo por unidad tributada. Por ejemplo el impuesto de consumo a las bolsas o los impuestos a los combustibles,condition,none,
+l10n_co_act_fields.account_act_fields_179,COD179,Identificación de la unidad de medida,result = '' ,6.3.5.1 Unidades de Cantidad,optional,none,
+l10n_co_act_fields.account_act_fields_180,COD180,Valor del Impuesto por Unidad,result = '0.00',"Es el valor nominal del tibuto por unidad
+Rechazo si el elemento cbcBaseUnitMeasure NO es infomado.",optional,none,
+l10n_co_act_fields.account_act_fields_181,COD181,Tarifa del Impuesto,"result = record.get('description', '').replace('%', '').replace(' ', '') if record.get('name', '') == 'ReteIVA' else abs(record.get('rate', 0))","En el caso de que el impuesto sea un porcentaje del valor tributable: informar la tarifa (porcentaje) a ser aplicada a la base imponible
+El valor debe corresponder a los presentados en la tabla de tarifas 6.3.8, para los tributos que figuren en dicha tabla.",condition,none,
+l10n_co_act_fields.account_act_fields_182,COD182,Clave de Impuesto,"result = record.get('code', '')",Ver lista de valores posibles en 6.2.2,required,none,
+l10n_co_act_fields.account_act_fields_183,COD183,Nombre del Impuesto,"result = record.get('name', '')",Ver lista de valores posibles en 6.2.2,required,none,
+l10n_co_act_fields.account_act_fields_184,COD184,Monto Total Impuesto,"result = abs(record.get('amount', 0))","Suma elementos ../cac:TaxTotal/TaxSubtotal/cbc:TaxAmount 
+Suma elementos.. C<c:WithholdingTaxTotal/TaxSubtotal/cbc:TaxAmount",required,none,
+l10n_co_act_fields.account_act_fields_185,COD185,Base Imponible sobre la que se calcula el valor del tributo,"result = ((record.get('base', 0)*19)/100)  if record.get('name', '') == 'ReteIVA' else record.get('base', 0)","Cuando el impuesto es un porcentaje del valor tributable: informar la base imponible en valor monetario
+Cuando el impuesto es un valor fijo por unidad tributada: informar el número de unidades tributadas",required,none,
+l10n_co_act_fields.account_act_fields_186,COD186,Valor del Impuesto: producto del porcentaje aplicado sobre la base imponible,"result =  abs(record.get('amount', 0))",,required,none,
+l10n_co_act_fields.account_act_fields_187,COD187,Tarifa del Impuesto,"result = record.get('description', '').replace('%', '').replace(' ', '') if record.get('name', '') == 'ReteIVA' else abs(record.get('rate', 0))","En el caso de que el impuesto sea un porcentaje del valor tributable: informar la tarifa (porcentaje) a ser aplicada a la base imponible
+El valor debe corresponder a los presentados en la tabla de tarifas 6.3.9, para los tributos que figuren en dicha tabla.",condition,none,
+l10n_co_act_fields.account_act_fields_188,COD188,Clave de Impuesto,"result = record.get('code', '')",Ver lista de valores posibles en 6.2.2 Tributos ,required,none,
+l10n_co_act_fields.account_act_fields_189,COD189,Nombre del Impuesto,"result = record.get('name', '')",Ver lista de valores posibles en 6.2.2 Tributos ,required,none,
+l10n_co_act_fields.account_act_fields_190,COD190,ID,result = '' ,Número de Línea (Contador),optional,none,
+l10n_co_act_fields.account_act_fields_191,COD191,Método de pago de costes de transporte,result = '' ,"Texto libre acordado por las partes para especificar la forma de pago del transporte (Portes Debidos, Portes Pagados, etc.)",optional,none,
+l10n_co_act_fields.account_act_fields_192,COD192,Condciones de Entrega,result = '' ,Condiciones de Entrega: Obligatorio cuando sea una factura de Exportación. Ver lista de valores en 6.3.7,condition,none,
+l10n_co_act_fields.account_act_fields_193,COD193,Calificador,result = str(account.ei_type_document_id.prefix),"ND -Nota Débito
+NC - Nota Crédito",condition,none,
+l10n_co_act_fields.account_act_fields_194,COD194,Identifica la sección de la factura original a la cual se aplica la corrección,result = str(account.ei_origin_id.name),,optional,none,
+l10n_co_act_fields.account_act_fields_195,COD195,Código de descripción de la corrección,"result = (account.description_code_debit and account.description_code_debit.code) or ''
+if account.ei_type_document_id.prefix == 'nc':
+    result = account.description_code_credit.code","Nota Débito: Ver lista de valores posibles en 6.2.5
+Nota Crédito:Ver lista de valores posibles en 6.2.6",optional,none,
+l10n_co_act_fields.account_act_fields_196,COD196,Descripción de la naturaleza de la corrección,"result = (account.description_code_debit and account.description_code_debit.name) or ''
+if account.ei_type_document_id.prefix == 'nc':
+    result = account.description_code_credit.name",Texto libre de 20 a 5000 caracteres.,required,none,
+l10n_co_act_fields.account_act_fields_197,COD197,TFactura ,result = '' ,"1 - FACTURA DE ATENCION
+2.- FACTURA VENTA NORMAL",optional,none,
+l10n_co_act_fields.account_act_fields_198,COD198,Fecha Ingreso,result = '' ,FORMATO FECHA ,optional,none,
+l10n_co_act_fields.account_act_fields_199,COD199,Hora Ingreso,result = '' ,Texto libre de 0 a 250 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_200,COD200,No. Historia,result = '' ,Texto libre de 0 a 30 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_201,COD201,Fecha Egreso,result = '' ,FORMATO FECHA ,optional,none,
+l10n_co_act_fields.account_act_fields_202,COD202,Hora Egreso,result = '' ,Texto libre de 0 a 15 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_203,COD203,No. Autorizacion,result = '' ,Texto libre de 0 a 60 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_204,COD204,Paciente,result = '' ,Texto libre de 0 a 250 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_205,COD205,Documento,result = '' ,Texto libre de 0 a 30 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_206,COD206,Sexo,result = '' ,Texto libre de 1,optional,none,
+l10n_co_act_fields.account_act_fields_207,COD207,Fecha Nacimiento,result = '' ,FORMATO FECHA ,optional,none,
+l10n_co_act_fields.account_act_fields_208,COD208,Edad,result = '' ,Texto libre de 0 a 15 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_209,COD209,Dirección,result = '' ,Texto libre de 0 a 250 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_210,COD210,Teléfono,result = '' ,Texto libre de 0 a 15 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_211,COD211,Profesional,result = '' ,Texto libre de 0 a 250 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_212,COD212,Regimen,result = '' ,Texto libre de 0 a 60 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_213,COD213,Nivel,result = '' ,Texto libre de 0 a 20 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_214,COD214,Contrato,result = '' ,Texto libre de 0 a 200 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_215,COD215,Dx Principal,result = '' ,Texto libre de 0 a 250 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_216,COD216,Dx Relacionados,result = '' ,Texto libre de 0 a 250 caracteres.,optional,none,
+l10n_co_act_fields.account_act_fields_217,COD217,Productos,result = account.invoice_line_ids,,optional,none,
+l10n_co_act_fields.account_act_fields_218,COD218,Calificador (Emisor),result = 'SE',"SE -  Seller (Emisor)
+CO - Shareholder (Consorcio)
+BY - Buyer (Receptor)
+SU - Supplier (Proveedor) 
+ST - Ship to (Direccion de entrega) 
+SF - Ship from (Direccion de origen) 
+OE - Owner (Propietario) 
+FX - Receiver (Destinatario) 
+TR - Delivery (Transportista).",required,none,
+l10n_co_act_fields.account_act_fields_219,COD219,NIT o Identificador Fiscal  (Emisor),"a_string = company.vat or ''
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[0]","Los datos que se colouen en esta seccion dependeran 
+directamente del calificador
+
+
+
+
+
+
+
+",required,none,
+l10n_co_act_fields.account_act_fields_220,COD220,Código Interno  (Emisor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_221,COD221,Código Externo  (Emisor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_222,COD222,Código Global  (Emisor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_223,COD223,Nombre  (Emisor),result = company.name,,required,none,
+l10n_co_act_fields.account_act_fields_224,COD224,Line  (Emisor),result = company.street,,required,none,
+l10n_co_act_fields.account_act_fields_225,COD225,Departamento  (Emisor),result = company.state_id.name,,required,none,
+l10n_co_act_fields.account_act_fields_226,COD226,Subdivision  (Emisor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_227,COD227,Municipio  (Emisor),result = company.town_id.name,,optional,none,
+l10n_co_act_fields.account_act_fields_228,COD228,Codigo de Pais  (Emisor),result = company.country_id.code,,required,none,
+l10n_co_act_fields.account_act_fields_229,COD229,Pais  (Emisor),result = company.country_id.name,,optional,none,
+l10n_co_act_fields.account_act_fields_230,COD230,Contacto Nombre  (Emisor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_231,COD231,Contacto Teléfono  (Emisor),result = company.phone ,,optional,none,
+l10n_co_act_fields.account_act_fields_232,COD232,Contacto Email  (Emisor),result = company.email ,,optional,none,
+l10n_co_act_fields.account_act_fields_233,COD233,Cedula Juridica  (Emisor),result = '' ,,optional,none,
+l10n_co_act_fields.account_act_fields_234,COD234,Dígito Verificador del NIT  (Emisor),"a_string = company.vat or ''
+b_string = company.l10n_co_verification_code
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[1] if len(a_string.split('-',1)) > 1 and a_string.split('-',1)[1] else b_string",,condition,none,
+l10n_co_act_fields.account_act_fields_235,COD235,Tipo de Organización Jurídica.  (Emisor),result = company.person_type,"1 - Persona Jurídica. 
+2 - Persona Natural. ",required,none,
+l10n_co_act_fields.account_act_fields_236,COD236,Clave Identificador Tributario.  (Emisor),result = '01' ,Identificador del Tipo de Impuesto. De acuerdo a los valores del Catálogo del numeral 6.2.2 en la columna Identificador.,required,none,
+l10n_co_act_fields.account_act_fields_237,COD237,Nombre Identificador Tributario.  (Emisor),result = 'IVA' ,Nombre del Tipo de Impuesto.  De acuerdo a los valores del Catálogo del numeral 6.2.2 en la columna Nombre.,required,none,
+l10n_co_act_fields.account_act_fields_238,COD238,Responsabilidades Fiscales  (Emisor),result = 'O-23' ,Este elemento representa el tipo de obligación Fiscal. Ver lista de valores posiblen en el numeral 6.2.7,required,none,
+l10n_co_act_fields.account_act_fields_239,COD239,Regimen Fiscal  (Emisor),result = '05',"48 Responsable del impuesto sobre de las ventas - IVA
+49 No responsable de IVA ",required,none,
+l10n_co_act_fields.account_act_fields_240,COD240,Código Departamento  (Emisor),result = company.divipola_state,Ver lista de valores posibles en el numeral Catalogo 6.4.2. Departamentos del Anexo Técnico.,required,none,
+l10n_co_act_fields.account_act_fields_241,COD241,Código de Municipio  (Emisor),result = company.divipola_town,Ver lista de valores posibles en el numeral 6.4.3. Municipios del Anexo Técnico.,required,none,
+l10n_co_act_fields.account_act_fields_242,COD242,Código Postal  (Emisor),result = company.zip,Ver lista de valores posibles en el numeral 6.4.4. Código Postal  del Anexo Técnico.,required,none,
+l10n_co_act_fields.account_act_fields_243,COD243,Código CIIU  (Emisor),result = company.ciiu.code,Identifica el código de actividad económica del emisor. Debe informar el código según lista CIIU. ,optional,none,
+l10n_co_act_fields.account_act_fields_244,COD244,Lenguaje utilizado en el nombre del País  (Emisor),result = 'es',"Para español, utilizar el literal “es”. Ver lista de valores posibles en el numeral 6.3.2, columna “ISO 639-1”",required,none,
+l10n_co_act_fields.account_act_fields_245,COD245,Porcentaje de los participantes del consorcio  (Emisor),result = '' ,Mandatorio si el DIR1 = CO,optional,none,
+l10n_co_act_fields.account_act_fields_246,COD246,Nota Adicional al Contacto  (Emisor),result = company.comment,Sirve para colocar Información adicional del Contacto del Emisor de la Factura.,optional,none,
+l10n_co_act_fields.account_act_fields_247,COD247,Tipo de Documento de Identidad.  (Emisor),result = company.document_type,,required,none,
+l10n_co_act_fields.account_act_fields_248,COD248,Número de Matrícula Mercantil  (Emisor),result = '',,optional,none,
+l10n_co_act_fields.account_act_fields_249,COD249,Informacion por producto (Impuestos),result = account.get_tax_invoice_line(),,optional,none,
+l10n_co_act_fields.account_act_fields_250,COD250,Impuestos Trasladados,result = record._get_taxes_by_type(retention=False),,optional,python,result = len(record._get_taxes_by_type(retention=False)) > 0
+l10n_co_act_fields.account_act_fields_251,COD251,Impuestos Retenidos,result = record._get_taxes_by_type(retention=True),,optional,python,result = len(record._get_taxes_by_type(retention=True)) > 0
+l10n_co_act_fields.account_act_fields_252,COD252,Validar Nota de C/D,,,condition,python,result = ((account.type == 'out_refund') or (account.type == 'out_invoice' and account.ei_type_document_id.id == account.env.ref('l10n_co_account_e_invoice.l10n_co_type_documents_6').id))
+l10n_co_act_fields.account_act_fields_253,COD253,Información de Impuestos Retenidos,result = account._get_dict_by_group(retention=True),,condition,python,result = account._get_total_type_retention() > 0
+l10n_co_act_fields.account_act_fields_254,COD254,Información de Impuestos Totales,result = account._get_dict_by_group(retention=False),,condition,python,result = account._get_total_type_transferred() >= 0
+l10n_co_act_fields.account_act_fields_255,COD255,Validar Cargos/Descuentos,result = record._get_surchange_discount_by_line(),,condition,python,result = record.discount != 0.0
+l10n_co_act_fields.account_act_fields_256,COD256,Validar textos generales,,,condition,python,"result = isinstance(account.ei_ubl_note, str) and len(account.ei_ubl_note) > 0"
+l10n_co_act_fields.account_act_fields_257,COD111-2,Calificador del tipo de texto. ,result = 'AAA' ,"NUBL - Indica que el texto se incluirá dentro del archivo UBL. 
+ZZ - Genérico",optional,none,
+l10n_co_act_fields.account_act_fields_258,COD112-2,Texto Libre ,result = account.company_id.header_regimen_activity + ' / ' + account.company_id.header_rate + ' / ' + account.company_id.header_decree,Texto Libre de 15 a 5000 posiciones.,optional,none,
+l10n_co_act_fields.account_act_fields_259,COD257,Indicador anticipos,result = account._get_advance_values(),,condition,python,result = len(account._get_advance_values()) > 0
+l10n_co_act_fields.account_act_fields_260,COD257,Indicador referencias,result = account.extra_ref_ids,,condition,python,result = (account.extra_ref_ids and len(account.extra_ref_ids) > 0) or False
+l10n_co_act_fields.account_act_fields_261,COD097-2,Calificador,result = record.custom_field_id.method_type,"OR- Orden de Referencia (UBL)
+NC - Nota de Crédito Relacionada  (UBL).
+ND - Nota de Débito Relacionada (UBL).
+DD - Documentos de Despacho (UBL).
+DR - Documentos de Recepción (UBL).
+RA - Referencias Adiconales (UBL).
+ON- Orden de Compra
+OV- Orden de Venta
+CO- Contrato
+GC- Grupo de Contrato
+IN- Factura
+RE- Remisión
+QR-Numero entrega",required,none,
+l10n_co_act_fields.account_act_fields_262,COD098-2,Número ,result = record.value,Numero del documento referenciado,required,none,
+l10n_co_act_fields.account_act_fields_263,COD099-2,Nombre de la referencia,result = record.custom_field_id.name,Tipo o descripcion del documento referenciado,required,none,
+l10n_co_act_fields.account_act_fields_264,COD100-2,Fecha de la referencia ,"result = account._get_ei_invoice_datetime_time(account.ei_invoice_datetime, '%Y-%m-%d')",Fecha del documento referenciado,required,none,
+l10n_co_act_fields.account_act_fields_265,COD101-2,Identficador Fiscal del Documento Relacionado.,result = '',CUDE o Cufe de los documentos relacionados.,condition,none,
+l10n_co_act_fields.account_act_fields_266,COD102-2,Código del Documento Referenca (DIAN),result = '',Indica el tipo de documento adicional que se está relacionando al documento de acuerdo al catálogo 6.1.4. Referencia a documentos no tributarios.,condition,none,

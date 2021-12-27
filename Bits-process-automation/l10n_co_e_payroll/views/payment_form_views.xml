@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- model.name search view -->
+    <record id="payment_way_form" model="ir.ui.view">
+        <field name="name">payment.way.form</field>
+        <field name="model">payment.way</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="code" required="True"/>
+                        <field name="name" string="Meaning" required="True"/>
+                    </group>
+                </sheet> 
+            </form>
+        </field>
+    </record>
+
+    <!-- model.name tree view -->
+    <record id="payment_way_tree" model="ir.ui.view">
+      <field name="name">payment.way.tree</field>
+      <field name="model">payment.way</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="name" string="Meaning"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="payment_way_form_actions">
+      <field name="name">Payment ways</field>
+      <field name="res_model">payment.way</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+      name="Payments"
+      id="menu_payments" 
+      parent="hr_payroll.menu_hr_payroll_configuration"
+      sequence="2"/>
+
+    <menuitem
+      action="l10n_co_e_payroll.payment_way_form_actions"
+      name="Payment way DIAN"
+      id="menu_payment_way" 
+      parent="l10n_co_e_payroll.menu_payments"
+      sequence="5"/>
+  </data>
+
+</odoo>

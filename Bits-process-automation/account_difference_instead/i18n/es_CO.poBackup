@@ -1,0 +1,149 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_difference_instead
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-03 15:00+0000\n"
+"PO-Revision-Date: 2021-02-03 15:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_difference_instead
+#: code:addons/account_difference_instead/models/account_difference_instead.py:0
+#, python-format
+msgid "/UNREALIZED_EXCHANGE_RATE/("
+msgstr "/DIFERENCIA EN CAMBIO NO REALIZADA/("
+
+#. module: account_difference_instead
+#: code:addons/account_difference_instead/models/account_payment.py:0
+#, python-format
+msgid "/UNREALIZED_EXCHANGE_RATE_CANCELLATION/("
+msgstr "/CANCELACIÓN DIFERENCIA EN CAMBIO NO REALIZADA/("
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Expenses - Unrealized exchange rate "
+"difference</span>"
+msgstr ""
+"<span class=\"o_form_label\">Gastos - Diferencia en cambio no realizada "
+"</span>"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Income - Unrealized exchange rate "
+"difference</span>"
+msgstr ""
+"<span class=\"o_form_label\">Ingresos - Diferencia en cambio no realizada "
+"</span>"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Journal - Unrealized exchange rate "
+"difference</span>"
+msgstr ""
+"<span class=\"o_form_label\">Diario - Diferencia en cambio no realizada "
+"</span>"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Vendors - Unrealized exchange rate "
+"difference</span>"
+msgstr ""
+"<span class=\"o_form_label\">Proveedores - Diferencia en cambio no realizada "
+"</span>"
+
+#. module: account_difference_instead
+#: model:ir.model.fields,field_description:account_difference_instead.field_account_move_line__bill_id
+msgid "Bill related"
+msgstr "Factura relacionada"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid "Choose a Journal for unrealized exchange rate difference"
+msgstr "Escoger un diario para la diferencia en cambio no realizada"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid "Choose an account for expenses"
+msgstr "Escoger una cuenta para gastos"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid "Choose an account for income"
+msgstr "Escoger una cuenta para ingresos"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid "Choose an account for ventors"
+msgstr "Escoger una cuenta para proveedores"
+
+#. module: account_difference_instead
+#: model:ir.model,name:account_difference_instead.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: account_difference_instead
+#: code:addons/account_difference_instead/models/res_config_settings.py:0
+#: model:ir.model.fields,field_description:account_difference_instead.field_res_config_settings__unrealized_exchange_expenses
+#, python-format
+msgid "Expenses - Unrealized exchange rate difference"
+msgstr "Gastos - Diferencia en cambio no realizada"
+
+#. module: account_difference_instead
+#: code:addons/account_difference_instead/models/res_config_settings.py:0
+#: model:ir.model.fields,field_description:account_difference_instead.field_res_config_settings__unrealized_exchange_income
+#, python-format
+msgid "Income - Unrealized exchange rate difference"
+msgstr "Ingresos - Diferencia en cambio no realizada"
+
+#. module: account_difference_instead
+#: code:addons/account_difference_instead/models/res_config_settings.py:0
+#: model:ir.model.fields,field_description:account_difference_instead.field_res_config_settings__unrealized_exchange_journal
+#, python-format
+msgid "Journal - Unrealized exchange rate difference"
+msgstr "Diario - Diferencia en cambio no realizada"
+
+#. module: account_difference_instead
+#: model:ir.model,name:account_difference_instead.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: account_difference_instead
+#: model:ir.model,name:account_difference_instead.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: account_difference_instead
+#: model:ir.model,name:account_difference_instead.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: account_difference_instead
+#: model:ir.actions.server,name:account_difference_instead.ir_cron_account_difference_instead_ir_actions_server
+#: model:ir.cron,cron_name:account_difference_instead.ir_cron_account_difference_instead
+#: model:ir.cron,name:account_difference_instead.ir_cron_account_difference_instead
+msgid "Unrealized exchange rate difference"
+msgstr "Diferencia en cambio no realizada"
+
+#. module: account_difference_instead
+#: model_terms:ir.ui.view,arch_db:account_difference_instead.account_account_niif_settings_view_form
+msgid "Unrealized exchange rate differences"
+msgstr "Diferencias en cambio no realizada"
+
+#. module: account_difference_instead
+#: code:addons/account_difference_instead/models/res_config_settings.py:0
+#: model:ir.model.fields,field_description:account_difference_instead.field_res_config_settings__unrealized_exchange_vendors
+#, python-format
+msgid "Vendors - Unrealized exchange rate difference"
+msgstr "Proveedores - Diferencia en cambio no realizada"

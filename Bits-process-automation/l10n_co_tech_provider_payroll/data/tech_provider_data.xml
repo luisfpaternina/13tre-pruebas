@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="l10n_co_tech_provider_payroll_line_headboard_01" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador HDR</field>
+            <field name="code">HDR</field>
+            <field name="description"></field>
+            <field name="sequence">0</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_02" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador EMP</field>
+            <field name="code">EMP</field>
+            <field name="description"></field>
+            <field name="sequence">10</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_03" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador TRA</field>
+            <field name="code">TRA</field>
+            <field name="description"></field>
+            <field name="sequence">20</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_04" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador PER</field>
+            <field name="code">PER</field>
+            <field name="description"></field>
+            <field name="sequence">30</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_41" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador NOV</field>
+            <field name="code">NOV</field>
+            <field name="description">Indica si existe alguna Novedad Contractual en el Documento Soporte de Pago de Nómina Electrónica o Nota de Ajuste de Documento Soporte de Pago de Nómina Electrónica del Trabajador en dicho Mes.</field>
+            <field name="sequence">35</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_1</field>
+            <field name="act_field_id"/>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_05" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador LGE</field>
+            <field name="code">LGE</field>
+            <field name="description"></field>
+            <field name="sequence">40</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_06" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador IGE</field>
+            <field name="code">IGE</field>
+            <field name="description"></field>
+            <field name="sequence">50</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_07" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador NOT</field>
+            <field name="code">NOT</field>
+            <field name="description"></field>
+            <field name="sequence">60</field>
+            <field name="level">0</field>
+            <field name="act_field_id"/>
+            <field name="cardinality">setting</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_08" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador PAG</field>
+            <field name="code">PAG</field>
+            <field name="description"></field>
+            <field name="sequence">70</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_09" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador FPA</field>
+            <field name="code">FPA</field>
+            <field name="description"></field>
+            <field name="sequence">80</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_10" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador DBA</field>
+            <field name="code">DBA</field>
+            <field name="description"></field>
+            <field name="sequence">90</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_11" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador DTR</field>
+            <field name="code">DTR</field>
+            <field name="description"></field>
+            <field name="sequence">100</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_12" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador HEX</field>
+            <field name="code">HEX</field>
+            <field name="description"></field>
+            <field name="sequence">110</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_13" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador VAC</field>
+            <field name="code">VAC</field>
+            <field name="description"></field>
+            <field name="sequence">120</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_14" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador VCO</field>
+            <field name="code">VCO</field>
+            <field name="description"></field>
+            <field name="sequence">130</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_15" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador PRI</field>
+            <field name="code">PRI</field>
+            <field name="description"></field>
+            <field name="sequence">140</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_16" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador CES</field>
+            <field name="code">CES</field>
+            <field name="description"></field>
+            <field name="sequence">150</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_17" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador INC</field>
+            <field name="code">INC</field>
+            <field name="description"></field>
+            <field name="sequence">160</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_18" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador LIC</field>
+            <field name="code">LIC</field>
+            <field name="description"></field>
+            <field name="sequence">170</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_19" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador BON</field>
+            <field name="code">BON</field>
+            <field name="description"></field>
+            <field name="sequence">180</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_20" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador AUX</field>
+            <field name="code">AUX</field>
+            <field name="description"></field>
+            <field name="sequence">190</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_21" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador HLE</field>
+            <field name="code">HLE</field>
+            <field name="description"></field>
+            <field name="sequence">200</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_22" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador OCO</field>
+            <field name="code">OCO</field>
+            <field name="description"></field>
+            <field name="sequence">210</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_23" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador COM</field>
+            <field name="code">COM</field>
+            <field name="description"></field>
+            <field name="sequence">220</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_24" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador BOO</field>
+            <field name="code">BOO</field>
+            <field name="description"></field>
+            <field name="sequence">230</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_25" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador COI</field>
+            <field name="code">COI</field>
+            <field name="description"></field>
+            <field name="sequence">240</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_26" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador PTE</field>
+            <field name="code">PTE</field>
+            <field name="description"></field>
+            <field name="sequence">250</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_27" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador ANT</field>
+            <field name="code">ANT</field>
+            <field name="description"></field>
+            <field name="sequence">260</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_28" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador DEV</field>
+            <field name="code">DEV</field>
+            <field name="description"></field>
+            <field name="sequence">270</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_1</field>
+        </record>
+
+
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_29" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador SAL</field>
+            <field name="code">SAL</field>
+            <field name="description"></field>
+            <field name="sequence">280</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_30" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador FPE</field>
+            <field name="code">FPE</field>
+            <field name="description"></field>
+            <field name="sequence">290</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_line_headboard_31" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador FSP</field>
+            <field name="code">FSP</field>
+            <field name="description"></field>
+            <field name="sequence">300</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_32" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador SIN</field>
+            <field name="code">SIN</field>
+            <field name="description"></field>
+            <field name="sequence">310</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_33" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador SAN</field>
+            <field name="code">SAN</field>
+            <field name="description"></field>
+            <field name="sequence">320</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_34" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador LIB</field>
+            <field name="code">LIB</field>
+            <field name="description"></field>
+            <field name="sequence">330</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_35" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador PAT</field>
+            <field name="code">PAT</field>
+            <field name="description"></field>
+            <field name="sequence">340</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_36" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador ANI</field>
+            <field name="code">ANI</field>
+            <field name="description"></field>
+            <field name="sequence">350</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_37" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador ODE</field>
+            <field name="code">ODE</field>
+            <field name="description"></field>
+            <field name="sequence">360</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_n</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_38" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador DED</field>
+            <field name="code">DED</field>
+            <field name="description"></field>
+            <field name="sequence">370</field>
+            <field name="level">0</field>
+            <field name="cardinality">0_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_39" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador RES</field>
+            <field name="code">RES</field>
+            <field name="description"></field>
+            <field name="sequence">380</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_40" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador FOO</field>
+            <field name="code">FOO</field>
+            <field name="description"></field>
+            <field name="sequence">390</field>
+            <field name="level">0</field>
+            <field name="cardinality">1_1</field>
+        </record>
+        <record id="l10n_co_tech_provider_payroll_line_headboard_42" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador REP</field>
+            <field name="code">REP</field>
+            <field name="description"></field>
+            <field name="sequence">29</field>
+            <field name="level">0</field>
+            <field name="cardinality">setting</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_payroll_01" model="l10n_co.tech.provider">
+            <field name="name">Facturaxion Nomina Electronica</field>
+            <field name="code">BTS</field>
+            <field name="file_separator">|</field>
+            <field name="username">USR_WS_BTS001</field>
+            <field name="password">BTS001</field>
+            <field name="url_upload">http://169.60.157.172:8093/Services/NominaServices.asmx?wsdl</field>
+            <field name="url_download">http://169.60.157.172:8093/Services/NominaServices.asmx?wsdl</field>
+            <field name="file_extension">txt</field>
+            <field name="num_doc_attachs">1</field>
+            <field name="maximum_megabytes">10</field>
+            <field name="_type">payroll</field>
+            <field name="connection_adapter">ApiConnectionRequestFacturaxionPayroll</field>
+            <field name="file_adapter">AdapterFacturaxion</field>
+            <field eval="[(6, 0, [
+                    ref('l10n_co_tech_provider_payroll_line_headboard_01'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_02'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_03'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_04'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_41'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_05'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_06'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_07'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_08'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_09'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_10'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_11'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_12'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_13'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_14'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_15'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_16'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_17'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_18'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_19'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_20'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_21'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_22'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_23'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_24'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_25'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_26'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_27'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_28'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_29'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_30'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_31'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_32'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_33'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_34'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_35'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_36'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_37'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_38'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_39'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_40'),
+                    ref('l10n_co_tech_provider_payroll_line_headboard_42')])]"
+                   name="line_ids" />
+        </record>
+    </data>
+</odoo>

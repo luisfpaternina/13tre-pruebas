@@ -1,0 +1,24 @@
+<odoo>
+  <data>
+    <record id="hr_payroll_structure_form_view" model="ir.ui.view">
+      <field name="name">hr.payroll.structure.form.view</field>
+      <field name="model">hr.payroll.structure</field>
+      <field name="inherit_id" ref="hr_payroll.view_hr_employee_grade_form"/>
+      <field name="arch" type="xml">
+          <xpath expr="//form/sheet/notebook/page[@name='salary_rules']" position="after">
+            <page name="structure_entries" string="Structure Entries">
+              <group>
+                  <group>
+                    <label for="sequence_number_next"/>
+                    <div>
+                        <field name="sequence_number_next" style="padding-right: 1.0em"/>
+                        <field name="sequence_id"/>
+                    </div>
+                </group>
+              </group>
+            </page>
+          </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

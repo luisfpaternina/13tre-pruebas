@@ -1,0 +1,1415 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_account_e_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-30 00:04+0000\n"
+"PO-Revision-Date: 2021-03-29 19:21-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Localization Taxes</span>"
+msgstr "<span class=\"o_form_label\">Impuestos de localización</span>"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.support_files_send_wizard_form
+msgid "<strong>Attention! </strong>"
+msgstr "<strong>Atención! </strong>"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_move__invoice_status__accepted
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Revocación de movimiento en cuenta"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Activate required tech provider with invoice action post"
+msgstr ""
+"Activar el proveedor tecnológico requerido con la acción de publicación"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_group__active
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__active
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__active
+msgid "Active"
+msgstr "Activado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__active_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__active_tech_provider
+msgid "Active Tech Provider"
+msgstr "Active el proveedor tecnológico"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "Add an amount with letters..."
+msgstr "Añadir cantidad con letras..."
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__ra
+msgid "Additional References (UBL)"
+msgstr "Referencias adicionales (UBL)"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__advances_line_ids
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__extra_ref_ids
+msgid "Advances Items"
+msgstr "Anticipos"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move_line__amount_to_show
+msgid "Amount"
+msgstr "Cantidad"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_amount_text
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "Amount with letters"
+msgstr "Importe con letras"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "An error occurred during the request"
+msgstr "Se ha producido un error durante la solicitud"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_application_response_base64_bytes
+msgid "Api response"
+msgstr "Respuesta de Api"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_dian_response_base64_bytes
+msgid "Api response DIAN"
+msgstr "Api respuesta DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__applicable_tax
+msgid "Applicable Tax"
+msgstr "Impuesto aplicable"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_product__l10n_co_foreign_client_applies
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_template__l10n_co_foreign_client_applies
+msgid "Apply for foreign client"
+msgstr "Aplica para cliente extranjero"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__attachment_ids
+msgid "Attach a file"
+msgstr "Adjuntar un archivo"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Bills"
+msgstr "Facturas"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Bits - Colombian Electronic Invoicing"
+msgstr "Bits - Facturación Electrónica Colombiana"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_product__brand
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_product__l10n_co_brand
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_template__brand
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_template__l10n_co_brand
+msgid "Brand"
+msgstr "Marca"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__trade_name
+msgid "Business name"
+msgstr "Nombre de Negocio"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__template_code__01
+msgid "CGEN03"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__template_code__02
+msgid "CGEN04"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid ""
+"CUDE/CUFE: %s<br/>Transaction No: %s<br/>No Document: %s<br/>Description: "
+"%s<br/>"
+msgstr ""
+"CUDE/CUFE: %s<br/>Transacción No: %s<br/>No Documento: %s<br/>Descripción: "
+"%s<br/>"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__cufe_cude_ref
+msgid "CUFE/CUDE"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.support_files_send_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__template_code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__template_code
+msgid "Colombia Template Code"
+msgstr "Código de Plantilla de Colombia"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_l10n_co_payment_option
+msgid "Colombian Payment Options"
+msgstr "Opciones de Pago De Colombia"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "Connection error:<br/>%s"
+msgstr "Error de conexión :<br/>%s"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__08
+msgid "Consortium"
+msgstr "Consorcio"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__co
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__gc
+msgid "Contract group"
+msgstr "Grupo de contrato"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "Correct operation of the query to the asynchronous web service"
+msgstr "Correcta operación de la consulta del servicio web asíncrono"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__count_tax
+msgid "Count Tax"
+msgstr "Cantidad de impuesto"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__create_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__create_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_description_code__type__credit
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_move_reversal___type__credit_note
+msgid "Credit Note"
+msgstr "Nota de crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__description_code_credit
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move_reversal__description_code_credit
+msgid "Credit Note Concept"
+msgstr "Concepto de nota de crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Credit Notes"
+msgstr "Notas Crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__cufe_algorithm
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__cufe_algorithm
+msgid "Cufe Algorithm"
+msgstr "Algoritmo de Cufe"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__custom_field_id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__custom_field_id
+msgid "Custom Field"
+msgstr "Campos personalizados"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.l10n_co_custom_fields_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.support_files_send_wizard_form
+msgid "Custom Fields"
+msgstr "Campos personalizados"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_product__customs_code
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_template__customs_code
+msgid "Customs Code"
+msgstr "Código cliente"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__code
+msgid "DIAN Fiscal Responsibility Code"
+msgstr "Código de Responsabilidad Fiscal DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__name
+msgid "DIAN Fiscal Responsibility Meaning"
+msgstr "Responsabilidad Fiscal Significado DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice._l10n_co_account_journal_form_inherit
+msgid "DIAN Settings"
+msgstr "Configuración de DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__operation_type
+msgid "DIAN operation type"
+msgstr "Tipo de operación DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/dian_fiscal_responsability_line.py:0
+#: model:ir.model,name:l10n_co_account_e_invoice.model_dian_fiscal_responsability_line
+#, python-format
+msgid "DIAN tax matrix management"
+msgstr "Gestión de la matriz fiscal DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_date_currency_change
+msgid "Date from"
+msgstr "Fecha inicial"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_description_code__type__debit
+msgid "Debit"
+msgstr "Débito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_journal__debit_note
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__debit_note
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_move_reversal___type__debit_note
+msgid "Debit Note"
+msgstr "Nota de débito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__description_code_debit
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move_reversal__description_code_debit
+msgid "Debit Note Concept"
+msgstr "Concepto de nota de débito"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Debit Notes"
+msgstr "Notas Débito"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "Debit/Credit notes"
+msgstr "Notas de débito/crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__account_sale_tax_ids
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__sale_tax_ids
+msgid "Default Sale Tax"
+msgstr "Impuesto aplicable"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Default Sales Tax"
+msgstr "Impuestos aplicable"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Default sales tax for products"
+msgstr "Impuestos por defecto para productos"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__qr
+msgid "Delivery number"
+msgstr "Número de entrega"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_l10n_co_description_code
+msgid "Descriptions code for credit notes"
+msgstr "Código descripciones  notas de crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.act_window,name:l10n_co_account_e_invoice.dian_fiscal_responsability_action_window
+#: model:ir.ui.menu,name:l10n_co_account_e_invoice.dian_fiscal_responsability_menu_1_list
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.dian_responsibility_view_form
+msgid "Dian Fiscal Responsibility"
+msgstr "Responsabilidad Fiscal DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_attached_document_base64_bytes
+msgid "Dian validation voucher"
+msgstr "Comprobante de validación Dian"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__is_direct_payment
+msgid "Direct Payment from Colombia"
+msgstr "Pago directo desde Colombia"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__dd
+msgid "Dispatch Documents (UBL)"
+msgstr "Documentos de despecho (UBL)"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__display_name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_origin_id
+msgid "Document Reference"
+msgstr "Referencia del documento"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move_reversal___type
+msgid "Document Type"
+msgstr "Tipo de documento"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_l10n_co_type_documents
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_type_document_id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__type
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__type
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__type
+msgid "Document type"
+msgstr "Tipo de documento"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.act_window,name:l10n_co_account_e_invoice.l10n_co_custom_fields_action_window
+#: model:ir.ui.menu,name:l10n_co_account_e_invoice.l10n_co_custom_fields_menu_1_list
+msgid "EI Custom Fields"
+msgstr "Campos personalizados"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_app_resp_file_name
+msgid "Ei App Resp File Name"
+msgstr "Ei App Resp Nombre de archivo"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_dian_document_file_name
+msgid "Ei Dian Document File Name"
+msgstr "Ei Nombre del archivo de documento de Dian"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_dian_resp_file_name
+msgid "Ei Dian Resp File Name"
+msgstr "Ei Nombre de archivo Dian Resp"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_serie
+msgid "Ei Serie"
+msgstr "Serie"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_xml_bytes
+msgid "Ei Xml Bytes"
+msgstr "Xml Bytes"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_folio
+msgid "Ei invoice"
+msgstr "Ei facturación"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.ui.menu,name:l10n_co_account_e_invoice.menu_l10n_co_root
+msgid "Electronic Invoice"
+msgstr "Factura electrónica"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__invoice_status
+msgid "Electronic Invoice Status"
+msgstr "Estado de la factura electrónica"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_invoice_datetime
+msgid "Electronic Invoice datetime"
+msgstr "Fecha y hora de Factura Electrónica"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.support_files_send_wizard_form
+msgid "Electronic billing vouchers"
+msgstr "Comprobantes de facturación electrónica"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "Electronic invoice submission.<br/>"
+msgstr "Envío de factura electrónica.<br/>"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_errors_messages
+msgid "Error messages"
+msgstr "Error de mensajes"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__03
+msgid "Excluded and Exempt"
+msgstr "Excluida y exenta"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__04
+msgid "Export"
+msgstr "Exportar"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.server,name:l10n_co_account_e_invoice.ir_cron_get_document_invoice_ir_actions_server
+#: model:ir.cron,cron_name:l10n_co_account_e_invoice.ir_cron_get_document_invoice
+#: model:ir.cron,name:l10n_co_account_e_invoice.ir_cron_get_document_invoice
+msgid "FE: Get documents for invoices"
+msgstr "FE: Obtener documentos para facturas"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.server,name:l10n_co_account_e_invoice.ir_cron_get_status_inquiry_deadline_ir_actions_server
+#: model:ir.cron,cron_name:l10n_co_account_e_invoice.ir_cron_get_status_inquiry_deadline
+#: model:ir.cron,name:l10n_co_account_e_invoice.ir_cron_get_status_inquiry_deadline
+msgid "FE: Get status inquiry deadline"
+msgstr "FE: Obtener estado antes de fecha limite"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.server,name:l10n_co_account_e_invoice.ir_cron_validate_final_acceptance_status_ir_actions_server
+#: model:ir.cron,cron_name:l10n_co_account_e_invoice.ir_cron_validate_final_acceptance_status
+#: model:ir.cron,name:l10n_co_account_e_invoice.ir_cron_validate_final_acceptance_status
+msgid "FE: Validate final acceptance status of the invoice"
+msgstr "FE: Validar el estado de aceptación final de la factura"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__fiscal_responsability_id
+msgid "Fiscal Responsability"
+msgstr "Responsabilidad fiscal"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_partner__fiscal_responsibility
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_users__fiscal_responsibility
+msgid "Fiscal Responsibility"
+msgstr "Responsabilidad Fiscal"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "For the technology provider %s the number of support files is: %s"
+msgstr ""
+"Para el proveedor tecnológico %s el numero de archivos de soporte es: %s"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_l10n_co_payment_forms
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_payment_form_id
+msgid "Forms payment"
+msgstr "Formas de pago"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__01
+msgid "Fuel"
+msgstr "Combustible"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__05
+msgid "Generic"
+msgstr "Genérica"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__06
+msgid "Generic with advance payment"
+msgstr "Genérica con pago anticipado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__07
+msgid "Generic with billing period"
+msgstr "Genérica con periodo de facturación"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__header_decree
+msgid "Header Decree"
+msgstr "Decreto de encabezado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_tax__tax_group_fe__ica_fe
+msgid "ICA FE"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_tax__tax_group_fe__ico_fe
+msgid "ICO FE"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_tax__tax_group_fe__iva_fe
+msgid "IVA FE"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_is_not_test
+msgid "In production"
+msgstr "En producción"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "Info electronic invoice"
+msgstr "Info factura electrónica"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.view_company_form_dian_extended
+msgid "Information for graphic representation"
+msgstr "Información representación gráfica"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Install group taxes"
+msgstr "Vincular impuestos y tipos"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Install resolutions"
+msgstr "Instalar resoluciones"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Install the module sequence from resolutions DIAN"
+msgstr "Instale la secuencia del módulo de las resoluciones DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__module_l10n_co_sequence_resolution
+msgid "Integrate resolutions"
+msgstr "Integrar resoluciones"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__invoice_id
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__in
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__is_credit_note
+msgid "Is Credit Note"
+msgstr "Es Nota Crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__is_debit_note
+msgid "Is Debit Note"
+msgstr "Es Nota Débito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__is_visible_deb_cred_note
+msgid "Is Visible Deb Cred Note"
+msgstr "Es visible Deb Cred Nota"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_issue_date
+msgid "Issue date"
+msgstr "Fecha de asunto"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__02
+msgid "Issuer is Self-retaining"
+msgstr "El emisor es  autorretención"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_l10n_co_custom_fields
+#: model:ir.model,name:l10n_co_account_e_invoice.model_wizard_custom_field_line
+msgid "It allows adding custom fields in the electronic invoice"
+msgstr "Permite añadir campos personalizados en la factura electrónica"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__reconcile_line_ids
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_wizard_outstanding_credits_tree
+msgid "Journal Items"
+msgstr "Apuntes contables"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send____last_update
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificacion el"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__write_uid
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__write_date
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability__line_ids
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__line_ids
+msgid "Line"
+msgstr "Linea"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Load taxes groups, taxes types and related for localitacion Colombian"
+msgstr ""
+"Cargar grupos de impuestos, tipos de impuestos relacionados con la "
+"localización colombiano"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,help:l10n_co_account_e_invoice.field_product_product__customs_code
+#: model:ir.model.fields,help:l10n_co_account_e_invoice.field_product_template__customs_code
+msgid "Mainly needed for Exportation Invoices"
+msgstr "Necesario principalmente para facturas de exportación"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_tax_type
+msgid "Management of tax rates for Colombian electronic invoicing"
+msgstr ""
+"Gestión de tipos de impuestos para la facturación electrónica colombiana"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__12
+msgid "Mandates Services"
+msgstr "Servicios de mandatos"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__11
+msgid "Mandates goods"
+msgstr "Mandatos de bienes"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_support_files_send__message
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_product__l10n_co_model
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_template__l10n_co_model
+msgid "Model"
+msgstr "Modelo"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_dian_fiscal_responsability
+msgid "Model DIAN Fiscal Responsability"
+msgstr "Modelo DIAN Responsabilidad Fiscal"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_description_code__name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_forms__name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__name
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_unit_measures__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_tax__tax_group_fe__nap_fe
+msgid "Not apply to DIAN FE"
+msgstr "No aplica a DIAN FE"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_move__invoice_status__not_sent
+msgid "Not sent"
+msgstr "No enviado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_number
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_l10n_co_type_operations
+msgid "Operacions type"
+msgstr "Tipo de operaciones"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__operation_type
+msgid "Operation Type"
+msgstr "Tipo de operación"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_tax__tax_group_fe__other_fe
+msgid "Other"
+msgstr "Otro"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.support_files_send_wizard_form
+msgid "Outstanding credits"
+msgstr "Créditos pendientes"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_pdf_base64_bytes
+msgid "PDF file"
+msgstr "Archivo PDF"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__parent_id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_dian_fiscal_responsability_line__parent_id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__parent_id
+msgid "Parent"
+msgstr "Relacionado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__payment_option_id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_payment_option__name
+msgid "Payment Option"
+msgstr "Opcion de pago"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "Please configure technology provider for electronic invoicing"
+msgstr ""
+"Por favor configura el proveedor tecnológico para la facturación electrónica"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.support_files_send_wizard_form
+msgid "Post"
+msgstr "Publicar"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "Post with support"
+msgstr "Publicar con soportes"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_documents__prefix
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_type_operations__prefix
+msgid "Prefix"
+msgstr "Prefijo"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_move__invoice_status__processing
+msgid "Processing"
+msgstr "Procesando"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__digital_certificate
+msgid "Public digital certificate"
+msgstr "Certificado digital público"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__on
+msgid "Purchase order"
+msgstr "Orden de Compra"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_qr_image
+msgid "QR Code"
+msgstr "Código QR"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_qr_data
+msgid "QR data"
+msgstr "Datos QR"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_l10n_co_custom_fields__method_type
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__method_type
+msgid "Qualifier"
+msgstr "Calificador"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__header_rate
+msgid "Rate"
+msgstr "Tarifa"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__dr
+msgid "Receiving Documents (UBL)"
+msgstr "Documentos de Recepción (UBL)"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__or
+msgid "Reference Order (UBL)"
+msgstr "Orden de Referencia (UBL)"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__header_regimen_activity
+msgid "Regimen Activity"
+msgstr "Régimen/Actividad"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__account_move__invoice_status__rejected
+msgid "Rejected"
+msgstr "Rechazada"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__nc
+msgid "Related Debit Note (UBL)"
+msgstr "Nota de Débito Relacionada (UBL)"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__re
+msgid "Remission"
+msgstr "Remisión"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,help:l10n_co_account_e_invoice.field_product_product__brand
+#: model:ir.model.fields,help:l10n_co_account_e_invoice.field_product_template__brand
+msgid "Reported brand in the Colombian electronic invoice."
+msgstr "Marca reportada en la factura electrónica colombiana."
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Required Tax"
+msgstr "Impuesto requerido"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "Response DIAN"
+msgstr "Respuesta DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax__retention
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_type__retention
+msgid "Retention"
+msgstr "Retención"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/wizard/account_move_reversal.py:0
+#, python-format
+msgid "Reverse Moves"
+msgstr "Movimientos de reversión"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__ov
+msgid "Sale order"
+msgstr "Orden de Venta"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.support_files_send_wizard_form
+msgid "Send Support Files"
+msgstr "Enviar archivos soporte"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "Send Support Filess"
+msgstr "Enviar archivos soporte"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.act_window,name:l10n_co_account_e_invoice.invoice_send_support_files
+msgid "Send files support"
+msgstr "Enviar archivos soporte"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__09
+msgid "Services AIU"
+msgstr "Servicio AIU"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.view_company_form_dian_extended
+msgid "Setting DIAN"
+msgstr "Configuración DIAN"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__res_company__operation_type__10
+msgid "Standard"
+msgstr "Estándar"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__status_inquiry_deadline
+msgid "Status Inquiry Deadline"
+msgstr "Fecha límite de consulta de estado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_status_code
+msgid "Status code"
+msgstr "Código de estado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_status_description
+msgid "Status description"
+msgstr "Estado/Descripción"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_status_message
+msgid "Status message"
+msgstr "Estado/Mensaje"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_sync
+msgid "Sync"
+msgstr "Sincronizar"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_tax_group
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__tax_group_id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__tax_group_id
+msgid "Tax Group"
+msgstr "Grupo de impuestos"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax__tax_group_fe
+msgid "Tax group DIAN FE"
+msgstr "Grupo fiscal DIAN FE"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.act_window,name:l10n_co_account_e_invoice.action_tax_groups_view_tree
+#: model:ir.ui.menu,name:l10n_co_account_e_invoice.menuitem_tax_groups
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.tax_groups_view_tree
+msgid "Tax groups"
+msgstr "Grupo de impuestos"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.actions.act_window,name:l10n_co_account_e_invoice.action_tax_rates_view_tree
+#: model:ir.ui.menu,name:l10n_co_account_e_invoice.menuitem_tax_rates
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.tax_rates_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.tax_rates_view_tree
+msgid "Tax rates"
+msgstr "Tipos de impuestos"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.dian_responsibility_view_form
+msgid "Tax-Liability relationship"
+msgstr "Relación impuesto-responsabilidad"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.tax_rates_form_view
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Tech Provider"
+msgstr "Proveedor tecnológico"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr "Plantilla de impuestos"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields.selection,name:l10n_co_account_e_invoice.selection__l10n_co_custom_fields__method_type__note
+msgid "Text in note field"
+msgstr "Texto en el campo de nota"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid ""
+"The acceptance deadline is over, which is why the invoice status is "
+"\"Accepted\""
+msgstr ""
+"La fecha límite de aceptación ha terminado, por lo que el estado de la "
+"factura es \"Aceptado\""
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "The acceptance status of the invoicechanged from %s to %s"
+msgstr "El estado de aceptación de la factura cambió de%s a %s"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid ""
+"The connection is down more information, please contact the administrator.\n"
+"Error: %s"
+msgstr ""
+"La conexión está caída para más información, por favor póngase en contacto "
+"con el administrador.\n"
+"Error: %s"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid ""
+"The document has been rejected by DIAN. For more information, please "
+"contact the administrator.\n"
+"Error: %s"
+msgstr ""
+"El documento ha sido rechazado por la DIAN. Para obtener más información, "
+"por favor póngase en contacto con el administrador.\n"
+"Error: %s"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/wizard/support_files_send.py:0
+#, python-format
+msgid ""
+"The maximum allowed file weight is: %s MB\n"
+"Please compress the file or remove some"
+msgstr ""
+"El peso máximo permitido de los archivos es: %s MB\n"
+"Por favor comprima el archivo o elimine algunos"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/wizard/support_files_send.py:0
+#, python-format
+msgid "The maximum allowed number of files is: %s"
+msgstr "El número máximo permitido de archivos es: %s"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/dian_fiscal_responsability_line.py:0
+#, python-format
+msgid "The type of taxes to be applied must be  withholding type"
+msgstr "El tipo de impuestos a aplicar debe ser de tipo de retención"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "There is no technology provider configured"
+msgstr "No hay ningún proveedor de tecnología configurado"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "These are the support files that are attached<br/>"
+msgstr "Estos son los archivos de soporte que fueron adjuntados<br/>"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "This invoice does not have the\"ei_number\" or \"type\" attribute"
+msgstr "Esta factura no tiene el atributo \"ei_number\" o \"tipo\""
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,help:l10n_co_account_e_invoice.field_account_move__ei_origin_id
+msgid ""
+"This is the invoice which needed correction by this         debit note. We "
+"have a field for credit notes, but need one         here for its positive "
+"counterpart."
+msgstr ""
+"Esta es la factura que necesitaba corrección con esta nota de débito. "
+"Tenemos un campo para notas de crédito, pero necesitamos uno aquí para su "
+"contraparte positiva."
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_wizard_outstanding_credits_tree
+msgid "Total amount"
+msgstr "Importe total"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax__type_of_tax
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_tax_template__type_of_tax
+msgid "Type Of Tax"
+msgstr "Tipo De Impuesto"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__account_type_documents_for_credit_note
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__type_documents_for_credit_note
+msgid "Types of Documents for Credit Note"
+msgstr "Tipos de Documentos para Nota de Crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__account_type_documents_for_debit_note
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__type_documents_for_debit_note
+msgid "Types of Documents for Debit Note"
+msgstr "Tipos de Documentos para Nota Débito"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_company__account_type_documents_for_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_res_config_settings__type_documents_for_invoice
+msgid "Types of Documents for Invoice"
+msgstr "Tipos de Documentos para Factura"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Types of documents for credit notes"
+msgstr "Tipos de documentos para notas de crédito"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Types of documents for debit notes"
+msgstr "Tipos de documentos para notas débito"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "Types of documents for invoices"
+msgstr "Tipos de documentos para facturas"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_url_acceptance
+msgid "URL acceptance"
+msgstr "Aceptación de URL"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_url_rejection
+msgid "URL rejection"
+msgstr "Rechazo de URL"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_uuid
+msgid "UUID"
+msgstr ""
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_ubl_note
+msgid "Ubl extra info"
+msgstr "Información adicional de Ubl"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_l10n_co_unit_measures
+msgid "Unit measures"
+msgstr "Medidas unitarias"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_product__l10n_co_unit_measure_id
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_product_template__l10n_co_unit_measure_id
+msgid "Unit measures (DIAN)"
+msgstr "Medidas unitarias (DIAN)"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.res_config_settings_view_form
+msgid "VAT tax required"
+msgstr "Impuesto sobre el IVA requerido"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_is_valid
+msgid "Valid"
+msgstr "Válido"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_send
+msgid "Validated"
+msgstr "Validado"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_extra_refs__value
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_wizard_custom_field_line__value
+msgid "Value"
+msgstr "Valor"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.constraint,message:l10n_co_account_e_invoice.constraint_dian_fiscal_responsability_line_uk_dian_fiscal_responsability_line
+msgid "You cannot have two taxes to apply to the same tax liability"
+msgstr ""
+"No puede tener dos impuestos para aplicar a la misma responsabilidad fiscal"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "You need to add a Iva taxes before posting."
+msgstr "Debe añadir un impuesto IVA antes de contabilizar."
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "You need to add a document reference before posting."
+msgstr "Debe añadir una referencia de documento antes de contabilizar."
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_move.py:0
+#, python-format
+msgid "You need to set the TRM of the day."
+msgstr "Debe configurar el TRM del día."
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_zip_base64_bytes
+msgid "ZIP file"
+msgstr "Archivo ZIP"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_zip_name
+msgid "Zip name"
+msgstr "Nombre zip"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/models/account_tax.py:0
+#, python-format
+msgid "a sales tax cannot have the type_tax_use field empty"
+msgstr ""
+"un impuesto sobre las ventas no puede tener el campo type_tax_use vacío"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model,name:l10n_co_account_e_invoice.model_account_extra_refs
+msgid "account.extra.refs"
+msgstr "Referencias Generales"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "check voucher"
+msgstr "verificar Comprobante"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_customer
+msgid "customer json"
+msgstr "cliente json"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_file_name
+msgid "file name"
+msgstr "Nombre del archivo"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_invoice_lines
+msgid "invoice_lines json"
+msgstr "líneas de factura json"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_legal_monetary_totals
+msgid "legal_monetary_totals json"
+msgstr "totales monetarios legales json"
+
+#. module: l10n_co_account_e_invoice
+#: code:addons/l10n_co_account_e_invoice/wizard/support_files_send.py:0
+#: model:ir.model,name:l10n_co_account_e_invoice.model_support_files_send
+#, python-format
+msgid "management of sending support files to the technology provider"
+msgstr "gestión del envío de archivos de soporte al proveedor de tecnología"
+
+#. module: l10n_co_account_e_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_co_account_e_invoice.account_invoice_view_form_inherit_l10n_co
+msgid "test"
+msgstr "pruebas"
+
+#. module: l10n_co_account_e_invoice
+#: model:ir.model.fields,field_description:l10n_co_account_e_invoice.field_account_move__ei_zip_key
+msgid "zip key"
+msgstr "Clave zip"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="search_template_niif_colgap_asset">
+            <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="fa fa-legal" title="type" role="img" aria-label="types" />
+                Types:
+                <t t-set="selected_codes" t-value="', '.join(c.get('name') for c in options['niif_colgap_asset'] if c.get('selected'))" />
+                <t t-if="selected_codes">
+                    <t t-esc="selected_codes" />
+                </t>
+                <t t-else="">
+                    All
+                </t>
+            </a>
+            <div class="dropdown-menu o_filter_menu" role="menu">
+                <t t-foreach="options['niif_colgap_asset']" t-as="c">
+                    <a t-att-title="c.get('name')" data-filter="niif_colgap_asset" t-att-data-id="c.get('id')" class="dropdown-item js_account_report_choice_filter">
+                        <t t-esc="c.get('name')" />
+                    </a>
+                </t>
+            </div>
+        </template>
+
+        <template id="account_assets_report_niif_colgap_asset" inherit_id="account_reports.search_template">
+            <xpath expr="//div[1]" position="after">
+                <div class="btn-group o_dropdown o_account_reports_filter_niif_colgap_asset" t-if="options.get('niif_colgap_asset') != None">
+                    <t t-call="account_report_asset_niif_colgap.search_template_niif_colgap_asset" />
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

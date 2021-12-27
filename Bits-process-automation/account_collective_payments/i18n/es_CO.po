@@ -1,0 +1,269 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_collective_payments
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-24 14:15+0000\n"
+"PO-Revision-Date: 2021-03-24 09:18-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__account_id
+msgid "Account"
+msgstr "Cuenta Analítica"
+
+#. module: account_collective_payments
+#: model:ir.actions.act_window,name:account_collective_payments.action_account_collective_payments_wizard
+#: model:ir.ui.menu,name:account_collective_payments.menu_action_action_account_collective_payments_wizard
+#: model:ir.ui.menu,name:account_collective_payments.menu_hr_payroll_account_collective_payments_wizard
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.hr_payslip_run_account_collective_payments_form
+msgid "Account Collective Payments"
+msgstr "Pagos colectivos de cuentas"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__account_id_f
+msgid "Accounting Account"
+msgstr "Cuenta contable"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__amount
+msgid "Amount"
+msgstr "Total"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__bank_id
+#: model:ir.model.fields.selection,name:account_collective_payments.selection__account_collective_payments_wizard__journal_type_f__bank
+msgid "Bank"
+msgstr "Banco"
+
+#. module: account_collective_payments
+#: model:ir.model.fields.selection,name:account_collective_payments.selection__account_collective_payments_wizard__journal_type_f__cash
+msgid "Cash"
+msgstr "Efectivo"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__clean_lines
+msgid "Clean Lines"
+msgstr "Vaciar líneas"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,help:account_collective_payments.field_account_collective_payments_wizard__company_id
+msgid "Company related to this journal"
+msgstr "Empresa relacionada con este diario"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__create_line_bank
+msgid "Create Bank Line by Movement"
+msgstr "Crear Linea de Banco por Movimiento"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__date_from_f
+msgid "Date from"
+msgstr "Fecha inicial"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__date_to_f
+msgid "Date to"
+msgstr "Fecha final"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__name
+msgid "Document"
+msgstr "Documento"
+
+#. module: account_collective_payments
+#: model:account.payment.method,name:account_collective_payments.account_payment_method_electronic_out
+msgid "Electronic"
+msgstr "Electrónico"
+
+#. module: account_collective_payments
+#: code:addons/account_collective_payments/wizard/account_collective_payments.py:0
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: account_collective_payments
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_wizard_form
+msgid "Filters"
+msgstr "Filtros"
+
+#. module: account_collective_payments
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_wizard_form
+msgid "Generate Payments"
+msgstr "Generar pagos"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__group_apply
+msgid "Group by partner and account"
+msgstr "Agrupar por socio y cuenta"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__journal_id
+msgid "Journal"
+msgstr "Diario de pago"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__line_ids
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_tree
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_wizard_form
+msgid "Journal Items"
+msgstr "Apuntes contables"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__journal_type_f
+msgid "Journal Type"
+msgstr "Tipo de diario"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__journal_id_f
+msgid "Journal to pay"
+msgstr "Diario a pagar"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: account_collective_payments
+#: code:addons/account_collective_payments/wizard/account_collective_payments.py:0
+#, python-format
+msgid "Line Bank"
+msgstr "Linea bancaria"
+
+#. module: account_collective_payments
+#: model:ir.model.fields.selection,name:account_collective_payments.selection__account_collective_payments_wizard__journal_type_f__general
+msgid "Miscellaneous"
+msgstr "Misceláneos"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__partner_id_f
+msgid "Partner"
+msgstr "Asociado"
+
+#. module: account_collective_payments
+#: code:addons/account_collective_payments/wizard/account_collective_payments.py:0
+#, python-format
+msgid "Payment"
+msgstr "Pago"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__payment_method_id
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: account_collective_payments
+#: model:ir.model.fields,field_description:account_collective_payments.field_account_collective_payments_wizard__payment_type
+msgid "Payment Type"
+msgstr "Tipo de pago"
+
+#. module: account_collective_payments
+#: model:ir.model.fields.selection,name:account_collective_payments.selection__account_collective_payments_wizard__journal_type_f__purchase
+msgid "Purchase"
+msgstr "Comprar"
+
+#. module: account_collective_payments
+#: model:ir.model.fields.selection,name:account_collective_payments.selection__account_collective_payments_wizard__payment_type__inbound
+msgid "Receive Money"
+msgstr "Recibir dinero"
+
+#. module: account_collective_payments
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_wizard_form
+msgid "Register Payment"
+msgstr "Registrar pago"
+
+#. module: account_collective_payments
+#: model:ir.model.fields.selection,name:account_collective_payments.selection__account_collective_payments_wizard__journal_type_f__sale
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: account_collective_payments
+#: model:ir.model.fields.selection,name:account_collective_payments.selection__account_collective_payments_wizard__payment_type__outbound
+msgid "Send Money"
+msgstr "Enviar dinero"
+
+#. module: account_collective_payments
+#: code:addons/account_collective_payments/wizard/account_collective_payments.py:0
+#, python-format
+msgid "The start date must be less than end date"
+msgstr "La fecha de inicio debe ser menor que la fecha de finalización"
+
+#. module: account_collective_payments
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_tree
+msgid "Total Credit"
+msgstr "Crédito total"
+
+#. module: account_collective_payments
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_tree
+msgid "Total Debit"
+msgstr "Débito total"
+
+#. module: account_collective_payments
+#: model_terms:ir.ui.view,arch_db:account_collective_payments.account_collective_payments_tree
+msgid "Total Residual"
+msgstr ""
+
+#. module: account_collective_payments
+#: code:addons/account_collective_payments/wizard/account_collective_payments.py:0
+#, python-format
+msgid "You have to define a sequence for % s in your company."
+msgstr "Debe definir una secuencia para  %s en su empresa."
+
+#. module: account_collective_payments
+#: model:ir.model,name:account_collective_payments.model_account_collective_payments_wizard
+msgid "account.collective.payments.wizard"
+msgstr "pagos colectivos"

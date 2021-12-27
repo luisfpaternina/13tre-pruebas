@@ -1,0 +1,73 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="stock_income_custom">
+      <field name="name">custom_stock_income_view</field>
+      <field name="model">stock.picking</field>
+      <field name="inherit_id" ref="stock.view_picking_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//button[@name='do_unreserve']" position="after">
+          <button name="send_confirmation_of_receipt" string="CONFIRM TO SUPPLIERS" type="object"
+            attrs="{'invisible':[('state', '!=', 'done')]}"
+            class="btn btn-primary"
+          />
+        </xpath>
+      </field>
+    </record>
+
+    <act_window
+      name="Send Confirmation &amp; Print"
+      id="email_send_confirmation_to_suppliers"
+      res_model="send.confirmation.to.suppliers"
+      binding_model="stock.picking"
+      binding_views="list"
+      view_mode="form"
+      target="new"
+      context="{
+        'default_template_id': ref('send_confirmation_suppliers_email_template')
+      }"
+    />
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="stock_income.action_window">
+      <field name="name">stock_income window</field>
+      <field name="res_model">stock_income.stock_income</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="stock_income.action_server">
+      <field name="name">stock_income server</field>
+      <field name="model_id" ref="model_stock_income_stock_income"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="stock_income" id="stock_income.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="stock_income.menu_1" parent="stock_income.menu_root"/>
+    <menuitem name="Menu 2" id="stock_income.menu_2" parent="stock_income.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="stock_income.menu_1_list" parent="stock_income.menu_1"
+              action="stock_income.action_window"/>
+    <menuitem name="Server to list" id="stock_income" parent="stock_income.menu_2"
+              action="stock_income.action_server"/>
+-->
+  </data>
+</odoo>

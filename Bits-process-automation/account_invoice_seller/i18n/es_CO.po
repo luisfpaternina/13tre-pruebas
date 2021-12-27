@@ -1,0 +1,35 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_invoice_seller
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-01 21:26+0000\n"
+"PO-Revision-Date: 2021-06-01 16:29-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: account_invoice_seller
+#: model:ir.model,name:account_invoice_seller.model_account_move
+msgid "Extended Account Move"
+msgstr "Movimiento de cuenta extendido"
+
+#. module: account_invoice_seller
+#: code:addons/account_invoice_seller/models/account_move.py:0
+#, python-format
+msgid "The client was not assigned to one seller."
+msgstr "El cliente no tiene asignado un vendedor."
+
+#. module: account_invoice_seller
+#: code:addons/account_invoice_seller/models/account_move.py:0
+#, python-format
+msgid "You can select the client with seller"
+msgstr "El cliente debe tener configurado un vendedor."

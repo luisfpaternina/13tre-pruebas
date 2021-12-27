@@ -1,0 +1,11 @@
+id,code,name,type
+description_code_01,1,Devolución de parte de los bienes; no aceptación de partes del servicio,credit
+description_code_02,2,Anulación de factura electrónica,credit
+description_code_03,3,Rebaja total aplicada,credit
+description_code_04,4,Descuento total aplicado,credit
+description_code_05,5,Rescisión: nulidad por falta de requisitos,credit
+description_code_06,6,Otros,credit
+description_code_07,1,Intereses,debit
+description_code_08,2,Gastos por cobrar,debit
+description_code_09,3,Cambio del valor,debit
+description_code_10,4,Otros,debit

@@ -1,0 +1,634 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_employee_retention
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-10 21:52+0000\n"
+"PO-Revision-Date: 2020-09-10 17:19-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__percent19
+msgid "19%"
+msgstr "19%"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__percent28
+msgid "28%"
+msgstr "28%"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__percent33
+msgid "33%"
+msgstr "33%"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__percent35
+msgid "35%"
+msgstr "35%"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__percent37
+msgid "37%"
+msgstr "37%"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__percent39
+msgid "39%"
+msgstr "39%"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__amount
+msgid "Amount"
+msgstr "Total"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__bonus
+msgid "Bonus"
+msgstr "Bono"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__cap_health
+msgid "Cap Health"
+msgstr "Cap Salud"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__check_figure
+msgid "Check Figure"
+msgstr "Verificar Figura"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__code
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__code
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model,name:hr_payroll_employee_retention.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__cntr_afc_accounts
+msgid "Contributions to AFC accounts"
+msgstr "Contribuciones a cuentas AFC"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__cntr_vlnt_pension_fund
+msgid "Contributions to voluntary pension fund"
+msgstr "Contribuciones voluntarias a fondo de pensiones"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__ctrl_fgr_ddc_exempt_income
+msgid "Control figure 40% deductions and exempt income"
+msgstr "Cifra control 40% Deducciones y rentas exentas"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__country_parameter
+msgid "Country"
+msgstr "País"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__create_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__create_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__create_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__create_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__create_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__create_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__create_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__create_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_res_config_settings__date_execute
+msgid "Date Execute"
+msgstr "Fecha Ejecución"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_res_config_settings__date_truncate
+msgid "Date Truncate"
+msgstr "Truncar Fecha"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.actions.act_window,help:hr_payroll_employee_retention.action_uvt_range
+msgid "Define UVT Range"
+msgstr "Definir rango UVT"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.actions.act_window,help:hr_payroll_employee_retention.action_payroll_parameter_retention
+msgid "Define a new Law Parameters"
+msgstr "Definir una nueva ley de parámetros"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.actions.act_window,help:hr_payroll_employee_retention.action_payroll_retention
+msgid "Define a new Retention Configuration"
+msgstr "Definir una nueva configuración de retención"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__dependent_certificate_cap
+msgid "Dependent Certificate Cap"
+msgstr "Límite de certificado dependiente"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__name
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__display_name
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__display_name
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__display_name
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__display_name
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__document_code
+msgid "Document Code"
+msgstr "Código Documento"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.actions.act_window,name:hr_payroll_employee_retention.action_payroll_employee_retention
+msgid "Employee Retention"
+msgstr "La retención de empleados"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_settings
+msgid "Execute Date"
+msgstr "Fecha de Ejecución"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__exempt_cap
+msgid "Exempt Cap"
+msgstr "Tope Exento"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__exempt_income_cap
+msgid "Exempt Income Cap"
+msgstr "Tope Exento de Ingresos"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__exempt_labor_income
+msgid "Exempt Labor Income"
+msgstr "Rentas exentas de trabajo"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__housing_cap
+msgid "Housing Cap"
+msgstr "Tope de vivienda"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__housing_incentive
+msgid "Housing Incentive"
+msgstr "Incentivo de vivienda"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__id
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__id
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__id
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__id
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__identification_id
+msgid "Identification No"
+msgstr "Número de identificación"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__income_taxed_uvt
+msgid "Income Taxed Uvt"
+msgstr "Ingreso laboral gravado en UVT "
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__is_superior_uvt
+msgid "Is Superior UVT"
+msgstr "Es superior UVT"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__labor_income
+msgid "Labor Income"
+msgstr "Ingresos Laborales"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_settings
+msgid "Last Execute"
+msgstr "Última ejecución"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention____last_update
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention____last_update
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention____last_update
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line____last_update
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__write_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__write_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__write_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__write_uid
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__write_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__write_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__write_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__write_date
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.actions.act_window,name:hr_payroll_employee_retention.action_payroll_parameter_retention
+#: model:ir.ui.menu,name:hr_payroll_employee_retention.menu_payroll_parameter_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_employee_retention_tree
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_settings
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_tree
+msgid "Law Parameters"
+msgstr "Parámetros de ley"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__mandatory_pension_contributions
+msgid "Mandatory Pension Contributions"
+msgstr "Aportes obligatorios de pension"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__mnd_cntr_to_health
+msgid "Mandatory contributions to health"
+msgstr "Aportes obligatorios a salud"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__mnd_cntr_pension_salidarity_fund
+msgid "Mandatory contributions to the Pension Solidarity Fund"
+msgstr "Aportes obligatorios a Fondo solidaridad Pensional"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__maximum_food_salary
+msgid "Maximum Food Salary"
+msgstr "Salario Máximo de Alimentos"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__maximum_percentage
+msgid "Maximum Percentage"
+msgstr "Porcentaje maximo"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__resutl_maximum_uvt
+msgid "Maximum Uvt allowed"
+msgstr "Maximo UVT permitidos"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__minimum_integral
+msgid "Minimum Integral"
+msgstr "Mínimo Integral"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__minimum_wage
+msgid "Minimum Wage"
+msgstr "Salario mínimo"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__monthly_work_income
+msgid "Monthly Work Income"
+msgstr "Ingreso Laboral Mensual"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__name
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__name
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__non_salary_bonus
+msgid "Non Salary Bonus"
+msgstr "Bono no salarial"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__other_exempt_income
+msgid "Other Exempt Income"
+msgstr "Otros ingresos exentos"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__oth_inc_not_constituting_inc
+msgid "Other income not constituting income"
+msgstr "Otros ingresos no constitutivos de renta"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_res_config_settings__parameter_retention_id
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_settings
+msgid "Parameter Retention"
+msgstr "Retención de parámetros"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.ui.menu,name:hr_payroll_employee_retention.menu_parameters_retention_configuration
+msgid "Parameters Retention"
+msgstr "Parámetros de retención"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model,name:hr_payroll_employee_retention.model_hr_payslip
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__payslip_id
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__housing_interests
+msgid ""
+"Payment of housing interest             or Financial Cost Housing Leasing"
+msgstr ""
+"Pago de intereses de vivienda o arrendamiento de vivienda de costo "
+"financiero"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__dependent_payments
+msgid "Payments for dependents"
+msgstr "Pago por dependientes"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__prepaid_medicine_payments
+msgid "Payments for health prepaid medicine"
+msgstr "Pagos por salud prepagada"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__percentage
+msgid "Percentage"
+msgstr "Porcentaje"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__retention_id
+msgid "Retencion"
+msgstr "Retención"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.actions.act_window,name:hr_payroll_employee_retention.action_payroll_retention
+#: model:ir.ui.menu,name:hr_payroll_employee_retention.menu_payroll_retention
+msgid "Retention Configuration"
+msgstr "Configuración de retención"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention__line_ids
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_retention_view
+msgid "Retention Items"
+msgstr "Artículos de retención"
+
+#. module: hr_payroll_employee_retention
+#: model:hr.salary.rule.category,name:hr_payroll_employee_retention.category_retentions_01
+#: model:ir.ui.menu,name:hr_payroll_employee_retention.menu_payroll_employee_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_retention_tree
+msgid "Retentions"
+msgstr "Retenciones"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__salary
+msgid "Salary"
+msgstr "Salario"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__salary_rule_ids
+msgid "Salary Rules"
+msgstr "Reglas salariales"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_employee_retention_search
+msgid "Search Retentions"
+msgstr "Retenciones de búsqueda"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__social_security_cap
+msgid "Social Security Cap"
+msgstr "Tope de seguridad social"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__solidarity_cap
+msgid "Solidarity Cap"
+msgstr "Cap solidario"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_res_config_settings__str_date_exec
+msgid "Str Date Exec"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_res_config_settings__str_date_prev
+msgid "Str Date Prev"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_res_config_settings__str_date_truncate
+msgid "Str Date Truncate"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__subtotal1
+msgid "Subtotal1"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__subtotal2
+msgid "Subtotal2"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__subtotal3
+msgid "Subtotal3"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__subtotal4
+msgid "Subtotal4"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__sum_deductions_exempt_income
+msgid "Sum Deductions Exempt Income"
+msgstr "Sum deducciones exentas de renta"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.constraint,message:hr_payroll_employee_retention.constraint_hr_payroll_parameter_retention_year_params_uniq
+msgid "There is already a parameter of law registered for this year"
+msgstr "No existe un parámetro de ley registrado para este año"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__top_income_previous_year
+msgid "Top Income Previous Year"
+msgstr "Ingresos superiores año anterior"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__total_deductions
+msgid "Total Deductions"
+msgstr "Total Deducciones"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__total_exempt_income
+msgid "Total Exempt Income"
+msgstr "Total rentas exentas"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__total_non_constitutive_income
+msgid "Total Non Constitutive Income"
+msgstr "Total ingresos no constitutivos"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__transportation_allowance
+msgid "Transportation Allowance"
+msgstr "Subsidio de transporte"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_settings
+msgid "Truncate Date"
+msgstr "Fecha truncada"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.actions.server,name:hr_payroll_employee_retention.ir_cron_truncate_employee_retentions_ir_actions_server
+#: model:ir.cron,cron_name:hr_payroll_employee_retention.ir_cron_truncate_employee_retentions
+#: model:ir.cron,name:hr_payroll_employee_retention.ir_cron_truncate_employee_retentions
+msgid "Truncate Employee Retentions"
+msgstr "Truncar retenciones de empleados"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_settings
+msgid "Truncate Retentions"
+msgstr "Retenciones truncadas"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__uvt
+msgid "UVT"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__uvt_allowed
+msgid "UVT Allowed"
+msgstr "UVT permitido"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_retention_line__uvt_maximum
+msgid "UVT Maximum"
+msgstr "Máximo UVT"
+
+#. module: hr_payroll_employee_retention
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_uvt_range_tree
+msgid "UVT Range"
+msgstr "Rango UVT"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.actions.act_window,name:hr_payroll_employee_retention.action_uvt_range
+#: model:ir.ui.menu,name:hr_payroll_employee_retention.menu_uvt_range
+msgid "UVT Range Configuration"
+msgstr "Configuración de rango UVT"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__uvt_amount_add
+msgid "Uvt Amount Add"
+msgstr "Uvt Cantidad Agregar"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__uvt_amount_subtract
+msgid "Uvt Amount Subtract"
+msgstr "Uvt Cantidad Restar"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__uvt_quantity
+msgid "Uvt Quantity"
+msgstr "Cantidad Uvt"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__vln_cntr_to_mnd_pension_fund
+msgid "Voluntary contributions to mandatory pension fund"
+msgstr "Aportes voluntarios a fondo de pensiones obligatorio"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_res_config_settings__withholding_wage_rule_id
+msgid "Withholding Wage Rule"
+msgstr "Regla de retención de salarios"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_parameter_retention__year
+msgid "Year"
+msgstr "Año"
+
+#. module: hr_payroll_employee_retention
+#: code:addons/hr_payroll_employee_retention/models/hr_payslip.py:0
+#, python-format
+msgid ""
+"You must configure the grade parameters to perform the withholding "
+"calculations"
+msgstr ""
+"Debe configurar los parámetros de calificación para realizar los cálculos "
+"de retención"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model,name:hr_payroll_employee_retention.model_hr_payroll_employee_retention
+msgid "hr.payroll.employee.retention"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model,name:hr_payroll_employee_retention.model_hr_payroll_parameter_retention
+msgid "hr.payroll.parameter.retention"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model,name:hr_payroll_employee_retention.model_hr_payroll_retention
+msgid "hr.payroll.retention"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model,name:hr_payroll_employee_retention.model_hr_payroll_retention_line
+msgid "hr.payroll.retention.line"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model,name:hr_payroll_employee_retention.model_hr_payroll_uvt_range
+msgid "hr.payroll.uvt.range"
+msgstr ""
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_uvt_range__name
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_parameter_retention_view
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_retention_view
+#: model_terms:ir.ui.view,arch_db:hr_payroll_employee_retention.hr_payroll_uvt_range_view
+msgid "name"
+msgstr "nombre"
+
+#. module: hr_payroll_employee_retention
+#: model:ir.model.fields,field_description:hr_payroll_employee_retention.field_hr_payroll_employee_retention__vlnt_cntr_pension_fund_empl
+msgid "voluntary contribution to the employer's pension fund"
+msgstr "Aporte voluntario a fondo de pensiones empleador"

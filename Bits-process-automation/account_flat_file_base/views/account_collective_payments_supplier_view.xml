@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="account_collective_payments_supplier_flat_file_form_view">
+        <field name="name">account.collective.payments.supplier.flat.file.form.view</field>
+        <field name="model">account.collective.payments.supplier</field>
+        <field name="inherit_id" ref="account_collective_payments_supplier.account_collective_payments_supplier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="before">
+                <header>
+                    <button name="generate_flat_file" string="Generate Flat File" type="object" class="oe_highlight"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="email_template_custom_purchase_done" model="mail.template">
+            <field name="name">BITS: Formato - OC</field>
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="subject">${object.company_id.name} Order (Ref ${object.name or 'n/a' })</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px;">
+    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+        Dears
+        <br/>
+        <strong> ${object.partner_id.name}</strong>
+        <br/>
+        % if object.partner_id.parent_id:
+            <strong>(${object.partner_id.parent_id.name})</strong>
+        % endif
+        Good day,
+        <br/>
+        <br/>
+        Attached purchase order No. <strong>${object.name}</strong>
+        % if object.partner_ref:
+            with reference: ${object.partner_ref}
+        % endif
+        , please keep in mind that <strong>${object.company_id.name}</strong>
+        issue purchase order for the services provided or the goods purchased, 
+        this document will be sent to your email directly by the financial area,
+         it is <strong>NOT</strong> allowed to send purchase orders from 
+         other mail and/or internal user of the company.
+        <br/>
+        If you have any questions, please do not hesitate to contact us.
+        <br/>
+        Best regards,
+    </p>
+</div></field>
+            <field name="report_template" ref="action_report_custom_purchase_order"/>
+            <field name="report_name">PO_${(object.name or '').replace('/','_')}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="user_signature" eval="False"/>
+            <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_holidays_history_tree" model="ir.ui.view">
+            <field name="name">Holidays history</field>
+            <field name="model">hr.payroll.holidays.history</field>
+            <field name="arch" type="xml">
+                <tree string="Holidays history">
+                    <field name="employee" />
+                    <field name="enjoyment_start_date" />
+                    <field name="enjoyment_end_date" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_holidays_history_form" model="ir.ui.view">
+            <field name="name">holidays.history.form</field>
+            <field name="model">hr.payroll.holidays.history</field>
+            <field name="arch" type="xml">
+                <form string="Holiday history">
+                    <header>
+                        <button type="object" name="create_holiday_news" string="Compute" states="draft" class="oe_highlight" attrs="{'invisible': [('global_state', '=', 'approval')]}"/>
+                        <button type="object" name="approve_holiday_history" string="Aprroved" class="oe_highlight" attrs="{'invisible': [('global_state', '=', 'approval')]}"/>
+                        <button type="object" name="cancel_holiday_history" string="Cancel" class="oe_highlight" attrs="{'invisible': [('global_state', '=', 'draft')]}"/>
+                        <field name="global_state" widget="statusbar" statusbar_visible="draft,approval"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="employee" placeholder="Employee's Name" required="True" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            </h1>
+                            <h3>
+                                <field name="holiday_lapse" placeholder="Holiday lapse" required="True" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            </h3>
+                        </div>
+                        <group>
+                        <group>
+                            <field name="only_compensated_days"/>
+                            <field name="enjoyment_start_date" autocomplete="off" attrs="{'readonly': [('global_state', 'in', ['approval'])], 'required': [('only_compensated_days','=',False)],'invisible': [('only_compensated_days','!=',False)]}" />
+                            <field name="enjoyment_end_date" autocomplete="off"
+                                    attrs="{'readonly': [('global_state', 'in', ['approval'])], 'required': [('only_compensated_days','=',False)], 'invisible': [('only_compensated_days','!=',False)]}" />
+                            <field name="enjoyment_days" readonly="1" force_save="1" />
+                            <field name="compensated_days" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            <field name="payment_date" autocomplete="off" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            <field name="settlement_month" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            <field name="year" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                        </group>
+                        <group>
+                            <field name="liquidated_period"  attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            <field name="holidays" readonly="1" force_save="1"/>
+                            <field name="holidays_current_month" invisible="1" />
+                            <field name="holidays_next_month" invisible="1" />
+                            <field name="enjoyment_current_month" readonly="1" force_save="1" />
+                            <field name="enjoyment_next_month" readonly="1" force_save="1" />
+                            <field name="is_complete" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            <field name="state" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            <field name="document" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                            <field name="comments" attrs="{'readonly': [('global_state', 'in', ['approval'])]}"/>
+                        </group>
+                        </group>
+                        
+                        <notebook attrs="{'invisible': [('payroll_news_ids', '=', [])]}">
+                            <page string="Payroll news" >
+                                <field name="payroll_news_ids" attrs="{'readonly':True}">
+                                    <tree>
+                                        <field name="name" />
+                                        <field name="salary_rule_id" />
+                                        <field name="date_start" />
+                                        <field name="date_end" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_hr_payroll_holidays_history" model="ir.actions.act_window">
+            <field name="name">Holiday history</field>
+            <field name="res_model">hr.payroll.holidays.history</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

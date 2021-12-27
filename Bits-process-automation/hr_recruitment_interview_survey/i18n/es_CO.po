@@ -1,0 +1,160 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_recruitment_interview_survey
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-25 14:22+0000\n"
+"PO-Revision-Date: 2021-05-25 14:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_hr_applicant__response_ids
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__responses_ids
+msgid "Answers"
+msgstr "Respuestas"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_survey_user_input__applicant_id
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__applicant_id
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__applicant_id
+msgid "Aplicant"
+msgstr "Aplicante"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model,name:hr_recruitment_interview_survey.model_hr_applicant
+msgid "Applicant"
+msgstr "Candidato"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__id
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_recruitment_interview_survey
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_interview_survey.hr_applicant_form_inherit
+msgid "Interview"
+msgstr "Entrevista"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_hr_job__surveys_id
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__surveys_id
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_interview_survey.create_survey_form
+msgid "Interviews"
+msgstr "Entrevistas"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__job_id
+msgid "Job"
+msgstr "Cargo"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model,name:hr_recruitment_interview_survey.model_hr_job
+msgid "Jobs"
+msgstr "Cargos"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificación el"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__write_uid
+msgid "Last Updated by"
+msgstr "Ultima modificación por"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_hr_applicant__is_need_interview
+msgid "Need interviews?"
+msgstr "Requiere entrevista?"
+
+#. module: hr_recruitment_interview_survey
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_interview_survey.print_survey_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model,name:hr_recruitment_interview_survey.model_wizard_survey_print
+msgid "Print Survey"
+msgstr "Imprimir entrevista"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.actions.act_window,name:hr_recruitment_interview_survey.launch_the_wizard_print
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_interview_survey.hr_applicant_print_form_inherit
+msgid "Print interview"
+msgstr "Imprimir entrevista"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__response_id
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey_print__response_id
+msgid "Response"
+msgstr "Responsable"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.actions.act_window,name:hr_recruitment_interview_survey.launch_the_wizard
+msgid "Select Interview"
+msgstr "Seleccionar entrevista"
+
+#. module: hr_recruitment_interview_survey
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_interview_survey.create_survey_form
+msgid "Send"
+msgstr "Enviar"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model.fields,field_description:hr_recruitment_interview_survey.field_wizard_survey__survey_id
+msgid "Send interview"
+msgstr "Enviar entrevista"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model,name:hr_recruitment_interview_survey.model_survey_survey
+msgid "Survey"
+msgstr "Encuesta"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model,name:hr_recruitment_interview_survey.model_survey_user_input
+msgid "Survey User Input"
+msgstr "Entrada de usuario de la encuesta"
+
+#. module: hr_recruitment_interview_survey
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_interview_survey.print_survey_form
+msgid "interviews"
+msgstr "Entrevistas"
+
+#. module: hr_recruitment_interview_survey
+#: model:ir.model,name:hr_recruitment_interview_survey.model_wizard_survey
+msgid "wizard Survey"
+msgstr "Ventana de entrevistas"

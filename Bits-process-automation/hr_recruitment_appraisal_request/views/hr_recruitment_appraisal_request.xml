@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_hr_recruitment_appraisal_request_tree" model="ir.ui.view">
+            <field name="name">hr.recruitment.appraisal.request.tree</field>
+            <field name="model">hr.recruitment.appraisal.request</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <tree string="internal_appraisal">
+                <field name="name"/>
+                <field name="employee_id"/>
+            </tree>
+            </field>
+        </record>
+        <record id="view_hr_recruitment_appraisal_request_form" model="ir.ui.view">
+            <field name="name">Appraisal request</field>
+            <field name="model">hr.recruitment.appraisal.request</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="appraisal_request">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" required="1" placeholder="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" required="1" options="{'no_create': True, 'no_create_edit':True}"/>
+                            </group>
+                            <group>
+                                <field name="create_date"/>
+                                <field name="create_uid"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+            <record model="ir.actions.act_window" id="action_view_hr_recruitment_appraisal_request">
+            <field name="name">Appraisal request</field>
+            <field name="res_model">hr.recruitment.appraisal.request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create new record</p>
+            </field>
+        </record>
+       
+        <menuitem 
+            id="nemu_hr_recruitment_appraisal_request" 
+            name="Appraisal request" 
+            parent="hr_recruitment.menu_hr_recruitment_configuration" 
+            action="action_view_hr_recruitment_appraisal_request" 
+            sequence="80"/>
+    </data>
+</odoo>

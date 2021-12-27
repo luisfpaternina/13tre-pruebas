@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <record id="l10n_co_employee_advance_payroll_contract_view1" model="ir.ui.view">
+      <field name="name">l10n_co_employee_advance_payroll_contract1_view1</field>
+      <field name="model">hr.contract</field>
+      <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+      <field name="arch" type="xml">
+      <xpath expr="//field[@name='job_id']" position="after">
+          <field name="high_risk_pension"/>
+      </xpath>
+      </field>
+    </record>
+    </data>
+</odoo>

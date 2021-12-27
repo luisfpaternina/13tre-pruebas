@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="1" model="hr.salary.aid">
+            <field name="name">Auxilio alimentación</field>
+            <field name="description">non-provisional food assistance</field>
+            <field name="code">237</field>
+        </record>
+
+        <record id="2" model="hr.salary.aid">
+            <field name="name">Auxilio parqueadero</field>
+            <field name="description">non-performance parking assistance</field>
+            <field name="code">238</field>
+        </record>
+
+        <record id="3" model="hr.salary.aid">
+            <field name="name">Auxilio rodamiento</field>
+            <field name="description">non-performance bearing performance</field>
+            <field name="code">239</field>
+        </record>
+
+    </data>
+</odoo>

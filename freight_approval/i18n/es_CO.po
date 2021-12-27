@@ -1,0 +1,114 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* freight_approval
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-30 16:13+0000\n"
+"PO-Revision-Date: 2021-08-30 11:17-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: freight_approval
+#: code:addons/freight_approval/models/sale_order.py:0
+#, python-format
+msgid ""
+"<i>After the quote has been sent for approval, it has been "
+"<strong>approved.</strong></i>"
+msgstr ""
+"<i>Una vez que se ha enviado la cotización para su "
+"aprobación, ha sido <strong>aprobada.</strong></i>"
+
+#. module: freight_approval
+#: code:addons/freight_approval/models/sale_order.py:0
+#, python-format
+msgid ""
+"<i>After the quote was sent for approval, it has been "
+"<strong>rejected.</strong></i>"
+msgstr ""
+"<i>Una vez que se ha enviado la cotización para su "
+"aprobación, ha sido <strong>rechazada.</strong></i>"
+
+#. module: freight_approval
+#: model:res.groups,name:freight_approval.group_manager_sale_approval
+msgid "Approver"
+msgstr "Aprobador"
+
+#. module: freight_approval
+#: model_terms:ir.ui.view,arch_db:freight_approval.freight_approval_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: freight_approval
+#: model:ir.model.fields.selection,name:freight_approval.selection__sale_order__state__cancel
+msgid "Cancelled"
+msgstr "Cancelado(a)"
+
+#. module: freight_approval
+#: model_terms:ir.ui.view,arch_db:freight_approval.freight_approval_form
+msgid "Confirm Sale"
+msgstr "Confirmar Venta"
+
+#. module: freight_approval
+#: model:ir.module.category,name:freight_approval.module_sale_order_approval
+msgid "Freight Approval"
+msgstr "Aprobación de Fletes"
+
+#. module: freight_approval
+#: model:ir.model.fields.selection,name:freight_approval.selection__sale_order__state__done
+msgid "Locked"
+msgstr "Bloqueado"
+
+#. module: freight_approval
+#: model_terms:ir.ui.view,arch_db:freight_approval.search_freight_approval
+msgid "Pending Approval"
+msgstr "Pendiente Aprobación"
+
+#. module: freight_approval
+#: model:ir.model.fields.selection,name:freight_approval.selection__sale_order__state__draft
+msgid "Quotation"
+msgstr "Cotización"
+
+#. module: freight_approval
+#: model:ir.model.fields.selection,name:freight_approval.selection__sale_order__state__sent
+msgid "Quotation Sent"
+msgstr "Cotización Enviada"
+
+#. module: freight_approval
+#: model:ir.model.fields,field_description:freight_approval.field_sale_order__approver_id
+msgid "Sale Order Approver"
+msgstr "Aprobador de órdenes de venta"
+
+#. module: freight_approval
+#: model:ir.model,name:freight_approval.model_sale_order
+#: model:ir.model.fields.selection,name:freight_approval.selection__sale_order__state__sale
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: freight_approval
+#: model_terms:ir.ui.view,arch_db:freight_approval.freight_approval_form
+msgid "Send For Approval"
+msgstr "Enviar para Aprobación"
+
+#. module: freight_approval
+#: model:ir.model.fields,field_description:freight_approval.field_sale_order__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: freight_approval
+#: model:res.groups,name:freight_approval.group_user_sale_approval
+msgid "User"
+msgstr "Usuario"
+
+#. module: freight_approval
+#: model:ir.model.fields.selection,name:freight_approval.selection__sale_order__state__waiting_for_approval
+msgid "Waiting For Approval"
+msgstr "Esperando ser Aprobado"

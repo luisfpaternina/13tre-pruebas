@@ -1,0 +1,1013 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_e_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-24 20:24+0000\n"
+"PO-Revision-Date: 2021-11-24 20:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_line__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_application_response_base64_bytes
+msgid "Api response"
+msgstr "Respuesta de Api"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_dian_response_base64_bytes
+msgid "Api response DIAN"
+msgstr "Api respuesta DIAN"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "Archivo PDF con la informacion requerida para la nómina electrónica"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__cune_ref
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_cune_ref
+msgid "CUNE"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__pred_CUNE
+msgid "CUNE of predecessor"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid ""
+"CUNE: %s<br/>Dian State: %s<br/>Transaction ID: %s<br/>Description: %s<br/>"
+msgstr ""
+"CUNE: %s<br/>Estado Dian: %s<br/>Transacción ID: %s<br/>Descripción: %s<br/>"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payroll_news__check_hour_extra
+msgid "Check Hour Extra"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payroll_news__check_range_date
+msgid "Check Range Date"
+msgstr "Validar Rango de Fecha"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__check_send_approval
+msgid "Check Send Approval"
+msgstr "Validar Aprobación de Envio"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_res_company__town_id
+msgid "Ciudad"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__code
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__code
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__code
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__code
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__code
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__compute_status
+msgid "Compute Status"
+msgstr "Calcular Estado"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "Connection error:<br/>%s"
+msgstr "Error de conexión :<br/>%s"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/tests/test_hr_payslip_run.py:0
+#, python-format
+msgid "Connection to ApiConnection timed out. Their API is probably down."
+msgstr "Se agotó el tiempo de conexión a ApiConnection. Su API probablemente esté inactiva."
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "Consulta Detalle Nomina"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "Consulta Resultados Nomina"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "Consulta Totales Nomina"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+msgid "ConsultaDetalleNomina"
+msgstr "Detalles de Nóminas"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+msgid "ConsultaResultadosNomina"
+msgstr "Resultados de Nóminas"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+msgid "ConsultaTotalesNomina"
+msgstr "Totales de Nóminas"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__create_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__create_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__cune
+msgid "Cune"
+msgstr "CUNE"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__custom_field_line_ids
+msgid "Custom Field Line"
+msgstr "Campos personalizados (Linea)"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "DOWNLOAD DIAN INFORMATION"
+msgstr "Obtener Informacion de la DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__pred_date_gen
+msgid "Date of predecessor"
+msgstr "Fecha del Predecesor"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields.selection,name:l10n_co_e_payroll.selection__hr_payslip__type_setting_note__2
+msgid "Delete"
+msgstr "Eliminar"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__description
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__description
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__detail_id
+msgid "Detail"
+msgstr "Detalle"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_dian_detail_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+msgid "Detail Dian Payslip Form"
+msgstr "Formulario de Detalle de Nomina DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_dian_state
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__dian_state
+msgid "Dian State"
+msgstr "Estado Dian"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_attached_document_base64_bytes
+msgid "Dian validation voucher"
+msgstr "Comprobante de validación Dian"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__display_name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields.selection,name:l10n_co_e_payroll.selection__hr_payslip_run__dian_state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "El estado de la nomina por parte de la DIAN es: %s."
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "El estado de la nomina por parte del proveedor tecnologico es: %s."
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__electronic_payroll_status
+msgid "Electronic Payroll Status"
+msgstr "Estado de Nomina Electronica"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_payroll_datetime
+msgid "Electronic Payroll datetime"
+msgstr "Fecha y hora de Nómina Electrónica"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__check_send_file_dian
+msgid "Empty"
+msgstr "Vacio"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payroll_news__datetime_end
+msgid "End date"
+msgstr "Fecha final"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_app_resp_file_name
+msgid "Ep App Resp File Name"
+msgstr "NE Nombre del archivo de respuesta"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_dian_document_file_name
+msgid "Ep Dian Document File Name"
+msgstr "NE Nombre del archivo de la DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_dian_resp_file_name
+msgid "Ep Dian Resp File Name"
+msgstr "NE Nombre del archivo de respuesta DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_serie
+msgid "Ep Serie"
+msgstr "Serie de NE"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_xml_bytes
+msgid "Ep Xml Bytes"
+msgstr "NE XML"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_errors_messages
+msgid "Error messages"
+msgstr "Error de mensajes"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__dian_file_generated
+msgid "File Generated"
+msgstr "Archivo Generado"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__dian_file_sended
+msgid "File Sended"
+msgstr "Archivo Enviado"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "GENERATE FILE"
+msgstr "Generar archivo NE"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__general_status
+msgid "General Status"
+msgstr "Estado General"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "Generar nomina invidual de ajuste"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+msgid "Generate EP File"
+msgstr "Generar archivo NE"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr "Generar las nóminas para todos los empleados seleccionados"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_transaction_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__ep_transaction_id
+msgid "ID Transaction"
+msgstr "Transacción ID"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_is_not_test
+msgid "In production"
+msgstr "En Producción"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_issue_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__ep_issue_date
+msgid "Issue date"
+msgstr "Fecha de asunto"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.payroll_news_form_inherit_view
+msgid ""
+"La fecha inicial no debe ser mayor a la fecha final, por favor vuelva a "
+"seleccionar el rango de fechas"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way____last_update
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line____last_update
+msgid "Last Modified on"
+msgstr "última modificación en"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__write_uid
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__write_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__line_detail_ids
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__line_ids
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__line_detail_ids
+msgid "Line Details"
+msgstr "Detalles Lineas"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__line_result_ids
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__line_ids
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__line_result_ids
+msgid "Line Results"
+msgstr "Resultado Lineas"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__line_total_ids
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__line_ids
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__line_total_ids
+msgid "Line Totals"
+msgstr "Total Lineas"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.payment_way_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.payment_way_tree
+msgid "Meaning"
+msgstr "Significado"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.payment_method_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.payment_method_tree
+msgid "Means"
+msgstr "Medio"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__method_type
+msgid "Method Type"
+msgstr "Método"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__currency_company_id
+msgid "Moneda"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "NE Custom line"
+msgstr "Línea personalizada NE"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "NE Custom lines"
+msgstr "NE Líneas personalizadas"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "NE extra notes"
+msgstr "NE notas adicionales"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_method__name
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payment_way__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__pred_number
+msgid "Name of predecessor"
+msgstr "Nombre del Predecesor"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/wizard/hr_payslip_employees.py:0
+#, python-format
+msgid "No se puede calcular una nómina para %s con este tipo de contribuyente"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__setting_note
+msgid "Nota de ajuste"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__number
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__payslip_pdf
+msgid "PDF"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_pdf_base64_bytes
+msgid "PDF file"
+msgstr "Archivo PDF"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__pasylip_qty
+msgid "PasylipQty"
+msgstr "Cantidad Nóminas"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.account_collective_payments_inherit_wizard_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: l10n_co_e_payroll
+#: model:ir.actions.act_window,name:l10n_co_e_payroll.payment_method_form_actions
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__payment_method_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__payment_method_id
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.account_collective_payments_inherit_wizard_form
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_account_collective_payments_wizard__payment_method_dian_id
+msgid "Payment Method Dian"
+msgstr "Método de Pago"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_account_collective_payments_wizard__payment_way_dian_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__payment_way_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__payment_way_id
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.account_collective_payments_inherit_wizard_form
+msgid "Payment Way"
+msgstr "Forma de Pago"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_account_collective_payments_wizard__payment_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__payment_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__payment_date
+msgid "Payment date"
+msgstr "Fecha de pago"
+
+#. module: l10n_co_e_payroll
+#: model:ir.ui.menu,name:l10n_co_e_payroll.menu_payment_method
+msgid "Payment method DIAN"
+msgstr "Método de pago DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.ui.menu,name:l10n_co_e_payroll.menu_payment_way
+msgid "Payment way DIAN"
+msgstr "Forma de pago DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.actions.act_window,name:l10n_co_e_payroll.payment_way_form_actions
+msgid "Payment ways"
+msgstr "Formas de pago"
+
+#. module: l10n_co_e_payroll
+#: model:ir.ui.menu,name:l10n_co_e_payroll.menu_payments
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_send_email_payroll_approval
+msgid "Payroll Approval Send"
+msgstr "Aprobacion de Nomina enviada"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__payslip_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__payslip_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__payslip_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__payslip_id
+msgid "Payslip"
+msgstr "Nómina"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "Procesamientos de nóminas"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_line
+msgid "Payslip Line"
+msgstr "Línea de recibo de sueldo"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__payslip_related_id
+msgid "Payslip Related"
+msgstr "Nómina relacionada"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__payslip_run_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__payslip_run_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__payslip_run_id
+msgid "Payslip Run"
+msgstr "Procesamiento de Nómina"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__payslip_rejected
+msgid "Payslips Rejected"
+msgstr "Nóminas Rechazadas"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.payroll_news_form_inherit_view
+msgid "Periodo de liquidación final"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.payroll_news_form_inherit_view
+msgid "Periodo de liquidación inicial"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "Please configure technology provider for electronic payroll"
+msgstr "Configure el proveedor de tecnología para la nómina electrónica"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__position
+msgid "Position"
+msgstr "Posición"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_qr_image
+msgid "QR Code"
+msgstr "Código QR"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_qr_data
+msgid "QR data"
+msgstr "Datos QR"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__qty
+msgid "Qty"
+msgstr "Cantidad"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__hours_quantity
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_line__quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__receipts_payslip_status
+msgid "ReceiptsPayslipStatus"
+msgstr "Resultado Estado Nóminas"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields.selection,name:l10n_co_e_payroll.selection__hr_payslip_run__dian_state__rejected
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields.selection,name:l10n_co_e_payroll.selection__hr_payslip__type_setting_note__1
+msgid "Replace"
+msgstr "Reemplzar"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_res_company__agent_id
+msgid "Representante legal"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail__request_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__request_date
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total__request_date
+msgid "Request Date"
+msgstr "Fecha de Solicitud"
+
+#. module: l10n_co_e_payroll
+#: model:ir.actions.server,name:l10n_co_e_payroll.ir_cron_response_dian_ir_actions_server
+#: model:ir.cron,cron_name:l10n_co_e_payroll.ir_cron_response_dian
+#: model:ir.cron,name:l10n_co_e_payroll.ir_cron_response_dian
+msgid "Response Dian Validation"
+msgstr "Validación de Respuesta DIAN"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "Respuesta DIAN"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__result
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result_line__result_id
+msgid "Result"
+msgstr "Resultado"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_dian_result_view_form
+msgid "Result Dian Payslip Form"
+msgstr "Formulario de Resultado de Nómina DIAN"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+msgid "Send EP File"
+msgstr "Enviar Archivo NE"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+msgid "Send Payslips Rejected EP File"
+msgstr "Enviar Archivo NE de Nóminas Rechazadas"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__rpr_date_gen
+msgid "Send date"
+msgstr "Fecha de Envio"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payroll_news__datetime_start
+msgid "Start date"
+msgstr "Fecha inicial"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_status_code
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__ep_status_code
+msgid "Status code"
+msgstr "Código de estado"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_status_description
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__ep_status_description
+msgid "Status description"
+msgstr "Estado/Descripción"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_status_message
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__ep_status_message
+msgid "Status message"
+msgstr "Estado/Mensaje"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__status_payslip
+msgid "StatusNomina"
+msgstr "Estado Nómina"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_sync
+msgid "Sync"
+msgstr "Sincronizar"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "TXT file with the information required for the electronic payroll"
+msgstr "Archivo TXT con la informacion requerida para la nomina electronica"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip_run.py:0
+#, python-format
+msgid ""
+"TXT file with the information required for the electronic payroll - "
+"Generated"
+msgstr ""
+"Archivo TXT con la informacion requerida para la nomina electronica - "
+"Generado"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip_run.py:0
+#, python-format
+msgid ""
+"TXT file with the information required for the electronic payroll - Sended"
+msgstr ""
+"Archivo TXT con la informacion requerida para la nomina electronica - "
+"Enviado"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__test_sep_10
+msgid "Test sep 10"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields.selection,name:l10n_co_e_payroll.selection__payslip_custom_field_line__method_type__note
+msgid "Texto en Campo nota"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid ""
+"The connection is down more information, please contact the administrator.\n"
+"Error: %s"
+msgstr ""
+"La conexión está caída para más información, por favor póngase en contacto con el administrador.\n"
+"Error: %s"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid ""
+"The document has been rejected by DIAN. For more information, please contact the administrator.\n"
+"Error: %s"
+msgstr ""
+"El documento ha sido rechazado por la DIAN. Para obtener más información, por favor póngase en contacto con el administrador.\n"
+"Error: %s"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#: code:addons/l10n_co_e_payroll/models/hr_payslip.py:0
+#, python-format
+msgid "The document has been rejected by tech provider. For  %s %s"
+msgstr ""
+"El documento ha sido rechazado por el proveedor tecnologico. Por %s %s"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_contract.py:0
+#, python-format
+msgid "The employeee is archived."
+msgstr "El empleado se encuentra archivado."
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip_run.py:0
+#, python-format
+msgid ""
+"The file has not \n"
+"                    been generated."
+msgstr "El archivo no ha sido generado."
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip_run.py:0
+#, python-format
+msgid ""
+"The payslip run haven't any \n"
+"                payslip related."
+msgstr "El lote de nominas no tiene ninguna nomina relacionada."
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip_run.py:0
+#, python-format
+msgid "There isn't any payslip rejected"
+msgstr "No se encontro ninguna nómina rechazada"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_total_line__total_id
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_line__total
+msgid "Total"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_dian_total_view_form
+msgid "Total Dian Payslip Form"
+msgstr "Formulario de Total de Nomina DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_run__ep_transaction_id_history
+msgid "Transaction ID History"
+msgstr "Historial de Transacciones"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_result__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__type_setting_note
+msgid "Type of setting note"
+msgstr "Tipo de Nota de Ajuste"
+
+#. module: l10n_co_e_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.hr_payslip_run_inherit_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_e_payroll.l10n_co_e_payroll_hr_payslip_form
+msgid "UNLINK DIAN RESPONSE LINES"
+msgstr "Eliminar Respuestas de la DIAN"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_url_acceptance
+msgid "URL acceptance"
+msgstr "Aceptación de URL"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_url_rejection
+msgid "URL rejection"
+msgstr "Rechazo de URL"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_uuid
+msgid "UUID"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_is_valid
+msgid "Valid"
+msgstr "Válido"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_payslip_custom_field_line__value
+msgid "Value"
+msgstr "Valor"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields.selection,name:l10n_co_e_payroll.selection__hr_payslip_run__dian_state__wait
+msgid "Wait"
+msgstr "En Espera"
+
+#. module: l10n_co_e_payroll
+#: code:addons/l10n_co_e_payroll/models/hr_payslip_dian_detail.py:0
+#, python-format
+msgid "Without Information"
+msgstr "Sin Información"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_zip_base64_bytes
+msgid "ZIP file"
+msgstr "Archivo ZIP"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_zip_name
+msgid "Zip name"
+msgstr "Nombre zip"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_account_collective_payments_wizard
+msgid "account.collective.payments.wizard"
+msgstr "pagos colectivos"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__app_response
+msgid "appResponse"
+msgstr "Respuesta Dian"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payroll_news
+msgid "bits_hr_payroll_news.bits_payroll_news"
+msgstr "novedad de nómina"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_file_name
+msgid "file name"
+msgstr "Nombre del archivo"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_dian_detail
+msgid "hr.payslip.dian.detail"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_dian_detail_line
+msgid "hr.payslip.dian.detail.line"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_dian_result
+msgid "hr.payslip.dian.result"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_dian_result_line
+msgid "hr.payslip.dian.result.line"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_dian_total
+msgid "hr.payslip.dian.total"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_hr_payslip_dian_total_line
+msgid "hr.payslip.dian.total.line"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__number
+msgid "number"
+msgstr "Número"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_payment_method
+msgid "payment.method"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_payment_way
+msgid "payment.way"
+msgstr ""
+
+#. module: l10n_co_e_payroll
+#: model:ir.model,name:l10n_co_e_payroll.model_payslip_custom_field_line
+msgid "payslip.custom.field.line"
+msgstr "campos personalizados para las notas NE"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__status
+msgid "status"
+msgstr "Estado"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip_dian_detail_line__xml_signed
+msgid "xmlSigned"
+msgstr "xml Firmado"
+
+#. module: l10n_co_e_payroll
+#: model:ir.model.fields,field_description:l10n_co_e_payroll.field_hr_payslip__ep_zip_key
+msgid "zip key"
+msgstr "Clave zip"

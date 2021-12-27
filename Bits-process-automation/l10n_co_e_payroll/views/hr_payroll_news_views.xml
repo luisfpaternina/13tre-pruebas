@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="payroll_news_form_inherit_view">
+            <field name="name">hr.payroll.news.inherit.form</field>
+            <field name="model">hr.payroll.news</field>
+             <field name="inherit_id" ref="bits_hr_payroll_news.payroll_news_form_view"/>
+            <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+            <field name="check_range_date" invisible="True"/>
+               <div class="alert alert-danger" role="alert" style="margin-bottom:2px;" attrs="{'invisible':[('check_range_date', '!=', True)]}">
+                    <h3>La fecha inicial no debe ser mayor a la fecha final, por favor vuelva a seleccionar el rango de fechas</h3>
+               </div>
+             </xpath>
+            <xpath expr="//form/sheet/group[1]/group[2]/field[@name='date_end']" position="after">
+                <field name="check_hour_extra" invisible="True"/>
+                <field name="datetime_start" force_save="1" attrs="{'invisible':[('check_hour_extra', '=', False)], 'required':[('check_hour_extra', '=', True)]}"/>
+                <field name="datetime_end" force_save="1" attrs="{'invisible':[('check_hour_extra', '=', False)], 'required':[('check_hour_extra', '=', True)]}"/>
+            </xpath>
+            <xpath expr="//form/sheet/group[1]/group[2]/field[@name='date_start']" position="attributes">
+                <attribute name="string">Periodo de liquidación inicial</attribute> 
+            </xpath>
+            <xpath expr="//form/sheet/group[1]/group[2]/field[@name='date_end']" position="attributes">
+                <attribute name="string">Periodo de liquidación final</attribute> 
+            </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

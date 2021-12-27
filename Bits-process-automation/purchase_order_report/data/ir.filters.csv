@@ -1,0 +1,2 @@
+name,model_id,is_default,domain,context,sort
+Purchase vendor,purchase.report,1,[],"{'graph': {'graph_measure': 'untaxed_total', 'graph_mode': 'line', 'graph_groupbys': ['date_approve:day', 'partner_id']}, 'pivot': {'pivot_measures': ['__count', 'order_id', 'untaxed_total', 'price_total'], 'pivot_column_groupby': [], 'pivot_row_groupby': ['category_id']}}",[]

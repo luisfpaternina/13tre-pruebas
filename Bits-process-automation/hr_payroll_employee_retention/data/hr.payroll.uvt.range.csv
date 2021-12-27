@@ -1,0 +1,8 @@
+id,name,percentage,uvt_amount_subtract,uvt_quantity,uvt_amount_add,is_superior_uvt,active
+__export__.hr_payroll_uvt_range_1_1203148b,Rango Hasta 95,0,0,95,0,,True
+__export__.hr_payroll_uvt_range_2_29791171,Rango Hasta 150,19,95,150,0,,True
+__export__.hr_payroll_uvt_range_3_6e631a4f,Rango Hasta 360,28,150,360,10,,True
+__export__.hr_payroll_uvt_range_4_e1ff87f4,Rango Hasta 640,33,360,640,69,,True
+__export__.hr_payroll_uvt_range_5_73cf31c4,Rango Hasta 945,35,640,945,162,,True
+__export__.hr_payroll_uvt_range_6_43755238,Rango Hasta 2300,37,945,2300,268,,True
+__export__.hr_payroll_uvt_range_7_787b708c,Rago Superior,39,2300,2300,770,True,True

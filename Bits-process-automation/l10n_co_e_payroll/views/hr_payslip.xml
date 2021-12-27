@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="l10n_co_e_payroll_hr_payslip_form" model="ir.ui.view">
+        <field name="name">l10n_co_e_payroll.hr.payslip.form</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/group[1]" position="before">
+                <field name="check_send_approval" invisible="True"/>
+            </xpath>
+            <xpath expr="//form/sheet/group[1]/field[@name='name']" position="after">
+                <field
+                    name="payment_date"
+                    string="Payment Date"
+                    required="True"
+                    attrs="{'readonly' : ['|',('check_send_approval', '!=', False),('state','=','done')]}"
+                />
+                <field 
+                    name="currency_company_id" 
+                    readonly="1"
+                    options="{'no_open': true,
+                                'no_quick_create': true,
+                                'no_create_edit': true,
+                                'no_create':true
+                            }"
+                />
+                <field 
+                    name="payment_way_id"
+                    options="{'no_open': true,
+                            'no_quick_create': true,
+                            'no_create_edit': true,
+                            'no_create':true}"
+                    required="True"
+                    attrs="{'readonly' : ['|',('check_send_approval', '!=', False),('state','=','done')]}"
+                />
+                <field 
+                    name="payment_method_id"
+                    options="{'no_open': true,
+                            'no_quick_create': true,
+                            'no_create_edit': true,
+                            'no_create':true}"
+                    required="True"
+                    attrs="{'readonly' : ['|',('check_send_approval', '!=', False),('state','=','done')]}"
+                />
+                <field 
+                    name="electronic_payroll_status"
+                    invisible = "1"
+                />
+                <field 
+                    name="setting_note"
+                />
+                <field 
+                    name="check_send_file_dian"
+                    invisible = "1"
+                />
+            </xpath>
+            <!--<xpath expr="//field[@name='custom_field_line_ids']" position="after">
+                <field name="check_senf_file_dian"/>
+            </xpath>  attrs="{'invisible': ['|', ('state','!=','done'), ('ep_cune_ref','!=','False')]}"
+            attrs="{'invisible': [('pred_CUNE','!=','False')]}"-->
+            <xpath expr="//button[@name='action_payslip_done']" position="after">
+                <button 
+                string="GENERATE FILE" 
+                name="action_generate_file" 
+                type="object" 
+                class="oe_highlight" 
+                states="done"
+                />
+            </xpath>
+            <xpath expr="//button[@name='action_payslip_done']" position="after">
+                <button string="Generar nomina invidual de ajuste" 
+                name="copy_payslip" 
+                type="object" 
+                class="oe_highlight"
+                attrs="{'invisible': ['|', ('state', '!=', 'done'), ('ep_cune_ref', '=', False)]}"
+                />
+            </xpath>
+             
+            <!-- invisible = "1" attrs="{'invisible':[('electronic_payroll_status','!=','accepted')]}" -->
+            <xpath expr="//notebook/page[last()]" position="after">
+              <page string="NE extra notes" groups="sales_team.group_sale_salesman">
+                <field name="custom_field_line_ids">
+                  <tree string="NE Custom lines" editable="bottom">
+                      <field name="payslip_id" invisible="1"/>
+                      <field name="code"/>
+                      <field name="method_type"/>
+                      <field name="value"/>
+                  </tree>
+                  <form string="NE Custom line">
+                      <group col="4">
+                        <field name="payslip_id" invisible="1"/>
+                        <field name="code"/>
+                        <field name="method_type"/>
+                        <field name="value"/>
+                      </group>
+                  </form>
+                </field>
+              </page>
+              <page string="Respuesta DIAN" groups="sales_team.group_sale_salesman">
+                <header>
+                    <button string="DOWNLOAD DIAN INFORMATION" name="get_state_dian_payslip" class="oe_highlight" type="object"/>
+                    <button string="UNLINK DIAN RESPONSE LINES" name="unlink_response_lines_dian" class="oe_highlight" type="object" invisible="1"/>
+                </header>
+                <group name="dian_response">
+                    <group name="dian_left">
+                        <field name="ep_transaction_id" readonly="True"/>
+                        <field name="ep_dian_state" readonly="True" />
+                        <field name="ep_issue_date" readonly="True"/>
+                        <field name="ep_status_code" readonly="True"/>
+                        <field name="ep_status_description" readonly="True"/>
+                        <field name="ep_status_message" readonly="True"/>
+                        <field name="pred_CUNE" invisible = "1"/>
+                        <field name="ep_cune_ref"/>
+                    </group>
+                    <group name="dian_right">
+                        <field name="ep_file_name" readonly="True" invisible="1"/>
+                        <field name="ep_pdf_base64_bytes" readonly="True" filename="ep_file_name"/>
+                        <field name="ep_qr_data" readonly="0"/>
+                        <field name="ep_qr_image" widget="image" readonly="0"/>
+                    </group>          
+                </group>
+                <notebook>
+                    <page string="Consulta Detalle Nomina" groups="sales_team.group_sale_salesman">
+                        <field name="line_detail_ids" readonly="1">
+                            <tree>
+                                <field name="request_date" />
+                                <field name="code" />
+                                <field name="description" />
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Consulta Resultados Nomina" groups="sales_team.group_sale_salesman">
+                        <field name="line_result_ids" readonly="1">
+                            <tree>
+                                <field name="request_date" />
+                                <field name="code" />
+                                <field name="description" />
+                                <field name="type" />
+                                <field name="qty" />
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Consulta Totales Nomina" groups="sales_team.group_sale_salesman">
+                        <field name="line_total_ids" readonly="1">
+                            <tree>
+                                <field name="request_date" />
+                                <field name="code" />
+                                <field name="description" />
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+              </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

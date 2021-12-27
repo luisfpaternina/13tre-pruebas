@@ -1,0 +1,73 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_asset_niif
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-04 21:37+0000\n"
+"PO-Revision-Date: 2021-08-04 21:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_asset_niif
+#: model:ir.model.fields,help:account_asset_niif.field_account_asset_sell__loss_account_colgap_id
+#: model:ir.model.fields,help:account_asset_niif.field_res_company__loss_account_colgap_id
+msgid ""
+"Account used to write the journal item in case of loss, COLGAP accounting"
+msgstr ""
+"Cuenta usada para escribir el elemento del diario del COLGAP en caso de"
+" perdida"
+#. module: account_asset_niif
+#: code:addons/account_asset_niif/models/account_asset_niif.py:0
+#: code:addons/account_asset_niif/models/account_asset_niif.py:0
+#, python-format
+msgid "Asset sold or disposed. Accounting entry awaiting for validation."
+msgstr ""
+"Producto vendido o reservado. Apunte contable esperando para contabilización"
+
+#. module: account_asset_niif
+#: model:ir.model,name:account_asset_niif.model_account_asset
+msgid "Asset/Revenue Recognition"
+msgstr "Aceptación de pagos/Ingresos"
+
+#. module: account_asset_niif
+#: model:ir.model,name:account_asset_niif.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: account_asset_niif
+#: code:addons/account_asset_niif/models/account_asset_niif.py:0
+#: code:addons/account_asset_niif/models/account_asset_niif.py:0
+#, python-format
+msgid "Disposal"
+msgstr "Disposición"
+
+#. module: account_asset_niif
+#: model:ir.model.fields,field_description:account_asset_niif.field_res_company__loss_account_colgap_id
+msgid "Loss Account Colgap"
+msgstr "Cuenta de pérdidas COLGAP"
+
+#. module: account_asset_niif
+#: code:addons/account_asset_niif/wizard/asset_sell.py:0
+#: model:ir.model.fields,field_description:account_asset_niif.field_account_asset_sell__loss_account_colgap_id
+#, python-format
+msgid "Lost Account COLGAP"
+msgstr "Cuenta de pérdidas COLGAP"
+
+#. module: account_asset_niif
+#: code:addons/account_asset_niif/models/account_asset_niif.py:0
+#: code:addons/account_asset_niif/models/account_asset_niif.py:0
+#, python-format
+msgid "Sale"
+msgstr "Venta"
+
+#. module: account_asset_niif
+#: model:ir.model,name:account_asset_niif.model_account_asset_sell
+msgid "Sell Asset"
+msgstr "Vender activo"

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="send_email_hr_recruitment_internal_request" model="base.automation">
+        <field name="name">Send email: Internal request human talent leader</field>
+        <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+        <field name="state">email</field>
+        <field name="template_id" ref="hr_employee_internal_request.template_internal_request_notify"/>
+        <field name="trigger">on_create</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="send_email_hr_recruitment_internal_request_notify_manager" model="base.automation">
+        <field name="name">Send email: Approver Internal request</field>
+        <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+        <field name="state">email</field>
+        <field name="template_id" ref="hr_employee_internal_request.template_internal_request_notify_projects"/>
+        <field name="trigger">on_write</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="send_email_hr_recruitment_internal_request_notify_evaluators" model="base.automation">
+        <field name="name">Send email: Evaluators</field>
+        <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+        <field name="state">email</field>
+        <field name="template_id" ref="hr_employee_internal_request.template_internal_request_notify_evaluators"/>
+        <field name="trigger">on_create</field>
+        <field name="filter_domain">[("internal_request_line_ids","!=",False)]</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="send_email_applicant" model="base.automation">
+        <field name="name">Send email: Applicant</field>
+        <field name="model_id" ref="hr_recruitment.model_hr_applicant"/>
+        <field name="state">email</field>
+        <field name="template_id" ref="hr_employee_internal_request.template_send_email_applicants_notify"/>
+        <field name="trigger">on_create</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="send_email_hr_recruitment_leader_rrhh" model="base.automation">
+        <field name="name">Notificar al líder de talento humano</field>
+        <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+        <field name="state">email</field>
+        <field name="template_id" ref="hr_employee_internal_request.template_internal_request_notify_leader_rrhh"/>
+        <field name="trigger">on_create</field>
+        <field name="filter_domain">[("internal_request_line_ids","!=",False)]</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>

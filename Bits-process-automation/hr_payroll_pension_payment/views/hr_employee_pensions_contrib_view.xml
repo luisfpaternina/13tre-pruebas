@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record id="hr_employee_pensions_contrib_view" model="ir.ui.view">
+        <field name="name">hr_employee_pensions_contrib_view</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='pension']" position="before">
+                <field name="pensions_contrib"/>
+            </xpath>
+            <xpath expr="//field[@name='pension']" position="attributes">
+              <attribute name="attrs">{'required': [('pensions_contrib', '=', False)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+  </data>
+</odoo>

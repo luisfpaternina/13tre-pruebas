@@ -1,0 +1,62 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="l10n_co_e_invoice_act_fields.list">
+      <field name="name">list of active fields</field>
+      <field name="model">account.act.fields</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="name"/>
+          <field name="mandatory"/>
+          <field name="description"/>
+          <field name="condition_python"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="l10n_co_account_act_fields_form">
+      <field name="name">account_act_fields_form</field>
+      <field name="model">account.act.fields</field>
+      <field name="arch" type="xml">
+          <form>
+            <sheet>
+                <group>
+                  <group>
+                      <field name="code"/>
+                      <field name="mandatory"/>
+                  </group>
+                  <group>
+                      <field name="name"/>
+                      <field name="description"/>
+                      <field name="condition_select"/>
+                  </group>
+                </group>
+                <group>
+                  <field name="validate_condition_select" attrs="{'invisible':[('condition_select','!=','python')], 'required': [('condition_select','=','python')]}"/>
+                </group>
+                <group>
+                  <field name="condition_python"/>
+                </group>
+            </sheet>
+          </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="l10n_co_e_invoice_act_fields.action_window">
+      <field name="name">FE active fields</field>
+      <field name="res_model">account.act.fields</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+      action="l10n_co_e_invoice_act_fields.action_window"
+      id="l10n_co_e_invoice_act_fields.menu_1_list"
+      parent="account.account_account_menu"
+      sequence="12"/>
+
+  </data>
+</odoo>

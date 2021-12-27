@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="view_account_move_town_form" model="ir.ui.view">
+			<field name="name">view.account.move.town.form</field>
+			<field name="model">account.move</field>
+			<field name="inherit_id" ref="account.view_move_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='partner_shipping_id']" position="after">
+					<field name="town_id" options="{'no_create_edit': True, 'no_quick_create': True}" 
+					attrs="{'invisible': [('type', 'in', ('entry', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))]}"/>
+				</xpath>
+			</field>
+		</record>
+
+		<record id="view_account_move_town_tree" model="ir.ui.view">
+			<field name="name">view.account.move.town.tree</field>
+			<field name="model">account.move</field>
+			<field name="inherit_id" ref="account.view_invoice_tree"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='invoice_origin']" position="before">
+					<field name="town_id" 
+					attrs="{'invisible': [('type', 'in', ('entry', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))]}"/>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>
+ 

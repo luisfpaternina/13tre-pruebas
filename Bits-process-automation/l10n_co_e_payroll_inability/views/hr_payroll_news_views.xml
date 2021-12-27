@@ -1,0 +1,22 @@
+<odoo>
+  <data>
+    <record id="hr_payroll_news_inherit_form_view" model="ir.ui.view">
+      <field name="name">hr.payroll.news.inherit.form.view</field>
+      <field name="model">hr.payroll.news</field>
+      <field name="inherit_id" ref="bits_hr_payroll_news.payroll_news_form_view"/>
+      <field name="arch" type="xml">
+          <xpath expr="//form/sheet/group[1]/group[1]/field[@name='salary_rule_id']" position="after">
+            <field name="check_inability_expense" invisible="True"/>
+            <field name="inability_apply" invisible="True"/>
+            <field name="inability_id" 
+                  options="{'no_create': True}"
+                  attrs="{'invisible':[('inability_apply', '=', False)],
+                        'required':[('inability_apply', '!=', False)]}"
+                  />                   
+          </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
+
+

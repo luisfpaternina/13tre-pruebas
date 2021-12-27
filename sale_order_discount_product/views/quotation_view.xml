@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_inherit_view_form" model="ir.ui.view">
+        <field name="name">sale.order.inherit.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="valid_discount" invisible="1"/>
+                <field name="send_approval_discount" invisible="1"/>
+                <field name="send_approval_freight" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="before">
+                <field name="valid_discount" invisible="1"/>
+                <field name="is_delivery" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree" position="attributes">
+                <attribute name="decoration-danger">not valid_discount and not is_delivery</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="attributes">
+                <attribute name="attrs">{'readonly': [('is_delivery', '!=', True)]}</attribute>
+            </xpath>
+            <!-- <xpath expr="//button[@name='action_confirm'][2]" position="after">
+                <button
+                    name="send_for_approval"
+                    type="object"
+                    class="btn-warning text-uppercase"
+                    string="Send For Approval"
+                    attrs="{'invisible': ['|', ('state', 'not in', ['draft']), ('valid_discount', '=', True)]}"
+                />
+            </xpath> -->
+            <xpath expr="//button[@name='send_for_approval']" position="attributes">
+                <attribute name="attrs">{'invisible': ['|', ('state', 'not in', ['draft', 'sent']), '&amp;', ('recompute_delivery_price', '=', False), ('valid_discount', '=', True)]}</attribute>
+            </xpath>
+
+            <xpath expr="//notebook/page[@name='order_lines']/field[@name='order_line']/tree/field[@name='price_subtotal']" position="before">
+                <field name="total_sale_value_discount"/>
+                <field name="valid_in_category_id" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//button[@name='action_confirm'][2]" position="attributes">
+                <attribute name="attrs">{'invisible': ['|', '|', ('state', 'not in', ['draft']), ('valid_discount', '=', False), ('recompute_delivery_price', '=', True)]}</attribute>
+            </xpath>
+
+            <xpath expr="//notebook/page[@name='order_lines']/field[@name='order_line']/tree/field[@name='discount']" position="attributes">
+                <attribute name="attrs">{'readonly': [('valid_in_category_id', '=', False)]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='amount_untaxed']" position="before">
+                <field name="discount_order"/>
+            </xpath>
+            <xpath expr="//notebook/page[@name='order_lines']/field[@name='order_line']/tree/field[@name='price_subtotal']" position="replace">
+                <field name="price_subtotal"/>
+            </xpath>
+
+            <!-- Botones -->
+            <xpath expr="//button[@id='action_cancel_freight']" position="attributes">
+                <attribute name="groups">sale_order_discount_product.group_manager_freight_approval</attribute>
+                <attribute name="attrs">{'invisible': ['|', '|', ('state', 'not in', ['waiting_for_approval']), ('recompute_delivery_price', '=', False), ('send_approval_freight', '=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//button[@id='action_confirm_freight']" position="attributes">
+                <attribute name="groups">sale_order_discount_product.group_manager_freight_approval</attribute>
+                <attribute name="attrs">{'invisible': ['|', '|', ('state', 'not in', ['waiting_for_approval']), ('recompute_delivery_price', '=', False), ('send_approval_freight', '=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_confirm'][1]" position="replace">
+                <button
+                    name="action_confirm"
+                    string="Confirm Sale"
+                    class="btn-primary o_sale_confirm"
+                    type="object"
+                    attrs="{'invisible': ['|', '|', ('state', 'not in', ['sent', 'approve_superior']), ('recompute_delivery_price', '=', True), ('valid_discount', '=', False)]}"
+                />
+            </xpath>
+            <xpath expr="//button[@id='action_cancel_freight']" position="after">
+                <button
+                    name="action_confirm_flow"
+                    string="Confirm Sale Discount"
+                    class="btn-primary o_sale_confirm"
+                    type="object"
+                    attrs="{'invisible': ['|', '|', '|', ('state', 'not in', ['waiting_for_approval']), ('valid_discount', '=', True), ('send_approval_discount', '=', False)]}"
+                    groups="sale_order_discount_product.group_manager_discount_approval"
+                    context="{'approve_by_a_superior': True, 'approve_discount': True}"
+                />
+                <button
+                    name="action_cancel"
+                    type="object"
+                    string="Cancel Discount"
+                    attrs="{'invisible': ['|', '|', ('state', 'not in', ['waiting_for_approval']), ('send_approval_discount', '=', False), ('valid_discount', '=', True)]}"
+                    class="btn-danger text-uppercase"
+                    context="{'rejected_by_a_superior': True, 'reject_discount': True}"
+                    groups="sale_order_discount_product.group_manager_discount_approval"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="bits_security_purchase_accountant_assistant" model="res.groups">
+            <field name="name">Purchase Accountant Assistant</field>
+            <field name="category_id" ref="base.module_category_operations_purchase"/>
+            <field name="menu_access" eval="[(4,ref('purchase.menu_purchase_root')),(4,ref('purchase.menu_purchase_general_settings')),(4,ref('purchase.menu_procurement_management')),(4,ref('purchase.menu_product_pricelist_action2_purchase')),(4,ref('purchase.menu_purchase_rfq')),(4,ref('account_accountant.menu_product_product_categories')),(4,ref('purchase.menu_purchase_form_action')),(4,ref('purchase.menu_procurement_management_supplier_name')),(4,ref('purchase.menu_purchase_uom_form_action')),(4,ref('purchase_supplier_performance.menu_supplier_performence')),(4,ref('purchase.menu_purchase_products')),(4,ref('purchase.menu_procurement_partner_contact_form')),(4,ref('purchase.product_product_menu')),(4,ref('purchase.purchase_report')),(4,ref('purchase.menu_purchase_uom_categ_form_action')),(4,ref('purchase.menu_report_purchase')),(4,ref('purchase.menu_product_in_config_purchase')),(4,ref('purchase.menu_purchase_config'))]"/>
+        </record>
+    </data>
+</odoo>

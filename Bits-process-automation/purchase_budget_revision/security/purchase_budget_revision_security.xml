@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="notify_budget_excess" model="res.groups">
+            <field name="name">Notify budget excess</field>
+        </record>
+
+        <record id="base.user_admin" model="res.users">
+            <field name="groups_id" eval="[(4, ref('purchase_budget_revision.notify_budget_excess'))]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_trial_balance_report_advance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-23 00:08+0000\n"
+"PO-Revision-Date: 2021-06-23 00:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "(No Group)"
+msgstr "(Sin Grupo)"
+
+#. module: account_trial_balance_report_advance
+#: model_terms:ir.ui.view,arch_db:account_trial_balance_report_advance.search_template_levels_niff
+msgid ""
+"<span class=\"fa fa-legal\" title=\"type\" role=\"img\" aria-label=\"types\"/>\n"
+"                Types:"
+msgstr "Tipo"
+
+#. module: account_trial_balance_report_advance
+#: model_terms:ir.ui.view,arch_db:account_trial_balance_report_advance.search_template_levels_filter
+msgid ""
+"<span class=\"fa fa-level-up\" title=\"Levels\" role=\"img\" aria-label=\"Levels\"/>\n"
+"                Levels:"
+msgstr "Niveles"
+
+#. module: account_trial_balance_report_advance
+#: model:ir.model,name:account_trial_balance_report_advance.model_account_report
+msgid "Account trial balance report advance"
+msgstr "Balance de comprobación"
+
+#. module: account_trial_balance_report_advance
+#. openerp-web
+#: code:addons/account_trial_balance_report_advance/static/src/js/account_report_accounts.js:0
+#, python-format
+msgid "Accounts From"
+msgstr "Cuenta de Inicio"
+
+#. module: account_trial_balance_report_advance
+#. openerp-web
+#: code:addons/account_trial_balance_report_advance/static/src/js/account_report_accounts.js:0
+#, python-format
+msgid "Accounts To"
+msgstr "Cuenta Hasta"
+
+#. module: account_trial_balance_report_advance
+#: model_terms:ir.ui.view,arch_db:account_trial_balance_report_advance.search_template_levels_filter
+#: model_terms:ir.ui.view,arch_db:account_trial_balance_report_advance.search_template_levels_niff
+msgid "All"
+msgstr " "
+
+#. module: account_trial_balance_report_advance
+#: model:ir.model,name:account_trial_balance_report_advance.model_account_coa_report
+msgid "Chart of Account Report"
+msgstr "Reporte de Plan de Cuentas"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 1"
+msgstr "Nivel 1"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 10"
+msgstr "Nivel 10"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 11"
+msgstr "Nivel 11"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 12"
+msgstr "Nivel 12"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 2"
+msgstr "Nivel 2"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 3"
+msgstr "Nivel 3"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 4"
+msgstr "Nivel 4"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 5"
+msgstr "Nivel 5"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 6"
+msgstr "Nivel 6"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 7"
+msgstr "Nivel 7"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 8"
+msgstr "Nivel 8"
+
+#. module: account_trial_balance_report_advance
+#: code:addons/account_trial_balance_report_advance/models/account_trial_balance_report_advance.py:0
+#, python-format
+msgid "Level 9"
+msgstr "Nivel 9"
+
+#. module: account_trial_balance_report_advance
+#: model_terms:ir.ui.view,arch_db:account_trial_balance_report_advance.search_template_extra_options
+msgid "Levels and Subtotals"
+msgstr "Niveles y subtotales"
+
+#. module: account_trial_balance_report_advance
+#: model_terms:ir.ui.view,arch_db:account_trial_balance_report_advance.search_template_extra_options
+msgid "levels"
+msgstr "Niveles"

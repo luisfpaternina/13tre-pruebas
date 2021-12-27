@@ -1,0 +1,304 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_res_partner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-09 16:07+0000\n"
+"PO-Revision-Date: 2020-10-09 11:14-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__11
+msgid "11 - Birth Certificate"
+msgstr "11 - Certificado de nacimiento"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__12
+msgid "12 - Identity Card"
+msgstr "12 - Tarjeta de identidad"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__13
+msgid "13 - Citizenship Card"
+msgstr "13 - Tarjeta de Ciudadanía"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__21
+msgid "21 - Alien Registration Card"
+msgstr "21 - Tarjeta de registro de extranjeros"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__22
+msgid "22 - Foreigner ID"
+msgstr "22 - Identificación de extranjero"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__31
+msgid "31 - TAX Number (NIT)"
+msgstr "31 - Número de IMPUESTO (NIT)"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__41
+msgid "41 - Passport"
+msgstr "41 - Pasaporte"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__42
+msgid "42 - Foreign Identification Document"
+msgstr "42 - Documento de identificación extranjero"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__43
+msgid "43 - No Foreign Identification"
+msgstr "43 - Sin identificación extranjera"
+
+#. module: l10n_co_res_partner
+#: model_terms:ir.actions.act_window,help:l10n_co_res_partner.action_ciiu_transaction
+#: model:ir.actions.act_window,name:l10n_co_res_partner.action_ciiu_transaction
+#: model:ir.ui.menu,name:l10n_co_res_partner.menu_action_ciiu_transaction
+#: model_terms:ir.ui.view,arch_db:l10n_co_res_partner.view_ciiu_transaction_form
+#: model_terms:ir.ui.view,arch_db:l10n_co_res_partner.view_ciiu_transaction_tree
+msgid "CIIU"
+msgstr "CIIU"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__code
+msgid "Code"
+msgstr "Codigo"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__name
+msgid "Code and Description"
+msgstr "Código y Descripción"
+
+#. module: l10n_co_res_partner
+#: model_terms:ir.ui.view,arch_db:l10n_co_res_partner.view_partner_form
+msgid "Comercial Name"
+msgstr "Nombre comercial"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__commercial_name
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__commercial_name
+msgid "Commercial Name"
+msgstr "Nombre comercial"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__simplified_regimen__7
+msgid "Common"
+msgstr "Comun"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__simplified_regimen__25
+msgid "Common Autorretenedor"
+msgstr "Autorretenedor común"
+
+#. module: l10n_co_res_partner
+#: model:ir.model,name:l10n_co_res_partner.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__division
+msgid "Division"
+msgstr "División"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__x_name1
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__x_name1
+#: model_terms:ir.ui.view,arch_db:l10n_co_res_partner.view_partner_form
+msgid "First Name"
+msgstr "Primer nombre"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__fiscal_regimen
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__fiscal_regimen
+msgid "Fiscal Regimen"
+msgstr "Régimen Fiscal"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__simplified_regimen__24
+msgid "Great Contributor"
+msgstr "Gran contribuyente"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__simplified_regimen__11
+msgid "Great Taxpayer Autorretenedor"
+msgstr "Gran Contribuyente Autorretenedor"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__has_division
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__ciiu__hierarchy__2
+msgid "Has Division?"
+msgstr "¿Tiene División?"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__has_parent
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__ciiu__hierarchy__1
+msgid "Has Parent?"
+msgstr "¿Tiene relacionado?"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__has_section
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__ciiu__hierarchy__3
+msgid "Has Section?"
+msgstr "¿Tiene sección?"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__hierarchy
+msgid "Hierarchy"
+msgstr "Jerarquía"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__ciiu
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__ciiu
+msgid "ISIC Activity"
+msgstr "Actividad CIIU"
+
+#. module: l10n_co_res_partner
+#: model:ir.model,name:l10n_co_res_partner.model_ciiu
+msgid "ISIC List"
+msgstr "Lista CIIU"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__simplified_regimen__22
+msgid "International"
+msgstr "Internacional"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__person_type__2
+msgid "Juridical"
+msgstr "Jurídico"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__x_lastname1
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__x_lastname1
+#: model_terms:ir.ui.view,arch_db:l10n_co_res_partner.view_partner_form
+msgid "Last Name"
+msgstr "Primer apellido"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__person_type__1
+msgid "Natural"
+msgstr "Natural"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__simplified_regimen__23
+msgid "Natural Person"
+msgstr "Persona Natural"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__doctype__1
+msgid "No identification"
+msgstr "Número de identificación"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__fiscal_regimen__49
+msgid "Not responsible for VAT"
+msgstr "No responsable del IVA"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__parent
+msgid "Parent"
+msgstr "Relacionado"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__x_lastname2
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__x_lastname2
+#: model_terms:ir.ui.view,arch_db:l10n_co_res_partner.view_partner_form
+msgid "Second Last Name"
+msgstr "Segundo Apellido"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__x_name2
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__x_name2
+#: model_terms:ir.ui.view,arch_db:l10n_co_res_partner.view_partner_form
+msgid "Second Name"
+msgstr "Segundo nombre"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__section
+msgid "Section"
+msgstr "Sección"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__simplified_regimen__6
+msgid "Simplified"
+msgstr "Simplificado"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__simplified_regimen
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__simplified_regimen
+msgid "Tax Regime"
+msgstr "Régimen Simplificado"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_ciiu__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__doctype
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__doctype
+msgid "Type of Identification"
+msgstr "Tipo de identificación"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_partner__person_type
+#: model:ir.model.fields,field_description:l10n_co_res_partner.field_res_users__person_type
+msgid "Type of Person"
+msgstr "Tipo de persona"
+
+#. module: l10n_co_res_partner
+#: model:ir.model.fields.selection,name:l10n_co_res_partner.selection__res_partner__fiscal_regimen__48
+msgid "VAT sales tax"
+msgstr "IVA impuesto sobre las ventas"

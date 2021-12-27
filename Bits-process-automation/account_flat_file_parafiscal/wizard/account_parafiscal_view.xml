@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="account_flat_file_parafiscal_view">
+			<field name="name">account_flat_file_parafiscal_view</field>
+			<field name="model">account.flat.file.base</field>
+			<field name="inherit_id" ref="account_flat_file_base.account_flat_file_base_wizard_form" />
+			<field name="arch" type="xml">
+				<xpath expr="group[@name='file']" position="before">
+					<group name="parafiscal" attrs="{'invisible': [('file_type', '!=', 'get_collect_data_parafiscal')]}">
+						<group>
+							<field
+								name="template_modality"
+								attrs="{'required': [('file_type', '=', 'get_collect_data_parafiscal')]}"/>
+							<field
+								name="template_type"
+								attrs="{'required': [('file_type', '=', 'get_collect_data_parafiscal')]}"/>
+							<field 
+								name="associated_template_number"
+								attrs="{'invisible': [('template_type', 'not in', ['U', 'F', 'N'])]}"/>
+						</group>
+						<group>
+							<field 
+								name="period_1"
+								attrs="{'required': [('file_type', '=', 'get_collect_data_parafiscal')]}"/>
+							<field 
+								name="period_2"
+								attrs="{'required': [('file_type', '=', 'get_collect_data_parafiscal')]}"/>
+							<field
+								name="payment_date_associated_template"
+								attrs="{'invisible': [('template_type', 'not in', ['U', 'F', 'N'])]}"/>
+							<field
+								name="file_extension"
+								attrs="{'required': [('file_type', '=', 'get_collect_data_parafiscal')]}"/>
+						</group>
+					</group>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

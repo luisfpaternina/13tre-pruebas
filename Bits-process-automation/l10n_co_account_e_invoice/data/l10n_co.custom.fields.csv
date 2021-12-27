@@ -1,0 +1,3 @@
+id,code,name,active,method_type
+l10n_co_custom_fields_01,OC,Orden de compra,True,ON
+l10n_co_custom_fields_02,FAC,Factura,True,IN

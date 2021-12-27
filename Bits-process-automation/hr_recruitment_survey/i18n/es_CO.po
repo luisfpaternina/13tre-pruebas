@@ -1,0 +1,496 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_recruitment_profile_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-11 16:05+0000\n"
+"PO-Revision-Date: 2021-05-11 11:37-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: hr_recruitment_profile_report
+#: model:ir.actions.report,print_report_name:hr_recruitment_profile_report.recruitment_profile_report
+msgid "'Profile Report - %s' % (object.name)"
+msgstr "'Reporte Puesto de Trabajo - %s' % (object.name)"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>1.1 IDENTIFICATION</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>1.1 IDENTIFICACIÓN</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>1.2 ORGANIZATIONAL POSITION</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>1.2 POSICIÓN ORGANIZACIONAL</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>2.1 VOCATIONAL TRAINING</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>2.1 FORMACIÓN PROFESIONAL</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>2.2 PROFESIONAL EXPERIENCE</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>2.2 EXPERIENCIA PROFECIONAL</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>2.3 IDIOMS</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>2.3 IDIOMAS</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>3.1 OBJECT OF THE POSITION</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>3.1 OBJETIVOS DEL CARGO</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>3.2 SUPERVISION</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>3.2 SUPERVISION</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>3.3 JOB FUNCTIONS</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>3.3 FUNCIONES DEL TRABAJO</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>3.4 POSITION RESPONSIBILITIES</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>3.4 RESPONSABILIDADES DEL CARGO</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>3.5 REPLACEMENTS</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>3.5 REEMPLAZOS</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>3.6 TECHNOLOGY TOOLS</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>3.6 HERRAMIENTAS TECNÓLOGICAS</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>3.7 COMPETENCES</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>3.7 COMPETENCIAS</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>4.1 WORKING CONDITIONS</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>4.1 CONDICIONES DEL TRABAJO</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>4.2 RESPONSIBILITIES FOR SAFETY AND HEALTH AT WORK</b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>4.2 RESPONSABILIDADES EN SEGURIDAD Y SALUD EN EL TRABAJO</b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Additional Elements: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Elementos Adicionales: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Aprenticeship: </b>\n"
+"                                                </span>"
+msgstr ""
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Education: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Educación: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Hardware: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Hardware: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Job Level: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Nivel del Cargo: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Partners SST Responsabilities: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Responsabilidades SST para Colaboradores: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>SST Responsabilities With Dependants: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Responsabilidades SST de perfiles con personas a cargo: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Skills: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Habilidades: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Software: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Software: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Specific Time: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Tiempo Especifico: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<span>\n"
+"                                                    <b>Total Time: </b>\n"
+"                                                </span>"
+msgstr ""
+"<span>\n"
+"                                                    <b>Tiempo Total: </b>\n"
+"                                                </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "<span>AREA: </span>"
+msgstr "<span>AREA: </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "<span>Code: THCSFO01</span>"
+msgstr "<span>Código: THCSFO01</span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "<span>Date: Mayo 20 de 2020</span>"
+msgstr "<span>Fecha: Mayo 20 de 2020</span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "<span>Human Talent</span>"
+msgstr "<span>Talento Humano</span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "<span>LEADING POSITION: </span>"
+msgstr "<span>POSICIÓN DE LIDERAZGO: </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "<span>POSITION: </span>"
+msgstr "<span>CARGO: </span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "<span>Repleced By:</span>"
+msgstr "<span>Reemplazado por:</span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "<span>Replecements To:</span>"
+msgstr "<span>Reemplaza a:</span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "<span>Version: 2.0.0</span>"
+msgstr "<span>Version: 2.0.0</span>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid ""
+"<strong>\n"
+"                                                        CONTROL VERSION\n"
+"                                                            </strong>"
+msgstr ""
+"<strong>\n"
+"                                                        CONTROL DE VERSION\n"
+"                                                            </strong>"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "CHARGE RESPONSABILITIES"
+msgstr "RESPONSABILIDADES DEL CARGO"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "COMPETENCES FOR POSITIONS WITH PERSONNEL IN CHARGE"
+msgstr "COMPETENCIAS PARA POSICIONES CON PERSONAL A CARGO"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "DATE"
+msgstr "FECHA"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "DESCRIPTION PROFILE OF THE POSITION"
+msgstr "DESCRIPCION DEL PERFIL DEL CARGO"
+
+#. module: hr_recruitment_profile_report
+#: model:ir.ui.menu,name:hr_recruitment_profile_report.menu_hr_job_document_version
+msgid "Document Version"
+msgstr "Version de Documentos"
+
+#. module: hr_recruitment_profile_report
+#: model:ir.actions.act_window,name:hr_recruitment_profile_report.action_hr_job_documents_version_actions
+msgid "Documentation Version"
+msgstr "Version de la Documentación"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "I.JOB IDENTIFICATION"
+msgstr "I. IDENTIFICACIÓN DEL CARGO"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "IDIOM"
+msgstr "IDIOMA"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "II. PROFESIONAL PROFILE"
+msgstr "II.PERFIL PROFESIONAL"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "III. POSITION INFORMATION"
+msgstr "III. INFORMACIÓN DEL CARGO"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "IV. CONSIDERATION FOR THE PERFORMANCE OF THE POSITION"
+msgstr "IV. CONSIDERACIONES PARA EL DESEMPEÑO DEL CARGO"
+
+#. module: hr_recruitment_profile_report
+#: model:ir.model.fields,field_description:hr_recruitment_profile_report.field_document_version_control__is_implement_model
+msgid "Is Implement Model"
+msgstr ""
+
+#. module: hr_recruitment_profile_report
+#: model:ir.model.fields,field_description:hr_recruitment_profile_report.field_document_version_control__job_id
+msgid "Job"
+msgstr "Puesto"
+
+#. module: hr_recruitment_profile_report
+#: model:ir.model,name:hr_recruitment_profile_report.model_hr_job
+msgid "Job Position"
+msgstr "Puesto de Trabajo"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "LISTENING"
+msgstr "ESCUCHAR"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "Logo"
+msgstr "Logo"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "ORGANIZATIONAL COMPETENCES"
+msgstr "COMPETENCIAS ORGANIZACIONALES"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "Of"
+msgstr "De"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_header
+msgid "Page"
+msgstr "Página"
+
+#. module: hr_recruitment_profile_report
+#: model:ir.actions.report,name:hr_recruitment_profile_report.recruitment_profile_report
+msgid "Profile Report"
+msgstr "Repote Puesto de Trabajo"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "QUALIFICATION"
+msgstr "CALIFICACION"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "READING"
+msgstr "LECTURA"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "REASON"
+msgstr "MOTIVO"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "SPEAKING"
+msgstr "HABLA"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "SPECIFIC COMPETENCES OF THE POSITION"
+msgstr "COMPETENCIAS ESPECIFICAS DEL CARGO"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "TECHNICAL AND TECHNOLOGICAL COMPETENCES"
+msgstr "COMPETENCIAS TÉCNICAS Y TECNÓLOGICAS"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "VERSION"
+msgstr "VERSION"
+
+#. module: hr_recruitment_profile_report
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_report.hr_recruitment_profile_report_template
+msgid "WRITING"
+msgstr "ESCRITURA"
+
+#. module: hr_recruitment_profile_report
+#: model:ir.model,name:hr_recruitment_profile_report.model_document_version_control
+msgid "document.version.control"
+msgstr ""

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="support_files_send_wizard_form" model="ir.ui.view">
+            <field name="name">support.files.send.form</field>
+            <field name="model">support.files.send</field>
+            <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+            <field name="arch" type="xml">
+                <form string="Send Support Files">
+                    <sheet>
+                        <field name="invoice_id" invisible="True"/>
+                        <div class="oe_title">
+                            <h1>Electronic billing vouchers</h1>
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Attention! </strong>
+                                <field name="message"/>
+                            </div>
+                        </div>
+                        <notebook>
+                            <page name="wizard_line_ids" string="Custom Fields">
+                                <group>
+                                  <field name="line_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                      <field name="parent_id" invisible="True"/>
+                                      <field name="custom_field_id"/>
+                                      <field name="code"/>
+                                      <field name="value"/>
+                                      <field name="method_type" invisible="True"/>
+                                    </tree>
+                                  </field>
+                                </group>
+                            </page>
+                            <page name="wizard_outstanding_credits" string="Outstanding credits">
+                                <field 
+                                    name="reconcile_line_ids"
+                                    context="{
+                                        'tree_view_ref': 'l10n_co_account_e_invoice.account_wizard_outstanding_credits_tree'}"
+                                    options="{'no_create': True}">
+                                </field>
+                            </page>
+                        </notebook>
+                        <field name="attachment_ids" widget="many2many_binary"/>
+                    </sheet>
+                    <footer>
+                        <button string="Post" name="action_post_support_files" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window
+            name="Send files support"
+            id="invoice_send_support_files"
+            res_model="support.files.send"
+            binding_model="account.move"
+            binding_views="list"
+            view_mode="form"
+            target="new"
+            groups="account.group_account_invoice"
+        />
+    </data>
+</odoo>

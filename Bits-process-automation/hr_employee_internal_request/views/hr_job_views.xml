@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record id="hr_job_internal_request_button_box" model="ir.ui.view">
+        <field name="name">hr_job_internal_request_button_box</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="hr.view_hr_job_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//div[@name='button_box']/button[1]" position="before">
+            <button class="oe_stat_button" name="action_hr_job_ir_applications" icon="fa-indent" context="{'default_user_id': user_id}" type="action">
+              <field name="internal_request_count" widget="statinfo" string="Internal Request"/>
+            </button>
+          </xpath>
+
+          <!-- <xpath expr="//field[@name='description']" position="after">
+            <field name="internal_request_ids" />
+          </xpath> -->
+        </field>
+    </record>
+  </data>
+</odoo>
+<!-- name="action_get_internal_request_tree_view" -->

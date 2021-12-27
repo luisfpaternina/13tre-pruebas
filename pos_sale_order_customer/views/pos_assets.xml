@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="assets_backend"
+        name="pos_sale_order_customer"
+        inherit_id="point_of_sale.assets"
+    >
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/pos_sale_order_customer/static/src/css/styles.css" />
+            <script
+                type="text/javascript"
+                src="/pos_sale_order_customer/static/src/js/main.js"
+            />
+            <script
+                type="text/javascript"
+                src="/pos_sale_order_customer/static/src/js/db.js"
+            />
+            <script
+                type="text/javascript"
+                src="/pos_sale_order_customer/static/src/js/order.js"
+            />
+            <script
+                type="text/javascript"
+                src="/pos_sale_order_customer/static/src/js/lock_actions_on_invoice.js"
+            />
+            <script
+                type="text/javascript"
+                src="/pos_sale_order_customer/static/src/js/validate_invoice_draft_status.js"
+            />
+        </xpath>
+    </template>
+</odoo>

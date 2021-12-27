@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="pos_config_street_view_form" model="ir.ui.view">
+			<field name="name">pos.config.street.view.form</field>
+			<field name="model">pos.config</field>
+			<field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//div[@id='title']" position="after">
+					<div class="oe_title" id="street">
+                        <label for="street" class="oe_edit_only"/>
+                        <field name="street"/>
+                    </div>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>
+ 

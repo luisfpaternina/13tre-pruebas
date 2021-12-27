@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="account_types_advance_form">
+      <field name="name">account_types_advance form</field>
+      <field name="model">account.account.type</field>
+      <field name="inherit_id" ref="account.view_account_type_form"/>
+      <field name="arch" type="xml">
+        <field name="type" position="after">
+          <field name="internal_group" />
+        </field>
+      </field>
+    </record>
+    <menuitem id="item_account_types_advance" action="account.action_account_type_form" parent="account.account_account_menu" name="Types account"/>
+  </data>
+</odoo>

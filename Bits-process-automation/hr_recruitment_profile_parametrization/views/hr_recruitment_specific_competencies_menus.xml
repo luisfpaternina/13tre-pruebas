@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+      <!-- Acciones -->
+      <record id="action_hr_recruitment_specific_competencies" model="ir.actions.act_window">
+        <field name="name">Specific Competencies</field>
+        <field name="res_model">hr.recruitment.specific.competencies</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="context">{"search_default_Current":1}</field> -->
+      </record>
+
+      <!-- Agrupación
+        account.menu_finance_configuration
+       -->
+      <menuitem
+        id="menu_human_resources_job_recruitment_profile"
+        name="Recruitment Profile"
+        parent="hr.menu_human_resources_configuration"
+        sequence="15"
+        />
+
+        <!-- submenu holiday book-->
+        <menuitem
+            id="menu_recruitment_specific_competencies"
+            parent="menu_human_resources_job_recruitment_profile"
+            action="action_hr_recruitment_specific_competencies"
+            sequence="1"/>
+
+    </data>
+</odoo>

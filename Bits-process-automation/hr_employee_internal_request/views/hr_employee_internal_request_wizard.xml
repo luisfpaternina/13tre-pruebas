@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <!-- wizard return internal request -->
+    <record id="hr_employee_internal_request_wizard" model="ir.ui.view">
+      <field name="name">hr_employee_internal_request_wizard</field>
+      <field name="model">hr.employee.internal.request.wizard</field>
+      <field name="mode">primary</field>
+      <field name="arch" type="xml">
+        <form string="Internal Request" class="o_form_project_tasks">
+            <sheet>
+                <group>
+                    <field name="reason_for_rejection" required="1" />
+                </group>
+            </sheet>
+
+            <footer>
+
+              <button
+                string="Return Internal Request"
+                name="return_internal_request"
+                type="object"
+                class="btn-primary" />
+
+            </footer>
+        </form>
+      </field>
+    </record>
+    <!-- wizard internal request -->
+
+
+    <!-- wizard return internal request -->
+    <record id="hr_employee_cancel_ir_wizard" model="ir.ui.view">
+      <field name="name">hr_employee_cancel_ir_wizard</field>
+      <field name="model">hr.employee.internal.request.wizard</field>
+      <field name="mode">primary</field>
+      <field name="arch" type="xml">
+        <form string="Internal Request" class="o_form_project_tasks">
+            <sheet>
+                <group>
+                    <field name="reason_for_cancellation" required="1"/>
+                </group>
+            </sheet>
+
+            <footer>
+
+              <button
+                string="Cancel Internal Request"
+                name="cancel_internal_request"
+                type="object"
+                class="btn-primary" />
+
+            </footer>
+        </form>
+      </field>
+    </record>
+
+    <!-- wizard approve internal request -->
+    <record id="hr_employee_approve_ir_wizard" model="ir.ui.view">
+      <field name="name">hr_employee_approve_ir_wizard</field>
+      <field name="model">hr.employee.internal.request.wizard</field>
+      <field name="mode">primary</field>
+      <field name="arch" type="xml">
+        <form string="Internal Request" class="o_form_project_tasks">
+            <sheet>
+                <group>
+                    <field name="approval_reason" />
+                </group>
+            </sheet>
+
+            <footer>
+
+              <button
+                string="Internal Request Approval"
+                name="approval_internal_request"
+                type="object"
+                class="btn-primary" />
+
+            </footer>
+        </form>
+      </field>
+    </record>
+    <!-- wizard internal request -->
+
+  </data>
+</odoo>

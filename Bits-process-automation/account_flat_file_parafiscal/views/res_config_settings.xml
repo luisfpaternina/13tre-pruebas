@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_salary_rule_parafiscal_settings_view_form" model="ir.ui.view">
+        <field name="name">hr.salary.rule.parafiscal.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="120"/>
+        <field name="inherit_id"
+            ref="hr_payroll.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='hr_payroll_accountant']" position="after">
+              <h2>Parafiscal</h2>
+              <div class="row mt16 o_settings_container">
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">VTW Rules:</span>
+                      <div class="text-muted">
+                        Transitory variation in wages
+                      </div>
+                      <div class="mt8">
+                          <field name="vst_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">AVP Rules:</span>
+                      <div class="text-muted">
+                        Voluntary contribution
+                      </div>
+                      <div class="mt8">
+                          <field name="avp_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">Company Arl:</span>
+                      <div class="text-muted">
+                        Configuration Arl for company
+                      </div>
+                      <div class="mt8">
+                          <field name="entity_arl"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt16 o_settings_container">
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">SLN Rules:</span>
+                      <div class="text-muted">
+                        Transitory variation in wages
+                      </div>
+                      <div class="mt8">
+                          <field name="sln_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">IGE Rules:</span>
+                      <div class="text-muted">
+                        Voluntary contribution
+                      </div>
+                      <div class="mt8">
+                          <field name="ige_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt16 o_settings_container">
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">LMA Rules:</span>
+                      <div class="text-muted">
+                        Transitory variation in wages
+                      </div>
+                      <div class="mt8">
+                          <field name="lma_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">VAC-LR Rules:</span>
+                      <div class="text-muted">
+                        Voluntary contribution
+                      </div>
+                      <div class="mt8">
+                          <field name="vac_lr_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt16 o_settings_container">
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">IRL:</span>
+                      <div class="text-muted">
+                        Days of disability due to work accident
+                      </div>
+                      <div class="mt8">
+                          <field name="irl_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">Structure Integral Salarys:</span>
+                      <div class="text-muted">
+                        Transitory variation in wages
+                      </div>
+                      <div class="mt8">
+                          <field name="integral_salary_structure_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt16 o_settings_container">
+                <div class="col-12 o_setting_box">
+                  <div class="o_setting_right_pane">
+                    <span class="o_form_label">Rate</span>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                        <!-- <span class="o_form_label"></span> -->
+                        <div class="content-group">
+                          <div class="row mt8">
+                              <label string="Subsistence subaccount" for="rate_subsistence_afs" class="col-lg-3 o_light_label"/>
+                              <field name="rate_subsistence_afs"/>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                        <!-- <span class="o_form_label"></span> -->
+                        <div class="content-group">
+                          <div class="row mt8">
+                              <label string="Solidarity subaccount" for="rate_solidarity_afs" class="col-lg-3 o_light_label"/>
+                              <field name="rate_solidarity_afs"/>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt16 o_settings_container">
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">IBC Adjustment:</span>
+                      <div class="text-muted">
+                        Rules IBC adjustment
+                      </div>
+                      <div class="mt8">
+                          <field name="ibc_adjustment_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">CCF not applicable:</span>
+                      <div class="text-muted">
+                        Rules not applicable
+                      </div>
+                      <div class="mt8">
+                          <field name="non_apply_box_rule_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt16 o_settings_container">
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">Structure Sena Salarys:</span>
+                      <div class="text-muted">
+                        Structures to which it applies 
+                      </div>
+                      <div class="mt8">
+                          <field name="sena_salary_structure_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

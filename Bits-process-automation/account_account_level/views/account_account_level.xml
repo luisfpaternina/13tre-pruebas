@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.ui.view" id="account_account_level_view">
+    <field name="name">account_account_level_view</field>
+    <field name="model">account.account</field>
+    <field name="inherit_id" ref="account.view_account_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='deprecated']" position="after">
+        <field name="level" attrs="{'required': True}" />
+        <field name="depends_on" attrs="{'required': [('level', '!=', '1')]}" />
+      </xpath>
+    </field>
+  </record>
+  <record model="ir.ui.view" id="account_account_level_tree">
+    <field name="name">account_account_level_tree</field>
+    <field name="model">account.account</field>
+    <field name="inherit_id" ref="account.view_account_list" />
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='company_id']" position="after">
+        <field name="level" optional="hide" />
+        <field name="depends_on" optional="hide" />
+      </xpath>
+    </field>
+  </record>
+</odoo>

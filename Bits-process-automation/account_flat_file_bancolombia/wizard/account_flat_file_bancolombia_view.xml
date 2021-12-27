@@ -1,0 +1,19 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="account_flat_file_bancolombia_view">
+      <field name="name">account_flat_file_bancolombia_view</field>
+      <field name="model">account.flat.file.base</field>
+      <field name="inherit_id" ref="account_flat_file_base.account_flat_file_base_wizard_form"/>
+      <field name="arch" type="xml">
+      <xpath expr="group[@name='file']" position="before">
+        <group>
+          <group>
+            <field name="place_to_pay" attrs="{'required':[('bank_bic','=','07'),('file_type','=','get_collect_data_bank')],'invisible':['|',('bank_bic','!=','07'),('file_type','!=','get_collect_data_bank')]}"/>
+            <field name="bank_bic" invisible = '1'/>
+          </group> 
+        </group>        
+      </xpath>        
+      </field>
+    </record>
+  </data>
+</odoo>

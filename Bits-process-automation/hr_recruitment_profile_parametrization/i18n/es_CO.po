@@ -1,0 +1,713 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_recruitment_profile_parametrization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-06 22:40+0000\n"
+"PO-Revision-Date: 2021-05-06 17:42-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_positions_in_charge_competencies.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__name
+#, python-format
+msgid " Name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_organizational_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_positions_in_charge_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_responsabilities_charge.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_specific_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_technical_technological_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_work_conditions.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__active
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__active
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__active
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__active
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__active
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__active
+#, python-format
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__additional_elements
+#, python-format
+msgid "Additional Elements"
+msgstr "Elementos Adicionales"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_positions_in_charge_competencies__calification__high
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_responsabilities_charge__calification__high
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_specific_competencies__calification__high
+msgid "Alta"
+msgstr ""
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_positions_in_charge_competencies__calification__low
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_responsabilities_charge__calification__low
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_specific_competencies__calification__low
+msgid "Baja"
+msgstr ""
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_positions_in_charge_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_responsabilities_charge.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_specific_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_technical_technological_competencies.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__calification
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__calification
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__calification
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__calification
+#, python-format
+msgid "Calification"
+msgstr "Calificación"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_positions_in_charge_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_responsabilities_charge.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_specific_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_technical_technological_competencies.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__charge_id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__charge_id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__charge_id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__charge_id
+#, python-format
+msgid "Charge"
+msgstr "Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__positions_charge_competencies_ids
+#, python-format
+msgid "Charge Competencies"
+msgstr "Competencias de Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_organizational_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_positions_in_charge_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_responsabilities_charge.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_specific_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_technical_technological_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_work_conditions.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__code
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__code
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__code
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__code
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__code
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__code
+#, python-format
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_profile_view
+msgid "Competencies"
+msgstr "Competencias"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__dependants
+#, python-format
+msgid "Dependants"
+msgstr "Con personal a cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_organizational_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_positions_in_charge_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_responsabilities_charge.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_specific_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_technical_technological_competencies.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_work_conditions.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__description
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__description
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__description
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__description
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__description
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__description
+#, python-format
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_experience
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_recruitment_experience
+msgid "Experience"
+msgstr "Experiencia"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__general_experience
+#, python-format
+msgid "General Experience"
+msgstr "Experiencia General"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__hardware
+#, python-format
+msgid "Hardware"
+msgstr ""
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__hr_job
+msgid "Hr Job"
+msgstr "Perfil de Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__id
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__job_functions
+#, python-format
+msgid "Job Functions"
+msgstr "Funciones del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_profile_view
+msgid "Job Information"
+msgstr "Información del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__job_objectives
+#, python-format
+msgid "Job Objectives"
+msgstr "Objetivos del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_profile_view
+msgid "Job Performance"
+msgstr "Desempeño del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_job
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_profile_view
+msgid "Job Profile"
+msgstr "Perfil Profesional"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__job_responsibilities
+#, python-format
+msgid "Job Responsibilities"
+msgstr "Responsabilidades del cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__sst_responsibilities_with_dependants
+#, python-format
+msgid "Job Responsibilities with dependants"
+msgstr "Responsabilidades con dependientes"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_language.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__language_ids
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__language
+#, python-format
+msgid "Language"
+msgstr "Idioma"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions____last_update
+msgid "Last Modified on"
+msgstr "Modificado en"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_positions_in_charge_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__write_date
+msgid "Last Updated on"
+msgstr "Actualizado en"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_level.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_level__name
+#, python-format
+msgid "Level Name"
+msgstr "Nombre nivel"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_level
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_recruitment_level
+msgid "Levels"
+msgstr "Niveles"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_language.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__listening
+#, python-format
+msgid "Listening"
+msgstr "Escucha"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_positions_in_charge_competencies__calification__med
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_responsabilities_charge__calification__med
+#: model:ir.model.fields.selection,name:hr_recruitment_profile_parametrization.selection__hr_recruitment_has_specific_competencies__calification__mid
+msgid "Media"
+msgstr ""
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_experience.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_experience__name
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_organizational_competencies.py:0
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_organizational_competencies
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__organizational_competencies_ids
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__organizational_competencies_id
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_responsabilities_organizational_competencies
+#, python-format
+msgid "Organizational Competencies"
+msgstr "Competencias Organizacionales"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_organizational_competencies.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_organizational_competencies__name
+#, python-format
+msgid "Organizational Competencies Name"
+msgstr "Competencias Organizacionales Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_organizational_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_organizational_competencies
+#, python-format
+msgid "Organizational Competencies configuration"
+msgstr "Competencias Organizacionales Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__partners_sst_responsibilities
+#, python-format
+msgid "Partners SST Responsibilities"
+msgstr "Responsabilidad SST para Colaboradores"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_positions_in_charge_competencies.py:0
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_positions_in_charge_competencies
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_positions_in_charge_competencies__position_in_charge_ids
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_responsabilities_positions_in_charge_competencies
+#, python-format
+msgid "Positions in Charge Competencies"
+msgstr "Competencias para posiciones con personal a cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_organizational_competencies.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_organizational_competencies__charge_id
+#, python-format
+msgid "Post Job"
+msgstr "Puesto de trabajo"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_profile_view
+msgid "Professional Experience"
+msgstr "Experiencia Profesional"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_language.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__reading
+#, python-format
+msgid "Reading"
+msgstr "Lectura"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_organizational_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_has_organizational_competencies
+#, python-format
+msgid "Recruitment Has Organizational Competencies configuration"
+msgstr "Competencias Organizacionales Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_responsabilities_charge.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_has_responsabilities_charge
+#, python-format
+msgid "Recruitment Has Responsabilities Charge configuration"
+msgstr "Responsabilidades del Cargo Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_specific_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_has_specific_competencies
+#, python-format
+msgid "Recruitment Has Specific Competencies Configuration"
+msgstr "Competencias Especificas del Cargo Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_technical_technological_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_has_technical_technological_competencies
+#, python-format
+msgid "Recruitment Has Technical Technological Competencies Configuration"
+msgstr "Competencias Técnicas y Tecnológicas Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_organizational_competencies_form
+msgid "Recruitment Organizational Competencies"
+msgstr "Competencias Organizacionales"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_positions_in_charge_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_positions_in_charge_competencies
+#, python-format
+msgid "Recruitment Positions In Charge Competencies Configuration"
+msgstr "Competencias para Posiciones con Personal a Cargo Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_positions_in_charge_competencies_form
+msgid "Recruitment Positions in Charge Competencies"
+msgstr "Competencias para posiciones con personal a cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_human_resources_job_recruitment_profile
+msgid "Recruitment Profile"
+msgstr "Perfil de Contratación"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_responsabilities_charge_form
+msgid "Recruitment Responsabilities Charge"
+msgstr "Responsabilidades del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_responsabilities_charge.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_responsabilities_charge
+#, python-format
+msgid "Recruitment Responsabilities Charge configuration"
+msgstr "Responsabilidades del Cargo Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_specific_competencies_form
+msgid "Recruitment Specific Competencies"
+msgstr "Competencias Especificas del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_specific_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_specific_competencies
+#, python-format
+msgid "Recruitment Specific Competencies configuration"
+msgstr "Competencias Especificas del Cargo Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_technical_technological_competencies_form
+msgid "Recruitment Technical Technological Competencies"
+msgstr "Competencias Técnicas y Tecnológicas"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_technical_technological_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_technical_technological_competencies
+#, python-format
+msgid "Recruitment Technical Technological Competencies configuration"
+msgstr "Competencias Técnicas y Tecnológicas Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_work_conditions_form
+msgid "Recruitment Work Conditions"
+msgstr "Condiciones de Trabajo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_work_conditions.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_work_conditions
+#, python-format
+msgid "Recruitment Work Conditions configuration"
+msgstr "Condiciones de Trabajo Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_level_form
+msgid "Recruitment aptitudes level"
+msgstr "Nivel de aptitudes de contratación"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_level.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_level
+#, python-format
+msgid "Recruitment aptitudes level configuration"
+msgstr "Configuración nivel de aptitudes de contratación"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_experience_form
+msgid "Recruitment experience"
+msgstr "Experiencia de contratación"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_experience.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_experience
+#, python-format
+msgid "Recruitment experience configuration"
+msgstr "Configuración experiencia de contratación"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_positions_in_charge_competencies.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_has_positions_in_charge_competencies
+#, python-format
+msgid "Recruitment has Positions in Charge Competencies configuration"
+msgstr "Competencias para Posiciones con Personal a Cargo Configuración"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_language.py:0
+#: model:ir.model,name:hr_recruitment_profile_parametrization.model_hr_recruitment_language
+#, python-format
+msgid "Recruitment language aptitudes configuration"
+msgstr "Configuración aptitudes de idiomas para contratación"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__replaced_by
+#, python-format
+msgid "Replaced By"
+msgstr "Reemplazado por"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_profile_view
+msgid "Replaces"
+msgstr "Reemplazos"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__replaces_to
+#, python-format
+msgid "Replaces To"
+msgstr "Reemplaza a"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_responsabilities_charge.py:0
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_responsabilities_charge
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__responsabilities_charge_ids
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_responsabilities_charge__responsabilities_id
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_responsabilities_charge_competencies
+#, python-format
+msgid "Responsabilities Charge"
+msgstr "Responsabilidades del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_responsabilities_charge.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_responsabilities_charge__name
+#, python-format
+msgid "Responsabilities Charge Name"
+msgstr "Responsabilidades del Cargo Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__software
+#, python-format
+msgid "Software"
+msgstr ""
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_language.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__speaking
+#, python-format
+msgid "Speaking"
+msgstr "Habla"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_specific_competencies.py:0
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_specific_competencies
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__specific_competencies_ids
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_specific_competencies__specific_id
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_recruitment_specific_competencies
+#, python-format
+msgid "Specific Competencies"
+msgstr "Competencias Especificas del Cargo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_specific_competencies.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_specific_competencies__name
+#, python-format
+msgid "Specific Competencies Name"
+msgstr "Competencias Especificas del Cargo Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__specific_experience
+#, python-format
+msgid "Specific Experience"
+msgstr "Experiencia Específica"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__supervision
+#, python-format
+msgid "Supervision"
+msgstr "Supervisión"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_has_technical_technological_competencies.py:0
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_technical_technological_competencies
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__technical_technological_competencies_ids
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_has_technical_technological_competencies__technical_competencies_id
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_responsabilities_technical_technological_competencies
+#, python-format
+msgid "Technical Technological Competencies"
+msgstr "Competencias Técnicas y Tecnológicas"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_technical_technological_competencies.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_technical_technological_competencies__name
+#, python-format
+msgid "Technical Technological Competencies Name"
+msgstr "Competencias Técnicas y Tecnológicas Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_profile_parametrization.hr_recruitment_profile_view
+msgid "Technological Tools"
+msgstr "Herramientas Tecnológicas"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_job.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_job__vocational_training
+#, python-format
+msgid "Vocational Training"
+msgstr "Formación Profesional"
+
+#. module: hr_recruitment_profile_parametrization
+#: model:ir.actions.act_window,name:hr_recruitment_profile_parametrization.action_hr_recruitment_work_conditions
+#: model:ir.ui.menu,name:hr_recruitment_profile_parametrization.menu_work_conditions
+msgid "Work Conditions"
+msgstr "Condiciones de Trabajo"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_work_conditions.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_work_conditions__name
+#, python-format
+msgid "Work Conditions Name"
+msgstr "Condiciones de Trabajo Nombre"
+
+#. module: hr_recruitment_profile_parametrization
+#: code:addons/hr_recruitment_profile_parametrization/models/hr_recruitment_language.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_profile_parametrization.field_hr_recruitment_language__writing
+#, python-format
+msgid "Writing"
+msgstr "Escritura"

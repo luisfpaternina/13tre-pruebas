@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Categorización menus holiday history -->
+        <menuitem
+            id="menu_holiday_book"
+            name="Holiday Book"
+            parent="hr.menu_hr_employee_payroll"
+            sequence="2"/>
+
+            <!-- submenu holiday book-->
+            <menuitem
+                id="menu_hr_payroll_holiday_lapse"
+                parent="menu_holiday_book"
+                action="action_hr_payroll_holiday_lapse"
+                sequence="1"/>
+
+            <menuitem
+                id="menu_hr_payroll_holidays_history"
+                parent="menu_holiday_book"
+                action="action_hr_payroll_holidays_history"
+                sequence="2"/>
+
+    </data>
+</odoo>

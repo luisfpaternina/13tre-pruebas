@@ -1,0 +1,897 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_exogenus_settings
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-16 16:44+0000\n"
+"PO-Revision-Date: 2021-11-16 16:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_exogenus_settings
+#: code:addons/account_exogenus_settings/models/account_shareholders_company.py:0
+#, python-format
+msgid "A value in total number of shares must be assigned."
+msgstr "Se debe asignar un valor en el campo número de acciones total."
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_account
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__account
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_id
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_code
+msgid "Account Code"
+msgstr "Código cuenta"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__account_shareholders_company_id
+msgid "Account Shareholders Company"
+msgstr "Accionistas de la compañia"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_witholding_source_id
+msgid "Account Withholding Source"
+msgstr "Fuente de retención de la cuenta"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_withholding_assumed_income_id
+msgid "Account Withholding Tax Assumed for Income"
+msgstr "Retención de impuestos de cuenta asumida para ingresos"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.action_view_account_column_configuration
+#: model:ir.model,name:account_exogenus_settings.model_account_column_configuration
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__account_column_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__account_column_ids
+#: model:ir.ui.menu,name:account_exogenus_settings.menu_account_column_configuration
+msgid "Account column configuration"
+msgstr "Configuración Columna-cuenta"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_column_configuration_lines
+msgid "Account column configuration lines"
+msgstr "Configuración líneas Columna-cuenta"
+
+#. module: account_exogenus_settings
+#: model:ir.ui.menu,name:account_exogenus_settings.account_concept_line_menu
+msgid "Account concept settings"
+msgstr "Exógeno de línea conceptual"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_exogenus_format_column
+msgid "Account exogenus format column"
+msgstr "Formato exogena cuenta-columna"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_format_exogenus_from_view
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_form
+msgid "Account-column"
+msgstr "Columna-cuenta"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__account_account_ids
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__account_account_ids
+msgid "Accounts"
+msgstr "Cuentas"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__bool_amount
+msgid "Amount Tax"
+msgstr "Importe Impuesto"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__analytic_account_id
+msgid "Analytic Account"
+msgstr "Cuenta Analitíca"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__base_amounts_report
+msgid "Base Amounts to Report"
+msgstr "Cantidad base para informar"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__crossovered_budget_id
+msgid "Budget"
+msgstr "Presupuesto"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_general_budgets_analysis_search
+msgid "Budget Lines"
+msgstr "Lineas del Presupuesto"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__general_budget_id
+msgid "Budgetary Position"
+msgstr "Posición presupuestaria"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_general_budgets_analysis_search
+msgid "Budgets"
+msgstr "Presupuestos"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.wizard_account_exogenus_print_xls
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields.selection,name:account_exogenus_settings.selection__general_budget_analysis__crossovered_budget_state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__code
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__code
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__code
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_line_view_search
+msgid "Code"
+msgstr "Código"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__concept_code
+msgid "Code Concept"
+msgstr "Cocepto de código"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__format_exogenus_code
+msgid "Code Format"
+msgstr "Formato de código"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_form
+msgid "Code python"
+msgstr "Código Python"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__column
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__account_column_id
+msgid "Column"
+msgstr "Columna"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__bool_delete
+msgid "Column to calculate taxes"
+msgstr "Columna para calcular impuestos"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__company_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__company_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__company_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__company_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__concept_exogenus_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__concept_exogenus_id
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.concept_exogenus_action
+#: model:ir.ui.menu,name:account_exogenus_settings.account_concept_exogenus_menu
+msgid "Concept Exogenus"
+msgstr "Concepto exógeno"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__concept_exogenus_line_ids
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__partners_shareholders_line_ids
+msgid "Concept Lines"
+msgstr "Líneas conceptuales"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__condition_python
+msgid "Condition python"
+msgstr "Código Python"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields.selection,name:account_exogenus_settings.selection__general_budget_analysis__crossovered_budget_state__confirm
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_partner__country_code
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_users__country_code
+msgid "Country code"
+msgstr "Codigo Cuidad"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.actions.act_window,help:account_exogenus_settings.action_view_account_column_configuration
+msgid "Create new record"
+msgstr "Crear nuevo registro"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__create_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__create_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields.selection,name:account_exogenus_settings.selection__account_format_exogenus__format_type__dian
+msgid "DIAN"
+msgstr ""
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__deducible_percentage
+msgid "Deducible Percentage"
+msgstr "Porcentaje deducible"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__deductible
+msgid "Deductible"
+msgstr "Deducible"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__description
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_form
+msgid "Description..."
+msgstr "Descripción..."
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__display_name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields.selection,name:account_exogenus_settings.selection__account_format_exogenus__format_type__district
+msgid "District"
+msgstr "Distrito"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields.selection,name:account_exogenus_settings.selection__general_budget_analysis__crossovered_budget_state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields.selection,name:account_exogenus_settings.selection__general_budget_analysis__crossovered_budget_state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__date_to
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__date_to
+msgid "End Date"
+msgstr "Fecha Final"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_form
+msgid ""
+"Example ejecution: <br/>\n"
+"                                    <b>object : model account.move.line</b> and return record model account.move.line(1) <br/>\n"
+"                                    <b>user_obj : self.env.user</b> <br/>\n"
+"                                    <b>result = object.move_id.name</b> <br/>\n"
+"                                    &gt;&gt; AND return account move code name"
+msgstr ""
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_partner__bool_exclusion
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_users__bool_exclusion
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.wizard_account_exogenus_print_xls
+msgid "Exclusion"
+msgstr ""
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_exogenus_tree_view
+msgid "Exogenus Concept"
+msgstr "Concepto de Exógena"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_format_exogenus_tree_view
+msgid "Exogenus Fromat"
+msgstr "Formato de Exógena"
+
+#. module: account_exogenus_settings
+#: model:ir.ui.menu,name:account_exogenus_settings.account_exogenus_menu
+msgid "Exogenus information"
+msgstr "Exógena"
+
+#. module: account_exogenus_settings
+#: model:ir.ui.menu,name:account_exogenus_settings.main_menu_xls_report_exogenus
+msgid "Exogenus report"
+msgstr "Reporte Exógena"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_move__expired_days
+msgid "Expired Days"
+msgstr "Dias de vencida"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__fiscal_liquid_equity
+msgid "Fiscal Liquid Equity"
+msgstr "Patrimonio líquido fiscal"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__account_format_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__format_id
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_line_view_search
+msgid "Format"
+msgstr "Formato"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.format_exogenus_action
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__format_exogenus_id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__format_exogenus_id
+#: model:ir.ui.menu,name:account_exogenus_settings.account_format_exogenus_menu
+msgid "Format Exogenus"
+msgstr "Formato Exógeno"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__format_type
+msgid "Format type"
+msgstr "Tipo de formato"
+
+#. module: account_exogenus_settings
+#: model:ir.ui.menu,name:account_exogenus_settings.main_menu_general_budgets_analysis
+msgid "General Budget  Analysis Report"
+msgstr " Reporte Análisis de Presupuesto General"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.action_menu_general_budgets_analysis
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.general_budgets_analysis_report_view
+msgid "General Budgets Analysis"
+msgstr "Análisis de Presupuesto General"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.wizard_account_exogenus_print_xls
+msgid "General information about the company"
+msgstr "Datos generales de la empresa"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_line_view_search
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_general_budgets_analysis_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__bool_lesser_amount
+msgid "Have Lesser Amount"
+msgstr "Tiene Cuantia Menor"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__bool_concept
+msgid "Have concept"
+msgstr "Tiene concepto"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__id
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__id
+msgid "ID"
+msgstr ""
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_cost_expense_deductible_id
+msgid "IVA Account Costo or Expense Deductible"
+msgstr "Costo de la cuenta de IVA o deducible de gastos"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_cost_expense_not_deductible_id
+msgid "IVA Account Costo or Expense Not Deductible"
+msgstr "Costo o gasto de la cuenta de IVA no deducible"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_iva_withholding_common_regime_id
+msgid "IVA Withholding Account to Common Regime"
+msgstr "Cuenta de retención de IVA a régimen común"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,help:account_exogenus_settings.field_account_concept_exogenus__number_shares_outstanding
+msgid ""
+"If it is a joint stock company, indicate the number of shares in circulation"
+msgstr ""
+"Si es una sociedad anónima, indique el número de acciones en circulación"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_tax__is_exterior
+msgid "Is Exterior"
+msgstr "Exterior"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_account__is_refund
+msgid "Is a refund"
+msgstr "Devolución"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_tax__is_rteiva
+msgid "Is rteIVA"
+msgstr "RteIva"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_tax__is_rtefte
+msgid "Is rtefte"
+msgstr "Rtefte"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__joint_stock_company
+msgid "Join Stock Company"
+msgstr "Unirse a acciones de la compañía"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines____last_update
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__write_uid
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration_lines__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__write_date
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__lesser_amount
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__lesser_amount
+msgid "Lesser Amount"
+msgstr "Cuantia menor"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_line_exogenus_from_view
+msgid "Line Concept"
+msgstr "Concepto de línea"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.concept_line_exogenus_action
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_line_tree_view
+msgid "Line Concept Exogenus"
+msgstr "Exógeno de concepto de línea"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__liquid_assets
+msgid "Liquid Assets"
+msgstr "Patrimonio Líquido"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_account__lower_amount
+msgid "Lower amount"
+msgstr "Cuantía menor"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__name
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__name
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_line_view_search
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus_line__account_non_domiciled_iva_Withholding_id
+msgid "Non-domiciled VAT Withholding Account"
+msgstr "Cuenta de retención de IVA no domiciliada"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_general_budgets_analysis_search
+msgid "Not Cancelled"
+msgstr "No cancelado"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__number_share
+msgid "Number Share"
+msgstr "Número compartido"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__number_shares_outstanding
+msgid "Number Shares Outstanding"
+msgstr "Número de acciones en circulación"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__number_shares
+msgid "Number of Shares"
+msgstr "Número de Acciones"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__paid_date
+msgid "Paid Date"
+msgstr "Fecha de pago"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__participation_percentage
+msgid "Participation Percentage"
+msgstr "Porcentaje de participación"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_partners_shareholders_lines__partner_id
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__partner_report
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__partner_report
+msgid "Partner Report"
+msgstr "Informe de socios"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__percentage_share
+msgid "Percentage Share"
+msgstr "Porcentaje de Participación"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__planned_amount
+msgid "Planned Amount"
+msgstr "Importe previsto"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_portfolio_report_view
+msgid "Portfolio Report"
+msgstr "Informe de Cartera"
+
+#. module: account_exogenus_settings
+#: model:ir.ui.menu,name:account_exogenus_settings.main_menu_portfolio_report
+msgid "Portfolio report"
+msgstr "Informe de Cartera"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__practical_amount
+msgid "Practical Amount"
+msgstr "Importe real"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.action_menu_portfolio_report
+msgid "Print Porfolio Report"
+msgstr "Generación Informe de Cartera"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.wizard_account_exogenus_print_xls
+msgid "Print XLS"
+msgstr "Generar XLS"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.action_menu_wizard
+msgid "Print exogenus XLS"
+msgstr "Generar formato de exógena"
+
+#. module: account_exogenus_settings
+#: model:ir.ui.menu,name:account_exogenus_settings.main_menu_print_xls_report_exogenus
+msgid "Print exogenus report"
+msgstr "Generar formato de exógena"
+
+#. module: account_exogenus_settings
+#: model:ir.ui.menu,name:account_exogenus_settings.menu_portfolio_report
+msgid "Print portfolio report"
+msgstr "Generación Informe de Cartera"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_move__account_receivable_id
+msgid "Receivable Account"
+msgstr "Cuenta por cobrar"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_line_view_search
+msgid "Search_concepts_exogenus"
+msgstr "Buscar_conceptos_exogena"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_exogenus_format_column__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__partner_id
+msgid "Shareholder"
+msgstr "Accionista"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company_line__shareholder_contribution
+msgid "Shareholder Contribution"
+msgstr "Aporte Accionista"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__account_shareholders_company_line_ids
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_shareholders_company_form_view
+msgid "Shareholders"
+msgstr "Accionistas"
+
+#. module: account_exogenus_settings
+#: model:ir.actions.act_window,name:account_exogenus_settings.account_shareholders_company_action
+#: model:ir.ui.menu,name:account_exogenus_settings.account_shareholders_company_menu
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_shareholders_company_form_view
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_shareholders_company_tree_view
+msgid "Shareholders Composition"
+msgstr "Composición Accionaria"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__smaller_amounts
+msgid "Smaller Amounts"
+msgstr "Cuantías Menores"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__date_from
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__date_from
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__crossovered_budget_state
+msgid "State"
+msgstr "Estado"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_partner__state_code
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_users__state_code
+msgid "State code"
+msgstr "Codigo de estado"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,help:account_exogenus_settings.field_account_concept_exogenus__fiscal_liquid_equity
+msgid "Tax net equity as of December 31 of the year to be reported"
+msgstr "Patrimonio neto fiscal al 31 de diciembre del año que se informa"
+
+#. module: account_exogenus_settings
+#: code:addons/account_exogenus_settings/models/account_format_exogenus.py:0
+#, python-format
+msgid "The column should be one per line"
+msgstr "Las columnas no se pueden repetir"
+
+#. module: account_exogenus_settings
+#: code:addons/account_exogenus_settings/models/account_shareholders_company.py:0
+#: code:addons/account_exogenus_settings/models/account_shareholders_company.py:0
+#, python-format
+msgid "The number of shares must not be zero."
+msgstr "El número de acciones no debe ser cero."
+
+#. module: account_exogenus_settings
+#: code:addons/account_exogenus_settings/models/account_concept_exogenus.py:0
+#, python-format
+msgid "The percentage cannot be greater than 100"
+msgstr "El porcentaje no puede ser mayor a 100"
+
+#. module: account_exogenus_settings
+#: code:addons/account_exogenus_settings/wizard/account_exogenus_print_xls.py:0
+#, python-format
+msgid "The start date cannot be greater than the end date"
+msgstr "La fecha de inicio no puede mayor a la fecha final"
+
+#. module: account_exogenus_settings
+#: code:addons/account_exogenus_settings/models/account_shareholders_company.py:0
+#, python-format
+msgid ""
+"The sum of number of shares per shareholder must not exceed the total number"
+" of shares."
+msgstr ""
+"La suma del número de acciones por accionista no debe superar el  número de "
+"acciones total."
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_general_budget_analysis__theoritical_amount
+msgid "Theoretical Amount"
+msgstr "Importe teórico"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_wizard_account_exogenus_print_xls__partner_id
+msgid "Third"
+msgstr "Tercero"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_shareholders_company_form_view
+msgid "Total Contribution"
+msgstr "Aporte Total"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_exogenus_from_view
+msgid "Total Number Share"
+msgstr "Cuota de número total"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__total_number_shares
+msgid "Total Number of Shares"
+msgstr "Número de Acciones Total"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_exogenus_from_view
+msgid "Total Participation Percentage"
+msgstr "Porcentaje de participación total"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__total_number_share
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_concept_exogenus__total_percentage
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_shareholders_company_form_view
+msgid "Total Percentage"
+msgstr "Porcentaje total"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_shareholders_company_form_view
+msgid "Total Shares"
+msgstr "Total Acciones"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_partner__town_code
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_res_users__town_code
+msgid "Town code"
+msgstr "Codigo ciudad"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_format_exogenus__format_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields.selection,name:account_exogenus_settings.selection__general_budget_analysis__crossovered_budget_state__validate
+msgid "Validated"
+msgstr "Validado"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_shareholders_company__year
+msgid "Year"
+msgstr "Año"
+
+#. module: account_exogenus_settings
+#: model:ir.model.constraint,message:account_exogenus_settings.constraint_account_format_exogenus_unique_code_format_exogenus
+msgid "You cannot create more than one format with the same code"
+msgstr "No puede crear más de un formato con el mismo código"
+
+#. module: account_exogenus_settings
+#: model:ir.model.fields,field_description:account_exogenus_settings.field_account_column_configuration__account_colum_line_ids
+msgid "account column configuration lines"
+msgstr "Configuración columna cuentas"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_concept_exogenus
+msgid "account.concept.exogenus"
+msgstr "concepto de cuenta exógeno"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_concept_exogenus_line
+msgid "account.concept.exogenus.line"
+msgstr "Líneas de concepto de cuenta exógeno"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_format_exogenus
+msgid "account.format.exogenus"
+msgstr "Formato de cuenta exógeno"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_shareholders_company
+msgid "account.shareholders.company"
+msgstr ""
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_account_shareholders_company_line
+msgid "account.shareholders.company.line"
+msgstr ""
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_form
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_tree
+msgid "column_configuration"
+msgstr "configuracion-columna"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_concept_exogenus_from_view
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.account_format_exogenus_from_view
+msgid "name"
+msgstr "Nombre"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_partners_shareholders_lines
+msgid "partners.shareholders.lines"
+msgstr "Contactos accionistas lineas"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.wizard_account_exogenus_print_xls
+msgid "report_exogenus_xls"
+msgstr "reporte_exogena_xls"
+
+#. module: account_exogenus_settings
+#: model_terms:ir.ui.view,arch_db:account_exogenus_settings.view_account_column_configuration_form
+msgid "result = object.code"
+msgstr ""
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_general_budget_analysis
+msgid "this is a general budget report"
+msgstr "Este es el reporte general de presupuesto"
+
+#. module: account_exogenus_settings
+#: model:ir.model,name:account_exogenus_settings.model_wizard_account_exogenus_print_xls
+msgid "wizard.account.exogenus.print.xls"
+msgstr ""

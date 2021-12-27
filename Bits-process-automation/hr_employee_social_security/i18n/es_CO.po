@@ -1,0 +1,202 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_social_security
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-25 14:03+0000\n"
+"PO-Revision-Date: 2020-09-25 09:12-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__hr_contract__pension_special_rate_indicator__4
+msgid "Airmen"
+msgstr "Piloto"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__arl
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__arl
+msgid "Arl"
+msgstr "Arl"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__hr_contract__pension_special_rate_indicator__3
+msgid "CTI"
+msgstr "CTI"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__code
+msgid "Code"
+msgstr "Codigo"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_contract__colombian_abroad
+msgid "Colombian Abroad"
+msgstr "Colombiano en el Extranjero"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__compensation_box
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__compensation_box
+msgid "Compensation Box"
+msgstr "Caja de Compensación"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__contributor_subtype
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__contributor_subtype
+msgid "Contributor Subtype"
+msgstr "Subtipo de Contribuyente"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__contributor_type
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__contributor_type
+msgid "Contributor Type"
+msgstr "Tipo de Contribuyente"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,help:hr_employee_social_security.field_hr_employee__contract_id
+msgid "Current contract of the employee"
+msgstr "Contrato actual del empleado"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: hr_employee_social_security
+#: model:ir.model,name:hr_employee_social_security.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_employee_social_security
+#: model:ir.model,name:hr_employee_social_security.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de Empleado"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__health
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__health
+msgid "Eps"
+msgstr "Eps"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_contract__pensions_contrib
+msgid "Foreigner Not Obliged Contribute Pensions"
+msgstr "Extranjero no obligado aportar pensiones"
+
+#. module: hr_employee_social_security
+#: model:ir.model,name:hr_employee_social_security.model_social_security
+msgid "HR employee social security"
+msgstr "HR employee social security"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__hr_contract__pension_special_rate_indicator__1
+msgid "High risk activities"
+msgstr "Actividades de Alto Riesgo"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security____last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificación el"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__write_uid
+msgid "Last Updated by"
+msgstr "Ultima Actualización por"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__write_date
+msgid "Last Updated on"
+msgstr "Ultima Actualización en"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__layoffs
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__layoffs
+msgid "Layoffs"
+msgstr "Cesantias"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_employee_social_security
+#: model_terms:ir.ui.view,arch_db:hr_employee_social_security.hr_contract_parafiscal
+msgid "Other Data"
+msgstr "Otros Datos"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__pension
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__pension
+msgid "Pension"
+msgstr "Pensión"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_contract__pension_special_rate_indicator
+msgid "Pension Special Rate Indicator"
+msgstr "Indicador de Tasa Especial de Pensión"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_contract__rate
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__rate
+msgid "Rate"
+msgstr "Tarifa"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_contract__risk_class
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_hr_employee__risk_class
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__social_security__entity_type__risk_class
+msgid "Risk Class"
+msgstr "Clase de Riesgo"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__hr_contract__pension_special_rate_indicator__2
+msgid "Senators"
+msgstr "Senadores"
+
+#. module: hr_employee_social_security
+#: model:ir.actions.act_window,name:hr_employee_social_security.action_social_security
+#: model:ir.ui.menu,name:hr_employee_social_security.action_menu_social_security
+#: model_terms:ir.ui.view,arch_db:hr_employee_social_security.hr_employee_social_security
+#: model_terms:ir.ui.view,arch_db:hr_employee_social_security.hr_employee_social_security_form
+#: model_terms:ir.ui.view,arch_db:hr_employee_social_security.hr_employee_social_security_tree
+msgid "Social Security"
+msgstr "Seguridad Social"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields,field_description:hr_employee_social_security.field_social_security__entity_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: hr_employee_social_security
+#: model:ir.model.fields.selection,name:hr_employee_social_security.selection__hr_contract__pension_special_rate_indicator___
+msgid "normal rate"
+msgstr "precio Normal"

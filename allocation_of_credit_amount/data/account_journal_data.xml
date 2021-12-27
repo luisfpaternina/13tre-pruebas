@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="payment_of_credits_dairy" model="account.journal">
+            <field name="name">Payment of credits</field>
+            <field name="code">PCR</field>
+            <field name="type">sale</field>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+        
+    </data>
+</odoo>

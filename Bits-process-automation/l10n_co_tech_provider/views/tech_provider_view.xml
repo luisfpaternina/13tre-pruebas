@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="l10n_co_tech_provider.list">
+      <field name="name">l10n_co_tech_provider_list</field>
+      <field name="model">l10n_co.tech.provider</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="username"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="l10n_co_tech_provider_form">
+        <field name="name">l10n_co_tech_provider_form</field>
+        <field name="model">l10n_co.tech.provider</field>
+        <field name="arch" type="xml">
+            <form string="Social Security">
+              <header>
+                <button
+                  name="action_test_connection"
+                  type="object"
+                  string="Test Connection"
+                  class="oe_highlight"/>
+              </header>
+              <sheet>
+                  <group>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="file_extension"/>
+                        <field name="file_filename"/>
+                        <field name="file_binary" filename="file_filename"/>
+                        <field name="maximum_megabytes"/>
+                        <field name="num_of_days_to_validate"/>
+                        <field name="is_test" />
+                    </group>
+                    <group>
+                        <field name="username"/>
+                        <field name="password"/>
+                        <field name="connection_url"/>
+                        <field name="connection_type"/>
+                        <field name="file_separator"/>
+                        <field name="num_doc_attachs"/>
+                        <field name="_type" required="True"/>
+                        <field name="property_company_id" required="True"/>
+                    </group>
+                  </group>
+                  <group>
+                    <group>
+                      <field name="connection_adapter" readonly="1"/>
+                      <field name="file_adapter" readonly="1"/>
+                    </group>
+                  </group>
+                  <group>
+                    <field name="url_upload"/>
+                    <field name="url_download"/>
+                  </group>
+                  <group string="Active fields">
+                    <field name="line_ids" nolabel="1"/>
+                  </group>
+              </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="l10n_co_tech_provider.action_window">
+      <field name="name">Tech provider</field>
+      <field name="res_model">l10n_co.tech.provider</field>
+      <field name="domain">[["_type","=","account"]]</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record model="ir.actions.server" id="l10n_co_tech_provider.action_server">
+      <field name="name">l10n_co_tech_provider_server</field>
+      <field name="model_id" ref="model_l10n_co_tech_provider"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+    <record id="view_l10n_co_tech_provider_line_form" model="ir.ui.view">
+      <field name="name">l10n_co.tech.provider.line.form</field>
+      <field name="model">l10n_co.tech.provider.line</field>
+      <field name="arch" type="xml">
+          <form string="Report Line">
+              <group>
+                <group string="Main Info">
+                  <field name="name"/>
+                  <field name="code"/>
+                  <field name="sequence"/>
+                  <field name="parent_id"/>
+                </group>
+                <group string="Cosmetics">
+                  <field name="act_field_id"/>
+                  <field name="level"/>
+                </group>
+                <group string="Children Lines">
+                  <field name="children_ids" nolabel="1"/>
+                </group>
+              </group>
+          </form>
+      </field>
+  </record>
+  <record id="view_l10n_co_tech_provider_line_tree" model="ir.ui.view">
+      <field name="name">l10n_co.tech.provider.line.tree</field>
+      <field name="model">l10n_co.tech.provider.line</field>
+      <field name="arch" type="xml">
+          <tree string="Report Lines">
+              <field name="sequence" widget="handle"/>
+              <field name="name"/>
+              <field name="act_field_id"/>
+              <field name="code"/>
+              <field name="level"/>
+          </tree>
+      </field>
+  </record>
+
+    <menuitem
+      action="l10n_co_tech_provider.action_window"
+      name="Tech Provider"
+      id="l10n_co_tech_provider.menu_root"
+      parent="account.account_account_menu"
+      sequence="200"/>
+
+      <record model="ir.ui.view" id="l10n_co_tech_provider_line_list">
+      <field name="name">l10n_co_tech_provider_line_list</field>
+      <field name="model">l10n_co.tech.provider.line</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="sequence"/>
+          <field name="name"/>
+          <field name="act_field_id"/>
+          <field name="code"/>
+          <field name="level"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="l10n_co_tech_provider_line_action_window">
+      <field name="name">Tech provider Lines</field>
+      <field name="res_model">l10n_co.tech.provider.line</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+      action="l10n_co_tech_provider_line_action_window"
+      name="Tech Provider Lines"
+      id="l10n_co_tech_provider_line_menu_root"
+      parent="account.account_account_menu"
+      sequence="220"/>
+
+  </data>
+</odoo>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="bits_social_security_transfer_form">
+        <field name="name">social_security_transfer_form</field>
+        <field name="model">social.security.transfer</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <form string="Payroll News Form" class="o_form_project_tasks">
+              <header>
+                <button name="action_validate" states="draft" string="Confirm" type="object" class="oe_highlight"/>
+                <button name="action_done" string="Done" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'validate')]}"/>
+                <button name="action_set_to_cancel" string="Cancel" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'in', ('cancel','done','draft'))]}"/>
+                <button name="action_set_to_draft" string="Set to Draft" type="object" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                <field name="state" widget="statusbar"/>
+              </header>
+              <sheet>
+                  <group>
+                    <div class="oe_title">
+                      <h1 class="d-flex flex-row justify-content-between">
+                        <field name="employee_id" options="{'no_create': True}" placeholder="Empleado" autocomplete="off"/>
+                      </h1>
+                    </div>
+                  </group>
+                  <group>
+                      <group>
+                          <field name="entity_type" options="{'no_create': True}"/>
+                          <field name="request_date" autocomplete="off"/>
+                          <field name="validation_date" readonly='1' attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                      </group>
+                      <group>
+                          <field name="social_security_old"/>
+                          <field name="social_security_new"/>
+                          <field name="date_start" attrs="{'invisible': [('entity_type', '!=', 'risk_class')], 'required': [('entity_type', '=', 'risk_class')]}"/>
+                          <field name="date_end" attrs="{'invisible': [('entity_type', '!=', 'risk_class')], 'required': [('entity_type', '=', 'risk_class')]}"/>
+                      </group>
+                  </group>
+              </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="bits_social_security_transfer_list">
+      <field name="name">bits_social_security_transfer_list</field>
+      <field name="model">social.security.transfer</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="request_date"/>
+          <field name="employee_id"/>
+          <field name="social_security_old"/>
+          <field name="social_security_new"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="bits_social_security_transfer_action_window">
+      <field name="name">bits_social_security_transfer_window</field>
+      <field name="res_model">social.security.transfer</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- menu categories -->
+    <menuitem 
+      name="Social Security" 
+      id="bits_social_security_transfer_category" 
+      parent="hr.menu_hr_employee_payroll"/>
+
+    <menuitem
+      id="bits_social_security_transfer.menu_1_list" 
+      name="Transfers"
+      action="bits_social_security_transfer_action_window"
+      parent="bits_social_security_transfer_category"
+      sequence="1"/>
+
+  </data>
+</odoo>

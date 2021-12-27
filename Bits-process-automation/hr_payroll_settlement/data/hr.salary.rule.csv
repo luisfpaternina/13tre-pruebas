@@ -1,0 +1,413 @@
+id,name,code,category_id/id,struct_id/id,sequence,constitutive,constitutive_calculate,condition_select,amount_select,condition_python,amount_percentage_base,amount_python_compute,quantity,amount_percentage,amount_fix,appears_on_payslip,note,not_remunerate,benefit_calculate,affect_payslip,affect_percentage_days,affect_worked_days,constitutive_percentage,non_constitutive_percentage,non_const_percentage_up,non_constitutive_calculate,condition_holiday,apply_only_basic_salary,apply_other_rules,apply_in
+__export__.hr_payroll_settlement_01,SALARIO BÁSICO,BASIC,hr_payroll.BASIC,hr_payroll_structure_settlement_without_just_cause_normal,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_02,AUXILIO NO PRESTACIONAL ALIMENTACION,237,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_without_just_cause_normal,2,non_const,,Always True,percentage,1,contract.searchSalaryAid('237'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_03,AUXILIO NO PRESTACIONAL RODAMIENTO,239,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_without_just_cause_normal,3,non_const,,Always True,percentage,1,contract.searchSalaryAid('239'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_04,SUBSIDIO DE TRANSPORTE,120,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_without_just_cause_normal,26,none,,python,fix,result = contract.wage < (contract.company_id.basic_salary) * 2,,,worked_days.WORK100 and worked_days.WORK100.number_of_days,,3428.46,True,Auxilio por los dias laborados. Se cancela a las personas que devenguen hasta 2 smlv (1755606),,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_05,PRIMA LEGAL SEMESTRE 1,130,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_without_just_cause_normal,130,,,python,percentage,"month = 6
+result = (bool)(payslip.date_from.month <= month and payslip.date_to.month <= month)","indemnities.compute_settlement_legal_premium('120',codes=['60','65','70','75','321'], period=1)",,1,100,,,(Promedio de los 6 meses de los pagos salariales (sueldo + comisiones + horas extras + aux transporte ) * Días trabajados en el semestre)/360. para los dias laborados se debe tener en cuenta los dias de licencia no remunerada,,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_06,PRIMA LEGAL SEMESTRE 2,130,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_without_just_cause_normal,130,,,python,percentage,"month = 6
+result = (bool)(payslip.date_from.month > month and payslip.date_to.month > month)","indemnities.compute_settlement_legal_premium('120',codes=['60','65','70','75','321'], period=2)",,1,100,,,(Promedio de los 6 meses de los pagos salariales (sueldo + comisiones + horas extras + aux transporte ) * Días trabajados en el semestre)/360. para los dias laborados se debe tener en cuenta los dias de licencia no remunerada,,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_07,APORTE FONDO SOLIDARIDAD,3023,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_without_just_cause_normal,170,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",4 * (contract.company_id.basic_salary),,0,-1,28,True,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_08,APORTE SALUD,3010,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_without_just_cause_normal,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_09,APORTE PENSION,3020,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_without_just_cause_normal,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_10,CESANTIAS DEFINITIVAS  ANUAL,185,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,185,,,Always True,percentage,1,"indemnities.compute_settlement_severance_pay('WORK100',codes=['60','65','70','75','321'])",,1,100,,,(Suma de los pagos salariales (sueldo + comisiones + horas extras + aux transporte ) * Días trabajados en el año)/360 . Si en ultimo trimestre hay cambio de salario se debe tomar el promedio del año. para los dias laborados se debe tener en cuenta los dias de licencia no remunerada,,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_11,INTERESES SOBRE CESANTIAS  ANUAL,190,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,185,,,Always True,percentage,1,"indemnities.compute_settlement_severance_pay_interest('WORK100',codes=['60','65','70','75','321'],percentage=12,from_date=payslip.date_from,to_date=payslip.date_to)",,1,100,,,"(Cesantías * Días trabajados * 0,12) / 360.para los dias laborados se debe tener en cuenta los dias de licencia no remunerada",,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_12,LIQUIDACION DE VACACIONES,150,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,185,,,Always True,percentage,1,"indemnities.compute_settlement_holidays_pay('WORK100',codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)/(indemnities._get_settlement().pending_vacation_days or 1)",,indemnities._get_settlement().pending_vacation_days or 1,100,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,True,,,,,,,none,,CAJA,amount
+__export__.hr_payroll_settlement_13,PENSIÓN EMPLEADOR,PENS,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_normal,300,none,True,Always True,percentage,1,1,,1,12,1,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393. si se paga vacaciones anticipadas en ese mes no se cancela el aporte) tarifa 12%,,,False,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_14,ARL,ARL,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_normal,300,none,True,Always True,percentage,5,1,,1,0.522,,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393.) pero de los días laborados. Tarifa 0.522%,,,False,,,100,100,40,True,none,True,,
+__export__.hr_payroll_settlement_15,CAJA,CAJA,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_normal,300,none,True,Always True,percentage,9,1,,1,4,,True,(pagos salariales constitutivos recibidos en el mes) se debe tener en cuenta los pago de vacaciones anticipadas . Tarifa 4%,,,False,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_16,PROVISION DE PRIMA,PROPRI,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC', '120'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,8.3333,,,(Sueldo+aux transporte + prorrateo de comisiones y Horas extras) *8.33% ,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_17,PROVISION DE CESANTIAS,PROCE,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC', '120'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,8.3333,,,(Sueldo+aux transporte + prorrateo de comisiones y Horas extras ) *8.33%,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_18,PROVISION INCRE INTERESES CESANTIAS ,PROINT,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,400,,,none,percentage,1,"provisions.compute_provisions_severance_incremental(['BASIC', '120'],codes=['60','65','70','75','321'], percentage=12,from_date=payslip.date_from,to_date=payslip.date_to)",,1,100,,,Provision de Cesantias  *12%,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_19,PROVISION DE VACACIONES,PROVA,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,4.1667,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_20,PROVISION INTERESES CESANTIAS,PROINT-2,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC', '120'],codes=['60','65','70','75','321'], percentage=8.3333,from_date=payslip.date_from,to_date=payslip.date_to)",,1,12,,,Provision de Cesantias  *12%,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_21,SALARIO BÁSICO,BASIC,hr_payroll.BASIC,hr_payroll_structure_settlement_general_normal,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_22,AUXILIO NO PRESTACIONAL ALIMENTACION,237,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,2,non_const,,Always True,percentage,1,contract.searchSalaryAid('237'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_23,AUXILIO NO PRESTACIONAL RODAMIENTO,239,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,3,non_const,,Always True,percentage,1,contract.searchSalaryAid('239'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_24,SUBSIDIO DE TRANSPORTE,120,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,26,none,,python,fix,result = contract.wage < (contract.company_id.basic_salary) * 2,,,worked_days.WORK100 and worked_days.WORK100.number_of_days,,3428.46,True,Auxilio por los dias laborados. Se cancela a las personas que devenguen hasta 2 smlv (1755606),,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_25,PRIMA LEGAL SEMESTRE 1,130,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,130,,,python,percentage,"month = 6
+result = (bool)(payslip.date_from.month <= month and payslip.date_to.month <= month)","indemnities.compute_settlement_legal_premium('120',codes=['60','65','70','75','321'], period=1)",,1,100,,,(Promedio de los 6 meses de los pagos salariales (sueldo + comisiones + horas extras + aux transporte ) * Días trabajados en el semestre)/360. para los dias laborados se debe tener en cuenta los dias de licencia no remunerada,,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_26,PRIMA LEGAL SEMESTRE 2,130,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,130,,,python,percentage,"month = 6
+result = (bool)(payslip.date_from.month > month and payslip.date_to.month > month)","indemnities.compute_settlement_legal_premium('120',codes=['60','65','70','75','321'], period=2)",,1,100,,,(Promedio de los 6 meses de los pagos salariales (sueldo + comisiones + horas extras + aux transporte ) * Días trabajados en el semestre)/360. para los dias laborados se debe tener en cuenta los dias de licencia no remunerada,,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_27,APORTE FONDO SOLIDARIDAD,3023,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_general_normal,170,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",4 * (contract.company_id.basic_salary),,0,-1,28,True,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_28,APORTE SALUD,3010,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_general_normal,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_29,APORTE PENSION,3020,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_general_normal,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_30,CESANTIAS DEFINITIVAS  ANUAL,185,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,185,,,Always True,percentage,1,"indemnities.compute_settlement_severance_pay('WORK100',codes=['60','65','70','75','321'])",,1,100,,,(Suma de los pagos salariales (sueldo + comisiones + horas extras + aux transporte ) * Días trabajados en el año)/360 . Si en ultimo trimestre hay cambio de salario se debe tomar el promedio del año. para los dias laborados se debe tener en cuenta los dias de licencia no remunerada,,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_31,INTERESES SOBRE CESANTIAS  ANUAL,190,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,185,,,Always True,percentage,1,"indemnities.compute_settlement_severance_pay_interest('WORK100',codes=['60','65','70','75','321'],percentage=12,from_date=payslip.date_from,to_date=payslip.date_to)",,1,100,,,"(Cesantías * Días trabajados * 0,12) / 360.para los dias laborados se debe tener en cuenta los dias de licencia no remunerada",,,True,,,,,,,none,,,
+__export__.hr_payroll_settlement_32,LIQUIDACION DE VACACIONES,150,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,185,,,Always True,percentage,1,"indemnities.compute_settlement_holidays_pay('WORK100',codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)/(indemnities._get_settlement().pending_vacation_days or 1)",,indemnities._get_settlement().pending_vacation_days or 1,100,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,True,,,,,,,none,,CAJA,amount
+__export__.hr_payroll_settlement_33,PENSIÓN EMPLEADOR,PENS,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_normal,300,none,True,Always True,percentage,1,1,,1,12,1,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393. si se paga vacaciones anticipadas en ese mes no se cancela el aporte) tarifa 12%,,,False,,,100,100,40,True,none,,,
+__export__.hr_payroll_settlement_34,ARL,ARL,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_normal,300,none,True,Always True,percentage,5,1,,1,0.522,,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393.) pero de los días laborados. Tarifa 0.522%,,,False,,,100,100,40,True,none,True,,
+__export__.hr_payroll_settlement_35,CAJA,CAJA,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_normal,300,none,True,Always True,percentage,9,1,,1,4,,True,(pagos salariales constitutivos recibidos en el mes) se debe tener en cuenta los pago de vacaciones anticipadas . Tarifa 4%,,,False,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_36,PROVISION DE PRIMA,PROPRI,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC', '120'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,8.3333,,,(Sueldo+aux transporte + prorrateo de comisiones y Horas extras) *8.33% ,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_37,PROVISION DE CESANTIAS,PROCE,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC', '120'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,8.3333,,,(Sueldo+aux transporte + prorrateo de comisiones y Horas extras ) *8.33%,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_38,PROVISION INCRE INTERESES CESANTIAS ,PROINT,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,400,,,none,percentage,1,"provisions.compute_provisions_severance_incremental(['BASIC', '120'],codes=['60','65','70','75','321'], percentage=12,from_date=payslip.date_from,to_date=payslip.date_to)",,1,100,,,Provision de Cesantias  *12%,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_39,PROVISION DE VACACIONES,PROVA,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,4.1667,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_40,PROVISION INTERESES CESANTIAS,PROINT-2,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_normal,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC', '120'],codes=['60','65','70','75','321'], percentage=8.3333,from_date=payslip.date_from,to_date=payslip.date_to)",,1,12,,,Provision de Cesantias  *12%,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_41,SALARIO INTEGRAL,BASIC,hr_payroll.BASIC,hr_payroll_structure_settlement_general_integral,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo integral / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_42,AUXILIO NO PRESTACIONAL ALIMENTACION,237,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_integral,2,non_const,,Always True,percentage,1,contract.searchSalaryAid('237'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_43,AUXILIO NO PRESTACIONAL RODAMIENTO,239,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_integral,3,non_const,,Always True,percentage,1,contract.searchSalaryAid('239'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_44,APORTE FONDO SOLIDARIDAD,3023,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_general_integral,170,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",4 * (contract.company_id.basic_salary),,0,-1,28,True,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_45,APORTE SALUD,3010,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_general_integral,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_46,APORTE PENSION,3020,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_general_integral,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_47,LIQUIDACION DE VACACIONES,150,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_integral,185,,,Always True,percentage,1,"indemnities.compute_holidays_pay('WORK100',codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)/(indemnities._get_settlement().pending_vacation_days or 1)",,indemnities._get_settlement().pending_vacation_days or 1,100,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,True,,,,,,,none,,CAJA,amount
+__export__.hr_payroll_settlement_48,PENSIÓN EMPLEADOR,PENS,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_integral,300,none,True,Always True,percentage,1,1,,1,12,1,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393. si se paga vacaciones anticipadas en ese mes no se cancela el aporte) tarifa 12%,,,False,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_49,SALUD EMPLEADOR,SALU,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_integral,300,none,True,Always True,percentage,result = contract.wage > (877803) * 10,1,,1,8.5,,True,"solo aplica para integrales, sena y sueldos mayores a 10 smlv, para el salario integral sobre el 70% del sueldo constitutivo de salario. Tarifa del 8.5%",,,False,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_50,ARL,ARL,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_integral,300,none,True,Always True,percentage,6,1,,1,0.522,,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393.) pero de los días laborados. Tarifa 0.522%,,,False,,,100,70,40,True,none,True,,
+__export__.hr_payroll_settlement_51,CAJA,CAJA,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_integral,300,none,True,Always True,percentage,10,1,,1,4,,True,(pagos salariales constitutivos recibidos en el mes) se debe tener en cuenta los pago de vacaciones anticipadas . Tarifa 4%,,,False,,,70,100,,,none,,,
+__export__.hr_payroll_settlement_52,ICBF,ICBF,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_integral,300,none,True,Always True,percentage,result = contract.wage > (877803) * 10,1,,1,3,,True,solo aplica para integrales y sueldos mayores a 10 smlv. Tarifa del 3%,,,False,,,70,100,,,none,,,
+__export__.hr_payroll_settlement_53,SENA,SENA,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_general_integral,300,none,True,Always True,percentage,result = contract.wage > (877803) * 10,1,,1,2,,True,solo aplica para integrales y sueldos mayores a 10 smlv. Tarifa del 2%,,,False,,,70,100,,,none,,,
+__export__.hr_payroll_settlement_54,PROVISION DE VACACIONES,PROVA,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_general_integral,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,4.1667,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_55,SALARIO INTEGRAL,BASIC,hr_payroll.BASIC,hr_payroll_structure_settlement_without_just_cause_integral,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo integral / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_56,AUXILIO NO PRESTACIONAL ALIMENTACION,237,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_without_just_cause_integral,2,non_const,,Always True,percentage,1,contract.searchSalaryAid('237'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_57,AUXILIO NO PRESTACIONAL RODAMIENTO,239,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_without_just_cause_integral,3,non_const,,Always True,percentage,1,contract.searchSalaryAid('239'),,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,28,True,En el mes se debe cancelar el total del auxilio a menos que tenga licencia no remunerada o suspension de trabajo ,,non_rem_work_days,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_58,APORTE FONDO SOLIDARIDAD,3023,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_without_just_cause_integral,170,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",4 * (contract.company_id.basic_salary),,0,-1,28,True,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_59,APORTE SALUD,3010,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_without_just_cause_integral,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_60,APORTE PENSION,3020,bits_hr_payroll_news.category_novelty_02,hr_payroll_structure_settlement_without_just_cause_integral,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = False 
+else:
+    result = True",payslip.paid_amount,,1,-4,28,True,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,True,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_61,LIQUIDACION DE VACACIONES,150,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_integral,185,,,Always True,percentage,1,"indemnities.compute_settlement_holidays_pay('WORK100',codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)/(indemnities._get_settlement().pending_vacation_days or 1)",,indemnities._get_settlement().pending_vacation_days or 1,100,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,True,,,,,,,none,,CAJA,amount
+__export__.hr_payroll_settlement_62,PENSIÓN EMPLEADOR,PENS,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_integral,300,none,True,Always True,percentage,1,1,,1,12,1,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393. si se paga vacaciones anticipadas en ese mes no se cancela el aporte) tarifa 12%,,,False,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_63,SALUD EMPLEADOR,SALU,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_integral,300,none,True,Always True,percentage,result = contract.wage > (877803) * 10,1,,1,8.5,,True,"solo aplica para integrales, sena y sueldos mayores a 10 smlv, para el salario integral sobre el 70% del sueldo constitutivo de salario. Tarifa del 8.5%",,,False,,,100,70,40,True,none,,,
+__export__.hr_payroll_settlement_64,ARL,ARL,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_integral,300,none,True,Always True,percentage,6,1,,1,0.522,,True,(pagos salariales constitutivos recibidos en el mes + el excedente del 40% de pagos no constitutivos de salario ley 1393.) pero de los días laborados. Tarifa 0.522%,,,False,,,100,70,40,True,none,True,,
+__export__.hr_payroll_settlement_65,CAJA,CAJA,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_integral,300,none,True,Always True,percentage,10,1,,1,4,,True,(pagos salariales constitutivos recibidos en el mes) se debe tener en cuenta los pago de vacaciones anticipadas . Tarifa 4%,,,False,,,70,100,,,none,,,
+__export__.hr_payroll_settlement_66,ICBF,ICBF,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_integral,300,none,True,Always True,percentage,result = contract.wage > (877803) * 10,1,,1,3,,True,solo aplica para integrales y sueldos mayores a 10 smlv. Tarifa del 3%,,,False,,,70,100,,,none,,,
+__export__.hr_payroll_settlement_67,SENA,SENA,bits_hr_payroll_news.category_company_contribution_01,hr_payroll_structure_settlement_without_just_cause_integral,300,none,True,Always True,percentage,result = contract.wage > (877803) * 10,1,,1,2,,True,solo aplica para integrales y sueldos mayores a 10 smlv. Tarifa del 2%,,,False,,,70,100,,,none,,,
+__export__.hr_payroll_settlement_68,PROVISION DE VACACIONES,PROVA,hr_payroll_severance_pay.category_social_benefits_01,hr_payroll_structure_settlement_without_just_cause_integral,400,,,none,percentage,1,"provisions.compute_provisions(['BASIC'],codes=['60','65','70','75','321'],from_date=payslip.date_from,to_date=payslip.date_to)",,1,4.1667,,,(Sueldo basico + prorrateo de comisiones y Horas extras)  *4.17%. ,,,,,,,,,,none,,,
+__export__.hr_payroll_settlement_69,INDEMNIZACION CONTRATO TERMINO INDEFINIDO,196,hr_payroll_settlement.category_settlement_01,hr_payroll_structure_settlement_without_just_cause_normal,60,none,,python,percentage,result = indemnities.get_contract_type('non-fixed'),indemnities.calculation_indenminazion_non_fixed(),100,1,100,1,True,,,,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_70,INDEMNIZACION CONTRATO TERMINO FIJO,196,hr_payroll_settlement.category_settlement_01,hr_payroll_structure_settlement_without_just_cause_normal,60,none,,python,percentage,result = indemnities.get_contract_type('fixed'),indemnities.calculation_indenminazion_fixed(),100,1,100,1,True,,,,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_71,INDEMNIZACION CONTRATO TERMINO FIJO,196,hr_payroll_settlement.category_settlement_01,hr_payroll_structure_settlement_without_just_cause_integral,60,none,,python,percentage,result = indemnities.get_contract_type('fixed'),indemnities.calculation_indenminazion_fixed(),100,1,100,1,True,,,,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_72,INDEMNIZACION CONTRATO TERMINO INDEFINIDO,196,hr_payroll_settlement.category_settlement_01,hr_payroll_structure_settlement_without_just_cause_integral,60,none,,python,percentage,result = indemnities.get_contract_type('non-fixed'),"indemnities.calculation_indenminazion_non_fixed(init_days=20, others_days=15)",100,1,100,1,True,,,,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_73,REEMBOLSO FONDO SOLIDARIDAD Y SUBSISTENCIA,R3023,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,170,none,TRUE,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",4 * (contract.company_id.basic_salary),,,1,28,TRUE,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_74,REEMBOLSO APORTE SALUD,R3010,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,180,none,TRUE,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_75,REEMBOLSO APORTE PENSION,R3020,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_normal,190,none,TRUE,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_76,REEMBOLSO FONDO SOLIDARIDAD Y SUBSISTENCIA,R3023,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_integral,170,none,TRUE,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",4 * (contract.company_id.basic_salary),,,1,28,TRUE,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_77,REEMBOLSO APORTE SALUD,R3010,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_integral,180,none,TRUE,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_78,REEMBOLSO APORTE PENSION,R3020,bits_hr_payroll_news.category_novelty_01,hr_payroll_structure_settlement_general_integral,190,none,TRUE,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_79,REEMBOLSO FONDO SOLIDARIDAD Y SUBSISTENCIA,R3023,bits_hr_payroll_news.category_novelty_01,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_normal,170,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",4 * (contract.company_id.basic_salary),,0,1,28,TRUE,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_80,REEMBOLSO APORTE SALUD,R3010,bits_hr_payroll_news.category_novelty_01,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_normal,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_81,REEMBOLSO APORTE PENSION,R3020,bits_hr_payroll_news.category_novelty_01,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_normal,190,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_82,REEMBOLSO FONDO SOLIDARIDAD Y SUBSISTENCIA,R3023,bits_hr_payroll_news.category_novelty_01,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_integral,170,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",4 * (contract.company_id.basic_salary),,0,1,28,TRUE,si el total pagos contitutivos de salario superan 4 smlv se debe aplicar el  1% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_83,REEMBOLSO APORTE SALUD,R3010,bits_hr_payroll_news.category_novelty_01,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_integral,180,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_84,REEMBOLSO APORTE PENSION,R3020,bits_hr_payroll_news.category_novelty_01,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_integral,190,none,True,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",payslip.paid_amount,,1,4,28,TRUE,total pagos constitutivos de salario X 4% + el excedente del 40% de pagos no constitutivos de salario ley 1393,,,TRUE,,,100,100,40,TRUE,none,,,
+__export__.hr_payroll_settlement_85,REEMBOLSO SALARIO BÁSICO,RBASIC,bits_hr_payroll_news.category_novelty_02,hr_payroll_settlement.hr_payroll_structure_settlement_general_normal,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_86,REEMBOLSO SALARIO INTEGRAL,RBASIC,bits_hr_payroll_news.category_novelty_02,hr_payroll_settlement.hr_payroll_structure_settlement_general_integral,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo integral / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_87,REEMBOLSO SALARIO BÁSICO,RBASIC,bits_hr_payroll_news.category_novelty_02,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_normal,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,
+__export__.hr_payroll_settlement_88,REEMBOLSO SALARIO INTEGRAL,RBASIC,bits_hr_payroll_news.category_novelty_02,hr_payroll_settlement.hr_payroll_structure_settlement_without_just_cause_integral,1,is_const,,python,percentage,"paid_payslips = payslip.env['hr.payslip'].search([
+    ('state', '=', 'done'),
+    ('contract_id', '=', payslip.contract_id.id),
+    ('employee_id', '=', employee.id),
+    ('date_from', '<=', payslip.date_to),
+    ('date_to', '>', payslip.date_from),
+])
+if paid_payslips:
+    result = True 
+else:
+    result = False",contract.wage/30,100,worked_days.WORK100 and worked_days.WORK100.number_of_days,100,1,True,sueldo integral / 30 X  los dias laborados,,none,True,,,100,100,,,none,,,

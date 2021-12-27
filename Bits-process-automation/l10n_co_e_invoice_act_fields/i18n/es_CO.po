@@ -1,0 +1,172 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_e_invoice_act_fields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-27 15:27+0000\n"
+"PO-Revision-Date: 2021-07-27 15:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields___type
+msgid " Type"
+msgstr "Tipo"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields.selection,name:l10n_co_e_invoice_act_fields.selection__account_act_fields___type__account
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields.selection,name:l10n_co_e_invoice_act_fields.selection__account_act_fields__condition_select__none
+msgid "Always True"
+msgstr "Siempre verdadero"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,help:l10n_co_e_invoice_act_fields.field_account_act_fields__validate_condition_select
+msgid "Applied this rule for calculation if condition is true."
+msgstr "Aplicar esta regla para calcular si la condición es verdadera"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,help:l10n_co_e_invoice_act_fields.field_account_act_fields__condition_python
+msgid "Code that is executed to bring the information."
+msgstr "Código que se ejecuta para traer la información."
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__condition_select
+msgid "Condition Based on"
+msgstr "Condición basada en"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields.selection,name:l10n_co_e_invoice_act_fields.selection__account_act_fields__mandatory__condition
+msgid "Conditional"
+msgstr "Condicional"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.actions.act_window,name:l10n_co_e_invoice_act_fields.action_window
+#: model:ir.ui.menu,name:l10n_co_e_invoice_act_fields.menu_1_list
+msgid "FE active fields"
+msgstr "FE Campos activos"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__mandatory
+msgid "Mandatory"
+msgstr "Obligatorio"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields.selection,name:l10n_co_e_invoice_act_fields.selection__account_act_fields__mandatory__optional
+msgid "Optional"
+msgstr "Opcional"
+
+#. module: l10n_co_e_invoice_act_fields
+#: code:addons/l10n_co_e_invoice_act_fields/models/account_act_fields.py:0
+#, python-format
+msgid ""
+"Please enter data for the required field %s.\n"
+"Description: %s"
+msgstr ""
+"Por favor ingrese la información del campo requerido %s.\n"
+"Descripción: %s"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__condition_python
+msgid "Python Condition"
+msgstr "Condición python"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields.selection,name:l10n_co_e_invoice_act_fields.selection__account_act_fields__condition_select__python
+msgid "Python Expression"
+msgstr ""
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields.selection,name:l10n_co_e_invoice_act_fields.selection__account_act_fields__mandatory__required
+msgid "Required"
+msgstr "Requerido"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model.fields,field_description:l10n_co_e_invoice_act_fields.field_account_act_fields__validate_condition_select
+msgid "Validate Condition"
+msgstr ""
+
+#. module: l10n_co_e_invoice_act_fields
+#: code:addons/l10n_co_e_invoice_act_fields/models/account_act_fields.py:0
+#, python-format
+msgid ""
+"Wrong python code defined for active field %s (%s).\n"
+"Error: %s"
+msgstr ""
+"Código Python incorrecto definido para el campo activo %s (%s).\n"
+"Error: %s"
+
+#. module: l10n_co_e_invoice_act_fields
+#: code:addons/l10n_co_e_invoice_act_fields/models/account_act_fields.py:0
+#, python-format
+msgid ""
+"Wrong python condition defined for active field %s (%s).\n"
+"Error: %s"
+msgstr ""
+"Condición Python incorrecta definida para el campo activo %s (%s).\n"
+"Error: %s"
+
+#. module: l10n_co_e_invoice_act_fields
+#: model:ir.model,name:l10n_co_e_invoice_act_fields.model_account_act_fields
+msgid "l10n_co_e_invoice_act_fields"
+msgstr ""

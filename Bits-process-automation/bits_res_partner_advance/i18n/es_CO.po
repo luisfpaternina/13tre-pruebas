@@ -1,0 +1,241 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bits_res_partner_advance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-08 19:26+0000\n"
+"PO-Revision-Date: 2021-03-08 19:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.constraint,message:bits_res_partner_advance.constraint_res_partner_bist_res_partner_unique_constraint
+msgid "A constraint is being violated: bits_res_partner_unique_constraint"
+msgstr "Se está violando una restricción: bits_res_partner_unique_constraint"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__11
+msgid "Birth certificate"
+msgstr "Registro Civil de Nacimiento"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__diplomatic_card
+msgid "Carné Diplomatico"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__13
+msgid "Citizenship card"
+msgstr "Cédula de ciudadanía"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__partner_relation_id
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__partner_relation_id
+#, python-format
+msgid "Company"
+msgstr "Compañía"
+
+#. module: bits_res_partner_advance
+#: model:ir.model,name:bits_res_partner_advance.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__country_code
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__country_code
+msgid "Country Code"
+msgstr "Código de Ciudad"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__id_document
+msgid "Cédula"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__display_employee
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__display_employee
+#, python-format
+msgid "Display Employee"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__document_type
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__l10n_co_document_type
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__document_type
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__l10n_co_document_type
+msgid "Document Type"
+msgstr "Tipo de documento"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__l10n_co_document_type__42
+msgid "Documento Identificación Extranjero"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "EMPLOYEE"
+msgstr "EMPLEADO"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__first_name
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__first_name
+msgid "First Name"
+msgstr "Primer Nombre"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__first_surname
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__first_surname
+msgid "First Surname"
+msgstr "Primer Apellido"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__22
+msgid "Foreigner ID"
+msgstr "Cédula de Extranjería"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__21
+msgid "Foreigner identity card"
+msgstr "Tarjeta de Extranjeria"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__42
+msgid "Foreigner identity document"
+msgstr "Documento Identificación Extranjero"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__external_id
+msgid "ID del Exterior"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__12
+msgid "Identity card"
+msgstr "Tarjeta de identidad"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,help:bits_res_partner_advance.field_res_partner__l10n_co_document_type
+#: model:ir.model.fields,help:bits_res_partner_advance.field_res_users__l10n_co_document_type
+msgid "Indicates to what document the information in here belongs to."
+msgstr "Indicar aquí a que tipo de documento pertenece"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__31
+msgid "NIT"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__number_identification
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__number_identification
+msgid "Number Identification"
+msgstr "Número de identificación"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__ot
+msgid "Others"
+msgstr "Otros"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__41
+msgid "Passport"
+msgstr "Pasaporte"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__residence_document
+msgid "Salvoconducto de Permanencia"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__second_name
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__second_name
+msgid "Second Name"
+msgstr "Segundo Nombre"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_partner__second_surname
+#: model:ir.model.fields,field_description:bits_res_partner_advance.field_res_users__second_surname
+msgid "Second Surname"
+msgstr "Segundo Apellido"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__l10n_co_document_type__43
+msgid "Sin identificación del exterior, para uso definido DIAN"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__l10n_co_document_type__21
+msgid "Tarjeta de Extranjeria"
+msgstr ""
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields,help:bits_res_partner_advance.field_res_partner__country_code
+#: model:ir.model.fields,help:bits_res_partner_advance.field_res_users__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"El código de ciudad ISO en dos caracteres. \n"
+"Puedes usar este campo para busquedas rápidas."
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The document number cannot be alphanumeric"
+msgstr "El número de documento no puede ser alfanumérico"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The field for the document number cannot be empty"
+msgstr "El campo para el numero de documento no puede estar vacío"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The field for the document type must not be empty"
+msgstr "El campo para el tipo de documento no debe estar vacio"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The length of the document number must be between 6 and 15"
+msgstr "La longitud del número de documento debe ser entre 6 y 15 caracteres"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The length of the document number must be between 7 and 10"
+msgstr "La longitud del número de documento debe ser entre 7 y 10 caracteres"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The length of the passport number cannot be less than 9"
+msgstr "La longitud del número de pasaporte no puede ser inferior a 9"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The passport number must contain numbers and characters"
+msgstr "El número de pasaporte debe contener números y caracteres"
+
+#. module: bits_res_partner_advance
+#: code:addons/bits_res_partner_advance/models/res_partner.py:0
+#, python-format
+msgid "The type of document for companies is the NIT"
+msgstr "El tipo de documento para empresas es el NIT"
+
+#. module: bits_res_partner_advance
+#: model:ir.model.fields.selection,name:bits_res_partner_advance.selection__res_partner__document_type__43
+msgid "Without outside identification, for defined use DIAN"
+msgstr "Sin identificación del exterior, para uso definido DIAN"

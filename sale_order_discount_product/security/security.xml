@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="group_manager_discount_approval" model="res.groups">
+        <field name="name">Approver Discount</field>
+        <field name="category_id" ref="freight_approval.module_sale_order_approval"/>
+        <field name="implied_ids" eval="[(4, ref('freight_approval.group_user_sale_approval'))]"/>
+    </record>
+
+    <record id="group_manager_freight_approval" model="res.groups">
+        <field name="name">Approver Freight</field>
+        <field name="category_id" ref="freight_approval.module_sale_order_approval"/>
+        <field name="implied_ids" eval="[(4, ref('freight_approval.group_user_sale_approval'))]"/>
+    </record>
+
+</odoo>

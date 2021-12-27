@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+      
+      <record id="action_payroll_provisions_report" model="ir.actions.act_window">
+        <field name="name">Provisions</field>
+        <field name="res_model">payroll.provisions.report</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="payroll_provisions_report_form"/>
+        <field name="target">new</field>
+      </record>
+
+      <menuitem
+        id="menu_hr_payroll_provisions_report"
+        parent="hr_payroll.menu_hr_payroll_report"
+        action="action_payroll_provisions_report"
+        sequence="15"
+      />
+
+  </data>
+</odoo>

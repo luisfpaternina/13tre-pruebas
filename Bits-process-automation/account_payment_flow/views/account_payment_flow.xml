@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <!--Begin View Tree-->
+    <record id="account_payment_flow_tree" model="ir.ui.view">
+      <field name="name">account_payment_flow_tree</field>
+      <field name="model">account.payment.flow</field>
+      <field name="arch" type="xml">
+
+        <tree>
+          <field name="name" />
+          <field name="stage_id" />
+        </tree>
+
+      </field>
+    </record>
+    <!--End View Tree-->
+
+    <!--Begin View Form-->
+    <record id="account_payment_flow_form" model="ir.ui.view">
+      <field name="name">account_payment_flow_form</field>
+      <field name="model">account.payment.flow</field>
+      <field name="arch" type="xml">
+
+        <form string="Payment flow" class="o_form_project_tasks">
+          <header>
+            <field name="stage_id" widget="statusbar" options="{'clickable': '1', 'fold_field':'fold'}" />
+          </header>
+          <sheet>
+            <group>
+              <div class="oe_title">
+                <h1 class="d-flex flex-row justify-content-between">
+                  <field name="name" placeholder="Title..." autocomplete="off"/>
+                </h1>
+              </div>
+            </group>
+            <group>
+              <group>
+                <field name="partner_id"/>
+                <field name="purchase_order" invisible="1"/>
+                <field name="journal_id" on_onchange="_onchange_field()" attrs="{'required':True}"/>
+                <field name="invoice_id"/>
+              </group>
+              <group>
+                <field name="currency_id" attrs="{'readonly': False, 'required': True}"/>
+                <field name="amount_to_payment" attrs="{'readonly': False, 'required': True}"/>
+                <field name="payment_instructions" attrs="{'required':True}"/>
+                <field name="payment_method_check" invisible="1"/>
+                <field name="payment_method_id" widget="radio" required="1" attrs="{'invisible':[('journal_id', '=', False)]}"/>
+              </group>
+            </group>
+          </sheet>
+
+          <div class="oe_chatter">
+            <field name="activity_ids" widget="mail_activity" />
+          </div>
+        </form>
+
+      </field>
+    </record>
+    <!--End View Form-->
+
+    <!-- wizard payment flow -->
+    <record id="account_payment_flow_wizard" model="ir.ui.view">
+      <field name="name">account_payment_flow_wizard</field>
+      <field name="model">account.payment.flow</field>
+      <field name="inherit_id" ref="account_payment_flow_form"/>
+      <field name="mode">primary</field>
+      <field name="arch" type="xml">
+
+        <xpath expr="//header" position="replace"></xpath>
+        <xpath expr="//field[@name='name']" position="attributes">
+          <attribute name="readonly">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='invoice_id']" position="attributes">
+          <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='currency_id']" position="attributes">
+          <attribute name="attrs">{'invisible':True,'required':False}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='amount_to_payment']" position="attributes">
+          <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='payment_instructions']" position="attributes">
+          <attribute name="attrs">{'invisible':True,'required':False}</attribute>
+        </xpath>
+
+        <xpath expr="//field[@name='journal_id']" position="attributes">
+          <attribute name="attrs">{'invisible':True,'required':False}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='payment_method_id']" position="attributes">
+          <attribute name="attrs">{'invisible':[('journal_id', '=', False)], 'readonly': [('payment_method_check', '=', True)],'required':[('purchase_order','!=',True)]}</attribute>
+        </xpath>
+
+
+        <xpath expr="//sheet" position="after">
+          <footer>
+            <field name="stage_id" invisible="1"/>
+            <button string="Prepare payment" name="register_record" type="object" class="btn-primary" />
+            <button string="Cancel" class="btn-secondary" special="cancel"/>
+          </footer>
+        </xpath>
+
+      </field>
+    </record>
+    <!-- wizard payment flow -->
+
+    <record id="account_payment_flow_kanban" model="ir.ui.view">
+      <field name="name">account_payment_flow_kanban</field>
+      <field name="model">account.payment.flow</field>
+      <field name="arch" type="xml">
+        <kanban quick_create="false" default_group_by="stage_id" class="o_kanban_small_column o_opportunity_kanban o_kanban_mobile" archivable="false" group_create="false">
+          <field name="color"/>
+          <field name="name"/>
+          <field name="stage_id"/>
+
+          <progressbar field="kanban_state" colors='{"done":"success", "blocked":"danger", "normal":"muted"}' />
+
+          <templates>
+            <t t-name="kanban-box">
+              <div t-attf-class="{{!selection_mode ? 'oe_kanban_color_' + kanban_getcolor(record.color.raw_value) : ''}} oe_kanban_card oe_kanban_global_click">
+                <div class="o_kanban_record_top">
+                  <!-- fields card -->
+                  <div class="o_kanban_record_headings">
+                    <strong class="o_kanban_record_title">
+                      <field name="name"/>
+                    </strong>
+                    <br/>
+                    <span>
+                      <strong>
+                        <field name="payment_instructions"/>
+                      </strong>
+                    </span>
+                  </div>
+                  <!-- end field card -->
+
+                  <!-- Menu dropdown -->
+                  <div class="o_dropdown_kanban dropdown" t-if="!selection_mode">
+                    <a role="button" class="dropdown-toggle o-no-caret btn" data-toggle="dropdown" data-display="static" accountef="#" aria-label="Dropdown menu" title="Dropdown menu">
+                      <span class="fa fa-ellipsis-v"/>
+                    </a>
+                    <div class="dropdown-menu" role="menu">
+                      <a t-if="widget.editable" role="menuitem" type="set_cover" class="dropdown-item" data-field="displayed_image_id">Set Cover Image</a>
+                      <a name="%(portal.portal_share_action)d" role="menuitem" type="action" class="dropdown-item">Share</a>
+                      <a t-if="widget.editable" role="menuitem" type="edit" class="dropdown-item">Edit payroll news</a>
+                      <a t-if="widget.deletable" role="menuitem" type="delete" class="dropdown-item">Delete</a>
+                      <div role="separator" class="dropdown-divider"></div>
+                      <ul class="oe_kanban_colorpicker" data-field="color"/>
+                    </div>
+                  </div>
+                  <!-- End Menu Dropdown -->
+                </div>
+
+                <div class="o_kanban_record_bottom" t-if="!selection_mode">
+                  <div class="oe_kanban_bottom_left">
+                    <field name="priority" widget="priority"/>
+                    <field name="activity_ids" widget="kanban_activity"/>
+                  </div>
+
+                  <div class="oe_kanban_bottom_right" t-if="!selection_mode">
+                    <field name="kanban_state" widget="state_selection" />
+                  </div>
+                </div>
+              </div>
+
+
+            </t>
+          </templates>
+
+        </kanban>
+      </field>
+    </record>
+
+  </data>
+</odoo>

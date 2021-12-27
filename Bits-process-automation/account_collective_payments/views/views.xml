@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="account_collective_payments_tree" model="ir.ui.view">
+    <field name="name">account.collective.payments.tree</field>
+    <field name="model">account.move.line</field>
+    <field eval="100" name="priority"/>
+    <field name="arch" type="xml">
+      <tree editable="bottom" string="Journal Items">
+        <field name="date" optional="show"/>
+        <field name="company_id" groups="base.group_multi_company"/>
+        <field name="journal_id" options="{'no_open':True}"/>
+        <field name="move_id" optional="show"/>
+        <field name="account_id" options="{'no_open': True}" groups="account.group_account_user"/>
+        <field name="partner_id" optional="show"/>
+        <field name="statement_id" invisible="1"/>
+        <field name="ref" optional="hide"/>
+        <field name="name" optional="hide"/>
+        <field name="analytic_account_id" groups="account.group_account_user" optional="hide"/>
+        <field name="analytic_tag_ids" widget="many2many_tags" groups="analytic.group_analytic_tags" optional="hide"/>
+        <field name="tax_ids" widget="many2many_tags" width="0.5" optional="show"/>
+        <field name="amount_residual" sum="Total Residual"/>
+        <field name="debit" sum="Total Debit"/>
+        <field name="credit" sum="Total Credit"/>
+        <field name="amount_currency" groups="base.group_multi_currency" optional="hide"/>
+        <field name="tag_ids" widget="many2many_tags" width="0.5" optional="hide"/>
+        <field name="full_reconcile_id" optional="show"/>
+        <field name="reconcile_model_id" invisible="1"/>
+        <field name="reconciled" invisible="1"/>
+        <field name="date_maturity" optional="hide"/>
+        <field name="currency_id" readonly="1" invisible="1"/>
+        <field name="company_currency_id" invisible="1"/>
+        <field name="parent_state" invisible="1"/>
+      </tree>
+    </field>
+  </record>
+
+    <record model="ir.ui.view" id="hr_payslip_run_account_collective_payments_form">
+        <field name="name">hr.payslip.run.account.collective.payments.form</field>
+        <field name="model">hr.payslip.run</field>
+        <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_draft']" position="after">
+                <button string="Account Collective Payments" name="%(action_account_collective_payments_wizard)d" type="action" attrs="{'invisible': [('state', 'not in', 'close')]}" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+
+  <menuitem
+    id="menu_action_action_account_collective_payments_wizard"
+    parent="account.menu_finance_payables"
+    action="action_account_collective_payments_wizard"
+    sequence="25"/>
+
+  <menuitem
+        id="menu_hr_payroll_account_collective_payments_wizard"
+        parent="hr_payroll.menu_hr_payroll_payslips"
+        action="action_account_collective_payments_wizard"
+        sequence="80"/>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Extending Partner Form View -->
+    <record id="view_partner_form" model="ir.ui.view">
+       <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <xpath expr="(//field[@name='name'])[4]" position="before">
+                <field name="commercial_name"
+                       placeholder="Comercial Name"/>
+                <field name="simplified_regimen"/>
+                <field name="ciiu"/>
+            </xpath>
+
+            <field name="type" position="before">
+                <field name="commercial_name"/>
+                <field name="fiscal_regimen"/>
+                <field name="person_type"/>
+                <field name="simplified_regimen"/>
+                <field name="ciiu"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

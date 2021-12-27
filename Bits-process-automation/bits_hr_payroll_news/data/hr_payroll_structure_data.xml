@@ -1,0 +1,79 @@
+<odoo>
+    <data noupdate="1">
+
+      <!-- Salary Structure Type Employee normal -->
+      <record id="hr_payroll_structure_type_employee_01" model="hr.payroll.structure.type">
+          <field name="name">Empleado Normal</field>
+          <field name="country_id" eval="False"/>
+      </record>
+
+      <!-- Salary Structure Type Employee normal -->
+      <record id="hr_payroll_structure_type_employee_03" model="hr.payroll.structure.type">
+          <field name="name">Empleado Integral</field>
+          <field name="country_id" eval="False"/>
+      </record>
+
+      <!-- Salary Structure Type Employee normal -->
+      <record id="hr_payroll_structure_type_employee_02" model="hr.payroll.structure.type">
+          <field name="name">Sena etapa electiva</field>
+          <field name="country_id" eval="False"/>
+      </record>
+
+      <!-- Salary Structure Type Employee normal -->
+      <record id="hr_payroll_structure_type_employee_04" model="hr.payroll.structure.type">
+          <field name="name">Sena etapa practica</field>
+          <field name="country_id" eval="False"/>
+      </record>
+
+      <!-- Salary Structure Novelty -->
+      <record id="hr_payroll_structure_employee_01" model="hr.payroll.structure">
+        <field name="name">Normal</field>
+        <field name="type_id" ref="hr_payroll_structure_type_employee_01"/>
+        <field name="country_id" eval="False"/>
+      </record>
+
+      <record id="hr_payroll_structure_employee_02" model="hr.payroll.structure">
+        <field name="name">Integral</field>
+        <field name="type_id" ref="hr_payroll_structure_type_employee_03"/>
+        <field name="country_id" eval="False"/>
+      </record>
+
+      <record id="hr_payroll_structure_employee_03" model="hr.payroll.structure">
+        <field name="name">Sena etapa electiva</field>
+        <field name="type_id" ref="hr_payroll_structure_type_employee_02"/>
+        <field name="country_id" eval="False"/>
+      </record>
+
+      <record id="hr_payroll_structure_employee_04" model="hr.payroll.structure">
+        <field name="name">Sena etapa practica</field>
+        <field name="type_id" ref="hr_payroll_structure_type_employee_04"/>
+        <field name="country_id" eval="False"/>
+      </record>
+
+      <!-- Service Bonuses structure type -->
+      <record id="hr_payroll_structure_type_premium" model="hr.payroll.structure.type">
+          <field name="name">Primas de Servicio</field>
+          <field name="country_id" eval="False"/>
+          <field name="default_schedule_pay">semi-annually</field>
+          <field name="wage_type">monthly</field>
+      </record>
+
+      <!--Structures of Service Bonuses -->
+      <record id="hr_payroll_structure_premium_01" model="hr.payroll.structure">
+          <field name="name">Prima legal semestre 1</field>
+          <field name="type_id" ref="hr_payroll_structure_type_premium"/>
+          <field name="country_id" eval="False"/>
+          <field name="use_worked_day_lines" eval="True"/>
+          <field name="payslip_name">PLS1</field>
+      </record>
+      
+      <record id="hr_payroll_structure_premium_02" model="hr.payroll.structure">
+          <field name="name">Prima legal semestre 2</field>
+          <field name="type_id" ref="hr_payroll_structure_type_premium"/>
+          <field name="country_id" eval="False"/>
+          <field name="use_worked_day_lines" eval="True"/>
+          <field name="payslip_name">PLS2</field>
+      </record>
+
+    </data>
+</odoo>

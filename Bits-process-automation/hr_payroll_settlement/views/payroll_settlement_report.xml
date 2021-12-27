@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="payroll_settlement_template_header">
+            <div class="header">
+                <div class="row no-gutters">
+                    <div class="col-4 text-left" style="max-height:110px;">
+                        <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo" height="110"/>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <span class="font-weight-bold small">Hora: </span>
+                                <span class="small" t-esc="context_timestamp(datetime.datetime.now()).strftime('%-H:%M:%S')"/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <span class="font-weight-bold small">Fecha: </span>
+                                <span class="small" t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y/%m/%d')"/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8 text-center">
+                                <h5 class="text-uppercase font-weight-bold small" t-field="res_company.name" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="text-uppercase font-weight-bold small text-center">
+                                    <span class="font-weight-bold">NIT</span>
+                                    <span t-field="res_company.partner_id.number_identification"/>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 text-center">
+                                <span class="font-weight-bold small">LIQUIDACIÓN DE CONTRATO DE TRABAJO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+                <t t-raw="0" />
+            </div>
+        </template>
+        <template id="final_settlement_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="hr_payroll_settlement.payroll_settlement_template_header">
+                        <div class="page">
+                            <div class="container small">
+                                <hr style="border-top:1px solid"/>
+                                <div id="basic_data">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Ciudad</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span t-field="res_company.city"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Fecha</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span t-field="o.date_end"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Nombre del Empleado</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span t-field="o.employee_id.name"/>
+                                        </div>
+                                        <div class="col-2">
+                                            <span class="font-weight-bold">No Identificación</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.employee_id.identification_id"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Tipo de Contrato</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span t-field="o.type_contract"/>
+                                        </div>
+                                        <div class="col-2">
+                                            <span class="font-weight-bold">Código</span>
+                                        </div>
+                                        <div class="col-3">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Cargo</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span t-field="o.employee_id.job_id"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="border-bottom:1px solid"/>
+                                <div id="dismissal_data">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold"><h7>TIEMPO TRABAJADO</h7></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Fecha Ingreso</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.contract_id.date_start"></span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Fecha Último Contrato</span>
+                                        </div>
+                                        <div class="col-3">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Días Ausentismo</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.days_unpaid"/>
+                                        </div>
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Fecha Último Aumento</span>
+                                        </div>
+                                        <div class="col-3">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Fecha Liquidación</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.date_end" />
+                                        </div>
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Fecha de Retiro</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.date_end" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Total Días Laborados</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-esc="abs((o.contract_id.date_start - o.date_end).days)" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="font-weight-bold">Sueldo Básico Mensual</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-field="o.contract_id.wage"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="border-bottom:1px solid"/>
+                                <div id="reason_for_dismissal">
+                                    <div class="row" style="margin-bottom:10px">
+                                        <div class="col-12 text-center">
+                                            <span class="font-weight-bold"><h7>RAZÓN DE LIQUIDACIÓN</h7></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <span class="font-weight-bold">Causa de Retiro</span>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="text-uppercase" t-field="o.reason_for_termination"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="border-bottom:1px solid"/>
+                                <div class="clearance_details">
+                                    <t t-set="total" t-value="0"/>
+                                    <t t-set="dev" t-value="0"/>
+                                    <t t-set="ded" t-value="0"/>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <table class="table table-sm" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="6" class="text-center">
+                                                            <abbr>CONCEPTOS</abbr>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Código</th>
+                                                        <th>Concepto</th>
+                                                        <th>Unidades</th>
+                                                        <th>Devengos</th>
+                                                        <th>Deducciones</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr t-foreach="o.payslip_id.line_ids.filtered(lambda line: line.appears_on_payslip)" t-as="line">
+                                                        <t t-if="line.code == 'NET'">
+                                                            <t t-set="total" t-value="line.total"/>
+                                                        </t>
+                                                        <td><span t-field="line.code"/></td>
+                                                        <td><span t-field="line.name"/></td>
+                                                        <td align="right"><span t-field="line.quantity"/></td>
+                                                        <td align="right">
+                                                            <t t-if="line.total > 0">
+                                                                <t t-set="dev" t-value="dev + line.total"/>
+                                                            </t>
+                                                            <span t-if="line.total > 0" t-esc="line.total"
+                                                            t-options='{"widget": "monetary", "display_currency": o.payslip_id.company_id.currency_id}'/>
+                                                        </td>
+                                                        <td align="right">
+                                                            <t t-if="0 >= line.total">
+                                                                <t t-set="ded" t-value="ded + (-1 * line.total)"/>
+                                                            </t>
+                                                            <span t-if="0 >= line.total" t-esc="line.total"
+                                                            t-options='{"widget": "monetary", "display_currency": o.payslip_id.company_id.currency_id}'/>
+                                                        </td>
+                                                    </tr>
+                                                    <t t-if="total == 0">
+                                                        <t t-set="total" t-value="dev - ded"/>
+                                                    </t>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:25px">
+                                        <div class="offset-7 col-2">
+                                            <h7>TOTAL A PAGAR</h7>
+                                        </div>
+                                        <div class="col-3">
+                                            <span t-esc="total" t-options='{"widget": "monetary", "display_currency": o.payslip_id.company_id.currency_id}'/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="offset-7 col-5">
+                                            <hr style="border-top:1px solid"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="border-bottom:1px solid"/>
+                                <div class="approval_section">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <span class="font-weight-bold">Elaboró</span>
+                                        </div>
+                                        <div class="offset-2 col-2">
+                                            <span class="font-weight-bold">Aprobó</span>
+                                        </div>
+                                        <div class="offset-2 col-2">
+                                            <span class="font-weight-bold">Revisó</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="offset-1 col-3">
+                                            <hr style="border-top:1px solid"/>
+                                        </div>
+                                        <div class="offset-1 col-3">
+                                            <hr style="border-top:1px solid"/>
+                                        </div>
+                                        <div class="offset-1 col-3">
+                                            <hr style="border-top:1px solid"/>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:10px">
+                                        <div class="col-12">
+                                            <p>
+                                                Declaro a paz y salvo por prestaciones sociales, vacaciones, sueldos y demás conceptos que me vincularon a la sociedad BITS AMERICAS S.A.S.
+                                                mediante contrato individual de trabajo oportunamente aceptado. Al firmar la presente dejamos constancia de que con esta liquidación quedan
+                                                definitivamente saldadas todas las obligaciones contraidas por las partes por efecto del Contrato de Trabajo que en la fecha queda extinguido.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:30px">
+                                        <div class="col-2">
+                                            <span class="font-weight-bold">Empleador</span>
+                                        </div>
+                                        <div class="offset-4 col-2">
+                                            <span class="font-weight-bold">Trabajador</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="offset-2 col-3">
+                                            <hr style="border-top:1px solid"/>
+                                        </div>
+                                        <div class="offset-3 col-3">
+                                            <hr style="border-top:1px solid"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

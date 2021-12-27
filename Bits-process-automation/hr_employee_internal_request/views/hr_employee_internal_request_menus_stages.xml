@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+      <!-- Acciones -->
+      <record id="action_hr_employee_internal_request_stages" model="ir.actions.act_window">
+        <field name="name">Stages</field>
+        <field name="res_model">hr.employee.internal.request.stages</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+
+        <!-- menu holiday book-->
+        <menuitem
+            id="menu_job_internal_request_stages"
+            name="Internal Request"
+            parent="hr_recruitment.menu_hr_recruitment_configuration"
+            sequence="15"/>
+        <!-- submenu holiday book-->
+
+        <menuitem
+            id="submenu_job_internal_request_stages"
+            parent="menu_job_internal_request_stages"
+            action="action_hr_employee_internal_request_stages"
+            sequence="1"/>
+    </data>
+</odoo>

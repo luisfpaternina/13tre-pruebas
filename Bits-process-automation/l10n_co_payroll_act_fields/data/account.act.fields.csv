@@ -1,0 +1,574 @@
+id,code,name,condition_python,description,mandatory,condition_select,validate_condition_select,_type
+l10n_co_payroll_act_fields.payroll_act_fields_001,CODN001,NitEmisor,"a_string = company.vat or ''
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[0]",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_002,CODN002,idNomina,result = payslip.number,Identificador de la nomina.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_003,CODN003,FechaEnvio,"date_time = payslip.datetime_now_user_tz()
+date_time = date_time.split(' ')[0]
+result = date_time",Fecha de envio: Fecha de envio del documento.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_004,CODN004,NoRegistro,result = "",Identificador del empleado,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_005,CODN005,RazonSocial,result = company.name,Debe corresponder al Nombre de la Razón Social del Empleador,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_006,CODN006,PrimerApellido,"result = str(employee.company_id.agent_id.first_surname)",Primer Apellido del Empleador,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_007,CODN007,SegundoApellido,"result = str(employee.company_id.agent_id.second_surname)",Segundo Apellido del Empleador,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_008,CODN008,PrimerNombre,"result = str(employee.company_id.agent_id.first_name)",Primer Nombre del Empleador,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_009,CODN009,OtrosNombres,"result = str(employee.company_id.agent_id.second_name)",Otros Nombres del Empleador,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_010,CODN010,NITEmisor,"a_string = company.vat or ''
+a_string = a_string.replace('CO', '')
+a_string = a_string.replace('.', '')
+result = a_string.split('-',1)[0]",Debe corresponder al NIT del Empleador que realiza el DE,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_011,CODN011,DV,result = company.vat.split("-")[1] if company.vat.find("-") != -1 else company.vat,Debe corresponder al DV del NIT del Empleador que realiza el DE,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_012,CODN012,Pais,result = partner.country_id.code,Codigo del país donde se encuentra ubicada la empresa del empleador en el mes que se esta reportando,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_013,CODN013,DepartamentoEstado,result = payslip.company_id.state_id.l10n_co_divipola,Código del departamento donde se encuentra ubicada la empresa del empleador en el mes que se esta reportando,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_014,CODN014,MunicipioCiudad,result = payslip.company_id.town_id.l10n_co_divipola,Código del municipio o ciudad donde se encuentra ubicada la empresa delempleador en el mes que se estareportando,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_015,CODN015,Direccion,result = str(payslip.company_id.street), Debe corresponder Dirección del lugar físico de expedición del documento.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_016,CODN016,TipoTrabajador,"if employee.contributor_type.code in ['00', '20', '40', '52', '59']:
+  result = '01'
+else:
+  result = employee.contributor_type.code",Código del tipo de trabajador del Ministerio de salud. Aportes a Seguridad Social de Activos.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_017,CODN017,SubTipoTrabajador,"code = employee.contributor_subtype.code
+if code == '01':
+    result = code
+else:
+    result = '00'",Código del Sub tipo de trabajador del Ministerio de salud. Aportes a Seguridad Social de Activos,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_018,CODN018,AltoRiegoPension,result = 'true' if employee.high_risk_pension == True else 'false',Si el trabajador desarrollo durante el presente periodo alguna de las actividades descritas en el Decreto 2090 de 2003 o la norma que lo modifique adicione o sustituya.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_019,CODN019,TipoDocumento,"result='0'
+code = partner.l10n_co_document_type
+if code == 'civil_registration':
+    result = '11'
+elif code == 'id_card':
+    result = '12'
+elif code == 'national_citizen_id' or code =='id_document':
+    result = '13'
+elif code == '21'or code == 'foreign_colombian_card':
+    result = '21'
+elif code == 'foreign_resident_card' or code == 'foreign_id_card':
+    result = '22'
+elif code == 'rut' or code == 'external_id':
+    result = '31'
+elif code == 'passport':
+    result = '41'
+elif code == '42' or code == 'diplomatic_card' or code=='residence_document' or code=='43':
+    result = '42'
+elif code == '47':
+    result = '47'
+elif code == '50':
+    result = '50'
+elif code =='91' or code=='niup_id':
+    result = '91'",Tipo de documento de identificación que actualmente tiene el trabajador aprendiz o pasante,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_020,CODN020,NumeroDocumento,result = employee.identification_id,Numero de identificación que actualmente tiene el trabajador o aprendiz,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_021,CODN021,PrimerApellido,result = partner.first_surname,Primer Apellido del trabajador o aprendiz,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_022,CODN022,SegundoApellido,result = partner.second_surname,Segundo Apellido del trabajador o aprendiz,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_023,CODN023,PrimerNombre,result = partner.first_name,Primer Nombre del trabajador o aprendiz,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_024,CODN024,OtrosNombres,result = partner.second_name,Otros Nombres del trabajador o aprendiz,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_025,CODN025,LugarTrabajoPais,result = payslip.company_id.country_id.code,Código del país actual donde se encontraba ubicado el trabajador o aprendiz en el mes reportado.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_026,CODN026,LugarTrabajoDepartamentoEstado,result = partner.state_id.l10n_co_divipola,Código del departamento actual donde se encontraba ubicado el trabajador aprendiz en el mes reportado.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_027,CODN027,LugarTrabajoMunicipioCiudad,result = partner.town_id.l10n_co_divipola,Código del municipio o ciudad actual donde se encontraba ubicado el trabajador o aprendiz en el mes reportado.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_028,CODN028,LugarTrabajoDireccion,result = partner.street,Debe corresponder a la dirección del lugar físico donde vive el empleado.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_029,CODN029,SalarioIntegral,result = 'true' if employee.integral_salary == True else 'false',"Si el trabajador tiene un salario integral, el cual es el tipo de remuneración que incluye todos los conceptos que puedan constituir salario en un solo monto o pago (prestaciones sociales y recargos nocturno dominical y festivo y el trabajo extra) y que sea superior a 10 SMLMV mas un 30% correspondiente a factor prestacional.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_030,CODN030,TipoContrato,"result = '0'
+if contract.type_contract:
+    result = str(contract.type_contract)",Tipo de Contrato que posee el empleado con el Empleador,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_031,CODN031,Sueldo,"result = '%.4f' % (contract.wage)",Corresponde al valor que el empleador paga de forma periódica al trabajador como contraprestación por el trabajo realizado este puede ser fijo o variable de acuerdo a la unidad de tiempo en que las partes hayan acordado el pago teniendo como base el día o la hora trabajada.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_032,CODN032,CodigoTrabajador,result = payslip.contract_id.employee_id.identification_id or ' ',Codigo del Trabajador,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_033,CODN033,Prefijo,"result = ''
+ref_slip = payslip.number
+if ref_slip:
+    split_ref = ref_slip.split('-')
+    if split_ref:
+        result = split_ref[0]",Prefijo,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_034,CODN034,Consecutivo,"result = ''
+ref_slip = payslip.number
+if ref_slip:
+    split_ref = ref_slip.split('-')
+    if split_ref and len(split_ref) >= 1:
+        result = split_ref[1]",Consecutivo,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_035,CODN035,Numero,"result = ''
+ref_slip = payslip.number
+if ref_slip:
+    split_ref = ref_slip.split('-')
+    if split_ref and len(split_ref) >= 1:
+        result = split_ref[0] + split_ref[1]",Número,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_036,CODN036,FechaIngreso,result = payslip.contract_id.date_start,"Este dato se debe diligenciar solamente en el registro del mes en que el trabajador o aprendiz presenta ingreso o vinculación a la nómina del reportante. (en caso de tener mas de un ingreso en el mes, se debe reportar la primera fecha en la que se presenta esta novedad en el mes que se esta reportando).
+Se debe indicar la Fecha de Ingreso del trabajador a la empresa, en formato AAAAMM-DD",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_037,CODN037,FechaRetiro,result =  payslip.get_date_end_employee(),"Este dato se debe diligenciar solamente
+Se debe indicar la Fecha de Retiro del
+trabajador a la empresa, en formato AAAAMM-DDen el registro del mes en que el
+trabajador o aprendiz presenta retiro de
+la nómina del reportante.(en caso de
+tener mas de un retiro en el mes, se debe
+reportar la ultima fecha en la que se
+presenta esta novedad en el mes que se
+esta reportando).
+",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_038,CODN038,FechaLiquidacionInicio,result = payslip.date_from.strftime('%Y-%m-%d'),"Fecha de inicio de Liquidación de Nómina
+Se debe indicar la Fecha de Inicio del
+Periodo de liquidación del documento, en
+formato AAAA-MM-DD",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_039,CODN039,FechaLiquidacionFin,result = payslip.date_to.strftime('%Y-%m-%d'),"Fecha fin de Liquidación de Nómina
+Se debe indicar la Fecha de Fin del Periodo
+de liquidación del documento, en formato
+AAAA-MM-DD",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_040,CODN040,TiempoLaborado,"result = payslip.days_360(payslip.contract_id.date_start, payslip.date_to)","Cantidad de Tiempo que lleva laborando
+Definido en el numeral 8.4.1, debe ser
+mayor o gual a 1.el Trabajador en la empresa
+",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_041,CODN041,FechaLiquidacion,result = 'NOMINA_EJEMPLO',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_042,CODN042,FechaGen,result = payslip._generate_date('%Y-%m-%d'),"Fecha de emisión: Fecha de emisión del documento
+Debe ir la fecha de emision del documento.
+Considerando zona horaria de Colombia (-
+5), en formato AAAA-MM-DD",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_043,CODN043,CUNENov,result = str(payslip.ep_cune_ref),"Debe corresponder al CUNE del Documento Soporte de Pago de Nómina Electrónica o Nota de Ajuste de Documento Soporte de Pago de Nómina
+Debe ir el CUNE del documento al cual se le realizará la novedad contractual Electrónica a realizar la Novedad",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_044,CODN044,Pais,result = company.country_id.code,"Codigo del país donde donde se encuentra ubicado el empleador el mes que se esta reportando
+Se debe colocar el Codigo alfa-2 de la tabla 5.4.1",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_045,CODN045,DepartamentoEstado,result = payslip.company_id.state_id.l10n_co_divipola,"Código del departamento donde se encuentra ubicado el empleador el mes que se esta reportando
+Se debe colocar el Codigo de la tabla 5.4.2",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_046,CODN046,MunicipioCiudad,result = payslip.company_id.town_id.l10n_co_divipola,"Código del municipio o ciudad donde se encuentra ubicado el empleador el mes que se esta reportando
+Se debe colocar el Codigo de la tabla 5.4.3",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_047,CODN047,Idioma,result = company.lang[0:2],"Codigo del país donde se genera el documento
+Se debe colocar el Codigo ISO 639-1 de la tabla 5.3.1. Para Colombia se debe colocar ""es"" (Español, Castellano)
+",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_048,CODN048,Version,result = '1',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_049,CODN049,Ambiente,"result = 2
+provider = payslip.dict._get_active_tech_provider()
+if provider and not provider.is_test:
+    result = 1","Tipo de Ambiente de Emision del Documento: Habilitacion o Produccion
+Se debe colocar el Codigo de la tabla 5.1.1",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_050,CODN050,TipoXML,result = 'SE ELIMINA v1.4',"Tipo de XML del Documento
+Se debe colocar el Codigo de la tabla 5.5.7",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_052,CODN052,EncripCUNE,result = 'SE ELIMINA v1.4',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_053,CODN053,FechaHoraGen,result = str(payslip.datetime_now_user_tz()),Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_055,CODN055,PeriodoNomina,"_type_document = {'weekly': '1', 'bi-weekly': '4', 'monthly': '5'}
+result = payslip.struct_id.schedule_pay
+result = _type_document.get(result, '6')","Corresponde al Codigo de Periodo de Nómina
+Se debe colocar el Codigo de la tabla 5.5.1
+",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_056,CODN056,TipoMoneda,result = payslip.currency_id.name,"Tipo de Moneda utilizada en el documento
+Se debe colocar el Codigo de la tabla 5.3.2.
+Para Colombia se debe colocar ""COP""",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_057,CODN057,TRM,result = '0',Tasa Representativa del mercado. Corresponde a la tasa de cambio de la moneda utilizada en el documento en el Campo “TipoMoneda” a Pesos Colombianos.,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_058,CODN058,Nota,result = str(payslip.setting_note),Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_059,CODN059,Forma,result = payslip.payment_way_id.code,Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_060,CODN060,Metodo,result = payslip.payment_method_id.code,Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_061,CODN061,Banco,"result = '0'
+if payslip.contract_id.employee_id.address_home_id.bank_ids:
+    bank_name = payslip.contract_id.employee_id.address_home_id.bank_ids[0].bank_name
+    result = bank_name
+if payslip.payment_method_id.code in ['10','20']:
+    result = '0'",Nombre de Banco,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_062,CODN062,TipoCuenta,"result = '0'
+if payslip.contract_id.employee_id.address_home_id.bank_ids:
+    account_type = payslip.contract_id.employee_id.address_home_id.bank_ids[0].account_type
+    if account_type == 'saving':
+        result = 'Ahorros'
+    elif account_type == 'bank':
+        result = 'Normal'
+    elif account_type == 'current_account':
+        result = 'Corriente'
+    elif account_type == 'dp':
+        result = 'Daviplata'
+if payslip.payment_method_id.code in ['10','20']:
+    result = ' '",Tipo de cuenta Bancaria,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_063,CODN063,NumeroCuenta,"result = ' '
+if payslip.contract_id.employee_id.address_home_id.bank_ids:
+    acc_number = payslip.contract_id.employee_id.address_home_id.bank_ids[0].acc_number
+    result = acc_number
+if payslip.payment_method_id.code in ['10','20']:
+    result = ' '",Número de cuenta Bancaria,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_064,CODN064,FechaPago,result = str(payslip.payment_date),Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_065,CODN065,DiasTrabajados,"amount = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.code in ['BASIC', 'RBASIC'] and line.salary_rule_id.l10n_type_rule not in ['accrued_sena_practice','accrued_sena_elective']:
+        amount =int(abs(payslip.hours_quantity))
+    
+    elif line.salary_rule_id.code in ['BASIC', 'RBASIC'] and line.salary_rule_id.l10n_type_rule in ['accrued_sena_practice','accrued_sena_elective']:
+        amount = 0
+
+result = amount",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_066,CODN066,SueldoTrabajado,"amount = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.code in ['BASIC', 'RBASIC'] and line.salary_rule_id.l10n_type_rule not in ['accrued_sena_practice','accrued_sena_elective']:
+        amount = amount + line.total
+    
+    elif line.salary_rule_id.code in ['BASIC', 'RBASIC'] and line.salary_rule_id.l10n_type_rule in ['accrued_sena_practice','accrued_sena_elective']:
+        amount = 0
+result = str('%.4f' % (abs(amount)))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_067,CODN067,AuxilioTransporte,"result = '0'
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule in ['connectivity_rule', 'trans_connect_assistance']:
+        result = str(int(line.total))
+",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_068,CODN068,ViaticoManuAlojS,"result= ''",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_069,CODN069,ViaticoManuAlojNS,"result= ''",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_070,CODN070,TIPO Hora Extra,"result = ' '
+if payroll_new:
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                if payroll_new_line.salary_rule_id.code == '60':
+                    result = 'Hora Extra Diurna'
+                elif payroll_new_line.salary_rule_id.code == '65':
+                    result = 'Hora Extra Nocturna'
+                elif payroll_new_line.salary_rule_id.code == '70':
+                    result = 'Hora Extra Diurna Dominical y Festivos'
+                elif payroll_new_line.salary_rule_id.code == '75':
+                    result = 'Hora Extra Nocturna Dominical y Festivos'",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_071,CODN071,HoraInicio,"result = ' '
+if payroll_new:
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                date_time = payroll_new_line.datetime_start
+                date_time = str(payslip.update_tz(date_time))
+                result = date_time.replace(' ','T')",Hora de inicio para horas extra,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_072,CODN072,HoraFin,"result = ' '
+if payroll_new:
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                date_time = payroll_new_line.datetime_end
+                date_time = str(payslip.update_tz(date_time))
+                result = date_time.replace(' ','T')",Hora final de hora extra,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_073,CODN073,Cantidad,"result = ' '
+if payroll_new:
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                result = str(employee_new.quantity)",Cantidad de horas extra,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_075,CODN075,Pago,"result = '0'
+if payroll_new:
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                result= str('%.4f' % abs(employee_new.total))",Pago total en horas extra,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_076,CODN076,FechaInicio,"result = holiday_history.enjoyment_start_date if holiday_history and holiday_history.enjoyment_start_date else ' '","Fecha de inicio de disfrute de vacaciones.
+Maneja el formato AAAA-MM-DD.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_077,CODN077,FechaFin,"result = holiday_history.enjoyment_end_date if holiday_history and holiday_history.enjoyment_end_date else ' '","Fecha de finalización de disfrute de vacaciones.
+Maneja el formato AAAA-MM-DD.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_078,CODN078,Cantidad,"total = 0
+if holiday_history:
+    for payroll_new in holiday_history.payroll_news_ids:
+        if payroll_new.salary_rule_id.l10n_type_rule == 'enjoyment_rule':
+            for emp_new in payroll_new.employee_payroll_news_ids:
+                if employee == emp_new.employee_id:
+                    total += abs(emp_new.quantity)
+result = int(total)","Cantidad de días de vacaciones disfrutados.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_079,CODN079,Pago,"total = 0
+if holiday_history:
+    for payroll_new in holiday_history.payroll_news_ids:
+        if payroll_new.salary_rule_id.l10n_type_rule == 'enjoyment_rule':
+            for emp_new in payroll_new.employee_payroll_news_ids:
+                if employee == emp_new.employee_id:
+                    total += abs(emp_new.total)
+result = str('%.4f' % abs(total))","Total de dinero pagado correspondiente a las vacaciones disfrutadas.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_080,CODN080,Cantidad,"total = 0
+if holiday_history:
+    for payroll_new in holiday_history.payroll_news_ids:
+        if payroll_new.salary_rule_id.l10n_type_rule == 'compensated_holidays':
+            for emp_new in payroll_new.employee_payroll_news_ids:
+                if employee == emp_new.employee_id:
+                    total += abs(emp_new.quantity)
+elif payslip_line.salary_rule_id.l10n_type_rule == 'compensated_holidays':
+  total = round(abs(payslip_line.quantity),0)
+result = int(total)",Total de días pagados correspondientes a las vacaciones compensadas,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_081,CODN081,Pago,"total = 0
+if holiday_history:
+    for payroll_new in holiday_history.payroll_news_ids:
+        if payroll_new.salary_rule_id.l10n_type_rule == 'compensated_holidays':
+            for emp_new in payroll_new.employee_payroll_news_ids:
+                if employee == emp_new.employee_id:
+                    total += abs(emp_new.total)
+elif payslip_line.salary_rule_id.l10n_type_rule == 'compensated_holidays':
+    total = abs(payslip_line.total)
+result = int(total)",Total de dinero pagado correspondiente a las vacaciones compensadas,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_082,CODN082,Cantidad,"premium_list = [x.id for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule in ('legal_premium',))]
+result = 0
+if premium_list:
+    period = 1 if payslip.date_from.month < 7 else 2
+    result = provisions.compute_legal_premium_days(period)",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_083,CODN083,Pago,"result = abs(sum([x.amount for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule == 'legal_premium')]))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_084,CODN084,PagoNS,"result = str('%.4f' % abs(sum([x.amount for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule == 'extra_legal_premium')])))",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_085,CODN085,Pago,"result = '%.4f' % (sum([x.amount for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule == 'ces_annual_layoffs')]))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_086,CODN086,Porcentaje,result = 12.00,Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_087,CODN087,PagoIntereses,"result = '%.4f' % (sum([x.amount for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule == 'ces_percentage_annual_layoffs')]))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_088,CODN088,FechaInicio,"result = ' '
+for payroll_new_line in payroll_new:
+    for employee_new in payroll_new_line.employee_payroll_news_ids:
+        if employee_new.employee_id == employee:
+            result = str(payroll_new_line.request_date_from)",Fecha de inicio de Incapacidad,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_089,CODN089,FechaFin,"result = ' '
+for payroll_new_line in payroll_new:
+    for employee_new in payroll_new_line.employee_payroll_news_ids:
+        if employee_new.employee_id == employee:
+            result = str(payroll_new_line.request_date_to)",Fecha Final de Incapacidad,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_090,CODN090,Cantidad,"result = ' '
+for payroll_new_line in payroll_new:
+    for employee_new in payroll_new_line.employee_payroll_news_ids:
+        if employee_new.employee_id == employee:
+            result = int(employee_new.quantity)",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_091,CODN091,Tipo,"result = ' '
+for payroll_new_line in payroll_new:
+    for employee_new in payroll_new_line.employee_payroll_news_ids:
+        if employee_new.employee_id == employee:
+            result = str(payroll_new_line.inability_id.code)",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_092,CODN092,Pago,"result = ' '
+for payroll_new_line in payroll_new:
+    for employee_new in payroll_new_line.employee_payroll_news_ids:
+        if employee_new.employee_id == employee:
+            result= str(abs(employee_new.total))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_093,CODN093,Tipo licencia,"lic_type = ''
+for new in payroll_new:
+    if new.salary_rule_id and new.salary_rule_id.l10n_type_rule and 'lic_leave' in new.salary_rule_id.l10n_type_rule:
+        if new.salary_rule_id.l10n_type_rule == 'lic_leave_maternity':
+            lic_type = 'MP'
+        elif new.salary_rule_id.l10n_type_rule == 'lic_leave_paternity':
+            lic_type = 'MP'
+        elif new.salary_rule_id.l10n_type_rule == 'lic_leave_paid':
+            lic_type = 'RE'
+        elif new.salary_rule_id.l10n_type_rule == 'lic_leave_unpaid':
+            lic_type = 'NR'
+        elif new.salary_rule_id.l10n_type_rule == 'lic_leave_mourning':
+            lic_type = 'RE'
+result = lic_type","Los tipos de licencia pueden ser:
+* MP: Licencia de Maternidad
+* MP: Licencia de Paternidad
+* RE: Licencia Remunerada (Aplica para Luto)
+* NR: Licencia No Remunerada",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_094,CODN094,FechaInicio,"result = payroll_new.request_date_from","Hace referencia a la fecha en la que inicio la licencia.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_095,CODN095,FechaFin,"result = payroll_new.request_date_to","Corresponde a la fecha en la que finalizo la licencia.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_096,CODN096,Cantidad,"value = 0
+for employee_new in payroll_new.employee_payroll_news_ids:
+    if employee == employee_new.employee_id:
+        value += abs(employee_new.quantity)
+result = int(value)","Hace referencia al total de dias que el empleado estuvo ausente por la licencia.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_097,CODN097,Pago,"value = 0
+if payslip_line.salary_rule_id.l10n_type_rule != 'lic_leave_unpaid':
+    for employee_new in payroll_new.employee_payroll_news_ids:
+        if employee == employee_new.employee_id:
+            value += abs(employee_new.total)
+result = value","Corresponde al total pagado/descontado correspondiente a las licencias otorgadas.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_098,CODN098,BonificacionS,"result = ''
+if payslip_line.salary_rule_id.l10n_type_rule == 's_bonus':
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                result = int(employee_new.total)",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_099,CODN099,BonificacionNS,"result = ''
+if payslip_line.salary_rule_id.l10n_type_rule == 'ns_bonus':
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                result = int(employee_new.total)",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_100,CODN100,AuxilioS,"result = ''",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_101,CODN101,AuxilioNS,"result = str('%.4f' % (abs(payslip_line.total)))",Auxilio no salarial,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_102,CODN102,FechaInicio,result = '',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_103,CODN103,FechaFin,result = '',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_104,CODN104,Cantidad,result = '0',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_105,CODN105,DescripcionConcepto,result = '',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_106,CODN106,ConceptoS,result = '',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_107,CODN107,ConceptoNS,result = '',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_108,CODN108,CompensacionO,result = '0',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_109,CODN109,CompensacionE,result = '0',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_110,CODN110,PagoS,result = '0',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_111,CODN111,PagoNS,result = '0',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_112,CODN112,PagoAlimentacionS,result = '0',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_113,CODN113,PagoAlimentacionNS,result = '0',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_114,CODN114,Comision,"value = 0
+for payroll_new_line in payroll_new:
+    for employee_n in payroll_new_line.employee_payroll_news_ids:
+        if employee_n.employee_id == employee:
+            value = (employee_n.total)
+result = str('%.4f' % (abs(value)))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_115,CODN115,PagoTercero,result = '',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_116,CODN116,	Anticipo deducciones,"value = 0
+for payroll_new_line in payroll_new:
+    for employee_new in payroll_new_line.employee_payroll_news_ids:
+        if employee_new.employee_id == employee:
+            value= (employee_new.total)
+result = str('%.4f' % (abs(value)))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_117,CODN117,Dotacion,result = '0',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_118,CODN118,ApoyoSost,"value = 0
+value = sum([x.total for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule in ['accrued_sena_elective', 'accrued_sena_practice'])])
+if value < 0 :
+    value = value * -1
+result = str(value)",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_119,CODN119,Teletrabajo,"result = '0'
+if contract.check_telecommuting == True:
+    for line in payslip.line_ids:
+        if line.salary_rule_id.l10n_type_rule == 'basic_salary':
+            result = line.total",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_120,CODN120,BonifRetiro,"value = 0
+value = sum([x.total for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule == 'bonus_retirement')])
+if value < 0 :
+    value = value * -1
+result = str(value)",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_121,CODN121,Indemnizacion,"value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule == 'compensation':
+        value = (line.total)
+result = str('%.4f' % (abs(value)))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_122,CODN122,Reintegro,"value = 0
+value = sum([x.total for x in payslip.line_ids.filtered(lambda x: x.salary_rule_id.l10n_type_rule == 'reintegrate')])
+if value < 0 :
+    value = value * -1
+result = str(value)",Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_123,CODN123,Porcentaje,"value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule == 'health':
+        value = line.salary_rule_id.amount_percentage or 0
+result = abs(value) if not value % 1 == 0 else int(abs(value))",Porcentaje al que corresponde el valor descontado para Aportes a Salud,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_124,CODN124,Deduccion,"health_value = 0
+if payslip and payslip.line_ids:
+    for line in payslip.line_ids:
+        salary_rule_type = line.salary_rule_id.l10n_type_rule
+        if salary_rule_type == 'health':
+            health_value += abs(line.total)
+result = health_value",Valor total descontado para Aportes a Salud,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_125,CODN125,Porcentaje,"value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule == 'pension_fund':
+        value = line.salary_rule_id.amount_percentage or 0
+result = abs(value) if not value % 1 == 0 else int(abs(value))",Porcentaje al que corresponde el valor descontado para Aportes a Pension,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_126,CODN126,Deduccion,"pension_value = 0
+if payslip and payslip.line_ids:
+    for line in payslip.line_ids:
+        salary_rule_type = line.salary_rule_id.l10n_type_rule
+        if salary_rule_type == 'pension_fund':
+            pension_value += abs(line.total)
+result = pension_value",Valor descontado para Aportes a Pension,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_127,CODN127,Porcentaje,"value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule == 'soli_subs_fund' and line.salary_rule_id.amount_percentage and line.total:
+        value = int(line.salary_rule_id.amount_percentage)
+result = abs(value)",Porcentaje correspondiente al Aporte Fondo Solidaridad,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_128,CODN128,DeduccionSP,"value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule == 'soli_subs_fund' and line.total:
+        value = abs(line.total/2)
+result = value",Valor correspondiente al Aporte Fondo Solidaridad,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_129,CODN129,PorcentajeSub,"value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule == 'soli_subs_fund' and line.salary_rule_id.amount_percentage and line.total:
+        value = int(line.salary_rule_id.amount_percentage)
+result = abs(value)",Porcentaje correspondiente al Aporte Fondo Subsistencia,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_130,CODN130,DeduccionSub,"value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id.l10n_type_rule == 'soli_subs_fund' and line.total:
+        value = abs(line.total/2)
+result = value",Valor correspondiente al Aporte Fondo Subsistencia,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_131,CODN131,Porcentaje,result = 'NOMINA_EJEMPLO',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_132,CODN132,Deduccion,result = 'NOMINA_EJEMPLO',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_133,CODN133,SancionPublic,"result = '0'
+if payslip_line.salary_rule_id.l10n_type_rule == 'public_sanction':
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                result = str(abs(employee_new.total))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_134,CODN134,SancionPriv,"result = '0'
+if payslip_line.salary_rule_id.l10n_type_rule == 'private_sanction':
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                result = str(abs(employee_new.total))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_135,CODN135,Descripcion,"result = payroll_new.salary_rule_id.name","Nombre de la Libranza que corresponda a las cuotas que el empleado deba pagar a una entidad financiera.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_136,CODN136,Deduccion,"value = 0
+for employee_new in payroll_new.employee_payroll_news_ids:
+    if employee == employee_new.employee_id:
+        value += abs(employee_new.total)
+result = value","Hace referencia al total del desprendible de nómina relacionada a libranzas.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_137,CODN137,PagoTercero,"value = 0
+if payslip_line.salary_rule_id.l10n_type_rule == 'payments_thirds':
+    for payroll_new_line in payroll_new:
+        for employee_new in payroll_new_line.employee_payroll_news_ids:
+            if employee_new.employee_id == employee:
+                value = (employee_new.total)
+result = str('%.4f' % (abs(value)))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_138,CODN138,Anticipo de devengo,"value = 0
+for payroll_new_line in payroll_new:
+    for employee_new in payroll_new_line.employee_payroll_news_ids:
+        if employee_new.employee_id == employee:
+            value= (employee_new.total)
+result = str('%.4f' % (abs(value)))",Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_139,CODN139,OtraDeduccion,"ode_value = 0
+if payroll_new:
+  for employee_new in payroll_new.employee_payroll_news_ids:
+    if employee == employee_new.employee_id:
+      ode_value=abs(employee_new.total)
+result=ode_value","Hace referencia al total descontado correspondiente a deducciones no clasificadas.",required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_140,CODN140,PensionVoluntaria,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_voluntary_pension':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia al valor total de los aportes voluntarios al fondo de pensiones.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_141,CODN141,RetencionFuente,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_withholding_source':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia al valor correspondiente al impuesto de retención en la fuente.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_142,CODN142,ICA,result = 'NOMINA_EJEMPLO',Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_143,CODN143,AFC,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_afc':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia al valor total de los aportes AFC realizados.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_144,CODN144,Cooperativa,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_cooperative':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia al total de aportes que los empleados hagan a las cooperativas legalmente constituidas.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_145,CODN145,EmbargoFiscal,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_tax_garnishment':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia a los embargos ordenados por autoridad judicial competente, deben ser descontados de la nómina por la empresa y consignados en la cuenta que el juez haya ordenado.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_146,CODN146,PlanComplementarios,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_complementary_plans':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia a las novedades corespondientes a planes complementarios, cuyo valor se descuenta desde la nomina.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_147,CODN147,Educacion,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_education':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia al total descontado correspondiente a reglas que esten relacionadas con la educación del empleado.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_148,CODN148,Reintegro,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_refund':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia al total descontado de reglas salariales relacionadas con el reintegro de un empleado.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_149,CODN149,Deuda,"ded_value = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule and line.salary_rule_id.l10n_type_rule == 'ded_debt':
+        ded_value += abs(line.total)
+result = ded_value","Hace referencia al total de descuentos relacionados con reglas salariales producto de una deuda del empleado con la empresa.",optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_150,CODN150,Redondeo,result = payslip._get_totals_round_value(),Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_151,CODN151,DevengadosTotal,"gross_total = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule == 'total_accrual':
+        gross_total = line.total
+int_value, dec_value = payslip.truncate_decimals(gross_total, 2)
+result = str(payslip.round_value_dian(int_value, dec_value)) + '.00'",Valor total de los devengados.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_152,CODN152,DeduccionesTotal,"total_deduction = 0
+for line in payslip.line_ids:
+    if line.category_id.code in ['DED', 'RET']:
+        total_deduction += abs(line.total)
+int_value, dec_value = payslip.truncate_decimals(total_deduction, 2)
+result = str(payslip.round_value_dian(int_value, dec_value)) + '.00'",Hace referencia al total de las deducciones presentes en la nomina.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_153,CODN153,ComprobanteTotal,"total_payslip = 0
+for line in payslip.line_ids:
+    if line.salary_rule_id and line.salary_rule_id.l10n_type_rule == 'total_payslip':
+        total_payslip = line.total
+int_value, dec_value = payslip.truncate_decimals(total_payslip, 2)
+result = str(payslip.round_value_dian(int_value, dec_value)) + '.00'",Hace referencia al Neto a Pagar en la nomina.,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_154,CODN154,totalNumeroReg,result = payslip_count,Total de nominas relacionadas en el archivo,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_155,CODN155,Validar es Novedad,,,condition,python,result = (payslip.payslip_related_id ),
+l10n_co_payroll_act_fields.payroll_act_fields_156,CODN156,Indicador de Novedades,result = payslip.custom_field_line_ids,,condition,python,result = (payslip.custom_field_line_ids and len(payslip.custom_field_line_ids) > 0),
+l10n_co_payroll_act_fields.payroll_act_fields_157,CODN157,Deducción (foo),result = 'NOMINA_EJEMPLO',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_158,CODN158,Porcentaje (foo),result = 'NOMINA_EJEMPLO',Aqui va la descripción,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_159,CODN159,CorreoElectrónico,result = partner.email,Aqui va la descripción,optional,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_160,CODN160,NumeroPred,result = payslip.pred_number,Debe corresponder al Numero deDocumento Soporte de Pago de Nómina Electrónica a Reemplazar,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_161,CODN161,CUNEPred,result = payslip.pred_CUNE,Debe corresponder al CUNE del Documento Soporte de Pago de Nómina Electrónica a Reemplazar,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_162,CODN162,FechaGenPred,result = payslip.pred_date_gen,Debe corresponder a la Fecha de Emision del Documento Soporte de Pago de Nómina Electrónica a Reemplazar,required,none,,payroll
+l10n_co_payroll_act_fields.payroll_act_fields_163,CODN163,TipoNota,result = str(payslip.type_setting_note),Corresponde al tipo de Nota de Ajuste de Documento Soporte de Pago de Nómina Electrónica que se desee implementar,required,none,,payroll
+

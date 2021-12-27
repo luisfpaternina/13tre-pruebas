@@ -1,0 +1,337 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_connectivity_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-21 16:12+0000\n"
+"PO-Revision-Date: 2021-10-21 16:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__advance_deductions
+msgid "ANI: Advance of Deductions"
+msgstr "ANI: Anticipo deducciones"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__advance_accruals
+msgid "ANT: Advance of accruals"
+msgstr "ANT: Anticipo devengos"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__n_benefit_assistance
+msgid "AUX: Auxilio no salarial"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__benefit_assistance
+msgid "AUX: Auxilio salarial"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_connectivity_payroll.bits_hr_employee_connectivity__setting
+msgid "Auxilio de conectividad"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ns_bonus
+msgid "BON: Bonificacion No salarial"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__s_bonus
+msgid "BON: Bonificacion Salarial"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ces_annual_layoffs
+msgid "CES: Cesantias Anuales"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ces_percentage_annual_layoffs
+msgid "CES: Intereses de Cesantias Anuales"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__coi_commissions
+msgid "COI: Commissions"
+msgstr "COI: Comisiones"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields,field_description:l10n_co_connectivity_payroll.field_hr_salary_rule__l10n_type_rule
+msgid "Category of the rule"
+msgstr "Categoría de la regla"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model,name:l10n_co_connectivity_payroll.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields,field_description:l10n_co_connectivity_payroll.field_hr_salary_rule__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model,name:l10n_co_connectivity_payroll.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__basic_salary
+msgid "DBA: Basic salary"
+msgstr "DBA: Salario básico"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_afc
+msgid "DED: AFC"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_complementary_plans
+msgid "DED: Complementary plans"
+msgstr "DED: Planes complementarios"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_debt
+msgid "DED: Debt"
+msgstr "DED: Deuda"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_education
+msgid "DED: Education"
+msgstr "DED: Educación"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_refund
+msgid "DED: Refund"
+msgstr "DED: Reintegro"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_tax_garnishment
+msgid "DED: Tax garnishment"
+msgstr "DED: Embargo fiscal"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_voluntary_pension
+msgid "DED: Voluntary pension"
+msgstr "DED: Pensión voluntaria"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_withholding_source
+msgid "DED: Withholding at source"
+msgstr "DED: Retención fuente"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__ded_cooperative
+msgid "DED: cooperative"
+msgstr "DED: Cooperativa"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__accrued_sena_elective
+msgid "DEV: Accrued sena elective"
+msgstr "DEV: Devengos sena etapa electiva"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__accrued_sena_practice
+msgid "DEV: Accrued sena pratice"
+msgstr "DEV: Devengos sena etapa práctica "
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__bonus_retirement
+msgid "DEV: Bonus retirement"
+msgstr "DEV: Bono de retiro"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__compensation
+msgid "DEV: Compensation"
+msgstr "DEV: Compensación"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__reintegrate
+msgid "DEV: Reintegrate"
+msgstr "DEV: Reintegro"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__trans_connect_assistance
+msgid "DTR: Sub Conectividad o Transporte"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__connectivity_rule
+msgid "DTR: Transporte"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields,field_description:l10n_co_connectivity_payroll.field_hr_salary_rule__is_connectivity_rule
+msgid "Do you want to calculate the transportation?"
+msgstr "¿Quiere calcular el sub de transporte?"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model,name:l10n_co_connectivity_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: l10n_co_connectivity_payroll
+#: code:addons/l10n_co_connectivity_payroll/models/res_config_settings.py:0
+#, python-format
+msgid ""
+"Esta tratando de ingresar una                         cantidad negativa."
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__pension_fund
+msgid "FPE: Pension Fund"
+msgstr "FPE: Fondo de Pensiones"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__soli_subs_fund
+msgid "FSP: Solidarity and Subsistence Fund"
+msgstr "FSP: Fondo Solidaridad y Subsistencia"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__hour_extra
+msgid "HEX: Horas Extra"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__inability
+msgid "INC: Incapacidad"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields,field_description:l10n_co_connectivity_payroll.field_hr_contract__check_telecommuting
+msgid "Is teleworker"
+msgstr "Es teletrabajo"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__lib_payroll_credit
+msgid "LIB: Payroll credit"
+msgstr "LIB: Libranza"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__lic_leave_maternity
+msgid "LIC: Maternity Leave"
+msgstr "LIC: Licencia de Maternidad"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__lic_leave_mourning
+msgid "LIC: Mourning Leave"
+msgstr "LIC: Licencia por Luto"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__lic_leave_paid
+msgid "LIC: Paid Leave"
+msgstr "LIC: Licencia Remunerada"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__lic_leave_paternity
+msgid "LIC: Paternity Leave"
+msgstr "LIC: Licencia de Paternidad"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__lic_leave_unpaid
+msgid "LIC: Unpaid Leave"
+msgstr "LIC: Licencia No Remunerada"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__rule_rectificated_not
+msgid "NOT: Rectificación de nomina individual"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__rule_rectificated_nov
+msgid "NOV: Rectificación de nomina individual"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__other_ded
+msgid "ODE: Other deductions"
+msgstr "ODE: Otras deducciones"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__payments_thirds
+msgid "PAT: Payments to thirds"
+msgstr "PAT: Pagos a terceros"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__extra_legal_premium
+msgid "PRI: Prima Extralegal"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__legal_premium
+msgid "PRI: Prima Legal"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__total_accrual
+msgid "RES: Total Accrual"
+msgstr "RES: Total Devengado"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__total_payslip
+msgid "RES: Total Payslip"
+msgstr "RES: Total Nomina"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__rule_rectificated_rpr
+msgid "RPR: Rectificación de nomina individual"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__health
+msgid "SAL: Health"
+msgstr "SAL: Salud"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__private_sanction
+msgid "SAN: Sanción Privada"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__public_sanction
+msgid "SAN: Sanción Pública"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model,name:l10n_co_connectivity_payroll.model_hr_salary_rule
+msgid "Salary Rule"
+msgstr "Regla de Salarial"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields,field_description:l10n_co_connectivity_payroll.field_hr_salary_rule__tech_provider_line_id
+msgid "Tech Provider Line"
+msgstr "Indicador de Proveedor Tecnologico"
+
+#. module: l10n_co_connectivity_payroll
+#: code:addons/l10n_co_connectivity_payroll/models/res_config_settings.py:0
+#: model:ir.model.fields,field_description:l10n_co_connectivity_payroll.field_res_config_settings__transportation_allowance
+#, python-format
+msgid "Transportation allowance"
+msgstr "Subsidio de conectividad "
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__enjoyment_rule
+msgid "VAC: Enjoyment rule"
+msgstr "VAC: Vacaciones disfrutadas"
+
+#. module: l10n_co_connectivity_payroll
+#: model:ir.model.fields.selection,name:l10n_co_connectivity_payroll.selection__hr_salary_rule__l10n_type_rule__compensated_holidays
+msgid "VCO: VACACIONES EN DINERO"
+msgstr ""
+
+#. module: l10n_co_connectivity_payroll
+#: code:addons/l10n_co_connectivity_payroll/models/res_config_settings.py:0
+#: model:ir.model.fields,field_description:l10n_co_connectivity_payroll.field_res_company__transportation_allowance
+#, python-format
+msgid "transportation_allowance"
+msgstr "Subsidio de conectividad"

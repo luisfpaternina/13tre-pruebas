@@ -1,0 +1,1094 @@
+id,name,code
+l10n_co_unit_measures_01,spray pequeño,4
+l10n_co_unit_measures_02,levantar,5
+l10n_co_unit_measures_03,Lote calor,8
+l10n_co_unit_measures_04,grupo,10
+l10n_co_unit_measures_05,equipar,11
+l10n_co_unit_measures_06,ración,13
+l10n_co_unit_measures_07,Disparo,14
+l10n_co_unit_measures_08,palo,15
+l10n_co_unit_measures_09,tambor de ciento quince kg,16
+l10n_co_unit_measures_10,tambor de cien libras,17
+l10n_co_unit_measures_11,tambor de cincuenta y cinco galones (US),18
+l10n_co_unit_measures_12,camión cisterna,19
+l10n_co_unit_measures_13,contenedor de veinte pies,20
+l10n_co_unit_measures_14,contenedor de cuarenta pies,21
+l10n_co_unit_measures_15,decilitro por gramo,22
+l10n_co_unit_measures_16,gramo por centímetro cúbico,23
+l10n_co_unit_measures_17,libra teórica,24
+l10n_co_unit_measures_18,gramo por centímetro cuadrado,25
+l10n_co_unit_measures_19,tonelada real,26
+l10n_co_unit_measures_20,tonelada teórica,27
+l10n_co_unit_measures_21,kilogramo por metro cuadrado,28
+l10n_co_unit_measures_22,libra por mil pies cuadrados,29
+l10n_co_unit_measures_23,Día de potencia del caballo por tonelada métrica seca al aire.,30
+l10n_co_unit_measures_24,coger peso,31
+l10n_co_unit_measures_25,kilogramo por aire seco tonelada métrica,32
+l10n_co_unit_measures_26,kilopascales metros cuadrados por gramo,33
+l10n_co_unit_measures_27,kilopascales por milímetro,34
+l10n_co_unit_measures_28,mililitros por centímetro cuadrado segundo,35
+l10n_co_unit_measures_29,pies cúbicos por minuto por pie cuadrado,36
+l10n_co_unit_measures_30,onza por pie cuadrado,37
+l10n_co_unit_measures_31,"onzas por pie cuadrado por 0,01 pulgadas",38
+l10n_co_unit_measures_32,mililitro por segundo,40
+l10n_co_unit_measures_33,mililitro por minuto,41
+l10n_co_unit_measures_34,bolsa súper a granel,43
+l10n_co_unit_measures_35,bolsa a granel de quinientos kg,44
+l10n_co_unit_measures_36,bolsa a granel de trescientos kg,45
+l10n_co_unit_measures_37,bolsa a granel de cincuenta libras,46
+l10n_co_unit_measures_38,bolsa de cincuenta libras,47
+l10n_co_unit_measures_39,carga de automóviles a granel,48
+l10n_co_unit_measures_40,kilogramos teóricos,53
+l10n_co_unit_measures_41,tonelada teórica,54
+l10n_co_unit_measures_42,sitas,56
+l10n_co_unit_measures_43,malla,57
+l10n_co_unit_measures_44,kilogramo neto,58
+l10n_co_unit_measures_45,parte por millón,59
+l10n_co_unit_measures_46,porcentaje de peso,60
+l10n_co_unit_measures_47,parte por billón (US),61
+l10n_co_unit_measures_48,porcentaje por 1000 horas,62
+l10n_co_unit_measures_49,tasa de fracaso en el tiempo,63
+l10n_co_unit_measures_50,"libra por pulgada cuadrada, calibre",64
+l10n_co_unit_measures_51,Oersted,66
+l10n_co_unit_measures_52,prueba de escala específica,69
+l10n_co_unit_measures_53,voltio amperio por libra,71
+l10n_co_unit_measures_54,vatio por libra,72
+l10n_co_unit_measures_55,amperio tum por centímetro,73
+l10n_co_unit_measures_56,milipascal,74
+l10n_co_unit_measures_57,gauss,76
+l10n_co_unit_measures_58,mili pulgadas,77
+l10n_co_unit_measures_59,kilogauss,78
+l10n_co_unit_measures_60,libras por pulgada cuadrada absoluta,80
+l10n_co_unit_measures_61,Enrique,81
+l10n_co_unit_measures_62,kilopound por pulgada cuadrada,84
+l10n_co_unit_measures_63,fuerza libra pie,85
+l10n_co_unit_measures_64,libra por pie cúbico,87
+l10n_co_unit_measures_65,equilibrio,89
+l10n_co_unit_measures_66,Saybold segundo universal,90
+l10n_co_unit_measures_67,alimenta,91
+l10n_co_unit_measures_68,calorías por centímetro cúbico,92
+l10n_co_unit_measures_69,calorías por gramo,93
+l10n_co_unit_measures_70,unidad,94
+l10n_co_unit_measures_71,veinte mil galones (US) de carros,95
+l10n_co_unit_measures_72,diez mil galones (US) de carros,96
+l10n_co_unit_measures_73,tambor de diez kg,97
+l10n_co_unit_measures_74,tambor de quince kg,98
+l10n_co_unit_measures_75,milla de coche,1ª
+l10n_co_unit_measures_76,recuento de coches,1B
+l10n_co_unit_measures_77,recuento de locomotoras,1C
+l10n_co_unit_measures_78,recuento de cabos,1D
+l10n_co_unit_measures_79,carro vacio,1E
+l10n_co_unit_measures_80,millas de tren,1F
+l10n_co_unit_measures_81,uso de combustible galón (US),1G
+l10n_co_unit_measures_82,milla del caboose,1H
+l10n_co_unit_measures_83,tipo de interés fijo,1I
+l10n_co_unit_measures_84,tonelada milla,1J
+l10n_co_unit_measures_85,milla locomotora,1K
+l10n_co_unit_measures_86,recuento total de coches,1L
+l10n_co_unit_measures_87,milla de coche total,1M
+l10n_co_unit_measures_88,cuarto de milla,1X
+l10n_co_unit_measures_89,radianes por segundo,2ª
+l10n_co_unit_measures_90,radianes por segundo al cuadrado,2B
+l10n_co_unit_measures_91,Röntgen,2C
+l10n_co_unit_measures_92,Unidad térmica británica por hora.,2I
+l10n_co_unit_measures_93,centímetro cúbico por segundo,2J
+l10n_co_unit_measures_94,pie cúbico por hora,2K
+l10n_co_unit_measures_95,pie cúbico por minuto,2L
+l10n_co_unit_measures_96,centímetro por segundo,2M
+l10n_co_unit_measures_97,decibel,2N
+l10n_co_unit_measures_98,kilobyte,2P
+l10n_co_unit_measures_99,kilobecquerel,2Q
+l10n_co_unit_measures_100,kilocurie,2R
+l10n_co_unit_measures_101,megagramo,2U
+l10n_co_unit_measures_102,megagramo por hora,2V
+l10n_co_unit_measures_103,compartimiento,2W
+l10n_co_unit_measures_104,metro por minuto,2X
+l10n_co_unit_measures_105,milliröntgen,2Y
+l10n_co_unit_measures_106,milivoltios,2Z
+l10n_co_unit_measures_107,megajulio,3B
+l10n_co_unit_measures_108,manmonth,3C
+l10n_co_unit_measures_109,libra por libra de producto,3E
+l10n_co_unit_measures_110,libra por pieza de producto,3G
+l10n_co_unit_measures_111,kilogramo por kilogramo de producto,3H
+l10n_co_unit_measures_112,kilogramo por pieza de producto,3I
+l10n_co_unit_measures_113,bobina,4ª
+l10n_co_unit_measures_114,gorra,4B
+l10n_co_unit_measures_115,centistokes,4C
+l10n_co_unit_measures_116,paquete de veinte,4E
+l10n_co_unit_measures_117,microlitro,4G
+l10n_co_unit_measures_118,micrometro,4H
+l10n_co_unit_measures_119,miliamperio,4K
+l10n_co_unit_measures_120,megabyte,4L
+l10n_co_unit_measures_121,miligramo por hora,4M
+l10n_co_unit_measures_122,megabecquerel,4N
+l10n_co_unit_measures_123,microfarad,4º
+l10n_co_unit_measures_124,newton por metro,4P
+l10n_co_unit_measures_125,onza pulgada,4Q
+l10n_co_unit_measures_126,pie onza,4R
+l10n_co_unit_measures_127,picofarad,4T
+l10n_co_unit_measures_128,libra por hora,4U
+l10n_co_unit_measures_129,tonelada (US) por hora,4W
+l10n_co_unit_measures_130,kilolitro por hora,4X
+l10n_co_unit_measures_131,barril por minuto,5ª
+l10n_co_unit_measures_132,lote,5B
+l10n_co_unit_measures_133,galón (US) por mil,5C
+l10n_co_unit_measures_134,MMSCF / día,5E
+l10n_co_unit_measures_135,libras por mil,5F
+l10n_co_unit_measures_136,bomba,5G
+l10n_co_unit_measures_137,escenario,5H
+l10n_co_unit_measures_138,pie cúbico estándar,5I
+l10n_co_unit_measures_139,potencia hidráulica de caballos,5J
+l10n_co_unit_measures_140,contar por minuto,5K
+l10n_co_unit_measures_141,nivel sismico,5P
+l10n_co_unit_measures_142,nfor sismica,5Q
+l10n_co_unit_measures_143,15 calorías C,A1
+l10n_co_unit_measures_144,amperio metro cuadrado por joule segundo,A10
+l10n_co_unit_measures_145,Ã ¥ ngström,A11
+l10n_co_unit_measures_146,unidad astronómica,A12
+l10n_co_unit_measures_147,attojoule,A13
+l10n_co_unit_measures_148,granero,A14
+l10n_co_unit_measures_149,granero por electrón voltio,A15
+l10n_co_unit_measures_150,"granero por voltio de electrones esteradiano,",A16
+l10n_co_unit_measures_151,granero por sterdian,A17
+l10n_co_unit_measures_152,becquerel por kilogramo,A18
+l10n_co_unit_measures_153,becquerel por metro cúbico,A19
+l10n_co_unit_measures_154,amperio por centímetro,A2
+l10n_co_unit_measures_155,Unidad térmica británica por segundo pie cuadrado grado Rankin,A20
+l10n_co_unit_measures_156,Unidad térmica británica por libra grado Rankin,A21
+l10n_co_unit_measures_157,Unidad térmica británica por segundo pie grado Rankin,A22
+l10n_co_unit_measures_158,Unidad térmica británica por hora pie cuadrado grado Rankin,A23
+l10n_co_unit_measures_159,candela por metro cuadrado,A24
+l10n_co_unit_measures_160,cheval vapeur,A25
+l10n_co_unit_measures_161,medidor de culombio,A26
+l10n_co_unit_measures_162,medidor de culombio al cuadrado por voltio,A27
+l10n_co_unit_measures_163,Coulomb por centímetro cúbico,A28
+l10n_co_unit_measures_164,Coulomb por metro cúbico,A29
+l10n_co_unit_measures_165,amperio por milímetro,A3
+l10n_co_unit_measures_166,Coulomb por milímetro cúbico,A30
+l10n_co_unit_measures_167,Coulomb por kilogramo segundo,A31
+l10n_co_unit_measures_168,Coulomb por mol,A32
+l10n_co_unit_measures_169,Coulomb por centímetro cuadrado,A33
+l10n_co_unit_measures_170,Coulomb por metro cuadrado,A34
+l10n_co_unit_measures_171,Coulomb por milímetro cuadrado,A35
+l10n_co_unit_measures_172,centímetro cúbico por mol,A36
+l10n_co_unit_measures_173,nformaci cúbico por mol,A37
+l10n_co_unit_measures_174,metro cúbico por coulomb,A38
+l10n_co_unit_measures_175,metro cúbico por kilogramo,A39
+l10n_co_unit_measures_176,amperio por centímetro cuadrado,A4
+l10n_co_unit_measures_177,metro cúbico por mol,A40
+l10n_co_unit_measures_178,amperio por metro cuadrado,A41
+l10n_co_unit_measures_179,curie por kilogramo,A42
+l10n_co_unit_measures_180,tonelaje de peso muerto,A43
+l10n_co_unit_measures_181,decalitro,A44
+l10n_co_unit_measures_182,decámetro,A45
+l10n_co_unit_measures_183,decitex,A47
+l10n_co_unit_measures_184,grado Rankin,A48
+l10n_co_unit_measures_185,negador,A49
+l10n_co_unit_measures_186,amperio metro cuadrado,A5
+l10n_co_unit_measures_187,dyn segundo por centímetro cúbico,A50
+l10n_co_unit_measures_188,dina segundo por centímetro,A51
+l10n_co_unit_measures_189,dina segundo por centímetro al quinto,A52
+l10n_co_unit_measures_190,electronvolt,A53
+l10n_co_unit_measures_191,electronvoltio por metro,A54
+l10n_co_unit_measures_192,metro electronvolt cuadrado,A55
+l10n_co_unit_measures_193,electronvoltio de metro cuadrado por kilogramo,A56
+l10n_co_unit_measures_194,ergio,A57
+l10n_co_unit_measures_195,erg por centímetro,A58
+l10n_co_unit_measures_196,amperio por metro cuadrado kelvin al cuadrado,A6
+l10n_co_unit_measures_197,erg por centímetro cúbico,A60
+l10n_co_unit_measures_198,erg por gramo,A61
+l10n_co_unit_measures_199,erg por gramo de segundo,A62
+l10n_co_unit_measures_200,erg por segundo,A63
+l10n_co_unit_measures_201,erg por segundo centímetro cuadrado,A64
+l10n_co_unit_measures_202,erg por centímetro cuadrado segundo,A65
+l10n_co_unit_measures_203,erg centímetro cuadrado,A66
+l10n_co_unit_measures_204,ergímetro cuadrado por gramo,A67
+l10n_co_unit_measures_205,exajulio,A68
+l10n_co_unit_measures_206,faradio por metro,A69
+l10n_co_unit_measures_207,amperio por milímetro cuadrado,A7
+l10n_co_unit_measures_208,femtojoule,A70
+l10n_co_unit_measures_209,femtometro,A71
+l10n_co_unit_measures_210,pie por segundo al cuadrado,A73
+l10n_co_unit_measures_211,pie-fuerza de la libra por segundo,A74
+l10n_co_unit_measures_212,tonelada de carga,A75
+l10n_co_unit_measures_213,galón,A76
+l10n_co_unit_measures_214,Unidad de desplazamiento CGS gaussiana,A77
+l10n_co_unit_measures_215,Unidad gaussiana CGS de corriente eléctrica.,A78
+l10n_co_unit_measures_216,Unidad Gaussian CGS de carga eléctrica.,A79
+l10n_co_unit_measures_217,amperio segundo,A8
+l10n_co_unit_measures_218,Unidad Gaussian CGS de intensidad de campo eléctrico.,A80
+l10n_co_unit_measures_219,Unidad Gaussian CGS de polarización eléctrica.,A81
+l10n_co_unit_measures_220,Unidad Gaussian CGS de potencial eléctrico.,A82
+l10n_co_unit_measures_221,Unidad Gaussiana CGS de magnetización.,A83
+l10n_co_unit_measures_222,gigacoulomb por metro cúbico,A84
+l10n_co_unit_measures_223,Gigaelectronvolt,A85
+l10n_co_unit_measures_224,gigahercios,A86
+l10n_co_unit_measures_225,gigaohm,A87
+l10n_co_unit_measures_226,medidor de gigaohm,A88
+l10n_co_unit_measures_227,gigapascal,A89
+l10n_co_unit_measures_228,tarifa,A9
+l10n_co_unit_measures_229,gigavatios,A90
+l10n_co_unit_measures_230,gon,A91
+l10n_co_unit_measures_231,gramo por metro cúbico,A93
+l10n_co_unit_measures_232,gramo por mol,A94
+l10n_co_unit_measures_233,gris,A95
+l10n_co_unit_measures_234,gris por segundo,A96
+l10n_co_unit_measures_235,hectopascal,A97
+l10n_co_unit_measures_236,Henry por metro,A98
+l10n_co_unit_measures_237,bola,AA
+l10n_co_unit_measures_238,paquete a granel,AB
+l10n_co_unit_measures_239,acre,ACR
+l10n_co_unit_measures_240,byte,AD
+l10n_co_unit_measures_241,amperio por metro,AE
+l10n_co_unit_measures_242,minuto adicional,AH
+l10n_co_unit_measures_243,minuto promedio por llamada,AI
+l10n_co_unit_measures_244,policía,AJ
+l10n_co_unit_measures_245,braza,AK
+l10n_co_unit_measures_246,nfor de acceso,AL
+l10n_co_unit_measures_247,ampolla,AM
+l10n_co_unit_measures_248,hora amperio,AMH
+l10n_co_unit_measures_249,amperio,AMP
+l10n_co_unit_measures_250,año,ANA
+l10n_co_unit_measures_251,solo libra de aluminio,AP
+l10n_co_unit_measures_252,onza troy o onza de boticarios,APZ
+l10n_co_unit_measures_253,Unidad de factor antihemofílico (AHF),AQ
+l10n_co_unit_measures_254,supositorio,AR
+l10n_co_unit_measures_255,son,SON
+l10n_co_unit_measures_256,surtido,COMO
+l10n_co_unit_measures_257,fuerza alcohólica en masa,ASM
+l10n_co_unit_measures_258,fuerza alcohólica por volumen,ASU
+l10n_co_unit_measures_259,ambiente estándar,ATM
+l10n_co_unit_measures_260,ambiente técnico,ATT
+l10n_co_unit_measures_261,cápsula,AV
+l10n_co_unit_measures_262,vial lleno de polvo,AW
+l10n_co_unit_measures_263,montaje,SÍ
+l10n_co_unit_measures_264,Unidad térmica británica por libra,AZ
+l10n_co_unit_measures_265,Btu por pie cúbico,B0
+l10n_co_unit_measures_266,barril (US) por día,B1
+l10n_co_unit_measures_267,julios por kilogramo kelvin,B11
+l10n_co_unit_measures_268,julios por metro,B12
+l10n_co_unit_measures_269,julios por metro cuadrado,B13
+l10n_co_unit_measures_270,julios por metro a la cuarta potencia,B14
+l10n_co_unit_measures_271,julios por mol,B15
+l10n_co_unit_measures_272,julios por mol kelvin,B16
+l10n_co_unit_measures_273,joule segundo,B18
+l10n_co_unit_measures_274,litera,B2
+l10n_co_unit_measures_275,joule metro cuadrado por kilogramo,B20
+l10n_co_unit_measures_276,kelvin por vatio,B21
+l10n_co_unit_measures_277,Kiloampere,B22
+l10n_co_unit_measures_278,kiloampere por metro cuadrado,B23
+l10n_co_unit_measures_279,kiloampere por metro,B24
+l10n_co_unit_measures_280,kilobecquerel por kilogramo,B25
+l10n_co_unit_measures_281,kilocoulomb,B26
+l10n_co_unit_measures_282,kilocoulomb por metro cúbico,B27
+l10n_co_unit_measures_283,kilocoulomb por metro cuadrado,B28
+l10n_co_unit_measures_284,kiloelectronvolt,B29
+l10n_co_unit_measures_285,libra de bateo,B3
+l10n_co_unit_measures_286,kilogramo metro por segundo,B31
+l10n_co_unit_measures_287,kilogramo metro cuadrado,B32
+l10n_co_unit_measures_288,kilogramo metro cuadrado por segundo,B33
+l10n_co_unit_measures_289,kilogramo por decímetro cúbico,B34
+l10n_co_unit_measures_290,kilogramo por litro,B35
+l10n_co_unit_measures_291,caloría termoquímica por gramo,B36
+l10n_co_unit_measures_292,kilogramo de fuerza,B37
+l10n_co_unit_measures_293,metro de fuerza de kilogramo,B38
+l10n_co_unit_measures_294,metro de fuerza de kilogramo por segundo,B39
+l10n_co_unit_measures_295,"barril, imperial",B4
+l10n_co_unit_measures_296,kilogramo de fuerza por metro cuadrado,B40
+l10n_co_unit_measures_297,kilojoule per kelvin,B41
+l10n_co_unit_measures_298,kilojoule por kilogramo,B42
+l10n_co_unit_measures_299,kilojoule por kilogramo kelvin,B43
+l10n_co_unit_measures_300,kilojoule por mol,B44
+l10n_co_unit_measures_301,kilomol,B45
+l10n_co_unit_measures_302,kilomol por metro cúbico,B46
+l10n_co_unit_measures_303,Kilonewton,B47
+l10n_co_unit_measures_304,medidor de kilonewton,B48
+l10n_co_unit_measures_305,kiloohm,B49
+l10n_co_unit_measures_306,palanquilla,B5
+l10n_co_unit_measures_307,medidor de kiloohm,B50
+l10n_co_unit_measures_308,kilopond,B51
+l10n_co_unit_measures_309,kilosegundo,B52
+l10n_co_unit_measures_310,kilosiemens,B53
+l10n_co_unit_measures_311,kilosiemens por metro,B54
+l10n_co_unit_measures_312,kilovoltios por metro,B55
+l10n_co_unit_measures_313,kiloveber por metro,B56
+l10n_co_unit_measures_314,año luz,B57
+l10n_co_unit_measures_315,litro por mol,B58
+l10n_co_unit_measures_316,hora lumen,B59
+l10n_co_unit_measures_317,bollo,B6
+l10n_co_unit_measures_318,lumen por metro cuadrado,B60
+l10n_co_unit_measures_319,lumen por vatio,B61
+l10n_co_unit_measures_320,lumen segundo,B62
+l10n_co_unit_measures_321,hora de lux,B63
+l10n_co_unit_measures_322,lux segundo,B64
+l10n_co_unit_measures_323,Maxwell,B65
+l10n_co_unit_measures_324,megaamperios por metro cuadrado,B66
+l10n_co_unit_measures_325,megabecquerel por kilogramo,B67
+l10n_co_unit_measures_326,megacoulomb por metro cúbico,B69
+l10n_co_unit_measures_327,ciclo,B7
+l10n_co_unit_measures_328,megacoulomb por metro cuadrado,B70
+l10n_co_unit_measures_329,megaelectronvolt,B71
+l10n_co_unit_measures_330,megagramo por metro cúbico,B72
+l10n_co_unit_measures_331,meganewton,B73
+l10n_co_unit_measures_332,medidor de meganewton,B74
+l10n_co_unit_measures_333,megaohm,B75
+l10n_co_unit_measures_334,metro megaohm,B76
+l10n_co_unit_measures_335,megasiemens por metro,B77
+l10n_co_unit_measures_336,megavoltio,B78
+l10n_co_unit_measures_337,megavolt por metro,B79
+l10n_co_unit_measures_338,julios por metro cúbico,B8
+l10n_co_unit_measures_339,metro recíproco cuadrado recíproco segundo,B81
+l10n_co_unit_measures_340,metro a la cuarta potencia,B83
+l10n_co_unit_measures_341,microamperios,B84
+l10n_co_unit_measures_342,microbar,B85
+l10n_co_unit_measures_343,microcoulomb,B86
+l10n_co_unit_measures_344,microcoulomb por metro cúbico,B87
+l10n_co_unit_measures_345,microcoulomb por metro cuadrado,B88
+l10n_co_unit_measures_346,microfarada por metro,B89
+l10n_co_unit_measures_347,batt,B9
+l10n_co_unit_measures_348,microhenry,B90
+l10n_co_unit_measures_349,microhenry por metro,B91
+l10n_co_unit_measures_350,micronewton,B92
+l10n_co_unit_measures_351,medidor de micronewton,B93
+l10n_co_unit_measures_352,microohm,B94
+l10n_co_unit_measures_353,medidor de microohmios,B95
+l10n_co_unit_measures_354,micropascal,B96
+l10n_co_unit_measures_355,microradiano,B97
+l10n_co_unit_measures_356,microsegundo,B98
+l10n_co_unit_measures_357,microsiemens,B99
+l10n_co_unit_measures_358,bar,BAR
+l10n_co_unit_measures_359,caja base,BB
+l10n_co_unit_measures_360,tablero,BD
+l10n_co_unit_measures_361,haz,SER
+l10n_co_unit_measures_362,pie de tabla,BFT
+l10n_co_unit_measures_363,bolso,BG
+l10n_co_unit_measures_364,cepillo,BH
+l10n_co_unit_measures_365,potencia al freno,BHP
+l10n_co_unit_measures_366,trillón de dólares,BIL
+l10n_co_unit_measures_367,cangilón,BJ
+l10n_co_unit_measures_368,cesta,BK
+l10n_co_unit_measures_369,bala,BL
+l10n_co_unit_measures_370,barril seco,BLD
+l10n_co_unit_measures_371,"barril (EE. UU.) (petróleo, etc.)",BLL
+l10n_co_unit_measures_372,botella,BO
+l10n_co_unit_measures_373,cien pies de tabla,BP
+l10n_co_unit_measures_374,becquerel,BQL
+l10n_co_unit_measures_375,bar,BR
+l10n_co_unit_measures_376,tornillo,BT
+l10n_co_unit_measures_377,Unidad Térmica Británica,BTU
+l10n_co_unit_measures_378,bushel (EE. UU.),BUA
+l10n_co_unit_measures_379,bushel (Reino Unido),BUI
+l10n_co_unit_measures_380,peso base,BW
+l10n_co_unit_measures_381,caja,BX
+l10n_co_unit_measures_382,millones de BTUs,BZ
+l10n_co_unit_measures_383,llamada,C0
+l10n_co_unit_measures_384,producto compuesto libra (peso total),C1
+l10n_co_unit_measures_385,millifarad,C10
+l10n_co_unit_measures_386,miligal,C11
+l10n_co_unit_measures_387,miligramo por metro,C12
+l10n_co_unit_measures_388,miligray,C13
+l10n_co_unit_measures_389,milihenry,C14
+l10n_co_unit_measures_390,milijoule,C15
+l10n_co_unit_measures_391,milímetro por segundo,C16
+l10n_co_unit_measures_392,milímetro cuadrado por segundo,C17
+l10n_co_unit_measures_393,milimol,C18
+l10n_co_unit_measures_394,mol por kilogramo,C19
+l10n_co_unit_measures_395,carset,C2
+l10n_co_unit_measures_396,millinewton,C20
+l10n_co_unit_measures_397,millinewton por metro,C22
+l10n_co_unit_measures_398,medidor de miliohm,C23
+l10n_co_unit_measures_399,segundo milipascal,C24
+l10n_co_unit_measures_400,miliradian,C25
+l10n_co_unit_measures_401,milisegundo,C26
+l10n_co_unit_measures_402,milisiemens,C27
+l10n_co_unit_measures_403,milisievert,C28
+l10n_co_unit_measures_404,millitesla,C29
+l10n_co_unit_measures_405,microvoltios por metro,C3
+l10n_co_unit_measures_406,milivoltios por metro,C30
+l10n_co_unit_measures_407,milivatios,C31
+l10n_co_unit_measures_408,milivatios por metro cuadrado,C32
+l10n_co_unit_measures_409,milliweber,C33
+l10n_co_unit_measures_410,Topo,C34
+l10n_co_unit_measures_411,mol por decímetro cúbico,C35
+l10n_co_unit_measures_412,mol por metro cúbico,C36
+l10n_co_unit_measures_413,mol por litro,C38
+l10n_co_unit_measures_414,Nanoampere,C39
+l10n_co_unit_measures_415,partido de carga,C4
+l10n_co_unit_measures_416,nanocoulomb,C40
+l10n_co_unit_measures_417,nanofarad,C41
+l10n_co_unit_measures_418,nanofarad por metro,C42
+l10n_co_unit_measures_419,nanohenry,C43
+l10n_co_unit_measures_420,nanohenry por metro,C44
+l10n_co_unit_measures_421,nanometro,C45
+l10n_co_unit_measures_422,medidor de nanoohm,C46
+l10n_co_unit_measures_423,nanosegundo,C47
+l10n_co_unit_measures_424,nanotesla,C48
+l10n_co_unit_measures_425,nanovatio,C49
+l10n_co_unit_measures_426,costo,C5
+l10n_co_unit_measures_427,neper,C50
+l10n_co_unit_measures_428,neper por segundo,C51
+l10n_co_unit_measures_429,picometro,C52
+l10n_co_unit_measures_430,metro de newton segundo,C53
+l10n_co_unit_measures_431,newton metro cuadrado kilogramo cuadrado,C54
+l10n_co_unit_measures_432,newton por metro cuadrado,C55
+l10n_co_unit_measures_433,newton por milímetro cuadrado,C56
+l10n_co_unit_measures_434,newton segundo,C57
+l10n_co_unit_measures_435,newton segundo por metro,C58
+l10n_co_unit_measures_436,octava,C59
+l10n_co_unit_measures_437,célula,C6
+l10n_co_unit_measures_438,ohm centímetro,C60
+l10n_co_unit_measures_439,ohm metro,C61
+l10n_co_unit_measures_440,uno,C62
+l10n_co_unit_measures_441,parsec,C63
+l10n_co_unit_measures_442,pascal por kelvin,C64
+l10n_co_unit_measures_443,segundo pascal,C65
+l10n_co_unit_measures_444,segundo pascal por metro cúbico,C66
+l10n_co_unit_measures_445,segundo pascal por metro,C67
+l10n_co_unit_measures_446,petajoule,C68
+l10n_co_unit_measures_447,telefono,C69
+l10n_co_unit_measures_448,centipoise,C7
+l10n_co_unit_measures_449,picoampere,C70
+l10n_co_unit_measures_450,picocoulomb,C71
+l10n_co_unit_measures_451,picofarad por metro,C72
+l10n_co_unit_measures_452,picohenry,C73
+l10n_co_unit_measures_453,picowatt,C75
+l10n_co_unit_measures_454,picowatt por metro cuadrado,C76
+l10n_co_unit_measures_455,medidor de libras,C77
+l10n_co_unit_measures_456,fuerza de libra,C78
+l10n_co_unit_measures_457,Millicoulomb por kilogramo,C8
+l10n_co_unit_measures_458,rad,C80
+l10n_co_unit_measures_459,radián,C81
+l10n_co_unit_measures_460,medidor de radianes al cuadrado por mol,C82
+l10n_co_unit_measures_461,medidor de radianes al cuadrado por kilogramo,C83
+l10n_co_unit_measures_462,radian por metro,C84
+l10n_co_unit_measures_463,â € ngstr recíproco “m,C85
+l10n_co_unit_measures_464,metro cúbico recíproco,C86
+l10n_co_unit_measures_465,metro cúbico recíproco por segundo,C87
+l10n_co_unit_measures_466,voltios de electrones recíprocos por metro cúbico,C88
+l10n_co_unit_measures_467,Henry Recíproco,C89
+l10n_co_unit_measures_468,grupo de bobina,C9
+l10n_co_unit_measures_469,Joule recíproco por metro cúbico,C90
+l10n_co_unit_measures_470,kelvin recíproco o kelvin al poder menos uno,C91
+l10n_co_unit_measures_471,medidor recíproco,C92
+l10n_co_unit_measures_472,metro cuadrado recíproco,C93
+l10n_co_unit_measures_473,minuto recíproco,C94
+l10n_co_unit_measures_474,mole recíproco,C95
+l10n_co_unit_measures_475,Pascal recíproco o pascal a la potencia menos uno.,C96
+l10n_co_unit_measures_476,segundo recíproco,C97
+l10n_co_unit_measures_477,segundo recíproco por metro cúbico,C98
+l10n_co_unit_measures_478,segundo recíproco por metro cuadrado,C99
+l10n_co_unit_measures_479,Caja,CA
+l10n_co_unit_measures_480,Capacidad de carga en toneladas métricas.,CCT
+l10n_co_unit_measures_481,candela,CDL
+l10n_co_unit_measures_482,grado Celsius,CEL
+l10n_co_unit_measures_483,cien,CEN
+l10n_co_unit_measures_484,tarjeta,CG
+l10n_co_unit_measures_485,centigramo,CGM
+l10n_co_unit_measures_486,envase,CH
+l10n_co_unit_measures_487,cono,CJ
+l10n_co_unit_measures_488,conector,CK
+l10n_co_unit_measures_489,Coulomb por kilogramo,CKG
+l10n_co_unit_measures_490,bobina,CL
+l10n_co_unit_measures_491,cientos de licencia,CLF
+l10n_co_unit_measures_492,centilitro,CLT
+l10n_co_unit_measures_493,centímetro cuadrado,CMK
+l10n_co_unit_measures_494,centímetro cúbico,CMQ
+l10n_co_unit_measures_495,centímetro,CMT
+l10n_co_unit_measures_496,paquete de cien,CNP
+l10n_co_unit_measures_497,Cental (Reino Unido),CNT
+l10n_co_unit_measures_498,garrafón,CO
+l10n_co_unit_measures_499,culombio,COU
+l10n_co_unit_measures_500,cartucho,CQ
+l10n_co_unit_measures_501,caja,CR
+l10n_co_unit_measures_502,caso,CS
+l10n_co_unit_measures_503,caja de cartón,CT
+l10n_co_unit_measures_504,quilate métrico,CTM
+l10n_co_unit_measures_505,vaso,CU
+l10n_co_unit_measures_506,curie,CUR
+l10n_co_unit_measures_507,cubrir,CV
+l10n_co_unit_measures_508,cien libras (quintales) / cien pesos (US),CWA
+l10n_co_unit_measures_509,cien pesos (Reino Unido),CWI
+l10n_co_unit_measures_510,cilindro,CY
+l10n_co_unit_measures_511,combo,CZ
+l10n_co_unit_measures_512,segundo recíproco por esteradiano,D1
+l10n_co_unit_measures_513,siemens por metro,D10
+l10n_co_unit_measures_514,siemens metro cuadrado por mol,D12
+l10n_co_unit_measures_515,sievert,D13
+l10n_co_unit_measures_516,mil yardas lineales,D14
+l10n_co_unit_measures_517,sone,D15
+l10n_co_unit_measures_518,centímetro cuadrado por ergio,D16
+l10n_co_unit_measures_519,centímetro cuadrado por erg esterlina,D17
+l10n_co_unit_measures_520,metro kelvin,D18
+l10n_co_unit_measures_521,kelvin metro cuadrado por vatio,D19
+l10n_co_unit_measures_522,segundo recíproco por metros cuadrados esteradianos,D2
+l10n_co_unit_measures_523,metro cuadrado por julio,D20
+l10n_co_unit_measures_524,metro cuadrado por kilogramo,D21
+l10n_co_unit_measures_525,metro cuadrado por mol,D22
+l10n_co_unit_measures_526,pluma gramo (proteína),D23
+l10n_co_unit_measures_527,metro cuadrado por esterilizador,D24
+l10n_co_unit_measures_528,metro cuadrado por julios esteradianos,D25
+l10n_co_unit_measures_529,metro cuadrado por voltio segundo,D26
+l10n_co_unit_measures_530,esteradiano,D27
+l10n_co_unit_measures_531,sifón,D28
+l10n_co_unit_measures_532,terahercios,D29
+l10n_co_unit_measures_533,terajulio,D30
+l10n_co_unit_measures_534,teravatio,D31
+l10n_co_unit_measures_535,hora de teravatio,D32
+l10n_co_unit_measures_536,tesla,D33
+l10n_co_unit_measures_537,Texas,D34
+l10n_co_unit_measures_538,caloría termoquímica,D35
+l10n_co_unit_measures_539,caloría termoquímica por gramo kelvin,D37
+l10n_co_unit_measures_540,calorías termoquímicas por segundo centímetro kelvin,D38
+l10n_co_unit_measures_541,calorías termoquímicas por segundo centímetro cuadrado kelvin,D39
+l10n_co_unit_measures_542,mil litros,D40
+l10n_co_unit_measures_543,tonelada por metro cúbico,D41
+l10n_co_unit_measures_544,año tropical,D42
+l10n_co_unit_measures_545,unidad de masa atómica unificada,D43
+l10n_co_unit_measures_546,var,D44
+l10n_co_unit_measures_547,voltios al cuadrado por kelvin al cuadrado,D45
+l10n_co_unit_measures_548,voltio – amperio,D46
+l10n_co_unit_measures_549,voltio por centímetro,D47
+l10n_co_unit_measures_550,voltio por kelvin,D48
+l10n_co_unit_measures_551,milivoltios por kelvin,D49
+l10n_co_unit_measures_552,kilogramo por centímetro cuadrado,D5
+l10n_co_unit_measures_553,voltios por metro,D50
+l10n_co_unit_measures_554,voltios por milímetro,D51
+l10n_co_unit_measures_555,vatios por kelvin,D52
+l10n_co_unit_measures_556,vatios por metro kelvin,D53
+l10n_co_unit_measures_557,vatios por metro cuadrado,D54
+l10n_co_unit_measures_558,vatios por metro cuadrado kelvin,D55
+l10n_co_unit_measures_559,vatios por metro cuadrado de kelvin a la cuarta potencia,D56
+l10n_co_unit_measures_560,vatios por steradian,D57
+l10n_co_unit_measures_561,vatios por metro cuadrado esterlino,D58
+l10n_co_unit_measures_562,weber por metro,D59
+l10n_co_unit_measures_563,röntgen por segundo,D6
+l10n_co_unit_measures_564,weber por milímetro,D60
+l10n_co_unit_measures_565,minuto,D61
+l10n_co_unit_measures_566,segundo,D62
+l10n_co_unit_measures_567,libro,D63
+l10n_co_unit_measures_568,bloquear,D64
+l10n_co_unit_measures_569,redondo,D65
+l10n_co_unit_measures_570,casete,D66
+l10n_co_unit_measures_571,dólar por hora,D67
+l10n_co_unit_measures_572,pulgada a la cuarta potencia,D69
+l10n_co_unit_measures_573,Sandwich,D7
+l10n_co_unit_measures_574,Tabla Internacional (IT) caloría,D70
+l10n_co_unit_measures_575,Tabla Internacional (IT) calorías por segundo centímetro kelvin,D71
+l10n_co_unit_measures_576,Tabla Internacional (IT) calorías por segundo centímetro cuadrado kelvin,D72
+l10n_co_unit_measures_577,joule metro cuadrado,D73
+l10n_co_unit_measures_578,kilogramo por mol,D74
+l10n_co_unit_measures_579,Tabla Internacional (IT) calorías por gramo,D75
+l10n_co_unit_measures_580,Tabla Internacional (IT) calorías por gramo kelvin,D76
+l10n_co_unit_measures_581,megacoulomb,D77
+l10n_co_unit_measures_582,haz,D79
+l10n_co_unit_measures_583,puntaje de drenaje,D8
+l10n_co_unit_measures_584,microwatt,D80
+l10n_co_unit_measures_585,microtesla,D81
+l10n_co_unit_measures_586,microvoltio,D82
+l10n_co_unit_measures_587,medidor de millinewton,D83
+l10n_co_unit_measures_588,microwatt por metro cuadrado,D85
+l10n_co_unit_measures_589,Millicoulomb,D86
+l10n_co_unit_measures_590,milimol por kilogramo,D87
+l10n_co_unit_measures_591,millicoulomb por metro cúbico,D88
+l10n_co_unit_measures_592,millicoulomb por metro cuadrado,D89
+l10n_co_unit_measures_593,dina por centímetro cuadrado,D9
+l10n_co_unit_measures_594,metro cúbico (neto),D90
+l10n_co_unit_measures_595,movimiento rápido del ojo,D91
+l10n_co_unit_measures_596,banda,D92
+l10n_co_unit_measures_597,segundo por metro cúbico,D93
+l10n_co_unit_measures_598,segundo por metro cúbico radianes,D94
+l10n_co_unit_measures_599,julios por gramo,D95
+l10n_co_unit_measures_600,libra bruta,D96
+l10n_co_unit_measures_601,carga de palet / unidad,D97
+l10n_co_unit_measures_602,libra de masa,D98
+l10n_co_unit_measures_603,manga,D99
+l10n_co_unit_measures_604,despreciar,DAA
+l10n_co_unit_measures_605,diez dias,DAD
+l10n_co_unit_measures_606,día,DAY
+l10n_co_unit_measures_607,libra seca,DB
+l10n_co_unit_measures_608,disco,DC
+l10n_co_unit_measures_609,la licenciatura,DD
+l10n_co_unit_measures_610,acuerdo,DE
+l10n_co_unit_measures_611,década,DEC
+l10n_co_unit_measures_612,decigramo,DG
+l10n_co_unit_measures_613,dispensador,DI
+l10n_co_unit_measures_614,decagramo,DJ
+l10n_co_unit_measures_615,decilitro,DLT
+l10n_co_unit_measures_616,nformaci cuadrado,DMK
+l10n_co_unit_measures_617,decímetro cúbico,DMQ
+l10n_co_unit_measures_618,decímetro,DMT
+l10n_co_unit_measures_619,medidor de decinewton,DN
+l10n_co_unit_measures_620,docena pieza,DPC
+l10n_co_unit_measures_621,docena par,DPR
+l10n_co_unit_measures_622,tonelaje de desplazamiento,DPT
+l10n_co_unit_measures_623,registro de datos,DQ
+l10n_co_unit_measures_624,tambor,DR
+l10n_co_unit_measures_625,dram (US),DRA
+l10n_co_unit_measures_626,dram (Reino Unido),DRI
+l10n_co_unit_measures_627,docena rollo,DRL
+l10n_co_unit_measures_628,dracma (Reino Unido),DRM
+l10n_co_unit_measures_629,monitor,DS
+l10n_co_unit_measures_630,tonelada seca,DT
+l10n_co_unit_measures_631,Decitonne,DTN
+l10n_co_unit_measures_632,dina,DU
+l10n_co_unit_measures_633,pennyweight,DWT
+l10n_co_unit_measures_634,dina por centímetro,DX
+l10n_co_unit_measures_635,libro de directorio,DY
+l10n_co_unit_measures_636,docena,DZN
+l10n_co_unit_measures_637,paquete de doce,DZP
+l10n_co_unit_measures_638,cinturón,E2
+l10n_co_unit_measures_639,remolque,E3
+l10n_co_unit_measures_640,kilogramo bruto,E4
+l10n_co_unit_measures_641,tonelada métrica larga,E5
+l10n_co_unit_measures_642,cada,EA
+l10n_co_unit_measures_643,casilla de correo electrónico,EB
+l10n_co_unit_measures_644,cada uno por mes,CE
+l10n_co_unit_measures_645,paquete de once,EP
+l10n_co_unit_measures_646,galón equivalente,EQ
+l10n_co_unit_measures_647,sobre,EV
+l10n_co_unit_measures_648,mil pies cúbicos por día,F1
+l10n_co_unit_measures_649,Fibra por centímetro cúbico de aire,F9
+l10n_co_unit_measures_650,grado Fahrenheit,FAH
+l10n_co_unit_measures_651,faradio,FAR
+l10n_co_unit_measures_652,campo,FB
+l10n_co_unit_measures_653,mil pies cúbicos,FC
+l10n_co_unit_measures_654,millón de partículas por pie cúbico,FD
+l10n_co_unit_measures_655,pie de pista,FE
+l10n_co_unit_measures_656,cien metros cúbicos,FF
+l10n_co_unit_measures_657,parche transdérmico,FG
+l10n_co_unit_measures_658,micromol,FH
+l10n_co_unit_measures_659,tonelada en escamas,FL
+l10n_co_unit_measures_660,millones de pies cúbicos,FM
+l10n_co_unit_measures_661,pie,FOT
+l10n_co_unit_measures_662,libra por pie cuadrado,FP
+l10n_co_unit_measures_663,pie por minuto,FR
+l10n_co_unit_measures_664,pie por segundo,FS
+l10n_co_unit_measures_665,pie cuadrado,FTK
+l10n_co_unit_measures_666,pie cubico,FTQ
+l10n_co_unit_measures_667,US galones por minuto,G2
+l10n_co_unit_measures_668,Galon imperial por minuto,G3
+l10n_co_unit_measures_669,hoja de microficha,G7
+l10n_co_unit_measures_670,galón (US) por día,GB
+l10n_co_unit_measures_671,gigabecquerel,GBQ
+l10n_co_unit_measures_672,gramo por 100 gramo,GC
+l10n_co_unit_measures_673,barril bruto,GD
+l10n_co_unit_measures_674,libra por galón (US),GE
+l10n_co_unit_measures_675,gramo por metro (gramo por 100 centímetros),GF
+l10n_co_unit_measures_676,gramo de isótopo fisionable,GFI
+l10n_co_unit_measures_677,gramo,GGR
+l10n_co_unit_measures_678,medio galón (EE. UU.),GH
+l10n_co_unit_measures_679,branquias,GIA
+l10n_co_unit_measures_680,Gill (Reino Unido),GII
+l10n_co_unit_measures_681,gramo por mililitro,GJ
+l10n_co_unit_measures_682,gramo por kilogramo,G K
+l10n_co_unit_measures_683,gramo por litro,GL
+l10n_co_unit_measures_684,galón seco (EE. UU.),GLD
+l10n_co_unit_measures_685,galón (Reino Unido),GLI
+l10n_co_unit_measures_686,galón,GLL
+l10n_co_unit_measures_687,gramo por metro cuadrado,GM
+l10n_co_unit_measures_688,galón bruto,GN
+l10n_co_unit_measures_689,miligramos por metro cuadrado,GO
+l10n_co_unit_measures_690,miligramo por metro cúbico,GP
+l10n_co_unit_measures_691,microgramos por metro cúbico,GQ
+l10n_co_unit_measures_692,gramo,GRM
+l10n_co_unit_measures_693,grano,GRN
+l10n_co_unit_measures_694,bruto,GRO
+l10n_co_unit_measures_695,tonelada de registro bruto,GRT
+l10n_co_unit_measures_696,tonelada bruta,GT
+l10n_co_unit_measures_697,gigajoule,GV
+l10n_co_unit_measures_698,galón por mil pies cúbicos,GW
+l10n_co_unit_measures_699,hora de gigavatios,GWH
+l10n_co_unit_measures_700,patio bruto,GY
+l10n_co_unit_measures_701,sistema de medición,GZ
+l10n_co_unit_measures_702,media página – electrónica,H1
+l10n_co_unit_measures_703,medio litro,H2
+l10n_co_unit_measures_704,madeja,HA
+l10n_co_unit_measures_705,hectárea,HAR
+l10n_co_unit_measures_706,hectobar,HBA
+l10n_co_unit_measures_707,cien cajas,HBX
+l10n_co_unit_measures_708,cien cuentas,HC
+l10n_co_unit_measures_709,media docena,HD
+l10n_co_unit_measures_710,centésima de quilate,ÉL
+l10n_co_unit_measures_711,cien pies,HF
+l10n_co_unit_measures_712,hectogramo,HGM
+l10n_co_unit_measures_713,cien pies cúbicos,HH
+l10n_co_unit_measures_714,cien hojas,HI
+l10n_co_unit_measures_715,cien unidades internacionales,HIU
+l10n_co_unit_measures_716,caballo métrico,HJ
+l10n_co_unit_measures_717,cien kilogramos,HK
+l10n_co_unit_measures_718,cien pies (lineales),HL
+l10n_co_unit_measures_719,hectolitro,HLT
+l10n_co_unit_measures_720,milla por hora,HM
+l10n_co_unit_measures_721,millones de metros cúbicos,HMQ
+l10n_co_unit_measures_722,hectómetro,HMT
+l10n_co_unit_measures_723,milímetro convencional de mercurio,HN
+l10n_co_unit_measures_724,cien onzas troy,HO
+l10n_co_unit_measures_725,milímetro convencional de agua,HP
+l10n_co_unit_measures_726,hectolitro de alcohol puro,HPA
+l10n_co_unit_measures_727,cien pies cuadrados,HS
+l10n_co_unit_measures_728,media hora,HT
+l10n_co_unit_measures_729,hertz,HTZ
+l10n_co_unit_measures_730,hora,HUR
+l10n_co_unit_measures_731,cien yardas,HY
+l10n_co_unit_measures_732,pulgada libra,IA
+l10n_co_unit_measures_733,contar por pulgada,IC
+l10n_co_unit_measures_734,persona,IE
+l10n_co_unit_measures_735,pulgadas de agua,IF
+l10n_co_unit_measures_736,columna pulgada,II
+l10n_co_unit_measures_737,pulgada por minuto,IL
+l10n_co_unit_measures_738,impresión,IM
+l10n_co_unit_measures_739,pulgada,INH
+l10n_co_unit_measures_740,pulgada cuadrada,INK
+l10n_co_unit_measures_741,pulgada en cubos,INQ
+l10n_co_unit_measures_742,póliza de seguros,IP
+l10n_co_unit_measures_743,conteo por centímetro,IT
+l10n_co_unit_measures_744,pulgada por segundo (velocidad lineal),IU
+l10n_co_unit_measures_745,pulgada por segundo al cuadrado (aceleración),IV
+l10n_co_unit_measures_746,julios por kilogramo,J2
+l10n_co_unit_measures_747,jumbo,JB
+l10n_co_unit_measures_748,joule por kelvin,JE
+l10n_co_unit_measures_749,jarra,JG
+l10n_co_unit_measures_750,megajulio por kilogramo,JK
+l10n_co_unit_measures_751,megajulio por metro cúbico,JM
+l10n_co_unit_measures_752,articulación,JO
+l10n_co_unit_measures_753,joule,JOU
+l10n_co_unit_measures_754,tarro,JR
+l10n_co_unit_measures_755,demanda de kilovatios,K1
+l10n_co_unit_measures_756,kilovoltios amperios reactivos de demanda,K2
+l10n_co_unit_measures_757,kilovoltio amperio hora reactiva,K3
+l10n_co_unit_measures_758,amperios kilovoltios (reactivos),K5
+l10n_co_unit_measures_759,kilolitro,K6
+l10n_co_unit_measures_760,pastel,KA
+l10n_co_unit_measures_761,kilocharacter,KB
+l10n_co_unit_measures_762,kilobar,KBA
+l10n_co_unit_measures_763,kilogramo decimal,KD
+l10n_co_unit_measures_764,kelvin,KEL
+l10n_co_unit_measures_765,kilopacket,KF
+l10n_co_unit_measures_766,barrilete,KG
+l10n_co_unit_measures_767,kilogramo,KGM
+l10n_co_unit_measures_768,kilogramo por segundo,KGS
+l10n_co_unit_measures_769,kilohercio,KHZ
+l10n_co_unit_measures_770,Kilogramo por milímetro de ancho,KI
+l10n_co_unit_measures_771,kilosegmento,KJ
+l10n_co_unit_measures_772,kilojoule,KJO
+l10n_co_unit_measures_773,kilogramo por metro,KL
+l10n_co_unit_measures_774,kilómetro por hora,KMH
+l10n_co_unit_measures_775,kilometro cuadrado,KMK
+l10n_co_unit_measures_776,kilogramo por metro cúbico,KMQ
+l10n_co_unit_measures_777,kilogramo de nitrógeno,KNI
+l10n_co_unit_measures_778,kilogramo de sustancia nombrada,KNS
+l10n_co_unit_measures_779,nudo,KNT
+l10n_co_unit_measures_780,Milliequivalencia de potasa cáustica por gramo de producto.,KO
+l10n_co_unit_measures_781,kilopascal,KPA
+l10n_co_unit_measures_782,kilogramo de hidróxido de potasio (potasa cáustica),KPH
+l10n_co_unit_measures_783,kilogramo de óxido de potasio,KPO
+l10n_co_unit_measures_784,kilogramo de pentóxido de fósforo (anhídrido fosfórico),KPP
+l10n_co_unit_measures_785,KilorÃ¶ntgen,KR
+l10n_co_unit_measures_786,mil libras por pulgada cuadrada,KS
+l10n_co_unit_measures_787,kilogramo de sustancia 90% seca,KSD
+l10n_co_unit_measures_788,kilogramo de hidróxido de sodio (soda cáustica),KSH
+l10n_co_unit_measures_789,equipo,KT
+l10n_co_unit_measures_790,kilómetro,KTM
+l10n_co_unit_measures_791,kilotonne,KTN
+l10n_co_unit_measures_792,kilogramo de uranio,KUR
+l10n_co_unit_measures_793,kilovoltio – ampere,KVA
+l10n_co_unit_measures_794,kilovar,KVR
+l10n_co_unit_measures_795,kilovoltio,KVT
+l10n_co_unit_measures_796,kilogramos por milímetro,KW
+l10n_co_unit_measures_797,kilovatios hora,KWH
+l10n_co_unit_measures_798,kilovatio,KWT
+l10n_co_unit_measures_799,mililitro por kilogramo,KX
+l10n_co_unit_measures_800,litro por minuto,L2
+l10n_co_unit_measures_801,libra por pulgada cúbica,LA
+l10n_co_unit_measures_802,libra,LBR
+l10n_co_unit_measures_803,libra troy,LBT
+l10n_co_unit_measures_804,centímetro lineal,LC
+l10n_co_unit_measures_805,litro por día,LD
+l10n_co_unit_measures_806,lite,LE
+l10n_co_unit_measures_807,hoja,LEF
+l10n_co_unit_measures_808,pie lineal,LF
+l10n_co_unit_measures_809,hora de trabajo,LH
+l10n_co_unit_measures_810,pulgada lineal,LI
+l10n_co_unit_measures_811,spray grande,LJ
+l10n_co_unit_measures_812,enlazar,LK
+l10n_co_unit_measures_813,metro lineal,LM
+l10n_co_unit_measures_814,longitud,LN
+l10n_co_unit_measures_815,mucho,LO
+l10n_co_unit_measures_816,libra liquida,LP
+l10n_co_unit_measures_817,litro de alcohol puro,LPA
+l10n_co_unit_measures_818,capa,LR
+l10n_co_unit_measures_819,Suma global,LS
+l10n_co_unit_measures_820,ton (Reino Unido) o longton (EE. UU.),LTN
+l10n_co_unit_measures_821,litro,LTR
+l10n_co_unit_measures_822,lumen,LUM
+l10n_co_unit_measures_823,lux,LUX
+l10n_co_unit_measures_824,yarda lineal por libra,LX
+l10n_co_unit_measures_825,yarda lineal,LY
+l10n_co_unit_measures_826,cinta magnética,M0
+l10n_co_unit_measures_827,miligramos por litro,M1
+l10n_co_unit_measures_828,valor monetario,M4
+l10n_co_unit_measures_829,microcurie,M5
+l10n_co_unit_measures_830,micropulgada,M7
+l10n_co_unit_measures_831,millones de Btu por 1000 pies cúbicos,M9
+l10n_co_unit_measures_832,máquina por unidad,MA
+l10n_co_unit_measures_833,mega litro,MAL
+l10n_co_unit_measures_834,megametro,MAM
+l10n_co_unit_measures_835,megavatio,MAW
+l10n_co_unit_measures_836,mil equivalentes de ladrillo estándar,MBE
+l10n_co_unit_measures_837,mil pies de tabla,MBF
+l10n_co_unit_measures_838,milibar,MBR
+l10n_co_unit_measures_839,microgramo,MC
+l10n_co_unit_measures_840,milicurie,MCU
+l10n_co_unit_measures_841,aire seco tonelada métrica,MD
+l10n_co_unit_measures_842,miligramo por pie cuadrado por lado,MF
+l10n_co_unit_measures_843,miligramo,MGM
+l10n_co_unit_measures_844,megahercio,MGM
+l10n_co_unit_measures_845,milla cuadrada,MIK
+l10n_co_unit_measures_846,mil,MIL
+l10n_co_unit_measures_847,minuto,MIN
+l10n_co_unit_measures_848,millón,MIO
+l10n_co_unit_measures_849,millones de unidades internacionales,MIU
+l10n_co_unit_measures_850,miligramo por pulgada cuadrada,MK
+l10n_co_unit_measures_851,mil millones,MLD
+l10n_co_unit_measures_852,mililitro,MLT
+l10n_co_unit_measures_853,milímetro cuadrado,MMK
+l10n_co_unit_measures_854,milímetro cúbico,MMQ
+l10n_co_unit_measures_855,milímetro,MMT
+l10n_co_unit_measures_856,mes,LUN
+l10n_co_unit_measures_857,megapascal,MPA
+l10n_co_unit_measures_858,mil metros,MQ
+l10n_co_unit_measures_859,metro cúbico por hora,MQH
+l10n_co_unit_measures_860,metro cúbico por segundo,MQS
+l10n_co_unit_measures_861,metro por segundo al cuadrado,MSK
+l10n_co_unit_measures_862,estera,MT
+l10n_co_unit_measures_863,metro cuadrado,MTK
+l10n_co_unit_measures_864,Metro cúbico,MTQ
+l10n_co_unit_measures_865,metro,MTR
+l10n_co_unit_measures_866,metro por segundo,MTS
+l10n_co_unit_measures_867,numero de mults,MV
+l10n_co_unit_measures_868,megavolt – ampere,MVA
+l10n_co_unit_measures_869,megavatios hora (1000 kW.h),MWH
+l10n_co_unit_measures_870,calorías de la pluma,N1
+l10n_co_unit_measures_871,número de líneas,N2
+l10n_co_unit_measures_872,punto de impresión,N3
+l10n_co_unit_measures_873,miligramo por kilogramo,NA
+l10n_co_unit_measures_874,número de artículos,NAR
+l10n_co_unit_measures_875,barcaza,NB
+l10n_co_unit_measures_876,número de bobinas,NBB
+l10n_co_unit_measures_877,coche,NC
+l10n_co_unit_measures_878,número de celdas,NCL
+l10n_co_unit_measures_879,barril neto,ND
+l10n_co_unit_measures_880,litro neto,NE
+l10n_co_unit_measures_881,newton,NEW
+l10n_co_unit_measures_882,mensaje,NF
+l10n_co_unit_measures_883,galón neto (nosotros),NG
+l10n_co_unit_measures_884,hora del mensaje,NH
+l10n_co_unit_measures_885,galón imperial neto,NI
+l10n_co_unit_measures_886,número de unidades internacionales,NIU
+l10n_co_unit_measures_887,número de pantallas,NJ
+l10n_co_unit_measures_888,carga,NL
+l10n_co_unit_measures_889,milla nautica,MNI
+l10n_co_unit_measures_890,número de paquetes,NMP
+l10n_co_unit_measures_891,entrenar,NN
+l10n_co_unit_measures_892,número de parcelas,NPL
+l10n_co_unit_measures_893,numero de pares,NPR
+l10n_co_unit_measures_894,numero de partes,TNP
+l10n_co_unit_measures_895,mho,NQ
+l10n_co_unit_measures_896,micromho,NR
+l10n_co_unit_measures_897,número de rollos,NRL
+l10n_co_unit_measures_898,tonelada neta,NT
+l10n_co_unit_measures_899,registro neto de toneladas,NTT
+l10n_co_unit_measures_900,medidor de newton,NU
+l10n_co_unit_measures_901,vehículo,NV
+l10n_co_unit_measures_902,parte por mil,NX
+l10n_co_unit_measures_903,libra por aire seco tonelada métrica,NY
+l10n_co_unit_measures_904,panel,OA
+l10n_co_unit_measures_905,ohm,OHM
+l10n_co_unit_measures_906,onza por yarda cuadrada,EN
+l10n_co_unit_measures_907,onza,ONZ
+l10n_co_unit_measures_908,Dos paquetes,OP
+l10n_co_unit_measures_909,hora extra,OT
+l10n_co_unit_measures_910,onza av,ONZ
+l10n_co_unit_measures_911,onza líquida (US),OZA
+l10n_co_unit_measures_912,onza líquida (Reino Unido),OZI
+l10n_co_unit_measures_913,pagina – electronica,P0
+l10n_co_unit_measures_914,por ciento,P1
+l10n_co_unit_measures_915,libra por pie,P2
+l10n_co_unit_measures_916,paquete de tres,P3
+l10n_co_unit_measures_917,paquete de cuatro,P4
+l10n_co_unit_measures_918,paquete de cinco,P5
+l10n_co_unit_measures_919,paquete de seis,P6
+l10n_co_unit_measures_920,paquete de siete,P7
+l10n_co_unit_measures_921,paquete de ocho,P8
+l10n_co_unit_measures_922,paquete de nueve,P9
+l10n_co_unit_measures_923,paquete,PA
+l10n_co_unit_measures_924,pascal,PAL
+l10n_co_unit_measures_925,par de pulgadas,PB
+l10n_co_unit_measures_926,almohadilla,PD
+l10n_co_unit_measures_927,equivalente en libras,PE
+l10n_co_unit_measures_928,palet (ascensor),PF
+l10n_co_unit_measures_929,plato,PG
+l10n_co_unit_measures_930,galón de prueba,PGL
+l10n_co_unit_measures_931,tono,Pi
+l10n_co_unit_measures_932,paquete,PK
+l10n_co_unit_measures_933,cubo,PL
+l10n_co_unit_measures_934,porcentaje de libra,PM
+l10n_co_unit_measures_935,libra neta,PN
+l10n_co_unit_measures_936,libra por pulgada de longitud,PO
+l10n_co_unit_measures_937,página por pulgada,PQ
+l10n_co_unit_measures_938,par,PR
+l10n_co_unit_measures_939,fuerza de libra por pulgada cuadrada,PD
+l10n_co_unit_measures_940,pinta,PT
+l10n_co_unit_measures_941,pinta seca,PTD
+l10n_co_unit_measures_942,pinta (Reino Unido),PTI
+l10n_co_unit_measures_943,pinta liquida (US),PTL
+l10n_co_unit_measures_944,bandeja / paquete de bandeja,PU
+l10n_co_unit_measures_945,media pinta (US),PV
+l10n_co_unit_measures_946,libra por pulgada de ancho,PW
+l10n_co_unit_measures_947,Peck Dry (US),PY
+l10n_co_unit_measures_948,Peck Dry (Reino Unido),PZ
+l10n_co_unit_measures_949,comida,Q3
+l10n_co_unit_measures_950,página – facsímil,QA
+l10n_co_unit_measures_951,cuarto (de un año),QAN
+l10n_co_unit_measures_952,página – copia impresa,QB
+l10n_co_unit_measures_953,cuarto de docena,QD
+l10n_co_unit_measures_954,un cuarto de hora,QH
+l10n_co_unit_measures_955,cuarto de kilogramo,QK
+l10n_co_unit_measures_956,mano de papel,QR
+l10n_co_unit_measures_957,cuarto de galón (US),QT
+l10n_co_unit_measures_958,cuarto seco (EE. UU.),QTD
+l10n_co_unit_measures_959,cuarto de galón (Reino Unido),QTI
+l10n_co_unit_measures_960,cuarto líquido (US),QTL
+l10n_co_unit_measures_961,cuarto (UK),QTR
+l10n_co_unit_measures_962,pica,R1
+l10n_co_unit_measures_963,caloría,R4
+l10n_co_unit_measures_964,mil metros cúbicos,R9
+l10n_co_unit_measures_965,estante,RA
+l10n_co_unit_measures_966,barra,RD
+l10n_co_unit_measures_967,anillo,RG
+l10n_co_unit_measures_968,hora de funcionamiento o de funcionamiento,RH
+l10n_co_unit_measures_969,medida métrica rollo,RK
+l10n_co_unit_measures_970,carrete,RL
+l10n_co_unit_measures_971,resma,RM
+l10n_co_unit_measures_972,medida métrica de resma,RN
+l10n_co_unit_measures_973,rodar,RO
+l10n_co_unit_measures_974,libra por resma,RP
+l10n_co_unit_measures_975,revoluciones por minuto,RPM
+l10n_co_unit_measures_976,revoluciones por segundo,RPS
+l10n_co_unit_measures_977,Reiniciar,RS
+l10n_co_unit_measures_978,ingreso tonelada milla,RT
+l10n_co_unit_measures_979,correr,RU
+l10n_co_unit_measures_980,pie cuadrado por segundo,S3
+l10n_co_unit_measures_981,metro cuadrado por segundo,S4
+l10n_co_unit_measures_982,sesenta cuartos de pulgada,S5
+l10n_co_unit_measures_983,sesión,S6
+l10n_co_unit_measures_984,unidad de almacenamiento,S7
+l10n_co_unit_measures_985,unidad de publicidad estándar,S8
+l10n_co_unit_measures_986,saco,SA
+l10n_co_unit_measures_987,medio año (6 meses),SAN
+l10n_co_unit_measures_988,Puntuación,OCS
+l10n_co_unit_measures_989,escrúpulo,SCR
+l10n_co_unit_measures_990,libra solida,SD
+l10n_co_unit_measures_991,sección,SE
+l10n_co_unit_measures_992,segundo,SEC
+l10n_co_unit_measures_993,conjunto,SET
+l10n_co_unit_measures_994,segmento,SG
+l10n_co_unit_measures_995,tonelada de envío,SHT
+l10n_co_unit_measures_996,siemens,SIE
+l10n_co_unit_measures_997,camión cisterna dividido,SK
+l10n_co_unit_measures_998,hoja de deslizamiento,SL
+l10n_co_unit_measures_999,milla (milla estatutaria),SMI
+l10n_co_unit_measures_1000,varilla cuadrada,SN
+l10n_co_unit_measures_1001,carrete,SO
+l10n_co_unit_measures_1002,paquete de estante,SP
+l10n_co_unit_measures_1003,cuadrado,SQ
+l10n_co_unit_measures_1004,tira,SR
+l10n_co_unit_measures_1005,hoja métrica medida,SS
+l10n_co_unit_measures_1006,corto estándar (7200 partidos),SST
+l10n_co_unit_measures_1007,hoja,ST
+l10n_co_unit_measures_1008,piedra (Reino Unido),ITS
+l10n_co_unit_measures_1009,tonelada (US) o tonelada corta (UK / US),STN
+l10n_co_unit_measures_1010,patinar,SV
+l10n_co_unit_measures_1011,madeja,SO
+l10n_co_unit_measures_1012,envío,SX
+l10n_co_unit_measures_1013,Línea de telecomunicaciones en servicio.,T0
+l10n_co_unit_measures_1014,mil libras brutas,T1
+l10n_co_unit_measures_1015,mil piezas,T3
+l10n_co_unit_measures_1016,bolsa de mil,T4
+l10n_co_unit_measures_1017,caja de mil,T5
+l10n_co_unit_measures_1018,mil galones (US),T6
+l10n_co_unit_measures_1019,mil impresiones,T7
+l10n_co_unit_measures_1020,mil pulgadas lineales,T8
+l10n_co_unit_measures_1021,décimo pie cúbico,TA
+l10n_co_unit_measures_1022,Kiloampere hora (mil amperios hora),TAH
+l10n_co_unit_measures_1023,camion,TC
+l10n_co_unit_measures_1024,termia,TD
+l10n_co_unit_measures_1025,totalizador,TE
+l10n_co_unit_measures_1026,diez metros cuadrados,TF
+l10n_co_unit_measures_1027,mil pulgadas cuadradas,TI
+l10n_co_unit_measures_1028,mil centímetros cuadrados,TJ
+l10n_co_unit_measures_1029,"tanque, rectangular",TK
+l10n_co_unit_measures_1030,mil pies (lineales),TL
+l10n_co_unit_measures_1031,estaño,TN
+l10n_co_unit_measures_1032,tonelada (tonelada métrica),TNE
+l10n_co_unit_measures_1033,paquete de diez,TP
+l10n_co_unit_measures_1034,diez pares,TPR
+l10n_co_unit_measures_1035,mil pies,TQ
+l10n_co_unit_measures_1036,mil metros cúbicos por día,TQD
+l10n_co_unit_measures_1037,diez pies cuadrados,TR
+l10n_co_unit_measures_1038,trillón (EUR),TRL
+l10n_co_unit_measures_1039,mil pies cuadrados,TS
+l10n_co_unit_measures_1040,tonelada de sustancia 90% seca,TSD
+l10n_co_unit_measures_1041,tonelada de vapor por hora,TSH
+l10n_co_unit_measures_1042,mil metros lineales,TT
+l10n_co_unit_measures_1043,tubo,TU
+l10n_co_unit_measures_1044,mil kilogramos,TV
+l10n_co_unit_measures_1045,mil hojas,TW
+l10n_co_unit_measures_1046,"tanque, cilíndrico",TY
+l10n_co_unit_measures_1047,tratamiento,U1
+l10n_co_unit_measures_1048,tableta,U2
+l10n_co_unit_measures_1049,torr,UA
+l10n_co_unit_measures_1050,Línea de telecomunicaciones en servicio promedio.,UB
+l10n_co_unit_measures_1051,puerto de telecomunicaciones,UC
+l10n_co_unit_measures_1052,décimo minuto,UD
+l10n_co_unit_measures_1053,décima hora,UE
+l10n_co_unit_measures_1054,uso por línea de telecomunicación promedio,UF
+l10n_co_unit_measures_1055,diez mil yardas,UH
+l10n_co_unit_measures_1056,millones de unidades,UM
+l10n_co_unit_measures_1057,voltio amperio por kilogramo,VA
+l10n_co_unit_measures_1058,frasco,VI
+l10n_co_unit_measures_1059,voltio,VLT
+l10n_co_unit_measures_1060,abultar,VQ
+l10n_co_unit_measures_1061,visitar,VS
+l10n_co_unit_measures_1062,kilo mojado,W2
+l10n_co_unit_measures_1063,dos semanas,W4
+l10n_co_unit_measures_1064,vatio por kilogramo,WA
+l10n_co_unit_measures_1065,libra mojada,WB
+l10n_co_unit_measures_1066,cable,WCD
+l10n_co_unit_measures_1067,tonelada mojada,WE
+l10n_co_unit_measures_1068,weber,WEB
+l10n_co_unit_measures_1069,semana,WEE
+l10n_co_unit_measures_1070,galon de vino,WG
+l10n_co_unit_measures_1071,rueda,WH
+l10n_co_unit_measures_1072,vatios hora,WHR
+l10n_co_unit_measures_1073,peso por pulgada cuadrada,WI
+l10n_co_unit_measures_1074,mes de trabajo,WM
+l10n_co_unit_measures_1075,envolver,WR
+l10n_co_unit_measures_1076,estándar,WSD
+l10n_co_unit_measures_1077,vatio,WTT
+l10n_co_unit_measures_1078,mililitro de agua,WW
+l10n_co_unit_measures_1079,cadena,X1
+l10n_co_unit_measures_1080,yarda cuadrada,YDK
+l10n_co_unit_measures_1081,Yarda cúbica,YDQ
+l10n_co_unit_measures_1082,cien yardas lineales,YL
+l10n_co_unit_measures_1083,yarda,YRD
+l10n_co_unit_measures_1084,diez yardas,YT
+l10n_co_unit_measures_1085,van de elevación,Z1
+l10n_co_unit_measures_1086,pecho,Z2
+l10n_co_unit_measures_1087,barril,Z3
+l10n_co_unit_measures_1088,pipa,Z4
+l10n_co_unit_measures_1089,arrastrar,Z5
+l10n_co_unit_measures_1090,punto de conferencia,Z6
+l10n_co_unit_measures_1091,línea de noticias de ágata,Z8
+l10n_co_unit_measures_1092,página,ZP
+l10n_co_unit_measures_1093,mutuamente definido,ZZ

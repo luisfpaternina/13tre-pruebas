@@ -1,0 +1,2012 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_tech_provider
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-01 12:52+0000\n"
+"PO-Revision-Date: 2021-07-01 12:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider___type
+msgid " Type"
+msgstr "Tipo"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_143
+msgid "AFC"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider.selection__l10n_co_tech_provider___type__account
+msgid "Account"
+msgstr "Contabilidad"
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_form
+msgid "Active fields"
+msgstr "Campos activos"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_018
+msgid "AltoRiegoPension"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_049
+msgid "Ambiente"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_018
+msgid "AltoRiegoPension"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_049
+msgid "Ambiente"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_005
+msgid "AmbieteDestinoDocumento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_116
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_138
+msgid "Anticipo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_118
+msgid "ApoyoSost"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_101
+msgid "AuxilioNS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_100
+msgid "AuxilioS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_067
+msgid "AuxilioTransporte"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_061
+msgid "Banco"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_180
+msgid "Base Imponible sobre la que se calcula el valor del tributo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_156
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_165
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_174
+msgid "BaseImponible"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_120
+msgid "BonifRetiro"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_099
+msgid "BonificacionNS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_098
+msgid "BonificacionS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_091
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_122
+msgid "CIIU"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_043
+msgid "CUNENov"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_066
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_097
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_185
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_189
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_213
+msgid "Calificador"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_195
+msgid "Calificador del cargo o descuento "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_202
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_204
+msgid "Calificador del tipo de texto. "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_128
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_073
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_078
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_080
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_082
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_090
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_096
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_104
+msgid "Cantidad"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_133
+msgid "Cantidad Solicitada"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_042
+msgid "Cargos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_112
+msgid "Cedula Juridica (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_081
+msgid "Cedula Juridica (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_026
+msgid "CentroCostos "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__children_ids
+msgid "Children"
+msgstr "Hijo"
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.view_l10n_co_tech_provider_line_form
+msgid "Children Lines"
+msgstr "Lineas hijas"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_074
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_105
+msgid "Ciudad"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_183
+msgid "Clave de Impuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_150
+msgid "ClaveCodigoUtilizado"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_084
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_115
+msgid "ClaveIdentificadorTributario"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_162
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_171
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_177
+msgid "ClaveImpuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__code
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_088
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_119
+msgid "CodigoDepartamento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_187
+msgid "CodigoDescripcion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_194
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_218
+msgid "CodigoDocumentoReferencia"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_089
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_120
+msgid "CodigoMunicipio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_076
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_107
+msgid "CodigoPais"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_090
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_121
+msgid "CodigoPostal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_151
+msgid "CodigoProducto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_032
+msgid "CodigoTrabajador"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_140
+msgid "Color "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_114
+msgid "Comision"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_109
+msgid "CompensacionE"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_108
+msgid "CompensacionO"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_153
+msgid "ComprobanteTotal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_107
+msgid "ConceptoNS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_106
+msgid "ConceptoS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model,name:l10n_co_tech_provider.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__connection_adapter
+msgid "Connection Adapter"
+msgstr "Conexión de adaptador"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__connection_adapter
+msgid "Connection Adapter"
+msgstr "Conexión de adaptador"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__connection_type
+msgid "Connection Type"
+msgstr "Tipo de conexión"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__connection_url
+msgid "Connection Url"
+msgstr "Url de conexión"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_034
+msgid "Consecutivo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_111
+msgid "Contacto Email (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_080
+msgid "Contacto Email (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_109
+msgid "Contacto Nombre (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_078
+msgid "Contacto Nombre (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_110
+msgid "Contacto Teléfono (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_079
+msgid "Contacto Teléfono (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_144
+msgid "Cooperativa"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.view_l10n_co_tech_provider_line_form
+msgid "Cosmetics"
+msgstr "Campo relacionado"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_152
+msgid "Costo Muestras Comerciales"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__create_uid
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__create_date
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_136
+msgid "Código EAN "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_100
+msgid "Código Externo (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_069
+msgid "Código Externo (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_101
+msgid "Código Global (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_070
+msgid "Código Global (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_099
+msgid "Código Interno (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_068
+msgid "Código Interno (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_137
+msgid "Código UPC"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_147
+msgid "Código del tipo de precio informado"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_154
+msgid ""
+"Código del vendedor correspondiente a una subespecificación del artículo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_153
+msgid ""
+"Código del vendedor correspondiente al\n"
+"artículo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_011
+msgid "DV"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_124
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_126
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_132
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_136
+msgid "Deduccion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_128
+msgid "DeduccionSP"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_130
+msgid "DeduccionSub"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_152
+msgid "DeduccionesTotal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_073
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_104
+msgid "Departamento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_024
+msgid "Departamento "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_013
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_045
+msgid "DepartamentoEstado"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_130
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_135
+msgid "Descripcion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_105
+msgid "DescripcionConcepto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_188
+msgid "DescripcionCorrecion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_015
+msgid "DescripcionTerminoPago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_201
+msgid "Descripción del cargo o descuento "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__description
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__description
+msgid "Description"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_040
+msgid "Descuento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_149
+msgid "Deuda"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_151
+msgid "DevengadosTotal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_065
+msgid "DiasTrabajados"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_082
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_113
+msgid "DigitoVerificador"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_015
+msgid "Direccion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__display_name
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_037
+msgid "Divisa"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_056
+msgid "Divisa Adicional"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_025
+msgid "Division"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_117
+msgid "Dotacion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_147
+msgid "Educacion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_021
+msgid "EjercicioFiscal "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_145
+msgid "EmbargoFiscal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_res_config_settings__provider_id
+msgid "Enabled provider"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_052
+msgid "EncripCUNE"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_052
+msgid "EncripCUNE"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_022
+msgid "EstatusDocumento "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_141
+msgid "Estilo "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_210
+msgid "Fecha de Realización del Pago."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_209
+msgid "Fecha de Recepción del Pago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_031
+msgid "Fecha de fin del periodo de facturación."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_029
+msgid "Fecha de inicio del periodo de facturación."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_034
+msgid "Fecha efectiva de Salida de los bienes"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_058
+msgid "Fecha en la que se fijó la tasa de cambio secundaria."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_009
+msgid "FechaEmision"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_003
+msgid "FechaEnvio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_077
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_089
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_095
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_103
+msgid "FechaFin"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_017
+msgid "FechaFinPago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_042
+msgid "FechaGen"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_053
+msgid "FechaHoraGen"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_036
+msgid "FechaIngreso"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_076
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_088
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_094
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_102
+msgid "FechaInicio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_016
+msgid "FechaInicioPago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_041
+msgid "FechaLiquidacion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_039
+msgid "FechaLiquidacionFin"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_038
+msgid "FechaLiquidacionInicio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_064
+msgid "FechaPago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_192
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_216
+msgid "FechaReferencia"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_037
+msgid "FechaRetiro"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_051
+msgid "FechaTasaCambio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__file_binary
+msgid "File"
+msgstr "Archivo"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__file_adapter
+msgid "File Adapter"
+msgstr "Archivo de adaptador"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__file_adapter
+msgid "File Adapter"
+msgstr "Archivo de adaptador"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__file_extension
+msgid "File Extension"
+msgstr "Extensión de archivo"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__file_filename
+msgid "File Names"
+msgstr "Nombres de archivo"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__file_separator
+msgid "File Separator"
+msgstr "Archivo separador"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__tech_provider_id
+msgid "Financial Report"
+msgstr "Reporte Financiero"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_008
+msgid "Folio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_059
+msgid "Forma"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_018
+msgid "FormaPago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_211
+msgid "Hora de Realización del Pago."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_032
+msgid "Hora de fin del periodo de facturación."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_030
+msgid "Hora de inicio del periodo de facturación."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_035
+msgid "Hora efectiva de Salida de los bienes"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_010
+msgid "HoraEmision"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_072
+msgid "HoraFin"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_054
+msgid "HoraGen"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_071
+msgid "HoraInicio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_142
+msgid "ICA"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__id
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__id
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_206
+msgid "ID"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_033
+msgid "Identficador de Sucursal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_186
+msgid "IdentificaSeccionFactura"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_159
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_168
+msgid "Identificación de la unidad de medida"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_036
+msgid "Identificador del Pago."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_051
+msgid "Identificador documento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_006
+msgid "IdentificadorFactura"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_193
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_217
+msgid "IdentificadorFiscalDocumeto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_047
+msgid "Idioma"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_132
+msgid "Importe"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_050
+msgid "ImporteConLetras"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_07_2
+msgid "Impuestos Retenidos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_07_1
+msgid "Impuestos Trasladados"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_121
+msgid "Indemnizacion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_196
+msgid "Indicador Cargos y/o Descuentos Generales"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_07_3
+msgid "Indicador Cargos y/o Descuentos por concepto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_05
+msgid "Indicador Direcciones Emisor"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_04
+msgid "Indicador Direcciones Repector"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_03
+msgid "Indicador MON"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_14
+msgid "Indicador Referencias"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_06
+msgid "Indicador Referencias Generales"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_13
+msgid "Indicador anticipos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_01
+msgid "Indicador de CAB"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_02
+msgid "Indicador de HDR"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_07
+msgid "Indicador de linea de concepto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_11
+msgid "Indicador de textos generales"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_12
+msgid "Indicador referencia en factura"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_09
+msgid "Información de Impuestos Retenidos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_08
+msgid "Información de Impuestos Totales"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_212
+msgid "Instrucciones del Pago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_settings
+msgid "Is it a way to test?"
+msgstr "¿Esta en modo prueba?"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_144
+msgid "LOTE"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider____last_update
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line____last_update
+msgid "Last Modified on"
+msgstr "última modificación en"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__write_uid
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__write_uid
+msgid "Last Updated by"
+msgstr "última actualización por"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__write_date
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__write_date
+msgid "Last Updated on"
+msgstr "última actualización en"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_092
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_123
+msgid "LenguajePais"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__level
+msgid "Level"
+msgstr "Nivel"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_072
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_103
+msgid "Line"
+msgstr "Línea"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__line_ids
+msgid "Lines"
+msgstr "Líneas"
+
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_019
+msgid "LugarExpedicion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_026
+msgid "LugarTrabajoDepartamentoEstado"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_028
+msgid "LugarTrabajoDireccion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_027
+msgid "LugarTrabajoMunicipioCiudad"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_025
+msgid "LugarTrabajoPais"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.view_l10n_co_tech_provider_line_form
+msgid "Main Info"
+msgstr "Menú info"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_149
+msgid "Marca"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__maximum_megabytes
+msgid "Maximum Megabytes"
+msgstr "Megabytes máximo"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_060
+msgid "Metodo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_060
+msgid "Metodo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_013
+msgid "MetodoPago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_143
+msgid "Modelo "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_208
+msgid "Moneda"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_198
+msgid "Monto Base "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_179
+msgid "Monto Total Impuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_060
+msgid "Monto Total Impuesto IC"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_061
+msgid "Monto Total Impuesto ICA"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_062
+msgid "Monto Total Impuesto INC"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_200
+msgid "Monto del cargo o descuento "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_048
+msgid "MontoAPagar"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_155
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_164
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_173
+msgid "MontoTotalImpuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_041
+msgid "MotivoDescuento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_043
+msgid "Motivos de Cargos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_106
+msgid "Municipio (Emisor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_075
+msgid "Municipio (Receptor)"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_014
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_046
+msgid "MunicipioCiudad"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_010
+msgid "NITEmisor"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_headboard_10
+msgid "Naturaleza Nota C/D"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_067
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_098
+msgid "Nit"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_002
+msgid "NitAdquiriente"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_001
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_001
+msgid "NitEmisor"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_004
+msgid "NoRegistro"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_071
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_102
+msgid "Nombre"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_184
+msgid "Nombre del Impuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_085
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_116
+msgid "NombreIdentificadorTributario"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_163
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_172
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_178
+msgid "NombreImpuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_191
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_215
+msgid "NombreReferencia"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_058
+msgid "Nota"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_094
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_125
+msgid "Nota Adicional al Contacto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__num_of_days_to_validate
+msgid "Num of days to validate acknowledgment"
+msgstr "Número de días para validar el acuse"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__num_doc_attachs
+msgid "Number Doc Attachs"
+msgstr "Número de Documentos Adjuntos"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_035
+msgid "Numero"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_035
+msgid "Numero"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_190
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_214
+msgid "Numero "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_023
+msgid "NumeroCheque"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_063
+msgid "NumeroCuenta"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_020
+msgid "NumeroDocumento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_028
+msgid "NumeroPartidas"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_135
+msgid "Número Cliente"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_134
+msgid "Número Interno "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_138
+msgid "Número Orden de Compra"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_096
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_127
+msgid "Número de Matrícula Mercantil"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_086
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_117
+msgid "ObligacionesFiscales"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_049
+msgid "ObservacionesFactura"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_139
+msgid "OtraDeduccion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_009
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_024
+msgid "OtrosNombres"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_075
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_079
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_081
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_083
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_085
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_092
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_097
+msgid "Pago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_113
+msgid "PagoAlimentacionNS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_112
+msgid "PagoAlimentacionS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_087
+msgid "PagoIntereses"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_084
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_111
+msgid "PagoNS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_110
+msgid "PagoS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_115
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_137
+msgid "PagoTercero"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_077
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_108
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_012
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_044
+msgid "Pais"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__parent_id
+msgid "Parent"
+msgstr "Relacionado"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__parent_path
+msgid "Parent Path"
+msgstr "Ruta elemento relacionado"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__password
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_res_config_settings__password_provider
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_140
+msgid "PensionVoluntaria"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_055
+msgid "PeriodoNomina"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_146
+msgid "PlanComplementarios"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_074
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_086
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_123
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_125
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_127
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_131
+msgid "Porcentaje"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_140
+msgid "PensionVoluntaria"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_055
+msgid "PeriodoNomina"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_146
+msgid "PlanComplementarios"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_074
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_086
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_123
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_125
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_127
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_131
+msgid "Porcentaje"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_093
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_124
+msgid "Porcentaje de los participantes del consorcio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_199
+msgid "Porcentaje del cargo o descuento "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_129
+msgid "PorcentajeSub"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_139
+msgid "Posición Orden de Compra "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_033
+msgid "Prefijo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_006
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_021
+msgid "PrimerApellido"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_008
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_023
+msgid "PrimerNombre"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_146
+msgid "REGISTRO CUM"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider.selection__l10n_co_tech_provider__connection_type__rest
+msgid "REST"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_005
+msgid "RazonSocial"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_150
+msgid "Redondeo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_087
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_118
+msgid "RegimenFiscal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_020
+msgid "RegimenFiscalEmisor"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_122
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_148
+msgid "Reintegro"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__act_field_id
+msgid "Related field"
+msgstr "Campo relacionado"
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.view_l10n_co_tech_provider_line_form
+msgid "Report Line"
+msgstr "Línea de reporte"
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.view_l10n_co_tech_provider_line_tree
+msgid "Report Lines"
+msgstr "Línea de reporte"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_141
+msgid "RetencionFuente"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_141
+msgid "RetencionFuente"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider.selection__l10n_co_tech_provider__connection_type__soap
+msgid "SOAP"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_029
+msgid "SalarioIntegral"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_134
+msgid "SancionPriv"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_133
+msgid "SancionPublic"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__name
+msgid "Section Name"
+msgstr "Nombre de sección"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_007
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_022
+msgid "SegundoApellido"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_007
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_022
+msgid "SegundoApellido"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_settings
+msgid "Select the provider for your company."
+msgstr "Selecciona el proveedor para tu compañia."
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider_line__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_007
+msgid "Serie"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_form
+msgid "Social Security"
+msgstr "Seguridad social"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_017
+msgid "SubTipoTrabajador"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_017
+msgid "SubTipoTrabajador"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_039
+msgid "Subtotal"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_031
+msgid "Sueldo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_066
+msgid "SueldoTrabajado"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_070
+msgid "TIPO Hora Extra"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_057
+msgid "TRM"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider.selection__l10n_co_tech_provider__file_extension__txt
+msgid "TXT"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_142
+msgid "Talla "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_182
+msgid "Tarifa del Impuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_161
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_170
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_176
+msgid "TarifaImpuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_057
+msgid "Tasa de Cambio Secundaria."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.ui.menu,name:l10n_co_tech_provider.menu_root
+msgid "Tech Provider"
+msgstr "Proveedor tecnológico"
+
+#. module: l10n_co_tech_provider
+#: model:ir.ui.menu,name:l10n_co_tech_provider.l10n_co_tech_provider_line_menu_root
+msgid "Tech Provider Lines"
+msgstr "Líneas proveedor tecnológico"
+
+#. module: l10n_co_tech_provider
+#: model:ir.actions.act_window,name:l10n_co_tech_provider.action_window
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_settings
+msgid "Tech provider"
+msgstr "Proveedor tecnológico"
+
+#. module: l10n_co_tech_provider
+#: model:ir.actions.act_window,name:l10n_co_tech_provider.l10n_co_tech_provider_line_action_window
+msgid "Tech provider Lines"
+msgstr "Líneas proveedor tecnológico"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_119
+msgid "Teletrabajo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_119
+msgid "Teletrabajo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_014
+msgid "TerminoPago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_form
+msgid "Test Connection"
+msgstr "Test de conexion"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__is_test
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_res_config_settings__is_test
+msgid "Test mode"
+msgstr "Modo test"
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_203
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_205
+msgid "Texto Libre "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_040
+msgid "TiempoLaborado"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_011
+msgid "TimeZone"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_091
+msgid "Tipo"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_055
+msgid "Tipo de Moneda a la cual se hace la conversión."
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_197
+msgid "Tipo de cargo o descuento "
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_093
+msgid "Tipo licencia"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_038
+msgid "TipoCambio"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_030
+msgid "TipoContrato"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_062
+msgid "TipoCuenta"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_030
+msgid "TipoContrato"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_062
+msgid "TipoCuenta"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_003
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_019
+msgid "TipoDocumento"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_095
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_126
+msgid "TipoDocumentoIdentidad"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_012
+msgid "TipoFactura"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_056
+msgid "TipoMoneda"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_027
+msgid "TipoOperacion"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_083
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_114
+msgid "TipoOrganizacionJuridica"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_016
+msgid "TipoTrabajador"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_050
+msgid "TipoXML"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_044
+msgid "Total"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_054
+msgid "Total Anticipos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_052
+msgid "TotalBaseImpuestos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_053
+msgid "TotalBrutoMasImpuestos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_059
+msgid "TotalImpuestosIVA"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_045
+msgid "TotalImpuestosRetenidos"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_046
+msgid "TotalImpuestosTrasladados"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_047
+msgid "TotalPagoAnticipado"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_158
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_167
+msgid "Unidad de Medida del Impuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_129
+msgid "UnidadDeMedida"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_148
+msgid "Unidades Por Empaque"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__url_download
+msgid "Url Download"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__url_upload
+msgid "Url Upload"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_res_config_settings__user_provider
+msgid "User"
+msgstr "Usuario"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__username
+msgid "Username"
+msgstr "Nombre usuario"
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_settings
+msgid "Username for connection with the provider."
+msgstr "Usuario para la conexión con el proveedor."
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_145
+msgid "VENCE"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_160
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_169
+msgid "Valor del Impuesto por Unidad"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_181
+msgid ""
+"Valor del Impuesto: producto del porcentaje aplicado sobre la base imponible"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_207
+msgid "Valor del pago"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_157
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_166
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_175
+msgid "ValorImpuesto"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_131
+msgid "ValorUnitario"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_line_field_004
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_048
+msgid "Version"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_069
+msgid "ViaticoManuAlojNS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_068
+msgid "ViaticoManuAlojS"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider.selection__l10n_co_tech_provider__file_extension__xml
+msgid "XML"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_002
+msgid "idNomina"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model,name:l10n_co_tech_provider.model_l10n_co_tech_provider_line
+msgid "l10n_co.tech.provider.line"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model,name:l10n_co_tech_provider.model_l10n_co_tech_provider
+msgid "l10n_co_tech_provider"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.actions.server,name:l10n_co_tech_provider.action_server
+msgid "l10n_co_tech_provider_server"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider.l10n_co_tech_provider_settings
+msgid "password for connection with the provider."
+msgstr "Contraseña para la conexión con el proveedor."
+
+#. module: l10n_co_tech_provider
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider.l10n_co_tech_provider_payroll_line_field_154
+msgid "totalNumeroReg"
+msgstr ""
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_res_company__provider_id
+msgid "Enabled provider"
+msgstr "Proveedor Tecnológico"
+
+#. module: l10n_co_tech_provider
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__company_id
+#: model:ir.model.fields,field_description:l10n_co_tech_provider.field_l10n_co_tech_provider__property_company_id
+msgid "Company"
+msgstr "Compañía"

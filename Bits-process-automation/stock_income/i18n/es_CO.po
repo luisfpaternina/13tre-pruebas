@@ -1,0 +1,462 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_income
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 21:52+0000\n"
+"PO-Revision-Date: 2020-08-28 17:49-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: stock_income
+#: model:mail.template,report_name:stock_income.send_confirmation_suppliers_email_template
+msgid "${(object.name or '').replace('/','_')}"
+msgstr ""
+
+#. module: stock_income
+#: model:mail.template,subject:stock_income.send_confirmation_suppliers_email_template
+msgid ""
+"${object.env.company.name} - Confirmation of product received ${object.name}"
+msgstr ""
+"${object.env.company.name} - Confirmación de producto recibido ${object."
+"name}"
+
+#. module: stock_income
+#: model:mail.template,body_html:stock_income.send_confirmation_suppliers_email_template
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;"
+"\">\n"
+"                        Sirs;<br/>\n"
+"                            ${object.partner_id.name}<br/>\n"
+"                        Good day,<br/><br/>\n"
+"\n"
+"                        Warehouse Entry Number <strong>${object.name}</"
+"strong> is attached confirming receipt of the service or products "
+"purchased.\n"
+"                        ${object.env.company.name} issues a purchase order "
+"for the services provided or the goods purchased, please\n"
+"                        Reference the Warehouse Entry Number generated at "
+"the time of invoicing, or it is allowed to send purchase orders from "
+"another email and / or internal user of the company.<br/>\n"
+"                        If you have any questions, feel free to contact us."
+"<br/>\n"
+"                        Sincerely,<br/><br/>\n"
+"\n"
+"                        ${object.env.company.name}.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;"
+"\">\n"
+"                        Señores;<br/>\n"
+"                            ${object.partner_id.name}<br/>\n"
+"                        Buen día,<br/><br/>\n"
+"\n"
+"                        Se adjunta Entrada de Almacén No <strong>${object."
+"name}</strong> Confirmando la recepción del servicio o productos "
+"adquiridos.\n"
+"                        ${object.env.company.name} emite orden de compra "
+"por los servicios prestados o los bienes adquiridos, favor\n"
+"                        referenciar el No de Entrada de Almacén generado al "
+"momento de facturar. O se permite enviar órdenes de compra desde otro "
+"correo y / o usuario interno de la empresa.<br/>\n"
+"                        Si tiene alguna pregunta, no dude en contactarnos."
+"<br/>\n"
+"                       Atentamente,<br/><br/>\n"
+"\n"
+"                        ${object.env.company.name}.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid ""
+"<span attrs=\"{'invisible': [('composition_mode', '!=', 'mass_mail')]}\">\n"
+"                                        <strong>\n"
+"                                            Email mass mailing\n"
+"                                        </strong>\n"
+"                                        on\n"
+"                                        <span>\n"
+"                                            the selected records\n"
+"                                        </span>\n"
+"                                    </span>\n"
+"                                    <span>\n"
+"                                        Followers of the document and\n"
+"                                    </span>"
+msgstr ""
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__active_domain
+msgid "Active domain"
+msgstr "Dominio activo"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__add_sign
+msgid "Add Sign"
+msgstr "Agregar signo"
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Add contacts to notify..."
+msgstr "Agregar contactos para notificar ..."
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__partner_ids
+msgid "Additional Contacts"
+msgstr "Contactos adicionales"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__no_auto_thread
+msgid ""
+"Answers do not go in the original document discussion thread. This has an "
+"impact on the generated message-id."
+msgstr ""
+"Las respuestas no van en el hilo de discusión del documento original. Esto "
+"tiene un impacto en el ID de mensaje generado."
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Attach a file"
+msgstr "Adjuntar archivo"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__attachment_ids
+msgid "Attachments"
+msgstr "Archivos adjuntos"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__author_id
+msgid "Author"
+msgstr "Autor"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__author_id
+msgid ""
+"Author of the message. If not set, email_from may hold an email address "
+"that did not match any partner."
+msgstr ""
+"Autor del mensaje. Si no se establece, email_from puede contener una "
+"dirección de correo electrónico que no coincide con ningún socio."
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.stock_income_custom
+msgid "CONFIRM TO SUPPLIERS"
+msgstr "CONFIRMAR A LOS PROVEEDORES"
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__composer_id
+msgid "Composer"
+msgstr ""
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__composition_mode
+msgid "Composition mode"
+msgstr ""
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Confirmation to suppliers"
+msgstr "Confirmación a proveedores"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__body
+msgid "Contents"
+msgstr "Contenido"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__auto_delete
+msgid "Delete Emails"
+msgstr "Eliminar correos electrónicos"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__auto_delete_message
+msgid "Delete Message Copy"
+msgstr "Eliminar copia de mensaje"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__auto_delete
+msgid "Delete sent emails (mass mailing only)"
+msgstr "Eliminar correos electrónicos enviados (solo envío masivo)"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__auto_delete_message
+msgid ""
+"Do not keep a copy of the email in the document communication history (mass "
+"mailing only)"
+msgstr ""
+"No guarde una copia del correo electrónico en el historial de comunicación "
+"del documento (solo envío masivo)"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__is_email
+msgid "Email"
+msgstr ""
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__email_from
+msgid ""
+"Email address of the sender. This field is set when no matching partner is "
+"found and replaces the author_id field in the chatter."
+msgstr ""
+"Dirección de correo electrónico del remitente. Este campo se establece "
+"cuando no se encuentra ningún socio coincidente y reemplaza el campo "
+"author_id en la charla."
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__email_from
+msgid "From"
+msgstr "De"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__id
+msgid "ID"
+msgstr ""
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__parent_id
+msgid "Initial thread message."
+msgstr "Mensaje de hilo inicial."
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__printed
+msgid "Is Printed"
+msgstr "Está impreso"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__layout
+msgid "Layout"
+msgstr "Diseño"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__is_log
+msgid "Log an Internal Note"
+msgstr "Registrar una nota interna"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__mail_activity_type_id
+msgid "Mail Activity Type"
+msgstr "Tipo de actividad de correo"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__record_name
+msgid "Message Record Name"
+msgstr "Nombre de registro de mensaje"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__message_type
+msgid ""
+"Message type: email for email message, notification for system message, "
+"comment for other messages such as user replies"
+msgstr ""
+"Tipo de mensaje: correo electrónico para mensaje de correo electrónico, "
+"notificación para mensaje del sistema, comentario para otros mensajes, como "
+"respuestas de usuario"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__record_name
+msgid "Name get of the related document."
+msgstr "Obtener el nombre del documento relacionado."
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__no_auto_thread
+msgid "No threading for answers"
+msgstr "Sin hilos para obtener respuestas"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__notify
+msgid "Notify followers"
+msgstr "Notificar a los seguidores"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__notify
+msgid "Notify followers of the document (mass post only)"
+msgstr "Notificar a los seguidores del documento (solo publicación masiva)"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__mail_server_id
+msgid "Outgoing mail server"
+msgstr "Servidor de correo saliente"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__parent_id
+msgid "Parent Message"
+msgstr ""
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Preview as a PDF"
+msgstr "Vista previa como PDF"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__is_print
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Recipients"
+msgstr "Destinatarios"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__res_id
+msgid "Related Document ID"
+msgstr "ID de documento relacionado"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__model
+msgid "Related Document Model"
+msgstr "Modelo de documento relacionado"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__reply_to
+msgid ""
+"Reply email address. Setting the reply_to bypasses the automatic thread "
+"creation."
+msgstr ""
+"Dirección de correo electrónico de respuesta. La configuración de reply_to "
+"omite la creación automática de subprocesos."
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__reply_to
+msgid "Reply-To"
+msgstr "Responder a"
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Save as a new template"
+msgstr "Guardar como una nueva plantilla"
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Save as new template"
+msgstr "Guardar como plantilla nueva"
+
+#. module: stock_income
+#: code:addons/stock_income/models/stock_income.py:0
+#, python-format
+msgid "Send Confirm to Suppliers"
+msgstr "Enviar confirmación a proveedores"
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Send Confirmation"
+msgstr "Enviar Confirmación"
+
+#. module: stock_income
+#: model:ir.actions.act_window,name:stock_income.email_send_confirmation_to_suppliers
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Send Confirmation & Print"
+msgstr "Enviar confirmación e imprimir"
+
+#. module: stock_income
+#: model:ir.model,name:stock_income.model_send_confirmation_to_suppliers
+msgid "Sending confirmation to suppliers"
+msgstr "Envío de confirmación a proveedores"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__stock_picking_ids
+msgid "Stock ids"
+msgstr "ID(S) de stock"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__subject
+msgid "Subject"
+msgstr "Asunto"
+
+#. module: stock_income
+#: model_terms:ir.ui.view,arch_db:stock_income.view_wizard_send_confirmation_to_suppliers
+msgid "Subject..."
+msgstr "Asunto..."
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__subtype_id
+msgid "Subtype"
+msgstr "Subtipo"
+
+#. module: stock_income
+#: code:addons/stock_income/wizard/send_confirmation_to_suppliers.py:0
+#, python-format
+msgid "To confirm that the product or service was received, it must be 'done'"
+msgstr ""
+"Para confirmar que se recibió el producto o servicio este debe estar en "
+"'done'"
+
+#. module: stock_income
+#: model:ir.model,name:stock_income.model_stock_picking
+msgid "Transfer"
+msgstr "Vale"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__message_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__use_active_domain
+msgid "Use active domain"
+msgstr "Usar dominio activo"
+
+#. module: stock_income
+#: model:ir.model.fields,field_description:stock_income.field_send_confirmation_to_suppliers__template_id
+msgid "Use template"
+msgstr "Usar plantilla"
+
+#. module: stock_income
+#: model:ir.model.fields,help:stock_income.field_send_confirmation_to_suppliers__is_log
+msgid "Whether the message is an internal note (comment mode only)"
+msgstr "Si el mensaje es una nota interna (solo en modo comentario)"
+
+#. module: stock_income
+#: code:addons/stock_income/models/stock_income.py:0
+#, python-format
+msgid "sent confirmation to suppliers"
+msgstr "envió confirmación a proveedores"

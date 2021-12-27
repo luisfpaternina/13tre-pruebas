@@ -1,0 +1,539 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_holidays_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-11 21:00+0000\n"
+"PO-Revision-Date: 2021-11-11 21:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holiday_lapse__state__2
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_company__additional_days
+msgid "Additional day of vacation"
+msgstr "Días adicional de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_config_settings__additional_days
+msgid "Additional days"
+msgstr "Días adicionales"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Advance days vacation next month %s"
+msgstr "Anticipo de vacaciones hábiles %s"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Advance holidays next month %s"
+msgstr "Anticipo de vacaciones festivas %s"
+
+#. module: hr_payroll_holidays_history
+#: model:hr.salary.rule.category,name:hr_payroll_holidays_history.category_novelty_holidays
+msgid "Advances"
+msgstr "Anticipos"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_company__after_x_lapse
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_config_settings__after_x_lapse
+msgid "After X lapse"
+msgstr "Después de X periodos"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holidays_history__global_state__approval
+msgid "Approval"
+msgstr "Aprobado"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_form
+msgid "Aprroved"
+msgstr "Aprobar"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__begin_date
+msgid "Begin date"
+msgstr "Fecha inicio"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.hr_payroll_holiday_lapse_form
+msgid "Begin date holidays"
+msgstr "Fecha inicio vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holidays_history__liquidated_period__biweekly
+msgid "Biweekly"
+msgstr "Quincenal"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holiday_lapse__state__1
+msgid "Calculating vacations"
+msgstr "Cálculo de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__comments
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__comments
+msgid "Comments"
+msgstr "Comentarios"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model,name:hr_payroll_holidays_history.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__compensated_days
+msgid "Compensated days"
+msgstr "Días compensados"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__compesated_in_money
+msgid "Compesated in money"
+msgstr "Compesado en dinero"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__is_complete
+msgid "Completed"
+msgstr "Completado"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_form
+msgid "Compute"
+msgstr "Calcular"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model,name:hr_payroll_holidays_history.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.actions.server,name:hr_payroll_holidays_history.ir_cron_create_holiday_lapse_ir_actions_server
+#: model:ir.cron,cron_name:hr_payroll_holidays_history.ir_cron_create_holiday_lapse
+#: model:ir.cron,name:hr_payroll_holidays_history.ir_cron_create_holiday_lapse
+msgid "Create holiday lapse"
+msgstr "Crear período de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__create_uid
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__create_date
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__enjoyment_current_month
+msgid "Days month"
+msgstr "Días del mes"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__enjoyment_next_month
+msgid "Days next month"
+msgstr "Días próximo mes"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_company__days_per_period
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_config_settings__days_per_period
+msgid "Days per period"
+msgstr "Días por periodo"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__days_taken
+msgid "Days taken"
+msgstr "Días tomados"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__display_name
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__display_name
+msgid "Display Name"
+msgstr "Nombre completo"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__document
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__document
+msgid "Document"
+msgstr "Documento"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holidays_history__global_state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model,name:hr_payroll_holidays_history.model_hr_employee
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__employee_id
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.hr_payroll_holiday_lapse_form
+msgid "Employee name"
+msgstr "Nombre empleado"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_form
+msgid "Employee's Name"
+msgstr "Nombre empleado"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__end_date
+msgid "End date"
+msgstr "Fecha final"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.hr_payroll_holiday_lapse_form
+msgid "End date holidays"
+msgstr "Fecha fin vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__enjoyment_days
+msgid "Enjoyment days"
+msgstr "Días disfrutados"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__enjoyment_end_date
+msgid "Enjoyment end date"
+msgstr "Fecha fin disfrute"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__enjoyment_start_date
+msgid "Enjoyment start date"
+msgstr "Fecha inicio disfrute"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Festive holidays %s"
+msgstr "Vacaciones festivas %s"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Festive holidays next month %s"
+msgstr "Vacaciones festivas próximo mes %s"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.ui.menu,name:hr_payroll_holidays_history.menu_holiday_book
+msgid "Holiday Book"
+msgstr "Libro Vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__holiday_lapse
+msgid "Holiday Lapse"
+msgstr "Periodo Vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.actions.act_window,name:hr_payroll_holidays_history.action_hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__holidays_history_ids
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_news__holiday_history_id
+#: model:ir.ui.menu,name:hr_payroll_holidays_history.menu_hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.hr_payroll_holiday_lapse_form
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_form
+msgid "Holiday history"
+msgstr "Historial de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.actions.act_window,name:hr_payroll_holidays_history.action_hr_payroll_holiday_lapse
+#: model:ir.ui.menu,name:hr_payroll_holidays_history.menu_hr_payroll_holiday_lapse
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.hr_payroll_holiday_lapse_form
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_form
+msgid "Holiday lapse"
+msgstr "Periodo vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_employee__holidays_ids
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__holidays
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.bits_hr_holidays_setting
+msgid "Holidays"
+msgstr "Días Festivos"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Holidays %s"
+msgstr "Vacaciones %s"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_config_settings__holiday_structure_ids
+msgid "Holidays Structures"
+msgstr "Estructuras de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__holidays_current_month
+msgid "Holidays current month"
+msgstr "Vacaciones mes actual"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_tree
+msgid "Holidays history"
+msgstr "Historial de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__holidays_next_month
+msgid "Holidays next month"
+msgstr "Vacaciones próximo mes"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Holidays next month %s"
+msgstr "Vacaciones próximo mes %s"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payslip.py:0
+#, python-format
+msgid "Holidays settlement"
+msgstr "Liquidación de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__id
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holiday_lapse__type_vacation__integral
+msgid "Integral"
+msgstr ""
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse____last_update
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__write_uid
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__write_uid
+msgid "Last Updated by"
+msgstr "Última modificación por"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__write_date
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__write_date
+msgid "Last Updated on"
+msgstr "última modificación en"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holiday_lapse__state__3
+msgid "Liquidated"
+msgstr "Liquidado"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__liquidated_period
+msgid "Liquidated period"
+msgstr "Periodo liquidado"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holiday_lapse.py:0
+#: model:ir.model,name:hr_payroll_holidays_history.model_hr_payroll_holiday_lapse
+#, python-format
+msgid "Manages the vacation periods of the collaborators"
+msgstr "Administra los periodos vacacionales de los colaboradores"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_config_settings__maximum_days_compensated
+msgid "Maximum days compesated"
+msgstr "Máximo días compensados"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_company__maximum_days_compensated
+msgid "Minimin days compensated"
+msgstr "Mínimo días compensados"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_company__minimum_days_enjoyed
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_res_config_settings__minimum_days_enjoyed
+msgid "Minimum days enjoyed"
+msgstr "Mínimo días disfrutados"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Money Vacation %s"
+msgstr "Vacaciones en dinero %s"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holidays_history__liquidated_period__month
+msgid "Monthly"
+msgstr "Mensual"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "Must first calculate the sheet."
+msgstr "Primero debe calcular la hoja."
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__name
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holiday_lapse__type_vacation__normal
+msgid "Normal"
+msgstr ""
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__number_holiday_days
+msgid "Number holiday days"
+msgstr "Número días de vacaciones"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid ""
+"Once payroll news is in Liquidated state, It's not allowed to continue."
+msgstr "Hay novedades de nómina en estado liquidado. No se permite continuar"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model,name:hr_payroll_holidays_history.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__payment_date
+msgid "Payments date"
+msgstr "Fecha de pago"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__payroll_news_ids
+msgid "Payroll News"
+msgstr "Novedades"
+
+#. module: hr_payroll_holidays_history
+#: model_terms:ir.ui.view,arch_db:hr_payroll_holidays_history.view_holidays_history_form
+msgid "Payroll news"
+msgstr "Novedades"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__pending_days
+msgid "Pending days"
+msgstr "Días pendientes"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holiday_lapse__type_vacation__electiva
+msgid "Sena electiva"
+msgstr ""
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields.selection,name:hr_payroll_holidays_history.selection__hr_payroll_holiday_lapse__type_vacation__practica
+msgid "Sena practica"
+msgstr ""
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__settlement_month
+msgid "Settlement month"
+msgstr "Mes liquidación"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__state
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__state
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__global_state
+msgid "Status"
+msgstr "Estado"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "The compensated days cannot be more than %s"
+msgstr "Los días compensados no pueden ser más de %s"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "The current period has {0} days to enjoy"
+msgstr "El período actual tiene {0} días para disfrutar"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "The days of enjoyment must be greater than 0"
+msgstr "Los días de disfrute deben ser más de 0"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "The employee must have an active contract"
+msgstr "El empleado debe tener un contrato activo"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holiday_lapse__type_vacation
+msgid "Tipo de vacaciones"
+msgstr ""
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__year
+msgid "Year"
+msgstr "Año"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "You can only enjoy {0} days minimum"
+msgstr "Solo puedes disfrutar mínimo {0} días"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid "You cannot enjoy more than {0} days"
+msgstr "No puedes disfrutar mas de {0} días"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model.fields,field_description:hr_payroll_holidays_history.field_hr_payroll_holidays_history__only_compensated_days
+msgid "You will have only compensated days"
+msgstr "Sólo días compensados"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#, python-format
+msgid ""
+"a vacation history already exists for the employee in the same time period"
+msgstr ""
+"ya existe un historial de vacaciones para el empleado en el mismo período de"
+" tiempo"
+
+#. module: hr_payroll_holidays_history
+#: model:ir.model,name:hr_payroll_holidays_history.model_hr_payroll_news
+msgid "bits_hr_payroll_news.bits_payroll_news"
+msgstr "novedad de nómina"
+
+#. module: hr_payroll_holidays_history
+#: code:addons/hr_payroll_holidays_history/models/hr_payroll_holidays_history.py:0
+#: model:ir.model,name:hr_payroll_holidays_history.model_hr_payroll_holidays_history
+#, python-format
+msgid "module for the respective vacation settlement process"
+msgstr "modulo para el respectivo proceso de liquidación de vacaciones"

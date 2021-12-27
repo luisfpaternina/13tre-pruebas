@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="discount_table_01" model="discount.table">
+            <field name="name">Descuento 01</field>
+            <field name="code">01</field>
+            <field name="min_quantity">0.0</field>
+            <field name="max_quantity">10.0</field>
+            <field name="min_discount">0.0</field>
+            <field name="max_discount">1</field>
+        </record>
+
+        <record id="discount_table_02" model="discount.table">
+            <field name="name">Descuento 02</field>
+            <field name="code">02</field>
+            <field name="min_quantity">11.0</field>
+            <field name="max_quantity">50.0</field>
+            <field name="min_discount">1.10</field>
+            <field name="max_discount">4.0</field>
+        </record>
+
+        <record id="discount_table_03" model="discount.table">
+            <field name="name">Descuento 03</field>
+            <field name="code">03</field>
+            <field name="min_quantity">51.0</field>
+            <field name="max_quantity">100.0</field>
+            <field name="min_discount">4.10</field>
+            <field name="max_discount">7.0</field>
+        </record>
+
+        <record id="discount_table_04" model="discount.table">
+            <field name="name">Descuento 04</field>
+            <field name="code">04</field>
+            <field name="min_quantity">101.0</field>
+            <field name="max_quantity">200.0</field>
+            <field name="min_discount">7.10</field>
+            <field name="max_discount">8.0</field>
+        </record>
+
+        <record id="discount_table_05" model="discount.table">
+            <field name="name">Descuento 05</field>
+            <field name="code">05</field>
+            <field name="min_quantity">201.0</field>
+            <field name="max_quantity">1000.0</field>
+            <field name="min_discount">8.10</field>
+            <field name="max_discount">9.0</field>
+        </record>
+    </data>
+</odoo>

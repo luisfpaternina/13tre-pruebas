@@ -1,0 +1,17 @@
+id,name,sequence,active
+l10n_co.tax_group_co_iva_1,IVA,0,1
+l10n_co.tax_group_co_ic_1,IC,0,1
+l10n_co.tax_group_co_ica_1,ICA,0,1
+l10n_co.tax_group_co_inc_1,INC,0,1
+l10n_co.tax_group_co_r_iva_1,ReteIVA,0,1
+l10n_co.tax_group_co_r_fte_1,ReteFuente,0,1
+l10n_co.tax_group_co_r_ica_1,ReteICA,0,1
+l10n_co.tax_group_co_fto_hort_1,FtoHorticultura,0,1
+l10n_co.tax_group_co_tim_1,Timbre,0,1
+l10n_co.tax_group_co_bols_1,Bolsas,0,1
+l10n_co.tax_group_co_incarb_1,INCarbono,0,1
+l10n_co.tax_group_co_incom_1,INCombustibles,0,1
+l10n_co.tax_group_co_sobr_comb_1,Sobretasa Combustibles,0,1
+l10n_co.tax_group_co_sord_1,Sordicom,0,1
+l10n_co.tax_group_co_n_causa_1,No causa,0,1
+l10n_co.tax_group_co_nft_1,No aplica,0,1

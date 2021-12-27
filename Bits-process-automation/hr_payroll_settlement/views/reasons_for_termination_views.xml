@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="reasons_for_termination_tree">
+            <field name="name">Reasons for termination</field>
+            <field name="model">reasons.for.termination</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="salary_structure"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="reasons_for_termination_form">
+            <field name="name">Reasons for termination</field>
+            <field name="model">reasons.for.termination</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="salary_structure"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_reasons_for_termination">
+            <field name="name">Reasons for termination</field>
+            <field name="res_model">reasons.for.termination</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="menu_reasons_for_termination"
+            name="Reasons for termination"
+            parent="hr_payroll_liquidation_category_menu"
+            action="action_reasons_for_termination"
+            sequence="4"
+        />
+
+    </data>
+</odoo>

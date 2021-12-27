@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="actions_restrict_approval" model="ir.actions.restrict">
+            <field name="name">Payroll Approval Restrict</field>
+            <field name="model">hr.payslip</field>
+            <field name="action_name">approve_payroll</field>
+            <field name="action_code">APR</field>
+            <field name="message_show">You don't have permission to execute this action</field>
+        </record>
+        <record id="actions_restrict_not_approval" model="ir.actions.restrict">
+            <field name="name">Payroll Non-approval Restrict</field>
+            <field name="model">hr.payslip</field>
+            <field name="action_name">not_approve_payroll</field>
+            <field name="action_code">APNR</field>
+            <field name="message_show">You don't have permission to execute this action</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="depreciation_asset_collective_wizard">
+        <field name="name">depreciation.asset.collective.wizard.form</field>
+        <field name="model">depreciation.asset.collective</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div>Select the date until which the depreciation process is real</div>
+                    <group>
+                        <field name="depreciation_date" required="1"/>
+                        <field name="assets_depreciate" widget="radio"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Depreciate" name="depreciation_asset" type="object" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_depreciation_asset_collective_wizard" model="ir.actions.act_window">
+        <field name="name">Depreciation Collective Asset</field>
+        <field name="res_model">depreciation.asset.collective</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="depreciation_asset_collective_wizard"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem parent="account.menu_finance_entries_management" id="manu_action_depreciation_asset_collective" action="action_depreciation_asset_collective_wizard" sequence="101" groups="account.group_account_manager"/>
+</odoo>

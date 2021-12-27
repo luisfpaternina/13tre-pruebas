@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="ir.actions.restrict" id="ir_actions_restrict_ir_01">
+            <field name="name">Envio de solicitud interna de contratación</field>
+            <field name="model">hr.employee.internal.request</field>
+            <field name="action_code">IRS</field>
+            <field name="action_name">action_ir_applicant</field>
+            <field name="message_show">No tienes permisos para reenviar la solicitud</field>
+            <field name="description">Aquí se configuran los grupos con las usuarios que tendran privilegios para reenviar una solicitud interna de contratación</field>
+        </record>
+
+        <record model="ir.actions.restrict" id="ir_actions_restrict_ir_02">
+            <field name="name">Devolucion de solicitud interna de contratación</field>
+            <field name="model">hr.employee.internal.request</field>
+            <field name="action_code">IRGTH</field>
+            <field name="action_name">action_ir_human_resource</field>
+            <field name="message_show">No tienes permisos para gestionar esta etapa</field>
+            <field name="description">Aquí se configuran los grupos con las usuarios que tendran privilegios para devolver una solicitud interna de contratación</field>
+        </record>
+    </data>
+</odoo>

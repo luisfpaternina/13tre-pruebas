@@ -1,0 +1,21 @@
+id,code,name,salary_structure
+reason_crla,CRLA,CAMBIO DE REGIMEN LABORAL A INTEGRAL,Liquidación general normal
+reason_dcjc_nor,DCJC-NOR,DESPIDO CON JUSTA CAUSA (NORMAL),Liquidación general normal
+reason_dcjc_int,DCJC-INT,DESPIDO CON JUSTA CAUSA (INTEGRAL),Liquidación general integral
+reason_dsjc_nor,DSJC-NOR,DESPIDO SIN JUSTA CAUSA (NORMAL),Despido sin justa causa (Normal)
+reason_dsjc_int,DSJC-INT,DESPIDO SIN JUSTA CAUSA (INTEGRAL),Despido sin justa causa (Integral)
+reason_ft_nor,FT-NOR,FALLECIMIENTO TRABAJADOR (NORMAL),Liquidación general normal
+reason_ft_int,FT-INT,FALLECIMIENTO TRABAJADOR (INTEGRAL),Liquidación general integral
+reason_ma_nor,MA-NOR,MUTUO ACUERDO (NORMAL),Liquidación general normal
+reason_ma_int,MA-INT,MUTUO ACUERDO (INTEGRAL),Liquidación general integral
+reason_penv_nor,PENV-NOR,PENSION VEJEZ (NORMAL),Liquidación general normal
+reason_penv_int,PENV-INT,PENSION VEJEZ (INTEGRAL),Liquidación general integral
+reason_pdp_nor,PDP-NOR,PERIODO DE PRUEBA (NORMAL),Liquidación general normal
+reason_pdp_int,PDP-INT,PERIODO DE PRUEBA (INTEGRAL),Liquidación general integral
+reason_ren_nor,REN-NOR,RENUNCIA (NORMAL),Liquidación general normal
+reason_ren_int,REN-INT,RENUNCIA (INTEGRAL),Liquidación general integral
+reason_sp_nor,SP-NOR,SUSTITUCION PATRONAL (NORMAL),Liquidación general normal
+reason_sp_int,SP-INT,SUSTITUCION PATRONAL (INTEGRAL),Liquidación general integral
+reason_trp,TRP,TERMINACION RELACION PASANTIA,Liquidación general normal
+reason_venc_nor,VENC-NOR,VENCIMIENTO CONTRATO (NORMAL),Liquidación general normal
+reason_venc_int,VENC-INT,VENCIMIENTO CONTRATO (INTEGRAL),Liquidación general integral

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_invoice_document"  inherit_id="account.report_invoice_document">
+            <xpath expr="//div[@id='informations']" position="replace">
+                <div id="informations" class="row mt32 mb32">
+                    <div class="col-auto mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
+                        <strong>Invoice Date:</strong>
+                        <p class="m-0" t-field="o.invoice_date"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.invoice_date_due and o.type == 'out_invoice' and o.state == 'posted'" name="due_date">
+                        <strong>Due Date:</strong>
+                        <p class="m-0" t-field="o.invoice_date_due"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.invoice_origin" name="origin">
+                        <strong>Source:</strong>
+                        <p class="m-0" t-field="o.invoice_origin"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.partner_id.ref" name="customer_code">
+                        <strong>Customer Code:</strong>
+                        <p class="m-0" t-field="o.partner_id.ref"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.ref" name="reference">
+                        <strong>Reference:</strong>
+                        <p class="m-0" t-field="o.ref"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.credit and o.credit_payment" name="reference">
+                        <strong>Type Credit:</strong>
+                        <p class="m-0" t-field="o.credit.credit_type_id.name"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.credit and o.credit_payment" name="reference">
+                        <strong>Credit Number:</strong>
+                        <p class="m-0" t-field="o.credit.number_credit"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.credit and o.credit_payment" name="reference">
+                        <strong>Sponsoring Entity:</strong>
+                        <p class="m-0" t-field="o.credit.sponsoring_entity_id.name"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2" t-if="o.credit and o.credit_payment" name="reference">
+                        <strong>Term Months:</strong>
+                        <p class="m-0" t-field="o.credit.term_months"/>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+        <template id="report_invoice_with_payments" inherit_id="account.report_invoice_with_payments">
+            <xpath expr='//t[@t-call="web.html_container"]' position="replace">
+                <t t-call="web.html_container">
+                    <t t-foreach="docs" t-as="o">
+                        <t t-set="lang" t-value="o.invoice_user_id.sudo().lang if o.type in ('in_invoice', 'in_refund') else o.partner_id.lang"/>
+                        <t t-call="sale_credit_custom.report_invoice_document" t-lang="lang"/>
+                    </t>
+                </t>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

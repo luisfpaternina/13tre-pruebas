@@ -1,0 +1,547 @@
+<odoo>
+    <data>
+        <template id="hr_recruitment_profile_report_header">
+            <div class="header">
+                <div class="row" style="border: 1px solid #000;">
+                    <div class="col-3 text-left" style="max-height:60px;margin-bottom:1px;margin-top:1px;border-right:1px solid #000;">
+                        <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo" height="60"/>
+                    </div>
+                    <div class="col-5 text-center" style="border-right:1px solid #000;">
+                        <h6>DESCRIPTION PROFILE OF THE POSITION</h6>
+                    </div>
+                    <div class="col-4 text-left">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <span>Code: THCSFO01</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center" style="border-top:1px solid #000;">
+                                <span>Date:</span>
+                                <span t-esc="o._get_format_date_document()"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="border: 1px solid #000; border-top:0px;">
+                    <div class="col-3 text-left" style="border-right:1px solid #000;">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                               Page
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="page"/>
+                            </li>
+                            <li class="list-inline-item">Of</li>
+                            <li class="list-inline-item">
+                                <span class="topage"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-5 text-center" style="border-right:1px solid #000;">
+                        <span>Human Talent</span>
+                    </div>
+                    <div class="col-4 text-center">
+                        <span>Version: </span>
+                        <span t-esc="o._get_last_version_document()"/>
+                    </div>
+                </div>
+            </div>
+            <div t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+                <t t-raw="0" />
+            </div>
+        </template>
+        <template id="hr_recruitment_profile_report_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="hr_recruitment_profile_report.hr_recruitment_profile_report_header">
+                        <div class="page">
+                            <div class="container" align="center">
+                                <div id="section_identification_position">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h4>I.JOB IDENTIFICATION</h4>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_identification">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>1.1 IDENTIFICATION</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>POSITION: </span>
+                                                <span t-field="o.name"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_organizational_position">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>1.2 ORGANIZATIONAL POSITION</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>AREA: </span>
+                                                <span t-field="o.department_id.name"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>LEADING POSITION: </span>
+                                                <span t-field="o.department_id.manager_id.name"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div id="section_profesional_profile">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h4>II. PROFESIONAL PROFILE</h4>
+                                        </div>
+                                    </div>
+                                    <div id="section_vocational_training">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>2.1 VOCATIONAL TRAINING</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Job Level: </b>
+                                                </span>
+                                                <span t-field="o.job_level"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Education: </b>
+                                                </span>
+                                                <span t-field="o.education"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Aprenticeship: </b>
+                                                </span>
+                                                <span t-field="o.apprenticeship"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_professional_experience">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>2.2 PROFESIONAL EXPERIENCE</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Total Time: </b>
+                                                </span>
+                                                <span t-field="o.total_time"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Skills: </b>
+                                                </span>
+                                                <span t-field="o.skills"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Specific Time: </b>
+                                                </span>
+                                                <span t-field="o.specific_time"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_idioms">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>2.3 IDIOMS</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <table class="table table-bordered table-sm" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>IDIOM</th>
+                                                            <th>READING</th>
+                                                            <th>WRITING</th>
+                                                            <th>SPEAKING</th>
+                                                            <th>LISTENING</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr t-foreach="o.language_ids" t-as="line">
+                                                            <td>
+                                                                <span t-field="line.language.name"/>
+                                                            </td>
+                                                            <td>
+                                                                <span t-field="line.reading.name"/>
+                                                            </td>
+                                                            <td align="right">
+                                                                <span t-field="line.writing.name"/>
+                                                            </td>
+                                                            <td align="right">
+                                                                <span t-field="line.speaking.name"/>
+                                                            </td>
+                                                            <td align="right">
+                                                                <span t-field="line.listening.name"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div id="section_position_information">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h4>III. POSITION INFORMATION</h4>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_object_position">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>3.1 OBJECT OF THE POSITION</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span t-field="o.job_objectives"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_supervision">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>3.2 SUPERVISION</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span t-field="o.supervision"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_job_functions">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>3.3 JOB FUNCTIONS</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span t-field="o.job_functions"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_position_responsabilities">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>3.4 POSITION RESPONSIBILITIES</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <table class="table table-bordered table-sm" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>CHARGE RESPONSABILITIES</th>
+                                                            <th>QUALIFICATION</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr t-foreach="o.responsabilities_charge_ids" t-as="line">
+                                                            <td>
+                                                                <span t-field="line.responsabilities_id.name"/>
+                                                            </td>
+                                                            <td>
+                                                                <span t-field="line.calification"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_replacements_oportuniti">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>3.5 REPLACEMENTS</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Replaces To: </b>
+                                                </span>
+                                                <span t-field="o.replaces_to.name"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Replaced By: </b>
+                                                </span>
+                                                <span t-field="o.replaced_by.name"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_technology_tools">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>3.6 TECHNOLOGY TOOLS</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Software: </b>
+                                                </span>
+                                                <span t-field="o.software"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Hardware: </b>
+                                                </span>
+                                                <span t-field="o.hardware"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Additional Elements: </b>
+                                                </span>
+                                                <span t-field="o.additional_elements"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_competences">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>3.7 COMPETENCES</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <table class="table table-bordered table-sm">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>ORGANIZATIONAL COMPETENCES</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr t-foreach="o.organizational_competencies_ids" t-as="line">
+                                                            <td>
+                                                                <span t-field="line.organizational_competencies_id"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <table class="table table-bordered table-sm" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>TECHNICAL AND TECHNOLOGICAL COMPETENCES</th>
+                                                            <th>QUALIFICATION</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr t-foreach="o.technical_technological_competencies_ids" t-as="line">
+                                                            <td>
+                                                                <span t-field="line.technical_competencies_id"/>
+                                                            </td>
+                                                            <td>
+                                                                <span t-field="line.calification"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <table class="table table-bordered table-sm" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>COMPETENCES FOR POSITIONS WITH PERSONNEL IN CHARGE</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr t-foreach="o.positions_charge_competencies_ids" t-as="line">
+                                                            <td>
+                                                                <span t-field="line.position_in_charge_ids"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <table class="table table-bordered table-sm" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SPECIFIC COMPETENCES OF THE POSITION</th>
+                                                            <th>QUALIFICATION</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr t-foreach="o.specific_competencies_ids" t-as="line">
+                                                            <td>
+                                                                <span t-field="line.specific_id"/>
+                                                            </td>
+                                                            <td>
+                                                                <span t-field="line.calification"/>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div id="section_consideration_performace_position">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h4>IV. CONSIDERATION FOR THE PERFORMANCE OF THE POSITION</h4>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div id="section_working_conditions">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>4.1 WORKING CONDITIONS</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="section_responsabilities_safety_health_work">
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>4.2 RESPONSIBILITIES FOR SAFETY AND HEALTH AT WORK</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>Partners SST Responsabilities: </b>
+                                                </span>
+                                                <span t-field="o.partners_sst_responsibilities"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-left">
+                                                <span>
+                                                    <b>SST Responsabilities With Dependants: </b>
+                                                </span>
+                                                <span t-field="o.sst_responsibilities_with_dependants"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div id="section_control_version">
+                                    <div class="row">
+                                        <div class="col-12 text-left">
+                                            <table class="table table-bordered table-sm" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="3">CONTROL VERSION</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-center">VERSION</th>
+                                                        <th class="text-center">REASON</th>
+                                                        <th class="text-center">DATE</th>
+                                                    </tr>
+                                                    <tr t-foreach="o.document_version_ids" t-as="line">
+                                                        <td class="text-center">
+                                                            <span t-esc="line.version"/>
+                                                        </td>
+                                                        <td>
+                                                            <span t-field="line.description"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-field="line.version_date"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+        <report id="recruitment_profile_report" model="hr.job" string="Profile Report" report_type="qweb-pdf" name="hr_recruitment_profile_report.hr_recruitment_profile_report_template" file="hr_recruitment_profile_report.hr_recruitment_profile_report_template" print_report_name="'Profile Report - %s' % (object.name)" />
+    </data>
+</odoo>

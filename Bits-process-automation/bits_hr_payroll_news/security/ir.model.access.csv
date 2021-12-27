@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_employee_payroll_news,access_hr_employee_payroll_news,model_hr_employee_payroll_news,base.group_user,1,1,1,1
+access_hr_payroll_news,access_hr_payroll_news,model_hr_payroll_news,base.group_user,1,1,1,1
+access_hr_payroll_news_stage,access_hr_payroll_news_stage,model_hr_payroll_news_stage,base.group_user,1,1,1,1

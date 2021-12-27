@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="bits_security_accounting_administrative_manager" model="res.groups">
+            <field name="name">Accounting Administrative Manager</field>
+            <field name="category_id" ref="base.module_category_accounting_accounting"/>
+            <field name="menu_access" eval="[(4,ref('account.menu_finance_entries')),(4,ref('account.menu_finance_entries_management')),(4,ref('account_accountant.menu_accounting')),(4,ref('account_budget.menu_act_crossovered_budget_view'))]"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_cron_response_dian" model="ir.cron">
+        <field name="name">Response Dian Validation</field>
+        <field name="active" eval="False" />
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field name="nextcall" eval="((DateTime.now().replace(day=1) + relativedelta(months=1)) - relativedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')" />
+        <field name="doall" eval="False"/>
+        <field name="model_id" ref="model_hr_payslip"/>
+        <field name="code">model.cron_dian_state_payslip()</field>
+        <field name="state">code</field>
+    </record>
+</odoo>

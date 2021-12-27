@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="account_format_exogenus_from_view">
+            <field name="name">account.format.exogenus.from.view</field>
+            <field name="model">account.format.exogenus</field>
+            <field eval="3" name="priority"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title pr-0">
+                            <label for='name'>name</label>
+
+                            <h2>
+                                <field name="name" required="1"/>
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="partner_report" widget="boolean_toggle"/>
+                                <field name="bool_lesser_amount" widget="boolean_toggle"/>
+                                <field name="bool_amount" widget="boolean_toggle"/>
+                            </group>
+                            <group>
+                                <field name="description"/>
+                                <field name="format_type"/>
+                                <field name="bool_concept" widget="boolean_toggle"/>
+                            </group>
+                        </group>
+                        <group>
+                           
+                        </group>
+                        <notebook>
+                            <page name="info_colums" string="Account-column">
+                                <field name="account_column_ids">
+                                    <tree editable="botttom">
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="account_column_id" required="True" options="{'no_create': True, 'no_create_edit':True}"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="account_format_exogenus_tree_view" model="ir.ui.view">
+            <field name="name">account.format.exogenus.tree.view</field>
+            <field name="model">account.format.exogenus</field>
+            <field eval="101" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Exogenus Fromat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="format_type"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="format_exogenus_action" model="ir.actions.act_window">
+            <field name="name">Format Exogenus</field>
+            <field name="res_model">account.format.exogenus</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem 
+            id="account_exogenus_menu" 
+            name="Exogenus information" 
+            parent="account.menu_finance_configuration" 
+            sequence="150" 
+            groups="account.group_account_manager"/>
+
+        <menuitem 
+            id="account_format_exogenus_menu" 
+            action="account_exogenus_settings.format_exogenus_action" 
+            sequence="151" parent="account_exogenus_settings.account_exogenus_menu" 
+            name="Format Exogenus" 
+            groups="account.group_account_manager"/>
+            
+    </data>
+</odoo>

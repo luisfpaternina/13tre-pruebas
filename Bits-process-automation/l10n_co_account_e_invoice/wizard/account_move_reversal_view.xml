@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_co_view_account_move_reversal" model="ir.ui.view">
+            <field name="name">l10n_co.account.move.reversal.form</field>
+            <field name="model">account.move.reversal</field>
+            <field name="inherit_id" ref="account.view_account_move_reversal"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='reason']" position="before">
+                    <field
+                        name="_type"
+                        attrs="{'invisible': [('move_type', 'not in', ('out_invoice', 'out_refund'))]}"/>
+                    <field
+                        name="description_code_debit"
+                        attrs="{'invisible': [('_type', '!=', 'debit_note')]}"/>
+                    <field
+                        name="description_code_credit"
+                        attrs="{'invisible': [('_type', '!=', 'credit_note')]}"/>
+                </xpath>
+                <xpath expr="//field[@name='refund_method']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('move_type', 'in', ('out_invoice', 'out_refund', 'out_receipt'))]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='reason']" position="attributes">
+                    <attribute name="attrs">{'invisible': [('move_type', 'in', ('out_invoice', 'out_refund', 'out_receipt'))]}</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

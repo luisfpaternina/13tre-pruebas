@@ -1,0 +1,110 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* security_restrict_action_function
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-04 17:21+0000\n"
+"PO-Revision-Date: 2020-09-04 12:26-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__action_code
+msgid "Action Code"
+msgstr "Código de Acción"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__action_name
+msgid "Action Name"
+msgstr "Nombre de Acción"
+
+#. module: security_restrict_action_function
+#: model:ir.actions.act_window,name:security_restrict_action_function.action_ir_restrict_actions
+#: model:ir.ui.menu,name:security_restrict_action_function.menu_ir_restrict_actions
+msgid "Actions Restrictions"
+msgstr "Retricción de Acciones"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__create_date
+msgid "Created on"
+msgstr "Creado En"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__display_name
+msgid "Display Name"
+msgstr "Nombre Completo"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__groups_access_ids
+msgid "Groups Access"
+msgstr "Grupos con Acceso"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__id
+msgid "ID"
+msgstr ""
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__message_show
+msgid "Message to Show"
+msgstr "Mensaje a Mostrar"
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__model
+msgid "Model"
+msgstr "Modelo"
+
+#. module: security_restrict_action_function
+#: model_terms:ir.ui.view,arch_db:security_restrict_action_function.ir_actions_restrict_tree
+msgid "Retentions"
+msgstr "Retención"
+
+#. module: security_restrict_action_function
+#: model:ir.model,name:security_restrict_action_function.model_ir_actions_restrict
+msgid "ir.actions.restrict"
+msgstr ""
+
+#. module: security_restrict_action_function
+#: model:ir.model.fields,field_description:security_restrict_action_function.field_ir_actions_restrict__name
+#: model_terms:ir.ui.view,arch_db:security_restrict_action_function.ir_actions_restrict_view_form
+msgid "name"
+msgstr "Nombre"

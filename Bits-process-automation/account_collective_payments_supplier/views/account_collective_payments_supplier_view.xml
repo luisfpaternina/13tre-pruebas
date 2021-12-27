@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Begin View Tree-->
+        <record id="account_collective_payments_supplier_tree" model="ir.ui.view">
+            <field name="name">account.collective.payments.supplier.tree</field>
+            <field name="model">account.collective.payments.supplier</field>
+            <field name="arch" type="xml">
+
+                <tree string="Payments to Suppliers" create="false" edit="false">
+                    <field name="name"/>
+                    <field name="payment_date" />
+                    <field name="journal_id" />
+                    <field name="company_id" />
+                    <field name="amount" />
+                </tree>
+
+            </field>
+        </record>
+        <!--End View Tree-->
+
+        <!--Begin View Form-->
+        <record id="account_collective_payments_supplier_form" model="ir.ui.view">
+            <field name="name">account.collective.payments.supplier.form</field>
+            <field name="model">account.collective.payments.supplier</field>
+            <field name="arch" type="xml">
+
+                <form string="Payments to Suppliers" class="o_form_project_tasks" create="false">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" name="payments_view" icon="fa-list-ol" type="object">
+                                <field string="Payments" name="payments_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="journal_id"/>
+                                <field name="company_id"/>
+                                <label for="amount"/>
+                                <div name="amount_div" class="o_row">
+                                    <field name="amount"/>
+                                    <field name="currency_id" options="{'no_create': True, 'no_open': True}" groups="base.group_multi_currency"/>
+                                </div>
+                            </group>
+                            <group>
+                                <field name="payment_date"/>
+                                <field name="payment_way_dian_id"/>
+                                <field name="payment_method_dian_id"/>
+                                <field name="payment_type" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+        <!--End View Form-->
+
+    </data>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="account.payment.flow.stage" id="stage_payment_flow_1">
+            <field name="name">Prepare Payment</field>
+            <field name="sequence">1</field>
+        </record>
+        <record model="account.payment.flow.stage" id="stage_payment_flow_2">
+            <field name="name">Outstanding</field>
+            <field name="sequence">2</field>
+        </record>
+        <record model="account.payment.flow.stage" id="stage_payment_flow_3">
+            <field name="name">Register Payment</field>
+            <field name="fold" eval="False"/>
+            <field name="sequence">3</field>
+        </record>
+        <record model="account.payment.flow.stage" id="stage_payment_flow_4">
+            <field name="name">Paid Out</field>
+            <field name="close">True</field>
+            <field name="sequence">4</field>
+        </record>
+    </data>
+</odoo>

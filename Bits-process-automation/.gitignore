@@ -1,0 +1,14 @@
+# ---> Python
+__pycache__/
+*.py[cod]
+*$py.class
+.scannerwork
+.scannerwork/*.txt
+.scannerwork/.sonar_lock
+VersionNumberAnalysis.txt
+.directory
+*.sh
+*.odt
+*.pdf
+*.ods
+Sprints/

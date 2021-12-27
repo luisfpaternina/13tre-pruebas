@@ -1,0 +1,54 @@
+<templates id="design_receipt_pos" heritage_id="point_of_sale.template">
+    <t t-extend="OrderReceipt">
+        <t t-jquery=".pos-receipt-contact" t-operation="replace">
+            <div class="pos-receipt-contact">
+                <t t-if='receipt.company.contact_address'>
+                    <div><t t-esc='receipt.company.contact_address' /></div>
+                </t>               
+                <t t-if='receipt.company.vat'>
+                    <div><t t-esc='receipt.company.vat_label'/>:<t t-esc='receipt.company.vat' /></div>
+                </t>
+                 <t t-if='receipt.street'>
+                    <div><t t-esc='receipt.street'/></div>
+                </t>
+                <t t-if='receipt.company.phone'>
+                    <div>Tel:<t t-esc='receipt.company.phone'/></div>
+                </t>
+                <t t-if='receipt.company.email'>
+                    <div><t t-esc='receipt.company.email'/></div>
+                </t>
+                <t t-if='receipt.company.website'>
+                    <div><t t-esc='receipt.company.website'/></div>
+                </t> 
+                <t t-if='receipt.header_html'>
+                    <t t-raw='receipt.header_html'/>
+                </t>
+                <t t-if='!receipt.header_html and receipt.header'>
+                    <div><t t-esc='receipt.header' /></div>
+                </t>
+                <div>--------------------------------</div>
+                <div class="pos-receipt-text-left"><t t-esc='receipt.name' /></div>
+                <t t-if="receipt.l10n_co_dian !== false">
+                    <div class="pos-receipt-text-left" style="word-wrap:break-word;"><t t-esc="receipt.l10n_co_dian"/></div>
+                </t>
+                <div class="pos-receipt-text-left"><t t-esc='receipt.date.localestring' /></div>
+                <br/>
+                <t t-if='receipt.client'>
+                    <div class="pos-receipt-text-left"><t t-esc='receipt.client'/></div>
+                </t> 
+                <t t-if='receipt.client_vat'>
+                    <div class="pos-receipt-text-left">
+                        <t t-esc='receipt.client_l10n_co_document_type'/>:<t t-esc='receipt.client_vat'/>
+                    </div>
+                </t>
+                <br/>              
+                <t t-if='receipt.cashier'>
+                    <div class='cashier'>                        
+                        <div class="pos-receipt-text-left">Vendedor <t t-esc='receipt.cashier' /></div>
+                    </div>
+                </t>
+            </div>
+        </t> 
+        <t t-jquery='.pos-receipt-order-data' t-operation='replace'></t>
+    </t>
+</templates>

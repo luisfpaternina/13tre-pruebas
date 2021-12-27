@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+            string="Bits - Purchase Order" 
+            id="action_report_custom_purchase_order" 
+            model="purchase.order"
+            report_type="qweb-pdf"
+            name="bits_purchase_order_template.report_custom_purchaseorder" 
+            file="bits_purchase_order_template.report_custom_purchaseorder"
+            print_report_name="('Purchase Order - %s' % (object.name))"
+        />
+    </data>
+</odoo>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_salary_rule_account_form" model="ir.ui.view">
+        <field name="name">hr_salary_rule_account_form</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="inherit_id" ref="hr_payroll_account.hr_salary_rule_view_form"></field>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group[@colspan='4']" position="before">
+                <separator string="Accounts"/>
+                <field name="salary_rule_account_ids" nolabel="1">
+                    <tree editable="bottom">
+                        <field name="salary_rule_id" invisible="1" />
+                        <field name="account_account_id" />
+                        <field name="account_analytic_id" />
+                        <field name="account_type" />
+                        <field name="social_security_id"/>
+                    </tree>
+                </field>
+            </xpath>
+
+            <xpath expr="//field[@name='account_debit']" position="replace">
+                <field name="account_debit" invisible="1" />
+            </xpath>
+
+            <xpath expr="//field[@name='account_credit']" position="replace">
+                <field name="account_credit" invisible="1" />
+            </xpath>
+
+            <xpath expr="//field[@name='analytic_account_id']" position="replace">
+                <field name="analytic_account_id" invisible="1" />
+            </xpath>
+
+            <xpath expr="//field[@name='appears_on_payslip']" position="after">
+                <field name="search_parafiscales"/>
+                <field name="applies_all_cost_center"/>
+            </xpath>
+
+            <xpath expr="//field[@name='active']" position="after">
+                <field name="import_code"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_rule_account_tree" model="ir.ui.view">
+        <field name="name">hr.rule.account.tree</field>
+        <field name="model">hr.salary.rule.account</field>
+        <field eval="100" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Accounting Salary Rules Accounts">
+                <field name="salary_rule_id"/>
+                <field name="struct_id"/>
+                <field name="account_account_id"/>
+                <field name="account_analytic_id"/>
+                <field name="account_type"/>
+                <field name="social_security_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="hr_rule_account_search" model="ir.ui.view">
+        <field name="name">hr.rule.account.search</field>
+        <field name="model">hr.salary.rule.account</field>
+        <field name="arch" type="xml">
+            <search string="Salary Rule Account">
+                <field name="account_analytic_id"/>
+                <field name="account_account_id"/>
+                <field name="social_security_id"/>
+                <field name="salary_rule_id"/>
+            </search>
+        </field>
+    </record>
+    <record id="action_hr_rule_account_tree" model="ir.actions.act_window">
+        <field name="name">Accounting Salary Rules Accounts</field>
+        <field name="res_model">hr.salary.rule.account</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Accounting Salary Rules Accounts
+            </p>
+        </field>
+        <field name="search_view_id" ref="hr_rule_account_search" />
+    </record>
+    <menuitem id="menu_hr_rule_account" action="action_hr_rule_account_tree" parent="hr_payroll.menu_hr_salary_configuration" name="Accounting Salary Rules Accounts" />
+</odoo>

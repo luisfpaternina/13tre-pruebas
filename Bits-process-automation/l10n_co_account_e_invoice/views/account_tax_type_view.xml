@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tax_rates_view_tree" model="ir.ui.view">
+            <field name="name">Tax rates</field>
+            <field name="model">account.tax.type</field>
+            <field name="arch" type="xml">
+                <tree string="Tax rates">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="retention"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="tax_rates_form_view" model="ir.ui.view">
+            <field name="name">Tax rates</field>
+            <field name="model">account.tax.type</field>
+            <field name="arch" type="xml">
+                <form string="Tax rates">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" type="object" name="get_tax" icon="fa-th-list">
+                                <field string="Taxes" name="count_tax" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code" autocomplete="off" required="True"/>
+                                <field name="name" autocomplete="off" required="True"/>
+                                <field name="retention"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_tax_rates_view_tree">
+            <field name="name">Tax rates</field>
+            <field name="res_model">account.tax.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="menuitem_tax_rates"
+            parent="account.account_invoicing_menu"
+            name="Tax rates"
+            action="action_tax_rates_view_tree"
+            sequence="7"
+        />
+    </data>
+</odoo>

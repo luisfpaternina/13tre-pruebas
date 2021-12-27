@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="hr_payroll_uvt_range_view">
+        <field name="name">hr.payroll.uvt.range.view</field>
+        <field name="model">hr.payroll.uvt.range</field>
+        <field eval="4" name="priority"/>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title pr-0">
+                        <label for='name'>name</label>
+
+                        <h2>
+                            <field name="name" required="1"/>
+                        </h2>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="is_superior_uvt"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <label for="percentage"/>
+                            <div>
+                                <field name="percentage"/>
+                                <span class="o_form_label oe_inline">%</span>
+                            </div>
+                            <field name="uvt_amount_subtract"/>
+                        </group>
+                        <group>
+                            <field name="uvt_quantity"/>
+                            <field name="uvt_amount_add"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_payroll_uvt_range_tree" model="ir.ui.view">
+        <field name="name">"hr.payroll.uvt.range.tree</field>
+        <field name="model">hr.payroll.uvt.range</field>
+        <field eval="100" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="UVT Range">
+                <field name="name"/>
+                <field name="percentage"/>
+                <field name="uvt_amount_subtract"/>
+                <field name="uvt_quantity"/>
+                <field name="uvt_amount_add"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_uvt_range" model="ir.actions.act_window">
+        <field name="name">UVT Range Configuration</field>
+        <field name="res_model">hr.payroll.uvt.range</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Define UVT Range
+            </p>
+        </field>
+    </record>
+    <menuitem id="menu_uvt_range" action="action_uvt_range" parent="hr_payroll_employee_retention.menu_parameters_retention_configuration" name="UVT Range Configuration" />
+</odoo>

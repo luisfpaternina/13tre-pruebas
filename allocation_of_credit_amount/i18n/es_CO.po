@@ -1,0 +1,554 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* allocation_of_credit_amount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-13 19:53+0000\n"
+"PO-Revision-Date: 2021-12-13 14:59-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit__state__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: allocation_of_credit_amount
+#: model:ir.module.category,name:allocation_of_credit_amount.module_allocation_of_credit_amount
+msgid "Allocation of Credit"
+msgstr "Asignación de Crédito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit__modality__amortized
+msgid "Amortized"
+msgstr "Amortizado"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__amount_to_be_paid
+msgid "Amount To Be Paid"
+msgstr "Cantidad A Pagar"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid ""
+"An error has occurred while formatting your followup letter/email. (Lang: %s, Followup "
+"Level: #%s) \n"
+"\n"
+"Full error description: %s"
+msgstr ""
+"Ocurrió un error al dar formato a tu carta/correo de seguimiento. (Lang: %s, Followup "
+"level: #%s)\n"
+"\n"
+"Descripción del seguimiento: %s"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__available_balance
+msgid "Available Balance"
+msgstr "Saldo disponible"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__bank_interest
+msgid "Bank Interest"
+msgstr "Intereses"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__credit_limit
+msgid "Base Value of Credit"
+msgstr "Valor Base del Credito"
+
+#. module: allocation_of_credit_amount
+#: model_terms:ir.ui.view,arch_db:allocation_of_credit_amount.credit_form_view
+msgid "Calculate"
+msgstr "Calcular"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__capital_balance
+msgid "Capital Balance"
+msgstr "Saldo Capital"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__capital_subscription
+msgid "Capital Subscription"
+msgstr "Abono a Capital"
+
+#. module: allocation_of_credit_amount
+#: model:ir.actions.server,name:allocation_of_credit_amount.ir_cron_check_credit_lines_receipts_status_ir_actions_server
+#: model:ir.cron,cron_name:allocation_of_credit_amount.ir_cron_check_credit_lines_receipts_status
+#: model:ir.cron,name:allocation_of_credit_amount.ir_cron_check_credit_lines_receipts_status
+msgid "Check credit lines receipts status"
+msgstr "Verificar estado de los recibos de credito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__res_partner_id
+msgid "Client"
+msgstr "Cliente"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__client_type
+msgid "Client Type"
+msgstr "Tipo Cliente"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__code
+msgid "Code"
+msgstr "Código"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Communication"
+msgstr "Comunicación"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__company_currency_id
+msgid "Company Currency"
+msgstr "Moneda Compañia"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__create_uid
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__create_uid
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__create_date
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__create_date
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: allocation_of_credit_amount
+#: model:ir.actions.act_window,name:allocation_of_credit_amount.action_window_credit_views
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__credit_id
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_res_partner__credit_ids
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_res_users__credit_ids
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/credit.py:0
+#, python-format
+msgid ""
+"Credit Data:\n"
+"                        Credit type: %s\n"
+"                        Credit Number: %s\n"
+msgstr ""
+"Información de Credito:\n"
+"                        Tipo de credito: %s\n"
+"                        Número de credito: %s\n"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/credit.py:0
+#, python-format
+msgid ""
+"Credit Data:\n"
+"                        Invoice Number: %s\n"
+"                        Credit type: %s\n"
+"                        Credit Number: %s\n"
+msgstr ""
+"Información de Credito:\n"
+"                        Número de factura: %s\n"
+"                        Tipo de credito: %s\n"
+"                        Número de credito: %s\n"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/credit.py:0
+#, python-format
+msgid ""
+"Credit Data:\n"
+"                Credit type: %s\n"
+"                Credit Number: %s\n"
+msgstr ""
+"Información de Credito:\n"
+"                Tipo de credito: %s\n"
+"                Número de credito: %s\n"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/credit.py:0
+#, python-format
+msgid ""
+"Credit Data:\n"
+"                Invoice Number: %s\n"
+"                Credit type: %s\n"
+"                Credit Number: %s\n"
+msgstr ""
+"Información de Credito:\n"
+"                Número de factura: %s\n"
+"                Tipo de credito: %s\n"
+"                Número de credito: %s\n"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Credit Invoice Number"
+msgstr "Factura relacionada al Credito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_account_move__credit_line_id
+msgid "Credit Line"
+msgstr "Linea de Credito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.actions.act_window,name:allocation_of_credit_amount.action_window_credit_line_views
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__credit_lines
+#: model:ir.ui.menu,name:allocation_of_credit_amount.menu_credit_line_list
+#: model_terms:ir.ui.view,arch_db:allocation_of_credit_amount.credit_form_view
+msgid "Credit Lines"
+msgstr "Linea de Creditos"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__credit_type_id
+#, python-format
+msgid "Credit Type"
+msgstr "Tipo Crédito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.actions.act_window,name:allocation_of_credit_amount.action_window_credit_types
+#: model:ir.ui.menu,name:allocation_of_credit_amount.menu_credit_types_list
+msgid "Credit Types"
+msgstr "Tipos Crédito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__credit_value_accounted
+msgid "Credit Value Accounted"
+msgstr "Valor Credito Contabilizado"
+
+#. module: allocation_of_credit_amount
+#: model:ir.ui.menu,name:allocation_of_credit_amount.categ_credits
+#: model:ir.ui.menu,name:allocation_of_credit_amount.menu_credit_list
+#: model_terms:ir.ui.view,arch_db:allocation_of_credit_amount.res_partner_credit_view_form
+msgid "Credits"
+msgstr "Créditos"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: allocation_of_credit_amount
+#: model_terms:ir.ui.view,arch_db:allocation_of_credit_amount.credit_types_form_view
+msgid "Description...."
+msgstr "Descripción...."
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__disbursement_date
+msgid "Disbursement Date"
+msgstr "Fecha Desembolso"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__display_name
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__display_name
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Due Date"
+msgstr "Fecha vencimiento"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__endorsement_commission
+msgid "Endorsement Commission"
+msgstr "Tasa Aval"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__endorsement_value_plus_vat
+msgid "Endorsement Value Plus Vat"
+msgstr "Valor Aval Con IVA"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Excluded"
+msgstr "Excluido"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Expected Date"
+msgstr "Fecha prevista"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_account_followup_followup_line
+msgid "Follow-up Criteria"
+msgstr "Criterio seguimiento"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_account_followup_report
+msgid "Follow-up Report"
+msgstr "Reporte de Seguimiento"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__id
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__id
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__id
+msgid "ID"
+msgstr ""
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit__state__in_debt
+msgid "In Debt"
+msgstr "En Mora"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__installment_number
+msgid "Installment Number"
+msgstr "Numero Cuota"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__invoice_number
+msgid "Invoice Number"
+msgstr "Numero de Factura"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__invoicing
+msgid "Invoicing"
+msgstr "Facturación"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/credit.py:0
+#, python-format
+msgid ""
+"It is necessary to fill in the following fields:\n"
+"(disbursement_date, term_months, base_value_credit, credit_value_accounted)"
+msgstr ""
+"Es necesario el diligenciamiento de los siguientes campos:\n"
+"(Fecha de desembolso, Plazo Meses, Valor Base del Credito, Valor Credito Contabilizado)"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit____last_update
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line____last_update
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__write_uid
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__write_uid
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__write_date
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__write_date
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit__client_type__legal
+msgid "Legal person"
+msgstr "Persona Juridica"
+
+#. module: allocation_of_credit_amount
+#: model:res.groups,name:allocation_of_credit_amount.group_manager
+msgid "Manager"
+msgstr "Administrador"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__modality
+msgid "Modality"
+msgstr "Modalidad"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_credit_type
+msgid "Model for management of credit types"
+msgstr "Modelo para administrar los tipos de créditos"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__name
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__name
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit__client_type__natural
+msgid "Natural person"
+msgstr "Persona Natural"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/credit.py:0
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__number_credit
+msgid "Number Credit"
+msgstr "Número de crédito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit_type__invoicing__client
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit_type__receivable__client
+msgid "On behalf of the client"
+msgstr "A nombre del cliente"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit_type__invoicing__bank
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit_type__receivable__bank
+msgid "On behalf of the financial institution"
+msgstr "A nombre de la entidad financiera"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit__state__paid_out
+msgid "Paid out"
+msgstr "Pagado"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__payment_date
+msgid "Payment Date"
+msgstr "Fecha de Pago"
+
+#. module: allocation_of_credit_amount
+#: model:product.product,name:allocation_of_credit_amount.payment_of_credits_product
+#: model:product.template,name:allocation_of_credit_amount.payment_of_credits_product_product_template
+msgid "Payment of credits"
+msgstr "Pago de Creditos"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: allocation_of_credit_amount
+#: model_terms:ir.ui.view,arch_db:allocation_of_credit_amount.credit_form_view
+msgid "Publish Receipts"
+msgstr "Publicar Recibos"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_line__receipt_id
+msgid "Receipt"
+msgstr "Recibo"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__receivable
+msgid "Receivable"
+msgstr "Cuenta por cobrar"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields.selection,name:allocation_of_credit_amount.selection__credit__modality__revolving
+msgid "Revolving"
+msgstr "Rotativo"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Source Document"
+msgstr "Documento origen"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__sponsoring_entity_id
+msgid "Sponsoring Entity"
+msgstr "Entidad patrocinadora"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__state
+msgid "State"
+msgstr "Estado"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit_type__supporting_entity_ids
+msgid "Supporting Entity"
+msgstr "Entidad patrocinadora"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model.fields,field_description:allocation_of_credit_amount.field_credit__term_months
+msgid "Term Months"
+msgstr "Plazo Meses"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Total Due"
+msgstr "Adeudo Total"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "Total Overdue"
+msgstr "Total de Vencido"
+
+#. module: allocation_of_credit_amount
+#: model:product.product,uom_name:allocation_of_credit_amount.payment_of_credits_product
+#: model:product.template,uom_name:allocation_of_credit_amount.payment_of_credits_product_product_template
+msgid "Units"
+msgstr "Unidades"
+
+#. module: allocation_of_credit_amount
+#: model:res.groups,name:allocation_of_credit_amount.group_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/credit.py:0
+#, python-format
+msgid "You can't delete credits with receipts published."
+msgstr "No puede eliminar creditos con recibos publicados."
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid "You need a least one follow-up level in order to process your follow-up"
+msgstr "Necesitas al menos un nivel de seguimiento para procesarlo"
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid ""
+"Your description is invalid, use the right legend or %% if you want to use the percent "
+"character."
+msgstr ""
+"Su descripción no es válida, utilice la leyenda apropiada o %% si desea utilizar el "
+"carácter porcentaje."
+
+#. module: allocation_of_credit_amount
+#: code:addons/allocation_of_credit_amount/models/followup_report.py:0
+#, python-format
+msgid ""
+"Your sms description is invalid, use the right legend or %% if you want to use the "
+"percent character."
+msgstr ""
+"La descripción de SMS es invalida. Usa la leyenda correcta o %% si quieres usar el "
+"procentaje."
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_credit
+msgid "credit"
+msgstr "crédito"
+
+#. module: allocation_of_credit_amount
+#: model:ir.model,name:allocation_of_credit_amount.model_credit_line
+msgid "credit.line"
+msgstr ""

@@ -1,0 +1,151 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="hr_recruitment_bank_resumes.list">
+      <field name="name">hr_recruitment_bank_resumes list</field>
+      <field name="model">hr.recruitment.bank.resumes</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="vacant"/>
+          <field name="name"/>
+          <field name="email"/>
+          <field name="contact_phone"/>
+          <field name="linkedin"/>
+          <field name="laboral_experience"/>
+          <field name="english_level"/>
+          <field name="studies"/>
+          <field name="salary_aspiration"/>
+          <field name="technologies"/>
+          <field name="availability"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="hr_recruitment_bank_resumes_form" model="ir.ui.view">
+      <field name="name">hr_recruitment_bank_resumes_form</field>
+      <field name="model">hr.recruitment.bank.resumes</field>
+      <field name="arch" type="xml">
+
+        <form string="Hr Recruitment Bank Resumes" class="o_form_project_tasks">
+          <sheet>
+            <div class="oe_title">
+              <label for="name"></label>
+              <h1>
+                <field name="name" placeholder="Nombre"/>
+              </h1>
+            </div>
+
+            <group>
+              <group>
+                <field name="email" />
+                <field name="linkedin" />
+                <field name="english_level" />
+                <field name="salary_aspiration" />
+                <field name="availability" />
+              </group>
+
+              <group>
+                <field name="vacant" />
+                <field name="contact_phone" />
+                <field name="laboral_experience" />
+                <field name="studies" />
+                <field name="technologies" />
+              </group>
+            </group>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="activity_ids" widget="mail_activity" />
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      
+      </field>
+
+    </record>
+
+
+    <record id="hr_recruitment_bank_resumes_form" model="ir.ui.view">
+      <field name="name">hr_recruitment_bank_resumes_form</field>
+      <field name="model">hr.recruitment.bank.resumes</field>
+      <field name="arch" type="xml">
+
+        <form string="Hr Recruitment Bank Resumes" class="o_form_project_tasks">
+          <sheet>
+            <div class="oe_title">
+              <label for="name"></label>
+              <h1>
+                <field name="name" placeholder="Nombre"/>
+              </h1>
+            </div>
+
+            <group>
+              <group>
+                <field name="email" />
+                <field name="linkedin" />
+                <field name="english_level" />
+                <field name="salary_aspiration" />
+                <field name="availability" />
+              </group>
+
+              <group>
+                <field name="vacant" />
+                <field name="contact_phone" />
+                <field name="laboral_experience" />
+                <field name="studies" />
+                <field name="technologies" />
+              </group>
+            </group>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="activity_ids" widget="mail_activity" />
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      
+      </field>
+
+    </record>
+    <record model="ir.ui.view" id="hr_recruitment_bank_resumes_search">
+      <field name="name">hr.recruitment.bank.resumes.search</field>
+      <field name="model">hr.recruitment.bank.resumes</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name" filter_domain="['|', '|', ('name', 'ilike', self), ('vacant', 'ilike', self), ('email', 'ilike', self)]"/>
+          <field name="contact_phone" filter_domain="['|', '|', ('contact_phone', 'ilike', self), ('linkedin', 'ilike', self), ('laboral_experience', 'ilike', self)]"/>
+          <field name="english_level" filter_domain="['|', '|', ('english_level', 'ilike', self), ('studies', 'ilike', self), ('salary_aspiration', 'ilike', self)]"/>
+          <field name="technologies" filter_domain="['|', ('technologies', 'ilike', self), ('availability', 'ilike', self)]"/>
+        </search>
+      </field>
+    </record>
+
+
+    <!-- Top menu item -->
+
+    <record id="action_hr_employee_recruitment_bank_resumes" model="ir.actions.act_window">
+      <field name="name">Bank Resumes</field>
+      <field name="res_model">hr.recruitment.bank.resumes</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <menuitem
+      name="bank resumes"
+      parent="hr_recruitment.menu_crm_case_categ0_act_job" 
+      id="hr_recruitment_bank_menu"
+      sequence="10"
+      action="action_hr_employee_recruitment_bank_resumes"
+    />
+
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="hr_recruitment_bank_resumes.menu_1" parent="hr_recruitment_bank_resumes.menu_root"/>
+    <menuitem name="Menu 2" id="hr_recruitment_bank_resumes.menu_2" parent="hr_recruitment_bank_resumes.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="hr_recruitment_bank_resumes.menu_1_list" parent="hr_recruitment_bank_resumes.menu_1"
+              action="hr_recruitment_bank_resumes.action_window"/>
+    <menuitem name="Server to list" id="hr_recruitment_bank_resumes" parent="hr_recruitment_bank_resumes.menu_2"
+              action="hr_recruitment_bank_resumes.action_server"/>
+-->
+  </data>
+</odoo>

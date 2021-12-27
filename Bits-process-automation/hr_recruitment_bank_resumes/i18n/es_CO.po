@@ -1,0 +1,249 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_recruitment_bank_resumes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-07 15:07+0000\n"
+"PO-Revision-Date: 2021-04-07 10:17-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__technologies__net
+msgid ". Net"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__english_level__high
+msgid "Alto"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__english_level__low
+msgid "Bajo"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.actions.act_window,name:hr_recruitment_bank_resumes.action_hr_employee_recruitment_bank_resumes
+msgid "Bank Resumes"
+msgstr "Banco de hojas de vida"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__laboral_experience__2_to_4_years
+msgid "De 2 a 4 años"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__laboral_experience__4_to_6_years
+msgid "De 4 a 6 años"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__technologies__ionic
+msgid "Ionic"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#, python-format
+msgid "It's not a valid format contact phone for:contact_phone"
+msgstr "No es un formato de teléfono válido para el Teléfono de Contacto"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#, python-format
+msgid "It's not a valid format email for:email"
+msgstr "No es un formato de email válido"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__technologies__javascript
+msgid "Javascript"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes____last_update
+msgid "Last Modified on"
+msgstr "Modificado en"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__write_date
+msgid "Last Updated on"
+msgstr "Actualizado en"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__english_level__medium
+msgid "Medio"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__laboral_experience__min_year
+msgid "Menos de un (1) año"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__laboral_experience__more_6_years
+msgid "Más de 6 años"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__technologies__odoo
+msgid "Odoo"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__technologies__php
+msgid "PHP"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__studies__postgraduate
+msgid "Posgrado"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__studies__professional
+msgid "Profesional"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__technologies__python
+msgid "Python"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model,name:hr_recruitment_bank_resumes.model_hr_recruitment_bank_resumes
+#, python-format
+msgid "Show list of candidates for someone vacant"
+msgstr "Muestra una lista de candidatos para alguna vacante"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__laboral_experience__without_exp
+msgid "Sin experiencia laboral"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__studies__technologist
+msgid "Tecnólogo"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.model.fields.selection,name:hr_recruitment_bank_resumes.selection__hr_recruitment_bank_resumes__studies__technician
+msgid "Técnico"
+msgstr ""
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__availability
+#, python-format
+msgid "availability"
+msgstr "Disponibilidad"
+
+#. module: hr_recruitment_bank_resumes
+#: model:ir.ui.menu,name:hr_recruitment_bank_resumes.hr_recruitment_bank_menu
+msgid "bank resumes"
+msgstr "Banco de hojas de vida"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__contact_phone
+#, python-format
+msgid "contact_phone"
+msgstr "Teléfono de contacto"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__email
+#, python-format
+msgid "email"
+msgstr "Correo electrónico"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__english_level
+#, python-format
+msgid "english_level"
+msgstr "Nivel de Ingles"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__laboral_experience
+#, python-format
+msgid "laboral_experience"
+msgstr "Experiencia Laboral"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__linkedin
+#, python-format
+msgid "linkedin"
+msgstr "Linkedin"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__name
+#, python-format
+msgid "name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__salary_aspiration
+#, python-format
+msgid "salary_aspiration"
+msgstr "Aspiración Salarial"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__studies
+#, python-format
+msgid "studies"
+msgstr "Estudios"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__technologies
+#, python-format
+msgid "technologies"
+msgstr "Tecnologías"
+
+#. module: hr_recruitment_bank_resumes
+#: code:addons/hr_recruitment_bank_resumes/models/models.py:0
+#: model:ir.model.fields,field_description:hr_recruitment_bank_resumes.field_hr_recruitment_bank_resumes__vacant
+#, python-format
+msgid "vacant"
+msgstr "Vacante"

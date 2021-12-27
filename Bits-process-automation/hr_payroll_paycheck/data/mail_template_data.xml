@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="paycheck_email_template" model="mail.template">
+            <field name="name">Template Paycheck</field>
+            <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+            <field name="email_from">${object.env.user.work_email or object.env.user.partner_id.email or ''}</field>
+            <field name="email_to">
+                ${object.employee_id.work_email or object.employee_id.address_id.email or object.employee_id.private_email or object.employee_id.address_home_id or ''}
+            </field>
+            <field name="subject">Desprendible Nomina ${object.month_payroll} del ${object.year_payroll}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Cordial saludo <strong>${object.employee_id.name}</strong>,<br/>
+                        Adjunto se envía desprendible de pago de nómina del mes de ${object.month_payroll} del ${object.year_payroll}.<br/>
+                        Si tiene alguna inquietud por favor escribir a <strong>${object.env.user.work_email or object.env.user.partner_id.email or ''}</strong>.<br/>
+                        Cordialmente ${object.env.user.partner_id.name} 
+                        % if object.env.user.partner_id.function:
+                            - <strong>${object.env.user.partner_id.function}</strong>
+                        % endif
+                    </p>
+                </div>
+            </field>
+            <field name="report_template" ref="hr_payroll_payslip_report"/>
+            <field name="report_name">Payslip - ${object.employee_id.name}</field>
+        </record>
+    </data>
+</odoo>

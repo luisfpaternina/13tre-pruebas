@@ -1,0 +1,15 @@
+id,name,code,format_type,description
+format_1001,Formato 1001,1001,DIAN,PAGOS O ABONOS EN CUENTA Y RETENCIONES PRACTICADAS
+format_1003,Formato 1003,1003,DIAN,RETENCIONES EN LA FUENTE QUE LE PRACTICARON
+format_1004,Formato 1004,1004,DIAN,DESCUENTOS TRIBUTARIOS
+format_1005,Formato 1005,1005,DIAN,Impuesto a las ventas por pagar (Descontable)
+format_1006,Formato 1006,1006,DIAN,Impuesto a las ventas por pagar (Generado)
+format_1007,Formato 1007,1007,DIAN,Ingresos recibidos 
+format_1008,Formato 1008,1008,DIAN,Saldo de cuentas por cobrar al 31 de Diciembre
+format_1009,Formato 1009,1009,DIAN,Saldo de cuentas por pagar al 31 de Diciembre
+format_1010,Formato 1010,1010,DIAN,Información de socios, accionistas, comuneros y/o cooperados
+format_1012,Formato 1012,1012,DIAN,Información de declaraciones tributarias, acciones, inversiones en bonos títulos valores y cuentas de ahorro y cuentas corrientes
+art_0001,Formato Art 1,Art 1,District,Ingresos obtenidos por actividades no sujetas, deducciones o exenciones
+art_0002,Formato Art 2,Art 2,District,Compra de bienes y servicios
+art_0004,Formato Art 4,Art 4,District,Art 4
+art_0006,Formato Art 6,Art 6,District,Sujetos Rete ICA (Rete ICA a favor)

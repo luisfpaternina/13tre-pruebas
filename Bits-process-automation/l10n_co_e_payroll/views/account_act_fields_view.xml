@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="account_act_fields_inherit_form" model="ir.ui.view">
+            <field name="name">account.act.fields.inherit.form</field>
+            <field name="model">account.act.fields</field>
+            <field name="inherit_id" ref="l10n_co_e_invoice_act_fields.l10n_co_account_act_fields_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/group[3]/field[@name='condition_python']" position="attributes">
+                    <attribute name="widget">ace</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+

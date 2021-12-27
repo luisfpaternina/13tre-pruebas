@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="account_invoice_view_form_local_currency" model="ir.ui.view">
+            <field name="name">account.invoice.view.form.local.currency</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="priority">200</field>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@class='oe_subtotal_footer']" position="after">
+                    <field name="show_other_currency" invisible="1"/>
+                    <!-- Other Currency Totals (only invoices / receipts) -->
+                    <group name="other_currency_subtotal_footer" class="oe_subtotal_footer" attrs="{'invisible': [('show_other_currency', '=', False)]}">
+                        <field name="local_total_unsurdisc"/>
+                        <field name="local_amount_discount"/>
+                        <field name="local_amount_surchange"/>
+                        <field name="local_amount_untaxed"/>
+                        <field name="local_amount_by_group" widget="tax-group-custom-field" nolabel="1" colspan="2"/>
+                        <field name="local_amount_total" class="oe_subtotal_footer_separator"/>
+                        <br/>
+                        <field name="local_amount_residual" class="oe_subtotal_footer_separator" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+      <!-- Acciones -->
+      <record id="action_hr_employee_internal_request" model="ir.actions.act_window">
+        <field name="name">Internal Request</field>
+        <field name="res_model">hr.employee.internal.request</field>
+        <field name="view_mode">tree,form,kanban</field>
+      </record>
+
+        <!-- submenu holiday book-->
+        <menuitem
+            id="menu_job_internal_request"
+            parent="hr_recruitment.menu_crm_case_categ0_act_job"
+            action="action_hr_employee_internal_request"
+            sequence="4"/>
+    </data>
+</odoo>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_payroll_employee_retention_tree" model="ir.ui.view">
+        <field name="name">hr.payroll.employee.retention.tree</field>
+        <field name="model">hr.payroll.employee.retention</field>
+        <field name="arch" type="xml">
+            <tree string="Law Parameters">
+                <field name="identification_id"/>
+                <field name="employee_id" optional="hide"/>
+                <field name="salary" optional="show"/>
+                <field name="housing_incentive" optional="hide"/>
+                <field name="non_salary_bonus" optional="show"/>
+                <field name="bonus" optional="hide"/>
+                <field name="vlnt_cntr_pension_fund_empl" optional="hide"/>
+                <field name="labor_income" optional="show"/>
+                <field name="mandatory_pension_contributions" optional="show"/>
+                <field name="mnd_cntr_pension_salidarity_fund" optional="hide"/>
+                <field name="mnd_cntr_to_health" optional="show"/>
+                <field name="vln_cntr_to_mnd_pension_fund" optional="show"/>
+                <field name="oth_inc_not_constituting_inc" optional="show"/>
+                <field name="total_non_constitutive_income" optional="hide"/>
+                <field name="subtotal1" optional="hide"/>
+                <field name="housing_interests" optional="show"/>
+                <field name="dependent_payments" optional="show"/>
+                <field name="prepaid_medicine_payments" optional="hide"/>
+                <field name="total_deductions" optional="show"/>
+                <field name="subtotal2" optional="hide"/>
+                <field name="cntr_vlnt_pension_fund" optional="show"/>
+                <field name="cntr_afc_accounts" optional="show"/>
+                <field name="other_exempt_income" optional="show"/>
+                <field name="total_exempt_income" optional="show"/>
+                <field name="subtotal3" optional="hide"/>
+                <field name="exempt_labor_income" optional="show"/>
+                <field name="subtotal4" optional="hide"/>
+                <field name="ctrl_fgr_ddc_exempt_income" optional="hide"/>
+                <field name="sum_deductions_exempt_income" optional="hide"/>
+                <field name="resutl_maximum_uvt" optional="show"/>
+                <field name="monthly_work_income" optional="show"/>
+                <field name="income_taxed_uvt" optional="show"/>
+                <field name="percent0" optional="hide"/>
+                <field name="percent19" optional="hide"/>
+                <field name="percent28" optional="hide"/>
+                <field name="percent33" optional="hide"/>
+                <field name="percent35" optional="hide"/>
+                <field name="percent37" optional="hide"/>
+                <field name="percent39" optional="hide"/>
+                <field name="amount" optional="show"/>
+                <field name="payslip_id" optional="hide"/>
+                <field name="payslip_name" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_payroll_employee_retention_search" model="ir.ui.view">
+        <field name="name">hr.payroll.employee.retention.view</field>
+        <field name="model">hr.payroll.employee.retention</field>
+        <field name="arch" type="xml">
+            <search string="Search Retentions">
+            </search>
+        </field>
+    </record>
+
+    <record id="action_payroll_employee_retention" model="ir.actions.act_window">
+        <field name="name">Employee Retention</field>
+        <field name="res_model">hr.payroll.employee.retention</field>
+        <field name="search_view_id" ref="hr_payroll_employee_retention_search"/>
+        <field name="view_mode">tree</field>
+    </record>
+    <menuitem id="menu_payroll_employee_retention" action="action_payroll_employee_retention" parent="hr_payroll.menu_hr_payroll_employees_root" sequence="30" name="Retentions" />
+</odoo>

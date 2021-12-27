@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="actions_restrict_review" model="ir.actions.restrict">
+            <field name="name">Purchase Review Restrict</field>
+            <field name="model">account.move</field>
+            <field name="action_name">action_general_state_approve</field>
+            <field name="action_code">PRR</field>
+            <field name="message_show">You don't have permission to execute this action</field>
+        </record>
+    </data>
+</odoo>

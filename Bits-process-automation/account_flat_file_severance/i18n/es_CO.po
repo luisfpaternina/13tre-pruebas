@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_flat_file_severance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-21 20:56+0000\n"
+"PO-Revision-Date: 2020-08-21 15:57-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__address
+msgid "Address"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields.selection,name:account_flat_file_severance.selection__account_flat_file_base__file_extension__csv
+msgid "CSV"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields.selection,name:account_flat_file_severance.selection__account_flat_file_severance_account_flat_file_severance__document_type__13
+msgid "Citizenship card"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__document_type
+msgid "Document type"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__email
+msgid "Email address"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_base__file_extension
+msgid "File Extension"
+msgstr "Extensión de Archivo"
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_base__file_type
+msgid "File Type"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__first_name
+msgid "First name"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields.selection,name:account_flat_file_severance.selection__account_flat_file_severance_account_flat_file_severance__document_type__22
+msgid "Foreigner ID"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__id
+msgid "ID"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__document_number
+msgid "Identification No"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields.selection,name:account_flat_file_severance.selection__account_flat_file_severance_account_flat_file_severance__document_type__12
+msgid "Identity card"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields.selection,name:account_flat_file_severance.selection__account_flat_file_base__file_type__get_collect_data_payoffs
+msgid "Layoffs"
+msgstr "Cesantias"
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__name
+msgid "Name"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields.selection,name:account_flat_file_severance.selection__account_flat_file_severance_account_flat_file_severance__document_type__ot
+msgid "Others"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields.selection,name:account_flat_file_severance.selection__account_flat_file_severance_account_flat_file_severance__document_type__41
+msgid "Passport"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__phone
+msgid "Phone"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__second_name
+msgid "Second name"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__second_surname
+msgid "Second surname"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__surname
+msgid "Surname"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__wage
+msgid "Wage"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__worked_days
+msgid "Worked days"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model,name:account_flat_file_severance.model_account_flat_file_base
+msgid "account.flat.file.base"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model,name:account_flat_file_severance.model_account_flat_file_severance_account_flat_file_severance
+msgid "account_flat_file_severance.account_flat_file_severance"
+msgstr ""
+
+#. module: account_flat_file_severance
+#: model:ir.model.fields,field_description:account_flat_file_severance.field_account_flat_file_severance_account_flat_file_severance__layoffs
+msgid "layoffs value"
+msgstr ""

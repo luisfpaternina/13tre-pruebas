@@ -1,0 +1,72 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="l10n_co_payroll_act_fields_tree">
+      <field name="name">list of active fields</field>
+      <field name="model">account.act.fields</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="name"/>
+          <field name="mandatory"/>
+          <field name="description"/>
+          <field name="condition_python"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="l10n_co_payroll_act_fields_form">
+      <field name="name">payroll_act_fields_form</field>
+      <field name="model">account.act.fields</field>  
+      <field name="arch" type="xml">
+          <form>
+            <sheet>
+                <group>
+                  <group>
+                      <field name="code"/>
+                      <field name="mandatory"/>
+
+                      <field name="_type" default="payroll" invisible="1"/>
+
+                  </group>
+                  <group>
+                      <field name="name"/>
+                      <field name="description"/>
+                      <field name="condition_select"/>
+                  </group>
+                </group>
+                <group>
+                  <field name="validate_condition_select" attrs="{'invisible':[('condition_select','!=','python')], 'required': [('condition_select','=','python')]}"/>
+                </group>
+                <group>
+                  <field name="condition_python"/>
+                </group>
+            </sheet>
+          </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    
+
+    <record model="ir.actions.act_window" id="l10n_co_payroll_act_fields.action_window">
+      <field name="name">NE active fields</field>
+      <field name="res_model">account.act.fields</field>
+      <field name="view_id" ref="l10n_co_payroll_act_fields_form"/>
+      <field name="view_ids" eval="[(5, 0, 0),(0, 0, {'view_mode': 'tree', 'view_id': ref('l10n_co_payroll_act_fields_tree')}),
+                  (0, 0, {'view_mode': 'form', 'view_id': ref('l10n_co_payroll_act_fields_form')}),]"/>
+      <field name="view_mode">tree,form</field>
+      <field name="context">{'default__type': 'payroll'}</field>
+      <field name="domain">[('_type', '=', 'payroll')]</field>
+    </record>
+
+    <menuitem
+      action="l10n_co_payroll_act_fields.action_window"
+      id="l10n_co_payroll_act_fields.menu_1_list"
+      parent="hr_payroll.menu_hr_payroll_configuration"
+      sequence="12"/>
+
+  </data>
+</odoo>

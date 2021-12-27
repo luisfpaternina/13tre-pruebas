@@ -1,0 +1,384 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_discount_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-09 21:22+0000\n"
+"PO-Revision-Date: 2021-09-09 21:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "All planned operations included"
+msgstr "Todas las operaciones planeadas incluidas"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_product_category__apply_discount_table
+msgid "Apply discount table"
+msgstr "Aplicar tabla de descuento"
+
+#. module: sale_order_discount_product
+#: code:addons/sale_order_discount_product/models/quotation_approval.py:0
+#: code:addons/sale_order_discount_product/models/quotation_approval.py:0
+#, python-format
+msgid "Approval Request"
+msgstr "Solicitud de Aprovación"
+
+#. module: sale_order_discount_product
+#: model:res.groups,name:sale_order_discount_product.group_manager_quotation_approval
+msgid "Approver"
+msgstr "Aprobador"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.quotation_approval_view
+msgid "Are you sure to submit this budget for approval?"
+msgstr "¿Estás seguro de enviar este presupuesto para su aprobación?"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/js/qty_at_date_widget.js:0
+#, python-format
+msgid "Availability"
+msgstr "Disponibilidad"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "Available"
+msgstr "Disponible"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "Available in stock"
+msgstr "Disponible en inventario"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.quotation_approval_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.sale_order_inherit_view_form
+msgid "Cancel Discount"
+msgstr "Cancelar Descuento"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields.selection,name:sale_order_discount_product.selection__sale_order__state__cancel
+msgid "Cancelled"
+msgstr "Cancelado(a)"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__code
+msgid "Code"
+msgstr "Código"
+
+#. module: sale_order_discount_product
+#: model:ir.model,name:sale_order_discount_product.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: sale_order_discount_product
+#: model:ir.model,name:sale_order_discount_product.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.sale_order_inherit_view_form
+msgid "Confirm Sale Discount"
+msgstr "Confirmar Descuento de Venta"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__create_uid
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__create_date
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__name
+msgid "Description"
+msgstr "Descripción"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_sale_order__discount_order
+msgid "Discount (%)"
+msgstr "Descuento (%)"
+
+#. module: sale_order_discount_product
+#: model:ir.actions.act_window,name:sale_order_discount_product.action_discount_table
+#: model:ir.ui.menu,name:sale_order_discount_product.action_menu_discount_table
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.discount_table_form
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.discount_table_tree
+msgid "Discount Table"
+msgstr "Tabla de Descuento"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__display_name
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "Expected Delivery"
+msgstr "Entrega Esperada"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__id
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table____last_update
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__write_uid
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__write_date
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields.selection,name:sale_order_discount_product.selection__sale_order__state__done
+msgid "Locked"
+msgstr "Bloqueado"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__max_discount
+msgid "Maximum Discount"
+msgstr "Descuento Máximo"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__max_quantity
+msgid "Maximum Quantity"
+msgstr "Cantidad Máxima"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__min_discount
+msgid "Minimum Discount"
+msgstr "Descuento Mínimo"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_res_company__min_gross_margin
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_res_config_settings__min_gross_margin
+msgid "Minimum Gross Margin(%)"
+msgstr "Margen Bruto Mínimo(%)"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_discount_table__min_quantity
+msgid "Minimum Quantity"
+msgstr "Cantidad Mínima"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "No enough future availaibility"
+msgstr "No hay suficiente disponibilidad futura"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "No future availaibility"
+msgstr "Sin disponibilidad futura"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "On"
+msgstr "Al"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_sale_order_line__total_sale_value_discount
+msgid "Price unit with discount"
+msgstr "Precio unitario con descuento"
+
+#. module: sale_order_discount_product
+#: model:ir.model,name:sale_order_discount_product.model_product_category
+msgid "Product Category"
+msgstr "Categoría del Producto"
+
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields.selection,name:sale_order_discount_product.selection__sale_order__state__draft
+msgid "Quotation"
+msgstr "Cotización"
+
+#. module: sale_order_discount_product
+#: model:ir.module.category,name:sale_order_discount_product.module_quotation_approval
+msgid "Quotation Approval"
+msgstr "Aprobación de Cotización"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields.selection,name:sale_order_discount_product.selection__sale_order__state__sent
+msgid "Quotation Sent"
+msgstr "Cotización Enviada"
+
+#. module: sale_order_discount_product
+#: model:ir.actions.act_window,name:sale_order_discount_product.action_quotations_approvals
+msgid "Quotations Approvals"
+msgstr "Aprobación de Cotizaciones"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "Remaining demand available at"
+msgstr "Demanda restante disponible en"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "Reserved"
+msgstr "Reservado"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.quotation_approval_view
+msgid "Sale Approval Reason"
+msgstr "Razón de Aprobación de venta"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__sale_order_id
+msgid "Sale Order"
+msgstr "Orden de Venta"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_sale_order__approver_id
+msgid "Sale Order Approver"
+msgstr "Aprobador de órdenes de venta"
+
+#. module: sale_order_discount_product
+#: model:ir.model,name:sale_order_discount_product.model_sale_order
+#: model:ir.model.fields.selection,name:sale_order_discount_product.selection__sale_order__state__sale
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sale_order_discount_product
+#: model:ir.model,name:sale_order_discount_product.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de orden de venta"
+"#-#-#-#-#  es_CO.po (Odoo 9.0)  #-#-#-#-#\n"
+"Línea de Orden de Ventas\n"
+"#-#-#-#-#  es_CO.po (Odoo 9.0)  #-#-#-#-#\n"
+"Línea de Órdenes de Venta"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.quotation_approval_view
+msgid "Send"
+msgstr "Enviar"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.sale_order_inherit_view_form
+msgid "Send For Approval"
+msgstr "Enviar para Aprovación"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_sale_order__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "The delivery"
+msgstr ""
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,help:sale_order_discount_product.field_sale_order__discount_order
+msgid "This field assigns the discount to each of the budget lines"
+msgstr "Este campo asigna el descuento a cada una de las líneas presupuestarias"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "This product is replenished on demand."
+msgstr "Este producto se repone bajo demanda."
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_quotation_approval__user_id
+#: model:res.groups,name:sale_order_discount_product.group_user_quotation_approval
+msgid "User"
+msgstr "Usuario"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_sale_order__valid_discount
+msgid "Valid Discount"
+msgstr "Descuento Valido"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields,field_description:sale_order_discount_product.field_sale_order_line__valid_in_category_id
+msgid "Valid In Category"
+msgstr "Valido en Categoría"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "View Forecast"
+msgstr "Ver previsión"
+
+#. module: sale_order_discount_product
+#: model:ir.model.fields.selection,name:sale_order_discount_product.selection__sale_order__state__waiting_for_approval
+msgid "Waiting For Approval"
+msgstr "Esperando por aprobación"
+
+#. module: sale_order_discount_product
+#: model:ir.model,name:sale_order_discount_product.model_discount_table
+msgid "discount.table"
+msgstr "discount.table"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.quotation_approval_view
+msgid "or"
+msgstr "ó"
+
+#. module: sale_order_discount_product
+#: model_terms:ir.ui.view,arch_db:sale_order_discount_product.product_category_inherit_view_form
+msgid "princing"
+msgstr "princing"
+
+#. module: sale_order_discount_product
+#: model:ir.model,name:sale_order_discount_product.model_quotation_approval
+msgid "quotation.approval"
+msgstr "quotation.approval"
+
+#. module: sale_order_discount_product
+#. openerp-web
+#: code:addons/sale_order_discount_product/static/src/xml/sale_stock.xml:0
+#, python-format
+msgid "will be late."
+msgstr "será tarde."

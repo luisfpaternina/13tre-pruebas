@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="account.payment.method" id="account_payment_method_pse">
+            <field name="name">PSE</field>
+            <field name="code">pse</field>
+            <field name="payment_type">outbound</field>
+        </record>
+        <record model="account.payment.method" id="account_payment_method_tc">
+            <field name="name">Credit Card</field>
+            <field name="code">tc</field>
+            <field name="payment_type">outbound</field>
+        </record>
+    </data>
+</odoo>

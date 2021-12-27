@@ -1,0 +1,13 @@
+id,name,code
+surchange_discount_type_01,Descuento por Impuesto Asumido.,00
+surchange_discount_type_02,Pague uno lleve otro,01
+surchange_discount_type_03,Descuentos Contractuales,02
+surchange_discount_type_04,Descuento por pronto pago,03
+surchange_discount_type_05,Envío gratis,04
+surchange_discount_type_06,Descuentos específicos por inventarios,05
+surchange_discount_type_07,Descuento por monto en compras,06
+surchange_discount_type_08,Descuento de Temporada,07
+surchange_discount_type_09,Descuento por actualzación de productos/servcios,08
+surchange_discount_type_10,Descuento general,09
+surchange_discount_type_11,Descuento por volumen,10
+surchange_discount_type_12,Otro descuento,11

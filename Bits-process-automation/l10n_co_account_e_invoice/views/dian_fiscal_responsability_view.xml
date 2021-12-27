@@ -1,0 +1,58 @@
+<odoo>
+  <data>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="dian_fiscal_responsability_list">
+      <field name="name">Dian Fiscal Responsibility</field>
+      <field name="model">dian.fiscal.responsability</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="name"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="dian_responsibility_view_form" model="ir.ui.view">
+      <field name="name">Dian Fiscal Responsibility</field>
+      <field name="model">dian.fiscal.responsability</field>
+      <field name="arch" type="xml">
+        <form string="Dian Fiscal Responsibility">
+          <sheet>
+            <group>
+              <group>
+                <field name="code" autocomplete="off" required="True"/>
+                <field name="name" autocomplete="off" required="True"/>
+              </group>
+              <group>
+                <field name="active"/>
+              </group>
+            </group>
+            <notebook>
+              <page name="tax_liability_relationship" string="Tax-Liability relationship">
+                <group>
+                  <field name="line_ids" nolabel="1">
+                    <tree editable="bottom">
+                      <field name="parent_id" invisible="1"/>
+                      <field name="fiscal_responsability_id"/>
+                      <field name="applicable_tax" widget="many2many_tags" options="{'no_create_edit': True}"/>
+                    </tree>
+                  </field>
+                </group>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="dian_fiscal_responsability_action_window">
+      <field name="name">Dian Fiscal Responsibility</field>
+      <field name="res_model">dian.fiscal.responsability</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

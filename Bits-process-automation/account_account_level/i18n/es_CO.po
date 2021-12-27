@@ -1,0 +1,88 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_account_level
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-30 16:24+0000\n"
+"PO-Revision-Date: 2021-07-30 11:25-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: account_account_level
+#: model:ir.model,name:account_account_level.model_account_account
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_account_level
+#: code:addons/account_account_level/models/account_account_level.py:0
+#: model:ir.model.fields,field_description:account_account_level.field_account_account__depends_on
+#, python-format
+msgid "Depends on"
+msgstr "Depende de"
+
+#. module: account_account_level
+#: code:addons/account_account_level/models/account_account_level.py:0
+#: model:ir.model.fields,field_description:account_account_level.field_account_account__level
+#, python-format
+msgid "Level"
+msgstr "Nivel"
+
+#. module: account_account_level
+#: model:ir.model.fields.selection,name:account_account_level.selection__account_account__level__1
+msgid "Level 1"
+msgstr "Nivel 1"
+
+#. module: account_account_level
+#: model:ir.model.fields.selection,name:account_account_level.selection__account_account__level__2
+msgid "Level 2"
+msgstr "Nivel 2"
+
+#. module: account_account_level
+#: model:ir.model.fields.selection,name:account_account_level.selection__account_account__level__3
+msgid "Level 3"
+msgstr "Nivel 3"
+
+#. module: account_account_level
+#: model:ir.model.fields.selection,name:account_account_level.selection__account_account__level__4
+msgid "Level 4"
+msgstr "Nivel 4"
+
+#. module: account_account_level
+#: model:ir.model.fields.selection,name:account_account_level.selection__account_account__level__5
+msgid "Level 5"
+msgstr "Nivel 5"
+
+#. module: account_account_level
+#: model:ir.model.fields.selection,name:account_account_level.selection__account_account__level__6
+msgid "Level 6"
+msgstr "Nivel 6"
+
+#. module: account_account_level
+#: model:ir.model.fields.selection,name:account_account_level.selection__account_account__level__7
+msgid "Level 7"
+msgstr "Nivel 7"
+
+#. module: account_account_level
+#: code:addons/account_account_level/models/account_account_level.py:0
+#, python-format
+msgid "The field depends on does not correspond to the code entered"
+msgstr "El campo depende de no corresponde al código ingresado"
+
+#. module: account_account_level
+#: code:addons/account_account_level/models/account_account_level.py:0
+#, python-format
+msgid ""
+"The number of digits entered for the account does not correspond to the "
+"selected level"
+msgstr ""
+"El número de digitos ingresado para la cuenta no corresponde al nivel "
+"seleccionado"

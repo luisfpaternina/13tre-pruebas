@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="account_reports_backend_accounts" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/account_difference_report_niif_colgap/static/src/js/account_report_accounts.js"></script>
+            </xpath>
+        </template>
+        <template id="search_template_account_accounts">
+            <a t-if="options.get('range_account')" type="button" class="dropdown-toggle account_accounts_filter" data-toggle="dropdown">
+                <span class="fa fa-folder-open"/>Accounts
+            </a>
+            <ul class="dropdown-menu o_filters_menu" role="menu">
+                <li class="o_account_report_search js_account_accounts_m2m"/>
+            </ul>
+        </template>
+        <template inherit_id='account_reports.search_template' id="search_template_account_accounts_reports">
+            <xpath expr="//div[@class='btn-group o_dropdown o_account_reports_filter_analytic']" position="after">
+                <div class="btn-group o_dropdown" t-if="options.get('range_account') != None">
+                    <t t-call="account_difference_report_niif_colgap.search_template_account_accounts"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

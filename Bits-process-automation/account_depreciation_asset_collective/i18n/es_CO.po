@@ -1,0 +1,99 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_depreciation_asset_collective
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-14 14:43+0000\n"
+"PO-Revision-Date: 2020-07-14 09:48-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields.selection,name:account_depreciation_asset_collective.selection__depreciation_asset_collective__assets_depreciate__all
+msgid "All"
+msgstr "Todos"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields.selection,name:account_depreciation_asset_collective.selection__depreciation_asset_collective__assets_depreciate__asset
+msgid "Asset"
+msgstr "Activo"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__assets_depreciate
+msgid "Asset Depreciation"
+msgstr "Depreciación de Activos"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_depreciation_asset_collective
+#: model_terms:ir.ui.view,arch_db:account_depreciation_asset_collective.depreciation_asset_collective_wizard
+msgid "Depreciate"
+msgstr "Depreciar"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.actions.act_window,name:account_depreciation_asset_collective.action_depreciation_asset_collective_wizard
+#: model:ir.ui.menu,name:account_depreciation_asset_collective.manu_action_depreciation_asset_collective
+msgid "Depreciation Collective Asset"
+msgstr "Depreciación Masiva de Activos"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__depreciation_date
+msgid "Depreciation Date"
+msgstr "Fecha de Depreciación"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__display_name
+msgid "Display Name"
+msgstr "Nombre Público"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields.selection,name:account_depreciation_asset_collective.selection__depreciation_asset_collective__assets_depreciate__intangible
+msgid "Intangible"
+msgstr "Intangible"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación en"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model.fields,field_description:account_depreciation_asset_collective.field_depreciation_asset_collective__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización en"
+
+#. module: account_depreciation_asset_collective
+#: model_terms:ir.ui.view,arch_db:account_depreciation_asset_collective.depreciation_asset_collective_wizard
+msgid "Select the date until which the depreciation process is real"
+msgstr "Seleccione la fecha hasta la cual el proceso de depreciación es real"
+
+#. module: account_depreciation_asset_collective
+#: model:ir.model,name:account_depreciation_asset_collective.model_depreciation_asset_collective
+msgid "depreciation.asset.collective"
+msgstr ""

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="_l10n_co_account_journal_form_inherit" model="ir.ui.view">
+            <field name="name">l10n_co.account.journal.form.inherit</field>
+            <field name="model">account.journal</field>
+            <field name="priority">30</field>
+            <field name="inherit_id" ref="account.view_account_journal_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='advanced_settings']" position="after">
+                    <page name="dian_settings" string="DIAN Settings">
+                        <group>
+                            <group>
+                                <field name="debit_note"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="account_invoice_view_form_inherit_l10n_co" model="ir.ui.view">
+            <field name="name">account.invoice.view.form.inherit.l10n_co</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_post']" position="after">
+                    <button name="action_test" string="test" type="object" invisible="1"/>
+                    <button
+                    name="action_test_api_connect"
+                    string="check voucher"
+                    type="object"
+                    attrs="{'invisible': ['|' , ('state', '!=', 'posted'), ('type', 'not in', ['out_invoice', 'out_refund'])]}"
+                        />
+                    <button
+                        name="action_post_with_files"
+                        string="Post with support"
+                        type="object"
+                        states="draft"
+                    />
+                </xpath>
+                <xpath expr="//field[@name='invoice_date']" position="after">
+                    <field name="ei_invoice_datetime" attrs="{'invisible': [('type', 'not in', ['out_invoice', 'out_refund'])]}"/>
+                </xpath>
+
+                <xpath expr="//label[@for='invoice_date'][1]" position="attributes">
+                    <attribute name="attrs">{'invisible': ['|', ('type', 'in', ('out_invoice', 'out_refund', 'out_receipt')), ('type', 'in', ('in_invoice', 'in_refund', 'in_receipt'))]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='invoice_date']" position="attributes">
+                    <attribute name="attrs">{'invisible': [('type', 'in', ('out_invoice', 'out_refund', 'out_receipt'))]}</attribute>
+                </xpath>
+
+                <xpath expr="//group[@id='header_right_group']" position="after">
+                    <group string="Info electronic invoice" attrs="{'invisible': [('type', 'not in', ['out_invoice', 'out_refund'])]}">
+                        <field name="type"/>
+                        <field name="invoice_status"/>
+                        <field name="operation_type"/>
+                        <field name="ei_type_document_id"/>
+                        <field name="is_direct_payment" invisible="1"/>
+                        <field name="payment_option_id"/>
+                        <field name="ei_payment_form_id"/>
+                        <field name="is_visible_deb_cred_note" invisible="1"/>
+                        <field name="is_debit_note" invisible="1"/>
+                        <field name="is_credit_note" invisible="1"/>
+                    </group>
+                    <group string="Debit/Credit notes" attrs="{'invisible': [('is_visible_deb_cred_note', '=', False)]}">
+                        <field name="debit_note" invisible="True"/>
+                        <field name="ei_origin_id"/>
+                        <field name="description_code_debit" attrs="{'invisible': [('is_debit_note', '=', False)]}"/>
+                        <field name="description_code_credit" attrs="{'invisible': [('is_credit_note', '=', False)]}"/>
+                    </group>
+                </xpath>
+
+                <xpath expr="//page[@id='invoice_tab']//field[@name='narration']" position="after">
+                    <group string="Amount with letters" name="ei_amount_letters">
+                        <field name="ei_amount_text" placeholder="Add an amount with letters..." height="50"/>
+                    </group>
+                </xpath>
+
+                <xpath expr="//page[@name='other_info']" position="after">
+                    <page string="Response DIAN" name="info_Dian" attrs="{'invisible': [('type', 'not in', ['out_invoice', 'out_refund'])]}">
+                        <group name="dian_response">
+                            <group name="dian_left">
+                                <field name="ei_is_valid" readonly="True"/>
+                                <field name="ei_is_not_test" readonly="True"/>
+                                <field name="ei_sync" readonly="True"/>
+                                <field name="ei_uuid" readonly="True"/>
+                                <field name="ei_issue_date" readonly="True"/>
+                                <field name="ei_zip_key" readonly="True"/>
+                                <field name="ei_status_code" readonly="True"/>
+                                <field name="ei_status_description" readonly="True"/>
+                                <field name="ei_status_message" readonly="True"/>
+                                <field name="cufe_cude_ref"/>
+                                <field name="ei_number" readonly="True"/>
+                            </group>
+                            <group name="dian_right">
+                                <field name="ei_file_name" readonly="True" invisible="1"/>
+                                <field name="ei_app_resp_file_name" readonly="True" invisible="1"/>
+                                <field name="ei_dian_resp_file_name" readonly="True" invisible="1"/>
+                                <field name="ei_dian_document_file_name" readonly="True" invisible="1"/>
+                                <field name="ei_zip_name" readonly="True"/>
+                                <field name="ei_url_acceptance" readonly="True"/>
+                                <field name="ei_url_rejection" readonly="True"/>
+                                <field name="ei_xml_bytes" readonly="True"/>
+                                <field name="ei_errors_messages" readonly="True"/>
+                                <field name="ei_application_response_base64_bytes" readonly="True" filename="ei_app_resp_file_name"/>
+                                <field name="ei_attached_document_base64_bytes" readonly="True" filename="ei_dian_document_file_name"/>
+                                <field name="ei_pdf_base64_bytes" readonly="True" filename="ei_file_name"/>
+                                <field name="ei_zip_base64_bytes" readonly="True"/>
+                                <field name="ei_dian_response_base64_bytes" readonly="True" filename="ei_dian_resp_file_name"/>
+
+
+                            </group>
+                            <group name="dian_qr">
+                                <field name="ei_qr_data" readonly="0"/>
+                                <field name="ei_qr_image" widget="image" readonly="0"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="account_wizard_outstanding_credits_tree" model="ir.ui.view">
+            <field name="name">account.wizard.outstanding.credits.tree</field>
+            <field name="model">account.move.line</field>
+            <field eval="100" name="priority"/>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Journal Items">
+                    <field name="date" optional="show" modifiers="{'readonly':true}"/>
+                    <field name="journal_id" options="{'no_open':True}" modifiers="{'readonly':true}"/>
+                    <field name="move_id" optional="show" modifiers="{'readonly':true,'required':true}"/>
+                    <field name="account_id" options="{'no_open': True}" modifiers="{'readonly':true}"/>
+                    <field name="partner_id" optional="show" modifiers="{'readonly':true}"/>
+                    <field name="ref" optional="show" modifiers="{'readonly':true}"/>
+                    <field name="name" optional="show" modifiers="{'readonly':true}"/>
+                    <field name="analytic_account_id" optional="show" modifiers="{'readonly':true}"/>
+                    <field name="amount_to_show" optional="show" modifiers="{'readonly':true}" sum="Total amount"/>
+                    <field name="full_reconcile_id" optional="hide" modifiers="{'readonly':true}"/>
+                    <field name="reconcile_model_id" invisible="1" modifiers="{'readonly':true,'column_invisible':true}"/>
+                    <field name="reconciled" invisible="1" modifiers="{'readonly':true,'column_invisible':true}"/>
+                    <field name="date_maturity" optional="hide" modifiers="{}"/>
+                    <field name="currency_id" readonly="1" invisible="1"  modifiers="{'readonly':true,'column_invisible':true}"/>
+                    <field name="company_currency_id" invisible="1" modifiers="{'readonly':true,'column_invisible':true}"/>
+                    <field name="parent_state" invisible="1" modifiers="{'readonly':true,'column_invisible':true}"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

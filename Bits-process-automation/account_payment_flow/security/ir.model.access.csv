@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_payment_flow,access_account_payment_flow,model_account_payment_flow,base.group_user,1,1,1,1
+access_account_payment_flow_stage,access_account_payment_flow_stage,model_account_payment_flow_stage,base.group_user,1,1,1,1
+access_account_payment_flow_stage_team,access_account_payment_flow_stage_team,model_account_payment_flow_stage_team,base.group_user,1,1,1,1

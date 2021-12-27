@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.ui.view" id="account_account_niif_view">
+    <field name="name">account_account_niif_view</field>
+    <field name="model">account.account</field>
+    <field name="inherit_id" ref="account.view_account_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='deprecated']" position="after">
+        <field name="use_homologation" invisible="1"/>
+        <field name="fiscal" attrs="{'invisible': ['|',('use_homologation', '=', False),('homologation_account_fiscal_id','=',True)]}"/>
+        <field name="homologation_account_fiscal_id" attrs="{'invisible': ['|',('use_homologation', '=', False),('fiscal','=',True)]}"/>
+      </xpath>
+    </field>
+  </record>
+  <record model="ir.ui.view" id="account_account_fiscal_tree">
+    <field name="name">account_account_fiscal_tree</field>
+    <field name="model">account.account</field>
+    <field name="inherit_id" ref="account.view_account_list"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='company_id']" position="after">
+        <field name="use_homologation" invisible="1"/>
+        <field name="fiscal" optional="hide"/>
+        <field name="homologation_account_fiscal_id" optional="hide"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

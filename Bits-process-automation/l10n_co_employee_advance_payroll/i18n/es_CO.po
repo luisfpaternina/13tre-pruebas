@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_employee_advance_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-09 14:03+0000\n"
+"PO-Revision-Date: 2021-07-09 14:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_co_employee_advance_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_employee_advance_payroll.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">Structure Type Integral:</span>"
+msgstr ""
+
+#. module: l10n_co_employee_advance_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_employee_advance_payroll.hr_salary_rule_parafiscal_settings_view_form
+msgid "Add all items for struct type integral"
+msgstr "Adicionar todos los items para la estructura de tipo integral"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model,name:l10n_co_employee_advance_payroll.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model,name:l10n_co_employee_advance_payroll.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields,field_description:l10n_co_employee_advance_payroll.field_res_partner__l10n_co_document_type
+#: model:ir.model.fields,field_description:l10n_co_employee_advance_payroll.field_res_users__l10n_co_document_type
+msgid "Document Type"
+msgstr "Tipo de documento"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model,name:l10n_co_employee_advance_payroll.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model,name:l10n_co_employee_advance_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields,field_description:l10n_co_employee_advance_payroll.field_hr_employee__high_risk_pension
+msgid "High pension risk"
+msgstr "Alto riesgo de pensión"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields,field_description:l10n_co_employee_advance_payroll.field_hr_contract__high_risk_pension
+msgid "Hihg risk pension"
+msgstr "Alto riesgo de pensión"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields,help:l10n_co_employee_advance_payroll.field_res_partner__l10n_co_document_type
+#: model:ir.model.fields,help:l10n_co_employee_advance_payroll.field_res_users__l10n_co_document_type
+msgid "Indicates to what document the information in here belongs to."
+msgstr "Indicar aquí a que tipo de documento pertenece"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields,field_description:l10n_co_employee_advance_payroll.field_hr_employee__integral_salary
+msgid "Integral Salary"
+msgstr "Salario integral"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields,field_description:l10n_co_employee_advance_payroll.field_res_config_settings__integral_structure_type_payroll_ids
+msgid "Integral Structure Type Payroll"
+msgstr "Nomina estructura salarial tipo integral"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields.selection,name:l10n_co_employee_advance_payroll.selection__res_partner__l10n_co_document_type__50
+msgid "NIT of other Country"
+msgstr "NIT de otro país"
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields.selection,name:l10n_co_employee_advance_payroll.selection__res_partner__l10n_co_document_type__91
+msgid "NUIP*"
+msgstr ""
+
+#. module: l10n_co_employee_advance_payroll
+#: model:ir.model.fields.selection,name:l10n_co_employee_advance_payroll.selection__res_partner__l10n_co_document_type__47
+msgid "PEP"
+msgstr ""
+
+#. module: l10n_co_employee_advance_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_employee_advance_payroll.hr_salary_rule_parafiscal_settings_view_form
+msgid "Parameters for Employees"
+msgstr "Parametros para empleados"

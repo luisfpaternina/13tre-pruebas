@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="credit_list_view">
+            <field name="name">credit list</field>
+            <field name="model">credit</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="client_type"/>
+                    <field name="number_credit"/>
+                    <field name="sponsoring_entity_id"/>
+                    <field name="credit_type_id"/>
+                    <field name="modality"/>
+                    <field name="credit_limit"/>
+                    <field name="available_balance" optional="hide"/>
+                    <field name="state" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="credit_form_view">
+            <field name="name">credit form</field>
+            <field name="model">credit</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                        <button name="calculate_payment_schedule" type="object" string="Calculate"/>
+                        <button name="publish_receipts" type="object" string="Publish Receipts" groups="allocation_of_credit_amount.group_manager"/>
+                    </header>
+                    <sheet>
+                        <field name="client_type" options="{'horizontal': true}" class="oe_edit_only" widget="radio"/>
+                        <div class="oe_title">
+                            <h1 class="d-flex flex-row justify-content-between text-muted">
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="res_partner_id"/>
+                                <field name="credit_type_id"/>
+                                <field name="sponsoring_entity_id" attrs="{'invisible': [('credit_type_id', '=', False)]}"/>
+                                <field name="term_months"/>
+                                <field name="endorsement_commission"/>
+                                <field name="disbursement_date"/>
+                                <field name="invoice_number"/>
+                            </group>
+                            <group>
+                                <field name="number_credit"/>
+                                <field name="modality"/>
+                                <field name="credit_limit"/>
+                                <field name="available_balance" readonly="1" force_save="1"/>
+                                <field name="credit_value_accounted" readonly="1" force_save="1"/>
+                                <field name="endorsement_value_plus_vat" readonly="1" force_save="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="credit_lines" string="Credit Lines">
+                                <group>
+                                    <field name="credit_lines" nolabel="1">
+                                        <tree>
+                                            <field name="credit_id" invisible="1"/>
+                                            <field name="installment_number"/>
+                                            <field name="payment_date"/>
+                                            <field name="capital_subscription"/>
+                                            <field name="bank_interest"/>
+                                            <field name="amount_to_be_paid"/>
+                                            <field name="capital_balance"/>
+                                            <field name="receipt_id"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="credit_line_view_tree" >
+            <field name="name">credit_line list</field>
+            <field name="model">credit.line</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="credit_id" invisible="1"/>
+                    <field name="installment_number"/>
+                    <field name="payment_date"/>
+                    <field name="capital_subscription"/>
+                    <field name="bank_interest"/>
+                    <field name="amount_to_be_paid"/>
+                    <field name="capital_balance" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="credit_line_view_form" >
+            <field name="name">credit_line form</field>
+            <field name="model">credit.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1 class="d-flex flex-row justify-content-between text-muted">
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="credit_id"/>
+                                <field name="installment_number"/>
+                                <field name="capital_subscription"/>
+                                <field name="amount_to_be_paid"/>
+                                <field name="receipt_id" attrs="{'readonly': True}"/>
+                            </group>
+                            <group>
+                                <field name="company_currency_id"/>
+                                <field name="payment_date"/>
+                                <field name="bank_interest"/>
+                                <field name="capital_balance"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_window_credit_views">
+            <field name="name">Credit</field>
+            <field name="res_model">credit</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_window_credit_line_views">
+            <field name="name">Credit Lines</field>
+            <field name="res_model">credit.line</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="categ_credits"
+            name="Credits"
+            parent="sale.menu_sale_config"
+        />
+
+        <menuitem
+            id="menu_credit_list"
+            name="Credits"
+            parent="allocation_of_credit_amount.categ_credits"
+            action="allocation_of_credit_amount.action_window_credit_views"
+            groups="allocation_of_credit_amount.group_manager,allocation_of_credit_amount.group_user"
+        />
+
+        <menuitem
+            id="menu_credit_line_list"
+            name="Credit Lines"
+            parent="allocation_of_credit_amount.categ_credits"
+            action="allocation_of_credit_amount.action_window_credit_line_views"
+            groups="allocation_of_credit_amount.group_manager,allocation_of_credit_amount.group_user"
+        />
+
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+id,name
+column_001,Conceptos
+column_002,Código dpto
+column_003,Código mcp
+column_004,Dirección
+column_005,Número identificación del informado
+column_006,Otros nombres del informado
+column_007,Pago o abono en cuenta deducible
+column_008,Pago o abono en cuenta no deducible
+column_009,País
+column_010,Primer apellido del informado
+column_011,Primer nombre del informado
+column_012,Razón social informado
+column_013,Segundo apellido del informado
+column_014,Tipo de documento
+column_015,Iva mayor valor del costo o gasto deducible
+column_016,Iva mayor valor del costo o gasto no deducible
+column_017,Retención en la fuente practicada en renta
+column_018,Retención en la fuente asumida en renta
+column_019,Retención en la fuente practicada IVA régimen común
+column_020,Retención en la fuente practicada IVA no domiciliados

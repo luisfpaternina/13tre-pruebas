@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="10n_co_account_invoice_product_template_form_view" model="ir.ui.view">
+            <field name="name">10n_co.account.product.template.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="priority">5</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='type']" position="before">
+                    <field name="l10n_co_unit_measure_id"/>
+                </xpath>
+                <xpath expr="//div[@name='options']/div[2]" position="after">
+                    <div>
+                        <field name="l10n_co_foreign_client_applies"/>
+                        <label for="l10n_co_foreign_client_applies"/>
+                    </div>
+                </xpath>
+                <xpath expr="//div[@name='standard_price_uom']" position="after">
+                    <field
+                        name="l10n_co_brand"
+                        attrs="{'invisible': [('l10n_co_foreign_client_applies', '=', False)], 'required': [('l10n_co_foreign_client_applies', '=', True)]}"
+                    />
+                    <field
+                        name="l10n_co_model"
+                        attrs="{'invisible': [('l10n_co_foreign_client_applies', '=', False)], 'required': [('l10n_co_foreign_client_applies', '=', True)]}"
+                    />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

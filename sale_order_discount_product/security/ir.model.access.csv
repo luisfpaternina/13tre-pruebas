@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access__discount_table,discount_table,model_discount_table,base.group_user,1,1,1,1

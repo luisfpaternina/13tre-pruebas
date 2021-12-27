@@ -1,0 +1,331 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_tech_provider_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-13 21:43+0000\n"
+"PO-Revision-Date: 2021-08-13 21:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields,field_description:l10n_co_tech_provider_payroll.field_l10n_co_tech_provider___type
+msgid " Type"
+msgstr "Tipo"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider_payroll.selection__l10n_co_tech_provider_line__cardinality__0_1
+msgid "0-1"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider_payroll.selection__l10n_co_tech_provider_line__cardinality__0_n
+msgid "0-N"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider_payroll.selection__l10n_co_tech_provider_line__cardinality__1_1
+msgid "1-1"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider_payroll.selection__l10n_co_tech_provider_line__cardinality__1_n
+msgid "1-N"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields,field_description:l10n_co_tech_provider_payroll.field_l10n_co_tech_provider__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields,field_description:l10n_co_tech_provider_payroll.field_l10n_co_tech_provider_line__cardinality
+msgid "Cardinality"
+msgstr "Cardinalidad"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model,name:l10n_co_tech_provider_payroll.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configuración"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields,field_description:l10n_co_tech_provider_payroll.field_res_config_settings__provider_payroll_id
+msgid "Enabled provider"
+msgstr "Activar proveedor"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_36
+msgid "Indicador ANI"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_27
+msgid "Indicador ANT"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_20
+msgid "Indicador AUX"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_19
+msgid "Indicador BON"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_24
+msgid "Indicador BOO"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_16
+msgid "Indicador CES"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_25
+msgid "Indicador COI"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_23
+msgid "Indicador COM"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_10
+msgid "Indicador DBA"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_38
+msgid "Indicador DED"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_28
+msgid "Indicador DEV"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_11
+msgid "Indicador DTR"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_02
+msgid "Indicador EMP"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_40
+msgid "Indicador FOO"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_09
+msgid "Indicador FPA"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_30
+msgid "Indicador FPE"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_31
+msgid "Indicador FSP"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_01
+msgid "Indicador HDR"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_12
+msgid "Indicador HEX"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_21
+msgid "Indicador HLE"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_06
+msgid "Indicador IGE"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_17
+msgid "Indicador INC"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_05
+msgid "Indicador LGE"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_34
+msgid "Indicador LIB"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_18
+msgid "Indicador LIC"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_07
+msgid "Indicador NOT"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_41
+msgid "Indicador NOV"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_22
+msgid "Indicador OCO"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_37
+msgid "Indicador ODE"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_08
+msgid "Indicador PAG"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_35
+msgid "Indicador PAT"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_04
+msgid "Indicador PER"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_15
+msgid "Indicador PRI"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_26
+msgid "Indicador PTE"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_39
+msgid "Indicador RES"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_29
+msgid "Indicador SAL"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_33
+msgid "Indicador SAN"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_32
+msgid "Indicador SIN"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_03
+msgid "Indicador TRA"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_13
+msgid "Indicador VAC"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:l10n_co.tech.provider.line,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_line_headboard_14
+msgid "Indicador VCO"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider_payroll.l10n_co_tech_provider_settings_payroll
+msgid "Is it a way to test?"
+msgstr "¿Es para pruebas?"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields,field_description:l10n_co_tech_provider_payroll.field_res_config_settings__password_payroll_provider
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields.selection,name:l10n_co_tech_provider_payroll.selection__l10n_co_tech_provider___type__payroll
+msgid "Payroll"
+msgstr "Nómina"
+
+#. module: l10n_co_tech_provider_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider_payroll.l10n_co_tech_provider_settings_payroll
+msgid "Select the provider for your company."
+msgstr "Seleccione el proveedor para su compañía"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.ui.menu,name:l10n_co_tech_provider_payroll.menu_root
+msgid "Tech Provider"
+msgstr "Proveedor tecnológico"
+
+#. module: l10n_co_tech_provider_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider_payroll.l10n_co_tech_provider_settings_payroll
+msgid "Tech provider"
+msgstr "Proveedor tecnológico"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.actions.act_window,name:l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_action_window
+msgid "Tech provider payroll"
+msgstr "Proveedor tecnológico Nómina"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields,field_description:l10n_co_tech_provider_payroll.field_res_config_settings__is_payroll_test
+msgid "Test mode"
+msgstr "Modo test"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model.fields,field_description:l10n_co_tech_provider_payroll.field_res_config_settings__user_payroll_provider
+msgid "User"
+msgstr "Usuario"
+
+#. module: l10n_co_tech_provider_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider_payroll.l10n_co_tech_provider_settings_payroll
+msgid "Username for connection with the provider."
+msgstr "Nombre de usuario para conexión con el proveedor"
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model,name:l10n_co_tech_provider_payroll.model_l10n_co_tech_provider_line
+msgid "l10n_co.tech.provider.line"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model:ir.model,name:l10n_co_tech_provider_payroll.model_l10n_co_tech_provider
+msgid "l10n_co_tech_provider"
+msgstr ""
+
+#. module: l10n_co_tech_provider_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_co_tech_provider_payroll.l10n_co_tech_provider_settings_payroll
+msgid "password for connection with the provider."
+msgstr "Contraseña para conexión con el proveedor"

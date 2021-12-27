@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_contract_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-13 03:11+0000\n"
+"PO-Revision-Date: 2020-11-12 22:13-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history___type
+msgid " Type"
+msgstr " Tipo"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__adjusment_date
+msgid "Adjusment date"
+msgstr "Fecha ajuste"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__amount
+msgid "Amount"
+msgstr "Monto"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: hr_contract_history
+#: model:ir.model,name:hr_contract_history.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de Empleado"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract__contract_history_ids
+#: model_terms:ir.ui.view,arch_db:hr_contract_history.hr_contract_history_inherit
+msgid "History"
+msgstr "Historial"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__last_salary
+msgid "Last Salary"
+msgstr "Salario anterior"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: hr_contract_history
+#: model:ir.model.fields,field_description:hr_contract_history.field_hr_contract_history__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: hr_contract_history
+#: code:addons/hr_contract_history/models/hr_contract.py:0
+#, python-format
+msgid "Salary Change"
+msgstr "Cambio de salario"
+
+#. module: hr_contract_history
+#: model:ir.model.fields.selection,name:hr_contract_history.selection__hr_contract_history___type__wage
+msgid "Wage"
+msgstr "Salario"
+
+#. module: hr_contract_history
+#: model:ir.model,name:hr_contract_history.model_hr_contract_history
+msgid "hr.contract.history"
+msgstr ""

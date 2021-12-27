@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="account_collective_payments_wizard_form" model="ir.ui.view">
+            <field name="name">account.collective.payments.wizard.form</field>
+            <field name="model">account.collective.payments.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Register Payment">
+                    <group>
+                        <group name="partner_group">
+                            <field name="payment_type" widget="radio" invisible="1"/>
+                            <field name="name"/>
+                            <field name="account_id" options="{'no_create': True}" invisible="1"/>
+                            <field name="journal_id" options="{'no_create': True}"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="payment_method_id" widget="radio"/>
+                            <field name="amount"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Filters">
+                            <group name="Filters">
+                                <separator colspan="4" string="Filters"/>
+                                <group name="partner_group">
+                                    <field name="date_from_f"/>
+                                    <field name="journal_type_f"/>
+                                    <field name="partner_id_f" options="{'no_create': True}"/>
+                                    <field name="bank_id" options="{'no_create': True}"/>
+                                    <field name="group_apply"/>
+                                </group>
+                                <group>
+                                    <field name="date_to_f"/>
+                                    <field name="journal_id_f" options="{'no_create': True}"/>
+                                    <field name="account_id_f" options="{'no_create': True}"/>
+                                    <field name="clean_lines"/>
+                                    <field name="create_line_bank"/>
+                                </group>
+                            </group>
+
+                            <page string="Journal Items">
+                                <separator colspan="4" string="Journal Items"/>
+                                <field name="line_ids" context="{
+                                        'tree_view_ref': 'account_collective_payments.account_collective_payments_tree'}" attrs="{'invisible': ['|', ('date_from_f', '=', False), ('date_to_f', '=', False)]}" options="{'no_create': True}">
+                                </field>
+                            </page>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button string="Generate Payments" name="generate_payments_action" type="object" class="btn-primary" attrs="{'invisible':[('line_ids','=',[])]}"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_account_collective_payments_wizard" model="ir.actions.act_window">
+            <field name="name">Account Collective Payments</field>
+            <field name="res_model">account.collective.payments.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account_collective_payments_wizard_form"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

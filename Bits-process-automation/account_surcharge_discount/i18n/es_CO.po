@@ -1,0 +1,177 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_surcharge_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-17 21:24+0000\n"
+"PO-Revision-Date: 2020-11-17 16:27-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields.selection,name:account_surcharge_discount.selection__account_move__discount_type__amount
+msgid "Amount"
+msgstr "Cantidad"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move_line__apply_discount
+msgid "Apply Discount"
+msgstr "Aplicar descuento"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move__apply_global_discount
+msgid "Apply Global Discount"
+msgstr "Aplicar descuento global"
+
+#. module: account_surcharge_discount
+#: model_terms:ir.ui.view,arch_db:account_surcharge_discount.account_invoice_view_form_surcharge_discount
+msgid "Apply Global Discount:"
+msgstr "Aplicar descuento global:"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__code
+msgid "Code"
+msgstr "Código"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move_line__discount_amount
+msgid "Disc Tot"
+msgstr "Desc Tot"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move__amount_discount
+#: model:ir.model.fields.selection,name:account_surcharge_discount.selection__surchange_discount_type__qualifier__discount
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move_line__discount
+msgid "Discount (%)"
+msgstr "Descuento (%)"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move__discount_rate
+msgid "Discount Amount"
+msgstr "Monto Descuento"
+
+#. module: account_surcharge_discount
+#: model_terms:ir.ui.view,arch_db:account_surcharge_discount.account_invoice_view_form_surcharge_discount
+msgid "Discount Rate :"
+msgstr "Tasa de Descuento :"
+
+#. module: account_surcharge_discount
+#: code:addons/account_surcharge_discount/models/account_move.py:0
+#, python-format
+msgid "Discount Rate Error"
+msgstr "Error de tasa de descuento"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move__discount_type
+msgid "Discount Type"
+msgstr "Tipo de descuento"
+
+#. module: account_surcharge_discount
+#: model_terms:ir.ui.view,arch_db:account_surcharge_discount.account_invoice_view_form_surcharge_discount
+msgid "Discount Type :"
+msgstr "Tipo de descuento :"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move__total_without_sur_disc
+msgid "Free Amount"
+msgstr "Monto libre"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__id
+msgid "ID"
+msgstr ""
+
+#. module: account_surcharge_discount
+#: model:ir.model,name:account_surcharge_discount.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: account_surcharge_discount
+#: model:ir.model,name:account_surcharge_discount.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificacion el"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields.selection,name:account_surcharge_discount.selection__account_move__discount_type__none
+msgid "Not Apply"
+msgstr "No aplica"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields.selection,name:account_surcharge_discount.selection__account_move__discount_type__percent
+msgid "Percentage"
+msgstr "Porcentaje"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__qualifier
+msgid "Qualifier"
+msgstr "Calificador"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move__amount_surchange
+#: model:ir.model.fields.selection,name:account_surcharge_discount.selection__surchange_discount_type__qualifier__surcharge
+msgid "Surcharge"
+msgstr "Recargo"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_account_move__sur_disc_type_id
+msgid "Surcharge/Discount Type"
+msgstr "Tipo de Recargo o Descuento"
+
+#. module: account_surcharge_discount
+#: code:addons/account_surcharge_discount/models/account_move.py:0
+#, python-format
+msgid "The global percentage is greater than one hundred"
+msgstr "El porcentaje global es superior a cien"
+
+#. module: account_surcharge_discount
+#: model:ir.model.fields,field_description:account_surcharge_discount.field_surchange_discount_type__name
+msgid "Type Option"
+msgstr "Tipo de opción"
+
+#. module: account_surcharge_discount
+#: model:ir.model,name:account_surcharge_discount.model_surchange_discount_type
+msgid "surchange.discount.type"
+msgstr "surchange.discount.type"

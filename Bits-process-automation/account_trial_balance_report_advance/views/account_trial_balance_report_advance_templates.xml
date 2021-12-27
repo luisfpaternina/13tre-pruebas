@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- SCRIPT ADD -->
+        <template id="account_trial_balance_report_advance_backend" inherit_id="web.assets_backend" name="balance_report">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/account_trial_balance_report_advance/static/src/js/account_report_accounts.js"></script>
+            </xpath>
+        </template>
+
+        <!--Temaplate Search level-->
+        <template id="search_template_levels_filter">
+            <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="fa fa-level-up" title="Levels" role="img" aria-label="Levels"/>
+                Levels:
+                <t t-set="selected_level" t-value="', '.join(c.get('name') for c in options['levels_filter'] if c.get('selected'))"/>
+                <t t-if="selected_level">
+                    <t t-esc="selected_level"/>
+                </t>
+                <t t-else="">
+                    All
+                </t>
+            </a>
+            <div class="dropdown-menu o_filter_menu" role="menu">
+                <t t-foreach="options['levels_filter']" t-as="c">
+                    <a t-att-title="c.get('name')"
+                        data-filter="levels_filter"
+                        t-att-data-id="c.get('id')"
+                        class="dropdown-item js_account_report_choice_filter">
+                        <t t-esc="c.get('name')"/>
+                    </a>
+                </t>
+            </div>
+        </template>
+
+         <!--Template NIIF/FISCAL-->
+        <template id="search_template_levels_niff">
+            <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="fa fa-legal" title="type" role="img" aria-label="types"/>
+                Types:
+                <t t-set="selected_codes" t-value="', '.join(c.get('name') for c in options['levels_niff'] if c.get('selected'))"/>
+                <t t-if="selected_codes">
+                    <t t-esc="selected_codes"/>
+                </t>
+                <t t-else="">
+                    All
+                </t>
+            </a>
+            <div class="dropdown-menu o_filter_menu" role="menu">
+                <t t-foreach="options['levels_niff']" t-as="c">
+                    <a t-att-title="c.get('name')"
+                        data-filter="levels_niff"
+                        t-att-data-id="c.get('id')"
+                        class="dropdown-item js_account_report_choice_filter">
+                        <t t-esc="c.get('name')"/>
+                    </a>
+                </t>
+            </div>
+        </template>
+
+        <template id="search_template_extra_options" inherit_id="account_reports.search_template_extra_options">
+            <xpath expr="//div[@role='menu']" position="inside">
+                <a role="menuitem" class="dropdown-item js_account_report_bool_filter" t-if="options.get('levels') != None" title="levels" data-filter="levels">Levels and Subtotals</a>
+            </xpath>
+        </template>
+
+        <!-- Inherit report and call the templates-->
+        <template id="account_trial_balance_report_advance" inherit_id="account_reports.search_template">
+            <xpath expr="//div[1]" position="after">
+                <div class="btn-group o_dropdown o_account_reports_filter_levels_niff" t-if="options.get('levels_niff') != None">
+                    <t t-call="account_trial_balance_report_advance.search_template_levels_niff"/>
+                </div>
+                <div class="btn-group o_dropdown o_account_reports_filter_levels_filter" t-if="options.get('levels_filter') != None">
+                    <t t-call="account_trial_balance_report_advance.search_template_levels_filter"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

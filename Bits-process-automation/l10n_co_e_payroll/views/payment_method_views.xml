@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- model.name search view -->
+    <record id="payment_method_form" model="ir.ui.view">
+        <field name="name">payment.method.form</field>
+        <field name="model">payment.method</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="code" required="True"/>
+                        <field name="name" string="Means" required="True"/>
+                    </group>
+                </sheet> 
+            </form>
+        </field>
+    </record>
+
+    <record id="payment_method_tree" model="ir.ui.view">
+      <field name="name">payment.method.tree</field>
+      <field name="model">payment.method</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="name" string="Means"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="payment_method_form_actions">
+      <field name="name">Payment Method</field>
+      <field name="res_model">payment.method</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+      action="l10n_co_e_payroll.payment_method_form_actions"
+      name="Payment method DIAN"
+      id="menu_payment_method" 
+      parent="l10n_co_e_payroll.menu_payments"
+      sequence="10"/>
+  </data>
+
+</odoo>

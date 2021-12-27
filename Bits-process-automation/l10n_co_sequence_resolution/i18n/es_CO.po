@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_sequence_resolution
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-17 16:51+0000\n"
+"PO-Revision-Date: 2020-12-17 11:57-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence_date_range__active_resolution
+msgid "Active Resolution?"
+msgstr "Resolución activa?"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields.selection,name:l10n_co_sequence_resolution.selection__ir_sequence__dian_type__computer_generated_invoice
+msgid "Computer Generated Invoice"
+msgstr "Factura generada desde el ordenador"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence__dian_type
+msgid "DIAN Type"
+msgstr "Tipo DIAN"
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/ir_sequence.py:0
+#, python-format
+msgid "Final Date must be greater or equal than Initial Date."
+msgstr "La fecha final debe ser mayor o igual que la fecha inicial."
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence_date_range__number_to
+msgid "Final Number"
+msgstr "Número final"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence_date_range__number_from
+msgid "Initial Number"
+msgstr "Número inicial"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model,name:l10n_co_sequence_resolution.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/ir_sequence.py:0
+#, python-format
+msgid "Number To must be greater or equal than Number From."
+msgstr "El número a debe ser mayor o igual que Número de."
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/account_move.py:0
+#, python-format
+msgid ""
+"Official document of the authorization of electronic invoicing <br/>No %s validity %s months %s to %s <br/"
+">that enables from %s to %s.<br/>"
+msgstr ""
+"Documento oficial de autorización de facturación electrónica<br/>No %s vigencia %s meses %s hasta %s<br/>que "
+"habilita desde %s hasta %s.<br/>"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields.selection,name:l10n_co_sequence_resolution.selection__ir_sequence__dian_type__pos_invoice
+msgid "POS Invoice"
+msgstr "Factura POS"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields.selection,name:l10n_co_sequence_resolution.selection__ir_sequence__dian_type__paper_invoice
+msgid "Paper Invoice"
+msgstr "Factura en papel"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence_date_range__prefix
+msgid "Prefix"
+msgstr "Prefijo"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence__remaining_days
+msgid "Remaining Days"
+msgstr "Días restantes"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence__remaining_numbers
+msgid "Remaining Numbers"
+msgstr "Números restantes"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence_date_range__resolution_number
+msgid "Resolution Number"
+msgstr "Número de formulario"
+
+#. module: l10n_co_sequence_resolution
+#: model_terms:ir.ui.view,arch_db:l10n_co_sequence_resolution.ir_sequence_form_l10n_co_search_register
+msgid "Search Sequence L10n_co"
+msgstr "Secuencia de búsqueda L10n_co"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model,name:l10n_co_sequence_resolution.model_ir_sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_co_sequence_resolution
+#: model_terms:ir.ui.view,arch_db:l10n_co_sequence_resolution.ir_sequence_form_l10n_co_search_register
+msgid "Sequence - Resolutions"
+msgstr "Secuencia - Resoluciones"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.actions.act_window,name:l10n_co_sequence_resolution.ir_sequence_form_l10n_co
+#: model:ir.ui.menu,name:l10n_co_sequence_resolution.menu_ir_sequence_form_l10n_co
+msgid "Sequence DIAN"
+msgstr "Secuencia DIAN"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model,name:l10n_co_sequence_resolution.model_ir_sequence_date_range
+msgid "Sequence Date Range"
+msgstr "Rango de fechas de la secuencia"
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/ir_sequence.py:0
+#, python-format
+msgid "The Date Range must be unique or a date must not be included in another Date Range."
+msgstr "El intervalo de fechas debe ser único o no se debe incluir una fecha en otro intervalo de fechas."
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/ir_sequence.py:0
+#, python-format
+msgid ""
+"The Number Next must be greater in one to Number To, to represent a finished sequence or Number Next must be "
+"included in Number Range."
+msgstr ""
+"El número siguiente debe ser mayor en uno a número a, para representar una secuencia terminada o número "
+"siguiente debe incluirse en rango de números."
+
+#. module: l10n_co_sequence_resolution
+#: model_terms:ir.ui.view,arch_db:l10n_co_sequence_resolution.account_invoice_view_form_inherit_sequence_resolution
+msgid ""
+"The authorized invoicing resolution for this journal is nearby to expire or the authorized numbering is "
+"running out.<br/>\n"
+"                        <span style=\"font-weight:bold;\">Please, you must to inform the administration.</span>"
+msgstr ""
+"La resolución de facturación autorizada para este diario está cerca para expirar o la numeración autorizada se "
+"está agotando.<br/>\n"
+"                        <span style=\"font-weight:bold;\">Por favor, debe informar a la administración.</span>"
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/ir_sequence.py:0
+#, python-format
+msgid "The system needs at least one active DIAN resolution."
+msgstr "El sistema necesita por lo menos una resolución de la DIAN activa."
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/ir_sequence.py:0
+#, python-format
+msgid "The system needs only one active DIAN resolution."
+msgstr "El sistema necesita solo una resolución de la DIAN activa."
+
+#. module: l10n_co_sequence_resolution
+#: code:addons/l10n_co_sequence_resolution/models/ir_sequence.py:0
+#, python-format
+msgid "There is no active authorized invoicing resolution."
+msgstr "No hay una resolución de facturación autorizada activa."
+
+#. module: l10n_co_sequence_resolution
+#: model_terms:ir.ui.view,arch_db:l10n_co_sequence_resolution.account_invoice_view_form_inherit_sequence_resolution
+msgid ""
+"There is no active authorized invoicing resolution.<br/>\n"
+"                        <span style=\"font-weight:bold;\">Please, you must to inform the administration.</span>"
+msgstr ""
+"No hay una resolución de facturación autorizada activa.<br/>\n"
+"                        <span style=\"font-weight:bold;\">Por favor, debe informar a la administración.</span>"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_ir_sequence__use_dian_control
+msgid "Use DIAN control resolutions"
+msgstr "Utilice resoluciones de control DIAN"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_account_move__warn_inactive_resolution
+msgid "Warn About Inactive Resolution?"
+msgstr "¿Advertencia sobre la resolución inactiva?"
+
+#. module: l10n_co_sequence_resolution
+#: model:ir.model.fields,field_description:l10n_co_sequence_resolution.field_account_move__warn_remaining
+msgid "Warn About Remainings?"
+msgstr "¿Advertir sobre los restos?"
+
+#. module: l10n_co_sequence_resolution
+#: model_terms:ir.ui.view,arch_db:l10n_co_sequence_resolution.sequence_view
+msgid "Warn From"
+msgstr "Advertir de"

@@ -1,0 +1,65 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_delivery_carrier_cities
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-23 19:34+0000\n"
+"PO-Revision-Date: 2021-08-23 19:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_delivery_carrier_cities
+#: model:ir.model,name:sale_delivery_carrier_cities.model_delivery_price_rule
+msgid "Delivery Price Rules"
+msgstr "Reglas Entrega Precio"
+
+#. module: sale_delivery_carrier_cities
+#: model_terms:ir.ui.view,arch_db:sale_delivery_carrier_cities.view_delivery_carrier_citie_to_form
+msgid "Departaments"
+msgstr "Departamentos"
+
+#. module: sale_delivery_carrier_cities
+#: code:addons/sale_delivery_carrier_cities/models/delivery_carrier.py:0
+#, python-format
+msgid "No price rule matching this order; delivery cost cannot be computed."
+msgstr ""
+"Ninguna regla concordante con este pedido; los costes de envío no pueden ser"
+" calculados."
+
+#. module: sale_delivery_carrier_cities
+#: model:ir.model.fields,field_description:sale_delivery_carrier_cities.field_delivery_carrier__price_kilogram
+msgid "Price kilogram"
+msgstr "Precio Kg"
+
+#. module: sale_delivery_carrier_cities
+#: model:ir.model.fields.selection,name:sale_delivery_carrier_cities.selection__delivery_price_rule__variable__price_kilogram
+#: model:ir.model.fields.selection,name:sale_delivery_carrier_cities.selection__delivery_price_rule__variable_factor__price_kilogram
+msgid "Price kilogram * Weight"
+msgstr "Precio Kg * Peso"
+
+#. module: sale_delivery_carrier_cities
+#: model:ir.model,name:sale_delivery_carrier_cities.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de envío"
+
+#. module: sale_delivery_carrier_cities
+#: model:ir.model.fields,field_description:sale_delivery_carrier_cities.field_delivery_carrier__town_to_ids
+msgid "Towns to"
+msgstr "Ciudades"
+
+#. module: sale_delivery_carrier_cities
+#: model:ir.model.fields,field_description:sale_delivery_carrier_cities.field_delivery_price_rule__variable
+msgid "Variable"
+msgstr ""
+
+#. module: sale_delivery_carrier_cities
+#: model:ir.model.fields,field_description:sale_delivery_carrier_cities.field_delivery_price_rule__variable_factor
+msgid "Variable Factor"
+msgstr "Factor variable"

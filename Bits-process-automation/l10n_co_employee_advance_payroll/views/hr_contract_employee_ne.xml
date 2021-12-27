@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+    <record id="l10n_co_employee_advance_payroll_view" model="ir.ui.view">
+      <field name="name">l10n_co_employee_advance_payroll_view</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form"/>
+      <field name="arch" type="xml">
+      <xpath expr="//field[@name='parent_id']" position="after">
+          <field name="high_risk_pension"/>
+          <field name="integral_salary"/>
+        </xpath>
+        <xpath expr="//field[@name='pension']" position="after">
+          <xpath expr="//field[@name='high_risk_pension']" position="move"/>
+          <xpath expr="//field[@name='integral_salary']" position="move"/>
+        </xpath>
+      </field >
+      </record>
+    </data>
+</odoo>

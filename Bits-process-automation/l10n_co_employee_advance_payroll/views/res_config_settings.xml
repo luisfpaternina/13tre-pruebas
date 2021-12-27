@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_salary_rule_parafiscal_settings_view_form" model="ir.ui.view">
+        <field name="name">hr.salary.rule.parafiscal.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="120"/>
+        <field name="inherit_id"
+            ref="hr_payroll.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='hr_payroll_accountant']" position="after">
+              <h2>Parameters for Employees</h2>
+              <div class="row mt16 o_settings_container">
+                  <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_right_pane">
+                      <span class="o_form_label">Structure Type Integral:</span>
+                      <div class="text-muted">
+                        Add all items for struct type integral
+                      </div>
+                      <div class="mt8">
+                          <field name="integral_structure_type_payroll_ids" widget="many2many_tags"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

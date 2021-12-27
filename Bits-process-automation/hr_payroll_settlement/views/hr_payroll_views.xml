@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="action_report_payslip_settlement"
+        model="hr.payslip"
+        string="Settlement"
+        report_type="qweb-pdf"
+        name="hr_payroll_settlement.hr_payslip_report_settlement"
+        file="hr_payroll_settlement.hr_payslip_report_settlement"
+        print_report_name="'Settlement - %s' % (object.employee_id.name)"
+    />
+</odoo>

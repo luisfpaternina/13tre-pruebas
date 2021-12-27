@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_recruitment_profile_view" model="ir.ui.view">
+            <field name="name">hr_recruitment_profile_view</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.view_hr_job_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//notebook[1]" position="inside">
+
+                        <page name="job_profile" string="Job Profile">
+                            <group string="Job Profile">
+                                <group>
+                                    <field name="job_level"/>
+                                    <field name="education"/>
+                                    <field name="apprenticeship"/>
+                                </group>
+                            </group>
+                            <group string="Experience">
+                                <group>
+                                    <field name="total_time"/>
+                                    <field name="skills"/>
+                                </group>
+                                <group>
+                                    <field name="specific_time"/>
+                                </group>
+                            </group>
+                        </page>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

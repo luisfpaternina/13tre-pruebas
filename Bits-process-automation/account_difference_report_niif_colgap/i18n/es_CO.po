@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_difference_report_niif_colgap
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-02 17:16+0000\n"
+"PO-Revision-Date: 2021-03-02 12:17-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: account_difference_report_niif_colgap
+#: model_terms:ir.ui.view,arch_db:account_difference_report_niif_colgap.search_template_account_accounts
+msgid "<span class=\"fa fa-folder-open\"/>Accounts"
+msgstr "<span class=\"fa fa-folder-open\"/>Cuentas"
+
+#. module: account_difference_report_niif_colgap
+#: model:ir.actions.client,name:account_difference_report_niif_colgap.action_account_difference_niif_colgap
+#: model:ir.ui.menu,name:account_difference_report_niif_colgap.menu_action_difference_niif_colgap
+msgid "Account Difference NIIF-Colgap"
+msgstr "Difference NIIF - Colgap"
+
+#. module: account_difference_report_niif_colgap
+#: model:ir.model,name:account_difference_report_niif_colgap.model_account_difference_niif_colgap
+msgid "Account Difference NIIf-Colgap"
+msgstr "Difference NIIF - Colgap"
+
+#. module: account_difference_report_niif_colgap
+#. openerp-web
+#: code:addons/account_difference_report_niif_colgap/static/src/js/account_report_accounts.js:0
+#, python-format
+msgid "Accounts From"
+msgstr "Cuenta de Inicio"
+
+#. module: account_difference_report_niif_colgap
+#. openerp-web
+#: code:addons/account_difference_report_niif_colgap/static/src/js/account_report_accounts.js:0
+#, python-format
+msgid "Accounts To"
+msgstr "Cuenta Hasta"
+
+#. module: account_difference_report_niif_colgap
+#: code:addons/account_difference_report_niif_colgap/models/account_difference_niif_colgap.py:0
+#, python-format
+msgid "Balance Colgap"
+msgstr "Balance Fiscal"
+
+#. module: account_difference_report_niif_colgap
+#: code:addons/account_difference_report_niif_colgap/models/account_difference_niif_colgap.py:0
+#, python-format
+msgid "Balance NIIF"
+msgstr "Balance NIIF"
+
+#. module: account_difference_report_niif_colgap
+#: code:addons/account_difference_report_niif_colgap/models/account_difference_niif_colgap.py:0
+#, python-format
+msgid "Difference"
+msgstr "Diferencia"
+
+#. module: account_difference_report_niif_colgap
+#: code:addons/account_difference_report_niif_colgap/models/account_difference_niif_colgap.py:0
+#, python-format
+msgid "Difference NIIF-Colgap"
+msgstr "Diferencias NIIF - Fiscal"
+
+#. module: account_difference_report_niif_colgap
+#: model:ir.model.fields,field_description:account_difference_report_niif_colgap.field_account_difference_niif_colgap__display_name
+msgid "Display Name"
+msgstr "Nombre Completo"
+
+#. module: account_difference_report_niif_colgap
+#: model:ir.model.fields,field_description:account_difference_report_niif_colgap.field_account_difference_niif_colgap__id
+msgid "ID"
+msgstr ""
+
+#. module: account_difference_report_niif_colgap
+#: model:ir.model.fields,field_description:account_difference_report_niif_colgap.field_account_difference_niif_colgap____last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificacion"
+
+#. module: account_difference_report_niif_colgap
+#: code:addons/account_difference_report_niif_colgap/models/account_difference_niif_colgap.py:0
+#, python-format
+msgid "Total"
+msgstr "Total"

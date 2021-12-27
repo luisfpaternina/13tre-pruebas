@@ -1,0 +1,289 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_flat_file_parafiscal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-14 15:38+0000\n"
+"PO-Revision-Date: 2020-08-14 11:13-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">AVP Rules:</span>"
+msgstr "<span class=\"o_form_label\">Reglas AVP:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">IGE Rules:</span>"
+msgstr "<span class=\"o_form_label\">Reglas de IGE:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">IRL:</span>"
+msgstr "<span class=\"o_form_label\">Irl:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">LMA Rules:</span>"
+msgstr "<span class=\"o_form_label\">Reglas de LMA:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">Rate</span>"
+msgstr "<span class=\"o_form_label\">Tasa</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">SLN Rules:</span>"
+msgstr "<span class=\"o_form_label\">Reglas SLN:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">Structure Integral Salarys:</span>"
+msgstr "<span class=\"o_form_label\">Salarios Integrales estructura:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">VAC-LR Rules:</span>"
+msgstr "<span class=\"o_form_label\">Reglas de VAC-LR:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "<span class=\"o_form_label\">VTW Rules:</span>"
+msgstr "<span class=\"o_form_label\">Reglas de VTW:</span>"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_modality__2
+msgid "Assisted"
+msgstr "Asistida"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__associated_template_number
+msgid "Associated Template Number"
+msgstr "Número de plantilla asociado"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__avp_rule_ids
+msgid "Avp Rule"
+msgstr "Regla Avp"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__file_type__bank
+msgid "Bank"
+msgstr "Banco"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__m
+msgid "Blackberry"
+msgstr "Mora"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model,name:account_flat_file_parafiscal.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__a
+msgid "Contributors with Income News"
+msgstr "Contribuyentes con Noticias de Ingresos"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__n
+msgid "Corrections"
+msgstr "Correcciones"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "Days of disability due to work accident"
+msgstr "Días de discapacidad por accidente de trabajo"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__s
+msgid "Domestic Service Employees"
+msgstr "Empleados de Servicio Doméstico"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_modality__1
+msgid "Electronic"
+msgstr "Electrónico"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__employee_id
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__e
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__t
+msgid "Employees Beneficiary Entity of the SG of Participations"
+msgstr "Entidad Beneficiaria de Empleados del SG de Participaciones"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__file_type
+msgid "File Type"
+msgstr "Tipo de archivo"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__ige_rule_ids
+msgid "Ige Rule"
+msgstr "Regla Ige"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__i
+msgid "Independent"
+msgstr "Independiente"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__y
+msgid "Independent Companies"
+msgstr "Empresas independientes"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__integral_salary_structure_ids
+msgid "Integral Salary Structure"
+msgstr "Estructura salarial integral"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__irl_rule_ids
+msgid "Irl Rule"
+msgstr "Regla Irl"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__file_type__layoffs
+msgid "Layoffs"
+msgstr "Despidos"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__lma_rule_ids
+msgid "Lma Rule"
+msgstr "Regla Lma"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_modality__0
+msgid "None"
+msgstr "Ninguno"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "Parafiscal"
+msgstr "Parafiscal"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__file_type__parafiscal
+msgid "Parafiscales"
+msgstr "Parafiscales"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__partner_id
+msgid "Partner"
+msgstr "Asociado"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__payment_date_associated_template
+msgid "Payment date of associated template"
+msgstr "Fecha de pago de la plantilla asociada"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__x
+msgid "Payment of Liquidated Company"
+msgstr "Pago de liquidación de la compañía"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__f
+msgid "Payment of Missing Employer Contribution"
+msgstr "Pago de la contribución faltante del empleador"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__rate_solidarity_afs
+msgid "Rate Solidarity Afs"
+msgstr "Porcentaje Solidario AFS"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__rate_subsistence_afs
+msgid "Rate Subsistence Afs"
+msgstr "Porcentaje Subsistencia AFS"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__sln_rule_ids
+msgid "Sln Rule"
+msgstr "Regla Sln"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__social_security_id
+msgid "Social Security"
+msgstr "Seguridad Social"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__j
+msgid "Social Security Payment in Compliance with the Judgment"
+msgstr "Pago del Seguro Social en cumplimiento de la Sentencia"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "Solidarity subaccount"
+msgstr "Subcuenta solidaria"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__k
+msgid "Students"
+msgstr "Estudiantes"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "Subsistence subaccount"
+msgstr "Subcuenta de subsistencia"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__h
+msgid "Surrogate Mothers"
+msgstr "Madres sustitutas"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__template_modality
+msgid "Template Modality"
+msgstr "Tipo de modalidad"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_account_flat_file_base__template_type
+msgid "Template Type"
+msgstr "Tipo de plantilla"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "Transitory variation in wages"
+msgstr "Variación transitoria de salarios"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields.selection,name:account_flat_file_parafiscal.selection__account_flat_file_base__template_type__u
+msgid "UGPP for Third Party Payment"
+msgstr "UGPP para pagos de terceros"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__vac_lr_rule_ids
+msgid "Vac Lr Rule"
+msgstr "Regla Vac-Lr"
+
+#. module: account_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:account_flat_file_parafiscal.hr_salary_rule_parafiscal_settings_view_form
+msgid "Voluntary contribution"
+msgstr "Aporte voluntario"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model.fields,field_description:account_flat_file_parafiscal.field_res_config_settings__vst_rule_ids
+msgid "Vst Rule"
+msgstr "Regla Vst"
+
+#. module: account_flat_file_parafiscal
+#: model:ir.model,name:account_flat_file_parafiscal.model_account_flat_file_base
+msgid "account.flat.file.base"
+msgstr "account.flat.file.base"

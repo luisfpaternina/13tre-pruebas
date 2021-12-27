@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_hr_recruitment_internal_request_tree" model="ir.ui.view">
+            <field name="name">hr.recruitment.internal.request.tree</field>
+            <field name="model">hr.recruitment.internal.request</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <tree string="internal request">
+                <field name="code"/>
+                <field name="job_id"/>
+                <field name="department_id"/>
+                <field name="numbers_of_employees"/>
+                <field name="analytic_account_id"/>
+            </tree>
+            </field>
+        </record>
+        <record id="view_hr_recruitment_score_profile_form" model="ir.ui.view">
+            <field name="name">Internal request</field>
+            <field name="model">hr.recruitment.internal.request</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="internal request">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" required="1" placeholder="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="job_id" required="1"/>
+                                <field name="code" required="1"/>
+                                <field name="department_id"/>
+                            </group>
+                            <group>
+                                <field name="numbers_of_employees"/>
+                                <field name="analytic_account_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+            <record model="ir.actions.act_window" id="action_view_hr_recruitment_internal_request">
+            <field name="name">Internal request</field>
+            <field name="res_model">hr.recruitment.internal.request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create new record</p>
+            </field>
+        </record>
+        <record id="sequence_hr_recruitment_internal_request" model="ir.sequence">
+            <field name="name">Sequence internal request</field>
+            <field name="code">internal.request</field>
+            <field name="active">TRUE</field>
+            <field name="prefix"/>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+        <menuitem 
+            id="nemu_hr_recruitment_internal_request" 
+            name="Internal request" 
+            parent="hr_recruitment.menu_hr_recruitment_configuration" 
+            action="action_view_hr_recruitment_internal_request" 
+            sequence="95"/>
+    </data>
+</odoo>

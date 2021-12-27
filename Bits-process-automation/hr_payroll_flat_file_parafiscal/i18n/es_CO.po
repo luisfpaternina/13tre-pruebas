@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_flat_file_parafiscal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-03 22:41+0000\n"
+"PO-Revision-Date: 2021-05-03 17:44-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model:ir.model.fields,field_description:hr_payroll_flat_file_parafiscal.field_account_flat_file_base__date_from
+msgid "Date From"
+msgstr "Fecha Desde"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model:ir.model.fields,field_description:hr_payroll_flat_file_parafiscal.field_account_flat_file_base__date_to
+msgid "Date To"
+msgstr "Fecha Hasta"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:hr_payroll_flat_file_parafiscal.hr_payroll_flat_file_parafiscal_form
+msgid "Export Flat File"
+msgstr "Exportar Archivo Plano"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:hr_payroll_flat_file_parafiscal.hr_payroll_flat_file_parafiscal_form
+msgid "Filters"
+msgstr "Filtros"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model:ir.model,name:hr_payroll_flat_file_parafiscal.model_account_flat_file_base
+msgid "Flat File Bancolombia"
+msgstr "Archivo Plano Bancolombia"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:hr_payroll_flat_file_parafiscal.hr_payroll_flat_file_parafiscal_form
+msgid "Flat File Parafiscale"
+msgstr "Archivo Plano Parafiscales"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: code:addons/hr_payroll_flat_file_parafiscal/wizard/hr_payroll_flat_file_parafiscal.py:0
+#: model:ir.actions.act_window,name:hr_payroll_flat_file_parafiscal.action_hr_payroll_flat_file_parafiscal
+#: model:ir.ui.menu,name:hr_payroll_flat_file_parafiscal.menu_hr_payroll_flat_file_parafiscal
+#, python-format
+msgid "Flat File Parafiscales"
+msgstr "Archivo Plano Parafiscales"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model_terms:ir.ui.view,arch_db:hr_payroll_flat_file_parafiscal.hr_payroll_flat_file_parafiscal_form
+msgid "Period"
+msgstr "Periodo"
+
+#. module: hr_payroll_flat_file_parafiscal
+#: model:ir.model.fields,field_description:hr_payroll_flat_file_parafiscal.field_account_flat_file_base__struct_ids
+msgid "Salary Structure"
+msgstr "Estructura Salarial"

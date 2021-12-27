@@ -1,0 +1,5 @@
+id,name,code,category_id,amount_percentage_base
+__export__.hr_salary_rule_basic_02,AUXILIO NO PRESTACIONAL ALIMENTACION,237,Company Contribution,contract.searchSalaryAid('237')
+__export__.hr_salary_rule_basic_03,AUXILIO NO PRESTACIONAL RODAMIENTO,239,Company Contribution,contract.searchSalaryAid('239')
+__export__.hr_salary_rule_basic_07,AUXILIO NO PRESTACIONAL ALIMENTACION,237,Company Contribution,contract.searchSalaryAid('237')
+__export__.hr_salary_rule_basic_08,AUXILIO NO PRESTACIONAL RODAMIENTO,239,Company Contribution,contract.searchSalaryAid('239')

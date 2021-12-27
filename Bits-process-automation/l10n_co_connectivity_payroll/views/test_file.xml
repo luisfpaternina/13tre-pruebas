@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo> 
+    <record id="l10n_connectivity_payroll_view_settings" model="ir.ui.view">
+            <field name="name">l10n.connectivity.payroll.view.settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="bits_hr_payroll_news.bits_hr_employee_setting"/>
+            <field name="arch" type="xml">
+                <!--<xpath expr="//field[@name='basic_salary']" position="after">
+                     <div class="app_settings_block">
+                        <div id="invite_users"> 
+                    <label for="Subsidio de transporte" class="col-sm-2 o_left_label"/>
+                    <field name="transportation_allowance"/>
+                    </div>
+                    </div>
+                </xpath>-->
+            </field>
+    </record>
+</odoo>

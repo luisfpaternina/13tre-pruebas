@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="account_shareholders_company_form_view" model="ir.ui.view">
+            <field name="name">account.shareholders.company.form.view</field>
+            <field name="model">account.shareholders.company</field>
+            <field name="arch" type="xml">
+                <form string="Shareholders Composition">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="year"/>
+                                <field name="total_number_shares"/>
+                            </group>
+                            <group>
+                                <field name="liquid_assets"/>
+                                <field name="smaller_amounts"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Shareholders">
+                                <field name="account_shareholders_company_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="partner_id"/>
+                                        <field name="number_shares" sum="Total Shares"/>
+                                        <field name="percentage_share" widget="progressbar" sum="Total Percentage"/>
+                                        <field name="shareholder_contribution" sum="Total Contribution"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="account_shareholders_company_tree_view" model="ir.ui.view">
+            <field name="name">account.shareholders.company.tree.view</field>
+            <field name="model">account.shareholders.company</field>
+            <field name="arch" type="xml">
+                <tree string="Shareholders Composition">
+                    <field name="name"/>
+                    <field name="liquid_assets"/>
+                    <field name="total_number_shares"/>
+                    <field name="smaller_amounts" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="account_shareholders_company_action" model="ir.actions.act_window">
+            <field name="name">Shareholders Composition</field>
+            <field name="res_model">account.shareholders.company</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="account_shareholders_company_menu"
+            action="account_exogenus_settings.account_shareholders_company_action"
+            name="Shareholders Composition"
+            sequence="153"
+            parent="account_exogenus_settings.account_exogenus_menu"
+            groups="account.group_account_manager"/>
+    </data>
+</odoo>

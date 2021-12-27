@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    <template inherit_id='website_hr_recruitment.apply' id="hr_recruitment_postulation_apply">
+
+      <xpath expr="//textarea[@name='description']" position="attributes">
+        <attribute name="required">1</attribute>
+      </xpath>
+
+      <xpath expr="//input[@name='Resume']" position="attributes">
+        <attribute name="required">1</attribute>
+      </xpath>
+
+    </template>
+  </data>
+</odoo>

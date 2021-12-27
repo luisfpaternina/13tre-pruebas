@@ -1,0 +1,88 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_flat_file_bancolombia
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-20 13:04+0000\n"
+"PO-Revision-Date: 2020-08-20 08:17-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields.selection,name:account_flat_file_bancolombia.selection__account_flat_file_base__place_to_pay__s
+msgid "Abono a Cuenta"
+msgstr "Abono a Cuenta"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields.selection,name:account_flat_file_bancolombia.selection__account_flat_file_base__transaction_type__37
+msgid "Abono a cuenta ahorros"
+msgstr "Abono a cuenta ahorros"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields.selection,name:account_flat_file_bancolombia.selection__account_flat_file_base__transaction_type__27
+msgid "Abono a cuenta corriente"
+msgstr "Abono a cuenta corriente"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields,field_description:account_flat_file_bancolombia.field_account_flat_file_base__account_debit
+msgid "Account Debit"
+msgstr "Cuenta a Debitar"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields,field_description:account_flat_file_bancolombia.field_account_flat_file_base__bank_id
+msgid "Bank"
+msgstr "Banco"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields,field_description:account_flat_file_bancolombia.field_account_flat_file_base__bank_bic
+msgid "Bank Identifier Code"
+msgstr "Codigo de identificación del banco"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields.selection,name:account_flat_file_bancolombia.selection__account_flat_file_base__place_to_pay__1
+msgid "Cheque de Gerencia"
+msgstr "Cheque de Gerencia"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model,name:account_flat_file_bancolombia.model_account_flat_file_base
+msgid "Flat File Bancolombia"
+msgstr "Archivo plano Bancolombia"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields.selection,name:account_flat_file_bancolombia.selection__account_flat_file_base__transaction_type__26
+msgid "Pago en Cheque"
+msgstr "Pago en Cheque"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields.selection,name:account_flat_file_bancolombia.selection__account_flat_file_base__transaction_type__25
+msgid "Pago en Efectivo"
+msgstr "Pago en Efectivo"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields,field_description:account_flat_file_bancolombia.field_account_flat_file_base__partner_id
+msgid "Partner"
+msgstr "Asociado"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields,field_description:account_flat_file_bancolombia.field_account_flat_file_base__place_to_pay
+msgid "Place to pay"
+msgstr "Oficina donde se entrega"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields,help:account_flat_file_bancolombia.field_account_flat_file_base__bank_bic
+msgid "Sometimes called BIC or Swift."
+msgstr "A veces llamada BIC o Swift"
+
+#. module: account_flat_file_bancolombia
+#: model:ir.model.fields,field_description:account_flat_file_bancolombia.field_account_flat_file_base__transaction_type
+msgid "Transaction Type"
+msgstr "Tipo Transacción"

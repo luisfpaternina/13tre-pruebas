@@ -1,0 +1,170 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_credit_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-09 20:37+0000\n"
+"PO-Revision-Date: 2021-10-09 15:44-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Credit Number:</strong>"
+msgstr "<strong>Número de Credito:</strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Customer Code:</strong>"
+msgstr "<strong>Código Cliente:</strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong> Fecha de vencimiento: </strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong> Fecha de la factura: </strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Referencia:</strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Source:</strong>"
+msgstr "<strong>Origen:</strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Sponsoring Entity:</strong>"
+msgstr "<strong>Entidad Patrocinadora:</strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Term Months:</strong>"
+msgstr "<strong>Plazo Meses:</strong>"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.report_invoice_document
+msgid "<strong>Type Credit:</strong>"
+msgstr "<strong>Tipo de Credito:</strong>"
+
+#. module: sale_credit_custom
+#: model:ir.model,name:sale_credit_custom.model_res_bank
+msgid "Bank"
+msgstr "Banco"
+
+#. module: sale_credit_custom
+#: model:ir.model.fields,field_description:sale_credit_custom.field_account_move__credit_payment
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.view_sale_advance_credit_custom
+msgid "Credit Payment"
+msgstr "Pago a Crédito"
+
+#. module: sale_credit_custom
+#: model:ir.model.fields,field_description:sale_credit_custom.field_account_move__credit
+#: model:ir.model.fields,field_description:sale_credit_custom.field_sale_advance_payment_inv__credit
+msgid "Credit to use"
+msgstr "Crédito a usar"
+
+#. module: sale_credit_custom
+#: model:ir.model.fields,field_description:sale_credit_custom.field_credit__expenses_acum
+msgid "Expenses Acum"
+msgstr "Expenses Acum"
+
+#. module: sale_credit_custom
+#: model:ir.model.fields,field_description:sale_credit_custom.field_credit__invoice_ids
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.credit_form_sale_view
+msgid "Invoice Lines"
+msgstr "Facturas"
+
+#. module: sale_credit_custom
+#: model:ir.model,name:sale_credit_custom.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: sale_credit_custom
+#: model:ir.model.fields,field_description:sale_credit_custom.field_res_bank__partner_id
+#: model:ir.model.fields,field_description:sale_credit_custom.field_sale_advance_payment_inv__partner_id
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: sale_credit_custom
+#: model:ir.model.fields,field_description:sale_credit_custom.field_sale_advance_payment_inv__payment_credit
+msgid "Payment Credit"
+msgstr "Pago a Crédito"
+
+#. module: sale_credit_custom
+#: model:ir.model,name:sale_credit_custom.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Factura de Ventas de Pago Anticipado"
+
+#. module: sale_credit_custom
+#: model:ir.model,name:sale_credit_custom.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sale_credit_custom
+#: code:addons/sale_credit_custom/models/invoice.py:0
+#, python-format
+msgid ""
+"The invoice cannot be confirmed. Possible reasons are as follows:\n"
+"- The invoice has a value greater than the available credit value.\n"
+"- The client is behind with the credit payments.\n"
+msgstr ""
+"La factura no se puede confirmar. Las posibles razones son las siguientes:\n"
+"- La factura tiene un valor superior al valor de crédito disponible.\n"
+"- El cliente está atrasado con los pagos del crédito.\n"
+
+#. module: sale_credit_custom
+#: code:addons/sale_credit_custom/wizard/sale_make_invoice_credit_custom.py:0
+#, python-format
+msgid ""
+"The product used to invoice a down payment should be of type 'Service'. "
+"Please use another product or update this product."
+msgstr ""
+"El producto usado para facturar un pago inicial debe ser del tipo "
+"'Servicio'. Por favor use otro producto o actualice este producto."
+
+#. module: sale_credit_custom
+#: code:addons/sale_credit_custom/wizard/sale_make_invoice_credit_custom.py:0
+#, python-format
+msgid ""
+"The product used to invoice a down payment should have an invoice policy "
+"set to \"Ordered quantities\". Please update your deposit product to be "
+"able to create a deposit invoice."
+msgstr ""
+"El producto usado para facturar un pago inicial debería tener una política "
+"de facturación de \"Cantidades pedidas\". Por favor actualice su producto "
+"de depósito para poder crear una factura de depósito."
+
+#. module: sale_credit_custom
+#: model_terms:ir.ui.view,arch_db:sale_credit_custom.sale_order_custom
+msgid "This customer has an active credit available"
+msgstr "Este cliente tiene un crédito activo disponible"
+
+#. module: sale_credit_custom
+#: model:ir.model.fields,field_description:sale_credit_custom.field_sale_order__warning
+msgid "Warning"
+msgstr "Warning"
+
+#. module: sale_credit_custom
+#: model:ir.model,name:sale_credit_custom.model_credit
+msgid "credit"
+msgstr "crédito"

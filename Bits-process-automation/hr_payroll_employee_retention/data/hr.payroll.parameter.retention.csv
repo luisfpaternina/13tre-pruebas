@@ -1,0 +1,2 @@
+id,name,year,minimum_wage,transportation_allowance,minimum_integral,uvt,exempt_cap,maximum_food_salary,housing_cap,solidarity_cap,top_income_previous_year,exempt_income_cap,cap_health,dependent_certificate_cap,social_security_cap,country_parameter,uvt_allowed,check_figure
+__export__.hr_payroll_parameter_retention_1_ae471278,Parámetros de Ley 2020,2020,877803.0,102854.0,11411439.0,35607.0,8545680.0,11038170.0,3560700.0,4,42372470.0,,,,25,Colombia,420,40

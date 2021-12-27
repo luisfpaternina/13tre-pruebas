@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.actions.act_window" id="l10n_co_tech_provider_payroll_action_window">
+      <field name="name">Tech provider payroll</field>
+      <field name="res_model">l10n_co.tech.provider</field>
+      <field name="domain">[["_type","=","payroll"]]</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+      action="l10n_co_tech_provider_payroll.l10n_co_tech_provider_payroll_action_window"
+      name="Tech Provider"
+      id="l10n_co_tech_provider_payroll.menu_root"
+      parent="hr_payroll.menu_hr_payroll_configuration"
+      sequence="30"/>
+    
+    <!-- TECH PROVIDER LINE VIEWS INHERITED -->
+
+    <record id="view_l10n_co_tech_provider_line_form_payroll_inherit" model="ir.ui.view">
+      <field name="name">l10n_co.tech.provider.line.form</field>
+      <field name="model">l10n_co.tech.provider.line</field>
+      <field name="inherit_id" ref="l10n_co_tech_provider.view_l10n_co_tech_provider_line_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='level']" position="after">
+          <field name="cardinality"/>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="True">
+        <record id="hr_inability_data_1" model="hr.inability">
+            <field name="code">1</field>
+            <field name="name">Tipo de incapacidad Común</field>
+            <field name="observation">1 a 2: 100% empresa
+3 a 90: 66.66% EPS y/o 33.33% Empresa
+91 a 180: 50% EPS y/o 50% empresa
+siempre se respeta el salario mínimo
+181 a 540: EPS y/o Fondo de Pensión
+            </field>
+        </record>
+        <record id="hr_inability_data_2" model="hr.inability">
+            <field name="code">2</field>
+            <field name="name">Tipo de incapacidad Profesional</field>
+            <field name="observation">1: 100% ARL</field>
+        </record>
+        <record id="hr_inability_data_3" model="hr.inability">
+            <field name="code">3</field>
+            <field name="name">Tipo de incapacidad Laboral</field>
+            <field name="observation">1: 100% ARL</field>
+        </record>
+    </data>
+</odoo>

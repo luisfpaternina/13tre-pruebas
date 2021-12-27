@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_cron_account_difference_instead" model="ir.cron">
+        <field name="name">Unrealized exchange rate difference</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+        <field name="nextcall" eval="((DateTime.now().replace(day=1) + relativedelta(months=1)) - relativedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')" />
+        <field name="doall" eval="False"/>
+        <field name="model_id" ref="model_account_move"/>
+        <field name="code">model._cron_execute_unrealized_exchange_difference()</field>
+        <field name="state">code</field>
+    </record>
+</odoo>

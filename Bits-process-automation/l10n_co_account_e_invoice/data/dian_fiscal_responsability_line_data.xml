@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="fiscal_responsability_line_O-47_1" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-47"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-47"/>
+        </record>
+
+        <record id="fiscal_responsability_line_O-47_2" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-47"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-23"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')),]" />
+        </record>
+
+        <record id="fiscal_responsability_line_O-47_3" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-47"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-13"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')),]" />
+        </record>
+
+        <record id="fiscal_responsability_line_O-47_4" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-47"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-15"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')),]" />
+        </record>
+
+
+        <record id="fiscal_responsability_line_O-23_1" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-23"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-47"/>
+        </record>
+
+        <record id="fiscal_responsability_line_O-23_2" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-23"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-23"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')),]" />
+        </record>
+
+        <record id="fiscal_responsability_line_O-23_3" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-23"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-13"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')), (4, ref('tax_type_4'))]" />
+        </record>
+
+        <record id="fiscal_responsability_line_O-23_4" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-23"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-15"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')), (4, ref('tax_type_4'))]" />
+        </record>
+
+
+        <record id="fiscal_responsability_line_O-13_1" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-13"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-47"/>
+        </record>
+
+        <record id="fiscal_responsability_line_O-13_2" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-13"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-23"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')),]" />
+        </record>
+
+        <record id="fiscal_responsability_line_O-13_3" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-13"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-13"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')),]" />
+        </record>
+
+        <record id="fiscal_responsability_line_O-13_4" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-13"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-15"/>
+            <field name="applicable_tax"
+                eval="[(4, ref('tax_type_5')),]" />
+        </record>
+
+
+        <record id="fiscal_responsability_line_O-15_1" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-15"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-47"/>
+        </record>
+
+        <record id="fiscal_responsability_line_O-15_2" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-15"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-23"/>
+        </record>
+
+        <record id="fiscal_responsability_line_O-15_3" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-15"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-13"/>
+        </record>
+
+        <record id="fiscal_responsability_line_O-15_4" model="dian.fiscal.responsability.line">
+            <field name="parent_id" ref="fiscal_responsability_O-15"/>
+            <field name="fiscal_responsability_id" ref="fiscal_responsability_O-15"/>
+        </record>
+
+    </data>
+</odoo>

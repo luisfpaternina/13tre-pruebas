@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+      <!-- Acciones -->
+      <record id="action_account_collective_payments_supplier" model="ir.actions.act_window">
+        <field name="name">Payments to Suppliers</field>
+        <field name="res_model">account.collective.payments.supplier</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+      <menuitem
+        id="menu_account_collective_payments_supplier"
+        action="action_account_collective_payments_supplier"
+        parent="account.menu_finance_payables"
+        sequence="15"
+        />
+
+    </data>
+</odoo>

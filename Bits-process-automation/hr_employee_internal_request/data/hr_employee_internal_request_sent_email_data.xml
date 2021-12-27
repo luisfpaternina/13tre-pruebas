@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="template_internal_request_sent" model="mail.template">
+            <field name="name">Template: Internal Request Sent</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Internal request</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to"></field>
+            <field name="body_html" type="xml">
+                <div>
+                    Dear,<br /><br />
+                    ${object.create_uid.name} has
+                    % if object.reason_for_rejection:
+                        resent a
+                    % endif
+                    
+                    % if not object.reason_for_rejection:
+                        created a new 
+                    % endif
+
+                    internal request.<br />
+                    
+                    Continue the process.<br /><br />
+                    Thank you, Team.<br/><br/>
+                    <a style="background-color:#875A7B; padding:8px 16px 8px 16px; text-decoration:none; color:#fff; border-radius:5px" href="${(object.link)}">Go to odoo</a>
+                    <br />
+                    <br />
+                    Created date ${object.create_date}
+
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_internal_request_approve" model="mail.template">
+            <field name="name">Template: Internal Request Approved</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Internal request approved</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to"></field>
+            <field name="body_html" type="xml">
+                <div>
+                    Dear ${object.create_uid.name},<br /><br />
+                    Internal request ${object.name} has been approved<br />
+                    We will be notifying you about it.
+                    % if object.approval_reason:
+                        <br />${object.approval_reason}
+                    % endif
+                    <br /><br />
+                    Thank you.
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_internal_request_return" model="mail.template">
+            <field name="name">Template: Internal Request Return</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Internal request returned</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to"></field>
+            <field name="body_html" type="xml">
+                <div>
+                    Dear ${object.create_uid.name},<br /><br />
+                    Internal request ${object.name} has been returned<br />
+                    ${object.reason_for_rejection}.<br /><br />
+                    Thank you.
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_internal_request_cancel" model="mail.template">
+            <field name="name">Template: Internal Request Cancel</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Internal request cancel</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to"></field>
+            <field name="body_html" type="xml">
+                <div>
+                    Dear<br /><br />
+                    Internal request ${object.name} has been cancelled by ${object.write_uid.name}<br />
+                    ${object.reason_for_cancellation}.<br /><br />
+                    Thank you.
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_internal_request_notify" model="mail.template">
+            <field name="name">Internal Request Notify</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Notificación de solicitud interna</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to">${object.employee_name_id.manager_id.work_email}</field>
+            <field name="body_html" type="xml">
+                <div>
+                    <strong>Solicitud interna</strong> ${object.name}<br/>
+                    <strong>Tecnología:</strong> ${object.tecnology_name}<br></br>
+                    <strong>Centro de costo:</strong> ${object.analytic_account_name}<br></br>
+                    <strong>Cargo:</strong> ${object.job_name}
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_internal_request_notify_projects" model="mail.template">
+            <field name="name">Internal Request Notify project</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Notificación de solicitud interna</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to">${object.department_id.manager_id.work_email}</field>
+            <field name="body_html" type="xml">
+                <div>
+                    <strong>Solicitud interna</strong> ${object.name}<br/>
+                    <strong>Tecnología:</strong> ${object.tecnology_name}<br></br>
+                    <strong>Centro de costo:</strong> ${object.analytic_account_name}<br></br>
+                    <strong>Cargo:</strong> ${object.job_name}
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_internal_request_notify_evaluators" model="mail.template">
+            <field name="name">Internal Request Notify evaluators</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Notificación a los evaluadores</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to">${object.get_users_emails() | safe}</field>
+            <field name="body_html" type="xml">
+                <div>
+                    <p>Buenos días estimado, has sido asignado como evaluador</p>
+                    <strong>Solicitud interna</strong> ${object.name}<br/>
+                    <strong>Tecnología:</strong> ${object.tecnology_name}<br></br>
+                    <strong>Centro de costo:</strong> ${object.analytic_account_name}<br></br>
+                    <strong>Cargo:</strong> ${object.job_name}
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_send_email_applicants_notify" model="mail.template">
+            <field name="name">Notify applicant</field>
+            <field name="model_id" ref="hr_recruitment.model_hr_applicant"/>
+            <field name="subject">Su solicitud de empleo: ${object.job_id.name | safe}</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to">${object.email_from}</field>
+            <field name="body_html" type="xml">
+                <div>
+                    <p>Buenos días estimado <strong> ${object.partner_name} </strong>, te has postulado al cargo de  <strong>${object.job_id.name}</strong></p> <br/>
+                    <strong>Asunto:</strong> ${object.name}<br/>
+                    <strong>Departamento</strong> ${object.department_id.name}<br/>
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+
+        <record id="template_internal_request_notify_leader_rrhh" model="mail.template">
+            <field name="name">Notify RRHH</field>
+            <field name="model_id" ref="hr_employee_internal_request.model_hr_employee_internal_request"/>
+            <field name="subject">Notificación de solicitud interna a RRHH</field>
+            <field name="email_from">${(object.write_uid.email_formatted or user.email_formatted) | safe}</field>
+            <field name="email_to">${object.job_name_id.user_id.login}</field>
+            <field name="body_html" type="xml">
+                <div>
+                    <p>Hola, cordial saludo, se ha actualizado la información de las evaluaciones y evaluadores de la solicitud interna</p>
+                    <strong>Solicitud interna</strong> ${object.name}<br/>
+                    <strong>Tecnología:</strong> ${object.tecnology_name}<br></br>
+                    <strong>Centro de costo:</strong> ${object.analytic_account_name}<br></br>
+                    <strong>Cargo:</strong> ${object.job_name}
+                </div>
+            </field>
+            <field name="lang">${user.lang}</field>
+            <field name="auto_delete" eval="False"/>
+        </record>
+    </data>
+</odoo>

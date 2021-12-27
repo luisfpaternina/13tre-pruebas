@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="bits_security_accounting_human_talent" model="res.groups">
+            <field name="name">Accounting Human Talent</field>
+            <field name="category_id" ref="base.module_category_accounting_accounting"/>
+            <field name="menu_access" eval="[(4,ref('account.menu_finance_entries')),(4,ref('account.menu_finance_entries_management')),(4,ref('account_accountant.menu_accounting')),(4,ref('account_budget.menu_act_crossovered_budget_view'))]"/>
+        </record>
+        <record id="bits_security_payroll_human_talent" model="res.groups">
+            <field name="name">Payroll Human Talent</field>
+            <field name="category_id" ref="base.module_category_human_resources_payroll"/>
+            <field name="menu_access" eval="[(4,ref('hr_payroll.menu_hr_payroll_global_settings')),(4,ref('bits_hr_payroll_news.menu_payroll_news_stage_act')),(4,ref('bits_hr_payroll_news.payroll_news_menu_root')),(4,ref('hr_payroll.menu_hr_payroll_employees_configuration')),(4,ref('hr_payroll.menu_report_payroll')),(4,ref('hr_payroll.menu_hr_work_entry_type_view')),(4,ref('hr_payroll.menu_hr_payroll_structure_type')),(4,ref('bits_hr_payroll_news.main_payroll_news_menu')),(4,ref('bits_hr_payroll_news.payroll_news_menu')),(4,ref('bits_hr_payroll_news.menu_playroll_news_config')),(4,ref('hr_payroll.menu_hr_payroll_contracts_configuration')),(4,ref('hr_payroll.menu_hr_payroll_employee_payslips_to_pay')),(4,ref('hr_payroll.menu_hr_payroll_structure_view')),(4,ref('bits_hr_payroll_news.payroll_news_employee_menu')),(4,ref('hr_payroll.menu_work_entry')),(4,ref('bits_hr_payroll_news.playroll_news_menu_config')),(4,ref('hr_payroll.menu_action_hr_salary_rule_form')),(4,ref('hr_payroll.menu_action_hr_salary_rule_parameter')),(4,ref('hr_payroll.menu_hr_salary_rule_category')),(4,ref('hr_payroll.menu_hr_payslip_entry_type_view')),(4,ref('hr_payroll.menu_hr_payroll_root')),(4,ref('hr_payroll.menu_hr_payroll_employees_root')),(4,ref('hr_payroll.menu_work_entry_conflicts')),(4,ref('hr_payroll.menu_hr_work_entry_confirguration')),(4,ref('hr_payroll.menu_hr_payroll_work_entries_root')),(4,ref('hr_payroll.menu_hr_payroll_employee_payslips')),(4,ref('hr_payroll.menu_hr_payroll_payslips')),(4,ref('hr_payroll.menu_hr_payroll_report')),(4,ref('hr_payroll.menu_hr_payslip_run')),(4,ref('hr_payroll.menu_hr_salary_configuration')),(4,ref('account_collective_payments.menu_hr_payroll_account_collective_payments_wizard')),(4,ref('hr_payroll.menu_hr_payroll_configuration'))]"/>
+        </record>
+    </data>
+</odoo>

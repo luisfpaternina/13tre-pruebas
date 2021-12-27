@@ -1,0 +1,2 @@
+id,name,type,sequence_number_next,code,company_id/id,default_debit_account_id,default_credit_account_id
+hr_payslip_account_journal_01,Nomina,general,1,NOM,base.main_company,,

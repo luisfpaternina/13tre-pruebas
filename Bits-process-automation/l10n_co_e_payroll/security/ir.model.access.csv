@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_payment_way,payment_way.payment_way,model_payment_way,base.group_user,1,1,1,1 
+access_payment_method,payment_method.payment_method,model_payment_method,base.group_user,1,1,1,1 
+access_payslip_custom_field_line,access_payslip_custom_field_line,model_payslip_custom_field_line,base.group_user,1,1,1,1
+access_hr_payslip_dian_detail,access_hr_payslip_dian_detail,model_hr_payslip_dian_detail,base.group_user,1,1,1,1
+access_hr_payslip_dian_detail_line,access_hr_payslip_dian_detail_line,model_hr_payslip_dian_detail_line,base.group_user,1,1,1,1
+access_hr_payslip_dian_result,access_hr_payslip_dian_result,model_hr_payslip_dian_result,base.group_user,1,1,1,1
+access_hr_payslip_dian_result_line,access_hr_payslip_dian_result_line,model_hr_payslip_dian_result_line,base.group_user,1,1,1,1
+access_hr_payslip_dian_total,access_hr_payslip_dian_total,model_hr_payslip_dian_total,base.group_user,1,1,1,1
+access_hr_payslip_dian_total_line,access_hr_payslip_dian_total_line,model_hr_payslip_dian_total_line,base.group_user,1,1,1,1

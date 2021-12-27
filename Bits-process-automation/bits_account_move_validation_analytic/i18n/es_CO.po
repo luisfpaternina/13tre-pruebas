@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bits_account_move_validation_analytic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-23 16:49+0000\n"
+"PO-Revision-Date: 2020-07-23 11:52-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#. module: bits_account_move_validation_analytic
+#: model_terms:ir.ui.view,arch_db:bits_account_move_validation_analytic.hr_payroll_news_settings_view_form
+msgid "Adjusting Entries"
+msgstr "Ajuste de entradas"
+
+#. module: bits_account_move_validation_analytic
+#: model:ir.model,name:bits_account_move_validation_analytic.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: bits_account_move_validation_analytic
+#: model:ir.model,name:bits_account_move_validation_analytic.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: bits_account_move_validation_analytic
+#: model_terms:ir.ui.view,arch_db:bits_account_move_validation_analytic.hr_payroll_news_settings_view_form
+msgid ""
+"Select the types that will be taken to validate the required analytical "
+"account field."
+msgstr ""
+"Seleccione los tipos que se tomarán para validar el campo de cuenta "
+"analítica necesaria."
+
+#. module: bits_account_move_validation_analytic
+#: code:addons/bits_account_move_validation_analytic/models/account_move_line.py:0
+#, python-format
+msgid "The analytical account must be required for this type of account."
+msgstr "La cuenta analítica debe ser necesaria para este tipo de cuenta."
+
+#. module: bits_account_move_validation_analytic
+#: model:ir.model.fields,field_description:bits_account_move_validation_analytic.field_res_config_settings__user_type_ids
+msgid "Type"
+msgstr "Tipo"

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="hr_job_document_version_form">
+            <field name="name">hr_job_document_version_form</field>
+            <field name="model">document.version.control</field>
+            <field name="inherit_id" ref="document_version.documents_version_control_from"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='model_id']" position="after">
+                    <field name="job_id" attrs="{'invisible':[('is_implement_model','=',False)]}"/>
+                    <field name="is_implement_model" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//field[@name='model_id']" position="attributes">
+                    <attribute name="attrs">{'invisible':[('is_implement_model','=',True)]}</attribute>
+                </xpath>
+
+            </field>
+        </record>
+        <record model="ir.ui.view" id="hr_job_document_version_tree">
+            <field name="name">hr_job_document_version_tree</field>
+            <field name="model">document.version.control</field>
+            <field name="inherit_id" ref="document_version.documents_version_control_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='model_id']" position="after">
+                    <field name="job_id" optional="hide"/>
+                    <field name="is_implement_model" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="action_hr_job_documents_version_actions" model="ir.actions.act_window">
+            <field name="name">Documentation Version</field>
+            <field name="res_model">document.version.control</field>
+            <field name="view_id" ref="hr_job_document_version_tree"/>
+            <field name="context">{'default_is_implement_model':True}</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_hr_job_document_version" action="action_hr_job_documents_version_actions" parent="hr_recruitment.menu_hr_recruitment_configuration" sequence="40" name="Document Version" />
+    </data>
+</odoo>

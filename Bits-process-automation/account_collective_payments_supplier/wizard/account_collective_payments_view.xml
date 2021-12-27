@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="account_collective_payments_supplier_wizard" model="ir.ui.view">
+            <field name="name">account.collective.payments.supplier.wizard</field>
+            <field name="model">account.collective.payments.wizard</field>
+            <field name="inherit_id" ref="account_collective_payments.account_collective_payments_wizard_form"/>
+            <field name="arch" type="xml">
+                
+                <xpath expr="//field[@name='payment_date']" position="after">
+                    <field name="supplier_payment"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

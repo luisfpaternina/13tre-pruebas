@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>     
+<odoo>
+    <data>
+        <record id="view_hr_recruitment_score_skills_tree" model="ir.ui.view">
+            <field name="name">hr.recruitment.score.skills.tree</field>
+            <field name="model">hr.recruitment.score.skills</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree string="skills">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="technology_id"/>
+                    <field name="active" widget="boolean_toggle"/>
+                    <field name="description" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hr_recruitment_score_skills_form" model="ir.ui.view">
+            <field name="name">Skills</field>
+            <field name="model">hr.recruitment.score.skills</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form string="skills">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" required="1" placeholder="Skill Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="technology_id" required="1"/>
+                                <field name="code" required="1"/>
+                            </group>
+                            <group>
+                                <field name="active" widget="boolean_toggle"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    
+        <record model="ir.actions.act_window" id="action_view_hr_recruitment_score_skills">
+            <field name="name">Skills</field>
+            <field name="res_model">hr.recruitment.score.skills</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create new skill
+                </p>
+            </field>
+        </record>
+
+        <record id="sequence_hr_recruitment_score_skills" model="ir.sequence">
+           <field name="name">Sequence Skills</field>
+           <field name="code">score.skills</field>
+           <field name="active">TRUE</field>
+           <field name="prefix"></field>
+           <field name="padding">6</field>
+           <field name="number_next">1</field>
+           <field name="number_increment">1</field>
+        </record>
+
+        <menuitem 
+            id="nemu_hr_recruitment_score_skills" 
+            name="Skills" 
+            parent="hr_recruitment_score_profile.nemu_hr_recruitment_knowledge_tests"
+            action="action_view_hr_recruitment_score_skills" 
+            sequence="97"/>           
+    </data>
+</odoo>
+              
+       
+

@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* document_version
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-26 21:47+0000\n"
+"PO-Revision-Date: 2021-04-26 16:49-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__description
+msgid "Discription"
+msgstr "Descripción"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__display_name
+msgid "Display Name"
+msgstr "Nombre Completo"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__name
+msgid "Document Name"
+msgstr "Nombre del Documento"
+
+#. module: document_version
+#: model:ir.actions.act_window,name:document_version.action_documents_version_control_actions
+msgid "Documentation Version Control"
+msgstr "Control de Versiones Documentación"
+
+#. module: document_version
+#: model:ir.ui.menu,name:document_version.menu_documents_version_control
+msgid "Documents Version Control"
+msgstr "Control de Versiones Documentos"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__id
+msgid "ID"
+msgstr ""
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__model_id
+msgid "Model"
+msgstr "Modelo"
+
+#. module: document_version
+#: model_terms:ir.ui.view,arch_db:document_version.documents_version_control_from
+msgid "Name"
+msgstr "Nombre"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__res_id
+msgid "Record"
+msgstr "Registro"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__version
+msgid "Version"
+msgstr "Versión"
+
+#. module: document_version
+#: model:ir.ui.menu,name:document_version.menu_ir_restrict_actions
+#: model_terms:ir.ui.view,arch_db:document_version.documents_version_control_tree
+msgid "Version Control"
+msgstr "Control de Versiones"
+
+#. module: document_version
+#: model:ir.model.fields,field_description:document_version.field_document_version_control__version_date
+msgid "Version Date"
+msgstr "Fecha de Versión"
+
+#. module: document_version
+#: model:ir.model,name:document_version.model_document_version_control
+msgid "document.version.control"
+msgstr ""

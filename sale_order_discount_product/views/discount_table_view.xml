@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Vista TREE-->
+        <record model="ir.ui.view" id="discount_table_tree">
+            <field name="name">discount.table.tree</field>
+            <field name="model">discount.table</field>
+            <field name="arch" type="xml">
+                <tree string="Discount Table">
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="min_quantity" />
+                    <field name="max_quantity" />
+                    <field name="min_discount" />
+                    <field name="max_discount" />
+                </tree>
+            </field>
+        </record>
+
+        <!--Vista FORM-->
+        <record model="ir.ui.view" id="discount_table_form">
+            <field name="name">discount.table.form</field>
+            <field name="model">discount.table</field>
+            <field name="arch" type="xml">
+                <form string="Discount Table">
+                    <sheet>
+                        <group name="identifier">
+                            <group>
+                                <field name="name" />
+                            </group>
+                            <group>
+                                <field name="code" />
+                            </group>
+                        </group>
+                        <group name="values">
+                            <group>
+                                <field name="min_quantity" />
+                                <field name="max_quantity" />
+                            </group>
+                            <group>
+                                <field name="min_discount" />
+                                <field name="max_discount" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Accion para ingresar a las vistas del modulo creado-->
+        <record model="ir.actions.act_window" id="action_discount_table">
+            <field name="name">Discount Table</field>
+            <field name="res_model">discount.table</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_discount_table_tree_action" model="ir.actions.act_window.view">
+            <field name="sequence" eval="2" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="discount_table_tree" />
+            <field name="act_window_id" ref="action_discount_table" />
+        </record>
+
+
+        <!--Configuracion del menu, para agregar la opcion del modulo creado-->
+        <menuitem action="action_discount_table" id="action_menu_discount_table" parent="sale.menu_sale_config" name="Discount Table" sequence="99" />
+
+    </data>
+</odoo>

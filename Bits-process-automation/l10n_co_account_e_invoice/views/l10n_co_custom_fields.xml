@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="l10n_co_custom_fields_list">
+      <field name="name">Custom Fields</field>
+      <field name="model">l10n_co.custom.fields</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="name"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="l10n_co_custom_fields_view_form" model="ir.ui.view">
+      <field name="name">Custom Fields</field>
+      <field name="model">l10n_co.custom.fields</field>
+      <field name="arch" type="xml">
+        <form string="Custom Fields">
+          <sheet>
+            <group>
+              <group>
+                <field name="code" autocomplete="off" required="True"/>
+                <field name="name" autocomplete="off" required="True"/>
+              </group>
+              <group>
+                <field name="active"/>
+                <field name="method_type"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="l10n_co_custom_fields_action_window">
+      <field name="name">EI Custom Fields</field>
+      <field name="res_model">l10n_co.custom.fields</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

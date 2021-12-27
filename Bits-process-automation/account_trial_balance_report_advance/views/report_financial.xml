@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<template id="filter_info_template" inherit_id="account_reports.filter_info_template">
+	<xpath expr="//div/div[2]" postion="indise">
+		<div class="col-12">
+            <t t-if="options.get('levels_niff')">
+                Types:
+                <t t-set="levels_niif_value" t-value="'All'"/>
+                <t t-foreach="options['levels_niff']" t-as="j">
+                    <t t-if="j.get('selected') == True">
+                        <t t-set="levels_niif_value" t-value="''"/>
+                        <t t-esc="j.get('name')"/>
+                    </t>
+                </t>
+                <t t-esc="levels_niif_value"/>
+            </t>
+        </div>
+        <div class="col-12">
+            <t t-if="options.get('levels_filter')">
+                Levels:
+                <t t-set="lelvels_value" t-value="'All'"/>
+                <t t-foreach="options['levels_filter']" t-as="j">
+                    <t t-if="j.get('selected') == True">
+                        <t t-set="lelvels_value" t-value="''"/>
+                        <t t-esc="j.get('name')"/>
+                    </t>
+                </t>
+                <t t-esc="lelvels_value"/>
+            </t>
+        </div>
+	</xpath>
+</template>
+</data>
+</odoo>

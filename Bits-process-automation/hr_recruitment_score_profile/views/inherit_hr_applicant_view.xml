@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+     <record model="ir.actions.act_window" id="open_view_test_result_count">
+            <field name="name">ope.view.test.result</field>
+            <field name="res_model">hr.recruitment.score.test.results</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('applicant_id', '=', active_id)]</field>
+            <field name="context">{}</field>
+        </record>
+        <record id="inherit_hr_applicant_view" model="ir.ui.view">
+            <field name="name">inherit.hr.applicant</field>
+            <field name="model">hr.applicant</field>
+            <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_makeMeeting']" position="after">
+                  <button class="oe_stat_button" icon="fa-area-chart" type="action" name="%(open_view_test_result_count)d" attrs="{'invisible': [('test_result_count', '=', 0)]}" context="{'default_applicant_id': active_id}">
+                    <field name="test_result_count" string="test result" widget="statinfo"/>
+                  </button>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,80 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_account_asset_Colgap_form">
+            <field name="name">view.account.asset.colgap.form</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//group/group[4]" position="after">
+                    <group string="Current Values Colgap">
+                        <field name="original_value_colgap" attrs="{'invisible': [('state', '=', 'model')], 'readonly': ['|', ('state','!=','draft'), ('original_move_line_colgap_ids', '!=', [])]}"/>
+                        <field name="salvage_value_colgap" widget="monetary" options="{'currency_field': 'currency_id'}" attrs="{'invisible': ['|', ('asset_type','!=','purchase'), ('state', '=', 'model')]}"/>
+                        <field name="value_residual_colgap" force_save="1" widget="monetary" attrs="{'invisible': [('state', '=', 'model')]}" options="{'currency_field': 'currency_id'}"/>
+                        <field name="book_value_colgap" widget="monetary" required="1" attrs="{'invisible': [('state', '=', 'model')]}" options="{'currency_field': 'currency_id'}"/>
+                    </group>
+                    <group string="Accounting Colgap">
+                        <field name="account_asset_colgap_id" attrs="{'invisible': ['|', ('display_account_asset_id', '=', False), ('asset_type', '!=', 'purchase')], 'required': [('state', '=', 'model')]}"/>
+                        <field name="account_depreciation_colgap_id" required="1"/>
+                        <field name="account_depreciation_expense_colgap_id" required="1"/>
+                        <field name="journal_colgap_id" required="1"/>
+                    </group>
+                    <group string="Depreciation Method Colgap">
+                        <field name="method_colgap" widget="radio" attrs="{'invisible': [('asset_type', '!=', 'purchase')]}" options="{'horizontal': true}"/>
+                        <field name="method_progress_factor_colgap" attrs="{'invisible':[('method_colgap','=','linear')], 'required':[('method_colgap','in',('degressive', 'degressive_then_linear'))]}"/>
+                        <label for="method_number_colgap" string="Duration"/>
+                        <div class="o_row">
+                            <field name="method_number_colgap" required="1"/>
+                            <field name="method_period_colgap" required="1" nolabel="1"/>
+                        </div>
+                    </group>
+                </xpath>
+                <xpath expr="//page[@name='depreciation_board']" position="after">
+                    <page string="Depreciation Board Colgap" name="depreciation_board" attrs="{'invisible' : [('total_depreciation_entries_count', '=', 0)]}">
+                        <field name="depreciation_move_colgap_ids" mode="tree" options="{'reload_whole_on_button': true}">
+                            <tree string="Depreciation Lines" create="0" decoration-info="state == 'draft'" default_order="date asc, id asc" editable="top">
+                                <field name="currency_id" invisible="1"/>
+                                <field name="ref" invisible=""/>
+                                <field name="reversal_move_id" widget="deprec_lines_reversed"/>
+                                <field name="date" string="Depreciation Date"/>
+                                <field name="amount_total" widget="monetary" string="Depreciation" options="{'currency_field': 'currency_id'}" attrs="{'readonly': [('state', '=', 'posted')]}"/>
+                                <field name="asset_depreciated_value" readonly="1" force_save="1" options="{'currency_field': 'currency_id'}"/>
+                                <field name="asset_remaining_value" readonly="1" widget="monetary" force_save="1" options="{'currency_field': 'currency_id'}"/>
+                                <field name="name" readonly="1" string="Journal Entry"/>
+                                <field name="state" invisible="1"/>
+                                <field name="asset_manually_modified" invisible="1"/>
+                                <field name="colgap" invisible="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <xpath expr="//page[@name='related_items']" position="after">
+                    <page string="Related Purchase Colgap" name="related_items_colgap" attrs="{'invisible' : [('original_move_line_colgap_ids', '=', [])]}">
+                        <field name="original_move_line_colgap_ids" widget="many2many" attrs="{'readonly': [('state','=','posted')]}" domain="[('credit', '=', '0'), ('move_id.state', '=', 'posted')]" class="original_move_line_ids_field">
+                            <tree>
+                                <field name="date" string="Depreciation Date"/>
+                                <field name="account_id"/>
+                                <field name="name"/>
+                                <field name="debit" widget="monetary"/>
+                                <field name="credit" widget="monetary"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_account_asset_expense_colgap_tree">
+            <field name="name">view.account.asset.expense.colgap.tree</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_expense_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='book_value']" position="after">
+                    <field name="book_value_colgap"/>
+                </xpath>
+                <xpath expr="//field[@name='value_residual']" position="after">
+                    <field name="value_residual_colgap" widget="monetary"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

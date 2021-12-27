@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="hr_employee_document_type_form">
+        <field name="name">hr.employee.document.type.form</field>
+        <field name="model">hr.employee.document.type</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title pr-0">
+                        <label for='name'>name</label>
+
+                        <h2>
+                            <field name="name" required="1"/>
+                        </h2>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="hr_document_employee_type_tree" model="ir.ui.view">
+        <field name="name">hr.document.employee.type.tree</field>
+        <field name="model">hr.employee.document.type</field>
+        <field eval="8" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Employees Tags" editable="bottom">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_employee_document" model="ir.actions.act_window">
+        <field name="name">Types Documents Employee</field>
+        <field name="res_model">hr.employee.document.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Types Documents Employee
+            </p>
+        </field>
+    </record>
+    <menuitem id="menu_employee_document" name="Document Types" action="action_employee_document" parent="hr.menu_human_resources_configuration_employee"/>
+</odoo>

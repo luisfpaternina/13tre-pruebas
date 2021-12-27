@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+        <record id="hr_test_fields" model="ir.ui.view">
+            <field name="name">hr_test_fields</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='account_info']/group" position="inside">
+                    <group>
+                        <field name="period_start_date" invisible="1" />
+                        <field name="period_finish_date" invisible="1" />
+                        <field name="start_holidays" invisible="1" />
+                        <field name="end_holidays" invisible="1" />
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+    <!-- Report QWeb -->
+    <report 
+            id="payroll_holidays_report"
+            string="holidays"
+            model="hr.payslip"
+            report_type="qweb-pdf"
+            name="payroll_holidays_report.payroll_holidays_template"
+            file="payroll_holidays_report.payroll_holidays_template"
+            attachment_use = "True"
+            attachment="'holidays.pdf'"
+            print_report_name="'Holidays - %s' % (object.employee_id.name)"
+        />
+  </data>
+</odoo>

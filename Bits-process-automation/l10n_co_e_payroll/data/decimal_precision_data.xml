@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="decimal.precision" id="decimal_presicion_payroll_lines_quantity">
+            <field name="name">Payslip Line Quantity</field>
+            <field name="digits">2</field>
+            <field name="rouding">0</field>
+            <field name="multiple">0</field>
+        </record>
+
+        <record model="decimal.precision" id="decimal_presicion_payroll_lines_amount">
+            <field name="name">Payslip Line Amount</field>
+            <field name="digits">4</field>
+            <field name="rouding">0</field>
+            <field name="multiple">0</field>
+        </record>
+
+        <record model="decimal.precision" id="decimal_presicion_payroll_lines_total">
+            <field name="name">Payslip Line Total</field>
+            <field name="digits">2</field>
+            <field name="rouding">0</field>
+            <field name="multiple">0</field>
+        </record>
+
+        <record model="decimal.precision" id="decimal_presicion_amount_fix">
+            <field name="name">Amount fix</field>
+            <field name="digits">5</field>
+            <field name="rouding">0</field>
+            <field name="multiple">0</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="ir_actions_restrict_view_form">
+            <field name="name">ir.actions.restrict.view.form</field>
+            <field name="model">ir.actions.restrict</field>
+            <field eval="2" name="priority"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title pr-0">
+                            <label for='name'>name</label>
+
+                            <h2>
+                                <field name="name" required="1"/>
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="model"/>
+                                <field name="action_code"/>
+                            </group>
+                            <group>
+                                <field name="action_name"/>
+                                <field name="groups_access_ids" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="message_show"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="ir_actions_restrict_tree" model="ir.ui.view">
+            <field name="name">ir.actions.restrict.tree</field>
+            <field name="model">ir.actions.restrict</field>
+            <field eval="100" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Retentions">
+                    <field name="name"/>
+                    <field name="action_code"/>
+                    <field name="action_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_ir_restrict_actions" model="ir.actions.act_window">
+            <field name="name">Actions Restrictions</field>
+            <field name="res_model">ir.actions.restrict</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_ir_restrict_actions" action="action_ir_restrict_actions" parent="base.menu_users" sequence="30" name="Actions Restrictions" />
+    </data>
+</odoo>

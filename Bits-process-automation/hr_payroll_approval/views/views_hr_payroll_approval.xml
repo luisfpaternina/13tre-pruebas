@@ -1,0 +1,168 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="view_payroll_approval">
+      <field name="name">hr_payroll_approval</field>
+      <field name="model">hr.payslip</field>
+      <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//button[@name='compute_sheet']" position="after">
+          <button string="SEND FOR APPROVAL" name="action_payroll_approval_sent" type="object"
+           attrs="{'invisible':['|',('general_state', 'in', ['sent', 'approved','disapproved']),('state', '!=', 'verify')]}"
+           class="btn btn-warning"/>
+          <button string="APPROVE" name="approve_payroll" type="object" class="btn btn-success"
+            attrs="{'invisible':['|',('general_state', 'in', ['approved','not sent','rejected','disapproved']),('state', '!=', 'verify')]}"
+          />
+          <button string="DISAPPROVE" name="not_approve_payroll" type="object" class="btn btn-danger"
+            attrs="{'invisible':['|',('general_state', 'in', ['disapproved', 'not sent', 'rejected','approved']),('state', '!=', 'verify')]}"
+          />
+        </xpath>
+        <xpath expr="//field[@name='worked_days_line_ids']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='employee_id']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='date_from']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='date_to']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='number']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='name']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='contract_id']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='struct_id']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='input_line_ids']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='line_ids']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='payslip_run_id']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='note']" position="attributes">
+          <attribute name="attrs">{'readonly':['|',('state', 'not in', ['draft','verify']),('state','=','verify'),('general_state', '=', 'approved')]}</attribute>
+        </xpath>
+        <xpath expr="//field[@name='name']" position="after">
+          <field name="general_state" readonly="1"/>
+        </xpath>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_payslip_run_approval">
+      <field name="name">hr_payslip_run_approval</field>
+      <field name="model">hr.payslip.run</field>
+      <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='credit_note']" position="after">
+          <field name="internal_state" readonly="1"/>
+        </xpath>
+        <xpath expr="//button[@name='action_validate']" position="after">
+          <button string="APPROVE" name="approve_batch" type="object" class="btn btn-success"
+            attrs="{'invisible':['|',('internal_state', '!=', 'sent'),('state', '!=', 'verify')]}"
+          />
+          <button string="DISAPPROVE" name="disapprove_batch" type="object" class="btn btn-danger"
+            attrs="{'invisible':['|',('internal_state', '!=', 'sent'),('state', '!=', 'verify')]}"
+          />
+        </xpath>
+      </field>
+    </record>
+
+    <!-- <record model="ir.actions.server" id="action_hr_payroll_send_for_approval">
+      <field name="name">Send for approval</field>
+      <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_view_types">list</field>
+      <field name="state">code</field>
+      <field name="code">
+        if records:
+          records.action_payroll_approval_sent()
+      </field>
+    </record> -->
+
+    <act_window
+      name="Send email, approval &amp; print"
+      id="payroll_email_send"
+      res_model="send.email.payroll.approval"
+      binding_model="hr.payslip"
+      binding_views="list"
+      view_mode="form"
+      target="new"
+      context="{
+        'default_template_id': ref('approval_email_template'),
+        'send_mass': True,
+      }"
+    />
+
+    <record model="ir.actions.server" id="action_hr_payroll_compute_sheet_mass">
+      <field name="name">Compute Sheet</field>
+      <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_view_types">list</field>
+      <field name="state">code</field>
+      <field name="code">
+        if records:
+          records.compute_sheet_mass()
+      </field>
+    </record>
+
+    <record model="ir.actions.server" id="action_hr_payroll_approve">
+      <field name="name">Approve payroll</field>
+      <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_view_types">list</field>
+      <field name="state">code</field>
+      <field name="code">
+        if records:
+          records.approve_payroll()
+      </field>
+    </record>
+
+    <record model="ir.actions.server" id="action_hr_payroll_not_approve">
+      <field name="name">Not approve payroll</field>
+      <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_model_id" ref="hr_payroll.model_hr_payslip"/>
+      <field name="binding_view_types">list</field>
+      <field name="state">code</field>
+      <field name="code">
+        if records:
+          records.not_approve_payroll()
+      </field>
+    </record>
+
+    <!--Filters-->
+    <record id="view_hr_payroll_approval_filter" model="ir.ui.view">
+      <field name="name">view.hr.payroll.approval.filter</field>
+      <field name="model">hr.payslip</field>
+      <field name="inherit_id" ref="hr_payroll.view_hr_payslip_filter"/>
+      <field name="arch" type="xml">
+        <xpath expr="//filter[@name='done']" position="after">
+          <separator/>
+          <filter string="Approved payroll" name="approved" domain="[('general_state', '=', 'approved')]"/>
+          <filter string="Ready to approve" name="ready" domain="[('general_state', '=', 'sent')]"/>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="view_payslip_run_approval_filter" model="ir.ui.view">
+      <field name="name">view.payslip.payroll.approval.filter</field>
+      <field name="model">hr.payslip.run</field>
+      <field name="inherit_id" ref="hr_payroll.hr_payslip_run_filter"/>
+      <field name="arch" type="xml">
+        <xpath expr="//filter[@name='done_filter']" position="after">
+          <filter string="Ready to approve" name="ready_filter" domain="[('internal_state', '=', 'sent')]"/>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>

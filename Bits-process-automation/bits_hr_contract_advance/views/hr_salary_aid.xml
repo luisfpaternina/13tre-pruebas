@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="hr_salary_aid_form" model="ir.ui.view">
+            <field name="name">hr_salary_aid_form</field>
+            <field name="model">hr.salary.aid</field>
+            <field name="arch" type="xml">
+
+                <form string="Salary aid">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only" />
+                            <h1><field name="name" placeholder="e.g. non-performance parking assistance"></field></h1>
+                        </div>
+
+                        <group>
+                            <group>
+                                <field name="description"/>
+                            </group>
+                            <group>
+                                <field name="code" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+        
+        <record id="hr_salary_aid_tree" model="ir.ui.view">
+            <field name="name">hr_salary_aid_tree</field>
+            <field name="model">hr.salary.aid</field>
+            <field name="arch" type="xml">
+
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="code" />
+                </tree>
+
+            </field>
+        </record>
+
+        <record id="action_hr_salary_aid" model="ir.actions.act_window">
+            <field name="name">Salary Aid</field>
+            <field name="res_model">hr.salary.aid</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{"search_default_Current":1}</field>
+        </record>
+        
+
+        <menuitem
+            id="menu_hr_salary_aid"
+            parent="hr.menu_human_resources_configuration"
+            action="action_hr_salary_aid"
+            sequence="3"/>
+
+    </data>
+</odoo>

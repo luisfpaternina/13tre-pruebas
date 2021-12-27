@@ -1,0 +1,78 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="freight_approval_form">
+      <field name="name">freight_approval form</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_confirm'][1]" position="replace">
+                <button
+                    name="action_confirm"
+                    string="Confirm Sale"
+                    class="btn-primary o_sale_confirm"
+                    type="object"
+                    attrs="{'invisible': ['|', ('state', 'not in', ['sent', 'approve_superior']), ('recompute_delivery_price', '=', True)]}"
+                />
+            </xpath>
+            <xpath expr="//button[@name='action_cancel']" position="replace">
+                <button name="action_cancel" states="draft,sent,sale,approve_superior" type="object" string="Cancel"/>
+            </xpath>
+            <xpath expr="//button[@name='action_cancel']" position="after">
+                <button
+                    id="action_cancel_freight"
+                    name="action_cancel"
+                    type="object"
+                    string="Cancel Freight"
+                    attrs="{'invisible': [('state', 'not in', ['waiting_for_approval'])]}"
+                    class="btn-danger text-uppercase"
+                    context="{'rejected_by_a_superior': True, 'reject_freight': True}"
+                    groups="freight_approval.group_manager_sale_approval"
+                />
+            </xpath>
+        <xpath expr="//button[@name='action_confirm'][2]" position="attributes">
+            <attribute name="attrs">{'invisible': ['|',('state', 'not in', ['draft']), ('recompute_delivery_price', '=', True)]}</attribute>
+        </xpath>
+        <xpath expr="//button[@name='action_confirm'][2]" position="after">
+            <button
+                id="action_confirm_freight"
+                name="action_confirm_flow"
+                string="Confirm Sale Freight"
+                class="btn-success o_sale_confirm text-uppercase"
+                type="object"
+                attrs="{'invisible': [('state', 'not in', ['waiting_for_approval'])]}"
+                groups="freight_approval.group_manager_sale_approval"
+                context="{'approve_by_a_superior': True, 'approve_freight': True}"
+            />
+        </xpath>
+        <xpath expr="//button[@name='action_confirm'][2]" position="after">
+            <button
+                name="send_for_approval"
+                type="object"
+                string="Send For Approval"
+                class="btn-warning text-uppercase"
+                attrs="{'invisible': ['|',('state', 'not in', ['draft', 'sent']), ('recompute_delivery_price', '=', False)]}"
+            />
+        </xpath>
+      </field>
+    </record>
+
+
+    <record id="search_freight_approval" model="ir.ui.view">
+        <field name="name">search_freight_approval</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='filter_create_date']" position="after">
+                <separator/>
+                <filter
+                    name="pending_approval"
+                    string="Pending Approval"
+                    domain="[('state', '=', 'waiting_for_approval')]"
+                />
+            </xpath>
+        </field>
+    </record>
+
+  </data>
+</odoo>

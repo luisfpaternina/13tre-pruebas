@@ -1,0 +1,67 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="credit_types_list_view">
+            <field name="name">credit_types list</field>
+            <field name="model">credit.type</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="supporting_entity_ids" widget="many2many_tags"/>
+                    <field name="description" optional="hide"/>
+                    <field name="invoicing" optional="hide"/>
+                    <field name="receivable" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="credit_types_form_view">
+            <field name="name">credit_types form</field>
+            <field name="model">credit.type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="receivable"/>
+                                <field name="supporting_entity_ids" widget="many2many_tags"/>
+                            </group>
+                            <group>
+                                <field name="name"/>
+                                <field name="invoicing"/>
+                            </group>
+                        </group>
+                        <group>
+                            <div class="mt-4 pt-3">
+                                <field widget="text" name="description" nolabel="1" placeholder="Description...."/>
+                            </div>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_window_credit_types">
+        <field name="name">Credit Types</field>
+        <field name="res_model">credit.type</field>
+        <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="categ_credits"
+            name="Credits"
+            parent="sale.menu_sale_config"
+        />
+
+        <menuitem
+            id="menu_credit_types_list"
+            name="Credit Types"
+            parent="allocation_of_credit_amount.categ_credits"
+            action="allocation_of_credit_amount.action_window_credit_types"
+        />
+
+    </data>
+</odoo>

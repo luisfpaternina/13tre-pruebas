@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_hr_applicant_inherit" model="ir.ui.view">
+            <field name="name">view.hr.applicant.inherit</field>
+            <field name="model">hr.applicant</field>
+            <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"></field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='email_from']" position="before">
+                    <field name="identification_number" />
+                    <field name="internal_request" />
+                </xpath>
+                <xpath expr="//field[@name='type_id']" position="after">
+                    <field name="status" />
+                </xpath>
+                <xpath expr="//field[@name='description']" position="after">
+                    <field name="eval_comment" placeholder="Evaluator Comment" groups="hr_recruitment.hr_case_dev0"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

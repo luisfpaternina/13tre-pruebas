@@ -1,0 +1,189 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_supplier_performance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-16 21:20+0000\n"
+"PO-Revision-Date: 2020-07-16 16:21-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__res_partner_performance__performance__1
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__supplier_qualification_wizard__performance__1
+msgid "Bad"
+msgstr "Malo"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__create_uid
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__create_date
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__description
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__display_name
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre Publico"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__res_partner_performance__performance__3
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__supplier_qualification_wizard__performance__3
+msgid "Good"
+msgstr "Bueno"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_purchase_order__has_qualification
+msgid "Has Qualification"
+msgstr "Tiene Calificación"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__id
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance____last_update
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard____last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificación"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__write_uid
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__write_date
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: purchase_supplier_performance
+#: model_terms:ir.ui.view,arch_db:purchase_supplier_performance.supplier_qualification_wizard_form
+msgid "Note"
+msgstr "Nota"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__partner_id
+msgid "Partner"
+msgstr "Asociado"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_supplier_qualification_wizard__performance
+msgid "Performance"
+msgstr "Rendimiento"
+
+#. module: purchase_supplier_performance
+#: model_terms:ir.actions.act_window,help:purchase_supplier_performance.action_supplier_performance
+#: model:ir.ui.menu,name:purchase_supplier_performance.menu_supplier_performence
+msgid "Provider Ratings"
+msgstr "Calificaciones de Proveedores"
+
+#. module: purchase_supplier_performance
+#: model:ir.model,name:purchase_supplier_performance.model_purchase_order
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__order_id
+msgid "Purchase Order"
+msgstr "Orden de Compra"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__qualification_date
+msgid "Qualification Date"
+msgstr "Fecha de Calificación"
+
+#. module: purchase_supplier_performance
+#: model_terms:ir.ui.view,arch_db:purchase_supplier_performance.supplier_qualification_wizard_form
+msgid "Qualify"
+msgstr "Calificar"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__res_partner_performance__performance__2
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__supplier_qualification_wizard__performance__2
+msgid "Regular"
+msgstr ""
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__res_partner_performance__type__supplier
+msgid "Supplier"
+msgstr ""
+
+#. module: purchase_supplier_performance
+#: model:ir.actions.act_window,name:purchase_supplier_performance.action_supplier_performance
+#: model_terms:ir.ui.view,arch_db:purchase_supplier_performance.supplier_performance_graph
+msgid "Supplier Performance"
+msgstr "Rendimiento de los proveedores"
+
+#. module: purchase_supplier_performance
+#: model_terms:ir.ui.view,arch_db:purchase_supplier_performance.purchase_order_supplier_performance_form
+msgid "Supplier Qualification"
+msgstr "Calificacion de Proveedores"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields,field_description:purchase_supplier_performance.field_res_partner_performance__user_id
+msgid "User Qualification"
+msgstr "Usuario de Calificación"
+
+#. module: purchase_supplier_performance
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__res_partner_performance__performance__0
+#: model:ir.model.fields.selection,name:purchase_supplier_performance.selection__supplier_qualification_wizard__performance__0
+msgid "Very Bad"
+msgstr "Muy Malo"
+
+#. module: purchase_supplier_performance
+#: code:addons/purchase_supplier_performance/models/purchase_order.py:0
+#, python-format
+msgid ""
+"You cannot generate the invoice until you have made the supplier "
+"qualification"
+msgstr ""
+"No puede generar la factura hasta que no realice la calificacion "
+"del proveedor"
+
+#. module: purchase_supplier_performance
+#: model:ir.model,name:purchase_supplier_performance.model_res_partner_performance
+msgid "res.partner.performance"
+msgstr ""
+
+#. module: purchase_supplier_performance
+#: model:ir.model,name:purchase_supplier_performance.model_supplier_qualification_wizard
+msgid "supplier.qualification.wizard"
+msgstr ""

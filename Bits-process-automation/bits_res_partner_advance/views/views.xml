@@ -1,0 +1,104 @@
+<odoo>
+  <!-- explicit list view definition -->
+
+  <record model="ir.ui.view" id="view_partner_form_identification">
+    <field name="name">view.partner.form.identification</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='vat']" position="before">
+        <field name="employee"/>
+        <field name="document_type" required="1"/>
+        <field name="number_identification" required="1"/>
+      </xpath>
+      <xpath expr="//field[@name='type']" position="before">
+        <field name="partner_relation_id"/>
+      </xpath>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="view_res_partner_filter_add_field">
+    <field name="name">view.res.partner.filter.add.field</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_res_partner_filter"/> 
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='name']" position="after">
+        <field name="number_identification" filter_domain="[('number_identification', 'ilike', self)]"/>
+      </xpath>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="view_partner_kanban_modify">
+    <field name="name">view.partner.kanban.modify</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.res_partner_kanban_view"/> 
+    <field name="arch" type="xml">
+      <xpath expr="//li[1]" position="after">
+        <field name="display_employee"/>
+      </xpath>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="view_partner_form_name">
+    <field name="name">view.partner.form.name</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='name']" position="attributes">
+        <attribute name="attrs">{'invisible': [('is_company','=', False)], 'required': [('type','=', 'contact')]}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='type']" position="before">
+        <field name="first_name" attrs="{'invisible': [('is_company','=', True)], 'required': [('is_company', '=', False)]}"/>
+        <field name="second_name" attrs="{'invisible': [('is_company','=', True)]}"/>
+        <field name="first_surname" attrs="{'invisible': [('is_company','=', True)], 'required': [('is_company', '=', False)]}"/>
+        <field name="second_surname" attrs="{'invisible': [('is_company','=', True)]}"/>
+        <field name="country_code" invisible="1"/>
+      </xpath>
+      <xpath expr="//field[@name='parent_id']" position="attributes">
+        <attribute name="attrs">{'invisible': True}</attribute>
+      </xpath>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="view_partner_form_document_attributes">
+    <field name="name">view.partner.form.document.attributes</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='document_type']" position="attributes">
+        <attribute name="invisible">1</attribute>
+      </xpath>
+      <xpath expr="//field[@name='number_identification']" position="attributes">
+        <attribute name="attrs">{'invisible': [('company_type', '=', 'company')]}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='l10n_co_document_type']" position="attributes">
+        <attribute name="required">1</attribute>
+      </xpath>
+      <xpath expr="//field[@name='vat']" position="attributes">
+        <attribute name="attrs">{'invisible': [('company_type', '=', 'person')], 'readonly': False}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='l10n_co_verification_code']" position="attributes">
+        <attribute name="invisible">0</attribute>
+      </xpath>
+      <xpath expr="//field[@name='city']" position="attributes">
+        <attribute name="attrs">{'required': [('country_code', '=', 'CO')]}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='state_id']" position="attributes">
+        <attribute name="attrs">{'required': [('country_code', '=', 'CO')]}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='email']" position="attributes">
+        <attribute name="required">1</attribute>
+      </xpath>
+      <xpath expr="//field[@name='phone']" position="attributes">
+        <attribute name="required">1</attribute>
+      </xpath>
+      <xpath expr="//field[@name='street']" position="attributes">
+        <attribute name="required">1</attribute>
+      </xpath>
+      <xpath expr="//field[@name='country_id']" position="attributes">
+        <attribute name="required">1</attribute>
+      </xpath>
+    </field>
+  </record>
+
+</odoo>

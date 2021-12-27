@@ -1,0 +1,179 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bits_hr_contract_advance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-03 15:36+0000\n"
+"PO-Revision-Date: 2021-09-03 15:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__code
+msgid "Code"
+msgstr "Código"
+
+#. module: bits_hr_contract_advance
+#: code:addons/bits_hr_contract_advance/models/hr_salary_aid.py:0
+#: model:ir.model,name:bits_hr_contract_advance.model_hr_salary_aid
+#, python-format
+msgid "Contains all salary aids"
+msgstr "Contiene todas las ayudas salariales"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: bits_hr_contract_advance
+#: code:addons/bits_hr_contract_advance/models/hr_contract.py:0
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract__contributor_type_id
+#, python-format
+msgid "Contributor Type"
+msgstr "Tipo de Contribuyente"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__create_uid
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__create_date
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__display_name
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__display_name
+msgid "Display Name"
+msgstr "Nombre completo"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model,name:bits_hr_contract_advance.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields.selection,name:bits_hr_contract_advance.selection__hr_contract__type_contract__1
+msgid "Fixed term contract"
+msgstr "Término fijo"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__id
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__id
+msgid "ID"
+msgstr ""
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields.selection,name:bits_hr_contract_advance.selection__hr_contract__type_contract__2
+msgid "Indefinite term contract"
+msgstr "Término indefinido"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields.selection,name:bits_hr_contract_advance.selection__hr_contract__type_contract__5
+msgid "Internships"
+msgstr "Prácticas o pasantías"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid____last_update
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid____last_update
+msgid "Last Modified on"
+msgstr "Última modificación"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__write_uid
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__write_uid
+msgid "Last Updated by"
+msgstr "Última modificación por"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__write_date
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__write_date
+msgid "Last Updated on"
+msgstr "última actualización en"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields.selection,name:bits_hr_contract_advance.selection__hr_contract__type_contract__4
+msgid "Learning"
+msgstr "Aprendizaje"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_salary_aid__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bits_hr_contract_advance
+#: model:ir.actions.act_window,name:bits_hr_contract_advance.action_hr_salary_aid
+#: model:ir.ui.menu,name:bits_hr_contract_advance.menu_hr_salary_aid
+msgid "Salary Aid"
+msgstr "Ayuda salarial"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__salary_aid_id
+#: model_terms:ir.ui.view,arch_db:bits_hr_contract_advance.bits_hr_contract_advance
+#: model_terms:ir.ui.view,arch_db:bits_hr_contract_advance.hr_salary_aid_form
+msgid "Salary aid"
+msgstr "Ayuda salarial"
+
+#. module: bits_hr_contract_advance
+#: code:addons/bits_hr_contract_advance/models/hr_contract.py:0
+#, python-format
+msgid "The field 'structure_type_id' is required"
+msgstr "El campo 'estructura salarial' es requerido"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract__type_contract
+msgid "Type Contract"
+msgstr "Tipo de contrato"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract_salary_aid__value
+msgid "Value"
+msgstr "Valor"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields.selection,name:bits_hr_contract_advance.selection__hr_contract__type_contract__3
+msgid "Work or labor"
+msgstr "Obra o labor"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.constraint,message:bits_hr_contract_advance.constraint_hr_contract_salary_aid_uk_hr_contract_salary_aid
+msgid "You cannot have the same salary aid assigned more than once"
+msgstr "No se puede asignar la misma ayuda salarial mas de una vez"
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.constraint,message:bits_hr_contract_advance.constraint_hr_salary_aid_uk_hr_salary_aid
+msgid "Your cannot have two salary aid with the same code"
+msgstr "No puede existir mas de una ayuda salarial con el mismo código"
+
+#. module: bits_hr_contract_advance
+#: model_terms:ir.ui.view,arch_db:bits_hr_contract_advance.hr_salary_aid_form
+msgid "e.g. non-performance parking assistance"
+msgstr "Auxilio de parqueadero no prestacional"
+
+#. module: bits_hr_contract_advance
+#: code:addons/bits_hr_contract_advance/models/hr_contract_salary_aid.py:0
+#: model:ir.model,name:bits_hr_contract_advance.model_hr_contract_salary_aid
+#, python-format
+msgid "represents intermediate table, an contract can have many salary aid"
+msgstr "Representa tabla intermedia, un contrato puede tener asignadas varias ayudas salariales"
+
+
+#. module: bits_hr_contract_advance
+#: model:ir.model.fields,field_description:bits_hr_contract_advance.field_hr_contract__salary_aid_ids
+msgid "salary aid"
+msgstr "Ayuda salarial"

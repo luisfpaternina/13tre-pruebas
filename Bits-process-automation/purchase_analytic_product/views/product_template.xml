@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="purchase_analytic_product_view" model="ir.ui.view">
+            <field name="name">purchase.analytic.product.view</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='property_account_income_id']" position="after">
+                    <field name="analytic_account_id" widget="many2many_tags"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Tree View -->
+        <record id="purchase_analytic_product_view_tree" model="ir.ui.view">
+            <field name="name">purchase.analytic.product.view.tree</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="account.product_template_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='supplier_taxes_id']" position="after">
+                    <field name="analytic_account_id" widget="many2many_tags"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

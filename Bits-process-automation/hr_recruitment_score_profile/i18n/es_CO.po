@@ -1,0 +1,360 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_recruitment_score_profile
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-05 20:00+0000\n"
+"PO-Revision-Date: 2021-05-05 20:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__percentage
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__percentage
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__percentage
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__percentage
+msgid "% Percentage"
+msgstr "% Porcentaje de peso de la habilidad"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__active
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__active
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_applicant
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__result_id
+msgid "Applicant"
+msgstr "Candidato"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_applicant_lines
+msgid "Applicant lines"
+msgstr "Líneas de habilidades en el aplicante"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__applicant_id
+msgid "Applicant postulation"
+msgstr "Postulación"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__calculated_total
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__calculated_total
+msgid "Calculated Total"
+msgstr "Total calculado"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__code
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__code
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__code
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.actions.act_window,help:hr_recruitment_score_profile.action_view_hr_recruitment_score_skills
+msgid "Create new skill"
+msgstr "Crear nueva habilidad"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.actions.act_window,help:hr_recruitment_score_profile.action_view_hr_recruitment_score_technologies
+msgid "Create new technology"
+msgstr "Crear nuevo registro"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.actions.act_window,help:hr_recruitment_score_profile.action_view_hr_recruitment_score_test_result
+msgid "Create new test result"
+msgstr "Crear nuevo registro"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.actions.act_window,help:hr_recruitment_score_profile.action_view_hr_recruitment_score_profile
+msgid "Create profile"
+msgstr "Crear Perfil"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant_lines__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__create_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant_lines__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__create_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__description
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__description
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant_lines__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant_lines__id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant_lines____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines____last_update
+msgid "Last Modified on"
+msgstr "Última modificación"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant_lines__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__write_uid
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant_lines__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__write_date
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_recruitment_score_lines_skills
+msgid "Lines Skillis"
+msgstr "Líneas de habilidades"
+
+#. module: hr_recruitment_score_profile
+#: model:res.groups,comment:hr_recruitment_score_profile.hr_recruitment_score_profile_manager_group
+msgid "Manager Profile Permission Group"
+msgstr "Grupo Administrador de perfiles"
+
+#. module: hr_recruitment_score_profile
+#: model:res.groups,name:hr_recruitment_score_profile.hr_recruitment_score_profile_manager_group
+msgid "Manager Profiles"
+msgstr "Administrador de Perfiles"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__mjs
+msgid "Msj"
+msgstr "Resultado"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__name
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__profile_id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__profile_id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__profile_id
+#: model:ir.ui.menu,name:hr_recruitment_score_profile.nemu_hr_recruitment_score_profile
+msgid "Profile"
+msgstr "Perfiles"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.actions.act_window,name:hr_recruitment_score_profile.action_view_hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_recruitment_score_profile
+msgid "Profiles"
+msgstr "Perfiles"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_recruitment_score_profile_lines
+msgid "Profiles lines"
+msgstr "Lineas del perfil"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__test_result_lines
+msgid "Results applicant lines"
+msgstr "Resultados del aplicante"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_lines_skills__skill_id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_technologies__skill_id
+msgid "Skill"
+msgstr "Habilidades"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_skills_form
+msgid "Skill Name"
+msgstr "Nombre de la Habilidad"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_recruitment_score_skills
+msgid "Skillis"
+msgstr "Habilidades"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.actions.act_window,name:hr_recruitment_score_profile.action_view_hr_recruitment_score_skills
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile_lines__skill_id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__skills
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results_lines__skill_id
+#: model:ir.ui.menu,name:hr_recruitment_score_profile.nemu_hr_recruitment_score_skills
+msgid "Skills"
+msgstr "Habilidades"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.actions.act_window,name:hr_recruitment_score_profile.action_view_hr_recruitment_score_technologies
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_recruitment_score_technologies
+#: model:ir.ui.menu,name:hr_recruitment_score_profile.nemu_hr_recruitment_score_technologies
+msgid "Technologies"
+msgstr "Pruebas"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__technology_id
+msgid "Technology"
+msgstr "Tecnología"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__tecnology_id
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__tecnology_id
+msgid "Tecnology"
+msgstr "Tecnología"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.actions.act_window,name:hr_recruitment_score_profile.action_view_hr_recruitment_score_test_result
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__test_result
+#: model:ir.ui.menu,name:hr_recruitment_score_profile.nemu_hr_recruitment_test_result
+msgid "Test result"
+msgstr "Resultado de prueba"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_recruitment_score_test_results
+msgid "Test results"
+msgstr "Resultado de pruebas"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant__test_result_ids
+msgid "Test results count"
+msgstr "Evaluaciones"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model,name:hr_recruitment_score_profile.model_hr_recruitment_score_test_results_lines
+msgid "Test results lines"
+msgstr "Líneas de Evaluación"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__total_items
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_skills__total_items
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__total_items
+msgid "Total items"
+msgstr "Total de habilidades evaluadas"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__weighted_average
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__weighted_average_related
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__weighted_average
+msgid "Weighted average"
+msgstr "Promedio ponderado"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_test_results__profile_id
+msgid "job profile"
+msgstr "Cargo solicitado"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.ui.menu,name:hr_recruitment_score_profile.nemu_hr_recruitment_knowledge_tests
+msgid "knowledge tests"
+msgstr "Pruebas de conocimiento"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_profile_form
+msgid "name"
+msgstr "Nombre"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.actions.act_window,name:hr_recruitment_score_profile.open_view_test_result_count
+msgid "ope.view.test.result"
+msgstr "Resultados de pruebas"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_profile_form
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_profile_tree
+msgid "profile"
+msgstr "Perfil"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_recruitment_score_profile__profile_line_ids
+msgid "profile lines"
+msgstr "Líneas del perfil"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_skills_form
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_skills_tree
+msgid "skills"
+msgstr "Habilidades"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_technologies_form
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_technologies_tree
+msgid "technologies"
+msgstr "Pruebas"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.inherit_hr_applicant_view
+msgid "test result"
+msgstr "Pruebas"
+
+#. module: hr_recruitment_score_profile
+#: model:ir.model.fields,field_description:hr_recruitment_score_profile.field_hr_applicant__test_result_count
+msgid "test result count"
+msgstr "Evaluaciónes"
+
+#. module: hr_recruitment_score_profile
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_test_result_form
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_score_profile.view_hr_recruitment_score_test_result_tree
+msgid "test_result"
+msgstr "Resultado de prueba"

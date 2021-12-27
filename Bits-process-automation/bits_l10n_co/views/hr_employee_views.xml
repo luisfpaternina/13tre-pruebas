@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <record id="bits_l10n_co_hr_employee_inherit" model="ir.ui.view">
+      <field name="name">bits.l10n.co.hr.employee.inherit</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='personal_information']/group/group[2]/field[@name='country_of_birth']" position="after">
+          <field name="colombian_exterior"></field>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

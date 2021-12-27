@@ -1,0 +1,37 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_analytic_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-10 21:11+0000\n"
+"PO-Revision-Date: 2021-03-10 21:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_analytic_product
+#: code:addons/purchase_analytic_product/models/product_template.py:0
+#: model:ir.model.fields,field_description:purchase_analytic_product.field_product_product__analytic_account_id
+#: model:ir.model.fields,field_description:purchase_analytic_product.field_product_template__analytic_account_id
+#, python-format
+msgid "Analytic Account"
+msgstr "Cuenta Analítica"
+
+#. module: purchase_analytic_product
+#: model:ir.model,name:purchase_analytic_product.model_product_template
+msgid "Product Template"
+msgstr "Plantilla del Producto"
+
+#. module: purchase_analytic_product
+#: code:addons/purchase_analytic_product/models/product_template.py:0
+#: model:ir.model.fields,help:purchase_analytic_product.field_product_product__analytic_account_id
+#: model:ir.model.fields,help:purchase_analytic_product.field_product_template__analytic_account_id
+#, python-format
+msgid "Select analytic account related."
+msgstr "Seleccione la cuenta analítica relacionada."

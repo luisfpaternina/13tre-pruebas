@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="inherit_form_view_hr_applicant" model="ir.ui.view">
+            <field name="name">hr.applicant</field>
+            <field name="model">hr.applicant</field>
+            <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+            <field name="arch" type="xml">
+               <field name="categ_ids" position="before">
+                    <field name="is_need_interview"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

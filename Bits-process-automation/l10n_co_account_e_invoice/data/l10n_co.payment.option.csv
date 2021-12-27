@@ -1,0 +1,68 @@
+id,code,name
+l10n_co_payment_option_1,1,Instrumento no definido
+l10n_co_payment_option_2,2,Crédito ACH
+l10n_co_payment_option_3,3,Débito ACH
+l10n_co_payment_option_4,4,Reversión débito de demanda ACH
+l10n_co_payment_option_5,5,Reversión crédito de demanda ACH
+l10n_co_payment_option_6,6,Crédito de demanda ACH
+l10n_co_payment_option_7,7,Débito de demanda ACH
+l10n_co_payment_option_8,8,Mantener
+l10n_co_payment_option_9,9,Clearing Nacional o Regional
+l10n_co_payment_option_10,10,Efectivo
+l10n_co_payment_option_11,11,Reversión Crédito Ahorro
+l10n_co_payment_option_12,12,Reversión Débito Ahorro
+l10n_co_payment_option_13,13,Crédito Ahorro
+l10n_co_payment_option_14,14,Débito Ahorro
+l10n_co_payment_option_15,15,Bookentry Crédito
+l10n_co_payment_option_16,16,Bookentry Débito
+l10n_co_payment_option_17,18,Desembolso (CCD) débito
+l10n_co_payment_option_18,19,Crédito Pago negocio corporativo (CTP)
+l10n_co_payment_option_19,20,Cheque
+l10n_co_payment_option_20,21,Poyecto bancario
+l10n_co_payment_option_21,23,Cheque bancario de gerencia
+l10n_co_payment_option_22,24,Nota cambiaria esperando aceptación
+l10n_co_payment_option_23,25,Cheque certificado
+l10n_co_payment_option_24,26,Cheque Local
+l10n_co_payment_option_25,31,Transferencia Débito
+l10n_co_payment_option_26,32,Desembolso Crédito plus (CCD+)
+l10n_co_payment_option_27,33,Desembolso Débito plus (CCD+)
+l10n_co_payment_option_28,34,Pago y depósito pre acordado (PPD)
+l10n_co_payment_option_29,35,Desembolso Crédito (CCD)
+l10n_co_payment_option_30,36,Desembolso Débito (CCD)
+l10n_co_payment_option_31,37,Pago Negocio Corporativo Ahorros Crédito (CTP)
+l10n_co_payment_option_32,38,Pago Negocio Corporativo Ahorros Débito (CTP)
+l10n_co_payment_option_33,39,Crédito Intercambio Corporativo (CTX)
+l10n_co_payment_option_34,40,Débito Intercambio Corporativo (CTX)
+l10n_co_payment_option_35,41,Desembolso Crédito plus (CCD+)
+l10n_co_payment_option_36,42,Consiganción bancaria
+l10n_co_payment_option_37,43,Desembolso Débito plus (CCD+)
+l10n_co_payment_option_38,44,Nota cambiaria
+l10n_co_payment_option_39,45,Transferencia Crédito Bancario
+l10n_co_payment_option_40,46,Transferencia Débito Interbancario
+l10n_co_payment_option_41,47,Transferencia Débito Bancaria
+l10n_co_payment_option_42,48,Tarjeta Crédito
+l10n_co_payment_option_43,49,Tarjeta Débito
+l10n_co_payment_option_44,50,Postgiro
+l10n_co_payment_option_45,51,Telex estándar bancario
+l10n_co_payment_option_46,52,Pago comercial urgente
+l10n_co_payment_option_47,53,Pago Tesorería Urgente
+l10n_co_payment_option_48,60,Nota promisoria
+l10n_co_payment_option_49,61,Nota promisoria firmada por el acreedor
+l10n_co_payment_option_50,62,"Nota promisoria firmada por el acreedor, avalada por el banco"
+l10n_co_payment_option_51,63,"Nota promisoria firmada por el acreedor, avalada por un tercero"
+l10n_co_payment_option_52,64,Nota promisoria firmada pro el banco
+l10n_co_payment_option_53,65,Nota promisoria firmada por un banco avalada por otro banco
+l10n_co_payment_option_54,66,Nota promisoria firmada
+l10n_co_payment_option_55,67,Nota promisoria firmada por un tercero avalada por un banco
+l10n_co_payment_option_56,71,Bonos
+l10n_co_payment_option_57,72,Vales
+l10n_co_payment_option_58,77,Retiro de una nota por el acreedor sobre un tercero
+l10n_co_payment_option_59,78,Retiro de una nota por el acreedor sobre un tercero avalada por un banco
+l10n_co_payment_option_60,91,Nota bancaria transferible
+l10n_co_payment_option_61,92,Cheque local transferible
+l10n_co_payment_option_62,93,Giro referenciado
+l10n_co_payment_option_63,94,Giro urgente
+l10n_co_payment_option_64,95,Giro formato abierto
+l10n_co_payment_option_65,96,Método de pago solicitado no usuado
+l10n_co_payment_option_66,97,Clearing entre partners
+l10n_co_payment_option_67,ZZZ,Acuerdo mutuo

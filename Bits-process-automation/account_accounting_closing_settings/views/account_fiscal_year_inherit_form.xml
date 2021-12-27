@@ -1,0 +1,37 @@
+<odoo>
+  <data>
+    <!-- account.fiscal.year form view -->
+    
+    <record id="account_fiscal_year_inherit_form" model="ir.ui.view">
+      <field name="name">account.fiscal.year.inherit.form</field>
+      <field name="model">account.fiscal.year</field>
+      <field name="inherit_id" ref="account.action_account_fiscal_year_form" />
+      <field name="arch" type="xml">
+
+        <xpath expr="//form/sheet" position="before">
+          <header>
+            <button string="EXECUTE ACCOUNTING CLOSE" type="object" class="oe_highlight" name="execute_accounting_close"></button>
+          </header>
+        </xpath>
+
+        <xpath expr="//form/sheet/group" position="before">
+          <div class="oe_button_box" name="button_box">
+           <button class="oe_stat_button" name="journal_items_view" icon="fa-list-ol" type="object">
+                <field string="Journal Items" name="journal_items_count" widget="statinfo"/>
+            </button>
+          </div>
+        </xpath>
+        
+        <xpath expr="//field[@name='company_id']" position="after">
+          <field name="journal" options="{'no_create': True}"/>
+          <field name="profit_account_year" options="{'no_create': True}"/>
+          <field name="account_lost_year" options="{'no_create': True}"/>
+          <field name="move_id" options="{'no_create': True}"/>
+          <field name="reference" />
+        </xpath>
+
+
+      </field>
+    </record>
+  </data>
+</odoo>

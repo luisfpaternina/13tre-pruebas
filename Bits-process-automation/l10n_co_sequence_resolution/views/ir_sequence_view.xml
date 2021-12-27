@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sequence_view_tax_extension" model="ir.ui.view">
+            <field name="name">ir.sequence.tax.extension</field>
+            <field name="model">ir.sequence</field>
+            <field name="inherit_id" ref="base.sequence_view"/>
+            <field name="arch" type="xml">
+
+                <field name="use_date_range" position="after">
+                    <field name="use_dian_control"/>
+                    <field name="dian_type"
+                        attrs="{'invisible': [('use_dian_control', '!=', True)], 'required': [('use_dian_control', '=', True)]}"/>
+                </field>
+
+                <field name="implementation" position="attributes">
+                    <attribute name="attrs">{'invisible': [('use_dian_control', '=', True)]}</attribute>
+                </field>
+
+                <field name="suffix" position="attributes">
+                    <attribute name="attrs">{'invisible': [('use_dian_control', '=', True)]}</attribute>
+                </field>
+
+                <field name="use_date_range" position="attributes">
+                    <attribute name="attrs">{'invisible': [('use_dian_control', '=', True)]}</attribute>
+                </field>
+
+                <field name="padding" position="attributes">
+                    <attribute name="attrs">{'invisible': [('use_dian_control', '=', True)]}</attribute>
+                </field>
+
+                <field name="number_increment" position="attributes">
+                    <attribute name="attrs">{'invisible': [('use_dian_control', '=', True)]}</attribute>
+                </field>
+
+                <xpath expr="//page/group/group[1]" position="after">
+                    <group string="Warn From"
+                        attrs="{'invisible': [('use_dian_control', '!=', True)]}">
+                        <field name="remaining_numbers"
+                            attrs="{'required': [('use_dian_control', '=', True)]}"/>
+                        <field name="remaining_days"
+                            attrs="{'required': [('use_dian_control', '=', True)]}"/>
+                    </group>
+                </xpath>
+
+                <field name="date_from" position="before">
+                    <field name="prefix" invisible="1"/>
+                    <field
+                        name="resolution_number"/>
+                </field>
+
+                <field name="date_to" position="after">
+                    <field
+                        name="number_from"/>
+                    <field
+                        name="number_to"/>
+                    <field
+                        name="active_resolution"
+                        readonly="1"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="ir_sequence_form_l10n_co_search_register" model="ir.ui.view">
+            <field name="name">ir.sequence.l10n_co.search.view</field>
+            <field name="model">ir.sequence</field>
+            <field name="arch" type="xml">
+                <search string="Search Sequence L10n_co">
+                    <filter string="Sequence - Resolutions" name="use_dian_control" domain="[
+                        ('use_dian_control', '=', True)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="ir_sequence_form_l10n_co" model="ir.actions.act_window">
+            <field name="name">Sequence DIAN</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ir.sequence</field>
+            <field name="view_id" ref="base.sequence_view_tree"/>
+            <field name="search_view_id" ref="ir_sequence_form_l10n_co_search_register"/>
+            <field name="context">{'search_default_use_dian_control': 1}</field>
+        </record>
+
+        <menuitem
+            action="ir_sequence_form_l10n_co"
+            id="menu_ir_sequence_form_l10n_co"
+            parent="account.menu_finance_configuration"/>
+    </data>
+</odoo>

@@ -1,0 +1,10 @@
+id,name,code
+l10n_co_type_operations_1,AIU,09
+l10n_co_type_operations_2,Estandar,10
+l10n_co_type_operations_3,Mandatos,11
+l10n_co_type_operations_4,Nota Crédito que referencia una FE,20
+l10n_co_type_operations_5,Nota Crédito sin referencia a facturas,22
+l10n_co_type_operations_6,Nota Crédito para FE V1 (Decreto 2242),23
+l10n_co_type_operations_7,Nota Débito que referencia una FE,30
+l10n_co_type_operations_8,Nota Débito sin referencia a facturas,32
+l10n_co_type_operations_9,Nota Débito para FE V1 (Decreto 2242),33

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="supplier_qualification_wizard_form">
+        <field name="name">supplier.qualification.wizard.form</field>
+        <field name="model">supplier.qualification.wizard</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="performance" required="1" widget="priority"/>
+                        <field name="description" string="Note"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Qualify" name="create_partner_performance" type="object" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

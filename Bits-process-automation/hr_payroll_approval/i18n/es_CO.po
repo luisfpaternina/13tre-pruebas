@@ -1,0 +1,746 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_approval
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-24 14:03+0000\n"
+"PO-Revision-Date: 2021-09-24 14:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_payroll_approval
+#: model:mail.template,report_name:hr_payroll_approval.approval_email_template
+msgid ""
+"${object.employee_id.name}-Nomina-${object.month_payroll}-${object.year_payroll}"
+msgstr ""
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_hr_payslip__state
+msgid ""
+"* When the payslip is created the status is 'Draft'\n"
+"                \n"
+"* If the payslip is under verification, the status is 'Waiting'.\n"
+"                \n"
+"* If the payslip is confirmed then status is set to 'Done'.\n"
+"                \n"
+"* When user cancel payslip the status is 'Rejected'."
+msgstr ""
+"* Cuando la nómina es creada el estado es 'Borrador'\n"
+"                \n"
+"* Si la nómina está bajo verificación el estado es 'En Espera'.\n"
+"                \n"
+"* Si la nómina está confirmada entonces el estado se cambia a 'Finalizado'.\n"
+"                \n"
+"* Cuando el usuario cancela la nómina el estado es 'Rechazado'."
+
+#. module: hr_payroll_approval
+#: model:mail.template,body_html:hr_payroll_approval.approval_email_template
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Cordial saludo Director administrativo y financiero,\n"
+"                        En el presente correo se realizá el envío de nómina para su respectiva validación y aprobación.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;margin:0px;padding: 0px;\">\n"
+"                    <p style=\"margin:0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;padding: 0px; font-size: 13px;\">\n"
+"                        Cordial saludo Director administrativo y financiero,\n"
+"                        En el presente correo se realizá el envío de nómina para su respectiva validación y aprobación.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid ""
+"<span attrs=\"{'invisible': [('composition_mode', '!=', 'mass_mail')]}\">\n"
+"\t\t\t\t\t\t\t\t\t\t<strong>\n"
+"\t\t\t\t\t\t\t\t\t\t\tEmail mass mailing\n"
+"\t\t\t\t\t\t\t\t\t\t</strong>\n"
+"\t\t\t\t\t\t\t\t\t\ton\n"
+"\t\t\t\t\t\t\t\t\t\t<span>\n"
+"\t\t\t\t\t\t\t\t\t\t\tthe selected records\n"
+"\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t<span>\n"
+"\t\t\t\t\t\t\t\t\t\tFollowers of the document and\n"
+"\t\t\t\t\t\t\t\t\t</span>"
+msgstr ""
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid ""
+"A payroll with a status other than 'Verify' cannot be submitted for approval"
+msgstr ""
+"Una nomina en la cual su estado es diferente a 'En espera' no puede ser "
+"enviada para aprobacion"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_payslip_run_approval
+msgid "APPROVE"
+msgstr "APROBAR"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__active_domain
+msgid "Active domain"
+msgstr "Dominio activo"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__add_sign
+msgid "Add Sign"
+msgstr "Agregar Firma"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Add contacts to notify..."
+msgstr "Agregar contactos a notificar..."
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__partner_ids
+msgid "Additional Contacts"
+msgstr "Contactos adicionales"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__no_auto_thread
+msgid ""
+"Answers do not go in the original document discussion thread. This has an "
+"impact on the generated message-id."
+msgstr ""
+"Las respuestas no van en el hilo de discusión del documento original." 
+"Esto tiene un impacto en el ID de mensaje generado."
+
+#. module: hr_payroll_approval
+#: model:ir.actions.server,name:hr_payroll_approval.action_hr_payroll_approve
+msgid "Approve payroll"
+msgstr "Aprobar nominas"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip__general_state__approved
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip_run__internal_state__approved
+msgid "Approved"
+msgstr "Aprobada"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_hr_payroll_approval_filter
+msgid "Approved payroll"
+msgstr "Nominas aprobadas"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Attach a file"
+msgstr "Adjuntar archivo"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__attachment_ids
+msgid "Attachments"
+msgstr "Adjuntos"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__author_id
+msgid "Author"
+msgstr "Autor"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__author_id
+msgid ""
+"Author of the message. If not set, email_from may hold an email address that"
+" did not match any partner."
+msgstr ""
+"Autor del mensaje. Si no se configura, email_from puede contener una "
+"dirección de correo electrónico que no coincidía con ningún socio."
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__basic_wage
+msgid "Basic Wage"
+msgstr "Salario Básico"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__payslip_run_id
+msgid "Batch Name"
+msgstr "Nombre del Lote"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__composer_id
+msgid "Composer"
+msgstr ""
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__composition_mode
+msgid "Composition mode"
+msgstr "Modo de composición"
+
+#. module: hr_payroll_approval
+#: model:ir.actions.server,name:hr_payroll_approval.action_hr_payroll_compute_sheet_mass
+msgid "Compute Sheet"
+msgstr "Calcular hoja"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__compute_date
+msgid "Computed On"
+msgstr "Computación Activada"
+
+#. module: hr_payroll_approval
+#: model:ir.model,name:hr_payroll_approval.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de Configuración"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__body
+msgid "Contents"
+msgstr "Contenidos"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__credit_note
+msgid "Credit Note"
+msgstr "Factura rectificativa"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_payslip_run_approval
+msgid "DISAPPROVE"
+msgstr "NO APROBAR"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_hr_payslip__struct_id
+msgid ""
+"Defines the rules that have to be applied to this payslip, accordingly to "
+"the contract chosen. If you let empty the field contract, this field isn't "
+"mandatory anymore and thus the rules applied will be all the rules set on "
+"the structure of all contracts of the employee valid for the chosen period"
+msgstr ""
+"Define las reglas que serán aplicadas a esta nómina, de acuerdo con el "
+"contrato escogido. Si deja vacío el campo contrato, este campo no será "
+"obligatorio y por tanto se aplicarán las reglas válidas establecidas en "
+"todos los contratos de empleado para el periodo elegido"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__auto_delete
+msgid "Delete Emails"
+msgstr "Eliminar correos"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__auto_delete_message
+msgid "Delete Message Copy"
+msgstr "Eliminar copias del mensaje"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__auto_delete
+msgid "Delete sent emails (mass mailing only)"
+msgstr "Eliminar correos enviados (Solo correos masivos)"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip__general_state__disapproved
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip_run__internal_state__disapproved
+msgid "Disapproved"
+msgstr "Desaprobada"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__display_name
+msgid "Display Name"
+msgstr "Nombre Visual"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__auto_delete_message
+msgid ""
+"Do not keep a copy of the email in the document communication history (mass "
+"mailing only)"
+msgstr ""
+"No guardar una copia del correo electrónico en el historial de comunicaciones"
+" del documento (solo correos masivos)"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__is_email
+msgid "Email"
+msgstr ""
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__email_from
+msgid ""
+"Email address of the sender. This field is set when no matching partner is "
+"found and replaces the author_id field in the chatter."
+msgstr ""
+"Dirección de correo electrónico del remitente. Este campo se establece "
+"cuando no se encuentra ningún contacto relacionado y reemplaza el campo Autor"
+" en la charla."
+
+#. module: hr_payroll_approval
+#: model:ir.model,name:hr_payroll_approval.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Asistente de redacción de correo"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_res_config_settings__emails_job_ids
+msgid "Emails jobs"
+msgstr "Puestos de trabajo"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_payroll_approval
+#: model:mail.template,subject:hr_payroll_approval.approval_email_template
+msgid "Envio de aprobacion de Nomina"
+msgstr ""
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__date_from
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__email_from
+msgid "From"
+msgstr "Desde"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__general_state
+msgid "General State"
+msgstr "Estado General"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_hr_payslip__credit_note
+msgid "Indicates this payslip has a refund of another"
+msgstr "Indica que esta nómina incluye una factura rectificativa de otra"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__parent_id
+msgid "Initial thread message."
+msgstr "Mensaje inicial del hilo."
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__note
+msgid "Internal Note"
+msgstr "Nota interna"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip_run__internal_state
+msgid "Internal State"
+msgstr "Estado Interno"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__printed
+msgid "Is Printed"
+msgstr "Está impreso"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid "Jobs for payroll approval not configured"
+msgstr "No se han configurado puestos de trabajo para la aprobación de nómina"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificación en"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__layout
+msgid "Layout"
+msgstr ""
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__is_log
+msgid "Log an Internal Note"
+msgstr "Registrar una nota interna"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__paid
+msgid "Made Payment Order ? "
+msgstr "¿Realizar orden de pago? "
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__mail_activity_type_id
+msgid "Mail Activity Type"
+msgstr "Tipo de Actividad de Correo"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__record_name
+msgid "Message Record Name"
+msgstr "Nombre de mensaje"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__message_type
+msgid ""
+"Message type: email for email message, notification for system message, "
+"comment for other messages such as user replies"
+msgstr ""
+"Tipo de mensaje: correo electrónico para mensaje de correo electrónico, "
+"notificación para mensaje del sistema comenta para otros mensajes, como "
+"las respuestas de los usuarios"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__record_name
+msgid "Name get of the related document."
+msgstr "Nombre del documento relacionado"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__net_wage
+msgid "Net Wage"
+msgstr "Salario Neto"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__no_auto_thread
+msgid "No threading for answers"
+msgstr "Sin hilos para respuestas"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip__general_state__none
+msgid "None"
+msgstr "Nada"
+
+#. module: hr_payroll_approval
+#: model:ir.actions.server,name:hr_payroll_approval.action_hr_payroll_not_approve
+msgid "Not approve payroll"
+msgstr "Nomina no aprobada"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip__general_state__not_sent
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip_run__internal_state__not_sent
+msgid "Not sent for approval"
+msgstr "No enviada para aprobacion"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__notify
+msgid "Notify followers"
+msgstr "Notificar seguidores"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__notify
+msgid "Notify followers of the document (mass post only)"
+msgstr "Notificar a los seguidores del documento (solo publicación masiva)"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__mail_server_id
+msgid "Outgoing mail server"
+msgstr "Servidor de correo saliente"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__parent_id
+msgid "Parent Message"
+msgstr "Mensaje Padre"
+
+#. module: hr_payroll_approval
+#: model:ir.model,name:hr_payroll_approval.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_hr_payroll_approval_setting
+msgid "Payroll Approval"
+msgstr "Aprobación de nomina"
+
+#. module: hr_payroll_approval
+#: model:ir.model,name:hr_payroll_approval.model_send_email_payroll_approval
+msgid "Payroll Approval Send"
+msgstr "Envío de aprobación de nómina"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Payroll Approval send & Print"
+msgstr "Enviar e imprimir aprobación de nómina "
+
+#. module: hr_payroll_approval
+#: model:ir.model,name:hr_payroll_approval.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "Procesamientos de nóminas"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__input_line_ids
+msgid "Payslip Inputs"
+msgstr "Entradas de nómina"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__line_ids
+msgid "Payslip Lines"
+msgstr "Líneas de nómina"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__name
+msgid "Payslip Name"
+msgstr "Nombre de nómina"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__worked_days_line_ids
+msgid "Payslip Worked Days"
+msgstr "Días trabajados de la nómina"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__payslip_ids
+msgid "Payslips"
+msgstr "Nóminas"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Preview as a PDF"
+msgstr "Vista previa como PDF"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__is_print
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Print"
+msgstr "Imprimir
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_hr_payroll_approval_filter
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_payslip_run_approval_filter
+msgid "Ready to approve"
+msgstr "Listas para aprobar"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Recipients"
+msgstr "Destinatarios"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__number
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__res_id
+msgid "Related Document ID"
+msgstr "ID de documento relacionado"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__model
+msgid "Related Document Model"
+msgstr "Modelo de documento relacionado"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__reply_to
+msgid ""
+"Reply email address. Setting the reply_to bypasses the automatic thread "
+"creation."
+msgstr ""
+"Dirección de correo electrónico de respuesta. La configuración de responder "
+"a omite el hilo automático creación."
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__reply_to
+msgid "Reply-To"
+msgstr "Reponder a"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_payroll_approval
+msgid "SEND FOR APPROVAL"
+msgstr "ENVIAR PARA APROBACION"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__user_id
+msgid "Salesperson"
+msgstr "Vendedor"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Save as a new template"
+msgstr "Guardar como una nueva plantilla"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Save as new template"
+msgstr "Guardar como nueva plantilla"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Send"
+msgstr "Enviar"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Send & Print"
+msgstr "Enviar e Imprimir"
+
+#. module: hr_payroll_approval
+#: model:ir.actions.act_window,name:hr_payroll_approval.payroll_email_send
+msgid "Send email, approval & print"
+msgstr "Envar correo electrónico, aprobar e imprimir"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip__general_state__sent
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip_run__internal_state__sent
+msgid "Sent for approval"
+msgstr "Enviada para aprobacion"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip__general_state__rejected
+#: model:ir.model.fields.selection,name:hr_payroll_approval.selection__hr_payslip_run__internal_state__rejected
+msgid "Sent for approval and rejected"
+msgstr "Enviada para aprobación y rechazada"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__struct_id
+msgid "Structure"
+msgstr "Estructura"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__subject
+msgid "Subject"
+msgstr "Asunto"
+
+#. module: hr_payroll_approval
+#: model_terms:ir.ui.view,arch_db:hr_payroll_approval.view_wizard_send_email_payroll_approval
+msgid "Subject..."
+msgstr "Asunto..."
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__subtype_id
+msgid "Subtype"
+msgstr "Subtipo"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid "The payroll has already been submitted for approval"
+msgstr "La nomina ya ha sido enviada para aprobacion"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid "The payroll is approved, for this reason it cannot be modified"
+msgstr "La nomina esta aprobada, por esta razón no puede ser modificada"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__date_to
+msgid "To"
+msgstr "Hasta"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid ""
+"To pass the payroll to the 'Done' state, the 'General state' must be "
+"'Approved'"
+msgstr ""
+"Para pasar la nomina al estado 'Hecho', el 'Estado general'  debe ser "
+"'Aprobado'"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__message_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__use_active_domain
+msgid "Use active domain"
+msgstr "Usar dominio activo"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_send_email_payroll_approval__template_id
+msgid "Use template"
+msgstr "Usar plantilla"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,field_description:hr_payroll_approval.field_hr_payslip__warning_message
+msgid "Warning Message"
+msgstr "Mensaje de advertencia"
+
+#. module: hr_payroll_approval
+#: model:ir.model.fields,help:hr_payroll_approval.field_send_email_payroll_approval__is_log
+msgid "Whether the message is an internal note (comment mode only)"
+msgstr "Si el mensaje es una nota interna (solo en modo comentario)"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid ""
+"You cannot approve a payroll that does not have a general status 'Sent for "
+"approval' or that has already been approved"
+msgstr ""
+"No puede aprobar una nomina que no tenga un estado general 'Enviada para "
+"aprobación' o que ya haya sido aprobada"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid "You cannot cancel a nominee that has already been approved"
+msgstr "No puede cancelar una nomina cuando esta ya ha sido aprobada"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid ""
+"You cannot reject a payroll when it has not been submitted for approval or "
+"is approved"
+msgstr ""
+"No puede rechazar una nómina cuando no se ha enviado para aprobación o está "
+"aprobada"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid "You cannot submit for approval a payroll that is already approved"
+msgstr "No puede enviar para aprobacion una nomina que ya ha sido aprobada"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid "sent payroll approval"
+msgstr "Aprobación de la nómina enviada"
+
+#. module: hr_payroll_approval
+#: code:addons/hr_payroll_approval/models/hr_payroll_approval.py:0
+#, python-format
+msgid ""
+"the batch cannot be passed to the 'Done' state if its internal state is "
+"different from 'Approved'"
+msgstr ""
+"el lote no se puede pasar al estado 'Hecho' si su estado interno es "
+"diferente de 'Aprobado'"

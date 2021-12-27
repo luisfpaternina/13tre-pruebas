@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="hr_payroll_view_decimal_precision_form">
+            <field name="name">hr.payroll.view.decimal.precision.form</field>
+            <field name="model">decimal.precision</field>
+            <field name="inherit_id"
+            ref="base.view_decimal_precision_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="after">
+                    <group col="4">
+                        <field name="rouding"/>
+                        <field name="multiple"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_general_budget_analysis_user,account_budget_analysis_report.general.budget.analysis,model_general_budget_analysis,base.group_user,1,1,1,1

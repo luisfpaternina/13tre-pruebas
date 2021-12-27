@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_security
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-21 20:11+0000\n"
+"PO-Revision-Date: 2020-07-21 15:13-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accountant_analyst
+msgid "Accountant Analyst"
+msgstr "Analista Contable"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accountant_assistant
+msgid "Accountant Assistant"
+msgstr "Asistente Contable"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accountant
+msgid "Accountant Business"
+msgstr "Empresa Contable"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accounting_administrative_manager
+msgid "Accounting Administrative Manager"
+msgstr "Gestor Administrativo"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accounting_commercial
+msgid "Accounting Commercial"
+msgstr "Comercial"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accounting_human_talent
+msgid "Accounting Human Talent"
+msgstr "Talento Humano"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accounting_payroll_treasury
+msgid "Accounting Payroll And Treasury"
+msgstr "Nómina Y Tesoreria"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_accounting_practitioner
+msgid "Accounting Practitioner"
+msgstr "Practicante"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_cfo
+msgid "CFO"
+msgstr "Director Financiero"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_payroll_accountant
+msgid "Payroll Accountant"
+msgstr "Contador"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_payroll_treasury
+msgid "Payroll And Treasury"
+msgstr "Nómina y Tesoreria"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_payroll_cfo
+msgid "Payroll CFO"
+msgstr "Director Financiero"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_payroll_human_talent
+msgid "Payroll Human Talent"
+msgstr "Talento Humano"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_purchase_accountant_assistant
+msgid "Purchase Accountant Assistant"
+msgstr "Asistente Contable"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_purchase_admin_manager
+msgid "Purchase Administrative Manager"
+msgstr "Gestor Administratativo"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_purchase_human_talent
+msgid "Purchase Human Talent"
+msgstr "Talento Humano"
+
+#. module: base_security
+#: model:res.groups,name:base_security.bits_security_purchasing_manager
+msgid "Purchasing Manager"
+msgstr "Gestor Compras"

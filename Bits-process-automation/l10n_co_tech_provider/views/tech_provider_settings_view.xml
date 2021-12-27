@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="l10n_co_tech_provider_settings">
+            <field name="name">Tech provider settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="account.res_config_settings_view_form" />
+            <field name="arch" type="xml">
+                <div id="analytic" position="after">
+                    <h2>Tech provider</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">
+                                    <label for="provider_id" />
+                                </span>
+                                <div class="text-muted">
+                                    Select the provider for your company.
+                                </div>
+                                <div class="text-muted">
+                                    <field name="provider_id" domain="[('_type', '=', 'account')]"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="is_test" widget="upgrade_boolean" />
+                            </div>
+                            <div class="o_setting_right_pane" name="is_test_right_pane">
+                                <label for="is_test" />
+                                <div class="text-muted">
+                                    Is it a way to test?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">
+                                    <label for="user_provider" />
+                                </span>
+                                <div class="text-muted">
+                                    Username for connection with the provider.
+                                </div>
+                                <div class="text-muted">
+                                    <field name="user_provider" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">
+                                    <label for="password_provider" />
+                                </span>
+                                <div class="text-muted">
+                                    password for connection with the provider.
+                                </div>
+                                <div class="text-muted">
+                                    <field name="password_provider" password="True" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

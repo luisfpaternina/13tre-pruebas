@@ -1,0 +1,178 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bits_l10n_co
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-03 20:18+0000\n"
+"PO-Revision-Date: 2021-03-03 20:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bits_l10n_co
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.bits_l10n_co_partner_form_view
+msgid "City"
+msgstr "Ciudad"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__divipola_code
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__code
+msgid "Code"
+msgstr "Código"
+
+#. module: bits_l10n_co
+#: model:ir.model,name:bits_l10n_co.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: bits_l10n_co
+#: model:ir.model,name:bits_l10n_co.model_res_country
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__country_id
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.bits_l10n_co_partner_form_view
+msgid "Country"
+msgstr "País"
+
+#. module: bits_l10n_co
+#: model:ir.model,name:bits_l10n_co.model_res_country_state
+msgid "Country state"
+msgstr "Provincia"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__create_uid
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__create_date
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields.selection,name:bits_l10n_co.selection__bits_l10n_co__place_type__dp
+msgid "Deparment"
+msgstr "Departamento"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country__l10n_co_dian_code
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__l10n_co_dian_code
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_partner__l10n_co_dian_code
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_users__l10n_co_dian_code
+msgid "Dian Code"
+msgstr "Código Dian"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__display_name
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_state__l10n_co_divipola
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__l10n_co_divipola
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_partner__divipola_state
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_partner__divipola_town
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_users__divipola_state
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_users__divipola_town
+msgid "Divipola Code"
+msgstr "Código Divipola"
+
+#. module: bits_l10n_co
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.view_country_town_search
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__id
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__id
+msgid "ID"
+msgstr "ID"
+
+#. module: bits_l10n_co
+#: model:ir.model,name:bits_l10n_co.model_bits_l10n_co
+msgid "Lacation Workplace"
+msgstr "Lugar de trabajo"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co____last_update
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town____last_update
+msgid "Last Modified on"
+msgstr "ültima modificación en"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__write_uid
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__write_date
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización en"
+
+#. module: bits_l10n_co
+#: model:ir.model,name:bits_l10n_co.model_res_country_town
+msgid "Municipalities of the country"
+msgstr "Municipios del País"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields.selection,name:bits_l10n_co.selection__bits_l10n_co__place_type__mn
+msgid "Municipality"
+msgstr "Municipio"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__name
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_bits_l10n_co__place_type
+msgid "Place Type"
+msgstr "Tipo de Lugar"
+
+#. module: bits_l10n_co
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_country_town__state_id
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.bits_l10n_co_partner_form_view
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.view_country_town_form
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.view_country_town_search
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.view_country_town_tree
+msgid "State"
+msgstr "Estado"
+
+#. module: bits_l10n_co
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.bits_l10n_co_partner_form_view
+msgid "Street 2..."
+msgstr "Calle 2..."
+
+#. module: bits_l10n_co
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.bits_l10n_co_partner_form_view
+msgid "Street..."
+msgstr "Calle..."
+
+#. module: bits_l10n_co
+#: code:addons/bits_l10n_co/models/res_partner.py:0
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_partner__town_id
+#: model:ir.model.fields,field_description:bits_l10n_co.field_res_users__town_id
+#, python-format
+msgid "Town"
+msgstr "Municipio"
+
+#. module: bits_l10n_co
+#: model:ir.actions.act_window,name:bits_l10n_co.action_country_town
+#: model:ir.ui.menu,name:bits_l10n_co.menu_country_town_partner
+msgid "Towns"
+msgstr "Municipios"
+
+#. module: bits_l10n_co
+#: model_terms:ir.ui.view,arch_db:bits_l10n_co.bits_l10n_co_partner_form_view
+msgid "ZIP"
+msgstr ""

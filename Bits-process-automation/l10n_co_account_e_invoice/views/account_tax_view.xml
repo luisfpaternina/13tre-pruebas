@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_e_invoce_tax_view" model="ir.ui.view">
+            <field name="name">account.tax.view</field>
+            <field name="model">account.tax</field>
+            <field name="inherit_id" ref="account.view_tax_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='active']" position="after">
+                    <field name="type_of_tax"/>
+                    <field name="tax_group_fe"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

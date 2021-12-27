@@ -1,0 +1,6 @@
+
+Version 13.0.0.1 : (28/10/20)
+	- Added boolean fields in pos.config for importing sale order in sent/draft state
+	- Added boolean fields in pos.config for canceling imported sale order 
+
+=> 13.0.0.2 : Improved an index as per latest improvements.

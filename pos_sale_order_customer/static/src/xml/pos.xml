@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="InvoicesButton">
+            <div class='col-6 control-button' attrs="{'invisible':[('item.id','=',False)]}">
+                <i class='fa fa-list-alt' />
+                Fetch Invoices
+            </div>
+    </t>
+
+    <t t-name="ResetButton">
+        <div class='col-6 control-button' attrs="{'invisible':[('item.id','=',False)]}">
+            <i class='fa fa-refresh' />
+            Reset
+        </div>
+    </t>
+
+    <t t-name="Invoice">
+        <tr class='invoice' t-att-data-id='item.id'>
+            <td>
+                <t t-esc='item.partner_id[1]' />
+            </td>
+            <td>
+                <t t-esc='item.invoice_date' />
+            </td>
+            <td>
+                <t t-esc='item.name' />
+            </td>
+            <td>
+                <t t-esc='item.invoice_user_id[1]' />
+            </td>
+            <td>
+                <t t-esc='item.invoice_date_due' />
+            </td>
+            <td>
+                <t t-esc='widget.format_currency(item.amount_total)' />
+            </td>
+            <td>
+                <t t-esc='widget.format_currency(item.amount_residual)' />
+            </td>
+            <td>
+                <t t-esc='item.state' />
+            </td>
+        </tr>
+    </t>
+    <t t-name="InvoicesWidget">
+        <div class="invoice-list-screen list-screen screen">
+            <div class="screen-content">
+                <section class="top-content">
+                    <span class='button back'>
+                        <i class='fa fa-angle-double-left' />
+                        Cancel
+                    </span>
+                    <span class='searchbox'>
+                        <input placeholder='Search Invoices' />
+                        <span class='search-clear' />
+                    </span>
+                    <span class='searchbox' />
+                    <span class='button next oe_hidden highlight'>
+                        <i class='fa fa-angle-double-right' />
+                        Set Invoice
+                    </span>
+                </section>
+                <section class="full-content">
+                    <div class='window'>
+                        <section class='subwindow'>
+                            <div class='subwindow-container'>
+                                <div
+                                    class='subwindow-container-fix touch-scrollable scrollable-y'
+                                >
+                                    <table class='list'>
+                                        <thead>
+                                            <tr>
+                                                <th>Customer</th>
+                                                <th>Invoice Date</th>
+                                                <th>Number</th>
+                                                <th>Salesperson</th>
+                                                <th>Due Date</th>
+                                                <th>Total</th>
+                                                <th>Amount Due</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class='list-contents'>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,10 @@
+id,name,code,cufe_algorithm,prefix,type
+l10n_co_type_documents_1,Factura electrónica de Venta,01,CUFE-SHA384,fv,CUFE
+l10n_co_type_documents_2,Factura electrónica de Exportación,02,CUFE-SHA384,fv,CUFE
+l10n_co_type_documents_3,Documento electrónico de Transmisión-tipo 03,03,CUDE-SHA384,fv,CUDE
+l10n_co_type_documents_4,Factura electrónica de Venta-tipo 04,04,CUFE-SHA384,fv,CUFE
+l10n_co_type_documents_5,Nota de crédito electrónica,91,CUDE-SHA384,nc,CUDE
+l10n_co_type_documents_6,Nota de débito electrónica,92,CUDE-SHA384,nd,CUDE
+l10n_co_type_documents_7,ZIP,,,z,
+l10n_co_type_documents_8,Application Response,,,ar,
+l10n_co_type_documents_9,Attached Document,,,ad,

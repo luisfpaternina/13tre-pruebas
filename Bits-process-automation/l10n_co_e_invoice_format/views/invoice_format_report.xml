@@ -1,0 +1,344 @@
+<odoo>
+  <data>
+    <template id="invoice_report_template_header">
+      <div class="header" style="font-size: small;">
+        <div class="row">
+          <div class="col-6" style="max-height:160px;">
+            <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo" height="120"/>
+          </div>
+          <div class="col-6" style="margin-bottom: 25px; margin-top: 30px;">
+            <table class="table table-bordered table-sm" style="text-align: center;">
+              <thead class="thead-light">
+                <tr>
+                  <th t-if="o.type == 'out_invoice'" scope="col">Electronic Sales Invoice No</th>
+                  <th t-if="o.type == 'out_refund' and o.ei_type_document_id.code == '91'" scope="col">Credit Note Electronic Sales Invoice No</th>
+                  <th t-if="o.type == 'out_refund' and o.ei_type_document_id.code == '92'" scope="col">Debit Note Electronic Sales Invoice No</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span t-field="o.name"/></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+        <t t-raw="0" />
+      </div>
+      <div t-attf-class="footer">
+        <div class="text-center" style="border-top: 1px solid black;">
+            <ul class="list-inline mb4">
+                <li t-if="res_company.phone" class="list-inline-item d-inline">Phone: <span t-field="res_company.phone"/></li>
+                <li t-if="res_company.email" class="list-inline-item d-inline">Email: <span t-field="res_company.email"/></li>
+                <li t-if="res_company.vat" class="list-inline-item d-inline"><t t-esc="res_company.country_id.vat_label or 'Nit'"/>: <span t-field="res_company.vat"/></li>
+            </ul>
+
+            <div t-if="report_type == 'pdf'" class="text-muted">
+                Page: <span class="page"/> / <span class="topage"/>
+            </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="invoice_format_template">
+      <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+          <t t-set="lang" t-value="o.partner_id.lang"/>
+          <t t-set="o" t-value="o.with_context(lang=lang)" />
+          <t t-call="l10n_co_e_invoice_format.invoice_report_template_header">
+            <div class="page">
+              <div class="container-fluid" style="font-size: small;">
+                <div class="row">
+                  <div class="col-6 offset-6" align="center">
+                    <div class="row" style="margin-top:-25px;">
+                      <div class="col-12 text-center">
+                        <t t-set="text_info" t-value="o._get_text_info()" t-lang="lang"/>
+                        <span>Official document of the authorization of electronic invoicing<br/>
+                          No <span t-field="o.name"/> <span t-field="o.active_resolution.date_from"/> to <span t-field="o.active_resolution.date_to"/><br/>
+                          that enables from <span t-field="o.active_resolution.number_from"/> to <span t-field="o.active_resolution.number_to"/>.
+                        </span>
+                        <br/>
+                        <t t-set="text_header" t-value="o._get_text_info_header()"/>
+                        <span t-raw="text_header"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" style="padding-top:20px;">
+                  <div class="col-6" align="left">
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="res_company.name"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="res_company.street"/> - <span t-field="res_company.city"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="res_company.state_id"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="res_company.country_id"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6 t-if="res_company.partner_id.l10n_co_document_type">
+                          <span t-field="res_company.partner_id.l10n_co_document_type"/>: <span t-field="res_company.partner_id.vat"/>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6" align="left">
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="o.partner_id.name"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="o.partner_id.street"/> - <span t-field="o.partner_id.city"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="o.partner_id.state_id"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          <span t-field="o.partner_id.country_id"/>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6 t-if="o.partner_id.l10n_co_document_type">
+                          <span t-field="o.partner_id.l10n_co_document_type"/>: <span t-field="o.partner_id.vat"/>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" style="padding-top:30px;padding-bottom:25px;font-size:small;">
+                  <div class="col-6">
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>
+                          Invoice <span t-field="o.name"/>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <table class="table table-bordered table-sm" style="width:100%">
+                    <thead>
+                      <tr align="left">
+                        <th scope="col">Invoice date:</th>
+                        <th scope="col">Expiration date:</th>
+                        <th scope="col">Way to pay:</th>
+                        <th scope="col">Seller:</th>
+                        <th scope="col">Reference:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span t-field="o.ei_invoice_datetime"/>
+                        </td>
+                        <td>
+                          <span t-field="o.invoice_payment_term_id"/>
+                        </td>
+                        <td>
+                          <span t-field="o.ei_payment_form_id.name"/>
+                        </td>
+                        <td>
+                          <span t-field="o.invoice_user_id.name" />
+                        </td>
+                        <td>
+                          <span t-field="o.name"/>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="row" style="padding-top:15px;">
+                  <div class="col-12" style="padding-left: 0px;padding-right: 0px;">
+                    <p t-if="o.ei_type_document_id.code in ['91', '92']" style="margin-bottom:0px;">
+                      <strong>Related Document:</strong> <span t-field="o.ei_origin_id.name"/>. 
+                      <strong>Concept: </strong> 
+                      <span t-if="o.ei_type_document_id.code == '92'" t-field="o.description_code_debit"/>
+                      <span t-if="o.ei_type_document_id.code == '91'" t-field="o.description_code_credit"/>
+                    </p>
+
+                    <p name="comment1" style="margin-bottom:0px;">
+                      <strong>Currency:</strong>
+                      <span t-field="o.currency_id.name"/>
+                    </p>
+
+                    <p name="comment" style="margin-bottom:0px;">
+                      <strong>By concept of:</strong>
+                      <span t-field="o.narration"/>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row" style="padding-top:20px;padding-bottom:20px;">
+                  <table class="table table-bordered table-sm" style="width:100%;">
+                    <thead>
+                      <tr align="center">
+                        <th>Item</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                        <th>Qty.</th>
+                        <th>Unit price</th>
+                        <th>Unit of m.</th>
+                        <th>VAT rate</th>
+                        <th>VAT value</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <t t-set="count_item" t-value="0"/>
+                      <t t-set="percentage_iva" t-value="0"/>
+                      <tr t-foreach="o.invoice_line_ids" t-as="line">
+                        <t t-set="count_item" t-value="count_item + 1"/>
+                        <td style="text-align:center;">
+                          <span t-esc="count_item"/>
+                        </td>
+                        <td style="text-align:center;">
+                          <span t-field="line.product_id.default_code"/>
+                        </td>
+                        <td>
+                          <span t-field="line.name"/>
+                        </td>
+                        <td style="text-align:center;">
+                          <span t-esc="round(line.quantity)"/>
+                        </td>
+                        <td class="text-right o_price_total">
+                          <span
+                            t-options='{"widget": "monetary", "display_currency": o.currency_id}'
+                            t-field="line.price_unit"
+                          />
+                        </td>
+                        <td style="text-align:center;">
+                          <span t-if="line.product_id.l10n_co_unit_measure_id" t-esc="line.product_id.l10n_co_unit_measure_id.name" />
+                        </td>
+                        <t t-if="len(line._get_taxes_by_type()) > 0" t-set="tax" t-value="line._get_taxes_by_type()[0]"/>
+                        <td class="text-right o_price_total">
+                          <span t-if="tax and tax['rate']" t-esc="tax['rate'] or ''"/>
+                        </td>
+                        <td class="text-right o_price_total">
+                          <span t-if="tax and tax['amount']" t-esc="tax['amount'] or ''" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                        </td>
+                        <td class="text-right o_price_total">
+                          <span
+                            t-options='{"widget": "monetary", "display_currency": o.currency_id}'
+                            t-esc="line.quantity * line.price_unit"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="row">
+                  <div class="col-6" style="padding-left: 0px;padding-right: 0px;">
+                    <h6><strong>Value in letters:</strong></h6>
+                    <h6><span t-field="o.ei_amount_text"/></h6>
+                  </div>
+                  <div class="col-6" style="padding-left: 0px;padding-right: 0px;">
+                    <table class="table table-bordered table-sm" style="width:100%;">
+                      <tbody>
+                        <tr>
+                          <th>Free Amount</th>
+                          <td class="text-right o_price_total"><span t-field="o.total_without_sur_disc"/></td>
+                        </tr>
+                        <tr>
+                          <th>Discounts</th>
+                          <td class="text-right o_price_total"><span t-field="o.amount_discount"/></td>
+                        </tr>
+                        <tr>
+                          <th>charges</th>
+                          <td class="text-right o_price_total"><span t-field="o.amount_surchange"/></td>
+                        </tr>
+                        <tr>
+                          <th>Subtotal taxable base</th>
+                          <td class="text-right o_price_total">
+                            <span t-field="o.amount_untaxed"/>
+                          </td>
+                        </tr>
+                        <t t-foreach="o.amount_by_group" t-as="amount_by_group">
+                            <tr style="">
+                                <t t-if="len(o.line_ids.filtered(lambda line: line.tax_line_id)) == 1 and o.amount_untaxed == amount_by_group[2]">
+                                    <th><span t-esc="amount_by_group[0]"/></th>
+                                    <td class="text-right o_price_total">
+                                        <span t-esc="amount_by_group[3]" />
+                                    </td>
+                                </t>
+                                <t t-else="">
+                                    <th>
+                                        <span t-esc="amount_by_group[0]"/>
+                                        <!-- <span>&amp;nbsp;<span>on</span>
+                                            <t t-esc="amount_by_group[4]"/>
+                                        </span> -->
+                                    </th>
+                                    <td class="text-right o_price_total">
+                                        <span t-esc="amount_by_group[3]"/>
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                        <tr>
+                          <th>Total</th>
+                          <td class="text-right o_price_total">
+                            <span t-field="o.amount_total"/>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="row" style="padding-top:20px;">
+                  <div class="col-2">
+                    <img t-if="o.ei_qr_image" t-att-src="image_data_uri(o.ei_qr_image)" height="100"/>
+                  </div>
+                  <div class="col-10">
+                    <span t-if="o.ei_qr_data" t-field="o.ei_qr_data"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </t>
+        </t>
+      </t>
+    </template>
+  </data>
+</odoo>

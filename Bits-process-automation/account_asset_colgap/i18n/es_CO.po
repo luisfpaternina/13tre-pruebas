@@ -1,0 +1,297 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_asset_colgap
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-06 00:06+0000\n"
+"PO-Revision-Date: 2021-02-05 19:10-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_asset.py:0
+#, python-format
+msgid "(prorata entry)"
+msgstr "(Entrada Prorrateada)"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_asset.py:0
+#, python-format
+msgid "A deferred expense has been created for this move:"
+msgstr "Se ha creado un gasto diferido para esta movida:"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_asset.py:0
+#, python-format
+msgid "A deferred revenue has been created for this move:"
+msgstr "Se ha creado un ingreso diferido para este movimiento:"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields.selection,name:account_asset_colgap.selection__account_asset__method_colgap__degressive_then_linear
+msgid "Accelerated Degressive"
+msgstr "Degresivo Acelerado"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__account_depreciation_colgap_id
+msgid ""
+"Account used in the depreciation entries, to decrease the asset value "
+"colgap."
+msgstr ""
+"Cuenta utilizada en los asientos de depreciación, para disminuir el colgap "
+"del valor del activo."
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__account_depreciation_expense_colgap_id
+msgid ""
+"Account used in the periodical entries, to record a part ofthe asset as "
+"expense."
+msgstr ""
+"Cuenta utilizada en los asientos periódicos, para registrar una parte del "
+"activo como gasto."
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__account_asset_colgap_id
+msgid ""
+"Account used to record the purchase of the asset at its original price "
+"colgap."
+msgstr ""
+"Cuenta utilizada para registrar la compra del activo a su precio original "
+"colgap."
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Accounting Colgap"
+msgstr "Contabilización Colgap"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_asset.py:0
+#, python-format
+msgid "An asset has been created for this move:"
+msgstr "Se ha creado un activo para este movimiento:"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_asset.py:0
+#, python-format
+msgid "Asset created"
+msgstr "Activo creado"
+
+#. module: account_asset_colgap
+#: model:ir.model,name:account_asset_colgap.model_account_asset
+msgid "Asset/Revenue Recognition"
+msgstr "Aceptación de pagos/Ingresos"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__book_value_colgap
+msgid "Book Value colgap"
+msgstr "Cantidad de Gastos Diferidos Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_move__colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_move_line__colgap
+msgid "Colgap"
+msgstr ""
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Current Values Colgap"
+msgstr "Valores actuales Colgap"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_asset.py:0
+#, python-format
+msgid "Deferred expense created"
+msgstr "Gastos diferidos creados"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_asset.py:0
+#, python-format
+msgid "Deferred revenue created"
+msgstr "Ingresos diferidos creados"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields.selection,name:account_asset_colgap.selection__account_asset__method_colgap__degressive
+msgid "Degressive"
+msgstr "Regresivo"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__method_progress_factor_colgap
+msgid "Degressive Factor colgap"
+msgstr "Factor Regresivo Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__value_residual_colgap
+msgid "Depreciable Value colgap"
+msgstr "Cantidad Residual a Reconocer Colgap"
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Depreciation"
+msgstr "Depreciación"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__account_depreciation_colgap_id
+msgid "Depreciation Account colgap"
+msgstr "Cuenta de Depreciacion Colgap"
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Depreciation Board Colgap"
+msgstr "Tablero de Gastos Colgap"
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Depreciation Date"
+msgstr "Fechas  de Depreación"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__depreciation_move_ids
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Depreciation Lines"
+msgstr "Líneas de depreciación"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__depreciation_move_colgap_ids
+msgid "Depreciation Lines colgap"
+msgstr "Líneas de Depreacion Colgap"
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Depreciation Method Colgap"
+msgstr "Metodo de Depreacion Colgap"
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Duration"
+msgstr "Duración"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__account_depreciation_expense_colgap_id
+msgid "Expense Account Colgap"
+msgstr "Cuenta de Gastos Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__account_asset_colgap_id
+msgid "Fixed Asset Account colgap"
+msgstr "Cuenta Activo Fijo colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__gross_increase_value_colgap
+msgid "Gross Increase Value"
+msgstr "Valor de Aumento Bruto"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__salvage_value_colgap
+msgid "It is the amount you plan to have that you cannot depreciate colgap."
+msgstr "Es la cantidad que planea tener que no puede depreciar colgap."
+
+#. module: account_asset_colgap
+#: model:ir.model,name:account_asset_colgap.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Journal Entry"
+msgstr "Asiento Contable"
+
+#. module: account_asset_colgap
+#: model:ir.model,name:account_asset_colgap.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__original_move_line_colgap_ids
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__original_move_line_ids
+msgid "Journal Items"
+msgstr "Apuntes contables"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__journal_colgap_id
+msgid "Journal colgap"
+msgstr "Diarios Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields.selection,name:account_asset_colgap.selection__account_asset__method_colgap__linear
+msgid "Linear"
+msgstr "Lineal"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__method_colgap
+msgid "Method colgap"
+msgstr "Metodo Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields.selection,name:account_asset_colgap.selection__account_asset__method_period_colgap__1
+msgid "Months"
+msgstr "Meses"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__salvage_value_colgap
+msgid "Not Depreciable Value colgap"
+msgstr "Valor no Depreciable Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__method_number_colgap
+msgid "Number of Depreciations colgap"
+msgstr "Número de Depreciaciones Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__method_period_colgap
+msgid "Number of Months in a Period colgap"
+msgstr "Número de Meses en un Periodo Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,field_description:account_asset_colgap.field_account_asset__original_value_colgap
+msgid "Original Value Colgap"
+msgstr "Valor Original Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__original_value_colgap
+msgid "Original Value for Colgap"
+msgstr "Valor Original para Colgap"
+
+#. module: account_asset_colgap
+#: model_terms:ir.ui.view,arch_db:account_asset_colgap.view_account_asset_Colgap_form
+msgid "Related Purchase Colgap"
+msgstr "Compra Relacionada Colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__book_value_colgap
+msgid ""
+"Sum of the depreciable value, the salvage value and the book value of all "
+"value increase items"
+msgstr ""
+"Suma del valor depreciable, el valor de rescate y el valor en libros de "
+"todos los elementos de aumento de valor"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__method_period_colgap
+msgid "The amount of time between two depreciations"
+msgstr "La cantidad de tiempo entre dos depreciaciones"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields,help:account_asset_colgap.field_account_asset__method_number_colgap
+msgid "The number of depreciations needed to depreciate your asset colgap"
+msgstr ""
+"El número de depreciaciones necesarias para depreciar su activo colgap"
+
+#. module: account_asset_colgap
+#: model:ir.model.fields.selection,name:account_asset_colgap.selection__account_asset__method_period_colgap__12
+msgid "Years"
+msgstr "Año"
+
+#. module: account_asset_colgap
+#: code:addons/account_asset_colgap/models/account_move.py:0
+#, python-format
+msgid "You cannot post a depreciation on an asset in this state: %s"
+msgstr ""
+"No puede contabilizar una depreciación en un activo en este estado: %s"

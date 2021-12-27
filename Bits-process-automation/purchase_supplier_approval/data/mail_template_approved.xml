@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="email_template_approved_purchase" model="mail.template">
+            <field name="name">Purchase Order Bits: Send RFQ</field>
+            <field name="model_id" ref="purchase.model_purchase_order"/>
+            <field name="subject">Solicitud de aprobación, Order (Ref ${object.name or 'n/a' })</field>
+            <field name="partner_to">${object.director_id.id}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Buen día ${object.sudo().director_id.name or 'Madam/Sir'},
+                    </p>
+                    <br></br>
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Se solicita aprobación para la solicitud de compra ${object.name}, a continuación se adjuntan 3 cotizaciones
+                    </p>
+                    <br></br>
+                    <div style="text-align: center; margin: 16px 0px 16px 0px;">
+                        <a style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;" href="${object.get_portal_url()}">View the ticket</a><br/>
+                    </div>
+                    <br></br>
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Gracias por la gestión.
+                    </p>
+                </div>
+            </field>
+        </record>
+
+    </data>
+</odoo>

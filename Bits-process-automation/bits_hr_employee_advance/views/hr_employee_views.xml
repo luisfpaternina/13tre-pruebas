@@ -1,0 +1,126 @@
+<odoo>
+  <data>
+
+    <record id="bits_hr_employee_advance" model="ir.ui.view">
+      <field name="name">bits_hr_employee_advance</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form"/>
+      <field name="arch" type="xml">
+
+        <!-- se oculta campo department_id -->
+        <xpath expr="//field[@name='department_id']" position="attributes">
+          <attribute name="required">1</attribute>
+        </xpath>
+        
+        <!-- Se cambia el nombre de la pestaña Private Information-->
+        <!-- PESTAÑA INFORMACION PRINCIPAL -->
+        <xpath expr="//page[@name='public']" position="attributes">
+          <attribute name="string">Main Information</attribute>
+        </xpath>
+
+        <!-- Se agregan grupos a PESTAÑA INFORMACTION PRINCIPAL -->
+        <xpath expr="//page[@name='public']/div/div/group" position="before">
+            <group string="Principal">
+              <field name="names" required="1"></field>
+              <field name="surnames" required="1"></field>
+              <field name="known_as" required="1"></field>
+              <field name="contract_type"></field>
+              <field name="begin_date"/>
+              <field name="end_date"/>
+              <field name="time_at_bits" />
+              <field name="document_type"/>
+              <field name="identification_id" groups="hr.group_hr_user"/>
+              <field name="expedition_date" />
+              <field name="expedition_city" />
+            </group>
+        </xpath>
+
+        <!-- INFORMACION PRIVADA -->
+        <!-- Se renombra la pestanaña personal_information a PERSTAÑA INFORMACIÓN PRIVADA -->
+        <xpath expr="//page[@name='personal_information']" position="attributes">
+          <attribute name="string">Private Information</attribute>
+        </xpath>
+
+        <!--PAGE='Información Privada' PRIVATE CONTACT -->
+        <xpath expr="//page[@name='personal_information']/group/group/field[@name='phone']" position="after">    
+          <field name="address_location"/>
+          <field name="address_neighborhood" />
+          <field name="allergies" />
+          <field name="food_preferences" />
+        </xpath>
+
+        <xpath expr="//page[@name='personal_information']/group/group/field[@name='km_home_work']" position="replace">
+          <field name="km_home_work" invisible="1" />
+        </xpath>
+
+         <xpath expr="//page[@name='personal_information']/group/group/field[@name='bank_account_id']" position="replace">
+          <field name="bank_account_id" invisible="1" />
+        </xpath>
+        <!--END-->
+
+
+        <!--PAGE='Información Privada' CITIZENSHIP-->
+        <xpath expr="//page[@name='personal_information']/group/group[2]/field[@name='birthday']" position="after">
+          <field name="age"/>
+        </xpath>
+        <!--END-->
+
+        <xpath expr="//page[@name='personal_information']/group/group[3]" position="attributes">
+          <attribute name="string">Family</attribute>
+        </xpath>
+
+
+        <xpath expr="//page[@name='personal_information']/group/group[3]/field[@name='spouse_complete_name']" position="before">
+          <field name="spouse_names" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"/>
+          <field name="spouse_surnames" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"/>
+        </xpath>
+
+        <!-- <xpath expr="//page[@name='personal_information']/group/group[3]/field[@name='spouse_complete_name']" position="replace">
+          <field name="spouse_complete_name" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"/>
+        </xpath> -->
+
+        <xpath expr="//page[@name='personal_information']/group/group[3]/field[@name='spouse_birthdate']" position="after">
+          <field name="spouse_age" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"/>
+          <field name="spouse_document_type" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"/> 
+          <field name="spouse_indentification_number" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}"/> 
+          <field name="residence_type" />
+        </xpath>
+
+        <xpath expr="//page[@name='personal_information']/group/group[5]/field[@name='emergency_phone']" position="after">
+          <field name="kinship" />
+          <field name="contact_address_emergency" />
+          <field name="email_emergency_contact" />
+          <field name="bloody_group"/>
+          <field name="rh_factor"/>
+        </xpath>
+
+        <xpath expr="//page[@name='personal_information']/group/group[7]/field[@name='certificate']" position="replace">
+          <field name="certificate" invisible="1" />
+        </xpath>
+
+        <xpath expr="//page[@name='personal_information']/group/group[7]/field[@name='study_field']" position="after">
+          <field name="title_type"/>
+        </xpath>
+
+        
+
+        <!-- Se agrega nueva pestaña para los campos adjuntos -->
+        <xpath expr="//page[@name='hr_settings']" position='after'>
+	    	  <page name="hr_attach" string='Adjuntos'>
+            <group>
+              <group string="Status">
+                <field name="exam_renewal"/>
+                <field name="employee_center_cost_ids">
+                    <tree>
+                        <field name="account_analytic_id"/>
+                        <field name="percentage"/>
+                    </tree>
+                </field>
+              </group>
+            </group>
+	    	  </page>
+	      </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

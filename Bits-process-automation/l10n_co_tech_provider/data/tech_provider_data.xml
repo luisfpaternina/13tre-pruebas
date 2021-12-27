@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="l10n_co_tech_provider_line_headboard_01" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador de CAB</field>
+            <field name="code">CAB</field>
+            <field name="description">Registro obligatorio que da inicio a la factura Valor constante CAB</field>
+            <field name="sequence">0</field>
+            <field name="level">0</field>
+        </record>
+        <record id="l10n_co_tech_provider_line_headboard_02" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador de HDR</field>
+            <field name="code">HDR</field>
+            <field name="description">Registro obligatorio para detallar datos generales de la factura valor constante HDR</field>
+            <field name="sequence">1</field>
+            <field name="level">0</field>
+        </record>
+        <record id="l10n_co_tech_provider_line_headboard_03" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador MON</field>
+            <field name="code">MON</field>
+            <field name="description">Registro obligatorio que da inicio los valores reportados en la factura Valor constante MON</field>
+            <field name="sequence">2</field>
+            <field name="level">0</field>
+        </record>
+        <record id="l10n_co_tech_provider_line_headboard_05" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador Direcciones Emisor</field>
+            <field name="code">DIR</field>
+            <field name="description">Registro obligatorio donde se detallan datos del emisor y receptor de la factura Valor constante DIR</field>
+            <field name="sequence">3</field>
+            <field name="level">0</field>
+        </record>
+        <record id="l10n_co_tech_provider_line_headboard_04" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador Direcciones Repector</field>
+            <field name="code">DIR</field>
+            <field name="description">Registro obligatorio donde se detallan datos del emisor y receptor de la factura Valor constante DIR</field>
+            <field name="sequence">4</field>
+            <field name="level">0</field>
+        </record>
+        <record id="l10n_co_tech_provider_line_headboard_06" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador Referencias Generales</field>
+            <field name="code">REF</field>
+            <field name="description">Registro Condicional se colocan datos de referencia de un documento. En caso de facturas de Contingencia se vuelve mandatorio. Valor constante REF</field>
+            <field name="sequence">5</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_252"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_12" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador referencia en factura</field>
+            <field name="code">TEX</field>
+            <field name="description">Informacion de referencia en comentario de la factura</field>
+            <field name="sequence">6</field>
+            <field name="level">0</field>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_11" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador de textos generales</field>
+            <field name="code">TEX</field>
+            <field name="description">Incorporación de textos adicionales a la factura a nivel general.</field>
+            <field name="sequence">7</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_256"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_07_1" model="l10n_co.tech.provider.line">
+            <field name="name">Impuestos Trasladados</field>
+            <field name="code">TLT</field>
+            <field name="description">Grupo de campos para informaciónes relacionadas con un tributo aplicable a esta línea de la factura</field>
+            <field name="sequence">90</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_250"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_07_2" model="l10n_co.tech.provider.line">
+            <field name="name">Impuestos Retenidos</field>
+            <field name="code">TLR</field>
+            <field name="description">Grupo de campos para informaciónes relacionadas con un tributo aplicable a esta línea de la factura</field>
+            <field name="sequence">100</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_251"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_07_3" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador Cargos y/o Descuentos por concepto</field>
+            <field name="code">DDE</field>
+            <field name="description">Registro mandatorio para colocar cargos o descuentos, indicando si es una disposicion oficial o de negocio.</field>
+            <field name="sequence">80</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_255"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_07" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador de linea de concepto</field>
+            <field name="code">DET</field>
+            <field name="description">Indicador de Líneas de Detalle</field>
+            <field name="sequence">8</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_217"/>
+            <field eval="[(6, 0, [
+                ref('l10n_co_tech_provider_line_headboard_07_3'),
+                ref('l10n_co_tech_provider_line_headboard_07_1'),
+                ref('l10n_co_tech_provider_line_headboard_07_2')])]"
+               name="children_ids" />
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_13" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador anticipos</field>
+            <field name="code">IPA</field>
+            <field name="description">Informaciónes relacionada con un anticipos</field>
+            <field name="sequence">9</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_259"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_08" model="l10n_co.tech.provider.line">
+            <field name="name">Información de Impuestos Totales</field>
+            <field name="code">TAX</field>
+            <field name="description">Indicador de Impuestos Totales</field>
+            <field name="sequence">10</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_254"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_09" model="l10n_co.tech.provider.line">
+            <field name="name">Información de Impuestos Retenidos</field>
+            <field name="code">TIR</field>
+            <field name="description">Información de Impuestos Retenidos</field>
+            <field name="sequence">11</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_253"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_10" model="l10n_co.tech.provider.line">
+            <field name="name">Naturaleza Nota C/D</field>
+            <field name="code">END</field>
+            <field name="description">Grupo para explicaciones sobre la naturaleza de la Nota Crédito y/o Nota Debito.</field>
+            <field name="sequence">100</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_252"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_line_headboard_14" model="l10n_co.tech.provider.line">
+            <field name="name">Indicador Referencias</field>
+            <field name="code">REF</field>
+            <field name="description">Registro Condicional se colocan datos de referencia de la Orden de Compra. Valor constante REF</field>
+            <field name="sequence">5</field>
+            <field name="level">0</field>
+            <field name="act_field_id" ref="l10n_co_act_fields.account_act_fields_260"/>
+        </record>
+
+        <record id="l10n_co_tech_provider_01" model="l10n_co.tech.provider">
+            <field name="name">Facturaxion</field>
+            <field name="code">FAX</field>
+            <field name="file_separator">|</field>
+            <field name="username">USR_WS_FAX004</field>
+            <field name="password">FAX002</field>
+            <field name="url_upload">http://169.60.157.172:8120/wsdl?configName=ProcesarFacturaOLv2Lite</field>
+            <field name="url_download">http://169.60.157.172:8120/wsdl?configName=B2BSITEbpCOLapl_O2C_EmitirDocumentoWS</field>
+            <field name="file_extension">txt</field>
+            <field name="num_doc_attachs">1</field>
+            <field name="maximum_megabytes">10</field>
+            <field name="connection_adapter">ApiConnectionRequestFacturaxion</field>
+            <field name="file_adapter">AdapterFacturaxion</field>
+            <field eval="[(6, 0, [
+                    ref('l10n_co_tech_provider_line_headboard_01'),
+                    ref('l10n_co_tech_provider_line_headboard_02'),
+                    ref('l10n_co_tech_provider_line_headboard_03'),
+                    ref('l10n_co_tech_provider_line_headboard_04'),
+                    ref('l10n_co_tech_provider_line_headboard_05'),
+                    ref('l10n_co_tech_provider_line_headboard_06'),
+                    ref('l10n_co_tech_provider_line_headboard_14'),
+                    ref('l10n_co_tech_provider_line_headboard_12'),
+                    ref('l10n_co_tech_provider_line_headboard_11'),
+                    ref('l10n_co_tech_provider_line_headboard_07'),
+                    ref('l10n_co_tech_provider_line_headboard_13'),
+                    ref('l10n_co_tech_provider_line_headboard_08'),
+                    ref('l10n_co_tech_provider_line_headboard_09'),
+                    ref('l10n_co_tech_provider_line_headboard_10')])]"
+                   name="line_ids" />
+        </record>
+    </data>
+</odoo>

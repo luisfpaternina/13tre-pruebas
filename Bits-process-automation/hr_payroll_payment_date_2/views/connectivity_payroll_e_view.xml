@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="bits_hr_employee_connectivity__setting">
+            <field name="name">bits_hr_employee_connectivity_setting</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="hr_payroll.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+            <!--  <xpath expr="//div[hasclass('settings')]/div" position="after">  -->
+                <xpath expr="//div[@id='hr_payroll_accountant']" position="after">
+                    <!--  <div class="app_settings_block">
+                        <div id="invite_users">  -->
+                    <h2>Auxilio de conectividad</h2>
+                        <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label for="transportation_allowance" class="col-sm-4 o_light_label"/>
+                            <field name="transportation_allowance"/>
+                        </div>
+                        </div>
+                        </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

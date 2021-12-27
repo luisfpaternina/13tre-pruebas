@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="hr_payslip_inherit_view_form" model="ir.ui.view">
+        <field name="name">hr.payslip.inherit.form</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='struct_id']" position="attributes">
+                <attribute name="domain">
+                    [('type_id.is_novelty','!=',True)]
+                </attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='name']" position="after">   
+                <field name="commission" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='line_ids']/tree//field[@name='quantity']" position="before">
+                <field name="affect_payslip" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='line_ids']//tree" position="attributes">
+                <attribute name="decoration-danger">affect_payslip == False</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

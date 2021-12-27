@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="documents_version_control_from">
+            <field name="name">documents.version.control.from</field>
+            <field name="model">document.version.control</field>
+            <field eval="2" name="priority"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title pr-0">
+                            <label for='name'>Name</label>
+
+                            <h2>
+                                <field name="name" required="1"/>
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="model_id"/>
+                                <field name="version"/>
+                            </group>
+                            <group>
+                                <field name="description"/>
+                                <field name="version_date"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="documents_version_control_tree" model="ir.ui.view">
+            <field name="name">documents.version.control.tree</field>
+            <field name="model">document.version.control</field>
+            <field eval="100" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Version Control" create="true">
+                    <field name="name"/>
+                    <field name="model_id"/>
+                    <field name="version"/>
+                    <field name="description" optional="hide"/>
+                    <field name="version_date" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_documents_version_control_actions" model="ir.actions.act_window">
+            <field name="name">Documentation Version Control</field>
+            <field name="res_model">document.version.control</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_documents_version_control" name="Documents Version Control" parent="base.menu_administration" sequence="100"/>
+        <menuitem id="menu_ir_restrict_actions" action="action_documents_version_control_actions" parent="menu_documents_version_control" sequence="32" name="Version Control" />
+    </data>
+</odoo>

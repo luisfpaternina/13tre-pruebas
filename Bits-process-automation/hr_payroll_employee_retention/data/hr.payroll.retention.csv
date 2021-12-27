@@ -1,0 +1,17 @@
+id,name,code,description,line_ids/name,line_ids/salary_rule_ids/id,line_ids/maximum_percentage,line_ids/uvt_maximum
+__export__.hr_payroll_retention_1_10243160,Retencion en Rentas de Trabajo,1,,Salario,"__export__.hr_salary_rule_basic_14,__export__.hr_salary_rule_bits_01,__export__.hr_salary_rule_bits_02,__export__.hr_salary_rule_bits_03,__export__.hr_salary_rule_bits_04,__export__.hr_salary_rule_bits_37,__export__.hr_salary_rule_bits_06,__export__.hr_salary_rule_bits_07,__export__.hr_salary_rule_bits_26,__export__.hr_salary_rule_bits_27,__export__.hr_salary_rule_bits_33,__export__.hr_salary_rule_bits_34,__export__.hr_salary_rule_bits_35,__export__.hr_salary_rule_bits_36,__export__.hr_salary_rule_basic_01",0,0
+,,,,Bonificaciones no Constiturivas del Salario,"__export__.hr_salary_rule_basic_02,__export__.hr_salary_rule_basic_03,__export__.hr_salary_rule_bits_28",0,0
+,,,,Bono,,0,0
+,,,,Aporte Voluntario Fondo de Pensiones Empleador,,0,0
+__export__.hr_payroll_retention_2_cfcc5b86,Ingresos no Constitutivos de Renta,2,,Aportes obligatorios a Pension. (Art. 55 Estatuto Tributario),__export__.hr_salary_rule_basic_05,,
+,,,,Aportes obligatorios a Fondo solidaridad Pensional.,__export__.hr_salary_rule_basic_06,0,0
+,,,,Aportes obligatorios a salud. (Art. 56 Estatuto Tributario),__export__.hr_salary_rule_basic_04,0,0
+,,,,"Aportes voluntarios a fondo de Pensiones obligatorias. (Art. 55 no debe exceder el 25% del ingreso, limitado a 2.500 UVT 89.017.500 al año)",,0,0
+,,,,"Otros ingresos no constitutivos de renta. (Apoyos economicos otorgados estado o con recursos publicos 46 Et, Remuneración por Actividades cientificas y tecnologicas Art. 57-2, Pagos por alimentacion a terceros Art. 387-1 Etc.)",,0,0
+__export__.hr_payroll_retention_3_8b2fc23f,Deducciones,3,,Pago intereses de vivienda o Costo Financiero Leasing Habitacional. Limite maximo 100 UVT Mensuales ($3.561.000) Dcto 1625 de 2016 Art. 1.2.4.1.23,,,100
+,,,,Pagos por dependientes. No puede Exceder 32 Uvt Mensuales. $1.139.000). O 10% ingreso,,10,32
+,,,,Pagos Por Salud medicina prepagada. No puede Exceder 16 Uvt Mensuales. 578.000,,0,16
+__export__.hr_payroll_retention_4_b74247b3,Rentas Exentas,4,,"Aportes a Fondo de pensiones voluntarias (Art 126 - 1 E.T.) La Sumatoria de los beneficios a (Aportes voluntarios) y b (Aportes AFC), no pueden exceder del 30% del ingreso laboral o tributario del año y hasta un maximo de 3.800 Uvt por año. (135.307.000) Art. 126-1 E.T.",__export__.hr_salary_rule_bits_10,0,0
+,,,,"Aportes a cuentas AFC (Art 126 - 4 E.T.) La Sumatoria de los beneficios a (Aportes voluntarios) y b (Aportes AFC), no pueden exceder del 30% del ingreso laboral o tributario del año y hasta un maximo de 3.800 Uvt por año. (135.307.000) Art. 126-4 E.T.",__export__.hr_salary_rule_bits_11,0,0
+,,,,Otros rentas exentas. Art. 206 numerales 1 al 5. (Las rentas exentas de los num 6 al 9 del Art. 206 no estan sujetas al limite del Art. 336 del ET.),,0,0
+__export__.hr_payroll_retention_5_216d8c97,Renta de Trabajo Exenta (25%). Maximo $ 8.224.800 Año 2019. (240 Uvt),5,,Renta de Trabajo Exenta (25%). Maximo $ 8.224.800 Año 2019. (240 Uvt),,25,240

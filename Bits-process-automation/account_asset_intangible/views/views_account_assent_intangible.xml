@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="account_asset_intangible_form">
+      <field name="name">account_asset_intangible list</field>
+      <field name="model">account.asset</field>
+      <field name="inherit_id" ref="account_asset.view_account_asset_form" />
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <xpath expr="//div[@class='oe_title']" position="inside">
+          <label for="asset_group" name="lbl_asset_group" string="Asset group" />
+          <br/>
+          <field name="asset_group" required="True" style="width:40%" />
+        </xpath>
+      </field>
+    </record>
+
+    <record id="view_account_asset_search_intangible" model="ir.ui.view">
+    <field name="name">view_account_intagible</field>
+    <field name="model">account.asset</field>
+    <field name="inherit_id" ref="account_asset.view_account_asset_search"/>
+    <field name="arch" type="xml">
+      <xpath expr="//filter[@name='closed']" position="after">
+        <filter string="Assets" name="assets" domain="[('asset_group', '=', 'asset')]"/>
+        <filter string="Intangibles" name="intangibles" domain="[('asset_group', '=', 'intangible')]"/>
+      </xpath>
+    </field>
+    </record>
+
+    <act_window id="action_assets_filter"
+      name="Assets"
+      res_model="account.asset"
+      view_mode="tree,form,kanban"
+      context="{'search_default_assets': 1, 'asset_type': 'purchase'}"
+      domain="[('asset_type', '=', 'purchase'), ('state', '!=', 'model'), ('parent_id', '=', False)]"
+    />
+
+    <act_window id="action_intangible_asset"
+      name="Intangibles"
+      res_model="account.asset"
+      view_mode="tree,form,kanban"
+      context="{'search_default_intangibles': 1, 'asset_type': 'purchase'}"
+      domain="[('asset_type', '=', 'purchase'), ('state', '!=', 'model'), ('parent_id', '=', False)]"
+    />
+
+    <menuitem
+      parent="account.menu_finance_entries_management"
+      id="menu_action_account_intangibles_form"
+      action="account_asset_intangible.action_intangible_asset"
+      name="Intangibles"
+      groups="account.group_account_manager"
+      sequence="102"
+    />
+    <record model="ir.ui.menu" id="account_asset.menu_action_account_asset_form">
+      <field name="action" ref="account_asset_intangible.action_assets_filter"/>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="send_confirmation_suppliers_email_template" model='mail.template'>
+            <field name="name">Confirmation of product received</field>
+            <field name="model_id" ref="stock_income.model_stock_picking"/>
+            <field name="email_from">${object.env.user.email or object.env.user.address_id.email or ''}</field>
+            <field name="email_to"></field>
+            <field name="subject">${object.env.company.name} - Confirmation of product received ${object.name}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${object.env.user.lang}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Sirs;<br/>
+                            ${object.partner_id.name}<br/>
+                        Good day,<br/><br/>
+
+                        Warehouse Entry Number <strong>${object.name}</strong> is attached confirming receipt of the service or products purchased.
+                        ${object.env.company.name} issues a purchase order for the services provided or the goods purchased, please
+                        Reference the Warehouse Entry Number generated at the time of invoicing, or it is allowed to send purchase orders from another email and / or internal user of the company.<br/>
+                        If you have any questions, feel free to contact us.<br/>
+                        Sincerely,<br/><br/>
+
+                        ${object.env.company.name}.
+                    </p>
+                </div>
+            </field>
+            <field name="report_template" ref="stock.action_report_delivery"/>
+            <field name="report_name">${(object.name or '').replace('/','_')}</field>
+        </record>
+    </data>
+</odoo>

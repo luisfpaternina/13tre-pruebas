@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="bits_security_purchase_human_talent" model="res.groups">
+            <field name="name">Purchase Human Talent</field>
+            <field name="category_id" ref="base.module_category_operations_purchase"/>
+            <field name="menu_access" eval="[(4,ref('purchase.menu_purchase_root')),(4,ref('purchase.menu_procurement_management')),(4,ref('purchase.menu_purchase_rfq')),(4,ref('purchase.menu_purchase_form_action')),(4,ref('purchase.menu_procurement_management_supplier_name'))]"/>
+        </record>
+    </data>
+</odoo>

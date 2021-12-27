@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="hr_recruitment_postulation_manager_group" model="res.groups">
+            <field name="name">Recruitment Postulation Manager</field>
+            <field name="comment">Recruitment Postulation Permission Group.</field>
+        </record>
+    </data>
+</odoo>

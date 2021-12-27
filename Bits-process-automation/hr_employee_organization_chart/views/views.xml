@@ -1,0 +1,19 @@
+<odoo>
+  <data>
+
+    <record id="hr_employee_organization_chart_search_panel" model="ir.ui.view">
+        <field name="name"></field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_filter"/>
+        <field name="arch" type="xml">
+
+          <xpath expr="//field[@name='department_id']" position="after">
+            <!-- <field name="job_id" select="multi" domain="[('department_id', '=', department_id)]" string="Job Position" icon="fa-briefcase"/> -->
+            <field name="job_id" select="multi" domain="[('department_ids', 'in', department_id)]" string="Job Position" icon="fa-briefcase"/>
+          </xpath>
+
+        </field>
+    </record>
+
+  </data>
+</odoo>

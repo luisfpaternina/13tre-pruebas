@@ -1,0 +1,540 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_paycheck
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-24 16:12+0000\n"
+"PO-Revision-Date: 2021-09-24 16:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_payroll_paycheck
+#: model:ir.actions.report,print_report_name:hr_payroll_paycheck.hr_payroll_payslip_report
+msgid "'Payslip - %s' % (object.employee_id.name)"
+msgstr "'Nómina - %s' % (object.employee_id.name)"
+
+#. module: hr_payroll_paycheck
+#: model:mail.template,body_html:hr_payroll_paycheck.paycheck_email_template
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Cordial saludo <strong>${object.employee_id.name}</strong>,<br/>\n"
+"                        Adjunto se envía desprendible de pago de nómina del mes de ${object.month_payroll} del ${object.year_payroll}.<br/>\n"
+"                        Si tiene alguna inquietud por favor escribir a <strong>${object.env.user.work_email or object.env.user.partner_id.email or ''}</strong>.<br/>\n"
+"                        Cordialmente ${object.env.user.partner_id.name} \n"
+"                        % if object.env.user.partner_id.function:\n"
+"                            - <strong>${object.env.user.partner_id.function}</strong>\n"
+"                        % endif\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div style=\"font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;margin:0px;padding: 0px;\">\n"
+"                    <p style=\"margin:0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;padding: 0px; font-size: 13px;\">\n"
+"                        Cordial saludo <strong style=\"font-weight:bolder;\">${object.employee_id.name}</strong>,</p><p style=\"margin:0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;padding: 0px; font-size: 13px;\"><br>Se adjunta desprendible de la nómina del mes de ${object.month_payroll} del ${object.year_payroll}.<br>\n"
+"                        Si tiene alguna inquietud por favor escribir a <b style=\"font-weight:bolder;\">nomina@bitsamericas.com</b>.</p><p style=\"margin:0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;padding: 0px; font-size: 13px;\"><br> Cordialmente,<b style=\"font-weight:bolder;\"><br></b></p><p style=\"margin:0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;padding: 0px; font-size: 13px;\"><b style=\"font-weight:bolder;\"><font style=\"font-size:14px;\">Bits Americas</font></b></p>\n"
+"                </div>\n"
+"            "
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid ""
+"<span attrs=\"{'invisible': [('composition_mode', '!=', 'mass_mail')]}\">\n"
+"                                        <strong>Email mass mailing</strong> on\n"
+"                                        <span>the selected records</span>\n"
+"                                    </span>\n"
+"                                    <span>Followers of the document and</span>"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template_header
+msgid "<span class=\"font-weight-bold\">PERIODO</span>"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid ""
+"<strong style=\"color:white;font-size:100%\">\n"
+"                                                        DETALLE DEL PAGO EMPLEADO\n"
+"                                                    </strong>"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid ""
+"<strong style=\"color:white;font-size:100%\">\n"
+"                                                        INFORMACION BASICA DEL EMPLEADO\n"
+"                                                    </strong>"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid ""
+"<strong style=\"color:white;font-size:100%\">\n"
+"                                                    Neto a pagar:\n"
+"                                                    </strong>"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid ""
+"<strong style=\"color:white;font-size:100%\">\n"
+"                                                    Totales:\n"
+"                                                    </strong>"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__active_domain
+msgid "Active domain"
+msgstr "Dominio activo"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__add_sign
+msgid "Add Sign"
+msgstr "Agregar firma"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid "Add contacts to notify..."
+msgstr "Agregar contactos a notificar..."
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__partner_ids
+msgid "Additional Contacts"
+msgstr "Contactos adicionales"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__no_auto_thread
+msgid ""
+"Answers do not go in the original document discussion thread. This has an "
+"impact on the generated message-id."
+msgstr ""
+"Las respuestas no van en el hilo de discusión del documento original. Esto "
+"tiene un impacto en el ID de mensaje generado."
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Aporte Salud:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid "Attach a file"
+msgstr "Adjuntar un archivo"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__attachment_ids
+msgid "Attachments"
+msgstr "Adjuntos"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__author_id
+msgid "Author"
+msgstr "Autor"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__author_id
+msgid ""
+"Author of the message. If not set, email_from may hold an email address that"
+" did not match any partner."
+msgstr ""
+"Autor del mensaje. Si no se establece, email origen puede contener una "
+"dirección de correo electrónico que no coincidía con ningún contacto."
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template_header
+msgid "COMPROBANTE DE PAGO DE NOMINA"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "CONCEPTO"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Cargo:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__composer_id
+msgid "Composer"
+msgstr "Compositor"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__composition_mode
+msgid "Composition mode"
+msgstr "Modo de composición"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__body
+msgid "Contents"
+msgstr "Contenido"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_payroll_paycheck
+#: model:ir.actions.report,name:hr_payroll_paycheck.hr_payroll_payslip_report
+msgid "Custom Payslip"
+msgstr "Nómina personalizada"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Cédula:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "DEDUCCIONES"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "DEVENGOS"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__auto_delete
+msgid "Delete Emails"
+msgstr "Correos eliminados"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__auto_delete_message
+msgid "Delete Message Copy"
+msgstr "Eliminar copia del mensaje"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__auto_delete
+msgid "Delete sent emails (mass mailing only)"
+msgstr "Eliminar correos enviados (Solo correo masivo)"
+
+#. module: hr_payroll_paycheck
+#: model:mail.template,subject:hr_payroll_paycheck.paycheck_email_template
+msgid "Desprendible Nomina ${object.month_payroll} del ${object.year_payroll}"
+msgstr "Desprendible Nómina - ${object.month_payroll}  ${object.year_payroll}"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__auto_delete_message
+msgid ""
+"Do not keep a copy of the email in the document communication history (mass "
+"mailing only)"
+msgstr ""
+"No guarde una copia del correo electrónico en el historial de comunicaciones"
+" del documento (masivo solo envío por correo)"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__is_email
+msgid "Email"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__email_from
+msgid ""
+"Email address of the sender. This field is set when no matching partner is "
+"found and replaces the author_id field in the chatter."
+msgstr ""
+"Dirección de correo electrónico del remitente. Este campo se establece "
+"cuando no hay ningún socio coincidente encontró y reemplaza el campo "
+"author_id en la charla."
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Entidad Bancaria:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Fondo Pension:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__email_from
+msgid "From"
+msgstr "Desde"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__id
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "ID"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__parent_id
+msgid "Initial thread message."
+msgstr "Mensaje inicial del hilo."
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__printed
+msgid "Is Printed"
+msgstr "Está impreso"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck____last_update
+msgid "Last Modified on"
+msgstr "Ultima modificación en"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__layout
+msgid "Layout"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__is_log
+msgid "Log an Internal Note"
+msgstr "Registrar una nota interna"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template_header
+msgid "Logo"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__mail_activity_type_id
+msgid "Mail Activity Type"
+msgstr "Tipo de actividad de correo"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__record_name
+msgid "Message Record Name"
+msgstr "Nombre de registro de mensaje"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__message_type
+msgid ""
+"Message type: email for email message, notification for system message, "
+"comment for other messages such as user replies"
+msgstr ""
+"Tipo de mensaje: correo electrónico para mensaje de correo electrónico, "
+"notificación para mensaje del sistema comenta para otros mensajes, como las "
+"respuestas de los usuarios"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_hr_payslip__month_payroll
+msgid "Month Payroll"
+msgstr "Nómina mensual"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__record_name
+msgid "Name get of the related document."
+msgstr "Obtener el nombre del documento relacionado."
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__no_auto_thread
+msgid "No threading for answers"
+msgstr "Sin hilos para respuestas"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Nombre:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__notify
+msgid "Notify followers"
+msgstr "Notificar a los seguidores"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__notify
+msgid "Notify followers of the document (mass post only)"
+msgstr "Notificar a los seguidores del documento (solo publicación masiva)"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Nro. Cuenta:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__mail_server_id
+msgid "Outgoing mail server"
+msgstr "Servidor de correo saliente"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__parent_id
+msgid "Parent Message"
+msgstr "Mensaje padre"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model,name:hr_payroll_paycheck.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid "Payroll Paycheck send & Print"
+msgstr "Envío e impresión de cheques de nómina"
+
+#. module: hr_payroll_paycheck
+#: model:mail.template,report_name:hr_payroll_paycheck.paycheck_email_template
+msgid "Payslip - ${object.employee_id.name}"
+msgstr "Nómina - ${object.employee_id.name}"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_hr_payslip__payslip_sent
+msgid "Payslip Sent"
+msgstr "Nómina enviada"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__payslip_ids
+msgid "Payslips"
+msgstr "Nóminas"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid "Preview as a PDF"
+msgstr "Vista previa como PDF"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__is_print
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid "Recipients"
+msgstr "Destinatarios"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__res_id
+msgid "Related Document ID"
+msgstr "ID de documento relacionado"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__model
+msgid "Related Document Model"
+msgstr "Modelo de documento relacionado"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__reply_to
+msgid ""
+"Reply email address. Setting the reply_to bypasses the automatic thread "
+"creation."
+msgstr ""
+"Dirección de correo electrónico de respuesta. La configuración de responder "
+"a omite el hilo automático creación."
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__reply_to
+msgid "Reply-To"
+msgstr "Responder A"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_paycheck
+msgid "SEND EMAIL"
+msgstr "Enviar correo"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "Salario:"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model,name:hr_payroll_paycheck.model_send_email_paycheck
+msgid "Salary Slip Send"
+msgstr "Envío de recibo de sueldo"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_hr_payslip__user_id
+msgid "Salesperson"
+msgstr "Vendedor"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid "Send & Print"
+msgstr "Enviar e imprimir"
+
+#. module: hr_payroll_paycheck
+#: model:ir.actions.act_window,name:hr_payroll_paycheck.payroll_paycheck_send
+msgid "Send & print"
+msgstr "Enviar e imprimir"
+
+#. module: hr_payroll_paycheck
+#: code:addons/hr_payroll_paycheck/models/hr_payroll_paycheck.py:0
+#, python-format
+msgid "Send Payslip"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__subject
+msgid "Subject"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.view_wizard_send_paycheck
+msgid "Subject..."
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__subtype_id
+msgid "Subtype"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_hr_payslip__text_copyright
+msgid "Text Copyright"
+msgstr "Copyright del texto"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__message_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: hr_payroll_paycheck
+#: model_terms:ir.ui.view,arch_db:hr_payroll_paycheck.payroll_paycheck_template
+msgid "UNIDADES"
+msgstr ""
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__use_active_domain
+msgid "Use active domain"
+msgstr "Usar dominio activo"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_send_email_paycheck__template_id
+msgid "Use template"
+msgstr "Usar plantilla"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,help:hr_payroll_paycheck.field_send_email_paycheck__is_log
+msgid "Whether the message is an internal note (comment mode only)"
+msgstr "Si el mensaje es una nota interna (solo en modo comentario)"
+
+#. module: hr_payroll_paycheck
+#: model:ir.model.fields,field_description:hr_payroll_paycheck.field_hr_payslip__year_payroll
+msgid "Year Payroll"
+msgstr "Nómina de año"
+
+#. module: hr_payroll_paycheck
+#: code:addons/hr_payroll_paycheck/models/hr_payroll_paycheck.py:0
+#, python-format
+msgid "sent payroll paycheck"
+msgstr "Cheque de nómina enviado"

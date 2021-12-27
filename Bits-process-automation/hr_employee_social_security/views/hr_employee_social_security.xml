@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_employee_social_security" model="ir.ui.view">
+            <field name="name">hr_employee_social_security</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+
+                <!--INFORMACION DE SEGURIDAD SOCIAL-->
+                <xpath expr="//page[@name='public']/div/div/group" position="after">
+                    <group name="social.security.group" string="Social Security">
+                        <field name="arl" domain="[('entity_type','=','arl')]"/>
+                        <field name="health" domain="[('entity_type','=','health')]"/>
+                        <field name="pension" domain="[('entity_type','=','pension')]"/>
+                        <field name="layoffs" domain="[('entity_type', '=', 'layoffs')]"/>
+                        <field name="compensation_box" domain="[('entity_type','=','compensation_box')]"/>
+                        <field name="contributor_type"
+                            domain="[('entity_type','=','contributor_type')]"
+                            options="{'no_open': True}"
+                            readonly="True"/>
+                        <field name="contributor_subtype" domain="[('entity_type','=','contributor_subtype')]"/>
+                        <field name="risk_class"/>
+                        <field name="rate"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

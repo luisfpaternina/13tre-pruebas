@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_recruitment_profile_view" model="ir.ui.view">
+            <field name="name">hr_recruitment_profile_view</field>
+            <field name="model">hr.job</field>
+            <field name="inherit_id" ref="hr.view_hr_job_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//notebook[1]" position="inside">
+
+                    <page name="job_profile" string="Job Profile">
+                        <group string="Job Profile">
+                            <field name="dependants" />
+                            <field name="vocational_training" />
+                        </group>
+                        <group string="Professional Experience">
+                            <group>
+                                <field name="general_experience" />
+                            </group>
+                             <group>
+                                <field name="specific_experience" />
+                            </group>
+                            <group>
+                                <field name="language_ids" widget="section_and_note_one2many">
+                                    <tree editable="bottom" default_order="language">
+                                        <field name="language" />
+                                        <field name="reading" />
+                                        <field name="writing" />
+                                        <field name="speaking" />
+                                        <field name="listening" />
+                                    </tree>
+                                </field>
+                            </group>
+                        </group>
+
+                        <group string="Job Information">
+                            <field name="job_objectives" />
+                            <field name="supervision" />
+                            <field name="job_functions" />
+                            <field name="job_responsibilities" />
+                        </group>
+                        <group>
+                            <field name="responsabilities_charge_ids" widget="section_and_note_one2many">
+                                <tree editable="bottom" default_order="specific_competencies_id">
+                                    <field name="responsabilities_id" />
+                                    <field name="calification" />
+                                </tree>
+                            </field>
+                        </group>
+                        <group string="Replaces">
+                            <group>
+                                <field name="replaces_to" />
+                            </group>
+                            <group>
+                                <field name="replaced_by" />
+                            </group>
+                        </group>
+                        <group string="Technological Tools">
+                            <field name="software" />
+                            <field name="hardware" />
+                            <field name="additional_elements" />
+                        </group>
+
+                        <group string="Competencies">
+                            <field name="organizational_competencies_ids" widget="section_and_note_one2many">
+                                <tree editable="bottom" default_order="organizational_competencies_id">
+                                    <field name="organizational_competencies_id" />
+                                    <field name="calification" />
+                                    <field name="level"/>
+                                </tree>
+                            </field>
+
+                            <field name="technical_technological_competencies_ids" widget="section_and_note_one2many">
+                                <tree editable="bottom" default_order="technical_competencies_id">
+                                    <field name="technical_competencies_id" />
+                                    <field name="calification" />
+                                    <field name="level"/>
+                                </tree>
+                            </field>
+
+                            <field name="positions_charge_competencies_ids" widget="section_and_note_one2many">
+                                <tree editable="bottom" default_order="position_in_charge_ids">
+                                    <field name="position_in_charge_ids" />
+                                    <field name="calification" />
+                                    <field name="level"/>
+                                </tree>
+                            </field>
+
+                            <field name="specific_competencies_ids" widget="section_and_note_one2many">
+                                <tree editable="bottom" default_order="specific_id">
+                                    <field name="specific_id" />
+                                    <field name="calification" />
+                                    <field name="level"/>
+                                </tree>
+                            </field>
+                        </group>
+
+                        <group string="Job Performance">
+                            <field name="partners_sst_responsibilities" />
+                            <field name="sst_responsibilities_with_dependants" attrs="{'invisible': [('dependants', '=', False)]}" />
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

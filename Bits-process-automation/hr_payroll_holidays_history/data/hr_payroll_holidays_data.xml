@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="category_novelty_holidays" model="hr.salary.rule.category">
+            <field name="name">Advances</field>
+            <field name="code">ANT</field>
+        </record>
+
+    </data>
+</odoo>

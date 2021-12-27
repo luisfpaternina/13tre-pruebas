@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_payroll_parameter_retention,access_hr_payroll_parameter_retention,model_hr_payroll_parameter_retention,base.group_user,1,1,1,1
+access_hr_payroll_retention,access_hr_payroll_retention,model_hr_payroll_retention,base.group_user,1,1,1,1
+access_hr_payroll_retention_line,access_hr_payroll_retention_line,model_hr_payroll_retention_line,base.group_user,1,1,1,1
+access_hr_payroll_uvt_range,access_hr_payroll_uvt_range,model_hr_payroll_uvt_range,base.group_user,1,1,1,1
+access_hr_payroll_employee_retention,access_hr_payroll_employee_retention,model_hr_payroll_employee_retention,base.group_user,1,1,1,1

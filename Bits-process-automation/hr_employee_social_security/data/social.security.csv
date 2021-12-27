@@ -1,0 +1,176 @@
+id,code,name,entity_type
+hr_employee_social_security.entity_01,0,ARL-Ninguna,arl
+hr_employee_social_security.entity_02,14-4,A.R.L. Seguros de Vida Colpatria S.A.,arl
+hr_employee_social_security.entity_03,14-7,Compañía de Seguros Bolívar S.A.,arl
+hr_employee_social_security.entity_04,14-8,Seguros de Vida Aurora,arl
+hr_employee_social_security.entity_05,14-17,ARP Alfa,arl
+hr_employee_social_security.entity_06,14-18,Liberty Seguros de Vida S.A.,arl
+hr_employee_social_security.entity_07,14-23,Positiva Compañía de Seguros,arl
+hr_employee_social_security.entity_08,14-25,Colmena Riesgos Profesionales,arl
+hr_employee_social_security.entity_09,14-28,ARL Sura,arl
+hr_employee_social_security.entity_10,14-29,La Equidad Seguros de Vida,arl
+hr_employee_social_security.entity_11,14-30,Mapfre Colombia Vida Seguros S.A,arl
+hr_employee_social_security.entity_12,0,CB-Ninguna,compensation_box
+hr_employee_social_security.entity_13,CCF02,Caja De Compensación Familiar Camacol  Comfamiliar Camacol,compensation_box
+hr_employee_social_security.entity_14,CCF03,Caja De Compensación Familiar Comfenalco Antioquia,compensation_box
+hr_employee_social_security.entity_15,CCF04,Caja De Compensación Familiar De Antioquia Comfama,compensation_box
+hr_employee_social_security.entity_16,CCF05,Caja De Compensación Familiar Cajacopi Atlantico,compensation_box
+hr_employee_social_security.entity_17,CCF06,Caja De Compensación Familiar De Barranquilla Combarranquilla,compensation_box
+hr_employee_social_security.entity_18,CCF07,Caja De Compensación Familiar Comfamiliar Del Atlantico,compensation_box
+hr_employee_social_security.entity_19,CCF08,Caja De Compensación Familiar De Fenalco  - Andi Comfenalco Cartagena,compensation_box
+hr_employee_social_security.entity_20,CCF09,Caja De Compensación Familiar De Cartagena,compensation_box
+hr_employee_social_security.entity_21,CCF10,Caja De Compensación Familiar De Boyaca - Comfaboy,compensation_box
+hr_employee_social_security.entity_22,CCF11,Caja De Compensación Familiar De Caldas,compensation_box
+hr_employee_social_security.entity_23,CCF13,Caja De Compensación Familiar Del Caquetá - Comfaca,compensation_box
+hr_employee_social_security.entity_24,CCF14,Caja De Compensación Familiar Del Cauca - Comfacauca,compensation_box
+hr_employee_social_security.entity_25,CCF15,Comfacesar,compensation_box
+hr_employee_social_security.entity_26,CCF16,Caja De Compensación Familiar De Cordoba Comfacor,compensation_box
+hr_employee_social_security.entity_27,CCF20,Caja De Compensación Familiar Asfamilias ,compensation_box
+hr_employee_social_security.entity_28,CCF21,Caja De Compensación Familiar Cafam,compensation_box
+hr_employee_social_security.entity_29,CCF22,Caja Colombiana De Subsidio Familiar Colsubsidio,compensation_box
+hr_employee_social_security.entity_30,CCF23,Caja De Compensación Familiar De Fenalco Comfenalco Cundinamarca,compensation_box
+hr_employee_social_security.entity_31,CCF24,Caja De Compensación Familiar Compensar,compensation_box
+hr_employee_social_security.entity_32,CCF26,Caja De Compensación Familiar De Cundinamarca - Comfacundi,compensation_box
+hr_employee_social_security.entity_33,CCF29,Caja De Compensación Familiar Del Chocó,compensation_box
+hr_employee_social_security.entity_34,CCF30,Caja De Compensación Familiar De La Guajira,compensation_box
+hr_employee_social_security.entity_35,CCF32,Caja De Compensación Familiar Del Huila - Comfamiliar,compensation_box
+hr_employee_social_security.entity_36,CCF33,Caja De Compensación Familiar Del Magdalena,compensation_box
+hr_employee_social_security.entity_37,CCF34,Caja De Compensación Familiar Regional Del Meta Cofrem,compensation_box
+hr_employee_social_security.entity_38,CCF35,Caja De Compensación Familiar De Nariño,compensation_box
+hr_employee_social_security.entity_39,CCF36,Caja De Compensación Familiar Del Oriente Colombiano Comfaoriente,compensation_box
+hr_employee_social_security.entity_40,CCF37,Caja De Compensación Familiar Del Norte De Santander Comfanorte,compensation_box
+hr_employee_social_security.entity_41,CCF38,Caja De Compensación Familiar De Barrancabermeja Cafaba,compensation_box
+hr_employee_social_security.entity_42,CCF39,Caja Santandereana De Subsidio Familiar Cajasan,compensation_box
+hr_employee_social_security.entity_43,CCF40,Caja De Compensación Familiar Comfenalco Santander,compensation_box
+hr_employee_social_security.entity_44,CCF41,Caja De Compensación Familiar De Sucre,compensation_box
+hr_employee_social_security.entity_45,CCF43,Caja De Compensación Familiar De Fenalco Comfenalco Quindio,compensation_box
+hr_employee_social_security.entity_46,CCF44,Caja De Compensación Familiar De Risaralda - Comfamiliar Risaralda,compensation_box
+hr_employee_social_security.entity_47,CCF46,Caja De Compensación Familiar Del Sur Del Tolima Cafasur,compensation_box
+hr_employee_social_security.entity_48,CCF48,Caja De Compensación Familiar Del Tolima Comfatolima,compensation_box
+hr_employee_social_security.entity_49,CCF50,Caja De Compensación Familiar De Fenalco Del Tolima - Comfenalco,compensation_box
+hr_employee_social_security.entity_50,CCF56,Caja De Compensación Familiar Comfenalco Del Valle Del Cauca - Comfenalco Valle,compensation_box
+hr_employee_social_security.entity_51,CCF57,Caja De Compensación Familiar Del Valle Del Cauca Comfamiliar Andi - Comfandi,compensation_box
+hr_employee_social_security.entity_52,CCF63,Caja De Compensación Familiar Del Putumayo - Comfamiliar Putumayo,compensation_box
+hr_employee_social_security.entity_53,CCF64,"Caja De Compensación Familiar De San Andres Y Providencia, Islas Cajasai",compensation_box
+hr_employee_social_security.entity_54,CCF65,Caja De Compensación Familiar Del Amazonas Cafamaz,compensation_box
+hr_employee_social_security.entity_55,CCF67,Caja De Compensación Familiar De Arauca Comfiar,compensation_box
+hr_employee_social_security.entity_56,CCF68,Caja De Compensación Familiar Campesina Comcaja,compensation_box
+hr_employee_social_security.entity_57,CCF69,Caja De Compensación Familiar Del Casanare - Comfacasanare,compensation_box
+hr_employee_social_security.entity_58,0,H-Ninguna,health
+hr_employee_social_security.entity_59,EAS016,Empresas Públicas de Medellín Departamento Médico,health
+hr_employee_social_security.entity_60,EAS027,Fondo de Pasivo Social de Ferrocarriles,health
+hr_employee_social_security.entity_61,EPS001,Aliansalud EPS,health
+hr_employee_social_security.entity_62,EPS002,Salud Total S.A.,health
+hr_employee_social_security.entity_63,EPS005,E.P.S Sanitas,health
+hr_employee_social_security.entity_64,EPS008,Compensar Entidad Promotora de Salud,health
+hr_employee_social_security.entity_65,EPS010,EPS Sura,health
+hr_employee_social_security.entity_66,EPS012,Comfenalco Valle EPS,health
+hr_employee_social_security.entity_67,EPS016,Coomeva EPS,health
+hr_employee_social_security.entity_68,EPS017,Famisanar,health
+hr_employee_social_security.entity_69,EPS018,Servicio Occidental de Salud S.O.S. S.A.,health
+hr_employee_social_security.entity_70,EPS023,Cruz Blanca S.A,health
+hr_employee_social_security.entity_71,EPS033,Saludvida S.A EPS,health
+hr_employee_social_security.entity_72,EPS037,Nueva EPS,health
+hr_employee_social_security.entity_73,EPS044,Medimás EPS S.A.S.,health
+hr_employee_social_security.entity_74,MIN001,Fondo de Solidaridad y Garantía Fosyga,health
+hr_employee_social_security.entity_75,MIN002,Fondo de Solidaridad y Garantía Fosyga,health
+hr_employee_social_security.entity_76,MIN003,Fondo de Solidaridad y Garantía Fosyga,health
+hr_employee_social_security.entity_77,RES005,Universidad del Atlántico,health
+hr_employee_social_security.entity_78,RES006,Universidad Industrial de Santander,health
+hr_employee_social_security.entity_79,RES007,Universidad del Valle,health
+hr_employee_social_security.entity_80,RES008,Universidad Nacional de Colombia,health
+hr_employee_social_security.entity_81,RES009,Universidad del Cauca,health
+hr_employee_social_security.entity_82,RES010,Universidad de Cartagena,health
+hr_employee_social_security.entity_83,RES011,Universidad de Antioquia,health
+hr_employee_social_security.entity_84,RES012,Universidad de Córdoba,health
+hr_employee_social_security.entity_85,RES013,Universidad de Nariño,health
+hr_employee_social_security.entity_86,RES014,Universidad Pedagógica y Tecnolígica de Colombia - UPTC,health
+hr_employee_social_security.entity_87,EPSC22,Entidad Administradora de Régimen Subsidiado Convida,health
+hr_employee_social_security.entity_88,EPSC25,Capresoca EPS,health
+hr_employee_social_security.entity_89,EPSC33,Saludvida S.A. EPS Movilidad ,health
+hr_employee_social_security.entity_90,EPSC34,Capital Salud EPSS S.A.S.,health
+hr_employee_social_security.entity_91,EPSIC1,Asociación de Cabildos Indígenas del Cesar "Dusakawi",health
+hr_employee_social_security.entity_92,EPSIC2,"Asociación de Cabildos Indígenas del Resguardo Indígena Zenú de San Andrés de Sotavento Córdoba - Sucre ""Manexka""",health
+hr_employee_social_security.entity_93,EPSIC3,Asociación Indígena del Cauca - A.I.C.,health
+hr_employee_social_security.entity_94,EPSIC4,Entidad Promotora de Salud Anas Wayuu EPSI,health
+hr_employee_social_security.entity_95,EPSIC5,Entidad Promotora de Salud Mallamas EPSI,health
+hr_employee_social_security.entity_96,EPSIC6,Entidad Promotora de Salud Pijaosalud EPSI,health
+hr_employee_social_security.entity_97,ESSC02,Empresa Mutual para el desarrollo integral de la salud E.S.S. Emdisalud ESS,health
+hr_employee_social_security.entity_98,ESSC07,Asociación Mutual Ser Empresa Solidaría de Salud ESS,health
+hr_employee_social_security.entity_99,ESSC18,Asociación Mutual Empresa Solidaria de Salud de Nariño E.S.S. Emssanar E.S.S.,health
+hr_employee_social_security.entity_100,ESSC24,Cooperativa de Salud y Desarrollo Integral de la Zona Sur Oriental de Cartagena  b aLtda.  Coosalud E.S.S.,health
+hr_employee_social_security.entity_101,ESSC33,"Cooperativa de Salud Comunitaria ""Comparta""",health
+hr_employee_social_security.entity_102,ESSC62,Asociación Mutual La Esperanza Asmet Salud,health
+hr_employee_social_security.entity_103,ESSC76,Asociación Mutual Barrios Unidos de Quibdó E.S.S. AMBUQ,health
+hr_employee_social_security.entity_104,ESSC91,Entidad Cooperativa Solidaria de Salud Ecoopsos,health
+hr_employee_social_security.entity_105,EPS040,Caja de Compensación Familiar de Antioquía - Comfama - Hoy Savia Salud EPS,health
+hr_employee_social_security.entity_106,EPS041,Nueva EPS S.A. Movilidad,health
+hr_employee_social_security.entity_107,EPS045,Medimás EPS S.A.S,health
+hr_employee_social_security.entity_108,CCFC09,Comfaboy EPS-CCF de Boyacá,health
+hr_employee_social_security.entity_109,CCFC15,Comfacor EPS - CCF de Córdoba,health
+hr_employee_social_security.entity_110,CCFC20,Comfachoco - CCF del Chocó,health
+hr_employee_social_security.entity_111,CCFC23,Caja de Compensación Familiar de La Guajira,health
+hr_employee_social_security.entity_112,CCFC24,Comfamiliar Huila EPS - CCF,health
+hr_employee_social_security.entity_113,CCFC27,Comfamiliar de Nariño EPS - CCF,health
+hr_employee_social_security.entity_114,CCFC33,Comfasucre EPS-CCF de Sucre,health
+hr_employee_social_security.entity_115,CCFC50,EPS-S Comfaoriente,health
+hr_employee_social_security.entity_116,CCFC53,Comfacundi - CCF de Cundinamarca,health
+hr_employee_social_security.entity_117,CCFC55,Cajacopi Atlántico - CCF,health
+hr_employee_social_security.entity_118,0,PEN-Ninguna,pension
+hr_employee_social_security.entity_119,230201,Protección,pension
+hr_employee_social_security.entity_120,230301,Porvenir,pension
+hr_employee_social_security.entity_121,230901,Old Mutual Fondo de Pensiones Obligatorias,pension
+hr_employee_social_security.entity_122,230904,Old Mutual Fondo Alternativo de Pensiones,pension
+hr_employee_social_security.entity_123,231001,Colfondos,pension
+hr_employee_social_security.entity_124,25-2,Caja de Auxilios y de Prestaciones de ACDAC,pension
+hr_employee_social_security.entity_125,25-3,Fondo de Previsión Social del Congreso,pension
+hr_employee_social_security.entity_126,25-7,Pensiones de Antioquia,pension
+hr_employee_social_security.entity_127,25-14,Administradora Colombiana de Pensiones Colpensiones,pension
+hr_employee_social_security.entity_128,00,CT-Ninguno,contributor_type
+hr_employee_social_security.entity_129,01,Dependiente,contributor_type
+hr_employee_social_security.entity_130,02,Servicio doméstico,contributor_type
+hr_employee_social_security.entity_131,04,Madre comunitaria,contributor_type
+hr_employee_social_security.entity_132,12,Aprendiz del Sena en etapa lectiva,contributor_type
+hr_employee_social_security.entity_133,18,Servidores públicos sin tope máximo en el IBC,contributor_type
+hr_employee_social_security.entity_134,19,Aprendiz en etapa productiva,contributor_type
+hr_employee_social_security.entity_135,20,Estudiante (régimen especial Ley 789 de 2002),contributor_type
+hr_employee_social_security.entity_136,21,Estudiante de postgrado en salud (Decreto 190 de 1996),contributor_type
+hr_employee_social_security.entity_137,22,Profesor de establecimiento particular,contributor_type
+hr_employee_social_security.entity_138,23,Estudiante Decreto 055 de 2015,contributor_type
+hr_employee_social_security.entity_139,30,Dependiente entidades o universidades públicas con régimen especial en salud,contributor_type
+hr_employee_social_security.entity_140,31,Cooperados o pre cooperativas de trabajo asociado,contributor_type
+hr_employee_social_security.entity_141,40,Beneficiario de UPC Adicional,contributor_type
+hr_employee_social_security.entity_142,47,Trabajador dependiente de entidad beneficiaria de sistema general de participaciones - aportes patronales,contributor_type
+hr_employee_social_security.entity_143,51,Trabajador de tiempo parcial Afiliado al régimen Subsidiado,contributor_type
+hr_employee_social_security.entity_144,52,Beneficiario del Mecanismo de protección al Cesante,contributor_type
+hr_employee_social_security.entity_145,54,Pre pensionado de entidad en liquidación,contributor_type
+hr_employee_social_security.entity_146,56,Pre pensionado con aporte voluntario a salud,contributor_type
+hr_employee_social_security.entity_147,58,Estudiante de practica laboral en el sector publico,contributor_type
+hr_employee_social_security.entity_148,59,Independiente con contrato de prestación de servicios superior a 1 mes,contributor_type
+hr_employee_social_security.entity_149,00,No aplica,contributor_subtype
+hr_employee_social_security.entity_150,01,Dependiente pensionado activo por vejez activo,contributor_subtype
+hr_employee_social_security.entity_151,03,Cotizante no Obligado a Cotización a Pensiones por Edad,contributor_subtype
+hr_employee_social_security.entity_152,04,Con Requisitos Cumplidos para pensión. Indemnización Sustitutiva o Devolucion de Saldos,contributor_subtype
+hr_employee_social_security.entity_153,05,Cotizante con devolución de Saldos,contributor_subtype
+hr_employee_social_security.entity_154,06,Cotizante perteneciente a régimen Exceptuado,contributor_subtype
+hr_employee_social_security.entity_155,09,Cotizante pensionado con mesada Superior a 25 SMMLV,contributor_subtype
+hr_employee_social_security.entity_156,11,Conductor de Vehículo Taxi,contributor_subtype
+hr_employee_social_security.entity_157,12,Conductor de vehículo Taxi no obligado a cotizar a pensión,contributor_subtype
+hr_employee_social_security.entity_158,0,CSNT-Ninguna,layoffs
+hr_employee_social_security.entity_159,230201,Proteccion (ING + Proteccion) - CSNT,layoffs
+hr_employee_social_security.entity_160,230301,Porvenir - CSNT,layoffs
+hr_employee_social_security.entity_161,230901,Old Mutual - CSNT,layoffs
+hr_employee_social_security.entity_162,230904,Old Mutual Alternativo - CSNT,layoffs
+hr_employee_social_security.entity_163,231001,Colfondos - CSNT,layoffs
+hr_employee_social_security.entity_164,25-14,Administradora Colombiana de Pensiones -  Colpensiones - CSNT,layoffs
+hr_employee_social_security.entity_165,25-2,Caja de Auxilios de La Asociacion Colombiana de Aviadores - CSNT,layoffs
+hr_employee_social_security.entity_166,25-3,Fonprecom Fondo de Prevision Social del Congreso - CSNT,layoffs
+hr_employee_social_security.entity_167,25-7,Pensiones de Antioquia - CSNT,layoffs
+hr_employee_social_security.entity_168,FSP001,FIDUAGRARlA FONDO DE SOLIDARIDAD PENSIONAL - CSNT,layoffs
+hr_employee_social_security.entity_169,0,Ninguna,risk_class
+hr_employee_social_security.entity_170,1,Risk Class I,risk_class
+hr_employee_social_security.entity_171,2,Risk Class II,risk_class
+hr_employee_social_security.entity_172,3,Risk Class III,risk_class
+hr_employee_social_security.entity_173,4,Risk Class IV,risk_class
+hr_employee_social_security.entity_174,5,Risk Class V,risk_class
+

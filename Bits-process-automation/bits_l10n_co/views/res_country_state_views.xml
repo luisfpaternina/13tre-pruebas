@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Country -->
+        <record id="view_country_form_inherit_bits_l10n_co" model="ir.ui.view">
+            <field name="name">res.country.form.inherit.bits.l10n.co</field>
+            <field name="model">res.country</field>
+            <field name="inherit_id" ref="base.view_country_tree"/>
+            <field name="arch" type="xml">
+                <field name="code" position="after">
+                    <field name="l10n_co_dian_code"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_country_form_inherits_bits_l10n_co" model="ir.ui.view">
+            <field name="name">res.country.form</field>
+            <field name="model">res.country</field>
+            <field name="inherit_id" ref="base.view_country_form"/>
+            <field name="arch" type="xml">
+                <field name="code" position="after">
+                    <field name="l10n_co_dian_code"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- State -->
+        <record id="view_country_state_form_inherit_bits_l10n_co" model="ir.ui.view">
+            <field name="name">res.country.state.form.inherit.bits.l10n.co</field>
+            <field name="model">res.country.state</field>
+            <field name="inherit_id" ref="base.view_country_state_tree"/>
+            <field name="arch" type="xml">
+                <field name="code" position="after">
+                    <field name="l10n_co_divipola"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- Town -->
+        <record id="view_country_town_tree" model="ir.ui.view">
+            <field name="name">res.country.town.tree</field>
+            <field name="model">res.country.town</field>
+            <field name="arch" type="xml">
+                <tree string="State">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="l10n_co_divipola"/>
+                    <field name="l10n_co_dian_code"/>
+                    <field name="country_id" options="{'no_create': True}"/>
+                    <field name="state_id" options="{'no_create': True}"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_country_town_form" model="ir.ui.view">
+            <field name="name">res.country.town.form</field>
+            <field name="model">res.country.town</field>
+            <field name="arch" type="xml">
+                <form string="State">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="code"/>
+                                <field name="l10n_co_divipola"/>
+                                <field name="l10n_co_dian_code"/>
+                            </group>
+                            <group>
+                                <field name="country_id" options='{"no_open": True}'/>
+                                <field name="state_id" options='{"no_open": True}'/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_country_town_search" model="ir.ui.view">
+            <field name="name">res.country.town.search</field>
+            <field name="model">res.country.town</field>
+            <field name="arch" type="xml">
+                <search string="State">
+                    <field name="name"/>
+                    <field name="state_id"/>
+                    <group string="Group By">
+                        <filter name="groupby_state" string="State" context="{'group_by': 'state_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_country_town" model="ir.actions.act_window">
+            <field name="name">Towns</field>
+            <field name="res_model">res.country.town</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+         <record id="action_country_town_tree_action" model="ir.actions.act_window.view">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_country_town_tree"/>
+            <field name="act_window_id" ref="action_country_town"/>
+        </record>
+     
+
+        <menuitem id="menu_country_town_partner"
+          action="action_country_town"
+          name="Towns"
+          parent="contacts.menu_localisation"
+          sequence="4"/>
+
+    </data>
+</odoo>

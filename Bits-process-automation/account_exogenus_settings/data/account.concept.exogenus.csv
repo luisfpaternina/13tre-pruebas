@@ -1,0 +1,92 @@
+id,name,code,concept_code,format_exogenus_id:id
+concept_5002,"Honorarios","5002","True",format_1001
+concept_5003,"Comisiones","5003","True",format_1001
+concept_5004,"Servicios","5004","True",format_1001
+concept_5005,"Arrendamientos","5005","True",format_1001
+concept_5006,"Intereses y Rendimientos financieros","5006","True",format_1001
+concept_5007,"Compra de Activos Movibles","5007","True",format_1001
+concept_5008,"Compra de Activos Fijos","5008","True",format_1001
+concept_5013,"Donaciones Efectuadas","5013","True",format_1001
+concept_5015,"Impuestos","5015","True",format_1001
+concept_5019,"Amortizacion Intangibles","5019","True",format_1001
+concept_5020,"Compra Activos fijos reales productivos","5020","True",format_1001
+concept_5023,"Pagos o abonos en cuenta al exterior por asistencia tecnica","5023","True",format_1001
+concept_5027,"Pagos o abonos en cuenta al exterior por servicios técnicos","5027","True",format_1001
+concept_5067,"Pagos o abonos en cuenta al exterior por consultoria","5067","True",format_1001
+concept_5024,"Pagos o abonos en cuenta al exterior por marcas","5024","True",format_1001
+concept_5025,"Pagos o abonos en cuenta al exterior por patentes","5025","True",format_1001
+concept_5026,"Pagos o abonos en cuenta al exterior por regalías","5026","True",format_1001
+concept_5028,"Pagos o abonos en cuenta y retenciones correspondientes a operaciones de años anteriores","5028","True",format_1001
+concept_5043,"Dividendos Decretados","5043","True",format_1001
+concept_5055,"Viaticos","5055","True",format_1001
+concept_5058,"Aportes, tasas y contribuciones","5058","True",format_1001
+concept_5066,"Impuesto al Consumo solicitado como Deduccion","5066","True",format_1001
+concept_5016,"Demás costos y deducciones","5016","True",format_1001
+concept_5029,"Gastos Pagados por Anticipado por compras","5029","True",format_1001
+concept_5030,"Gastos Pagados por Anticipado por honorarios","5030","True",format_1001
+concept_5031,"Gastos Pagados por Anticipado por comisiones","5031","True",format_1001
+concept_5032,"Gastos Pagados por Anticipado por servicios","5032","True",format_1001
+concept_5033,"Gastos Pagados por Anticipado por arrendamientos","5033","True",format_1001
+concept_5034,"Gastos Pagados por Anticipado por intereses y rendimientos financieros","5034","True",format_1001
+concept_5035,"Gastos Pagados por Anticipado por otros conceptos","5035","True",format_1001
+
+concept_1302,"Retención por Ventas","1302","True",format_1003
+concept_1303,"Retención por Servicios","1303","True",format_1003
+concept_1304,"Retención por Honorarios","1304","True",format_1003
+concept_1305,"Retención por Comisiones","1305","True",format_1003
+concept_1306,"Retención por Intereses y rendimientos financieros","1306","True",format_1003
+concept_1307,"Retención por arrendamientos","1307","True",format_1003
+concept_1308,"Retención por otros conceptos","1308","True",format_1003
+concept_1309,"Retención Impuesto sobre las Ventas","1309","True",format_1003
+concept_1320,"Retención por dividendos y participaciones recibidas por sociedades nacionales","1320","True",format_1003
+
+concept_8830,"Descuento tributario por impuesto de industria, comercio, avisos y tableros. Artículo 115 del ET. ","8830","True",format_1004
+concept_8331,"Descuento tributario por impuesto sobre las ventas en la importación, formación, construcción, o adquisición de activos fijos reales productivos. Artículo 258-1 del ET.","8831","True",format_1004
+concept_8303,"Descuento tributario por impuestos pagados en el exterior solicitado como descuento por los contribuyentes nacionales que perciban rentas de fuente extranjera. Artículo 254 del ET.","8303","True",format_1004
+
+concept_4001,"Ingresos Brutos Actividades Ordinarias","4001","True",format_1007
+concept_4002,"Otros Ingresos Brutos","4002","True",format_1007
+concept_1302,"Ingresos por intereses y rendimientos financieros.","4003","True",format_1007
+
+concept_1315,"CxC a clientes","1315","True",format_1008
+concept_1316,"CxC accionistas, socios, comuneros, cooperados y compañías vinculadas","1316","True",format_1008
+concept_1317,"Otras CxC","1317","True",format_1008
+concept_1318,"Deterioro de carteras","1318","True",format_1008
+
+concept_2201,"CxP a Proveedores","2201","True",format_1009
+concept_2202,"CxP compañías vinculadas accionistas y socios","2202","True",format_1009
+concept_2203,"Obligaciones Financieras","2203","True",format_1009
+concept_2204,"Pasivos por impuestos gravámenes y tasas","2204","True",format_1009
+concept_2205,"Pasivos laborales","2205","True",format_1009
+concept_2207,"Pasivo determinado por el cálculo actuarial","2207","True",format_1009
+concept_2208,"Pasivos respaldados en documento de fecha cierta","2208","True",format_1009
+concept_2211,"Pasivos por depósitos judiciales","2211","True",format_1009
+concept_2213,"Pasivo por ingresos diferidos","2213","True",format_1009
+concept_2206,"Otros pasivos","2206","True",format_1009
+
+concept_1200,"Bonos","1200","True",format_1012
+concept_1201,"Certificados de Deposito","1201","True",format_1012
+concept_1202,"Titulos","1202","True",format_1012
+concept_1203,"Derechos Fiduciarios","1203","True",format_1012
+concept_1204,"Otras Inversiones","1204","True",format_1012
+concept_1206,"Criptoactivos","1206","True",format_1012
+concept_1010,"Cuentas corrientes y/o ahorro que posea en el país","1010","True",format_1012
+concept_1015,"Cuentas corrientes y/o ahorro poseídas en el exterior","1015","True",format_1012
+
+art1_1,"Actividad no sujeta producción primaria agricola, ganadera y avicola","1","True",art_0001
+art1_2,"Servicios EPS","2","True",art_0001
+art1_3,"Actividades no sujetas propias objeto social Propiedad Horizontal","3","True",art_0001
+art1_4,"Explotación de los Juegos de Suerte y Azar","4","True",art_0001
+art1_5,"Donaciones","5","True",art_0001
+art1_6,"Desarrollo Actividades base gravable especial","6","True",art_0001
+art1_7,"Ingresos de Consorcios, Uniones Temporales, Cuentas Conjuntas","7","True",art_0001
+art1_8,"Dividendos que no hacen parte del giro ordinario del negocio","8","True",art_0001
+art1_9,"Diferencia en Cambio","9","True",art_0001
+art1_10,"Corrección Monetaria","10","True",art_0001
+art1_11,"Reintegro de Costos y Gastos","11","True",art_0001
+art1_12,"Salarios","12","True",art_0001
+art1_13,"Otros Ingresos no constitutivos del impuesto","13","True",art_0001
+
+art2_1,"Servicios","1","True",art_0002
+art2_2,"Compras","2","True",art_0002
+art2_3,"Compras y servicios","3","True",art_0002

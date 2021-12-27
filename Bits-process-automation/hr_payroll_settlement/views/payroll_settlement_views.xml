@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="payroll_sttlement_tree">
+      <field name="name">Settlement history</field>
+      <field name="model">settlement.history</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="employee_id" />
+          <field name="reason_for_termination" />
+          <field name="date_end" />
+          <field name="date_payment" />
+          <field name="contract_duration" />
+          <field name="running_time" />
+          <field name="missing_time" />
+          <field name="work_days" />
+          <field name="state" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="hr_payroll_settlement_history_view_search_register" model="ir.ui.view">
+      <field name="name">hr.payroll.settlement.history.view</field>
+      <field name="model">settlement.history</field>
+        <field name="arch" type="xml">
+          <search string="Historial">
+            <field name="employee_id" string="Nombre"/>
+          </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="payroll_settlement_form">
+      <field name="name">Settlement history</field>
+      <field name="model">settlement.history</field>
+      <field name="arch" type="xml">
+        <form string="Settlement history">
+          <header>
+            <button name="validate" states="draft" string="Confirm" type="object" class="oe_highlight"/>
+            <button name="action_cancel" states="done" string="Cancel" type="object" class="oe_highlight"/>
+            <button name="action_draft" states="cancel" string="Cancel" type="object" class="oe_highlight"/>
+            <field name="state" widget="statusbar" statusbar_visible="draft,done,cancel"/>
+          </header>
+          <sheet>
+            <div class="oe_title">
+              <h1>
+                <field name="employee_id" placeholder="Employee's Name" required="True"/>
+              </h1>
+              <h3>
+                <field name="reason_for_termination" placeholder="Reason for termination" required="True"/>
+              </h3>
+            </div>
+            <group>
+              <group>
+                <field name="contract_id" required="True" domain="[('employee_id', '=', employee_id)]" />
+                <field name="type_contract" required="True" />
+                <field name="date_end" required="True" />
+                <field name="contract_duration" attrs="{'invisible': [('type_contract', '=', 'non-fixed')]}"/>
+                <field name="running_time" />
+                <field name="missing_time" attrs="{'invisible': [('type_contract', '=', 'non-fixed')]}"/>
+                <field name="work_days" readonly="1" />
+                <field name="days_unpaid" readonly="1"/>
+                <field name="pending_vacation_days" readonly="1"/>
+              </group>
+              <group>
+                <field name="proccess" />
+                <field name="date_payment" required="True" />
+                <field name="compensation" required="True" />
+                <field name="confidential" />
+                <field name="news_deadline" />
+                <field name="state_settlement" />
+                <field name="period" readonly="1" />
+                <field name="payslip_id" readonly="1" />
+              </group>
+
+              <notebook colspan="4">
+                <page name="settlement_comments" string="Comments">
+                  <field name="comments" />
+                  <div class="oe_clear"/>
+                </page>
+              </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_settlement_history">
+      <field name="name">Settlement history</field>
+      <field name="res_model">settlement.history</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+      id="hr_payroll_liquidation_category_menu"
+      name="Settlement"
+      parent="hr_payroll.menu_hr_payroll_employees_root"
+      sequence="50"
+    />
+
+      <menuitem
+        id="menu_hr_payroll_settlement_history"
+        name="Settlement history"
+        parent="hr_payroll_liquidation_category_menu"
+        action="action_settlement_history"
+        sequence="3"
+      />
+
+        <!--Qweb report-->
+      <report
+          id="report_payroll_settlement"
+          string="Report Settlement"
+          model="settlement.history"
+          report_type="qweb-pdf"
+          name="hr_payroll_settlement.final_settlement_template"
+      />
+  </data>
+</odoo>

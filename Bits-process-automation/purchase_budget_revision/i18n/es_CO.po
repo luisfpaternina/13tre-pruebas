@@ -1,0 +1,140 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_budget_revision
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-05 20:48+0000\n"
+"PO-Revision-Date: 2020-08-05 15:49-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.4\n"
+
+#. module: purchase_budget_revision
+#: code:addons/purchase_budget_revision/models/models.py:0
+#, python-format
+msgid "% s. Exceeds budget: % s / % s."
+msgstr "% s. Supera el presupuesto: % s / % s."
+
+#. module: purchase_budget_revision
+#: model:mail.template,body_html:purchase_budget_revision.email_template_notify_budget_excess
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Receive a cordial greeting, please require approval \n"
+"                        of budget increase to make the purchase request. <strong>${object.name}</strong>\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Reciba un cordial saludo, por favor se requiere aprobación \n"
+"                        de aumento de presupuesto para realizar la solicitud de compra. <strong>${object.name}</strong>\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+
+#. module: purchase_budget_revision
+#: model:hr.job,name:purchase_budget_revision.job_director_accounting
+msgid "Administrative and financial director"
+msgstr "Director administrativo y financiero"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields.selection,name:purchase_budget_revision.selection__purchase_order__budget_approval_state__approved
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields,field_description:purchase_budget_revision.field_purchase_order__budget_approval_state
+msgid "Budget Approval State"
+msgstr "Estado de aprobación del presupuesto"
+
+#. module: purchase_budget_revision
+#: model:mail.template,subject:purchase_budget_revision.email_template_notify_budget_excess
+msgid "Budget Excess: Send Approved"
+msgstr "Exceso de presupuesto: Enviar aprobado"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields,field_description:purchase_budget_revision.field_purchase_order_line__crossovered_budget_line_id
+msgid "Budget line"
+msgstr "Línea presupuestaria"
+
+#. module: purchase_budget_revision
+#: model:ir.model,name:purchase_budget_revision.model_purchase_order
+msgid "Check budget when making request for quotation"
+msgstr "Compruebe el presupuesto al solicitar cotización"
+
+#. module: purchase_budget_revision
+#: model_terms:ir.ui.view,arch_db:purchase_budget_revision.purchase_budget_revision_form_inherit
+msgid "Create Bill"
+msgstr "Crear factura"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields,field_description:purchase_budget_revision.field_purchase_order__delivered_products
+msgid "Delivered products ?"
+msgstr "¿Productos entregados?"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields.selection,name:purchase_budget_revision.selection__purchase_order__budget_approval_state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields,field_description:purchase_budget_revision.field_purchase_order__email_to
+msgid "Email To"
+msgstr "Correo electrónico a"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields.selection,name:purchase_budget_revision.selection__purchase_order__budget_approval_state__excess
+msgid "Excess"
+msgstr "Exceso"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields,field_description:purchase_budget_revision.field_purchase_order_line__is_excess_budget
+msgid "Is Excess Budget"
+msgstr "Esta excedido de presupuesto"
+
+#. module: purchase_budget_revision
+#: model:res.groups,name:purchase_budget_revision.notify_budget_excess
+msgid "Notify budget excess"
+msgstr "Notificar el exceso presupuestario"
+
+#. module: purchase_budget_revision
+#: model:ir.model,name:purchase_budget_revision.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de Orden de Compra"
+
+#. module: purchase_budget_revision
+#: model_terms:ir.ui.view,arch_db:purchase_budget_revision.purchase_budget_revision_form_inherit
+msgid "Send For Up Budget"
+msgstr "Notificar para presupuesto"
+
+#. module: purchase_budget_revision
+#: code:addons/purchase_budget_revision/models/models.py:0
+#, python-format
+msgid "Send for approved budget"
+msgstr "Enviar para aprobación de presupuesto"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields.selection,name:purchase_budget_revision.selection__purchase_order__budget_approval_state__send
+msgid "Send to budget"
+msgstr "Enviar para presupuesto"
+
+#. module: purchase_budget_revision
+#: code:addons/purchase_budget_revision/models/models.py:0
+#, python-format
+msgid "Some of the lines do not comply with the verification process\n"
+msgstr "Algunas de las líneas no cumplen con el proceso de verificación.\n"
+
+#. module: purchase_budget_revision
+#: model:ir.model.fields,field_description:purchase_budget_revision.field_purchase_order__warning_message
+msgid "Warning Message"
+msgstr "Mensaje de advertencia"

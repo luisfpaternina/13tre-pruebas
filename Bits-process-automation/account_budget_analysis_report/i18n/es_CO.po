@@ -1,0 +1,132 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_budget_analysis_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-24 14:06+0000\n"
+"PO-Revision-Date: 2021-11-24 14:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__analytic_account_id
+msgid "Analytic Account"
+msgstr "Cuenta Analitíca"
+
+#. module: account_budget_analysis_report
+#: model_terms:ir.ui.view,arch_db:account_budget_analysis_report.view_general_budgets_analysis_search
+msgid "Budget Lines"
+msgstr ""
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__general_budget_id
+msgid "Budgetary Position"
+msgstr "Posición presupuestaria"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields.selection,name:account_budget_analysis_report.selection__general_budget_analysis__crossovered_budget_state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields.selection,name:account_budget_analysis_report.selection__general_budget_analysis__crossovered_budget_state__confirm
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields.selection,name:account_budget_analysis_report.selection__general_budget_analysis__crossovered_budget_state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields.selection,name:account_budget_analysis_report.selection__general_budget_analysis__crossovered_budget_state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__date_to
+msgid "End Date"
+msgstr "Fecha Final"
+
+#. module: account_budget_analysis_report
+#: model:ir.ui.menu,name:account_budget_analysis_report.main_menu_general_budgets_analysis
+msgid "General Budget  Analysis Report"
+msgstr " Reporte Análisis de Presupuesto General"
+
+#. module: account_budget_analysis_report
+#: model:ir.actions.act_window,name:account_budget_analysis_report.action_menu_general_budgets_analysis
+#: model_terms:ir.ui.view,arch_db:account_budget_analysis_report.general_budgets_analysis_report_view
+msgid "General Budgets Analysis"
+msgstr "Análisis de Presupuesto General"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__id
+msgid "ID"
+msgstr ""
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_budget_analysis_report
+#: model_terms:ir.ui.view,arch_db:account_budget_analysis_report.view_general_budgets_analysis_search
+msgid "Not Cancelled"
+msgstr ""
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__paid_date
+msgid "Paid Date"
+msgstr "Fecha de pago"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__planned_amount
+msgid "Planned Amount"
+msgstr "Importe previsto"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__practical_amount
+msgid "Practical Amount"
+msgstr "Importe real"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__date_from
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__crossovered_budget_state
+msgid "State"
+msgstr "Estado"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields,field_description:account_budget_analysis_report.field_general_budget_analysis__theoritical_amount
+msgid "Theoretical Amount"
+msgstr "Importe teórico"
+
+#. module: account_budget_analysis_report
+#: model:ir.model.fields.selection,name:account_budget_analysis_report.selection__general_budget_analysis__crossovered_budget_state__validate
+msgid "Validated"
+msgstr "Validado"
+
+#. module: account_budget_analysis_report
+#: model:ir.model,name:account_budget_analysis_report.model_general_budget_analysis
+msgid "this is a general budget report"
+msgstr "Este es el reporte general de presupuesto"
