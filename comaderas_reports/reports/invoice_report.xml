@@ -11,13 +11,7 @@
                     <div class="article o_report_layout_standard">
                         <div class="page">
                         <h2>
-                            <span t-if="o.move_type == 'out_invoice' and o.state == 'posted'">Invoice</span>
-                            <span t-if="o.move_type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
-                            <span t-if="o.move_type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
-                            <span t-if="o.move_type == 'out_refund'">Credit Note</span>
-                            <span t-if="o.move_type == 'in_refund'">Vendor Credit Note</span>
-                            <span t-if="o.move_type == 'in_invoice'">Vendor Bill</span>
-                            <span t-if="o.name != '/'" t-field="o.name"/>
+                            
                         </h2>
 
                     <div id="informations" class="row mt32 mb32">
@@ -212,7 +206,7 @@
         
         <report
                 id="report_print_comaderas_invoice"
-                string="Plantilla datos técnicos"
+                string="Factura Comaderas"
                 model="account.move"
                 report_type="qweb-pdf"
                 name="comaderas_reports.report_comaderas_invoice"
