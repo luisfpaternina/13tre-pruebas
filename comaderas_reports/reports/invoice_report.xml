@@ -29,13 +29,9 @@
                             <strong>Origen:</strong>
                             <p class="m-0" t-field="o.invoice_origin"/>
                         </div>
-                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.partner_id.ref" name="customer_code">
-                            <strong>Referencia del cliente:</strong>
-                            <p class="m-0" t-field="o.partner_id.ref"/>
-                        </div>
-                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.ref" name="reference">
-                            <strong>Referencia:</strong>
-                            <p class="m-0" t-field="o.ref"/>
+                        <div class="col-auto col-3 mw-100 mb-2">
+                            <strong>Vendedor:</strong>
+                            <p class="m-0" t-field="o.invoice_user_id"/>
                         </div>
                     </div>
 
