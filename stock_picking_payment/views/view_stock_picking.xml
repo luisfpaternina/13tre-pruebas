@@ -17,7 +17,7 @@
                     <attribute name="attrs">{'invisible':[('is_validate', '=', False)]}</attribute>
                 </xpath>
 
-                <xpath expr="//form/header/button[7]" position="attributes">
+                <xpath expr="//form/header/button[3]" position="attributes">
                     <attribute name="attrs">{'invisible':[('is_validate', '=', False)]}</attribute>
                 </xpath>
 
