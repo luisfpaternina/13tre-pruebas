@@ -1,0 +1,166 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* comaderas_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-27 23:14+0000\n"
+"PO-Revision-Date: 2021-12-27 23:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid ""
+"<br/>\n"
+"                        <strong>CC/NIT:</strong><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid ""
+"<br/>\n"
+"                        <strong>Código:</strong><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid ""
+"<br/>\n"
+"                        <strong>Dirección:</strong><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid ""
+"<br/>\n"
+"                        <strong>Télefono:</strong><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Total</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<span>Cantidad</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<span>Código</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<span>Disc.%</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<span>Producto</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<span>Unidad</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<span>Vlr.Unit.</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Amount Due</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Cliente:</strong><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Fecha:</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Incoterm: </strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Origen:</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Vendedor:</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model:ir.model,name:comaderas_reports.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: comaderas_reports
+#: model:ir.actions.report,name:comaderas_reports.report_print_product_labels_report
+msgid "Etiquetas de productos"
+msgstr ""
+
+#. module: comaderas_reports
+#: model:ir.actions.report,name:comaderas_reports.report_print_comaderas_invoice
+msgid "Factura Comaderas"
+msgstr ""
+
+#. module: comaderas_reports
+#: model:ir.actions.report,name:comaderas_reports.report_print_template_purchase_order
+msgid "Orden de compra comaderas"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "Pagado"
+msgstr ""
+
+#. module: comaderas_reports
+#: model:ir.actions.report,name:comaderas_reports.report_print_template_sale_order
+msgid "Pedido de venta"
+msgstr ""
+
+#. module: comaderas_reports
+#: model:ir.model.fields,field_description:comaderas_reports.field_res_company__terms
+msgid "Terms"
+msgstr "Términos y condiciones"
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "on"
+msgstr "en"
