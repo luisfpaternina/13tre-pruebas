@@ -20,7 +20,8 @@
     ],
 
     'data': [
-        #"views/view_stock_picking.xml"
+        "reports/invoice_report.xml"
+        "reports/product_labels_report.xml"
     ],
     
     'installable': True,
