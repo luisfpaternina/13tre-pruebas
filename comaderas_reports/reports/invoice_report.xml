@@ -20,6 +20,13 @@
                             <span t-field="o.name"></span>
                         </h2>
 
+                    <div>
+                        <strong>Cliente:</strong><span t-field="o.partner_id"></span><br></br>
+                        <strong>Dirección:</strong><span t-field="o.partner_id.street"></span><br></br>
+                        <strong>CC/NIT:</strong><span t-field="o.partner_id.vat"></span><br></br>
+                        <strong>Código:</strong><span t-field="o.partner_id.ref"></span><br></br>
+                    </div>
+
                     <div id="informations" class="row mt32 mb32">
                         <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
                             <strong>Fecha:</strong>
