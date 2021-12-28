@@ -204,13 +204,13 @@
                        </div>
                     <div id="separador"></div>
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                        <hr></hr>
+                        <hr></hr>Firma Bodega
                     </div>
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                         <hr></hr>
+                         <hr></hr>Firma Cliente
                     </div>
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                         <hr></hr>
+                         <hr></hr>Nombre
                     </div>
                     </div>
                     <div class="footer">
