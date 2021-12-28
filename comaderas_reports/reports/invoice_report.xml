@@ -36,7 +36,7 @@
                                 border-radius: 1px;
                                 }
                             </style>
-                        <br></br><br></br><br></br>
+                        <br></br><br></br><br></br><br></br>
                         <h3>
                             <span t-field="o.name"></span>
                         </h3>
