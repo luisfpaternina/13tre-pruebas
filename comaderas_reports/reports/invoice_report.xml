@@ -17,7 +17,7 @@
                         <div class="page">
                             <style>
                                 div#cuadro{
-                                width:370px;
+                                width:250px;
                                 height:20px;
                                 background-color:red;
                                 float:left;
@@ -197,7 +197,7 @@
                     </p>
                        </div>
                     <div id="cuadro">
-                        ____________________________________________
+                        <hr></hr>
                     </div>
                     <div id="cuadro">
                         
