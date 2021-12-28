@@ -46,6 +46,7 @@
                         <strong>CC/NIT:</strong><span> </span><span t-field="o.partner_id.vat"></span><br></br>
                         <strong>Código:</strong><span> </span><span t-field="o.partner_id.ref"></span><br></br>
                         <strong>Télefono:</strong><span> </span><span t-field="o.partner_id.phone"></span><br></br>
+                        <strong>Ciudad:</strong><span> </span><span t-field="o.partner_id.town_id"></span>
                     </div>
 
                     <div id="informations" class="row mt32 mb32">
