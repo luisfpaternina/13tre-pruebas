@@ -213,7 +213,7 @@
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
                          <hr class="new5"></hr>Firma Cliente
                     </div>
-                    <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
+                    <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left; height: 500px;'>
                          Nombre<hr class="new5"></hr><br></br>
                          CC/NIT<hr class="new5"></hr>
                     </div>
