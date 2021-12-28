@@ -210,7 +210,8 @@
                          <hr></hr>Firma Cliente
                     </div>
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                         <hr></hr>Nombre
+                         Nombre<hr></hr><br></br>
+                         CC/NIT<hr></hr>
                     </div>
                     </div>
                     <div class="footer">
