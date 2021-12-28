@@ -11,6 +11,7 @@
                             <span t-field="o.company_id"></span><br></br>
                             <span t-field="o.company_id.street"></span><br></br>
                             <span>RESPONSABLE DE IVA - TARIFA ICA 8 X 1000</span><br></br>
+                            <span>NO SOMOS GRANDES CONTIBUYENTES ACTIVIDAD ECONOMICA 4752</span><br></br>
                             <span t-field="o.company_id.phone"></span>
                         </p>
                     </div>
