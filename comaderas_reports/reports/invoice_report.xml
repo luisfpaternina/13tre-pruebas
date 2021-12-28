@@ -73,6 +73,10 @@
                             <p class="m-0" t-field="o.credit.credit_type_id"/>
                         </div>
                         <div class="col-auto col-3 mw-100 mb-2" t-if="o.credit_payment">
+                            <strong>Número de crédito:</strong>
+                            <p class="m-0" t-field="o.credit.number_credit"/>
+                        </div>
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.credit_payment">
                             <strong>Plazo meses:</strong>
                             <p class="m-0" t-field="o.credit.term_months"/>
                         </div>
