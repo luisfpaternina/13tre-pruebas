@@ -39,6 +39,11 @@
                         <h3>
                             <span t-field="o.name"></span>
                         </h3>
+                         <div class="col-auto col-3 mw-100 mb-2">
+                            <p class="m-0">
+                                Pasado 10 Días calendario no se aceptara devolución de mercancía
+                            </p>
+                        </div>
 
                     <div>
                         <strong>Cliente:</strong><span> </span><span t-field="o.partner_id"></span><br></br>
@@ -61,11 +66,6 @@
                         <div class="col-auto col-3 mw-100 mb-2">
                             <strong>Vendedor:</strong>
                             <p class="m-0" t-field="o.invoice_user_id"/>
-                        </div>
-                        <div class="col-auto col-3 mw-100 mb-2">
-                            <p class="m-0">
-                                Pasado 10 Días calendario no se aceptara devolución de mercancía
-                            </p>
                         </div>
                     </div>
 
