@@ -17,8 +17,8 @@
                         <div class="page">
                             <style>
                                 div#cuadro{
-                                width:30px;
-                                height:30px;
+                                width:200px;
+                                height:200px;
                                 background-color:red;
                                 float:left;
                                 }
@@ -196,6 +196,12 @@
                         <span t-field="o.narration"/>
                     </p>
                        </div>
+                    <div id="cuadro">
+                        
+                    </div>
+                    <div id="cuadro">
+                        
+                    </div>
                     <div id="cuadro">
                         
                     </div>
