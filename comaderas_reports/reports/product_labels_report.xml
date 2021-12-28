@@ -22,8 +22,8 @@
         
         <report
                 id="report_print_product_labels_report"
-                string="Etiquetas de productos"
-                model="product.template"
+                string="Etiquetas de productos Comaderas"
+                model="product.product"
                 report_type="qweb-pdf"
                 name="comaderas_reports.report_print_product_labels"
         />
