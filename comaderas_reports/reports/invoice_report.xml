@@ -54,7 +54,7 @@
                         <strong>Ciudad:</strong><span> </span><span t-field="o.partner_id.town_id"></span>
                     </div>
 
-                    <div id="informations" class="row mt32 mb32">
+                    <div id="informations" class="row mt32 mb32" t-if="o.credit_payment">
                         <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
                             <strong>Fecha:</strong>
                             <p class="m-0" t-field="o.invoice_date"/>
