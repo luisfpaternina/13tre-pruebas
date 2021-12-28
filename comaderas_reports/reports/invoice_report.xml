@@ -18,7 +18,7 @@
                             <style>
                                 div#separador{
                                 width:900px;
-                                height:50px;
+                                height:100px;
                                 background-color:white;
                                 float:left;
                                 }
@@ -207,10 +207,10 @@
                         <hr></hr>
                     </div>
                     <div id="cuadro">
-                        
+                         <hr></hr>
                     </div>
                     <div id="cuadro">
-                        
+                         <hr></hr>
                     </div>
                     </div>
                     <div class="footer">

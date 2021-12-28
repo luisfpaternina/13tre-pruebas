@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Ace comaderas reports",
+    'name': "Acecomaderas reports",
 
     'summary': """
         stock picking payment""",
