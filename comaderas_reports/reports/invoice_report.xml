@@ -55,17 +55,25 @@
                     </div>
 
                     <div id="informations" class="row mt32 mb32" t-if="o.credit_payment">
-                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_date" name="invoice_date" t-if="o.credit_payment">
                             <strong>Fecha:</strong>
                             <p class="m-0" t-field="o.invoice_date"/>
                         </div>
-                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_origin" name="origin">
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_origin" name="origin" t-if="o.credit_payment">
                             <strong>Origen:</strong>
                             <p class="m-0" t-field="o.invoice_origin"/>
                         </div>
-                        <div class="col-auto col-3 mw-100 mb-2">
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.credit_payment">
                             <strong>Vendedor:</strong>
                             <p class="m-0" t-field="o.invoice_user_id"/>
+                        </div>
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.credit_payment">
+                            <strong>Tipo de crédito:</strong>
+                            <p class="m-0" t-field="o.credit.credit_type_id"/>
+                        </div>
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.credit_payment">
+                            <strong>Plazo meses:</strong>
+                            <p class="m-0" t-field="o.credit.term_months"/>
                         </div>
                     </div>
 
