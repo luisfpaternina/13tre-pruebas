@@ -35,10 +35,10 @@
                                 border-radius: 1px;
                                 }
                             </style>
-                        <br></br><br></br>
-                        <h2>
+                        <br></br><br></br><br></br>
+                        <h3>
                             <span t-field="o.name"></span>
-                        </h2>
+                        </h3>
 
                     <div>
                         <strong>Cliente:</strong><span> </span><span t-field="o.partner_id"></span><br></br>
