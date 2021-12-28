@@ -28,6 +28,10 @@
                                 background-color:white;
                                 float:left;
                                 }
+                                hr.new5 {
+                                border: 5px solid black;
+                                border-radius: 1px;
+                                }
                             </style>
                         <br></br><br></br>
                         <h2>
@@ -204,14 +208,14 @@
                        </div>
                     <div id="separador"></div>
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                        <hr></hr>Firma Bodega
+                        <hr class="new5"></hr>Firma Bodega
                     </div>
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                         <hr></hr>Firma Cliente
+                         <hr class="new5"></hr>Firma Cliente
                     </div>
                     <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                         Nombre<hr></hr><br></br>
-                         CC/NIT<hr></hr>
+                         Nombre<hr class="new5"></hr><br></br>
+                         CC/NIT<hr class="new5"></hr>
                     </div>
                     </div>
                     <div class="footer">
