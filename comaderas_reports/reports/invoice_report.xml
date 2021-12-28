@@ -16,10 +16,16 @@
                     <div class="article o_report_layout_standard">
                         <div class="page">
                             <style>
+                                div#separador{
+                                width:900px;
+                                height:50px;
+                                background-color:white;
+                                float:left;
+                                }
                                 div#cuadro{
                                 width:250px;
                                 height:20px;
-                                background-color:red;
+                                background-color:white;
                                 float:left;
                                 }
                             </style>
@@ -196,6 +202,7 @@
                         <span t-field="o.narration"/>
                     </p>
                        </div>
+                    <div id="separador"></div>
                     <div id="cuadro">
                         <hr></hr>
                     </div>
