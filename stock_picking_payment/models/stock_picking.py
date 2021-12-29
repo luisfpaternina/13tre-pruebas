@@ -11,10 +11,11 @@ class StockPicking(models.Model):
         string="Invoice state",
         related="sale_id.invoice_ids.invoice_payment_state")
     is_validate = fields.Boolean(
-        string="Validate")
+        string="Validate",
+        compute="_validate_invoice_state")
 
 
-    @api.onchange('invoice_state','name','picking_type_id')
+    @api.depends('invoice_state','name','picking_type_id')
     def _validate_invoice_state(self):
         for record in self:
             if record.picking_type_id.code == 'outgoing' and record.invoice_state == 'paid':
