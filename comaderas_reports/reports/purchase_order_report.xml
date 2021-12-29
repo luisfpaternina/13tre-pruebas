@@ -14,15 +14,15 @@
                     </div>
                     <div class="article o_report_layout_standard">
                         <div class="page">
-                            <table>
+                            <table width="100%">
                                 <tr>
                                     <td>
                                         <span t-field="o.picking_type_id"></span>
                                     </td>
                                     <td>
-                                        <h3>
+                                        <h4>
                                             <span>ORDEN DE COMPRA No.</span><span> </span><span t-field="o.name"></span>
-                                        </h3>
+                                        </h4>
                                     </td>
                                 </tr>
                             </table>
