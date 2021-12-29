@@ -28,5 +28,9 @@
                 name="comaderas_reports.report_print_product_labels"
         />
 
+        <record id="comaderas_reports.report_print_product_labels_report" model="ir.actions.report">
+            <field name="paperformat_id" ref="comaderas_reports.paperformat_a4_comaderas"/>
+        </record>
+
   </data>
 </odoo>
