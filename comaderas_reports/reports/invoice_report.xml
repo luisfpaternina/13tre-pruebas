@@ -256,5 +256,9 @@
                 name="comaderas_reports.report_comaderas_invoice"
         />
 
+        <record id="comaderas_reports.report_print_comaderas_invoice" model="ir.actions.report">
+            <field name="paperformat_id" ref="comaderas_reports.paperformat_a4_comaderas"/>
+        </record>
+
   </data>
 </odoo>
