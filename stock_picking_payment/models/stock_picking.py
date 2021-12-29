@@ -15,7 +15,7 @@ class StockPicking(models.Model):
         compute="_validate_invoice_state")
 
 
-    @api.depends('invoice_state')
+    @api.depends('invoice_state','name')
     def _validate_invoice_state(self):
         for record in self:
             if record.picking_type_id.sequence_code == 'OUT':
