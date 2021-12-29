@@ -19,6 +19,9 @@ class StockPicking(models.Model):
     def _validate_invoice_state(self):
         for record in self:
             if record.picking_type_id.code == 'outgoing':
-                record.is_validate = True
+                if record.invoice_state == 'paid':
+                    record.is_validate = True
+                else:
+                    record.is_validate = False
             else:
                 record.is_validate = False
