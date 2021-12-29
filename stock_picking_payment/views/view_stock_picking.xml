@@ -14,11 +14,11 @@
                 </xpath>
 
                 <xpath expr="//button[@name='button_validate']" position="attributes">
-                    <attribute name="attrs">{'invisible':[('is_validate', '!=', False)]}</attribute>
+                    <attribute name="attrs">{'invisible':[('is_validate', '=', False)]}</attribute>
                 </xpath>
 
                 <xpath expr="//form/header/button[3]" position="attributes">
-                    <attribute name="attrs">{'invisible':[('is_validate', '!=', False)]}</attribute>
+                    <attribute name="attrs">{'invisible':[('is_validate', '=', False)]}</attribute>
                 </xpath>
 
                 <xpath expr="//form/header/button[4]" position="attributes">
