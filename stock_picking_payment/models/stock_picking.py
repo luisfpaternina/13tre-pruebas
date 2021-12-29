@@ -9,7 +9,7 @@ class StockPicking(models.Model):
         related="sale_id.invoice_ids.display_name")
     invoice_state = fields.Selection(
         string="Invoice state",
-        related="sale_id.invoice_ids.invoice_payment_state")
+        related="sale_id.invoice_ids.state")
     is_validate = fields.Boolean(
         string="Validate",
         compute="_validate_invoice_state")
@@ -18,13 +18,13 @@ class StockPicking(models.Model):
     @api.depends('invoice_state','name','picking_type_id')
     def _validate_invoice_state(self):
         for record in self:
-            if record.picking_type_id.code == 'outgoing' and record.invoice_state == 'paid':
+            if record.picking_type_id.code == 'outgoing' and record.invoice_state == 'posted':
                 record.is_validate = True
             elif record.picking_type_id.code != 'outgoing':
                 record.is_validate = True
-            elif record.picking_type_id.code != 'outgoing' and record.invoice_state == 'paid':
+            elif record.picking_type_id.code != 'outgoing' and record.invoice_state == 'posted':
                 record.is_validate = False
-            elif record.picking_type_id.code != 'outgoing' and record.invoice_state != 'paid':
+            elif record.picking_type_id.code != 'outgoing' and record.invoice_state != 'posted':
                 record.is_validate = False
             else:
                 record.is_validate = False
