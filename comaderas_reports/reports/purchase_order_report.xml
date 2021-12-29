@@ -28,16 +28,20 @@
                             </table>
                             <table>
                                 <tr>
-                                    <td>Nit</td>
+                                    <td>Nit:</td>
+                                    <td><span t-field="o.partner_id.vat"></span></td>
                                 </tr>
                                 <tr>
-                                    <td>Proveedor</td>
+                                    <td>Proveedor:</td>
+                                    <td><span t-field="o.partner_id"></span></td>
                                 </tr>
                                 <tr>
-                                    <td>Dirección</td>
+                                    <td>Dirección:</td>
+                                    <td><span t-field="o.partner_id.street"></span></td>
                                 </tr>
                                 <tr>
-                                    <td>Código</td>
+                                    <td>Código:</td>
+                                    <td><span t-field="o.partner_ref"></span></td>
                                 </tr>
                             </table>
                        </div>
