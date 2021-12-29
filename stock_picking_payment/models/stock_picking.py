@@ -18,7 +18,10 @@ class StockPicking(models.Model):
     @api.depends('invoice_state')
     def _validate_invoice_state(self):
         for record in self:
-            if record.invoice_state == 'paid':
-                record.is_validate = True
+            if record.picking_type_id.sequence_code == 'OUT':
+                if record.invoice_state == 'paid':
+                    record.is_validate = True
+                else:
+                    record.is_validate = False
             else:
                 record.is_validate = False
