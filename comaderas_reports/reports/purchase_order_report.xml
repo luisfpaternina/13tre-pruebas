@@ -26,7 +26,7 @@
                                     </td>
                                 </tr>
                             </table>
-                            <table>
+                            <table width="100%">
                                 <tr>
                                     <td>Nit:</td>
                                     <td><span t-field="o.partner_id.vat"></span></td>
