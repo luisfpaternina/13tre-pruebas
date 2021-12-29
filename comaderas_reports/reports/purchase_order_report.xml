@@ -28,19 +28,19 @@
                             </table>
                             <table width="100%">
                                 <tr>
-                                    <td><span>Nit:</span><span t-field="o.partner_id.vat"></span></td>
+                                    <td><span>Nit:</span><span> </span><span t-field="o.partner_id.vat"></span></td>
                                     <td><span t-field="o.date_approve"></span></td>
                                 </tr>
                                 <tr>
-                                    <td><span>Proveedor:</span><span t-field="o.partner_id"></span></td>
+                                    <td><span>Proveedor:</span><span> </span><span t-field="o.partner_id"></span></td>
                                     <td>Tiempo de entrega dias:</td>
                                 </tr>
                                 <tr>
-                                    <td><span>Dirección:</span><span t-field="o.partner_id.street"></span></td>
+                                    <td><span>Dirección:</span><span> </span><span t-field="o.partner_id.street"></span></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span>Código:</span><span t-field="o.partner_ref"></span></td>
+                                    <td><span>Código:</span><span> </span><span t-field="o.partner_ref"></span></td>
                                     <td>Forma de pago:</td>
                                 </tr>
                             </table>
