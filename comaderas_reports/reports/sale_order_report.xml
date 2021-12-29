@@ -6,7 +6,12 @@
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">                    
                     <div class="header">
-                        
+                        <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
+                        <p style="font-size:10vw">
+                            <span t-field="o.company_id"></span><br></br>
+                            <span t-field="o.company_id.street"></span><br></br>
+                            <span t-field="o.company_id.phone"></span>
+                        </p>
                     </div>
                     <div class="article o_report_layout_standard">
                         <div class="page">
@@ -14,7 +19,9 @@
                        </div>
                     </div>
                     <div class="footer">
-                        <p></p>
+                        <p>
+                            
+                        </p>
                     </div>
                 </t>
             </t>
@@ -22,8 +29,8 @@
         
         <report
                 id="report_print_template_sale_order"
-                string="Pedido de venta"
-                model="sale.order"
+                string="Vale de entrega comaderas"
+                model="stock.picking"
                 report_type="qweb-pdf"
                 name="comaderas_reports.report_print_sale_order_report"
         />

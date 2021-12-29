@@ -5,3 +5,5 @@ class ResCompany(models.Model):
 
     terms = fields.Text(
         string="Terms")
+    picking_terms = fields.Text(
+        string="Terms")
