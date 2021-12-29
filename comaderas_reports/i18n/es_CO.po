@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-27 23:14+0000\n"
-"PO-Revision-Date: 2021-12-27 23:14+0000\n"
+"POT-Creation-Date: 2021-12-29 23:48+0000\n"
+"PO-Revision-Date: 2021-12-29 23:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,32 @@ msgstr ""
 
 #. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid ""
+"<br/>\n"
+"                            <span>NIT:</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid ""
+"<br/>\n"
+"                            <span>RESPONSABLE DE IVA - TARIFA ICA 8 X 1000</span><br/>\n"
+"                            <span>NO SOMOS GRANDES CONTIBUYENTES ACTIVIDAD ECONOMICA 4752</span><br/>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
 msgid ""
 "<br/>\n"
 "                        <strong>CC/NIT:</strong><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid ""
+"<br/>\n"
+"                        <strong>Ciudad:</strong><span> </span>"
 msgstr ""
 
 #. module: comaderas_reports
@@ -51,8 +74,23 @@ msgid ""
 msgstr ""
 
 #. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<span>Autorizamos despachar los siguientes productos:</span>"
+msgstr ""
+
+#. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
 msgid "<span>Cantidad</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<span>Contacto:</span><span> </span><span/>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<span>Código:</span><span> </span>"
 msgstr ""
 
 #. module: comaderas_reports
@@ -61,13 +99,33 @@ msgid "<span>Código</span>"
 msgstr ""
 
 #. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<span>Dirección:</span><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
 msgid "<span>Disc.%</span>"
 msgstr ""
 
 #. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<span>Nit:</span><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<span>ORDEN DE COMPRA No.</span><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
 msgid "<span>Producto</span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<span>Proveedor:</span><span> </span>"
 msgstr ""
 
 #. module: comaderas_reports
@@ -82,6 +140,7 @@ msgstr ""
 
 #. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
 msgid "<strong class=\"mr16\">Subtotal</strong>"
 msgstr ""
 
@@ -91,8 +150,33 @@ msgid "<strong>Amount Due</strong>"
 msgstr ""
 
 #. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<strong>Cantidad</strong>"
+msgstr ""
+
+#. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
 msgid "<strong>Cliente:</strong><span> </span>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<strong>Costo total</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<strong>Costo unitario</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<strong>Código</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<strong>Descripción</strong>"
 msgstr ""
 
 #. module: comaderas_reports
@@ -102,7 +186,12 @@ msgstr ""
 
 #. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
-msgid "<strong>Incoterm: </strong>"
+msgid "<strong>Número de crédito:</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_sale_order_report
+msgid "<strong>Order:</strong>"
 msgstr ""
 
 #. module: comaderas_reports
@@ -112,12 +201,44 @@ msgstr ""
 
 #. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Plazo meses:</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_sale_order_report
+msgid "<strong>Product</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_sale_order_report
+msgid "<strong>Quantity</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_sale_order_report
+msgid "<strong>Shipping Date:</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
 msgid "<strong>Subtotal</strong>"
 msgstr ""
 
 #. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "<strong>Tipo de crédito:</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
 msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "<strong>Und</strong>"
 msgstr ""
 
 #. module: comaderas_reports
@@ -132,12 +253,34 @@ msgstr "Compañías"
 
 #. module: comaderas_reports
 #: model:ir.actions.report,name:comaderas_reports.report_print_product_labels_report
-msgid "Etiquetas de productos"
+msgid "Etiquetas de productos Comaderas"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_sale_order_report
+msgid "FIRMA AUTORIZADA"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_sale_order_report
+msgid "FIRMA ELABORADOR"
 msgstr ""
 
 #. module: comaderas_reports
 #: model:ir.actions.report,name:comaderas_reports.report_print_comaderas_invoice
 msgid "Factura Comaderas"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "Forma de pago:"
+msgstr ""
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_sale_order_report
+msgid "Lot/Serial Number"
 msgstr ""
 
 #. module: comaderas_reports
@@ -151,14 +294,34 @@ msgid "Pagado"
 msgstr ""
 
 #. module: comaderas_reports
-#: model:ir.actions.report,name:comaderas_reports.report_print_template_sale_order
-msgid "Pedido de venta"
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
+msgid "Pasado 10 Días calendario no se aceptara devolución de mercancía"
 msgstr ""
+
+#. module: comaderas_reports
+#: model:ir.model.fields,field_description:comaderas_reports.field_res_company__picking_terms
+msgid "Picking terms"
+msgstr "Términos y condiciones vale entrega"
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "Taxes"
+msgstr "Impuestos"
 
 #. module: comaderas_reports
 #: model:ir.model.fields,field_description:comaderas_reports.field_res_company__terms
 msgid "Terms"
 msgstr "Términos y condiciones"
+
+#. module: comaderas_reports
+#: model_terms:ir.ui.view,arch_db:comaderas_reports.report_print_purchase_order_report
+msgid "Tiempo de entrega dias:"
+msgstr ""
+
+#. module: comaderas_reports
+#: model:ir.actions.report,name:comaderas_reports.report_print_template_sale_order
+msgid "Vale de entrega comaderas"
+msgstr ""
 
 #. module: comaderas_reports
 #: model_terms:ir.ui.view,arch_db:comaderas_reports.report_comaderas_invoice
