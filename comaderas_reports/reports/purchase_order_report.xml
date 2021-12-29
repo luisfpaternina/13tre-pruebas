@@ -26,6 +26,20 @@
                                     </td>
                                 </tr>
                             </table>
+                            <table>
+                                <tr>
+                                    <td>Nit</td>
+                                </tr>
+                                <tr>
+                                    <td>Proveedor</td>
+                                </tr>
+                                <tr>
+                                    <td>Dirección</td>
+                                </tr>
+                                <tr>
+                                    <td>Código</td>
+                                </tr>
+                            </table>
                        </div>
                     </div>
                     <div class="footer">
