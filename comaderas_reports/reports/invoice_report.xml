@@ -227,17 +227,6 @@
                         <span t-field="o.narration"/>
                     </p>
                        </div>
-                    <div id="separador"></div>
-                    <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                        <hr class="new5"></hr>Firma Bodega
-                    </div>
-                    <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
-                         <hr class="new5"></hr>Firma Cliente
-                    </div>
-                    <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left; height: 500px;'>
-                         <span>Nombre:</span><br></br>
-                         <span>CC/NIT:</span>
-                    </div>
                     </div>
                     <div class="footer">
                         <p style="font-size:12px" align="justify">
