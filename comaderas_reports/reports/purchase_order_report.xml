@@ -45,6 +45,12 @@
                                     <td>Forma de pago:</td>
                                 </tr>
                             </table>
+                            <table width="100%">
+                                <tr>
+                                    <td><span>Autorizamos despachar los siguientes productos</span></td>
+                                    <td><span>Contacto:</span><span> </span><span></span></td>
+                                </tr>
+                            </table>
                        </div>
                     </div>
                     <div class="footer">
