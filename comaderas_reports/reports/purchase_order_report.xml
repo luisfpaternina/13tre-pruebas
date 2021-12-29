@@ -180,5 +180,9 @@
                 name="comaderas_reports.report_print_purchase_order_report"
         />
 
+        <record id="comaderas_reports.report_print_template_purchase_order" model="ir.actions.report">
+            <field name="paperformat_id" ref="comaderas_reports.paperformat_a4_comaderas"/>
+        </record>
+
   </data>
 </odoo>
