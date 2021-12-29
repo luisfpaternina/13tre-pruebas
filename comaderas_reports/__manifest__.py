@@ -22,6 +22,7 @@
     'data': [
 
         "views/res_company.xml",
+        "reports/paper_format.xml",
         "reports/invoice_report.xml",
         "reports/product_labels_report.xml",
         "reports/sale_order_report.xml",
