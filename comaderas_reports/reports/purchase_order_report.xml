@@ -14,9 +14,18 @@
                     </div>
                     <div class="article o_report_layout_standard">
                         <div class="page">
-                            <h3>
-                                <span>ORDEN DE COMPRA No.</span><span> </span><span t-field="o.name"></span>
-                            </h3>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span t-field="o.picking_type_id"></span>
+                                    </td>
+                                    <td>
+                                        <h3>
+                                            <span>ORDEN DE COMPRA No.</span><span> </span><span t-field="o.name"></span>
+                                        </h3>
+                                    </td>
+                                </tr>
+                            </table>
                        </div>
                     </div>
                     <div class="footer">
