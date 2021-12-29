@@ -14,6 +14,24 @@
                     </div>
                     <div class="article o_report_layout_standard">
                         <div class="page">
+                            <style>
+                                div#separador{
+                                width:900px;
+                                height:100px;
+                                background-color:white;
+                                float:left;
+                                }
+                                div#cuadro{
+                                width:250px;
+                                height:20px;
+                                background-color:white;
+                                float:left;
+                                }
+                                hr.new5 {
+                                border: 1px solid black;
+                                border-radius: 1px;
+                                }
+                            </style>
                             <table width="100%">
                                 <tr>
                                     <td>
@@ -138,7 +156,14 @@
                                     </table>
                                 </div>
                             </div>
-                       </div>
+                            <div id="separador"></div>
+                            <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
+                                <hr class="new5"></hr>FIRMA ELABORADOR
+                            </div>
+                            <div id="cuadro" style='float: left; margin: 10px; padding: 5px; text-align: left;'>
+                                <hr class="new5"></hr>FIRMA AUTORIZADA
+                            </div>
+                            </div>
                     </div>
                     <div class="footer">
                         <p></p>
