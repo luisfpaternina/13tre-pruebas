@@ -49,8 +49,8 @@
                         </h2>
                     <div>
                         <strong>Cliente:</strong><span> </span><span t-field="o.partner_id"></span><br></br>
-                        <strong>Dirección:</strong><span> </span><span t-field="o.partner_id.street"></span><br></br>
                         <strong>CC/NIT:</strong><span> </span><span t-field="o.partner_id.vat"></span><br></br>
+                        <strong>Dirección:</strong><span> </span><span t-field="o.partner_id.street"></span><br></br>
                         <strong>Télefono:</strong><span> </span><span t-field="o.partner_id.phone"></span><br></br>
                         <strong>Ciudad:</strong><span> </span><span t-field="o.partner_id.town_id"></span>
                     </div>
