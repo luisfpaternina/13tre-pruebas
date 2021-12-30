@@ -39,7 +39,7 @@
                         <br></br><br></br><br></br><br></br>
                         <h2 class="mt16">
                             <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
-                                <span t-if="o.state not in ['draft','sent']">Order # </span>
+                                <span t-if="o.state not in ['draft','sent']">Orden de venta # </span>
                                 <span t-if="o.state in ['draft','sent']">Cotización # </span>
                             </t>
                             <t t-if="env.context.get('proforma', False) or is_pro_forma">
@@ -85,7 +85,7 @@
                         <th class="text-left">Código</th>
                         <th name="th_description" class="text-left">Producto</th>
                         <th name="th_quantity" class="text-right">Cantidad</th>
-                        <th name="th_priceunit" class="text-right">Vlr unitario</th>
+                        <th name="th_priceunit" class="text-right">Vlr.unt</th>
                         <th name="th_discount" t-if="display_discount" class="text-right" groups="product.group_discount_per_so_line">
                             <span>Disc.%</span>
                         </th>
