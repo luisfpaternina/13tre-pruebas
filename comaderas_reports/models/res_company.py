@@ -7,3 +7,7 @@ class ResCompany(models.Model):
         string="Terms")
     picking_terms = fields.Text(
         string="Picking terms")
+    purchase_terms = fields.Text(
+        string="Purchase terms")
+    sale_terms = fields.Text(
+        string="Sale terms")
