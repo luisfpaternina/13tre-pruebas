@@ -64,11 +64,11 @@
                     <strong>Order Date:</strong>
                     <p class="m-0" t-field="o.date_order"/>
                 </div>
-                <div t-if="o.date_order and doc.state in ['draft','sent']" class="col-auto mw-100 mb-2">
+                <div t-if="o.date_order and o.state in ['draft','sent']" class="col-auto mw-100 mb-2">
                     <strong>Quotation Date:</strong>
                     <p class="m-0" t-field="o.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
                 </div>
-                <div t-if="o.validity_date and doc.state in ['draft', 'sent']" class="col-auto mw-100 mb-2" name="expiration_date">
+                <div t-if="o.validity_date and o.state in ['draft', 'sent']" class="col-auto mw-100 mb-2" name="expiration_date">
                     <strong>Expiration:</strong>
                     <p class="m-0" t-field="o.validity_date"/>
                 </div>
