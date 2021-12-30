@@ -36,7 +36,7 @@
                                 border-radius: 1px;
                                 }
                             </style>
-                        <br></br><br></br>
+                        <br></br><br></br><br></br><br></br>
                         <h2 class="mt16">
                             <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
                                 <span t-if="o.state not in ['draft','sent']">Order # </span>
