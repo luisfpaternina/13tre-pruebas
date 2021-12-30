@@ -9,7 +9,8 @@
                         <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
                         <p style="font-size:10vw">
                             <span t-field="o.company_id"></span><br></br>
-                            <span>NIT:</span><span t-field="o.company_id.vat"></span>
+                            <span>NIT:</span><span t-field="o.company_id.vat"></span><br></br>
+                            <span>Dirección:</span><span t-field="o.company_id.street"></span>
                         </p>
                     </div>
                     <div class="article o_report_layout_standard">
