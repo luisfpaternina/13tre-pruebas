@@ -57,23 +57,23 @@
 
                 <div class="row mt32 mb32" id="informations">
                 <div t-if="o.client_order_ref" class="col-auto mw-100 mb-2">
-                    <strong>Your Reference:</strong>
+                    <strong>Referencia:</strong>
                     <p class="m-0" t-field="o.client_order_ref"/>
                 </div>
                 <div t-if="o.date_order and o.state not in ['draft','sent']" class="col-auto mw-100 mb-2">
-                    <strong>Order Date:</strong>
+                    <strong>Fecha orden:</strong>
                     <p class="m-0" t-field="o.date_order"/>
                 </div>
                 <div t-if="o.date_order and o.state in ['draft','sent']" class="col-auto mw-100 mb-2">
-                    <strong>Quotation Date:</strong>
+                    <strong>Fecha cotización:</strong>
                     <p class="m-0" t-field="o.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
                 </div>
                 <div t-if="o.validity_date and o.state in ['draft', 'sent']" class="col-auto mw-100 mb-2" name="expiration_date">
-                    <strong>Expiration:</strong>
+                    <strong>Expiración:</strong>
                     <p class="m-0" t-field="o.validity_date"/>
                 </div>
                 <div t-if="o.user_id.name" class="col-auto mw-100 mb-2">
-                    <strong>Salesperson:</strong>
+                    <strong>Vendedor:</strong>
                     <p class="m-0" t-field="o.user_id"/>
                 </div>
             </div>
@@ -82,16 +82,17 @@
             <table class="table table-sm o_main_table">
                 <thead>
                     <tr>
-                        <th name="th_description" class="text-left">Description</th>
-                        <th name="th_quantity" class="text-right">Quantity</th>
-                        <th name="th_priceunit" class="text-right">Unit Price</th>
+                        <th class="text-left">Código</th>
+                        <th name="th_description" class="text-left">Producto</th>
+                        <th name="th_quantity" class="text-right">Cantidad</th>
+                        <th name="th_priceunit" class="text-right">Vlr unitario</th>
                         <th name="th_discount" t-if="display_discount" class="text-right" groups="product.group_discount_per_so_line">
                             <span>Disc.%</span>
                         </th>
-                        <th name="th_taxes" class="text-right">Taxes</th>
+                        <th name="th_taxes" class="text-right">Impuestos</th>
                         <th name="th_subtotal" class="text-right">
-                            <t groups="account.group_show_line_subtotals_tax_excluded">Amount</t>
-                            <t groups="account.group_show_line_subtotals_tax_included">Total Price</t>
+                            <t groups="account.group_show_line_subtotals_tax_excluded">Precio unitario</t>
+                            <t groups="account.group_show_line_subtotals_tax_included">Precio total</t>
                         </th>
                     </tr>
                 </thead>
@@ -106,6 +107,7 @@
 
                         <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                             <t t-if="not line.display_type">
+                                <td name="td_name"><span t-field="line.product_id.default_code"/></td>
                                 <td name="td_name"><span t-field="line.name"/></td>
                                 <td name="td_quantity" class="text-right">
                                     <span t-field="line.product_uom_qty"/>
