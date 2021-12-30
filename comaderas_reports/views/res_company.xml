@@ -8,6 +8,8 @@
             <xpath expr="//field[(@name='website')]" position="after">
                 <field name="terms"/>
                 <field name="picking_terms"/>
+                <field name="purchase_terms"/>
+                <field name="sale_terms"/>
             </xpath>
         </field>
     </record>
