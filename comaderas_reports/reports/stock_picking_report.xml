@@ -118,7 +118,7 @@
                             </div>
                     </div>
                     <div class="footer">
-                        <p aling="justify">
+                        <p style="font-size:12px" align="justify">
                             <span t-field="o.company_id.picking_terms"></span>
                         </p>
                     </div>
