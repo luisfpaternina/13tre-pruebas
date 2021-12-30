@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <data>
+       
+        <template id="report_comaderas_sale_order">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">                    
+                    <div class="header">
+                        <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="115" height="90"/>
+                        <p style="font-size:10vw">
+                            <span t-field="o.company_id"></span><br></br>
+                            <span>NIT:</span><span t-field="o.company_id.vat"></span><br></br>
+                            <span t-field="o.company_id.street"></span><br></br>
+                            <span>RESPONSABLE DE IVA - TARIFA ICA 8 X 1000</span><br></br>
+                            <span>NO SOMOS GRANDES CONTIBUYENTES ACTIVIDAD ECONOMICA 4752</span><br></br>
+                            <span t-field="o.company_id.phone"></span>
+                        </p>
+                    </div>
+                    <div class="article o_report_layout_standard">
+                        <div class="page">
+                            <style>
+                                div#separador{
+                                width:900px;
+                                height:100px;
+                                background-color:white;
+                                float:left;
+                                }
+                                div#cuadro{
+                                width:250px;
+                                height:20px;
+                                background-color:white;
+                                float:left;
+                                }
+                                hr.new5 {
+                                border: 1px solid black;
+                                border-radius: 1px;
+                                }
+                            </style>
+                        <br></br><br></br>
+                        <h2 class="mt16">
+                            <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                                <span t-if="o.state not in ['draft','sent']">Order # </span>
+                                <span t-if="o.state in ['draft','sent']">Cotización # </span>
+                            </t>
+                            <t t-if="env.context.get('proforma', False) or is_pro_forma">
+                                <span>Pro-Forma # </span>
+                            </t>
+                                <span t-field="o.name"/>
+                        </h2>
+                    <div>
+                        <strong>Cliente:</strong><span> </span><span t-field="o.partner_id"></span><br></br>
+                        <strong>Dirección:</strong><span> </span><span t-field="o.partner_id.street"></span><br></br>
+                        <strong>CC/NIT:</strong><span> </span><span t-field="o.partner_id.vat"></span><br></br>
+                        <strong>Télefono:</strong><span> </span><span t-field="o.partner_id.phone"></span><br></br>
+                        <strong>Ciudad:</strong><span> </span><span t-field="o.partner_id.town_id"></span>
+                    </div>
+
+                    <div id="informations" class="row mt32 mb32">
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.credit_payment">
+                            <strong>Fecha:</strong>
+                            <p class="m-0" t-field="o.date_order"/>
+                        </div>
+                        <div class="col-auto col-3 mw-100 mb-2" t-if="o.credit_payment">
+                            <strong>Vendedor:</strong>
+                            <p class="m-0" t-field="o.user_id"/>
+                        </div>
+                    </div>
+
+                    </div>
+                    </div>
+                    <div class="footer">
+                        <p style="font-size:12px" align="justify">
+                            <span t-field="o.company_id.sale_terms"></span>
+                        </p>
+                    </div>
+                </t>
+            </t>
+        </template>
+        
+        <report
+                id="report_print_comaderas_sale_order"
+                string="Orden de venta comaderas"
+                model="sale.order"
+                report_type="qweb-pdf"
+                name="comaderas_reports.report_comaderas_sale_order"
+        />
+
+        <record id="comaderas_reports.report_print_comaderas_sale_order" model="ir.actions.report">
+            <field name="paperformat_id" ref="comaderas_reports.paperformat_a4_comaderas"/>
+        </record>
+
+  </data>
+</odoo>

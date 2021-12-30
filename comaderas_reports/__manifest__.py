@@ -27,6 +27,7 @@
         "reports/product_labels_report.xml",
         "reports/stock_picking_report.xml",
         "reports/purchase_order_report.xml",
+        "reports/sale_report.xml",
 
     ],
     
