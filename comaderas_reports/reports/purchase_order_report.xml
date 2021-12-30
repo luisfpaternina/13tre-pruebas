@@ -56,11 +56,11 @@
                                 </tr>
                                 <tr>
                                     <td><span>Dirección:</span><span> </span><span t-field="o.partner_id.street"></span></td>
-                                    <td></td>
+                                    <td>Forma de pago:</td>
                                 </tr>
                                 <tr>
                                     <td><span>Código:</span><span> </span><span t-field="o.partner_ref"></span></td>
-                                    <td>Forma de pago:</td>
+                                    <td></td>
                                 </tr>
                             </table>
                             <br></br>
