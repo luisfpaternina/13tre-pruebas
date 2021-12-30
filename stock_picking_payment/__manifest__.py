@@ -9,6 +9,8 @@
 
     'website': "http://www.bitsamericas.com",
 
+    'contributors': ['Luis Felipe Paternina'],
+
     'category': 'Operations/Inventory',
 
     'version': '13.0.0.1.3',
