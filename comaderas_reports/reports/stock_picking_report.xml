@@ -9,8 +9,9 @@
                         <img t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" width="130" height="100"/>
                         <p style="font-size:10vw">
                             <span t-field="o.company_id"></span><br></br>
+                            <span>Nit</span><span t-field="o.company_id.vat"></span><br></br>
                             <span t-field="o.company_id.street"></span><br></br>
-                            <span t-field="o.company_id.phone"></span>
+                            <span>Télefono</span><span t-field="o.company_id.phone"></span>
                         </p>
                     </div>
                     <div class="article o_report_layout_standard">
