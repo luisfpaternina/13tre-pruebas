@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_helpdesk_vehicle_brand_search" model="ir.ui.view">
+        <field name="name">view.helpdesk_vehicle_brand.search</field>
+        <field name="model">helpdesk.vehicle.brand</field>
+        <field name="arch" type="xml">
+            <search string="Helpdesk Vehicle Brand Search">
+                <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
+                <separator/>
+                <field name="name" filter_domain="[('name', 'ilike', self)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_helpdesk_vehicle_brand_form" model="ir.ui.view">
+        <field name="name">view.helpdesk_vehicle_brand.form</field>
+        <field name="model">helpdesk.vehicle.brand</field>
+        <field name="arch" type="xml">
+            <form string="Helpdesk Vehicle Brand">
+                <header>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group name="main">
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_helpdesk_vehicle_brand_tree" model="ir.ui.view">
+        <field name="name">view.helpdesk_vehicle_brand.tree</field>
+        <field name="model">helpdesk.vehicle.brand</field>
+        <field name="arch" type="xml">
+            <tree string="Helpdesk Vehicle Brands">
+                <field name="name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_helpdesk_vehicle_brand" model="ir.actions.act_window">
+        <field name="name">Vehicle brands</field>
+        <field name="res_model">helpdesk.vehicle.brand</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_helpdesk_vehicle_brand_search"/>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new vehicle brand
+                </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_helpdesk_vehicle_brand" action="action_helpdesk_vehicle_brand"
+        sequence="10" parent="helpdesk.helpdesk_menu_config"/>
+
+</odoo>
+
+

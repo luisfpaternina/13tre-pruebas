@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+
+        <record id="res_partner_view_form_inherit_nfs" model="ir.ui.view">
+            <field name="name">res.partner.form.view.form.inherit.nfs</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="priority">30</field>
+            <field name="arch" type="xml">
+                  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='sales_purchases']" position="inside">
+                          <div class="o_horizontal_separator">Información Riesgos</div>
+                          <br/>
+                          <b>Riesgo Concedido: </b>
+                          <field string="Riesgo Concedido" name="riesgo_concedido" />
+                          <br/>
+                          <b>Riesgo Disponible: </b>
+                          <field string="Riesgo Disponible" name="riesgo_disponible" readonly="True" />
+                  </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,525 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eaata_helpdesk
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e-20200505\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-18 11:59+0000\n"
+"PO-Revision-Date: 2020-12-18 11:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.helpdesk_ticket_view_form
+msgid "<span class=\"o_form_label\">Picture</span>"
+msgstr "<span class=\"o_form_label\">Imagen</span>"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__active
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__active
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__active
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_brand_search
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_model_search
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_vehicle_brand_search
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_year_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields.selection,name:eaata_helpdesk.selection__helpdesk_ticket_type__type__assistance
+msgid "Assistance"
+msgstr "Asistencia"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.helpdesk_ticket_view_form
+msgid "Attach photo"
+msgstr "Adjuntar foto"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.helpdesk_ticket_view_form
+msgid "Brand"
+msgstr "Marca"
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_helpdesk_tool_brand
+msgid "Brand of tool"
+msgstr "Marca de herramienta"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__tool_brand_ids
+msgid "Brand of tools"
+msgstr "Marcas de herramientas"
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_helpdesk_vehicle_brand
+msgid "Brand of vehicle"
+msgstr "Marca de vehículo"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.helpdesk_ticket_view_form
+msgid "Chasis"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.actions.act_window,help:eaata_helpdesk.product_template_action_service
+msgid "Create a new service"
+msgstr "Crear nuevo servicio"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.actions.act_window,help:eaata_helpdesk.action_helpdesk_tool_brand
+msgid "Create a new tool brand"
+msgstr "Crea una nueva marca de herramientas"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.actions.act_window,help:eaata_helpdesk.action_helpdesk_tool_model
+msgid "Create a new tool model"
+msgstr "Crea un nuevo modelo de herramienta"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.actions.act_window,help:eaata_helpdesk.action_helpdesk_vehicle_brand
+msgid "Create a new vehicle brand"
+msgstr "Crea una nueva marca de vehículo"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.actions.act_window,help:eaata_helpdesk.action_helpdesk_year
+msgid "Create a new year"
+msgstr "Crea un nuevo año"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__create_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__create_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__create_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__create_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__create_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__create_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__create_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__create_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__create_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__create_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__create_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__create_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__display_name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__display_name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__display_name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__display_name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__display_name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__display_name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,help:eaata_helpdesk.field_res_partner_tool__date_to
+msgid "End date of support service."
+msgstr "Fecha de finalización del servicio de soporte."
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__date_from
+msgid "From"
+msgstr "Desde"
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Tiquete del Servicio de Asistencia"
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_helpdesk_ticket_type
+msgid "Helpdesk Ticket Type"
+msgstr "Tipo de Ticket del Servicio de asistencia técnica"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_brand_form
+msgid "Helpdesk Tool Brand"
+msgstr "Marca de la herramienta de asistencia técnica"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_brand_search
+msgid "Helpdesk Tool Brand Search"
+msgstr "Búsqueda de marca de la herramienta de asistencia técnica"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_brand_tree
+msgid "Helpdesk Tool Brands"
+msgstr "Marcas de herramientas de la mesa de ayuda"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_model_form
+msgid "Helpdesk Tool Model"
+msgstr "Modelo de herramienta de soporte técnico"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_model_search
+msgid "Helpdesk Tool Model Search"
+msgstr "Búsqueda de modelos de herramientas de soporte técnico"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_model_tree
+msgid "Helpdesk Tool Models"
+msgstr "Modelos de herramientas de soporte técnico"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_vehicle_brand_form
+msgid "Helpdesk Vehicle Brand"
+msgstr "Marca del vehículo"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_vehicle_brand_search
+msgid "Helpdesk Vehicle Brand Search"
+msgstr "Búsqueda de marcas de vehículos"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_vehicle_brand_tree
+msgid "Helpdesk Vehicle Brands"
+msgstr "Marcas del vehículos"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_year_form
+msgid "Helpdesk Year"
+msgstr "Año"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_year_tree
+msgid "Helpdesk Year Brands"
+msgstr "Año"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_year_search
+msgid "Helpdesk Year Search"
+msgstr "Búsqueda de año"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__id
+msgid "ID"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__ticket_type
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket_type__type
+msgid "Internal Type"
+msgstr "Tipo interno"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool____last_update
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand____last_update
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model____last_update
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle____last_update
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand____last_update
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year____last_update
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__write_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__write_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__write_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__write_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__write_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__write_uid
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__write_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__write_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__write_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__write_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__write_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__write_date
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__lead_id
+msgid "Lead"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Iniciativa/Oportunidad"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.helpdesk_ticket_view_form
+msgid "Model"
+msgstr "Modelo"
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_helpdesk_tool_model
+msgid "Model of tool"
+msgstr "Modelo de herramienta"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_product_product__tool_vehicle_ids
+msgid "Models and vehicles"
+msgstr "Modelos y vehículos"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__need_vehicle
+msgid "Need Vehicle"
+msgstr "Necesita vehículo"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__need_year
+msgid "Need Year"
+msgstr "Necesita año"
+
+#. module: eaata_helpdesk
+#: code:addons/eaata_helpdesk/models/helpdesk_ticket.py:0
+#: code:addons/eaata_helpdesk/models/helpdesk_ticket.py:0
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: eaata_helpdesk
+#: code:addons/eaata_helpdesk/models/crm_lead.py:0
+#, python-format
+msgid "Please select a customer."
+msgstr "Por favor selecciones un cliente"
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: eaata_helpdesk
+#: model:ir.actions.act_window,name:eaata_helpdesk.product_template_action_service
+msgid "Products"
+msgstr "Productos"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__name
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__name
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__name
+msgid "Serial Number"
+msgstr "No. de Serie"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__product_id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__product_id
+msgid "Service"
+msgstr "Servicio"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_vehicle_brand__service_vehicle_ids
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_year__product_ids
+#: model:ir.ui.menu,name:eaata_helpdesk.product_product_menu_purchasable
+msgid "Services"
+msgstr "Servicios"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__service_vehicle_ids
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.view_helpdesk_tool_model_form
+msgid "Services and vehicles"
+msgstr "Servicios y vehículos"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,help:eaata_helpdesk.field_res_partner_tool__date_from
+msgid "Start date of support service."
+msgstr "Fecha de inicio del servicio de soporte."
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields.selection,name:eaata_helpdesk.selection__helpdesk_ticket_type__type__support
+msgid "Support"
+msgstr "Soporte"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner__support_active
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_users__support_active
+msgid "Support active"
+msgstr "Soporte activo"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__date_to
+msgid "To"
+msgstr "Hasta"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__tool_brand_id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__tool_brand_id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_model__tool_brand_id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__tool_brand_id
+msgid "Tool brand"
+msgstr "Marca de herramienta"
+
+#. module: eaata_helpdesk
+#: model:ir.model.constraint,message:eaata_helpdesk.constraint_helpdesk_tool_brand_name_uniq
+msgid "Tool brand already exists."
+msgstr "La marca de herramienta ya existe."
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__tool_brand_domain
+msgid "Tool brand domain"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.actions.act_window,name:eaata_helpdesk.action_helpdesk_tool_brand
+#: model:ir.ui.menu,name:eaata_helpdesk.menu_helpdesk_tool_brand
+msgid "Tool brands"
+msgstr "Marcas de herramientas"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.helpdesk_ticket_view_form
+msgid "Tool information"
+msgstr "Información de la herramienta"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead_tool__tool_model_id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__tool_model_id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__tool_model_id
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner_tool__tool_model_id
+msgid "Tool model"
+msgstr "Modelo de herramienta"
+
+#. module: eaata_helpdesk
+#: model:ir.model.constraint,message:eaata_helpdesk.constraint_helpdesk_tool_model_name_uniq
+msgid "Tool model already exists."
+msgstr "El modelo de herramienta ya existe."
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__tool_model_domain
+msgid "Tool model domain"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.actions.act_window,name:eaata_helpdesk.action_helpdesk_tool_model
+#: model:ir.ui.menu,name:eaata_helpdesk.menu_helpdesk_tool_model
+msgid "Tool models"
+msgstr "Modelos de herramientas"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_crm_lead__tool_ids
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_partner__tool_ids
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_res_users__tool_ids
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.crm_lead_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.res_partner_view_form_inherit
+msgid "Tools"
+msgstr "Herramientas"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__vehicle_brand_id
+msgid "Vehicle brand"
+msgstr "Marca del vehículo"
+
+#. module: eaata_helpdesk
+#: model:ir.model.constraint,message:eaata_helpdesk.constraint_helpdesk_vehicle_brand_name_uniq
+msgid "Vehicle brand already exists."
+msgstr "La marca del vehículo ya existe."
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__vehicle_brand_domain
+msgid "Vehicle brand domain"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.actions.act_window,name:eaata_helpdesk.action_helpdesk_vehicle_brand
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_service_vehicle__vehicle_brand_ids
+#: model:ir.ui.menu,name:eaata_helpdesk.menu_helpdesk_vehicle_brand
+msgid "Vehicle brands"
+msgstr "Marcas del vehículos"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__vehicle_chasis
+msgid "Vehicle chasis"
+msgstr "Chasis del vehículo"
+
+#. module: eaata_helpdesk
+#: model_terms:ir.ui.view,arch_db:eaata_helpdesk.helpdesk_ticket_view_form
+msgid "Vehicle information"
+msgstr "Información del vehículo"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__vehicle_model
+msgid "Vehicle model"
+msgstr "Modelo de vehículo"
+
+#. module: eaata_helpdesk
+#: model:ir.model.fields,help:eaata_helpdesk.field_helpdesk_ticket__image
+msgid "Will attach a image to your ticket."
+msgstr "Adjuntará una imagen a su ticket."
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_helpdesk_year
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_ticket__year_id
+msgid "Year"
+msgstr "Año"
+
+#. module: eaata_helpdesk
+#: model:ir.actions.act_window,name:eaata_helpdesk.action_helpdesk_year
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_helpdesk_tool_brand__year_ids
+#: model:ir.model.fields,field_description:eaata_helpdesk.field_product_product__year_ids
+#: model:ir.ui.menu,name:eaata_helpdesk.menu_helpdesk_year
+msgid "Years"
+msgstr "Años"
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_crm_lead_tool
+msgid "crm.lead.tool"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_helpdesk_tool_service_vehicle
+msgid "helpdesk.tool.service.vehicle"
+msgstr ""
+
+#. module: eaata_helpdesk
+#: model:ir.model,name:eaata_helpdesk.model_res_partner_tool
+msgid "res.partner.tool"
+msgstr ""

@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+
+        <record id="marcas_tree_view" model="ir.ui.view">
+          <field name="name">marcas.tree</field>
+          <field name="model">marcas</field>
+          <field name="arch" type="xml">
+              <tree>
+                <field name="name"/>
+              </tree>
+          </field>
+       </record>
+
+        <record id="marcas_tree_view_action"  model="ir.actions.act_window">
+                <field name="name">Gestión de marcas de automóvil</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">marcas</field>
+                <field name="context">{}</field>
+                <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem
+            name="Marcas Automóvil"
+            action="marcas_tree_view_action"
+            id="menu_marcas_request"
+            parent="stock.menu_stock_inventory_control"
+            groups="base.group_user"
+         />
+
+    </data>
+</odoo>

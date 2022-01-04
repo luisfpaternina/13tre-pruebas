@@ -1,0 +1,119 @@
+<odoo>
+    <data>
+        <record id="res_partner_view_form_inherit_intermedio" model="ir.ui.view">
+            <field name="name">res.partner.form.view.form.inherit.intermedio</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.user_groups_view"/>
+            <field name="priority">30</field>
+            <field name="arch" type="xml">
+                    <xpath expr="//field[@name='sel_groups_1_8_9']" position="after">
+                          <group col="2" attrs="{'invisible': [('sel_groups_1_8_9', '!=', 8)]}">
+                            <div class="o_horizontal_separator">Intermediario</div>
+                              <newline/>
+                              <field string="Es intermediario" name="intermediario" />
+                          </group>
+                    </xpath>
+            </field>
+        </record>
+
+        <record id="res_partner_view_form_inherit_nfs" model="ir.ui.view">
+            <field name="name">res.partner.form.view.form.inherit.nfs</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="priority">30</field>
+            <field name="arch" type="xml">
+                    <xpath expr="//field[@name='property_product_pricelist']" position="after">
+                        <field name="intermediario_id" widget="res_users_many2one" domain="[('intermediario', '=', True)]" />
+                        <newline/>
+                        <field string="Porcentaje comisión" name="porcentaje_intermediario" attrs="{'invisible': [('intermediario_id','=', False)]}" />
+                    </xpath>
+            </field>
+        </record>
+
+        <record id="view_move_tree_liquidation" model="ir.ui.view">
+            <field name="name">account.move.tree.liquidation</field>
+            <field name="model">account.move</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="state == 'draft'" string="Facturas / Liquidaciones" decoration-muted="state == 'cancel'">
+                    <field name="date"/>
+                    <!-- Hector: Se comenta el dia 18 julio 2020 petición marcos esc. -->
+                    <!-- <field name="name"/> -->
+                    <field name="partner_id" optional="show"/>
+                    <field name="ref" optional="show"/>
+                    <field name="journal_id"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                    <field name="amount_total_signed" sum="Total Amount" string="Total"/>
+                    <field name="state"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="total_liquidacion" invisible="1"/> <!--Alberto.23/07/21-->
+                    <field name="liquidation_amount"/> <!--Alberto.23/07/21-->
+                    <field name="es_liquidado"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_move_liquidation_invoices" model="ir.actions.act_window">
+            <field name="name">Invoices / Liquidations</field>
+            <field name="res_model">account.move</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="view_move_tree_liquidation"/>
+<!--            <field name="search_view_id" ref="view_account_invoice_filter"/>-->
+<!--            <field name="domain">[('type', '=', 'in_refund')]</field>-->
+<!--            <field name="context">{'default_type': 'in_refund'}</field>-->
+            <field name="domain">[('type', '=', 'out_invoice'), ('intermediario_partner_id','!=', False)]</field> <!--Alberto. 26/07/21. Listado sólo de Facturas con Intermediario-->
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+              </p><p>
+              </p>
+            </field>
+        </record>
+
+
+        <menuitem
+            id="menu_action_move_out_invoice_type"
+            action="action_move_liquidation_invoices"
+            parent="account.menu_finance_receivables"
+            name="Liquidaciones intermediarios"
+            sequence="1"/>
+
+         <menuitem id="menu_liquidaciones_intermediarios_tree" name="Liquidación Intermediarios" parent="account.account_reports_management_menu" action="action_move_liquidation_invoices"/>
+
+
+        <!--Alberto. 23/07/21. Añadir campo es_liquidado a vista Form para poder editarlo.-->
+        <record id="view_move_form" model="ir.ui.view">
+            <field name="name">account.view.move.form.inherit.show.liquidado</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='currency_id']" position="after">
+                    <field name="intermediario_partner_id" invisible="1"/>
+                    <field name="es_liquidado" attrs="{'invisible': ['|',  ('type', '!=', 'out_invoice'), ('type', '=', 'out_invoice'), ('intermediario_partner_id','=', False)]}"/>
+                    <!--<field name="es_liquidado" attrs="{'invisible': ['|', ('type', '!=', 'out_invoice'), ('type', '=', 'out_invoice'), ('partner_id.intermediario_id','=', False)]}"/>-->
+                </xpath>
+            </field>
+        </record>
+
+        <!--Alberto. 23/07/21.Inicio. Añadir posibilidad de filtro por campo Intermediario, añadir filtro "Liquidado" y posibilidad de agrupar por Intermediario-->
+        <record id="view_account_invoice_filter_inherit_liquidado" model="ir.ui.view">
+            <field name="name">view.account.invoice.filter.inherit.liquidado</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="intermediario_partner_id"/> 
+                </xpath>
+                <xpath expr="//filter[@name='activities_overdue']" position="after">
+                    <separator/>
+                    <field name="type" invisible="1"/>
+                    <filter string="Liquidado" name="filter_liquidado" domain="[('es_liquidado', '=', True), ('liquidation_amount','&gt;', 0)]"/>
+                    <separator/>
+                </xpath>
+                <xpath expr="//filter[@name='duedate']" position="after">
+                    <field name="type" invisible="1"/>
+                    <filter string="Intermediario" name="groupby_intermediario" domain="[]" context="{'group_by':'intermediario_partner_id'}"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

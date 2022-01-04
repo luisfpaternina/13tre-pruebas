@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Multi brand filter ProcessControl - 20/07/2020
+    <template id="product_multibrand_attribute" inherit_id="website_sale.sort">
+        <xpath expr="//div[hasclass('dropdown_sorty_by')]" position="before">
+
+            <t t-set="multibrand_list" t-value="request.website.get_multibrand()"/>
+            <t t-if="request.params.get('automovil')" t-set="website_sale_multibrand_current" t-value="request.params.get('automovil')"/>
+
+            <div class="dropdown mt-3 ml-sm-2 dropdown_sorty_by">
+                <t t-if='website_sale_multibrand_current'>
+                    <a role="button" href="#" class="dropdown-toggle btn te_sort_btn" data-toggle="dropdown">
+                        Marca: <t t-raw='website_sale_multibrand_current'/>
+                    </a>
+                </t>
+                <t t-else='1'>
+                    <a role="button" href="#" class="dropdown-toggle btn te_sort_btn" data-toggle="dropdown">
+                        Marca Automóvil:
+                    </a>
+                </t>
+                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                    <t t-foreach="multibrand_list" t-as="brand">
+                        <a role="menuitem" rel="noindex,nofollow" t-att-href="keep('/shop', multibrand=brand.id, automovil=brand.name)" class="dropdown-item">
+                            <span t-raw="brand.name"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>-->
+    <template id="product_brand_attribute" inherit_id="website_sale.products_attributes">
+        <xpath expr="//form/ul" position="before">
+            <t t-set="multibrand_list" t-value="request.website.get_multibrand()"/>
+            <label for="selector_marca_automovil" style="margin-top:10px !important; margin-bottom:10px; !important">Marca Automóvil</label>
+            <select id="selector_marca_automovil" name="attrib" class="form-control">
+                <option value=""/>
+                <t t-foreach="multibrand_list" t-as="multibrand">
+                    <li class="nav-item">
+                        <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if [0,multibrand.id] in attrib_values else ''}">
+                            <option t-att-value="'999999-%s' % (multibrand.id)" t-att-selected="multibrand.id in attrib_set">
+                                <t t-raw='multibrand.name'/>
+                            </option>
+                        </label>
+                    </li>
+                </t>
+            </select>
+        </xpath>
+        <!--<xpath expr="//div[@id='product_brand_attribute']" position="attributes">
+            <attribute name="style">display:none</attribute>
+        </xpath>-->
+    </template>
+    <template id="website_sale_products_search_box_2" inherit_id="website.website_search_box">
+        <xpath expr="//div[@role='search']" position="inside">
+            <t t-if="attrib_values">
+                <t t-foreach="attrib_values" t-as="a">
+                    <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])" />
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

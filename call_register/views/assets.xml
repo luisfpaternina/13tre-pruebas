@@ -1,0 +1,16 @@
+<odoo>
+    <template id="assets_backend" name="Call Dashboard" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <!--SCSS-->
+<!--            <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"/>-->
+            <link rel="stylesheet" type="text/scss" href="/call_register/static/src/scss/style.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/call_register/static/src/lib/bootstrap-toggle-master/css/bootstrap-toggle.min.css"/>
+
+            <!--JS-->
+            <script type="text/javascript" src="/call_register/static/src/lib/Chart.bundle.min.js"/>
+            <script type="text/javascript" src="/call_register/static/src/lib/Chart.min.js"/>
+            <script type="text/javascript" src="/call_register/static/src/lib/bootstrap-toggle-master/js/bootstrap-toggle.min.js"/>
+            <script type="text/javascript" src="/call_register/static/src/js/call_dashboard.js"/>
+        </xpath>
+    </template>
+</odoo>

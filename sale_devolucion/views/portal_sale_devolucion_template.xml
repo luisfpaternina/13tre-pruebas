@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="portal_sale_devolucion_template" inherit_id="sale.sale_order_portal_template" >
+    <xpath expr="//div[@id='modaldecline']" position="after">
+      <div role="dialog" class="modal fade" id="modaldevolver">
+          <div class="modal-dialog">
+              <form id="decline" method="POST" t-attf-action="/my/orders/devolucion/#{sale_order.id}?access_token=#{sale_order.access_token}" class="modal-content">
+                  <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                  <header class="modal-header">
+                      <h4 class="modal-title">Devolver el Pedido</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">&amp;times;</button>
+                  </header>
+                  <main class="modal-body">
+                      <p>
+                          Indica el motivo de la devolución
+                      </p>
+                      <textarea rows="4" name="motivo_devolucion" required="" placeholder="Your feedback..." class="form-control"/>
+		                  <p>
+                          Indica la cantidad y productos a devolver
+                      </p>
+                      <textarea rows="4" name="cantidad_devolver" required="" placeholder="Quantity to return..." class="form-control"/>
+                  </main>
+                  <footer class="modal-footer">
+                      <button type="submit" t-att-id="sale_order.id" class="btn btn-danger"><i class="fa fa-times"/> Devolver</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                  </footer>
+              </form>
+          </div>
+      </div>
+    </xpath>
+    <xpath expr="//div[@id='sale_order_communication']" position="before">
+      <div class="card pb-5">
+           <div style="margin: 10px 10px 10px 10px;">
+               <t t-if="sale_order.status_devolucion">
+                 <B>Estado devolución: </B>
+                 <span t-field="sale_order.status_devolucion"/>
+               </t>
+               <t t-if="sale_order.cantidad_entregada_qty>0">
+                   <div class="col-sm-auto mt8">
+                       <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#modaldevolver" href="#"> <i class="fa fa-times"/> Devolver</a>
+                   </div>
+               </t>
+           </div>         
+       </div>
+    </xpath>
+  </template>
+
+</odoo>

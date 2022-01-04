@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Multi brand filter ProcessControl - 20/07/2020 -->
+    <template id="product_multibrand_attribute" inherit_id="website_sale.sort">
+        <xpath expr="//div[hasclass('dropdown_sorty_by')]" position="before">
+            
+            <t t-if="products" t-set="multibrand_list" t-value="request.website.get_multibrand(products)"/>
+            
+            <t t-set="website_sale_multibrand_current" t-value="[sort for sort in multibrand_list if sort[1]==request.params.get('multibrand', '')]"/>
+            
+            <div class="dropdown mt-3 ml-sm-2 dropdown_sorty_by">
+                <t t-if='len(website_sale_multibrand_current)'>
+                    <a role="button" href="#" class="dropdown-toggle btn te_sort_btn" data-toggle="dropdown">
+                        Marca: <t t-raw='website_sale_multibrand_current'/>
+                    </a>
+                </t>
+                <t t-else='1'>
+                    <a role="button" href="#" class="dropdown-toggle btn te_sort_btn" data-toggle="dropdown">
+                        Marca Automóvil:
+                    </a>
+                </t>
+                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                    <t t-foreach="multibrand_list" t-as="brand">
+                        <a role="menuitem" rel="noindex,nofollow" t-att-href="keep('/shop', multibrand=brand.id)" class="dropdown-item">
+                            <span t-raw="brand.name"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,323 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* call_register
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20211007\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-11 00:32+0000\n"
+"PO-Revision-Date: 2021-10-10 20:34-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__active
+msgid "Active"
+msgstr "Activa"
+
+#. module: call_register
+#: model:res.groups,name:call_register.group_call_register_manager
+msgid "Administrator"
+msgstr "Administrador"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__answered_time
+msgid "Answered Time"
+msgstr "Hora de respuesta"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.call_register_view_form
+msgid "Archived"
+msgstr "Archivada"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.view_synchronization_calls_wzd
+msgid ""
+"Asistente que le permite la sicronización de las llamadas registradas en "
+"RingOver hacia                         Odoo!!!"
+msgstr ""
+
+#. module: call_register
+#. openerp-web
+#: code:addons/call_register/static/src/xml/call_dashboard.xml:0
+#, python-format
+msgid "CALL DURATION (hrs)"
+msgstr "DURACIÓN DE LLAMADAS RESPONDIDAS (hrs.)"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__cdr_id
+msgid "CDR id"
+msgstr "CDR"
+
+#. module: call_register
+#: model:ir.actions.act_window,name:call_register.call_register_action
+#: model:ir.model,name:call_register.model_call_register
+#: model:ir.ui.menu,name:call_register.call_register_menu
+#: model_terms:ir.ui.view,arch_db:call_register.res_config_settings_call_register_view_form
+msgid "Call Register"
+msgstr "Registro de llamadas"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__call_id
+msgid "Call id"
+msgstr "Llamada"
+
+#. module: call_register
+#: model:ir.module.category,name:call_register.module_call_register
+msgid "Calls"
+msgstr "Llamadas"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_res_config_settings__endpoint_calls
+msgid "Calls Endpoint"
+msgstr "Endpoint Llamadas"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.view_synchronization_calls_wzd
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: call_register
+#: model:ir.model,name:call_register.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__partner_id
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__contact_number
+msgid "Contact number"
+msgstr "Número de contacto"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.call_register_view_form
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__create_uid
+#: model:ir.model.fields,field_description:call_register.field_call_register_dashboard__create_uid
+#: model:ir.model.fields,field_description:call_register.field_synchronization_calls_wzd__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__create_date
+#: model:ir.model.fields,field_description:call_register.field_call_register_dashboard__create_date
+#: model:ir.model.fields,field_description:call_register.field_synchronization_calls_wzd__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: call_register
+#: model:ir.actions.client,name:call_register.action_call_register_dashboard
+#: model:ir.ui.menu,name:call_register.menu_call_register_dashboard
+msgid "Dashboard"
+msgstr "Tablero"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__direction
+msgid "Direction"
+msgstr "Dirección"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__display_name
+#: model:ir.model.fields,field_description:call_register.field_call_register_dashboard__display_name
+#: model:ir.model.fields,field_description:call_register.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:call_register.field_res_users__display_name
+#: model:ir.model.fields,field_description:call_register.field_synchronization_calls_wzd__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.call_register_view_form
+msgid "Duration"
+msgstr "Duración"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__call_end
+msgid "End Time"
+msgstr "Hora de finalización"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__from_number
+msgid "From number"
+msgstr "Desde el número"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__id
+#: model:ir.model.fields,field_description:call_register.field_call_register_dashboard__id
+#: model:ir.model.fields,field_description:call_register.field_res_config_settings__id
+#: model:ir.model.fields,field_description:call_register.field_res_users__id
+#: model:ir.model.fields,field_description:call_register.field_synchronization_calls_wzd__id
+msgid "ID"
+msgstr "Identificación "
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.call_register_view_form
+msgid "Identification"
+msgstr "Identificación"
+
+#. module: call_register
+#: model:ir.model.fields.selection,name:call_register.selection__call_register__direction__in
+msgid "In"
+msgstr "Entrada"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__incall_duration
+msgid "Incall Duration (sec)"
+msgstr "Duración de la llamada (s)"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register____last_update
+#: model:ir.model.fields,field_description:call_register.field_call_register_dashboard____last_update
+#: model:ir.model.fields,field_description:call_register.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:call_register.field_res_users____last_update
+#: model:ir.model.fields,field_description:call_register.field_synchronization_calls_wzd____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__last_state
+msgid "Last State"
+msgstr "Último estado"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__write_uid
+#: model:ir.model.fields,field_description:call_register.field_call_register_dashboard__write_uid
+#: model:ir.model.fields,field_description:call_register.field_synchronization_calls_wzd__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__write_date
+#: model:ir.model.fields,field_description:call_register.field_call_register_dashboard__write_date
+#: model:ir.model.fields,field_description:call_register.field_synchronization_calls_wzd__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: call_register
+#. openerp-web
+#: code:addons/call_register/static/src/xml/call_dashboard.xml:0
+#, python-format
+msgid "NOT ANSWERED DURATION (hrs)"
+msgstr "DURACIÓN DE LLAMADAS NO RESPONDIDAS (hrs.)"
+
+#. module: call_register
+#. openerp-web
+#: code:addons/call_register/static/src/xml/call_dashboard.xml:0
+#, python-format
+msgid "NUMBER OF CALLS PER MONTH"
+msgstr "CANTIDAD DE LLAMADAS POR MES"
+
+#. module: call_register
+#: model:ir.model.fields.selection,name:call_register.selection__call_register__direction__out
+msgid "Out"
+msgstr "Salida"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.call_register_user_view_inherit_form
+msgid "RingOver"
+msgstr ""
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_res_users__ring_over_token
+msgid "RingOver Api Key"
+msgstr "Llave API RingOver"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_res_users__ring_over_user_id
+msgid "RingOver User Id"
+msgstr "Id Usuario RingOver"
+
+#. module: call_register
+#: model:ir.actions.server,name:call_register.call_register_synchronization_cron_ir_actions_server
+#: model:ir.cron,cron_name:call_register.call_register_synchronization_cron
+#: model:ir.cron,name:call_register.call_register_synchronization_cron
+msgid "Sincronización de Llamadas"
+msgstr ""
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__start_date
+msgid "Start Time"
+msgstr "Hora de comienzo"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.view_synchronization_calls_wzd
+msgid "Sync up"
+msgstr "Sincronizar"
+
+#. module: call_register
+#: model:ir.actions.act_window,name:call_register.action_synchronization_calls_wzd
+#: model:ir.ui.menu,name:call_register.menu_view_synchronization_calls_wzd_item
+msgid "Synchronization of Calls"
+msgstr "Sincronización de llamadas"
+
+#. module: call_register
+#. openerp-web
+#: code:addons/call_register/static/src/xml/call_dashboard.xml:0
+#, python-format
+msgid "TOTAL CALLS THIS YEAR"
+msgstr "TODAS LAS LLAMADAS DE ESTE AÑO"
+
+#. module: call_register
+#. openerp-web
+#: code:addons/call_register/static/src/xml/call_dashboard.xml:0
+#, python-format
+msgid "TOTAL DURATION (hrs)"
+msgstr "DURACIÓN TOTAL (hrs.)"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.call_register_view_form
+msgid "Times"
+msgstr "Tiempos"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__to_number
+msgid "To number"
+msgstr "Al número"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__total_duration
+msgid "Total Duration (sec)"
+msgstr "Duración total (s) "
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: call_register
+#: model_terms:ir.ui.view,arch_db:call_register.call_register_view_form
+msgid "Types"
+msgstr "Tipos"
+
+#. module: call_register
+#: model:ir.model.fields,field_description:call_register.field_call_register__user_id
+#: model:res.groups,name:call_register.group_call_register_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: call_register
+#: model:ir.model,name:call_register.model_res_users
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: call_register
+#: model:ir.model,name:call_register.model_call_register_dashboard
+msgid "call_register.dashboard"
+msgstr ""
+
+#. module: call_register
+#: model:ir.model,name:call_register.model_synchronization_calls_wzd
+msgid "synchronization.calls.wzd"
+msgstr ""

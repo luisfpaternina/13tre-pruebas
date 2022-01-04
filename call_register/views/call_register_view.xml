@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="call_register_view_form" model="ir.ui.view">
+        <field name="name">call.register.view.form</field>
+        <field name="model">call.register</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false">
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                            attrs="{'invisible': [('active', '=', True)]}"/>
+                    <group>
+                        <group string="Types">
+                            <field name="type"/>
+                            <field name="direction" widget="radio" options="{'horizontal':True}"/>
+                            <field name="last_state"/>
+                        </group>
+                        <group string="Times">
+                            <field name="active" invisible="1"/>
+                            <field name="start_date"/>
+                            <field name="answered_time"/>
+                            <field name="call_end"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Duration">
+                            <field name="incall_duration"/>
+                            <field name="total_duration"/>
+                        </group>
+                        <group string="Contacts">
+                            <field name="user_id"/>
+                            <field name="partner_id"/>
+                            <field name="from_number" widget="phone"/>
+                            <field name="to_number" widget="phone"/>
+                            <field name="contact_number" widget="phone"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Identification">
+                            <field name="call_id"/>
+                            <field name="cdr_id"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="call_register_view_tree" model="ir.ui.view">
+        <field name="name">call.register.view.tree</field>
+        <field name="model">call.register</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false" decoration-success="direction == 'in'"
+                  decoration-danger="direction == 'out'">
+                <field name="user_id"/>
+                <field name="from_number" widget="phone"/>
+                <field name="to_number" widget="phone"/>
+                <field name="contact_number" widget="phone" optional="hide"/>
+                <field name="type" optional="hide"/>
+                <field name="direction" invisible="1"/>
+                <field name="last_state"/>
+                <field name="start_date"/>
+                <field name="answered_time" optional="hide"/>
+                <field name="call_end"/>
+                <field name="incall_duration" optional="hide"/>
+                <field name="total_duration"/>
+                <field name="partner_id" optional="hide"/>
+                <field name="call_id" optional="hide"/>
+                <field name="cdr_id" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="call_register_action" model="ir.actions.act_window">
+        <field name="name">Call Register</field>
+        <field name="res_model">call.register</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="call_register_menu"
+              name="Call Register"
+              action="call_register_action"
+              parent="contacts.menu_contacts"
+              sequence="2"/>
+
+    <menuitem id="contacts.res_partner_menu_config"
+              name="Configuration"
+              parent="contacts.menu_contacts"
+              groups="base.group_system"
+              sequence="4"/>
+</odoo>

@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="action_call_register_dashboard" model="ir.actions.client">
+            <field name="name">Dashboard</field>
+            <field name="tag">call_register_dashboard</field>
+        </record>
+
+        <menuitem name="Dashboard" id="menu_call_register_dashboard" parent="contacts.menu_contacts"
+                  sequence="0"
+                  groups="call_register.group_call_register_user"
+                  action="action_call_register_dashboard"/>
+
+
+    </data>
+</odoo>

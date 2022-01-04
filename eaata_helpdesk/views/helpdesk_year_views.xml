@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_helpdesk_year_search" model="ir.ui.view">
+        <field name="name">view.helpdesk_year.search</field>
+        <field name="model">helpdesk.year</field>
+        <field name="arch" type="xml">
+            <search string="Helpdesk Year Search">
+                <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
+                <separator/>
+                <field name="name" filter_domain="[('name', 'ilike', self)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_helpdesk_year_form" model="ir.ui.view">
+        <field name="name">view.helpdesk_year.form</field>
+        <field name="model">helpdesk.year</field>
+        <field name="arch" type="xml">
+            <form string="Helpdesk Year">
+                <header>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group name="main">
+                        <field name="tool_brand_ids" widget="many2many_tags"/>
+                        <field name="product_ids" widget="many2many_tags"
+                               domain="[('type','=', 'service')]"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_helpdesk_year_tree" model="ir.ui.view">
+        <field name="name">view.helpdesk_year.tree</field>
+        <field name="model">helpdesk.year</field>
+        <field name="arch" type="xml">
+            <tree string="Helpdesk Year Brands">
+                <field name="name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_helpdesk_year" model="ir.actions.act_window">
+        <field name="name">Years</field>
+        <field name="res_model">helpdesk.year</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_helpdesk_year_search"/>
+        <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new year
+                </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_helpdesk_year" action="action_helpdesk_year"
+        sequence="10" parent="helpdesk.helpdesk_menu_config"/>
+
+</odoo>
+
+

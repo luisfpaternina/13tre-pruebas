@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_synchronization_calls_wzd" model="ir.ui.view">
+        <field name="name">synchronization.calls.wzd.form</field>
+        <field name="model">synchronization.calls.wzd</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <separator string="Asistente que le permite la sicronización de las llamadas registradas en RingOver hacia
+                        Odoo!!!"/>
+                </sheet>
+
+                <footer>
+                    <button name="get_all_calls" string="Sync up" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_synchronization_calls_wzd" model="ir.actions.act_window">
+        <field name="name">Synchronization of Calls</field>
+        <field name="res_model">synchronization.calls.wzd</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_view_synchronization_calls_wzd_item" action="action_synchronization_calls_wzd"
+              parent="contacts.menu_contacts" sequence="3" groups="call_register.group_call_register_manager"/>
+</odoo>

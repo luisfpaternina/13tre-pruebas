@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acl_marcas,marcas_default,model_marcas,base.group_user,1,1,1,1
+acl_marcas,marcas_default,model_marcas,base.group_public,1,1,1,1

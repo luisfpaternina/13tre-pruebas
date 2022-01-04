@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="website_hide_price_product_price" inherit_id="website_sale.product_price">
+      <xpath expr="//div[@itemprop='offers']" position="attributes">
+        <attribute name="t-if">
+          not website.is_hide_price_web or product.show_price_in_public_web
+        </attribute>
+      </xpath>
+    </template>
+    <template id="website_hide_price_products_item" inherit_id="website_sale.products_item">
+        <xpath expr="//div[@itemprop='offers']" position="attributes">
+            <attribute name="t-if">
+                not website.is_hide_price_web or product.show_price_in_public_web
+            </attribute>
+        </xpath>
+    </template>
+
+
+    <template id="website_hide_price_product" inherit_id="website_sale.product">
+        <xpath expr="//a[@id='add_to_cart']" position="attributes">
+            <attribute name="t-if">
+                not website.is_hide_price_web or product.show_price_in_public_web
+            </attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('css_quantity')]" position="attributes">
+            <attribute name="t-if">
+                not website.is_hide_price_web or product.show_price_in_public_web
+            </attribute>
+        </xpath>
+    </template>
+    <!--
+    Añadir t-if="not website.is_hide_price_web or product.show_price_in_public_web" en
+      Comparator Page
+      theme_clarico_vega.product_wishlist_ept
+      website_sale.product_buy_now
+      website_sale_comparison.product_product
+      theme_clarico_vega.quick_view_template
+
+    Modificar <attribute name="data-display-price">false</attribute>
+      theme_clarico_vega.header_search_ept
+    -->
+</odoo>

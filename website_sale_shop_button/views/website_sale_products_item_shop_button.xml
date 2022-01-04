@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="website_sale_products_item_shop_button" inherit_id="website_sale.products_item"
+    customize_show="True" name="Quantity Field + Add To Card">
+      <xpath  expr="//div[@class='o_wsale_product_btn']" position="after">
+        <t t-set="combination" t-value="product._get_first_possible_combination()"/>
+        <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+        <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+        <t t-if="product.product_variant_count==1">
+            <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id"/>
+            <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id"/>
+            <div style="margin: 0 auto; width: 50%; padding-bottom: 10px;">
+                <div class="css_quantity input-group oe_website_spinner te_product_quantity"
+                    contenteditable="false" t-if="not website.is_hide_price_web or product.show_price_in_public_web">
+                    <div class="input-group-prepend">
+                        <a t-attf-href="#" class="btn btn-secondary js_add_cart_json"
+                            aria-label="Remove one"
+                            title="Remove one">
+                            <span class="fa fa-minus"/>
+                        </a>
+                    </div>
+                    <input type="text" style="min-width: 30px;" class="form-control quantity" data-min="1" name="add_qty"
+                        value="1"/>
+                    <div class="input-group-append">
+                        <a t-attf-href="#" class="btn btn-secondary float_left js_add_cart_json"
+                            aria-label="Add one" title="Add one">
+                            <span class="fa fa-plus"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a t-if="not website.is_hide_price_web or product.show_price_in_public_web" role="button"
+                id="add_to_cart"
+                class="btn btn-primary btn-lg mt16 a-submit te_theme_button ajax-add-to-cart"
+                href="#" t-att-quick-view-ajax-cart="'1'"
+                style="width: 100%;">
+                <span class="fa fa-shopping-cart"/>
+            </a>
+        </t>
+      </xpath>
+  </template>
+</odoo>

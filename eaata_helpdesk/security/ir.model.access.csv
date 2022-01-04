@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_helpdesk_tool_brand_user,helpdesk.tool.brand user,model_helpdesk_tool_brand,helpdesk.group_helpdesk_user,1,0,0,0
+access_helpdesk_tool_model_user,helpdesk.tool.model user,model_helpdesk_tool_model,helpdesk.group_helpdesk_user,1,0,0,0
+access_helpdesk_vehicle_brand_user,helpdesk.vehicle.brand user,model_helpdesk_vehicle_brand,helpdesk.group_helpdesk_user,1,0,0,0
+access_helpdesk_tool_service_vehicle_user,helpdesk.tool.service.vehicle user,model_helpdesk_tool_service_vehicle,helpdesk.group_helpdesk_user,1,0,0,0
+access_helpdesk_year_user,helpdesk.year user,model_helpdesk_year,helpdesk.group_helpdesk_user,1,0,0,0
+access_product_product_user,product_product user,product.model_product_product,helpdesk.group_helpdesk_user,1,0,0,0
+access_helpdesk_tool_brand_manager,helpdesk.tool.brand manager,model_helpdesk_tool_brand,helpdesk.group_helpdesk_manager,1,1,1,1
+access_helpdesk_tool_model_manager,helpdesk.tool.model manager,model_helpdesk_tool_model,helpdesk.group_helpdesk_manager,1,1,1,1
+access_helpdesk_vehicle_brand_manager,helpdesk.vehicle.brand manager,model_helpdesk_vehicle_brand,helpdesk.group_helpdesk_manager,1,1,1,1
+access_helpdesk_tool_service_vehicle_manager,helpdesk.tool.service.vehicle manager,model_helpdesk_tool_service_vehicle,helpdesk.group_helpdesk_manager,1,1,1,1
+access_helpdesk_year_manager,helpdesk.year manager,model_helpdesk_year,helpdesk.group_helpdesk_manager,1,1,1,1
+access_product_product_manager,product_product manager,product.model_product_product,helpdesk.group_helpdesk_manager,1,1,1,1
+access_crm_lead_tool_user,crm_lead_tool user,model_crm_lead_tool,base.group_user,1,0,0,0
+access_crm_lead_tool_salesman,crm_lead_tool salesman,model_crm_lead_tool,sales_team.group_sale_salesman,1,1,1,1
+access_res_partner_tool_user,res_partner_tool user,model_res_partner_tool,base.group_user,1,0,0,0
+access_res_partner_tool_salesman,res_partner_tool salesman,model_res_partner_tool,sales_team.group_sale_salesman,1,1,1,1

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<odoo>
+    <record id="call_register_synchronization_cron" model="ir.cron">
+        <field name="name">Sincronización de Llamadas</field>
+        <field name="model_id" ref="model_synchronization_calls_wzd"/>
+        <field name="state">code</field>
+        <field name="code">model.get_all_calls()</field>
+        <field name="interval_number">10</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field name="active" eval="True"/>
+        <field name="doall" eval="False"/>
+    </record>
+</odoo>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="helpdesk_ticket_type_view_tree" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.type.treeinherit</field>
+        <field name="model">helpdesk.ticket.type</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_type_view_tree"/>
+        <field name="name"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="type"/>
+            </field>
+        </field>
+    </record>
+
+
+    <record id="helpdesk_ticket_view_form" model="ir.ui.view">
+        <field name="name">view.helpdesk_ticket.form.inherit</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="attributes">
+                <attribute name="readonly">1</attribute>
+                <attribute name="force_save">1</attribute>
+            </field>
+            <field name="partner_id" position="after">
+                <field name="phone"/>
+            </field>
+            <field name="description" position="before">
+                <group>
+                    <field name="ticket_type" invisible="1"/>
+                    <group string="Tool information" name="tool_information" attrs="{'invisible':[('ticket_type','!=','support')]}">
+                        <field name="tool_brand_domain" invisible="1"/>
+                        <field name="tool_model_domain" invisible="1"/>
+                        <field name="tool_brand_id" string="Brand" domain="[('id', 'in', tool_brand_domain)]"
+                               options="{'no_create': True, 'no_open': True}"
+                               attrs="{'required':[('ticket_type','=','support')]}"/>
+                        <field name="tool_model_id" string="Model" domain="[('id', 'in', tool_model_domain)]"
+                               options="{'no_create': True, 'no_open': True}"
+                               attrs="{'required':[('ticket_type','=','support')]}"/>
+                        <field name="product_id" options="{'no_create': True, 'no_open': True}"
+                               attrs="{'required':[('ticket_type','=','support')]}"/>
+                    </group>
+                    <group string="Vehicle information" name="vehicle_information"
+                           attrs="{'invisible':[('ticket_type','not in',['support','assistance'])]}">
+                        <field name="vehicle_brand_domain" invisible="1"/>
+                        <field name="need_vehicle" invisible="1"/>
+                        <field name="vehicle_brand_id" string="Brand" domain="[('id', 'in', vehicle_brand_domain)]"
+                               force_save="1" options="{'no_create': True, 'no_open': True}"
+                               attrs="{'required':[('need_vehicle','=',True)], 'readonly':[('need_vehicle','=',False)]}"/>
+                        <field name="vehicle_model" string="Model" force_save="1"
+                               attrs="{'required':[('need_vehicle','=',True),('ticket_type','=','support')],
+                                       'readonly':[('need_vehicle','=',False)],
+                                       'invisible':[('ticket_type','=','assistance')]}"/>
+                        <field name="vehicle_chasis" string="Chasis" force_save="1"
+                               attrs="{'required':[('need_vehicle','=',True),('ticket_type','=','assistance')],
+                                       'readonly':[('need_vehicle','=',False)],
+                                       'invisible':[('ticket_type','!=','assistance')]}"/>
+                        <field name="need_year" invisible="1"/>
+                        <field name="year_id" force_save="1" options="{'no_create': True, 'no_open': True}"
+                               attrs="{'required':[('need_year','=',True)],
+                                       'readonly':[('need_year','=',False)],
+                                       'invisible':[('ticket_type','=','assistance')]}"/>
+                    </group>
+                </group>
+            </field>
+            <field name="description" position="after">
+                <span class="o_form_label">Picture</span>
+                <div>
+                    <field name="image" string="Attach photo" widget="image"/>
+                </div>
+            </field>
+        </field>
+    </record>
+
+</odoo>
+
+

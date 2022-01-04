@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_template_form_inherit" model="ir.ui.view">
+        <field name="name">product.template</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_information']/group[2]" position='after'>
+                <group string="Notas internas">
+                    <field name="internal_note1" nolabel="1"/>
+                </group>
+            </xpath>
+            
+            <xpath expr="//page[@name='general_information']/group[2]" position='attributes'>
+                <attribute name="string">Short Description</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

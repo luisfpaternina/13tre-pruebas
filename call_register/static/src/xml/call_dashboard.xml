@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="CallRegisterdashboard">
+        <div class="accounts-dashboard-wrap">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+                <div class="row" style="margin:20px">
+                    <!-- <div class="col-md-2">
+                        <div class="tile wide invoice box-4">
+                            <div class="header">
+                                <div class="main-title">TOTAL CALLS THIS YEAR</div>
+                                <div id="total_total_calls_this_year">
+                                    <div class="center">
+                                        <div class="count">
+                                            <span id="total_calls_this_year"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-12">
+                        <div class="card" style="height:400px;border:1px solid;border-color:#74ADFA;">
+                            <div class="card-header"
+                                 style=" padding: 17px 1.5rem !important; display: flex !IMPORTANT; justify-content: space-between; align-items: center; background: #74ADFA; ">
+                                <h3 class="custom-h3 card-title text-white">
+                                    <b>ÚLTIMAS LLAMADAS</b>
+                                </h3>
+                                <div class="card-tools">
+                                </div>
+                                </div>
+                            <div class="card-body mt-3" id="in_ex_body_hide">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="myelement5"> </p>
+                                        <div class="chart">
+                                            <canvas id="canvas-calls-month-top-ten" width="300"
+                                                    height="200"> </canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <div class="card" style="height:400px;">
+                            <div class="card-header"
+                                 style=" padding: 17px 1.5rem !important; display: flex !IMPORTANT; justify-content: space-between; align-items: center; background: #FB7541; ">
+                                <h3 class="custom-h3 card-title text-white">
+                                    <b>CALL DURATION (hrs)</b>
+                                </h3>
+                            </div>
+                            <div class="card-body mt-3" id="in_ex_body_hide">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="myelement2"> </p>
+                                        <div class="chart">
+                                            <canvas id="canvas-duration-call-answered" width="300"
+                                                    height="200"> </canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="height:400px;">
+                            <div class="card-header"
+                                 style=" padding: 17px 1.5rem !important; display: flex !IMPORTANT; justify-content: space-between; align-items: center; background: #74ADFA; ">
+                                <h3 class="custom-h3 card-title text-white">
+                                    <b>NOT ANSWERED DURATION (hrs)</b>
+                                </h3>
+                            </div>
+
+                            <div class="card-body mt-3" id="in_ex_body_hide">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="myelement2"> </p>
+                                        <div class="chart">
+                                            <canvas id="canvas-duration-call-not-answered" width="300"
+                                                    height="200"> </canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="height:400px;">
+                            <div class="card-header"
+                                 style=" padding: 17px 1.5rem !important; display: flex !IMPORTANT; justify-content: space-between; align-items: center; background: #F6081E; ">
+                                <h3 class="custom-h3 card-title text-white">
+                                    <b>TOTAL DURATION (hrs)</b>
+                                </h3>
+                            </div>
+
+                            <div class="card-body mt-3" id="in_ex_body_hide">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="myelement2"> </p>
+                                        <div class="chart">
+                                            <canvas id="canvas-duration-call-total" width="300"
+                                                    height="200"> </canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

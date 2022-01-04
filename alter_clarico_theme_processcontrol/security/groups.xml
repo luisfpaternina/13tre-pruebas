@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_marcas_user" model="marcas">
+        <field name="name">Marcas</field>
+<!--        <field name="category_id" ref="base.module_category_operations_inventory"/>-->
+        <field name="id" eval="[(4, ref('base.group_user')), (4, ref('base.group_public'))]"/>
+    </record>
+</odoo>

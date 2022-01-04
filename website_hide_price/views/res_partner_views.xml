@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Inherit Form view -->
+  <record id="res_partner_website_hide_price_views_form" model="ir.ui.view">
+    <field name="name">res.partner_website.hide.price.form</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='website_id']" position="after">
+        <field name="is_hide_price_web" string="Ocultar Precio Web"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>
