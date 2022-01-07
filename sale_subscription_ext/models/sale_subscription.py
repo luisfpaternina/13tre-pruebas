@@ -5,3 +5,9 @@ class SaleSubscription(models.Model):
     _inherit = 'sale.subscription'
 
     city = fields.Char(string="City")
+
+    @api.onchange('partner_id')
+    def onchange_partner(self):
+        for record in self:
+            if record.partner_id:
+                record.city = recor.partner_id.city

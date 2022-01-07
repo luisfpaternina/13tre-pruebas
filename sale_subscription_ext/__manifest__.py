@@ -23,7 +23,7 @@
        
         #'security/security.xml',
         #'security/ir.model.access.csv',
-        #'views/account_move.xml',
+        'views/sale_subscription.xml',
                    
     ],
     'installable': True
