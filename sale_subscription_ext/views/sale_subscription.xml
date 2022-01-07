@@ -23,8 +23,9 @@
             </xpath>
 
             <xpath expr="//search/filter[@name='open']" position="after">
-                 <filter string="Localidad" name="city" domain="[('city', '!=', False)]"/>
+                 <filter string="City" name="city" domain="[('city', '!=', False)]"/>
             </xpath>
+            
         </field>
     </record>
 
