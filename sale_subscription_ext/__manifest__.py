@@ -1,5 +1,5 @@
 {
-    'name': 'SALE SUBSCRIPTION EXT',
+    'name': 'Sale Subscription Ext',
 
     'version': '13.0.1.0',
 
