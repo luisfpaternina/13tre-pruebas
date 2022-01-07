@@ -15,6 +15,7 @@
 
         'sale_management',
         'sale_subscription',
+        'contacts',
 
     ],
 
