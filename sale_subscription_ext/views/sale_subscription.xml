@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_sale_subscription_inherit_search" model="ir.ui.view">
+        <field name="name">sale.subscription.search.inherit</field>
+        <field name="model">sale.subscription</field>
+        <field name="inherit_id" ref="sale_subscription.sale_subscription_view_search"/>
+        <field name="arch" type="xml"> 
+            <xpath expr="//search/group" position="inside">
+                <filter string="Delegation" name="delegation_id" context="{'group_by':'delegation_id'}"/>
+                <filter string="Contact type" name="partner_type_id" context="{'group_by':'partner_type_id'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>   
