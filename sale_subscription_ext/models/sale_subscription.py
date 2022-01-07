@@ -10,4 +10,4 @@ class SaleSubscription(models.Model):
     def onchange_partner(self):
         for record in self:
             if record.partner_id:
-                record.city = recor.partner_id.city
+                record.city = record.partner_id.city
