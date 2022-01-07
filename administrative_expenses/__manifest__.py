@@ -19,7 +19,7 @@
 
     'data': [
        
-        #'views/sale_subscription.xml',
+        'views/account_move.xml',
                    
     ],
     'installable': True
