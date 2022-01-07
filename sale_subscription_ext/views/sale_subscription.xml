@@ -18,6 +18,11 @@
         <field name="inherit_id" ref="sale_subscription.sale_subscription_view_search"/>
         <field name="arch" type="xml">
 
+            <field name="user_id" position="after">
+                <separator/>
+                <field name="city"/>
+            </field>
+
             <xpath expr="//search/group" position="inside">
                 <filter string="City" name="city" context="{'group_by':'city'}"/>
             </xpath>
@@ -25,7 +30,8 @@
             <xpath expr="//search/filter[@name='open']" position="after">
                  <filter string="City" name="city" domain="[('city', '!=', False)]"/>
             </xpath>
-            
+
+
         </field>
     </record>
 
