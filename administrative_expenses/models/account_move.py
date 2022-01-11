@@ -6,6 +6,7 @@ class AccountMove(models.Model):
 
     is_validate = fields.Boolean(string="Validate")
 
+
     @api.depends('is_validate')
     def _validate_subscription(self):
         for record in self:
