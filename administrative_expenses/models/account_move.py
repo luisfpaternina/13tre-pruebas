@@ -12,7 +12,10 @@ class AccountMove(models.Model):
         for record in self:
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
             if sale_obj:
-                logging.info('######################################', sale_obj)
+                logging.info('######################################')
+                record.is_validate = True
+            else:
+                record.is_validate = False
 
 
     @api.model
