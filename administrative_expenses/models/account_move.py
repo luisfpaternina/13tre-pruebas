@@ -10,6 +10,7 @@ class AccountMove(models.Model):
     def create_records(self):
         dic = {
         'name': self.name,
+        'display_name': self.name,
         }
         self.env['sale.subscription'].create(dic)
 
