@@ -22,7 +22,7 @@ class AccountMove(models.Model):
         for record in self:
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
             subscription_obj = record.env['sale.subscription'].search([])
-            logging("MATHIASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")
+            logging.info("MATHIASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")
             for s in subscription_obj:
                 if sale_obj:
                     record.is_validate = True
