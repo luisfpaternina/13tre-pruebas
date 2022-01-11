@@ -27,7 +27,7 @@ class AccountMove(models.Model):
             for s in subscription_obj:
                 if sale_obj:
                     record.is_validate = True
-                    record.create_records()
+                    record.create_records(rec)
                     logging.info("-----------------------------------------------------")
                 else:
                     record.is_validate = False
