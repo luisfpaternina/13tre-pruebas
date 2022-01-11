@@ -15,6 +15,7 @@
 
         'account_accountant',
         'sale_management',
+        'sale_subscription',
 
     ],
 
