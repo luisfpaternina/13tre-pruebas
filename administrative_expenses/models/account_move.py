@@ -7,7 +7,7 @@ class AccountMove(models.Model):
     is_validate = fields.Boolean(string="Validate")
 
 
-    @api.depends('is_validate')
+    @api.onchange('is_validate')
     def _validate_subscription(self):
         for record in self:
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
