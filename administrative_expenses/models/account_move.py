@@ -21,13 +21,16 @@ class AccountMove(models.Model):
     def _validate_subscription(self):
         for record in self:
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
-            if sale_obj:
-                record.is_validate = True
-                if record.invoice_date > record.invoice_date_due:
-                    record.create_records()
-                    logging.info("-----------------------------------------------------")
-            else:
-                record.is_validate = False
+            subscription_obj = record.env['sale.subscription'].search([])
+            logging("MATHIASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")
+            for s in subscription_obj:
+                if sale_obj:
+                    record.is_validate = True
+                    if record.invoice_date > record.invoice_date_due:
+                        record.create_records()
+                        logging.info("-----------------------------------------------------")
+                else:
+                    record.is_validate = False
 
 
     @api.model
