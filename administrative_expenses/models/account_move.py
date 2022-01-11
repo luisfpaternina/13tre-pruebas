@@ -39,7 +39,7 @@ class AccountMove(models.Model):
                             'quantity': 1,
                             })]
                         }
-                        record.env['sale.subscription.line'].create(vals)
+                        record.env['sale.subscription'].create(vals)
                 else:
                     record.is_validate = False
 
@@ -48,6 +48,5 @@ class AccountMove(models.Model):
     def create(self, vals):
         rec = super(AccountMove, self).create(vals)
         self._validate_subscription()
-        self.create_records(rec)
-        logging.info("***************************************************")       
+        self.create_records(rec)       
         return rec
