@@ -7,9 +7,9 @@ class AccountMove(models.Model):
     is_validate = fields.Boolean(string="Validate")
 
 
-    def create_records(self,rec):
+    def create_records(self):
         dic = {
-        'name': rec.name,
+        'name': self.name,
         }
         self.env['sale.subscription'].create(dic)
 
