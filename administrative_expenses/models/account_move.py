@@ -13,3 +13,11 @@ class AccountMove(models.Model):
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
             if sale_obj:
                 logging.info('######################################', sale_obj)
+
+
+    @api.model
+    def create(self, vals):
+        rec = super(AccountMove, self).create(vals)
+        self._validate_subscription()
+        logging.info("***************************************************")       
+        return rec
