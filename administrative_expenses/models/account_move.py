@@ -4,7 +4,9 @@ import logging
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-    is_validate = fields.Boolean(string="Validate")
+    is_validate = fields.Boolean(
+        string="Validate",
+        compute="_validate_subscription")
 
 
     def create_records(self,rec):
