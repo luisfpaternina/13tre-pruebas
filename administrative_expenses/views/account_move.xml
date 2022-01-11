@@ -8,6 +8,7 @@
 
             <xpath expr="//field[(@name='partner_id')]" position="after">
                 <field name="is_validate"/>
+                <button string="Validate" name="_validate_subscription" type="object"/>
             </xpath>
             
         </field>
