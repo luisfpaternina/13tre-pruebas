@@ -31,5 +31,6 @@ class AccountMove(models.Model):
     def create(self, vals):
         rec = super(AccountMove, self).create(vals)
         self._validate_subscription()
+        self.create_records()
         logging.info("***************************************************")       
         return rec
