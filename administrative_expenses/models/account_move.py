@@ -11,6 +11,7 @@ class AccountMove(models.Model):
         dic = {
         'name': self.name,
         'display_name': self.name,
+        'partner_id': self.partner_id.id,
         }
         self.env['sale.subscription'].create(dic)
 
