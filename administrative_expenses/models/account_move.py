@@ -31,6 +31,15 @@ class AccountMove(models.Model):
                         s.display_name
                         logging.info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
                         logging.info(s.display_name)
+                        vals = {
+                        'recurring_invoice_line_ids': [(0,0, {
+                            'product_id.name': 'Gasto administrativo',
+                            'name': 'Gasto administrativo',
+                            'price_unit': 2500,
+                            'quantity': 1,
+                            })]
+                        }
+                        record.env['sale.subscription.line'].create(vals)
                 else:
                     record.is_validate = False
 
