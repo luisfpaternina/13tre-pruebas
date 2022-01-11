@@ -4,6 +4,8 @@ import logging
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
+    is_validate = fields.Boolean(string="Validate")
+
     def _validate_subscription(self):
         for record in self:
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
