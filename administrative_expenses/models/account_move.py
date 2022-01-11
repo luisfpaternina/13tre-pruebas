@@ -28,8 +28,9 @@ class AccountMove(models.Model):
                 if sale_obj:
                     record.is_validate = True
                     if s in sale_obj.order_line.subscription_id:
-                        logging.info("+++++++++++++++++++++++++++++++++++++++++++++++++++++")
-                        logging.info(s)
+                        s.display_name
+                        logging.info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+                        logging.info(s.display_name)
                 else:
                     record.is_validate = False
 
