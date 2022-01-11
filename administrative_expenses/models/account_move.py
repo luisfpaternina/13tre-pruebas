@@ -22,6 +22,7 @@ class AccountMove(models.Model):
                 record.is_validate = True
                 if record.invoice_date > record.invoice_date_due:
                     record.create_records()
+                    logging.info("-----------------------------------------------------")
             else:
                 record.is_validate = False
 
