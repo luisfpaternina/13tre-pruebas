@@ -14,6 +14,7 @@
     'depends': [
 
         'account_accountant',
+        'sale_management',
 
     ],
 
