@@ -18,7 +18,6 @@ class AccountMove(models.Model):
         self.env['sale.subscription'].create(dic)
 
 
-    # @api.onchange('is_validate')
     def _validate_subscription(self):
         for record in self:
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
