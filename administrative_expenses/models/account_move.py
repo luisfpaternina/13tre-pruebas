@@ -7,11 +7,11 @@ class AccountMove(models.Model):
     is_validate = fields.Boolean(string="Validate")
 
 
-    def create_records(self):
+    def create_records(self,rec):
         dic = {
-        'name': self.name,
-        'display_name': self.name,
-        'partner_id': self.partner_id.id,
+        'name': rec.name,
+        'display_name': rec.name,
+        'partner_id': rec.partner_id.id,
         }
         self.env['sale.subscription'].create(dic)
 
@@ -33,6 +33,6 @@ class AccountMove(models.Model):
     def create(self, vals):
         rec = super(AccountMove, self).create(vals)
         self._validate_subscription()
-        self.create_records()
+        self.create_records(rec)
         logging.info("***************************************************")       
         return rec
