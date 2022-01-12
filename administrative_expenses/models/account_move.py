@@ -45,4 +45,4 @@ class AccountMove(models.Model):
         if self.is_validate:
             if self.invoice_date > self.invoice_date_due:
                 self._validate_subscription()      
-                return rec
+            return rec
