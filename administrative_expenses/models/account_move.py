@@ -8,7 +8,7 @@ class AccountMove(models.Model):
         string="Validate",
         compute="_validate_subscription")
     is_validate_date = fields.Boolean(
-        string="Validate",
+        string="Validate dates",
         compute="_validate_dates")
 
 
@@ -48,6 +48,6 @@ class AccountMove(models.Model):
                         logging.info("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm")
                         logging.info(vals)
                         s.write(vals)
-                    break
+                    #break
                 else:
                     record.is_validate = False
