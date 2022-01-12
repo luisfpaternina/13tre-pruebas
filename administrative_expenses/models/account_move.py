@@ -21,6 +21,8 @@ class AccountMove(models.Model):
                 self.aditional_value = self.amount_total * 0.10
             else:
                 self.aditional_value = 0.0
+        else:
+            self.aditional_value = 0.0
 
 
     def _validate_dates(self):
