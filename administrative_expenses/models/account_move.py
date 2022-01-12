@@ -43,5 +43,6 @@ class AccountMove(models.Model):
     def action_invoice_register_payment(self):
         rec = super(AccountMove, self).action_invoice_register_payment()
         if self.is_validate:
-            self._validate_subscription()      
-            return rec
+            if self.invoice_date > self.invoice_date_due:
+                self._validate_subscription()      
+                return rec
