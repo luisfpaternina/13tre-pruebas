@@ -48,6 +48,6 @@ class AccountMove(models.Model):
                         logging.info("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm")
                         logging.info(vals)
                         s.write(vals)
-                    #break
+                    break
                 else:
                     record.is_validate = False
