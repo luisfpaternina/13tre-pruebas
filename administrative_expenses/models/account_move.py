@@ -54,6 +54,5 @@ class AccountMove(models.Model):
 
     def action_invoice_register_payment(self):
         rec = super(AccountMove, self).action_invoice_register_payment()
-        self._validate_subscription()
-        self.create_records(rec)       
+        self._validate_subscription()      
         return rec
