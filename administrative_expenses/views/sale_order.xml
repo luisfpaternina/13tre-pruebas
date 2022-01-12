@@ -10,7 +10,8 @@
                 <button 
                     string="Validate"
                     name="_generate_lines"
-                    type="object"/>
+                    type="object"
+                    invisible="1"/>
             </xpath>
             
         </field>
