@@ -49,9 +49,11 @@ class AccountMove(models.Model):
                     record.is_validate = False
 
 
-    @api.model
-    def create(self, vals):
-        rec = super(AccountMove, self).create(vals)
+    
+
+
+    def action_invoice_register_payment(self):
+        rec = super(AccountMove, self).action_invoice_register_payment()
         self._validate_subscription()
         self.create_records(rec)       
         return rec
