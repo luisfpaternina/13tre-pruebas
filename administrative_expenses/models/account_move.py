@@ -36,7 +36,6 @@ class AccountMove(models.Model):
                         logging.info(vals)
                         s.write(vals)
                     break
-                        logging.info("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
                 else:
                     record.is_validate = False
 
