@@ -7,6 +7,8 @@ class AccountMove(models.Model):
     is_validate = fields.Boolean(
         string="Validate",
         compute="_validate_subscription")
+    is_validate_date = fields.Boolean(
+        string="Validate")
 
 
     def _validate_subscription(self):
@@ -16,7 +18,7 @@ class AccountMove(models.Model):
             logging.info("MATHIASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")
             logging.info(subscription_obj)
             for s in subscription_obj:
-                if sale_obj and record.invoice_date > record.invoice_date_due:
+                if sale_obj:
                     record.is_validate = True
                     if s in sale_obj.order_line.subscription_id:
                         s.display_name
