@@ -65,3 +65,5 @@ class AccountMove(models.Model):
                             break
                     else:
                         record.is_validate = False
+            else:
+                record.is_validate = False
