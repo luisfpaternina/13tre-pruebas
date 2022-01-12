@@ -5,8 +5,7 @@ class AccountMove(models.Model):
     _inherit = 'account.move'
 
     is_validate = fields.Boolean(
-        string="Validate",
-        compute="_validate_subscription")
+        string="Validate")
     is_validate_date = fields.Boolean(
         string="Validate dates",
         compute="_validate_dates")
@@ -65,5 +64,4 @@ class AccountMove(models.Model):
                             break
                     else:
                         record.is_validate = False
-            else:
-                record.is_validate = False
+
