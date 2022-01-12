@@ -39,7 +39,7 @@ class AccountMove(models.Model):
                         'partner_id': s.partner_id.id,
                         'recurring_invoice_line_ids': [(0, 0, {
                             'product_id': s.recurring_invoice_line_ids.product_id.id,
-                            'name': 'Gasto administrativo',
+                            'name': 'Cargo por pago fuera de término',
                             'price_unit': 2500,
                             'quantity': 1,
                             'uom_id': s.recurring_invoice_line_ids.uom_id.id,
