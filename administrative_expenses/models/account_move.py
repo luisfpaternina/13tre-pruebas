@@ -44,5 +44,6 @@ class AccountMove(models.Model):
         rec = super(AccountMove, self).action_post()
         if self.is_validate:
             if self.invoice_date > self.invoice_date_due:
-                self._validate_subscription()      
+                self._validate_subscription()
+                logging.info("19999999999999999999999999999999999999999999993333333333")     
             return rec
