@@ -13,8 +13,11 @@ class AccountMove(models.Model):
 
 
     def _validate_dates(self):
-        if self.invoice_date < self.invoice_date_due:
-            self.is_validate_date = True
+        if self.invoice_date and self.invoice_date_due:
+            if self.invoice_date < self.invoice_date_due:
+                self.is_validate_date = True
+            else:
+                self.is_validate_date = False
         else:
             self.is_validate_date = False
 
