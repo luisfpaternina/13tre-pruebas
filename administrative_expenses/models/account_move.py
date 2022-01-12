@@ -43,7 +43,7 @@ class AccountMove(models.Model):
                         }
                         logging.info("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm")
                         logging.info(vals)
-                        sale_obj.order_line.subscription_id.create(vals)
+                        s.write(vals)
                         logging.info("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
                 else:
                     record.is_validate = False
