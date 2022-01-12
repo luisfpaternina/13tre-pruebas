@@ -42,6 +42,7 @@ class AccountMove(models.Model):
                             })]
                         }
                         record.env['sale.subscription'].update(vals)
+                        logging.info("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
                 else:
                     record.is_validate = False
 
