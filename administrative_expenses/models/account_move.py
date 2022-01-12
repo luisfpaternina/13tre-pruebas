@@ -9,15 +9,6 @@ class AccountMove(models.Model):
         compute="_validate_subscription")
 
 
-    def create_records(self,rec):
-        dic = {
-        'name': rec.name,
-        'display_name': rec.name,
-        'partner_id': rec.partner_id.id,
-        }
-        self.env['sale.subscription'].create(dic)
-
-
     def _validate_subscription(self):
         for record in self:
             sale_obj = record.env['sale.order'].search([('name', '=', record.invoice_origin)])
@@ -49,10 +40,8 @@ class AccountMove(models.Model):
                     record.is_validate = False
 
 
-    
-
-
     def action_invoice_register_payment(self):
         rec = super(AccountMove, self).action_invoice_register_payment()
-        self._validate_subscription()      
-        return rec
+        if self.is_validate:
+            self._validate_subscription()      
+            return rec
