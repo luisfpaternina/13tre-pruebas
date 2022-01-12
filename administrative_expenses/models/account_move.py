@@ -16,7 +16,7 @@ class AccountMove(models.Model):
             logging.info("MATHIASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")
             logging.info(subscription_obj)
             for s in subscription_obj:
-                if sale_obj:
+                if sale_obj and record.invoice_date > record.invoice_date_due:
                     record.is_validate = True
                     if s in sale_obj.order_line.subscription_id:
                         s.display_name
@@ -38,6 +38,3 @@ class AccountMove(models.Model):
                     #break
                 else:
                     record.is_validate = False
-
-
-    
