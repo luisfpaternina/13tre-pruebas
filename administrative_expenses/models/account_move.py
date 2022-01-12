@@ -40,8 +40,8 @@ class AccountMove(models.Model):
                     record.is_validate = False
 
 
-    def action_invoice_register_payment(self):
-        rec = super(AccountMove, self).action_invoice_register_payment()
+    def action_post(self):
+        rec = super(AccountMove, self).action_post()
         if self.is_validate:
             if self.invoice_date > self.invoice_date_due:
                 self._validate_subscription()      
