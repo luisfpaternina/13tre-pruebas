@@ -8,7 +8,15 @@ class AccountMove(models.Model):
         string="Validate",
         compute="_validate_subscription")
     is_validate_date = fields.Boolean(
-        string="Validate")
+        string="Validate",
+        compute="_validate_dates")
+
+
+    def _validate_dates(self):
+        if self.invoice_date < self.invoice_date_due:
+            self.is_validate_date = True
+        else:
+            self.is_validate_date = False
 
 
     def _validate_subscription(self):
