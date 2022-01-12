@@ -11,7 +11,16 @@ class AccountMove(models.Model):
         string="Validate dates",
         compute="_validate_dates")
     aditional_value = fields.Float(
-        string="Aditional value")
+        string="Aditional value",
+        compute="_calculate_aditional_value")
+
+
+    def _calculate_aditional_value(self):
+        if self.invoice_date and self.invoice_date_due:
+            if self.invoice_date < self.invoice_date_due:
+                self.aditional_value = self.amount_total * 0.10
+            else:
+                self.aditional_value = 0.0
 
 
     def _validate_dates(self):
