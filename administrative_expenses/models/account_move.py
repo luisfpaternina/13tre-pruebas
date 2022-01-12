@@ -10,6 +10,8 @@ class AccountMove(models.Model):
     is_validate_date = fields.Boolean(
         string="Validate dates",
         compute="_validate_dates")
+    aditional_value = fields.Float(
+        string="Aditional value")
 
 
     def _validate_dates(self):
