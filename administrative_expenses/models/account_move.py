@@ -33,7 +33,6 @@ class AccountMove(models.Model):
                         logging.info(s.display_name)
                         vals = {
                         'recurring_invoice_line_ids': [(0,0, {
-                            'product_id.name': 'Gasto administrativo',
                             'name': 'Gasto administrativo',
                             'price_unit': 2500,
                             'quantity': 1,
