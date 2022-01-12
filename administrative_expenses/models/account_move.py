@@ -41,7 +41,7 @@ class AccountMove(models.Model):
                             'uom_id': s.recurring_invoice_line_ids.uom_id.id,
                             })]
                         }
-                        record.env['sale.subscription'].update(vals)
+                        sale_obj.order_line.subscription_id.create(vals)
                         logging.info("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
                 else:
                     record.is_validate = False
